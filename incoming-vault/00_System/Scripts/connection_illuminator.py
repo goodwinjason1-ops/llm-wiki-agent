@@ -159,13 +159,54 @@ def title_key(stem: str) -> str:
     conventions. But `Report - 2026-07-11` and `Report - 2026-07-13` must not:
     they are a series, and merging them would destroy the record.
     """
-    s = re.sub(r"[-_]", " ", stem).lower()
+    # A trailing run-id — `…-Ethereum-8dc83a62` — marks a re-run of the same
+    # review, not a different subject. Four reviews of one protocol distinguished
+    # only by hash is redundancy worth surfacing.
+    s = re.sub(r"[-_][0-9a-f]{6,12}$", "", stem, flags=re.IGNORECASE)
+    s = re.sub(r"[-_]", " ", s).lower()
     for w in ("youtube", "source review", "source summary", "capture", "review", "source"):
         s = s.replace(w, " ")
     s = re.sub(r"[^a-z0-9 ]", " ", s)
     # Keep short numeric tokens: "09" vs "10" is what distinguishes two days of
     # the same report, and dropping them merges a whole series into one note.
     return " ".join(sorted(set(w for w in s.split() if len(w) > 2 or w.isdigit())))
+
+
+def diversify(ranked: list, vecs: dict, per_note: int = 2, twin: float = 0.85) -> list:
+    """Stop one hub note monopolising the list.
+
+    Without this, a note like `how-to-defi-advanced-coingecko` fills every slot by
+    matching five near-identical `DeFi Protocol Review - …` notes, each reporting
+    the same four shared terms. That is one finding shown five times, and it
+    crowds out four genuinely different ones.
+
+    Two rules: at most `per_note` suggestions touching any single note, and no
+    second suggestion whose target is a near-twin of one already accepted for the
+    same source.
+    """
+    used = Counter()
+    accepted: list = []
+    picked_targets: dict[str, list[str]] = defaultdict(list)
+
+    for r in ranked:
+        a, b = r["a"], r["b"]
+        if used[a] >= per_note or used[b] >= per_note:
+            continue
+        twins = 0
+        for side, other in ((a, b), (b, a)):
+            for prev in picked_targets[side]:
+                if cosine(vecs.get(other, {}), vecs.get(prev, {})) > twin:
+                    twins += 1
+                    break
+        if twins:
+            r["also_similar"] = True
+            continue
+        accepted.append(r)
+        used[a] += 1
+        used[b] += 1
+        picked_targets[a].append(b)
+        picked_targets[b].append(a)
+    return accepted
 
 
 # ---------------------------------------------------------------------------
@@ -206,8 +247,25 @@ def analyse(notes: dict, seen: set, top: int, min_sim: float) -> dict:
         group = sorted(group)
         sims = [cosine(vecs[group[i]], vecs[group[i + 1]]) for i in range(len(group) - 1)]
         if sims and sum(sims) / len(sims) > 0.97:
-            stalled.append({"series": sk, "count": len(group),
+            stalled.append({"series": sk, "count": len(group), "kind": "dated series",
                             "sim": sum(sims) / len(sims), "example": group[0]})
+
+    # Same pathology, different wrapper: a generator emitting many near-identical
+    # notes distinguished only by a hash or id suffix rather than a date.
+    by_prefix = defaultdict(list)
+    for k in keys:
+        words = re.split(r"[-_\s]+", notes[k]["stem"])
+        if len(words) >= 3:
+            by_prefix[" ".join(w.lower() for w in words[:3])].append(k)
+    for pk, group in by_prefix.items():
+        if len(group) < 3 or any(pk == s["series"] for s in stalled):
+            continue
+        group = sorted(group)
+        sims = [cosine(vecs[group[i]], vecs[group[i + 1]]) for i in range(len(group) - 1)]
+        if sims and sum(sims) / len(sims) > 0.92:
+            stalled.append({"series": pk, "count": len(group), "kind": "generated family",
+                            "sim": sum(sims) / len(sims), "example": group[0]})
+
     stalled.sort(key=lambda r: -r["count"])
 
     # -- similarity --------------------------------------------------------
@@ -233,6 +291,9 @@ def analyse(notes: dict, seen: set, top: int, min_sim: float) -> dict:
     analogies.sort(key=lambda r: -r["sim"])
     similar.sort(key=lambda r: -r["sim"])
     dupes.sort(key=lambda r: -r["sim"])
+
+    analogies = diversify(analogies, vecs)
+    similar = diversify(similar, vecs)
     return {"duplicates": dupes, "stalled": stalled,
             "analogies": analogies[:top], "similar": similar[:top]}
 
@@ -269,11 +330,13 @@ def render(res: dict, notes: dict, today: str) -> str:
 
     if res["stalled"]:
         L += ["## Stalled generators", "",
-              "These dated series produce near-identical output every run. Whatever writes",
-              "them is reporting nothing new — fix the generator, or stop running it.", ""]
+              "These families of notes are near-identical to each other. Whatever writes",
+              "them is producing volume, not information — fix the generator or stop it.",
+              "A *dated series* repeats every run; a *generated family* emits many",
+              "near-copies distinguished only by an id suffix.", ""]
         for r in res["stalled"]:
-            L.append(f"- `{r['series']}` — {r['count']} notes, {r['sim']:.0%} identical "
-                     f"between consecutive entries (e.g. `{r['example']}`)")
+            L.append(f"- `{r['series']}` — {r['kind']}, {r['count']} notes, {r['sim']:.0%} "
+                     f"identical between consecutive entries (e.g. `{r['example']}`)")
         L.append("")
 
     if res["analogies"]:
@@ -346,7 +409,7 @@ def main() -> int:
         print(f"  MERGE  {notes[d['a']]['stem']}")
         print(f"      +  {notes[d['b']]['stem']}   ({d['sim']:.0%} overlap)")
     for r in res["stalled"][:5]:
-        print(f"  STALL  {r['series']} — {r['count']} notes, {r['sim']:.0%} identical")
+        print(f"  STALL  {r['series']} — {r['kind']}, {r['count']} notes, {r['sim']:.0%} identical")
     for r in res["analogies"][:5]:
         print(f"  LINK   {notes[r['a']]['stem']}")
         print(f"      ↔  {notes[r['b']]['stem']}   ({r['sim']:.0%}: {', '.join(r['terms'][:4])})")
