@@ -1,0 +1,9 @@
+{
+  "accentColor": "#2fcf99",
+  "theme": "obsidian",
+  "enabledCssSnippets": [
+    "galaxy"
+  ],
+  "baseFontSize": 16,
+  "translucency": true
+}

@@ -1,0 +1,127 @@
+/* ===========================================================================
+   Galaxy — deep-space theme for the LLM Wiki vault.
+
+   Enable in Obsidian: Settings → Appearance → CSS snippets → galaxy.
+   (It is pre-enabled via .obsidian/appearance.json; hit the reload button if it
+   does not appear immediately.)
+
+   Colours match tools/galaxy/template.html so the in-app graph and the 3D
+   galaxy view read as one system:
+     blue   evidence      · aqua understanding · orange navigation
+   Every hue clears 3:1 against the surface, and the graph's colour groups are
+   backed by the folder names in the legend — type is never colour-alone.
+   ========================================================================== */
+
+.theme-dark {
+  --galaxy-void:      #05060d;
+  --galaxy-deep:      #0a0d1a;
+  --galaxy-surface:   #10141f;
+  --galaxy-border:    #1e2740;
+
+  --fam-evidence:      #3987e5;
+  --fam-understanding: #199e70;
+  --fam-action:        #d95926;
+
+  --background-primary:       var(--galaxy-void);
+  --background-primary-alt:   var(--galaxy-deep);
+  --background-secondary:     var(--galaxy-deep);
+  --background-secondary-alt: var(--galaxy-surface);
+  --background-modifier-border: var(--galaxy-border);
+
+  --text-normal:   #e8edff;
+  --text-muted:    #97a3c4;
+  --text-faint:    #626d8e;
+  --text-accent:   #2fcf99;
+  --text-accent-hover: #5fe0b4;
+
+  --interactive-accent: #199e70;
+  --link-color:        #6da7ec;
+  --link-color-hover:  #9cc4f4;
+  --link-unresolved-color: #d95926;
+  --link-unresolved-opacity: 0.65;
+
+  --tag-background: rgba(47, 207, 153, .12);
+  --tag-color:      #2fcf99;
+
+  --graph-line:    #2a3350;
+  --graph-node:    #8fa4d8;
+  --graph-node-unresolved: #d95926;
+  --graph-node-focused:    #ffffff;
+  --graph-node-tag:        #f5a883;
+  --graph-node-attachment: #9085e9;
+}
+
+/* Nebula wash behind the workspace ----------------------------------------- */
+.theme-dark .workspace {
+  background-image:
+    radial-gradient(ellipse 900px 620px at 12% -8%,  rgba(57,135,229,.10), transparent 62%),
+    radial-gradient(ellipse 780px 560px at 88% 108%, rgba(217,89,38,.08),  transparent 60%),
+    radial-gradient(ellipse 700px 500px at 62% 42%,  rgba(25,158,112,.06), transparent 58%);
+  background-attachment: fixed;
+}
+
+/* Graph view --------------------------------------------------------------- */
+.theme-dark .workspace-leaf-content[data-type="graph"] .view-content {
+  background-color: var(--galaxy-void);
+  background-image:
+    radial-gradient(ellipse at 50% 50%, rgba(20,30,60,.55), transparent 72%),
+    radial-gradient(ellipse 500px 400px at 22% 28%, rgba(57,135,229,.14), transparent 60%),
+    radial-gradient(ellipse 460px 380px at 76% 70%, rgba(25,158,112,.12), transparent 60%),
+    radial-gradient(ellipse 420px 340px at 55% 86%, rgba(217,89,38,.10), transparent 60%);
+}
+/* the glow that makes nodes read as stars rather than dots */
+.theme-dark .workspace-leaf-content[data-type="graph"] canvas,
+.theme-dark .workspace-leaf-content[data-type="localgraph"] canvas {
+  filter: saturate(1.22) brightness(1.1) drop-shadow(0 0 5px rgba(120,170,255,.30));
+}
+
+/* Frontmatter properties --------------------------------------------------- */
+.theme-dark .metadata-container {
+  background: rgba(16,20,31,.55);
+  border: 1px solid var(--galaxy-border);
+  border-radius: 10px;
+  padding: 8px 12px;
+}
+.theme-dark .metadata-property[data-property-key="confidence"] .metadata-input-longtext,
+.theme-dark .metadata-property[data-property-key="confidence"] input { color: #2fcf99; }
+.theme-dark .metadata-property[data-property-key="tier"] input       { color: #6da7ec; }
+.theme-dark .metadata-property[data-property-key="status"] input     { color: #f0885c; }
+
+/* Typed links (`depends-on:: [[X]]`) read as edges, not as prose ------------ */
+.theme-dark .markdown-preview-view li:has(> .dataview.inline-field),
+.theme-dark .markdown-rendered .dataview.inline-field-key {
+  letter-spacing: .3px;
+}
+.theme-dark .dataview.inline-field-key {
+  font-size: .82em; text-transform: uppercase; color: var(--text-faint);
+  font-weight: 600; margin-right: 4px;
+}
+.theme-dark .dataview.inline-field-value { color: var(--text-normal); }
+
+/* Superseded notes recede without disappearing ----------------------------- */
+.theme-dark .markdown-preview-view:has(.metadata-property[data-property-key="status"] input[value="superseded"]) {
+  opacity: .78;
+}
+
+/* Headings ----------------------------------------------------------------- */
+.theme-dark .markdown-rendered h1 { color: #ffffff; }
+.theme-dark .markdown-rendered h2 { color: #cfe0ff; border-bottom: 1px solid var(--galaxy-border); padding-bottom: 3px; }
+.theme-dark .markdown-rendered h3 { color: #a8b8dd; }
+
+/* Callouts ----------------------------------------------------------------- */
+.theme-dark .markdown-rendered blockquote {
+  border-left: 2px solid var(--fam-understanding);
+  background: rgba(25,158,112,.06);
+  border-radius: 0 8px 8px 0;
+  color: var(--text-muted);
+}
+
+/* Folder tint in the file explorer — mirrors the galaxy legend -------------- */
+.theme-dark .nav-folder-title[data-path="wiki/literature"] .nav-folder-title-content { color: #6da7ec; }
+.theme-dark .nav-folder-title[data-path="wiki/journal"]    .nav-folder-title-content { color: #3987e5; }
+.theme-dark .nav-folder-title[data-path="wiki/inbox"]      .nav-folder-title-content { color: #256abf; }
+.theme-dark .nav-folder-title[data-path="wiki/concepts"]   .nav-folder-title-content { color: #2fcf99; }
+.theme-dark .nav-folder-title[data-path="wiki/entities"]   .nav-folder-title-content { color: #199e70; }
+.theme-dark .nav-folder-title[data-path="wiki/maps"]       .nav-folder-title-content { color: #f5a883; }
+.theme-dark .nav-folder-title[data-path="wiki/procedures"] .nav-folder-title-content { color: #f0885c; }
+.theme-dark .nav-folder-title[data-path="wiki/questions"]  .nav-folder-title-content { color: #d95926; }
