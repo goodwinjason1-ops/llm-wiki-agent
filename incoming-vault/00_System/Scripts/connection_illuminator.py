@@ -171,6 +171,9 @@ def title_key(stem: str) -> str:
     # review, not a different subject. Four reviews of one protocol distinguished
     # only by hash is redundancy worth surfacing.
     s = re.sub(r"[-_][0-9a-f]{6,12}$", "", stem, flags=re.IGNORECASE)
+    # Drop apostrophes rather than splitting on them: "Trader's" must match the
+    # kebab-case "traders", not become "trader" + a discarded "s".
+    s = re.sub(r"['\u2019]", "", s)
     s = re.sub(r"[-_]", " ", s).lower()
     for w in ("youtube", "source review", "source summary", "capture", "review", "source"):
         s = s.replace(w, " ")

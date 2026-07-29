@@ -56,3 +56,9 @@ The creator argues that AI coding agents are often optimized to make the user fe
 - [[Second Brain Agentic Capture Improvements - Captures 1 and 4]]
 - [[Telegram Quick Capture Workflow]]
 - [[Current Ari Handoff]]
+
+## Wiki concepts
+
+Synthesised from this source:
+
+- [[persistent-context-business]]

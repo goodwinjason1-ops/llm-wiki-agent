@@ -29,3 +29,9 @@ Strong fit. This reinforces Ari's context guard, inbox processor, connection ill
 ## Next implementation idea
 
 Create a `vault_loop_runner.py` that chains: inbox processor, connection illuminator, vault lint, handoff refresh, and daily dashboard update.
+
+## Wiki concepts
+
+Synthesised from this source:
+
+- [[ai-second-brain]]

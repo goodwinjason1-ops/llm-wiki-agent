@@ -111,3 +111,9 @@ Do not import claimed strategies directly. Import the **validation discipline**.
 - [[QTF-016 Social Trading Claim Review Protocol]]
 - [[Self-Improvement Protocol|AI Quant Trading Floor Self-Improvement Protocol]]
 - [[Ari Context Guard and Handoff Workflow]]
+
+## Wiki concepts
+
+Synthesised from this source:
+
+- [[claim-intake]]

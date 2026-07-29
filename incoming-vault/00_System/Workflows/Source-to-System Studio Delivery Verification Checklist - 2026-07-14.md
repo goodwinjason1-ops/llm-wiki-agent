@@ -6,7 +6,7 @@ type: checklist
 status: active
 owner: Source-to-System Studio
 inspiration: Clore verification loops
-related: [[Clore Money-Making Video - Source Reviews - 2026-07-14]]
+related: [[Clore Money-Making Video - Source Review - 2026-07-14]]
 tags: [quality-assurance, delivery, verification, checklist]
 ---
 

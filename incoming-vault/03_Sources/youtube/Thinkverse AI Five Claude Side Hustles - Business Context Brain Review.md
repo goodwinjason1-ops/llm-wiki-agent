@@ -320,3 +320,9 @@ The next validation step is one real or permission-based sample using our existi
 - [[README - BuyerProof AU]]
 - [[Context Map Sprint Delivery Workflow]]
 - [[Business Context Brain Client Intake Guide]]
+
+## Wiki concepts
+
+Synthesised from this source:
+
+- [[persistent-context-business]]

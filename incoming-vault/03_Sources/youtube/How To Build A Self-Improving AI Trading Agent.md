@@ -58,3 +58,9 @@ The existing [[Self-Improvement Protocol|AI Quant Trading Floor Self-Improvement
 ## Caution
 
 The video discusses real-money trading, Railway deployment, and agents deciding when a system is ready. In this vault, the safe interpretation is: agents may research, review, backtest, and paper-test. Live trading remains disabled unless Jayse gives explicit, separate approval and risk controls are implemented.
+
+## Wiki concepts
+
+Synthesised from this source:
+
+- [[llm-built-trading-bot]]

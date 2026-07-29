@@ -64,3 +64,9 @@ The supplied Reddit short-share URL returned HTTP 403 through anonymous/Jina acc
 
 - The claimed datasets, code, wallet attribution and calculations were not linked in a reproducible package in the accessible post.
 - This capture is a source record, not an endorsement or proof of profitability.
+
+## Wiki concepts
+
+Synthesised from this source:
+
+- [[claim-intake]]

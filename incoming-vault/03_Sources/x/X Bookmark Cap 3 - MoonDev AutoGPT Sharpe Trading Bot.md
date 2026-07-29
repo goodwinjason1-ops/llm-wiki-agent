@@ -39,3 +39,9 @@ Relevant to AI Quant and the autonomous-agent roadmap, but only through the exis
 ## Next step
 
 Find/open the underlying MoonDev article/video and ingest the full rules before implementation.
+
+## Wiki concepts
+
+Synthesised from this source:
+
+- [[llm-built-trading-bot]]

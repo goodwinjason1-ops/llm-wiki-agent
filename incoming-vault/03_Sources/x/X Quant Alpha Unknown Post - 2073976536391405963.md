@@ -26,3 +26,10 @@ AI Quant alpha intake placeholder: source unavailable, store until original can 
 ## Required next step
 
 Re-open the original X post/video through a working X/browser/agent-reach backend, save metadata/transcript where possible, then replace this low-confidence placeholder with a real source summary.
+
+## Wiki concepts
+
+Synthesised from this source:
+
+- [[claim-intake]]
+- [[source-limited-capture]]

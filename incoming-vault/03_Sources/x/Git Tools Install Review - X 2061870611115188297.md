@@ -121,3 +121,9 @@ Correct fit: **agent/dev workflow**, not trading-specific.
 - [[Antoine On-Chain Alpha Dashboard]]
 - [[Hermes Remote VPS Migration Plan - Oracle Always Free]]
 - [[Ari Context Guard and Handoff Workflow]]
+
+## Wiki concepts
+
+Synthesised from this source:
+
+- [[agent-continuity-infrastructure]]

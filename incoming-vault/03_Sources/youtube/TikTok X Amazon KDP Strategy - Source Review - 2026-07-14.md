@@ -205,3 +205,9 @@ Current website already does this well. Maintain:
 **Process insight only.** The external traffic → platform ranking pattern is worth testing via LinkedIn/TikTok content. The specific tactics (TikTok virality, broad keywords, deprioritizing quality) are not applicable to our business model or ethics.
 
 **File as:** Content strategy reference. Experiment with LinkedIn posting for 30 days, measure enquiry sources.
+
+## Wiki concepts
+
+Synthesised from this source:
+
+- [[persistent-context-business]]

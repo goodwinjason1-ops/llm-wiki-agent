@@ -36,3 +36,9 @@ Very strong fit for the AI Quant Trading Floor as a **morning idea generator**, 
 - Antoine On-chain Desk
 - Alternative Venue Desk
 - Risk/Review Board
+
+## Wiki concepts
+
+Synthesised from this source:
+
+- [[ai-second-brain]]

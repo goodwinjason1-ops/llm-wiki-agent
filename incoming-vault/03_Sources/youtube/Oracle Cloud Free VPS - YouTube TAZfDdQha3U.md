@@ -68,3 +68,9 @@ Worth evaluating, but not blindly moving everything. Best first step is a **non-
 - [[AI Second Brain Dashboard]]
 - [[Android Obsidian Sync via Syncthing]]
 - [[Ari Verification and Handoff Operating Pattern]]
+
+## Wiki concepts
+
+Synthesised from this source:
+
+- [[agent-continuity-infrastructure]]

@@ -41,3 +41,9 @@ This source supports the **Business Context Brain** direction: businesses need s
 Add this to the Business Context Brain pitch:
 
 > "Your company knowledge should not reset every time someone opens a new AI chat. We turn your docs, videos, quotes, and brainstorms into a persistent context system your team and AI tools can reuse."
+
+## Wiki concepts
+
+Synthesised from this source:
+
+- [[ai-second-brain]]

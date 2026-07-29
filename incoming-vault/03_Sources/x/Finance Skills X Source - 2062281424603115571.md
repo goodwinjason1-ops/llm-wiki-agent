@@ -26,3 +26,9 @@ Source unavailable; no finance skills installed. Any future install needs source
 ## Required next step
 
 Re-open the original X post/video through a working X/browser/agent-reach backend, save metadata/transcript where possible, then replace this low-confidence placeholder with a real source summary.
+
+## Wiki concepts
+
+Synthesised from this source:
+
+- [[ai-second-brain]]

@@ -37,3 +37,9 @@ This video supports the broader thesis that businesses and creators need **persi
 ## Transcript excerpt
 
 > Starting a one-person business with Claude is the biggest opportunity for 2026. On one end, you have people literally building billion-dollar companies by themselves, but on the other end, you have everyday regular 9-to-5 employees making their first $10,000 online just using Claude. And I know by now you've probably seen a ton of YouTube videos on how to make money online with AI. But let me ask you, after all those hours watching these videos, how much money have you made? Zero, right? And you're not alone, and it's because almost every single creator on YouTube is teaching you the wrong thing. These guys are so obsessed with the technicals of how to opening terminals, making things super complicated, but nobody has time to watch a 4-hour course that doesn't even teach you how to get clients. So, in this video, I'm going to show you the exact opposite and walk you through step by step exactly how you can get your first high-paying client in the [music] AI space in the next 30 days. And I know this works because I've been teaching this method for the last 2 years. Sandy, one of my clients, for example, was literally just a 9-to-5 employee insurance sales manager. And within the la...
+
+## Wiki concepts
+
+Synthesised from this source:
+
+- [[persistent-context-business]]

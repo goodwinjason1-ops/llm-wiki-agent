@@ -54,3 +54,9 @@ Ari/default orchestrator
 ## Applied recommendation
 
 Create a reusable workflow note: [[Parallel Agent Research Board Workflow]]. Use it for Antoine candidate scans, Quant Floor batch evaluations, and Business Context Brain launch asset passes.
+
+## Wiki concepts
+
+Synthesised from this source:
+
+- [[agent-continuity-infrastructure]]

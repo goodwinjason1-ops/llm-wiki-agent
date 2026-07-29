@@ -53,3 +53,9 @@ The video describes a quant-style regime framework: instead of reading charts su
 ## Warnings
 
 This is research material, not financial advice. All strategies must be paper-tested and walk-forward validated before any live use.
+
+## Wiki concepts
+
+Synthesised from this source:
+
+- [[llm-built-trading-bot]]

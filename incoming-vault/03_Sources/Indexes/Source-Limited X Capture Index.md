@@ -28,3 +28,9 @@ These captures preserve source identity and Jayse's original intent, but their c
 Use Agent Reach/FxTwitter/Jina/browser fallbacks. Replace placeholder summaries only when author, text/video content and linked material can be verified.
 
 Related navigation: [[Raw Source Corpus Navigation]], [[AI Quant Trading Floor]], [[AI Second Brain Dashboard]].
+
+## Wiki concepts
+
+Synthesised from this source:
+
+- [[source-limited-capture]]

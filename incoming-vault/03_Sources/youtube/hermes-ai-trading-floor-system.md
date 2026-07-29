@@ -50,3 +50,9 @@ The video repeatedly references a workbook and links in the description, but the
 ## Safety stance
 
 No autonomous live trading until a strategy has passed paper trading, walk-forward validation, risk checks, and explicit human approval.
+
+## Wiki concepts
+
+Synthesised from this source:
+
+- [[ai-second-brain]]

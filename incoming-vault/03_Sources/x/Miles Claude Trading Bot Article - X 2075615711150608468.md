@@ -75,3 +75,9 @@ Review as a possible architecture and workflow input for [[AI Quant Trading Floo
 ## Preliminary classification
 
 **Useful workflow source; unverified performance claim.** The strongest immediate value is process design—objective rules, Pine generation, CSV evidence and human-approved alerts—not the headline profit number.
+
+## Wiki concepts
+
+Synthesised from this source:
+
+- [[llm-built-trading-bot]]

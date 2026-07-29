@@ -26,3 +26,9 @@ MoonDev-style claims require order-book/replay validation; reuse [[QTF-007 MoonD
 ## Required next step
 
 Re-open the original X post/video through a working X/browser/agent-reach backend, save metadata/transcript where possible, then replace this low-confidence placeholder with a real source summary.
+
+## Wiki concepts
+
+Synthesised from this source:
+
+- [[source-limited-capture]]

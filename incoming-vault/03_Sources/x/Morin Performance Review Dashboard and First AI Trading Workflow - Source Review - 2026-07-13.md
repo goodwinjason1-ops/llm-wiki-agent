@@ -142,3 +142,9 @@ Paper trade/event ledger
 - Sending full journals to a model without redaction/data-minimisation review.
 - Treating repeated tags as causal explanations.
 - Treating a dashboard as evidence that a strategy has edge.
+
+## Wiki concepts
+
+Synthesised from this source:
+
+- [[llm-built-trading-bot]]

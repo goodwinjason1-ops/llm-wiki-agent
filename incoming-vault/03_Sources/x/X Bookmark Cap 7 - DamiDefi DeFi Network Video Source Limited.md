@@ -30,3 +30,9 @@ Do not extract trading actions from this yet. Needs the full post/video/comment 
 ## Next step
 
 Open this bookmark directly or provide the tweet URL/text so Ari can classify it into: wallet intelligence, protocol graph, DeFi yield, airdrop/farming, token launch, or unrelated visual content.
+
+## Wiki concepts
+
+Synthesised from this source:
+
+- [[source-limited-capture]]

@@ -57,3 +57,9 @@ Jayse currently trades crypto and has access to major CEXs/DEXs for crypto/on-ch
 ## Safety interpretation
 
 This project implements research, scanning, backtesting, paper ledgers, and human-review candidates only. Live execution remains disabled until explicitly approved and separately scoped.
+
+## Wiki concepts
+
+Synthesised from this source:
+
+- [[llm-built-trading-bot]]

@@ -40,3 +40,9 @@ The video argues that local coding assistants are becoming viable because open c
 ## Transcript status
 
 Transcript fetched successfully. Full transcript retained in tool cache for this session; this note stores the working summary only.
+
+## Wiki concepts
+
+Synthesised from this source:
+
+- [[agent-continuity-infrastructure]]

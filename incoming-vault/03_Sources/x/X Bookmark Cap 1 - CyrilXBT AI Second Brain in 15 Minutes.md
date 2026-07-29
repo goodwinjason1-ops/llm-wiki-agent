@@ -29,3 +29,9 @@ Useful but mostly **already aligned** with the existing AI Second Brain. The val
 ## Caution
 
 Do not overfit to Claude Desktop/Claude Code wording; Jayse's stack is Hermes/Codex/Obsidian plus optional Claude. Keep tool-agnostic language.
+
+## Wiki concepts
+
+Synthesised from this source:
+
+- [[ai-second-brain]]

@@ -29,3 +29,9 @@ Useful. This maps directly to Hermes/Claude/Codex skill authoring and the Addy O
 ## Next step
 
 When time permits, compare Hermes skill authoring patterns with Anthropic's skill docs and patch Jayse's local skill practices if there is a useful gap.
+
+## Wiki concepts
+
+Synthesised from this source:
+
+- [[agent-continuity-infrastructure]]

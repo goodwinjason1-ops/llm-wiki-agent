@@ -296,3 +296,9 @@ When sessions get long (>200K tokens):
 **Process insights only.** Multi-persona validation and verification loops are worth adopting. Subagents and `/goal` are less applicable. No direct business model alpha.
 
 **File as:** Operational workflow reference. Implement multi-persona validation before next pilot commitment.
+
+## Wiki concepts
+
+Synthesised from this source:
+
+- [[persistent-context-business]]

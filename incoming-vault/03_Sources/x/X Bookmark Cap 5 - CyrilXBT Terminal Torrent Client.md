@@ -30,3 +30,9 @@ Low priority for current AI Second Brain / Quant Floor work. Potential personal 
 ## Verdict
 
 Not useful for AI Quant or Antoine. If explored later, keep it isolated, legal-only, VPN/security-reviewed, and outside core project machines.
+
+## Wiki concepts
+
+Synthesised from this source:
+
+- [[agent-continuity-infrastructure]]

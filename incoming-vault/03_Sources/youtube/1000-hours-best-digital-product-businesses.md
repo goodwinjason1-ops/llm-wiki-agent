@@ -39,3 +39,9 @@ This video supports the broader thesis that businesses and creators need **persi
 ## Transcript excerpt
 
 > Over the last 7 years, I've spent well over 1,000 hours studying the best digital product businesses in the world. From normal people doing their first $500 in sales, all the way up to digital product businesses like mine that have done over 32 million in digital product sales. And along the way, I've worked with over 3,000 students helping them build thriving digital product businesses. This is what got me featured in New York Times Square for the impact that I've had and invited to speak at the largest online marketing conference in North America [music] just a couple weeks ago. So, in this video, I'm going to share every single lesson that I've pulled from that in extreme detail so you can apply into your business right now today. Because here's the thing, in 2026, the digital product info game has completely changed. If your strategy still looks like launch a course, sell something high ticket, use a sales team, run paid ads, slap a money-back guarantee on it, and repeat, you're playing a 2020 game in a 2026 marketplace. And the market has moved on without you. So, each lesson I share with you today is going to be extremely tactical, specific, something that you can apply immed...
+
+## Wiki concepts
+
+Synthesised from this source:
+
+- [[persistent-context-business]]

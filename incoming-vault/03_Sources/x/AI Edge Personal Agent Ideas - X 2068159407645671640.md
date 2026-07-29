@@ -65,3 +65,9 @@ If X/Unigram shares only title text without a URL, use X → **Share** → **Cop
 - Health/fitness coach must not diagnose or provide medical treatment advice.
 - Travel planner stays parked.
 - Any future source upgrades should replace this user-context note with full tweet/thread text if accessible.
+
+## Wiki concepts
+
+Synthesised from this source:
+
+- [[ai-second-brain]]

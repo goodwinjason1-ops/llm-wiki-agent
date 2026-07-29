@@ -26,6 +26,7 @@ import argparse
 import re
 import sys
 from collections import Counter
+from difflib import get_close_matches
 from pathlib import Path
 
 SKIP_DIRS = {".git", ".obsidian", ".claude", ".stfolder", ".venv", "node_modules",
@@ -33,6 +34,14 @@ SKIP_DIRS = {".git", ".obsidian", ".claude", ".stfolder", ".venv", "node_modules
 
 FM = re.compile(r"\A(---\r?\n)(.*?)(\r?\n---\s*?\r?\n)", re.DOTALL)
 TYPE_LINE = re.compile(r"^(type:\s*)(.+?)\s*$", re.MULTILINE)
+WIKILINK = re.compile(r"(!?)\[\[([^\]\[|#^]+)((?:[#|][^\]\[]*)?)\]\]")
+
+# `[[price,qty]]` and `[[morning_quant_brief.py]]` are code and filenames that
+# happen to use bracket syntax. Counting them as broken links buries the real ones.
+def is_codeish(target: str) -> bool:
+    t = target.strip()
+    return ("," in t or "=" in t or t.endswith((".py", ".json", ".js", ".sh", ".csv"))
+            or (" " not in t and "_" in t and "-" not in t))
 
 # Values that mean the same thing. Left side is already lowercase-hyphenated.
 SYNONYMS = {
@@ -89,10 +98,74 @@ def fix_index(text: str) -> tuple[str, int]:
     return out, n
 
 
+def fix_links(root: Path, apply: bool) -> None:
+    """Repair wikilinks that miss an existing note by a hair.
+
+    `[[… - Source Reviews - 2026-07-14]]` where the file is `Source Review`, or
+    `- 2026-07-13` where it is `- 2026-07-14`. Only rewrites when exactly one
+    candidate clears a high similarity bar, because a confident wrong rewrite
+    silently points a note at the wrong neighbour.
+    """
+    stems = {}
+    for p, rel in iter_notes(root):
+        stems.setdefault(p.stem.lower(), p.stem)
+
+    fixed = unfixable = skipped = 0
+    needs_review: list[tuple[str, str, str]] = []
+    for p, rel in iter_notes(root):
+        try:
+            text = original = p.read_text(encoding="utf-8")
+        except (OSError, UnicodeDecodeError):
+            continue
+
+        def repl(m):
+            nonlocal fixed, unfixable, skipped
+            target = m.group(2).strip()
+            key = target.rsplit("/", 1)[-1].removesuffix(".md").lower()
+            if key in stems:
+                return m.group(0)
+            if is_codeish(target):
+                skipped += 1
+                return m.group(0)
+            cand = get_close_matches(key, list(stems), n=2, cutoff=0.92)
+            if len(cand) == 1:
+                # Never auto-fix across a digit change. `QTF-V07 …` and `QTF-V05 …`
+                # are 96% similar and are different strategies; rewriting one to the
+                # other silently corrupts provenance. Dates carry the same risk.
+                # Punctuation and word-form typos are safe; version and date drift
+                # is a human's call.
+                if re.findall(r"\d+", key) != re.findall(r"\d+", cand[0]):
+                    needs_review.append((rel.as_posix(), target, stems[cand[0]]))
+                    return m.group(0)
+                fixed += 1
+                print(f"    {rel}")
+                print(f"      [[{target}]] -> [[{stems[cand[0]]}]]")
+                return f"{m.group(1)}[[{stems[cand[0]]}]]" if not m.group(3) \
+                    else f"{m.group(1)}[[{stems[cand[0]]}{m.group(3)}]]"
+            unfixable += 1
+            return m.group(0)
+
+        text = WIKILINK.sub(repl, text)
+        if apply and text != original:
+            p.write_text(text, encoding="utf-8")
+
+    if needs_review:
+        print(f"\n  NEEDS A HUMAN — close match, but the version or date differs, so an\n"
+              f"  automatic rewrite could point the note at the wrong neighbour:")
+        for rel, target, cand in needs_review:
+            print(f"    {rel}")
+            print(f"      [[{target}]]  ~  [[{cand}]]  ?")
+
+    print(f"\n  links: {fixed} repaired, {len(needs_review)} need a human, "
+          f"{unfixable} point at notes that do not exist, {skipped} ignored as code")
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--root", type=Path, default=Path.cwd())
     ap.add_argument("--apply", action="store_true")
+    ap.add_argument("--fix-links", action="store_true",
+                    help="also repair near-miss wikilinks")
     args = ap.parse_args()
     root = args.root.resolve()
 
@@ -157,6 +230,10 @@ def main() -> int:
             print(f"    {f}")
         if len(nofm) > 8:
             print(f"    … and {len(nofm) - 8} more")
+
+    if args.fix_links:
+        print("\n  Near-miss wikilinks:")
+        fix_links(root, args.apply)
 
     if not args.apply:
         print("\n  Dry run. Nothing written. Re-run with --apply.\n")

@@ -13,3 +13,9 @@ confidence: high
 - Raw evidence: `02_Raw/youtube/transcripts/VDpTU5kdj8A.md`
 
 This companion note makes the human-readable title resolve cleanly while preserving the existing slug-style source filename used by generated scan output.
+
+## Wiki concepts
+
+Synthesised from this source:
+
+- [[llm-built-trading-bot]]

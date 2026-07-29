@@ -78,3 +78,9 @@ Only revisit if we can record much longer Bybit L2 snapshots and test:
 - [[AI Quant Trading Floor]]
 - [[AI Quant Trading Floor Workflow]]
 - [[Quant Floor Data and News Sources Policy]]
+
+## Wiki concepts
+
+Synthesised from this source:
+
+- [[llm-built-trading-bot]]

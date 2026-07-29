@@ -85,3 +85,9 @@ Clone/read-only evaluation
 ## Transcript status
 
 Transcript fetched with `yt-dlp` auto-subs because the regular YouTube transcript API was blocked by YouTube. Working transcript length: 10220 chars.
+
+## Wiki concepts
+
+Synthesised from this source:
+
+- [[llm-built-trading-bot]]

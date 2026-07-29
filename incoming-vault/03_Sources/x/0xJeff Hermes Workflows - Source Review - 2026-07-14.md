@@ -127,3 +127,9 @@ Extend the existing daily briefing to:
 # Decision
 
 File as **process-improvement reference** for the Quant Floor alpha-extraction and alpha-digest pipeline. The architecture is sound, the workflow design is practical, and the contradiction-detection pattern is worth paper-testing. No market-entry alpha claims are accepted from this source.
+
+## Wiki concepts
+
+Synthesised from this source:
+
+- [[agent-continuity-infrastructure]]

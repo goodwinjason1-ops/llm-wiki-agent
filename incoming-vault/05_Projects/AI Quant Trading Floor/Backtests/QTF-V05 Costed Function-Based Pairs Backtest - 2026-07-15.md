@@ -48,7 +48,7 @@ Returned exit code `0`, `errors: []`, and wrote the JSON machine report above. T
 
 ## Related
 
-- [[Dami-Defi + Robot James + TradingView Implementation Sprint - 2026-07-13]]
+- [[Dami-Defi Robot James TradingView Implementation Sprint - 2026-07-13]]
 - [[QTF Verification and Delivery Control - 2026-07-15]]
 - [[QTF Edge-First Production Mandate]]
 - [[QTF-023 Robot James Crypto Pairs Smoke Test - 2026-07-13]]

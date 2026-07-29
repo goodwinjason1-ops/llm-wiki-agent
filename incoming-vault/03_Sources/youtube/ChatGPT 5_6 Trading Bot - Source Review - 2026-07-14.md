@@ -116,3 +116,9 @@ Any strategy discovered through an automated search across many parameter combin
 # Decision
 
 **Process architecture note only.** The MCP-server-backtesting pattern is worth investigating. The specific strategy claim is rejected as unsupported. Forward-testing gate is reinforced.
+
+## Wiki concepts
+
+Synthesised from this source:
+
+- [[llm-built-trading-bot]]

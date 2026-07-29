@@ -95,3 +95,9 @@ Promote the following as research candidates, not proven alpha:
 - Miles supplies the Pine/TradingView implementation loop.
 - Robot James supplies the causal filter: distinguish forced technical flow from informed repricing and bad comparisons.
 - The combined system is a research-to-paper pipeline, not an autonomous trading bot.
+
+## Wiki concepts
+
+Synthesised from this source:
+
+- [[llm-built-trading-bot]]

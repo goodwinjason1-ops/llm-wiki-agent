@@ -61,3 +61,9 @@ Google’s local-ranking guidance says local ranking is mainly based on relevanc
 ## Business conclusion
 
 This is a strong Source-to-System Studio offer because it combines source context, local customer signals, operational maintenance and decision reporting. It should be sold as **Local Visibility & Reputation Operations**, with Measurement & Growth Intelligence as the adjacent offer.
+
+## Wiki concepts
+
+Synthesised from this source:
+
+- [[persistent-context-business]]

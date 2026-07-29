@@ -113,3 +113,9 @@ Create a **Robinhood Chain Antoine discovery spike** with no wallet or execution
 - [[Antoine On-Chain Alpha Desk]]
 - [[QTF-010 Antoine On-Chain Meme and Airdrop Alpha Pipeline]]
 - [[QTF-014 Antoine Meme Coin Techniques Library]]
+
+## Wiki concepts
+
+Synthesised from this source:
+
+- [[llm-built-trading-bot]]

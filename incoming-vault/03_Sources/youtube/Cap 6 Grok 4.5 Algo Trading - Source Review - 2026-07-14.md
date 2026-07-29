@@ -304,3 +304,9 @@ VectorBT  | ✅          | ❌        | ❌  | ✅    | Free | ⚠️
 - [ ] Test RST on existing QTF-023 Robot James pairs strategy (should fail)
 - [ ] Evaluate Jesse framework (1 hour research, decision by EOW)
 - [ ] Configure Hermes auto-compaction threshold to 70%
+
+## Wiki concepts
+
+Synthesised from this source:
+
+- [[llm-built-trading-bot]]

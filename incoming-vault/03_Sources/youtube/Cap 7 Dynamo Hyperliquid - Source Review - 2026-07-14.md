@@ -384,3 +384,9 @@ class TokenUnlockMonitor:
 - [ ] If interested: Build `unlock_monitor.py` (Week 3)
 - [ ] Integrate with daily Telegram brief
 - [ ] Test framework on Hyperliquid (calculate current P/S, market share, next unlock)
+
+## Wiki concepts
+
+Synthesised from this source:
+
+- [[llm-built-trading-bot]]
