@@ -1,0 +1,45 @@
+{
+  "timestamp": "20260729T095724",
+  "merges": [
+    {
+      "from": "03_Sources/articles/robotics-physical-ai-investing-guide-miles-deutscher-2026-07-07.md",
+      "to": "09_Archive/merged/robotics-physical-ai-investing-guide-miles-deutscher-2026-07-07.md",
+      "keeper": "03_Sources/articles/Robotics Physical AI Investing Guide - Miles Deutscher 2026-07-07.md",
+      "loser_stem": "robotics-physical-ai-investing-guide-miles-deutscher-2026-07-07",
+      "keeper_stem": "Robotics Physical AI Investing Guide - Miles Deutscher 2026-07-07"
+    },
+    {
+      "from": "03_Sources/youtube/how-to-build-a-self-improving-ai-trading-agent.md",
+      "to": "09_Archive/merged/how-to-build-a-self-improving-ai-trading-agent.md",
+      "keeper": "03_Sources/youtube/How To Build A Self-Improving AI Trading Agent.md",
+      "loser_stem": "how-to-build-a-self-improving-ai-trading-agent",
+      "keeper_stem": "How To Build A Self-Improving AI Trading Agent"
+    },
+    {
+      "from": "03_Sources/youtube/ai-backtesting-tradingview-ema-strategy-VDpTU5kdj8A.md",
+      "to": "09_Archive/merged/ai-backtesting-tradingview-ema-strategy-VDpTU5kdj8A.md",
+      "keeper": "05_Projects/AI Quant Trading Floor/Research/AI Backtesting TradingView EMA Strategy - YouTube VDpTU5kdj8A.md",
+      "loser_stem": "ai-backtesting-tradingview-ema-strategy-VDpTU5kdj8A",
+      "keeper_stem": "AI Backtesting TradingView EMA Strategy - YouTube VDpTU5kdj8A"
+    },
+    {
+      "from": "03_Sources/youtube/Hermes AI Trading Floor System.md",
+      "to": "09_Archive/merged/Hermes AI Trading Floor System.md",
+      "keeper": "03_Sources/youtube/hermes-ai-trading-floor-system.md",
+      "loser_stem": "Hermes AI Trading Floor System",
+      "keeper_stem": "hermes-ai-trading-floor-system"
+    }
+  ],
+  "rewrites": [
+    "00_System/Dashboards/Connection Illumination Dashboard.md",
+    "03_Sources/youtube/AI Backtesting TradingView EMA Strategy - YouTube VDpTU5kdj8A.md",
+    "04_Wiki/queries/Missed Connections Review - 2026-07-08.md",
+    "04_Wiki/queries/Missed Connections Review - 2026-07-09.md",
+    "04_Wiki/queries/Missed Connections Review - 2026-07-10.md",
+    "04_Wiki/queries/Missed Connections Review - 2026-07-11.md",
+    "04_Wiki/queries/Missed Connections Review - 2026-07-12.md",
+    "04_Wiki/queries/Missed Connections Review - 2026-07-29.md",
+    "05_Projects/AI Quant Trading Floor/AI Quant Trading Floor.md",
+    "index.md"
+  ]
+}

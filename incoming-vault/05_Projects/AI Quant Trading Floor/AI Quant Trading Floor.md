@@ -95,7 +95,7 @@ Build a safety-first, self-imving research system for quant trading strategies u
 - [[I Built an AI Trading System From a Trader's YouTube Videos]]
 - [[How To Build A Self-Improving AI Trading Agent]]
 - [[Hedge Fund Method Markov Regime System]]
-- [[Hermes AI Trading Floor System]]
+- [[hermes-ai-trading-floor-system]]
 - [[MoonDev Sharpe Trading Bot X Article - 2016647662637064402]]
 
 ## Self-improvement artifacts

@@ -154,6 +154,7 @@ After any session that writes, say:
 python3 00_System/Scripts/vault_health.py --record          # scoreboard + trend
 python3 00_System/Scripts/connection_illuminator.py --write # what to link
 python3 00_System/Scripts/vault_repair.py --apply           # fix mechanical damage
+python3 00_System/Scripts/merge_notes.py                    # duplicates: list, then --apply
 ```
 
 Related: [[Second Brain Self-Improvement Loop]] · [[synthesis-debt]] ·

@@ -18,16 +18,16 @@ not that the scan failed.
 
 These are not links to add. They are one note wearing two filenames.
 
-- [[Hermes AI Trading Floor System]] and [[hermes-ai-trading-floor-system]] — 100% content overlap. Keep one, redirect the other.
+- [[hermes-ai-trading-floor-system]] and [[hermes-ai-trading-floor-system]] — 100% content overlap. Keep one, redirect the other.
     - `03_Sources/youtube/Hermes AI Trading Floor System.md`
     - `03_Sources/youtube/hermes-ai-trading-floor-system.md`
-- [[How To Build A Self-Improving AI Trading Agent]] and [[how-to-build-a-self-improving-ai-trading-agent]] — 100% content overlap. Keep one, redirect the other.
+- [[How To Build A Self-Improving AI Trading Agent]] and [[How To Build A Self-Improving AI Trading Agent]] — 100% content overlap. Keep one, redirect the other.
     - `03_Sources/youtube/How To Build A Self-Improving AI Trading Agent.md`
     - `03_Sources/youtube/how-to-build-a-self-improving-ai-trading-agent.md`
-- [[Robotics Physical AI Investing Guide - Miles Deutscher 2026-07-07]] and [[robotics-physical-ai-investing-guide-miles-deutscher-2026-07-07]] — 100% content overlap. Keep one, redirect the other.
+- [[Robotics Physical AI Investing Guide - Miles Deutscher 2026-07-07]] and [[Robotics Physical AI Investing Guide - Miles Deutscher 2026-07-07]] — 100% content overlap. Keep one, redirect the other.
     - `03_Sources/articles/Robotics Physical AI Investing Guide - Miles Deutscher 2026-07-07.md`
     - `03_Sources/articles/robotics-physical-ai-investing-guide-miles-deutscher-2026-07-07.md`
-- [[ai-backtesting-tradingview-ema-strategy-VDpTU5kdj8A]] and [[AI Backtesting TradingView EMA Strategy - YouTube VDpTU5kdj8A]] — 99% content overlap. Keep one, redirect the other.
+- [[AI Backtesting TradingView EMA Strategy - YouTube VDpTU5kdj8A]] and [[AI Backtesting TradingView EMA Strategy - YouTube VDpTU5kdj8A]] — 99% content overlap. Keep one, redirect the other.
     - `03_Sources/youtube/ai-backtesting-tradingview-ema-strategy-VDpTU5kdj8A.md`
     - `05_Projects/AI Quant Trading Floor/Research/AI Backtesting TradingView EMA Strategy - YouTube VDpTU5kdj8A.md`
 - [[RbksoyPfQZY]] and [[RbksoyPfQZY]] — 98% content overlap. Keep one, redirect the other.
@@ -45,7 +45,7 @@ These are not links to add. They are one note wearing two filenames.
 - [[README]] and [[README]] — 25% content overlap. Keep one, redirect the other.
     - `05_Projects/AOD Student Placement/Application Packages/README.md`
     - `05_Projects/AOD Student Placement/Follow Ups/README.md`
-- [[AI Backtesting TradingView EMA Strategy - YouTube VDpTU5kdj8A]] and [[ai-backtesting-tradingview-ema-strategy-VDpTU5kdj8A]] — 23% content overlap. Keep one, redirect the other.
+- [[AI Backtesting TradingView EMA Strategy - YouTube VDpTU5kdj8A]] and [[AI Backtesting TradingView EMA Strategy - YouTube VDpTU5kdj8A]] — 23% content overlap. Keep one, redirect the other.
     - `03_Sources/youtube/AI Backtesting TradingView EMA Strategy - YouTube VDpTU5kdj8A.md`
     - `03_Sources/youtube/ai-backtesting-tradingview-ema-strategy-VDpTU5kdj8A.md`
 - [[AI Backtesting TradingView EMA Strategy - YouTube VDpTU5kdj8A]] and [[AI Backtesting TradingView EMA Strategy - YouTube VDpTU5kdj8A]] — 23% content overlap. Keep one, redirect the other.

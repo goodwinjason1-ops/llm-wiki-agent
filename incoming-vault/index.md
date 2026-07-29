@@ -149,7 +149,7 @@ The synthesis layer. Each cites the sources it was abstracted from.
 - [[codex-obsidian-24-7-ai-business-partner]]
 - [[hedge-fund-method-markov-regime-system]]
 - [[hermes-ai-trading-floor-system]]
-- [[how-to-build-a-self-improving-ai-trading-agent]]
+- [[How To Build A Self-Improving AI Trading Agent]]
 - [[i-built-an-ai-trading-system-from-a-traders-youtube-videos]]
 - [[fable-obsidian-second-brain-loop]]
 - [[karpathy-ai-second-brain-connection-layer]]

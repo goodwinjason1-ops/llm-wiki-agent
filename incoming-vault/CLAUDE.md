@@ -53,6 +53,7 @@ Project commands are available under `.claude/commands/`:
 python3 00_System/Scripts/vault_health.py --record          # scoreboard; exits non-zero on failing gates
 python3 00_System/Scripts/connection_illuminator.py --write # merge candidates, stalled series, missed links
 python3 00_System/Scripts/vault_repair.py --apply           # index joins, type vocabulary drift
+python3 00_System/Scripts/merge_notes.py --apply             # merge duplicates, rewrite links, archive losers
 ```
 
 Run `vault_health.py` at the **start** of a session, not the end. It tells you

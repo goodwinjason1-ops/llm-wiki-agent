@@ -6,7 +6,12 @@ type: source-summary
 tags: [trading-agent, hermes, self-improvement, quant, youtube]
 sources: [https://youtu.be/6njREUQAFdg]
 confidence: medium
+status: merged
+merged_into: "[[How To Build A Self-Improving AI Trading Agent]]"
 ---
+> **Merged into [[How To Build A Self-Improving AI Trading Agent]] on 2026-07-29.**
+> Kept for the record. Do not edit — edit the keeper.
+
 
 # How To Build A Self-Improving AI Trading Agent
 

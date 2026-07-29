@@ -6,7 +6,12 @@ type: source-summary
 tags: [youtube, quant, trading, backtesting, pine-script, ai-agent]
 sources: [02_Raw/youtube/transcripts/VDpTU5kdj8A.md]
 confidence: medium
+status: merged
+merged_into: "[[AI Backtesting TradingView EMA Strategy - YouTube VDpTU5kdj8A]]"
 ---
+> **Merged into [[AI Backtesting TradingView EMA Strategy - YouTube VDpTU5kdj8A]] on 2026-07-29.**
+> Kept for the record. Do not edit — edit the keeper.
+
 
 # AI Backtesting TradingView EMA Strategy - YouTube VDpTU5kdj8A
 

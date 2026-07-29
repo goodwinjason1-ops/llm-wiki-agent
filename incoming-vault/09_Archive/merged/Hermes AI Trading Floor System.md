@@ -6,7 +6,12 @@ type: source-summary
 tags: [hermes, trading-floor, quant, telegram, self-improvement, youtube]
 sources: [https://youtu.be/MbfuJZZ01IU]
 confidence: medium
+status: merged
+merged_into: "[[hermes-ai-trading-floor-system]]"
 ---
+> **Merged into [[hermes-ai-trading-floor-system]] on 2026-07-29.**
+> Kept for the record. Do not edit — edit the keeper.
+
 
 # Hermes AI Trading Floor System
 

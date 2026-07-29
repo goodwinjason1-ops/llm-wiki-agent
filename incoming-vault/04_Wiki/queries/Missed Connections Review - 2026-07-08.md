@@ -14,7 +14,7 @@ This filed query captures the highest-level connection questions produced by the
 
 ## Review questions
 
-- Should [[AI Backtesting TradingView EMA Strategy - YouTube VDpTU5kdj8A]] be connected to [[ai-backtesting-tradingview-ema-strategy-VDpTU5kdj8A]]? Shared terms: ai-agent, ai-proposed, applied, approved, architecture, ask, avoid, backtesting, backtests, baseline.
+- Should [[AI Backtesting TradingView EMA Strategy - YouTube VDpTU5kdj8A]] be connected to [[AI Backtesting TradingView EMA Strategy - YouTube VDpTU5kdj8A]]? Shared terms: ai-agent, ai-proposed, applied, approved, architecture, ask, avoid, backtesting, backtests, baseline.
 - Should [[Alternative Paper Ops Lab 05 - Intraday Outcome Resolver and Obsidian Dashboard]] be connected to [[AI Quant Trading Floor Dashboard]]? Shared terms: a2456a3bbb, active, af680f6, allocator, alt, alternative, approx, bucket, calibrated, complete.
 
 ## Next synthesis candidates
