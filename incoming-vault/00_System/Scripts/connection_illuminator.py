@@ -66,7 +66,12 @@ WIKILINK = re.compile(r"!?\[\[([^\]\[|#^]+)")
 DATE_IN_NAME = re.compile(r"\d{4}[-_]\d{2}[-_]\d{2}|\d{8}T\d{6}Z")
 
 SKIP_DIRS = {".git", ".obsidian", ".claude", ".stfolder", ".venv", "node_modules",
-             "__pycache__", ".pytest_cache", "Implementation"}
+             "__pycache__", ".pytest_cache", "Implementation",
+             # Archived material is history, not live knowledge. Including it makes
+             # already-merged notes reappear as merge candidates against the copies
+             # that replaced them.
+             "09_Archive"}
+MERGED_MARK = re.compile(r"^status:\s*merged\s*$", re.MULTILINE)
 STATE_FILE = ".connection_state.json"
 
 
@@ -84,6 +89,9 @@ def load_notes(root: Path) -> dict[str, dict]:
             text = p.read_text(encoding="utf-8", errors="replace")
         except OSError:
             continue
+        head = FM.match(text)
+        if head and MERGED_MARK.search(head.group(1)):
+            continue          # already merged into something else
         body = FM.sub("", text)
         notes[rel.as_posix()] = {
             "path": rel.as_posix(),
