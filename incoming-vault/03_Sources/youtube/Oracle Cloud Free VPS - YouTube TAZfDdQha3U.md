@@ -2,7 +2,7 @@
 title: Oracle Cloud Free VPS - YouTube TAZfDdQha3U
 created: 2026-07-08
 updated: 2026-07-08
-type: source_summary
+type: source-summary
 tags: [youtube, cloud, vps, oracle-cloud, hermes, uptime, infrastructure]
 sources:
   - 02_Raw/youtube/transcripts/TAZfDdQha3U.md

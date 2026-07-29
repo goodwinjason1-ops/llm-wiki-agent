@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - From Jail to Crypto Millionnaire in 1 Year
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=mN-HDZsNT4E
 video_id: mN-HDZsNT4E
 upload_date: 20250207

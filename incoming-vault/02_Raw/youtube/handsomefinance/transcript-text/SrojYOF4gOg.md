@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - I Trade Memecoins For 2 Hours, Realistic Results
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=SrojYOF4gOg
 video_id: SrojYOF4gOg
 upload_date: 20250816

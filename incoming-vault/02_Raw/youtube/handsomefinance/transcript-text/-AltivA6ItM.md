@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - How I Make $500 Every 5 Minutes With Ethical Rug Pulls
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=-AltivA6ItM
 video_id: -AltivA6ItM
 upload_date: 20250723

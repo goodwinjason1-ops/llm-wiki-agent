@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - The 7 Levels of Crypto Traders
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=wgixHDdiMoo
 video_id: wgixHDdiMoo
 upload_date: 20250927

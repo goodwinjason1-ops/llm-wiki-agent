@@ -2,7 +2,7 @@
 title: TikTok X Amazon KDP Strategy - Source Review - 2026-07-14
 created: 2026-07-14
 updated: 2026-07-14
-type: source-review
+type: source-summary
 status: ingested-reviewed
 source_url: https://youtu.be/opJLS3rUPUM
 platform: YouTube

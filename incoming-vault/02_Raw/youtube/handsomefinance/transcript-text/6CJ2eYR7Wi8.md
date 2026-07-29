@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - I Was Wrong About Bitcoin... Here's What Changed My Mind
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=6CJ2eYR7Wi8
 video_id: 6CJ2eYR7Wi8
 upload_date: 20250724

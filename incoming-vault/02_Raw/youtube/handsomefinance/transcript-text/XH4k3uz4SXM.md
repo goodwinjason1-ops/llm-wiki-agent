@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - URGENT - Trump Is Starting The Bull Market Again (Bitcoin Reserve)
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=XH4k3uz4SXM
 video_id: XH4k3uz4SXM
 upload_date: 20260707

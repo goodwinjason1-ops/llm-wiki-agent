@@ -2,7 +2,7 @@
 title: Backtesting Improvement X Source - 2063040672970821655
 created: 2026-07-08
 updated: 2026-07-08
-type: source_summary
+type: source-summary
 status: source-limited
 source_url: https://x.com/i/status/2063040672970821655
 tags: [x, capture, source-limited]

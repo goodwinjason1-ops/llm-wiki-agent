@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - Memecoins are a Video Game (Here’s How You Win)
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=52JV0jlM7uE
 video_id: 52JV0jlM7uE
 upload_date: 20250603

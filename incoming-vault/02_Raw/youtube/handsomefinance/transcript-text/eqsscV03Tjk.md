@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - Forget Memecoins! This New Meta Is INSANE
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=eqsscV03Tjk
 video_id: eqsscV03Tjk
 upload_date: 20250916

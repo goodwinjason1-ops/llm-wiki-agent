@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - I Let Kimi 2.7 Trade My Real Money — It Lost, Then Fixed Itself
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=5ApsrcLuurQ
 video_id: 5ApsrcLuurQ
 upload_date: 20260616

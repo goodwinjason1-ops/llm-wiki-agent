@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - The Wildest Trader Story Ever - From $7k to $100M… to $0
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=olMDf3TSn0o
 video_id: olMDf3TSn0o
 upload_date: 20250708

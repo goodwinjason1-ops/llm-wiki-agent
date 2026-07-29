@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - How I Turned $1,000 Into $55,000 In 30 Days with Crypto
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=9MnNC6hUDKU
 video_id: 9MnNC6hUDKU
 upload_date: 20250108

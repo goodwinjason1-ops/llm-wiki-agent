@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - I Turned $120 Into $10,000 in 1 Week Trading Memecoins
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=7X5Wz6eR8QE
 video_id: 7X5Wz6eR8QE
 upload_date: 20250329

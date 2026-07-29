@@ -2,7 +2,7 @@
 title: Morin Performance Review Dashboard and First AI Trading Workflow - Source Review - 2026-07-13
 created: 2026-07-13
 updated: 2026-07-13
-type: source-review
+type: source-summary
 status: consolidated-ingested-exact-mht-and-image
 capture_note: Cap 3 duplicates/consolidates the already ingested “Stop using AI to trade. Do this instead.” MHT capture; no duplicate raw source created.
 source_author: Trader Morin

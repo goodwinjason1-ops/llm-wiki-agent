@@ -2,7 +2,7 @@
 title: AI Training Bot ChatGPT 5_6 YouTube Video - Source Review - 2026-07-14
 created: 2026-07-14
 updated: 2026-07-14
-type: source-review
+type: source-summary
 status: ingested-reviewed
 source_url: https://youtu.be/BPFwaD0CgZ8
 platform: YouTube

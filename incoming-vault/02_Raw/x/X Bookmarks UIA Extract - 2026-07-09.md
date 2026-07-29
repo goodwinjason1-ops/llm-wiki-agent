@@ -1,6 +1,6 @@
 ---
 title: X Bookmarks UIA Extract - 2026-07-09
-type: raw_capture
+type: raw-capture
 created: 2026-07-09
 updated: 2026-07-09
 source: X Bookmarks app/browser via Windows UI Automation

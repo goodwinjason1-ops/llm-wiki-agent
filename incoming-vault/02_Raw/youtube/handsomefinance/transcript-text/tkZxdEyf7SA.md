@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - He Made +$1M With a Stupid Meme Coin
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=tkZxdEyf7SA
 video_id: tkZxdEyf7SA
 upload_date: 20250802

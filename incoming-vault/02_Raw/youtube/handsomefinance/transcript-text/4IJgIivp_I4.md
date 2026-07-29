@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - How He Turned $300 Into $700,000 in One Year With Crypto (Still Winning)
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=4IJgIivp_I4
 video_id: 4IJgIivp_I4
 upload_date: 20250315

@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - I Got Fired, So I Went All In On Crypto And Made MILLIONS (Bozo Interview)
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=G4F6TcVFWD0
 video_id: G4F6TcVFWD0
 upload_date: 20251117

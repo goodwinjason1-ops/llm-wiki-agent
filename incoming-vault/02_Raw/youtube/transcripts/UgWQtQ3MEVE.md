@@ -2,7 +2,7 @@
 title: YouTube Transcript - Claude + IBKR API: Complete AI Trading Bot Guide
 created: 2026-07-08
 updated: 2026-07-08
-type: raw_source
+type: raw-source
 tags: [youtube, transcript, cap6b]
 source_url: https://youtu.be/UgWQtQ3MEVE
 sha256: 5fa2752103a94b48a36de58a68dd163f5e135a93cb27753f619f97a5fc4db4e8

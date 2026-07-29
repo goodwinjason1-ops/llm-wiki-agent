@@ -2,7 +2,7 @@
 title: Miles Deutscher Vibe-Code TradingView Claude Article - Source Review - 2026-07-13
 created: 2026-07-13
 updated: 2026-07-13
-type: source-review
+type: source-summary
 status: ingested-exact-mht
 source_url: https://x.com/milesdeutscher/status/2052839506659958845
 raw_extract: 02_Raw/x/Miles Deutscher Vibe Code TradingView Claude X Article Extract - 2026-07-13.txt

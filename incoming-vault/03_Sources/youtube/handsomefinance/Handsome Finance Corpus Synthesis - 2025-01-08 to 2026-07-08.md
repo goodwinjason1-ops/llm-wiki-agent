@@ -2,7 +2,7 @@
 title: Handsome Finance Corpus Synthesis - 2025-01-08 to 2026-07-08
 created: 2026-07-08
 updated: 2026-07-08
-type: source_summary
+type: source-summary
 tags: [youtube, handsome-finance, antoine, crypto, memecoin, on-chain, quant]
 sources: [02_Raw/youtube/handsomefinance/handsomefinance-channel-inventory-2025-01-08-to-2026-07-08.json]
 confidence: medium

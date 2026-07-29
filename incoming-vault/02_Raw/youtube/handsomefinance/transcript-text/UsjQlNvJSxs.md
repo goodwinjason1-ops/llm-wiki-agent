@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - The Best Card to Spend Your Crypto Secretly?
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=UsjQlNvJSxs
 video_id: UsjQlNvJSxs
 upload_date: 20251017

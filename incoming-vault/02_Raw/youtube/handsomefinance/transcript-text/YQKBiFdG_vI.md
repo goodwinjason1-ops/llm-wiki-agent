@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - Introducing StalkFun V2 - The AI for Memecoins
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=YQKBiFdG_vI
 video_id: YQKBiFdG_vI
 upload_date: 20260128

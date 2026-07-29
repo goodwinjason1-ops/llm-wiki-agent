@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - Why Whales Are Secretly Loading Up on Graphite Protocol
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=xLwW5F3waiY
 video_id: xLwW5F3waiY
 upload_date: 20250901

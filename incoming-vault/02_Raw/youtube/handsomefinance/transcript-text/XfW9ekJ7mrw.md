@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - Easiest Way To Avoid Memecoins Scams with 100% Accuracy
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=XfW9ekJ7mrw
 video_id: XfW9ekJ7mrw
 upload_date: 20250311

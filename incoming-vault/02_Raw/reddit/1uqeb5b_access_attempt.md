@@ -2,7 +2,7 @@
 title: Reddit Access Attempt 1uqeb5b
 created: 2026-07-08
 updated: 2026-07-08
-type: raw_metadata
+type: raw-metadata
 source_url: https://www.reddit.com/r/ai_trading/s/e7bdADwFuu
 resolved_url: https://www.reddit.com/r/ai_trading/comments/1uqeb5b/now_were_talking_10_return_in_9_days/
 confidence: low

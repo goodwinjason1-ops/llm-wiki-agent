@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - This is Boring, But You’ll Make $10,000 With Memecoins FAST
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=FewNp2WYs3o
 video_id: FewNp2WYs3o
 upload_date: 20250204

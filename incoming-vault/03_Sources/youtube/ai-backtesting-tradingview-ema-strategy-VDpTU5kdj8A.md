@@ -2,7 +2,7 @@
 title: AI Backtesting TradingView EMA Strategy - YouTube VDpTU5kdj8A
 created: 2026-07-08
 updated: 2026-07-13
-type: source_summary
+type: source-summary
 tags: [youtube, quant, trading, backtesting, pine-script, ai-agent]
 sources: [02_Raw/youtube/transcripts/VDpTU5kdj8A.md]
 confidence: medium

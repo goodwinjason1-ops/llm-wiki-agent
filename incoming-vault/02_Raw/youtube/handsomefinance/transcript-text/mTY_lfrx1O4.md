@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - Introducing StalkFun - The Algorithm That Finds 100x Memecoins for You
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=mTY_lfrx1O4
 video_id: mTY_lfrx1O4
 upload_date: 20250531

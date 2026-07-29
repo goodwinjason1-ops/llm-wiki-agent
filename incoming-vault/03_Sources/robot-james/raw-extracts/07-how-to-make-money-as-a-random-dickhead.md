@@ -2,7 +2,7 @@
 title: Robot James Raw Extract - 07-how-to-make-money-as-a-random-dickhead
 created: 2026-07-11
 updated: 2026-07-11
-type: raw-web-extract
+type: raw-source
 status: evidence-only
 tags: [robot-james, raw-extract]
 confidence: source-limited

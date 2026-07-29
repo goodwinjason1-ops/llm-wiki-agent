@@ -2,7 +2,7 @@
 title: YouTube Transcript - Get Into Those Base MemeCoins; Retire Early
 created: 2026-07-08
 updated: 2026-07-08
-type: raw_source
+type: raw-source
 tags: [youtube, transcript, cap5]
 source_url: https://youtu.be/RENbthsmpLg
 sha256: cbe25ad8cd700b647945a1d4b478e3261ba8f7261665a3b62e94f7bbd46ab109

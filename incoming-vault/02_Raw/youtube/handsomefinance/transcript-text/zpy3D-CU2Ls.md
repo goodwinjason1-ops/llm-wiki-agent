@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - Why I Never Trade a Meme Coin With Less Than 12 Wallets
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=zpy3D-CU2Ls
 video_id: zpy3D-CU2Ls
 upload_date: 20260413

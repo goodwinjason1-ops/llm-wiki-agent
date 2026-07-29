@@ -1,7 +1,7 @@
 ---
 title: 2026-07-11 QTF Morning 01 Tactical Crypto Regime Backtest
 created: 2026-07-11
-type: quant-backtest
+type: backtest-evidence
 status: do_not_promote
 tags: [quant, backtest, read-only, bybit]
 ---

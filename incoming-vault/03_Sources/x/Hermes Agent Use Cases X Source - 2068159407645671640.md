@@ -2,7 +2,7 @@
 title: Hermes Agent Use Cases X Source - 2068159407645671640
 created: 2026-07-08
 updated: 2026-07-08
-type: source_summary
+type: source-summary
 status: source-limited
 source_url: https://x.com/i/status/2068159407645671640
 tags: [x, capture, source-limited]

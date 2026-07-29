@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - 7 Axiom Hacks No One Told You About
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=ErIdUE-cnHc
 video_id: ErIdUE-cnHc
 upload_date: 20250712

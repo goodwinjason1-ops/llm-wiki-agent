@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - He Made $8M From Crypto In His 20s, Here's How You Can Do It Too
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=5ilIqIbeqPo
 video_id: 5ilIqIbeqPo
 upload_date: 20250920

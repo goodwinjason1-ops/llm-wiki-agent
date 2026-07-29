@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - How North Korea's Stole $1.5 Billion from Bybit (Biggest Heist In History)
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=CwPQbe7Ik4M
 video_id: CwPQbe7Ik4M
 upload_date: 20250223

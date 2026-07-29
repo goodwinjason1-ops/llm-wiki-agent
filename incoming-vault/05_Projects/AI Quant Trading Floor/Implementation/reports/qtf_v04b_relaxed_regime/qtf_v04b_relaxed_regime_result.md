@@ -2,7 +2,7 @@
 title: QTF-V04B Relaxed-Regime Mean-Reversion Test
 created: 2026-07-17
 updated: 2026-07-17
-type: quant-backtest
+type: backtest-evidence
 tags: [quant, mean-reversion, regime, paper-only, verification, qtf-v04b]
 confidence: medium
 ---

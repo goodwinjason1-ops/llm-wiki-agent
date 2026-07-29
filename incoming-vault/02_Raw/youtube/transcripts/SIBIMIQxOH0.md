@@ -2,7 +2,7 @@
 title: YouTube Transcript - This Memecoin Trader Turns $150 Into $1,000,000 In A Week (Copy Him)
 created: 2026-07-08
 updated: 2026-07-08
-type: raw_source
+type: raw-source
 tags: [youtube, transcript, cap5]
 source_url: https://youtu.be/SIBIMIQxOH0
 sha256: e33825de4b558beb124429892065e96f721f848409ff3e9a65d77011df001018

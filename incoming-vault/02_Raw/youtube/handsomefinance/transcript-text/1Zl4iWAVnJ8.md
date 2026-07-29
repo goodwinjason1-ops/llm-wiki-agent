@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - Get This Many Bitcoin Before 2026
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=1Zl4iWAVnJ8
 video_id: 1Zl4iWAVnJ8
 upload_date: 20250703

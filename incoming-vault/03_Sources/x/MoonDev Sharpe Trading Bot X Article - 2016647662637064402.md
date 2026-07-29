@@ -2,7 +2,7 @@
 title: MoonDev Sharpe Trading Bot X Article - 2016647662637064402
 created: 2026-07-08
 updated: 2026-07-08
-type: source_summary
+type: source-summary
 tags: [x, quant, trading, market-making, autogpt, sharpe, paper-trading]
 sources:
   - 02_Raw/x/2016647662637064402_moondev_article_metadata.json

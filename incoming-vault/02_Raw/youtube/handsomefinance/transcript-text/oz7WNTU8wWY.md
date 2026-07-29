@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - How this streamer made millions with memecoins
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=oz7WNTU8wWY
 video_id: oz7WNTU8wWY
 upload_date: 20250127

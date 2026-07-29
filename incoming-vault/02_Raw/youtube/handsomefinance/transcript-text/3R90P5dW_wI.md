@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - Try this new memecoin tool that prints money
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=3R90P5dW_wI
 video_id: 3R90P5dW_wI
 upload_date: 20250215

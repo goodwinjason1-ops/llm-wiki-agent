@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - How I Turn Losing Trades Into Wins (On Repeat)
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=PnkwU53a7oI
 video_id: PnkwU53a7oI
 upload_date: 20250425

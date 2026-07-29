@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - The Ansem Black Bull Trap Explained
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=AD5BbT20utU
 video_id: AD5BbT20utU
 upload_date: 20260706

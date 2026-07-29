@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - This Will Replace HyperLiquid & Binance - Massive Airdrop (Still Early)
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=Qa3fGyKPznc
 video_id: Qa3fGyKPznc
 upload_date: 20251128

@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - This New Strategy to Find 100x Memecoins is Insane (Works NOW)
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=oceTR1ejtkQ
 video_id: oceTR1ejtkQ
 upload_date: 20250402

@@ -2,7 +2,7 @@
 title: Robot James Raw Extract - 08-three-types-of-systematic-trading
 created: 2026-07-11
 updated: 2026-07-11
-type: raw-web-extract
+type: raw-source
 status: evidence-only
 tags: [robot-james, raw-extract]
 confidence: source-limited
@@ -255,3 +255,10 @@ See all
 ### Ready for more?
 
 Subscribe
+
+## Wiki concepts
+
+Synthesised from this source — the claims here are cited in:
+
+- [[edge-class-evaluation]]
+- [[risk-premia-before-prediction]]

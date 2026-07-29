@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - Axiom VS GMGN vs Photon VS Padre - Who Wins?
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=1zlP_78yCoI
 video_id: 1zlP_78yCoI
 upload_date: 20250818

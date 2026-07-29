@@ -2,7 +2,7 @@
 title: X Bookmark Cap 4 - CyrilXBT Obsidian Trading Ideas Morning Workflow
 created: 2026-07-09
 updated: 2026-07-09
-type: source_summary
+type: source-summary
 status: source-limited
 tags: [x, obsidian, trading-ideas, ai-quant, morning-brief]
 sources:

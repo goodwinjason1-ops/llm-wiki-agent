@@ -2,7 +2,7 @@
 title: YouTube Transcript - How I am Farming the Next HyperLiquid Before Anyone Else
 created: 2026-07-08
 updated: 2026-07-08
-type: raw_source
+type: raw-source
 tags: [youtube, transcript, cap2]
 source_url: https://youtu.be/iYMrbM9ixhU
 sha256: 9ab377aaae421fed612563d433d164ee8a9a1dd7537e3ca981ac425c186de180

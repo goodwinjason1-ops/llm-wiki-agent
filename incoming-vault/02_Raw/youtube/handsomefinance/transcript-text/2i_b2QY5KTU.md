@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - ZCash Cofounder - The Crypto Industry is Sleepwalking Into Surveillance
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=2i_b2QY5KTU
 video_id: 2i_b2QY5KTU
 upload_date: 20251119

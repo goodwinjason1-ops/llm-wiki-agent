@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - He Blew $600K Trading Crypto Before Learning to Profit Consistently With Beaver
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=_pmn4kcCwww
 video_id: _pmn4kcCwww
 upload_date: 20251106

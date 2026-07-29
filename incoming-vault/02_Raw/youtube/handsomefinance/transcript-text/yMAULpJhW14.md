@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - How I Used My Gaming Addiction To Make $1.2M Crypto Trading
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=yMAULpJhW14
 video_id: yMAULpJhW14
 upload_date: 20250210

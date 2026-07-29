@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - Trade Memecoins Faster Than Anyone With Nova (Free Access Code)
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=j_M-Q80VFzw
 video_id: j_M-Q80VFzw
 upload_date: 20250601

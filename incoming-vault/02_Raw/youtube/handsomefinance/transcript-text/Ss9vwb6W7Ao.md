@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - The Best Way to Make Money With Crypto in 2026 (NOT Trading)
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=Ss9vwb6W7Ao
 video_id: Ss9vwb6W7Ao
 upload_date: 20251215

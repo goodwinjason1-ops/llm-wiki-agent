@@ -2,7 +2,7 @@
 title: YouTube Transcript - How To Easily Find The Top Meme Traders To Copy
 created: 2026-07-08
 updated: 2026-07-08
-type: raw_source
+type: raw-source
 tags: [youtube, transcript, cap5]
 source_url: https://youtu.be/sr8KrmNSKf4
 sha256: 859a107e0981f896e2356e1cfc8361d85853b1bdac92179d95b27d47b1a81b44

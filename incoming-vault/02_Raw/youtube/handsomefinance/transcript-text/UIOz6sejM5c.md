@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - Why ZCash Could Skyrocket To $60K (The Next Bitcoin?)
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=UIOz6sejM5c
 video_id: UIOz6sejM5c
 upload_date: 20251010

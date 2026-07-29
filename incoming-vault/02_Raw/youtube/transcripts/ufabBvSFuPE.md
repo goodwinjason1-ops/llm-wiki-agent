@@ -2,7 +2,7 @@
 title: YouTube Transcript - How To Trade 1000X Memecoins With Trojan Bot (Full Tutorial On Solana)
 created: 2026-07-08
 updated: 2026-07-08
-type: raw_source
+type: raw-source
 tags: [youtube, transcript, cap5]
 source_url: https://youtu.be/ufabBvSFuPE
 sha256: 97873322d9c6a1f3345de40c77be8190289c933d34fae45cc1fa5ced7ad35d53

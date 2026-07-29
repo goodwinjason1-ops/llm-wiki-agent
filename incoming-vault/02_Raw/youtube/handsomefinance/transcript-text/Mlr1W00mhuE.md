@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - The On-Chain Analysis Secret That Made Me $5K in One Trade
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=Mlr1W00mhuE
 video_id: Mlr1W00mhuE
 upload_date: 20250701

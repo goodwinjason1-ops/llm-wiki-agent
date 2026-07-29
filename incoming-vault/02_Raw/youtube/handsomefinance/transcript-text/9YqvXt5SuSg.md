@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - Kanye West Launched a Memecoin...
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=9YqvXt5SuSg
 video_id: 9YqvXt5SuSg
 upload_date: 20250821

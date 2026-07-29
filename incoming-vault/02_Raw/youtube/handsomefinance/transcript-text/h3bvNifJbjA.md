@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - General Market Crash, Extreme Fear. What Is Really Happening In Crypto?
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=h3bvNifJbjA
 video_id: h3bvNifJbjA
 upload_date: 20251124

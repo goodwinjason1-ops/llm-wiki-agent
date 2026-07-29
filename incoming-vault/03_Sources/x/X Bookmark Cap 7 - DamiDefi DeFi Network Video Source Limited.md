@@ -2,7 +2,7 @@
 title: X Bookmark Cap 7 - DamiDefi DeFi Network Video Source Limited
 created: 2026-07-09
 updated: 2026-07-09
-type: source_summary
+type: source-summary
 status: source-limited
 tags: [x, defi, source-limited, antoine, network-graph]
 sources:

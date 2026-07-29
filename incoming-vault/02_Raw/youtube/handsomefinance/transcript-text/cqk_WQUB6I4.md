@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - I Turned $1,500 Into $100k With Crypto (with proof)
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=cqk_WQUB6I4
 video_id: cqk_WQUB6I4
 upload_date: 20250908

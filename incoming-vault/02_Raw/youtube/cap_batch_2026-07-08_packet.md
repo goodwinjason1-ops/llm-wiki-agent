@@ -2,7 +2,7 @@
 title: Cap Batch 2026-07-08 Packet
 created: 2026-07-08
 updated: 2026-07-08
-type: raw_source
+type: raw-source
 tags: [youtube, capture, transcript-packet]
 sources: [02_Raw/youtube/cap_batch_2026-07-08_metadata.json]
 confidence: medium

@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - The Hidden Strategy To Farm Aster Airdrop
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=be2FCl9CD_4
 video_id: be2FCl9CD_4
 upload_date: 20250924

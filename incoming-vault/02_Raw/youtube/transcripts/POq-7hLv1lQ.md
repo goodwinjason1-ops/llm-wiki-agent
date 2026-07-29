@@ -2,7 +2,7 @@
 title: YouTube Transcript - Why Top Traders Are Switching to This Tool (Unfair Alpha)
 created: 2026-07-08
 updated: 2026-07-08
-type: raw_source
+type: raw-source
 tags: [youtube, transcript, cap5]
 source_url: https://youtu.be/POq-7hLv1lQ
 sha256: dbb9c4c692276a524d7abe533ba30cdde4f9d22dfb63f57730cbf3ecee085ff4

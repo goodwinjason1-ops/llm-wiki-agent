@@ -2,7 +2,7 @@
 title: Finance Skills X Source - 2062281424603115571
 created: 2026-07-08
 updated: 2026-07-08
-type: source_summary
+type: source-summary
 status: source-limited
 source_url: https://x.com/i/status/2062281424603115571
 tags: [x, capture, source-limited]

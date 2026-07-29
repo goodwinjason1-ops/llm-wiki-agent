@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - Here's How People Are Making MILLIONS On PumpFun (BunnyFuFuu Interview)
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=3WXVIKpS5h8
 video_id: 3WXVIKpS5h8
 upload_date: 20251113

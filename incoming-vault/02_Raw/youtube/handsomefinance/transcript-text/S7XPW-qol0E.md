@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - How to Farm the Aster Airdrop In 10 Minutes (Do It NOW)
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=S7XPW-qol0E
 video_id: S7XPW-qol0E
 upload_date: 20250928

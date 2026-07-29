@@ -2,7 +2,7 @@
 title: YouTube Transcript - 6 Claude Code GitHub Repos That Change Everything
 created: 2026-07-08
 updated: 2026-07-08
-type: raw_source
+type: raw-source
 tags: [youtube, transcript, cap1]
 source_url: https://youtu.be/L2JKgj7WzU4
 sha256: 927a194064df164c6e0d60259ba2f94cb72579c895456409d4fd637fa9628da0

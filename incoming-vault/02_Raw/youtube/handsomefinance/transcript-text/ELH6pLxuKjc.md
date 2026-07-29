@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - This New Crypto Strategy Makes Me $500/Day
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=ELH6pLxuKjc
 video_id: ELH6pLxuKjc
 upload_date: 20250111

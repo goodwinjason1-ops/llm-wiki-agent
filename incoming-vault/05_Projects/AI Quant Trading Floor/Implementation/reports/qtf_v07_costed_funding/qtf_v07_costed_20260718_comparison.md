@@ -2,7 +2,7 @@
 title: QTF-V07 Cost-Adjusted Funding Payment Backtest - 2026-07-18
 created: 2026-07-18
 updated: 2026-07-18
-type: quant-backtest
+type: backtest-evidence
 tags: [quant, funding, carry, paper-only, verification, cost-adjusted, v07]
 confidence: medium
 ---

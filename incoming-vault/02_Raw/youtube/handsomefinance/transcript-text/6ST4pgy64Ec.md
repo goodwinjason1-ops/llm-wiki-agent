@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - How I Find Coins at 27k Market Cap (With AI)
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=6ST4pgy64Ec
 video_id: 6ST4pgy64Ec
 upload_date: 20260125

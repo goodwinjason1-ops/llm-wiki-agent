@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - Andrew Tate Made a Big Mistake (and tried to hide it)
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=TNxPTs-eUmI
 video_id: TNxPTs-eUmI
 upload_date: 20250613

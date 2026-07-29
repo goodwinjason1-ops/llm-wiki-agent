@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - Why TON Is Going Up? Durov's Quiet Takeover
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=7ZJX7BJSHgk
 video_id: 7ZJX7BJSHgk
 upload_date: 20260505

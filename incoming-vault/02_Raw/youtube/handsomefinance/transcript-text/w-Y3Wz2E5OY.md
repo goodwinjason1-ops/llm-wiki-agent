@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - From Broke Student With $5 to Prediction Market Pro (Almost Insider)
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=w-Y3Wz2E5OY
 video_id: w-Y3Wz2E5OY
 upload_date: 20260315

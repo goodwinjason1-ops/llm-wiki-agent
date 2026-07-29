@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - I Interviewed One Of The BEST Memecoin Traders In The World
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=yvdrCUTVj-A
 video_id: yvdrCUTVj-A
 upload_date: 20250807

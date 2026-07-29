@@ -2,7 +2,7 @@
 title: YouTube Transcript - How To Find The Best Crypto Traders To Copy Them
 created: 2026-07-08
 updated: 2026-07-08
-type: raw_source
+type: raw-source
 tags: [youtube, transcript, cap5]
 source_url: https://youtu.be/H5ylF-RIRPE
 sha256: 8212564c6ed25c40d2b6c210dd9af8b529ae85ad4125f0ef0d8d8cddadb2c4f9

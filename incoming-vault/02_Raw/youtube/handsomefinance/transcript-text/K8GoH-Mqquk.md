@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - How to Start Trading Memecoins - From Zero To Pro in 10 Minutes
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=K8GoH-Mqquk
 video_id: K8GoH-Mqquk
 upload_date: 20250120

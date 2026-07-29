@@ -554,3 +554,15 @@ The first build should be the crypto pairs lab—but it must be our independentl
 - [[QTF-017 Strategy Verification Gauntlet]]
 - [[Bybit Airdrop Prediction Bot Implementation Plan]]
 - [[Robot James Raw Extract Index]]
+
+## Wiki concepts
+
+Synthesised from this source — the claims here are cited in:
+
+- [[forced-flows]]
+- [[risk-premia-before-prediction]]
+- [[survival-sizing]]
+- [[gentle-rebalancing]]
+- [[edge-class-evaluation]]
+- [[relative-value-pairs]]
+- [[independent-reproduction]]

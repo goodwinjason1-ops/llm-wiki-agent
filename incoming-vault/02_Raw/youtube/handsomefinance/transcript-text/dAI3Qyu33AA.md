@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - Why Top Traders Are Switching to Padre (And YOU Should Too)
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=dAI3Qyu33AA
 video_id: dAI3Qyu33AA
 upload_date: 20250609

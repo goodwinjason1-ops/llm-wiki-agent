@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - This Airdrop Will Be Bigger Than Hyperliquid & Aster COMBINED
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=YvkvkbjG818
 video_id: YvkvkbjG818
 upload_date: 20251008

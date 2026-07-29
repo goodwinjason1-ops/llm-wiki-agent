@@ -2,7 +2,7 @@
 title: Claude Code Money Partner - YouTube iTY8Q449YNQ
 created: 2026-07-08
 updated: 2026-07-08
-type: source_summary
+type: source-summary
 tags: [youtube, ai-agent, codex, business, income-ideas, verification]
 sources:
   - 02_Raw/youtube/transcripts/iTY8Q449YNQ.md

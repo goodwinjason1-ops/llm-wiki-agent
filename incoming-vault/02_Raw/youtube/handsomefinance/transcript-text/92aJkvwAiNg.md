@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - Still using Axiom? Top Traders Already Switched To This New Trading Tool
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=92aJkvwAiNg
 video_id: 92aJkvwAiNg
 upload_date: 20250917

@@ -2,7 +2,7 @@
 title: Google Business Profile Gemini Service Opportunity - Source Review - 2026-07-13
 created: 2026-07-13
 updated: 2026-07-13
-type: source-review
+type: source-summary
 status: ingested-transcript-verified-against-official-docs
 source_url: https://youtu.be/vs_cUXxvJ6w?si=4EVU_pOV2HUrT9eQ
 raw_source: 02_Raw/youtube/Google Business Profile Gemini Service Opportunity - 2026-07-13.txt

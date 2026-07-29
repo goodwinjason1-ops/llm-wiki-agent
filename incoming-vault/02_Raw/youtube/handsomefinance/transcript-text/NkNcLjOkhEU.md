@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - 7 Brutal Lessons After Making Millions from Crypto
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=NkNcLjOkhEU
 video_id: NkNcLjOkhEU
 upload_date: 20250621

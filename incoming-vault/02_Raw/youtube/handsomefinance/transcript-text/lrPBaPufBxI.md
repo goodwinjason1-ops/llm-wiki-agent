@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - "I've Never Worked A Day In My Life" The Incredible Story of Mitch
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=lrPBaPufBxI
 video_id: lrPBaPufBxI
 upload_date: 20260510

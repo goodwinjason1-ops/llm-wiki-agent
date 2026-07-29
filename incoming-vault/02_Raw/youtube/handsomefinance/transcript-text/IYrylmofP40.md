@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - This Strategy Is the Cheat Code to Getting Rich with Meme Coins
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=IYrylmofP40
 video_id: IYrylmofP40
 upload_date: 20250718

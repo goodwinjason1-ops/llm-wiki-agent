@@ -1,6 +1,6 @@
 ---
 title: How to DeFi Advanced - CoinGecko
-type: source_summary
+type: source-summary
 created: 2026-07-08
 updated: 2026-07-08
 tags: [quant, defi, risk, source, coingecko]

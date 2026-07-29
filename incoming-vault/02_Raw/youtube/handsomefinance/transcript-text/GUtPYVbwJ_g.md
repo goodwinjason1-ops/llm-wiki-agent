@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - This Meme Coin Scanner Made Me $41,820 in 30 Days (Proof Inside)
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=GUtPYVbwJ_g
 video_id: GUtPYVbwJ_g
 upload_date: 20250531

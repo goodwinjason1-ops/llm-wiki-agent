@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - How I Find a 70X Memecoin In 14 Minutes (With Proof)
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=mAleo7XI0-4
 video_id: mAleo7XI0-4
 upload_date: 20250317

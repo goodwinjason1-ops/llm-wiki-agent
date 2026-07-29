@@ -1,6 +1,6 @@
 ---
 title: Karpathy AI Second Brain Connection Layer
-type: source_summary
+type: source-summary
 created: 2026-07-08
 updated: 2026-07-08
 tags: [second-brain, llm-wiki, obsidian, claude, hermes, workflow]
@@ -45,3 +45,10 @@ Implemented artifacts:
 - [[Claude and Ari Second Brain Evolution Loop]]
 - [[AI Second Brain Project Registry]]
 - [[Business Context Brain - Product Concept]]
+
+## Wiki concepts
+
+Synthesised from this source — the claims here are cited in:
+
+- [[connection-illumination]]
+- [[synthesis-debt]]

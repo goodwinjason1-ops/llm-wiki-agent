@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - Why I'm no longer using Axiom
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=SpZY4oOZhbU
 video_id: SpZY4oOZhbU
 upload_date: 20251231

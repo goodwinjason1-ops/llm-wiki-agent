@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - AI Traders Beat Me. So I Built One.
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=WCYwxN7Hi7I
 video_id: WCYwxN7Hi7I
 upload_date: 20260113

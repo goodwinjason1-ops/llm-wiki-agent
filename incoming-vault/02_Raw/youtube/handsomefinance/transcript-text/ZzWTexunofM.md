@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - I Traded A Salary In 10 Minutes To Prove It's Not Luck
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=ZzWTexunofM
 video_id: ZzWTexunofM
 upload_date: 20250523

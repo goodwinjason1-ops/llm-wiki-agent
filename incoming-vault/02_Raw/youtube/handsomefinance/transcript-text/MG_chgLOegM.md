@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - He Types Without Using His Hands (Brain-Controlled AI)
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=MG_chgLOegM
 video_id: MG_chgLOegM
 upload_date: 20260627

@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - This Zero Fee Airdrop Can Make You Insanely Rich in 2025 (Watch Before Deleted)
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=x8bGlCuj2CQ
 video_id: x8bGlCuj2CQ
 upload_date: 20251014

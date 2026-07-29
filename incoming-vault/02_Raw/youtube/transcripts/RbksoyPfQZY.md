@@ -2,7 +2,7 @@
 title: YouTube Transcript - Lighter Could 17X If This One Thing Happens
 created: 2026-07-08
 updated: 2026-07-08
-type: raw_source
+type: raw-source
 tags: [youtube, transcript, cap6]
 source_url: https://youtu.be/RbksoyPfQZY
 sha256: 936f124d1ac2669728f835432eb1d9f37fdb735e69691bf64d389f07c1750466

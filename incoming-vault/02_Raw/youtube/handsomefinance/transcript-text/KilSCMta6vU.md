@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - Vibe Coding an Insider Bot for Prediction Markets (Just Copy Me)
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=KilSCMta6vU
 video_id: KilSCMta6vU
 upload_date: 20260114

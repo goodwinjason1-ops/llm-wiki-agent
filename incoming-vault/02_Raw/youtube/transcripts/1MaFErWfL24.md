@@ -1,6 +1,6 @@
 ---
 title: YouTube transcript - 1MaFErWfL24
-type: raw_transcript
+type: raw-transcript
 source_url: https://youtu.be/1MaFErWfL24
 video_id: 1MaFErWfL24
 ingested: 2026-07-08

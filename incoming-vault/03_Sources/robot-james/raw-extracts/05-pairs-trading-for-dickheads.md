@@ -2,7 +2,7 @@
 title: Robot James Raw Extract - 05-pairs-trading-for-dickheads
 created: 2026-07-11
 updated: 2026-07-11
-type: raw-web-extract
+type: raw-source
 status: evidence-only
 tags: [robot-james, raw-extract]
 confidence: source-limited
@@ -646,3 +646,9 @@ Showing 26,240 chars (head) + 8,392 chars (tail) of 36,257 total clean character
 Full text saved to: C:\Users\Kidsg\AppData\Local\hermes\cache\web\robotjames.substack.com-6048469a6c.md
 To read the omitted middle: read_file path="C:\Users\Kidsg\AppData\Local\hermes\cache\web\robotjames.substack.com-6048469a6c.md" offset=423 limit=200  (the file is the complete page; raise/lower offset to page through it).
 ─────────────────────────────
+
+## Wiki concepts
+
+Synthesised from this source — the claims here are cited in:
+
+- [[relative-value-pairs]]

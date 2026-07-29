@@ -2,7 +2,7 @@
 title: Forven Reddit Source Review - 2026-07-09
 created: 2026-07-09
 updated: 2026-07-09
-type: source-review
+type: source-summary
 status: complete
 source_url: https://www.reddit.com/r/CryptoTradingBot/s/cPkDEfFKzn
 repo: https://github.com/judder659/Forven

@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - Can You Still Get Rich With Trump Memecoin?
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=ohApixwi2kk
 video_id: ohApixwi2kk
 upload_date: 20250119

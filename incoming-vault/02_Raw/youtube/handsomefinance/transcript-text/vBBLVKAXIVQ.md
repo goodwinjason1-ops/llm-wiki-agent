@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - My $1 Million Dollar Crypto Portfolio For 2025
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=vBBLVKAXIVQ
 video_id: vBBLVKAXIVQ
 upload_date: 20250116

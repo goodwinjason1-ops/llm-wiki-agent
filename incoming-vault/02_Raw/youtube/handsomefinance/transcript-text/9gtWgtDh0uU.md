@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - The Easy Strategy That Just Made Me $5,000 In 20 Minutes
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=9gtWgtDh0uU
 video_id: 9gtWgtDh0uU
 upload_date: 20250226

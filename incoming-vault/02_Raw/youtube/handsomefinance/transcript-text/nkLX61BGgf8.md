@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - Everyone Is Quitting Crypto, Maybe You Should Too..
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=nkLX61BGgf8
 video_id: nkLX61BGgf8
 upload_date: 20251222

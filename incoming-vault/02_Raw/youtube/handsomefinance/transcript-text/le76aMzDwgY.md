@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - Why Privacy Tokens Are The Future Of Crypto (Thor Interview)
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=le76aMzDwgY
 video_id: le76aMzDwgY
 upload_date: 20251111

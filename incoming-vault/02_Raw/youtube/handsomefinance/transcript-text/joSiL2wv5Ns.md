@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - NEAR Protocol Is Up 30%. Here's What the Data Actually Hides
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=joSiL2wv5Ns
 video_id: joSiL2wv5Ns
 upload_date: 20260614

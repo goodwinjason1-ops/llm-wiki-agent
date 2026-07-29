@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - I Met The Guy Who Thinks That He Is The Next Mr. Beast With His Memecoin
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=tYXBLKtA5O8
 video_id: tYXBLKtA5O8
 upload_date: 20250330

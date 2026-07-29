@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - Lighter Could 17X If This One Thing Happens
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=RbksoyPfQZY
 video_id: RbksoyPfQZY
 upload_date: 20260707

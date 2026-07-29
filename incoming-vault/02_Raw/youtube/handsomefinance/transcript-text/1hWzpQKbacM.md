@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - I Asked Claude to Build Me a Meme Coin Bot (It Actually Worked)
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=1hWzpQKbacM
 video_id: 1hWzpQKbacM
 upload_date: 20260116

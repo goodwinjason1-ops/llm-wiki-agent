@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - The Hidden Strategy To Farm Paradex (Do It Before It’s Late)
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=yQ2ix_B7lv0
 video_id: yQ2ix_B7lv0
 upload_date: 20251218

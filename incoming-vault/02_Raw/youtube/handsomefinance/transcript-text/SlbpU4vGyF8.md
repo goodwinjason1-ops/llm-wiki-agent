@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - I Tested the Chinese Whale's Secret Weapon (Shocking Results)
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=SlbpU4vGyF8
 video_id: SlbpU4vGyF8
 upload_date: 20250627

@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - This Is Like Buying Bitcoin At $600 (ZCash is EXPLODING)
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=U9W9GCPc2zk
 video_id: U9W9GCPc2zk
 upload_date: 20251107

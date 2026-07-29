@@ -2,7 +2,7 @@
 source_url: https://youtu.be/I9W6NhFkGAI?si=sclehQPjJvYnXrBF
 ingested: 2026-07-02
 sha256: 888eb3a6de724994a392ef97748a66af51f64a2b50e554016e17ce4b8f4c81b0
-type: raw_transcript
+type: raw-transcript
 video_id: I9W6NhFkGAI
 duration: "13:24"
 ---

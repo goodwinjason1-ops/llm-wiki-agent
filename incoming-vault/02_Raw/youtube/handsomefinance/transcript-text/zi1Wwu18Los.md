@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - How I Made $1,000 From One Trade With Almost ZERO Risk
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=zi1Wwu18Los
 video_id: zi1Wwu18Los
 upload_date: 20250730

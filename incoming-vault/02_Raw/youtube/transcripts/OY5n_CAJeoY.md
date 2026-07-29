@@ -2,7 +2,7 @@
 title: YouTube Transcript - My New Strategy to make $500/Day with Memecoins (on Photon)
 created: 2026-07-08
 updated: 2026-07-08
-type: raw_source
+type: raw-source
 tags: [youtube, transcript, cap5]
 source_url: https://youtu.be/OY5n_CAJeoY
 sha256: a57a3fac3770ec01ee8141f45a64ac24fae5f4df951984c77668223f4fef12d0

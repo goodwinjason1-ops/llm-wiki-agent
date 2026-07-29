@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - If You Are Not Getting A 10x Daily, Use StalkFun
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=JiLbwHhJZJA
 video_id: JiLbwHhJZJA
 upload_date: 20251001

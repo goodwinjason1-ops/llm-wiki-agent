@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - This Secret Meme Coin Tool Makes You $500/Day
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=Fy28_pVIVjg
 video_id: Fy28_pVIVjg
 upload_date: 20250203

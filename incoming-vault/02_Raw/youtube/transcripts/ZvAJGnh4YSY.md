@@ -2,7 +2,7 @@
 title: YouTube Transcript - The New Secret Way To Make 1000x on Meme Coins
 created: 2026-07-08
 updated: 2026-07-08
-type: raw_source
+type: raw-source
 tags: [youtube, transcript, cap5]
 source_url: https://youtu.be/ZvAJGnh4YSY
 sha256: 01be382f4f8e8da99881aa820d8a3108c4123155201a8025d6cef4656786444c

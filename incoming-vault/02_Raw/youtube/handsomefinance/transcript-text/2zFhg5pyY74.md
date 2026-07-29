@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - How To Get Rich With Memecoins (WITHOUT Getting Lucky)
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=2zFhg5pyY74
 video_id: 2zFhg5pyY74
 upload_date: 20250221

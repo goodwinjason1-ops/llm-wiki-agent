@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - I Found Orangie's Crypto Secret Wallet.. He Lied
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=vc3bhHVEcEg
 video_id: vc3bhHVEcEg
 upload_date: 20250812

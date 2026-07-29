@@ -2,7 +2,7 @@
 title: QTF-V04 Regime-Gated Mean-Reversion Test
 created: 2026-07-15
 updated: 2026-07-15
-type: quant-backtest
+type: backtest-evidence
 tags: [quant, mean-reversion, regime, paper-only, verification]
 confidence: medium
 ---

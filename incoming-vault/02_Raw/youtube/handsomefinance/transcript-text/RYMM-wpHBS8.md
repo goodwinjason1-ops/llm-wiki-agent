@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - High Probability Memecoins Strategy (For Small Accounts)
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=RYMM-wpHBS8
 video_id: RYMM-wpHBS8
 upload_date: 20250820

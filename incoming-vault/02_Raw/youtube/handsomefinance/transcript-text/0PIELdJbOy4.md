@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - SELL EVERYTHING! This Could Be the Start of a Full Crypto Collapse
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=0PIELdJbOy4
 video_id: 0PIELdJbOy4
 upload_date: 20251105

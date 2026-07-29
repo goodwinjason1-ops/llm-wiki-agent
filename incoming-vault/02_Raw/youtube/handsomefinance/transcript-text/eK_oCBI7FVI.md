@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - He Made $15M On Memecoins Without A Job, Here’s What He’s Betting On Next
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=eK_oCBI7FVI
 video_id: eK_oCBI7FVI
 upload_date: 20260521

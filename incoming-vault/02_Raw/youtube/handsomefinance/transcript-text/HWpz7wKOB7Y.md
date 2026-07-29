@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - The OnChain Alpha - How to Find the Next 10x MemeCoins and AI Gems
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=HWpz7wKOB7Y
 video_id: HWpz7wKOB7Y
 upload_date: 20250501

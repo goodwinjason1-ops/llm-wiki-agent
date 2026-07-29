@@ -2,7 +2,7 @@
 title: Handsome Finance Channel Inventory - 2025-01-08 to 2026-07-08
 created: 2026-07-08
 updated: 2026-07-08
-type: source_inventory
+type: source-inventory
 tags: [youtube, handsome-finance, antoine, crypto, quant, memecoin, on-chain]
 sources: [02_Raw/youtube/handsomefinance/handsomefinance-channel-inventory-2025-01-08-to-2026-07-08.json]
 confidence: medium

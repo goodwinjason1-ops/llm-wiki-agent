@@ -2,7 +2,7 @@
 title: MoonDev X Video Realism Review - 2071013205590331667
 created: 2026-07-08
 updated: 2026-07-08
-type: source_summary
+type: source-summary
 status: source-limited
 source_url: https://x.com/i/status/2071013205590331667
 tags: [x, capture, source-limited]

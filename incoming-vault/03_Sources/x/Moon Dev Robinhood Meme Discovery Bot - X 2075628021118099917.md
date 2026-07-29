@@ -2,7 +2,7 @@
 title: Moon Dev Robinhood Meme Discovery Bot - X 2075628021118099917
 created: 2026-07-11
 updated: 2026-07-11
-type: source-review
+type: source-summary
 status: reviewed-watch-only
 priority: medium-high
 related_workstream: Antoine On-Chain Alpha

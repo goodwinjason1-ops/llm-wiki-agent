@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - I Made $10K in 1 Week With Memecoins (Just Copy Me)
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=MdfKmtJLf54
 video_id: MdfKmtJLf54
 upload_date: 20250629

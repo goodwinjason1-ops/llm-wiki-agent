@@ -2,7 +2,7 @@
 title: YouTube Transcript - I Let Claude Fable AI Trade to Copy US Politicians' Trades | INSANE Results
 created: 2026-07-08
 updated: 2026-07-08
-type: raw_source
+type: raw-source
 tags: [youtube, transcript, cap3]
 source_url: https://youtu.be/Rh_TviVt3Vo
 sha256: 46b25bef6f237cb5ee991312ebd0f14d0cc0b87d0b021e4d63bb5bc2a4d8350c

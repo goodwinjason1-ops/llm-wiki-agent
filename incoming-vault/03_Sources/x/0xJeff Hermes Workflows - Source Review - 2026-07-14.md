@@ -2,7 +2,7 @@
 title: 0xJeff Hermes Workflows - Source Review - 2026-07-14
 created: 2026-07-14
 updated: 2026-07-14
-type: source-review
+type: source-summary
 status: ingested-reviewed
 author: 0xJeff (@0xJeff on X)
 platform: X (Twitter) article

@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - Why Everyone Is Wrong About This 'Failed' Company ($OPEN)
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=GZ5UzHyF5r8
 video_id: GZ5UzHyF5r8
 upload_date: 20250829

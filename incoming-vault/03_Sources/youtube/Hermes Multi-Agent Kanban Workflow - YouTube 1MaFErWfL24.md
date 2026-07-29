@@ -2,7 +2,7 @@
 title: Hermes Multi-Agent Kanban Workflow - YouTube 1MaFErWfL24
 created: 2026-07-08
 updated: 2026-07-08
-type: source_summary
+type: source-summary
 tags: [youtube, hermes, multi-agent, kanban, automation, workflow]
 sources: [02_Raw/youtube/transcripts/1MaFErWfL24.md]
 confidence: medium

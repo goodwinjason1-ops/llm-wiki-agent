@@ -2,7 +2,7 @@
 title: X Trading Journal Compounding Idea - 2071192941750599725
 created: 2026-07-08
 updated: 2026-07-08
-type: source_summary
+type: source-summary
 status: source-limited
 source_url: https://x.com/i/status/2071192941750599725
 tags: [x, trading-journal, quant, paper-trading, workflow]

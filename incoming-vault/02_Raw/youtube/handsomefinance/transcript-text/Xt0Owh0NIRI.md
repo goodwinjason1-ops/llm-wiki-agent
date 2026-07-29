@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - $80 to +10,000,000 to Broke Again - What Actually Happened
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=Xt0Owh0NIRI
 video_id: Xt0Owh0NIRI
 upload_date: 20250902

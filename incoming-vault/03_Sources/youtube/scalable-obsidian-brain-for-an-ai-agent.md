@@ -2,7 +2,7 @@
 title: Scalable Obsidian brain for an AI agent
 created: 2026-07-02
 updated: 2026-07-02
-type: source_summary
+type: source-summary
 tags: [youtube, ai-agent, second-brain]
 sources: [02_Raw/youtube/transcripts/I9W6NhFkGAI.md]
 video_id: I9W6NhFkGAI

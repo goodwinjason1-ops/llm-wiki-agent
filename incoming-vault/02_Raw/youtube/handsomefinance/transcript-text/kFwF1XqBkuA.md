@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - Why BNB Meme Coins Are the Next Big Thing (Pump fun is DYING)
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=kFwF1XqBkuA
 video_id: kFwF1XqBkuA
 upload_date: 20251013

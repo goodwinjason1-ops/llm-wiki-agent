@@ -2,7 +2,7 @@
 title: Seven levels of Hermes Agent
 created: 2026-07-02
 updated: 2026-07-02
-type: source_summary
+type: source-summary
 tags: [youtube, ai-agent, second-brain]
 sources: [02_Raw/youtube/transcripts/G47mnkGkYwQ.md]
 video_id: G47mnkGkYwQ

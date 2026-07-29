@@ -1,6 +1,6 @@
 ---
 title: X article - How To Invest In Robotics Full Guide
-type: raw_article
+type: raw-article
 source_url: https://x.com/i/status/2074524606275490205
 article_url: https://x.com/i/article/2071671647514611712
 author: Miles Deutscher (@milesdeutscher)

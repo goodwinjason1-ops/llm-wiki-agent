@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - I Turned $100 into $100,000 With Memecoins In 60 Days (Copy Me)
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=4_a_kP5Ewf8
 video_id: 4_a_kP5Ewf8
 upload_date: 20250923

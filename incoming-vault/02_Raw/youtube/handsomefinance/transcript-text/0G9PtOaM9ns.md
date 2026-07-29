@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - This AI Copies Smart Traders FOR YOU (Shocking Results)
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=0G9PtOaM9ns
 video_id: 0G9PtOaM9ns
 upload_date: 20260706

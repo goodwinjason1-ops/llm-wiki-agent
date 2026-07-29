@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - PumpFun Just Changed The Crypto Industry Forever
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=hk3BnoFjX5c
 video_id: hk3BnoFjX5c
 upload_date: 20251025

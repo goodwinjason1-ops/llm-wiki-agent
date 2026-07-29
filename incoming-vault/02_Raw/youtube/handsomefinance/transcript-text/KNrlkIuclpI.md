@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - This Trader Made $8M In 3 Days, Here's Exactly How He Did It (ASTER)
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=KNrlkIuclpI
 video_id: KNrlkIuclpI
 upload_date: 20250925

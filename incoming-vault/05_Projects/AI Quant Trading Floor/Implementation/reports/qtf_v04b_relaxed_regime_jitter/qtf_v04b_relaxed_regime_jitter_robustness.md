@@ -1,7 +1,7 @@
 ---
 title: QTF-V04B Relaxed-Regime Jitter Robustness
 created: 2026-07-17
-type: quant-backtest
+type: backtest-evidence
 tags: [quant, mean-reversion, regime, jitter, robustness, paper-only, qtf-v04b]
 confidence: low
 ---

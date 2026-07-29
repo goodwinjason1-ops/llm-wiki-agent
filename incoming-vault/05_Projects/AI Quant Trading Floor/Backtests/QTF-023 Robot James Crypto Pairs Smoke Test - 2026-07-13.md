@@ -2,7 +2,7 @@
 title: QTF-023 Robot James Crypto Pairs Smoke Test - 2026-07-13
 created: 2026-07-13
 updated: 2026-07-13
-type: quant-backtest
+type: backtest-evidence
 status: parked-funding-missing
 managed_as: paper-only
 script: Implementation/robot_james_pairs_smoke.py

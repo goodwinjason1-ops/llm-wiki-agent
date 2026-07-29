@@ -2,7 +2,7 @@
 title: X Quant Alpha Unknown Post - 2073976536391405963
 created: 2026-07-08
 updated: 2026-07-08
-type: source_summary
+type: source-summary
 status: source-limited
 source_url: https://x.com/i/status/2073976536391405963
 tags: [x, capture, source-limited]

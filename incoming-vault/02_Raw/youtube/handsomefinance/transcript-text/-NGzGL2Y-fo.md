@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - Using Claude Code to Farm Airdrops (Live Build)
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=-NGzGL2Y-fo
 video_id: -NGzGL2Y-fo
 upload_date: 20260117

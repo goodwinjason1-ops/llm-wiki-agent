@@ -2,7 +2,7 @@
 title: YouTube Transcript - Beginners Guide to Trading MemeCoins
 created: 2026-07-08
 updated: 2026-07-08
-type: raw_source
+type: raw-source
 tags: [youtube, transcript, cap5]
 source_url: https://youtu.be/CTKVSfwSXEU
 sha256: 85e81cdf8cf9d8ca14b081e78c2fdaa6a55bf4a38fee19b16c7a3051e0a50c00

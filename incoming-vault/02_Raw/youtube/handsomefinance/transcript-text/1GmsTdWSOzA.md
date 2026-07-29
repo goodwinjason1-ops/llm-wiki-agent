@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - I Found Andrew Tate's Secret Coin Before He Tells +100M Followers
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=1GmsTdWSOzA
 video_id: 1GmsTdWSOzA
 upload_date: 20251121

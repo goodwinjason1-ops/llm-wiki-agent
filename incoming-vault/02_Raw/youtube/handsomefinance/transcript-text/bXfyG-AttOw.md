@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - BullX Sniper Bot New Update is Insane (feels illegal)
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=bXfyG-AttOw
 video_id: bXfyG-AttOw
 upload_date: 20250206

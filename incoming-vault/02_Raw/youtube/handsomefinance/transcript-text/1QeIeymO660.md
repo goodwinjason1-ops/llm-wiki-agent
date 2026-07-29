@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - I found a 6,500x using this free tool
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=1QeIeymO660
 video_id: 1QeIeymO660
 upload_date: 20260219

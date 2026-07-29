@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - This Secret Tool Makes Polymarket So Easy
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=JaH1AC1dnvc
 video_id: JaH1AC1dnvc
 upload_date: 20251125

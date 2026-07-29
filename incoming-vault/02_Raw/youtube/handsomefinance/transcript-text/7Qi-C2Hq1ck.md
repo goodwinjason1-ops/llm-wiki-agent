@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - He Lost Everything Trading Memecoins… Then Made $100k in 3 Months
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=7Qi-C2Hq1ck
 video_id: 7Qi-C2Hq1ck
 upload_date: 20250214

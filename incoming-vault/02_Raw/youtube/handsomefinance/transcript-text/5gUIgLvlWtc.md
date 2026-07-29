@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - Did Barron Trump Just Make $7 Million With An Insider Trade?
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=5gUIgLvlWtc
 video_id: 5gUIgLvlWtc
 upload_date: 20250303

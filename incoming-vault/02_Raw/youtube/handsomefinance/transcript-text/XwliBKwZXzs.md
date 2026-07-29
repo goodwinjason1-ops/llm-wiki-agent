@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - Use This 2 Tools to Avoid Memecoins Rugs and Find 100x Gems
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=XwliBKwZXzs
 video_id: XwliBKwZXzs
 upload_date: 20250118

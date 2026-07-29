@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - How I Spot Meme Coins Before They 100x (Real Strategy, No Hype)
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=qXzas-7Jrig
 video_id: qXzas-7Jrig
 upload_date: 20250503

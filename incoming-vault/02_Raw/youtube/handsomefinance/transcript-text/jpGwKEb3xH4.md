@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - I Made $25,000 in 30 Days by Doing Insider Trading (in crypto)
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=jpGwKEb3xH4
 video_id: jpGwKEb3xH4
 upload_date: 20250608

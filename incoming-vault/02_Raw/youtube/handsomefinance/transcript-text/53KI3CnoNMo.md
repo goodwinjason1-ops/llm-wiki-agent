@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - The Most Simple Way To Make Money With Crypto In 2025
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=53KI3CnoNMo
 video_id: 53KI3CnoNMo
 upload_date: 20250331

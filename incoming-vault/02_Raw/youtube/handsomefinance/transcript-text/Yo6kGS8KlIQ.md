@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - Give Me 9 Minutes and You’ll Never Be Late in Crypto Again
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=Yo6kGS8KlIQ
 video_id: Yo6kGS8KlIQ
 upload_date: 20251021

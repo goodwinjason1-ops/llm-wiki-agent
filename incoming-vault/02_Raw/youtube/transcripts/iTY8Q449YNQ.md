@@ -1,7 +1,7 @@
 ---
 title: YouTube Transcript iTY8Q449YNQ
 created: 2026-07-08
-type: raw_transcript
+type: raw-transcript
 source_url: https://youtu.be/iTY8Q449YNQ
 video_id: iTY8Q449YNQ
 sha256: aabb0dc171724686059a1c1685d6b56661bf753147f5e07d931758fbf53ded55

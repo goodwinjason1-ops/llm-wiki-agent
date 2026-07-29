@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - Turning $100 into $10,000 in 28 Days Trading Meme Coins
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=5x7-7KTDW5Q
 video_id: 5x7-7KTDW5Q
 upload_date: 20250418

@@ -2,7 +2,7 @@
 title: YouTube Transcript - Finding Today's 100x MemeCoin Live
 created: 2026-07-08
 updated: 2026-07-08
-type: raw_source
+type: raw-source
 tags: [youtube, transcript, cap5]
 source_url: https://youtu.be/FJgQrj4i7iE
 sha256: 7046d2dae0f5799e86c3714d09b4c25431907aa6d62f4b8729829a69e866c6fd

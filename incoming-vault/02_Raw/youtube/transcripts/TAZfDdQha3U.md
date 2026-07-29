@@ -2,7 +2,7 @@
 title: YouTube Transcript TAZfDdQha3U
 created: 2026-07-08
 updated: 2026-07-08
-type: raw_transcript
+type: raw-transcript
 source_url: https://youtu.be/TAZfDdQha3U
 video_id: TAZfDdQha3U
 sha256: f7cfbe08d9b4b2e765ad6922960e8daafb9f1be5d845a8b8d985568f833a76b0

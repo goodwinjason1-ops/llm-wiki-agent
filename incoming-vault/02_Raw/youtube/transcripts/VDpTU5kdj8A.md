@@ -1,6 +1,6 @@
 ---
 title: YouTube transcript record - VDpTU5kdj8A
-type: raw_transcript_record
+type: raw-transcript-record
 source_url: https://youtu.be/VDpTU5kdj8A
 video_id: VDpTU5kdj8A
 ingested: 2026-07-08

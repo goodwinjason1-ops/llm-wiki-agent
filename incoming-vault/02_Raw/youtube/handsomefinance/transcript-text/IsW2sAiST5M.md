@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - I Let Claude Code Build My Trading Bot's Brain (It Works)
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=IsW2sAiST5M
 video_id: IsW2sAiST5M
 upload_date: 20260115

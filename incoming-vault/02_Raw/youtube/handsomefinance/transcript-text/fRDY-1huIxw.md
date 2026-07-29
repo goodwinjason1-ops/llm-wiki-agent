@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - 3 Trading Strategies That Memecoin Millionaires Use
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=fRDY-1huIxw
 video_id: fRDY-1huIxw
 upload_date: 20250728

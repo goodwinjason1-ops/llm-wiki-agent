@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - Why I'm Ditching Binance for Bybit in 2026
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=FwgUyVrcCk4
 video_id: FwgUyVrcCk4
 upload_date: 20260103

@@ -2,7 +2,7 @@
 title: Reddit AI Trading 10 Percent in 9 Days - Source-Limited Review
 created: 2026-07-08
 updated: 2026-07-08
-type: source_summary
+type: source-summary
 status: source-limited
 source_url: https://www.reddit.com/r/ai_trading/s/e7bdADwFuu
 tags: [reddit, ai-trading, quant, source-limited, paper-trading]

@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - Become Good At Memecoins In Just 1 Minute
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=OVFhztQ7U9c
 video_id: OVFhztQ7U9c
 upload_date: 20250904

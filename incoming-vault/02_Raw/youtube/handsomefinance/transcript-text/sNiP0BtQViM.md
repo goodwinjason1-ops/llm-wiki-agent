@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - The Only Memecoin Podcast You Need To Hear...
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=sNiP0BtQViM
 video_id: sNiP0BtQViM
 upload_date: 20250620

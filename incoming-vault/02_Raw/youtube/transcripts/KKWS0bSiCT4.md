@@ -2,7 +2,7 @@
 title: YouTube Transcript - How I Build Apps SOLO That ACTUALLY Make Money in 2026
 created: 2026-07-08
 updated: 2026-07-08
-type: raw_source
+type: raw-source
 tags: [youtube, transcript, cap7]
 source_url: https://youtu.be/KKWS0bSiCT4
 sha256: 0b68706776b2a830b70fe5f2516f401cc34329c278a94b25d26eebd4dda5e5da

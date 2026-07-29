@@ -2,7 +2,7 @@
 title: QTF-V06 Cross-Sleeve Evidence Scorecard
 created: 2026-07-15
 updated: 2026-07-15T14:56:27.047857+00:00
-type: quant-backtest
+type: backtest-evidence
 status: partial_do_not_allocate
 tags: [quant, cross-sleeve, allocation, paper-only, evidence-gated]
 confidence: medium

@@ -2,7 +2,7 @@
 title: AI Edge Personal Agent Ideas - X 2068159407645671640
 created: 2026-07-09
 updated: 2026-07-09
-type: source_summary
+type: source-summary
 status: user-context-ingested
 source_url: https://x.com/aiedge_/status/2068159407645671640?s=20
 tags: [x, ai-edge, personal-agents, job-hunter, health-fitness, travel-planner, unigram]

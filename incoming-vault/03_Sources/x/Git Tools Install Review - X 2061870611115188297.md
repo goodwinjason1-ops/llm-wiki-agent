@@ -2,7 +2,7 @@
 title: Git Tools Install Review - X 2061870611115188297
 created: 2026-07-08
 updated: 2026-07-08
-type: source_summary
+type: source-summary
 status: installed-partial
 source_url: https://x.com/i/status/2061870611115188297
 tags: [x, github, ai-agent, quant, finance, tts, skills]

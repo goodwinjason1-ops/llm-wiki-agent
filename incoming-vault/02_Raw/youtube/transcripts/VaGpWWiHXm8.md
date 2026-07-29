@@ -2,7 +2,7 @@
 title: YouTube Transcript - Obsidian Vault Deep Dive! Custom Plugins + Agentic Loops | My Full System
 created: 2026-07-08
 updated: 2026-07-08
-type: raw_source
+type: raw-source
 tags: [youtube, transcript, cap4]
 source_url: https://youtu.be/VaGpWWiHXm8
 sha256: af16a3df622fccef62b5bc313fb8dbeb3b37ea9fc6c382e4c94875e4c08ee14f

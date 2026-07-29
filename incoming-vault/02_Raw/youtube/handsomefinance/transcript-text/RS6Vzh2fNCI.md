@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - Why Is Everyone Talking About PLASMA? (Potential 66x)
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=RS6Vzh2fNCI
 video_id: RS6Vzh2fNCI
 upload_date: 20250929

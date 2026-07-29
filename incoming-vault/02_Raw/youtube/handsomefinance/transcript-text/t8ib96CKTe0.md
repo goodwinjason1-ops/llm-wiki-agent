@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - I investigated TJR’s crypto account
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=t8ib96CKTe0
 video_id: t8ib96CKTe0
 upload_date: 20250112

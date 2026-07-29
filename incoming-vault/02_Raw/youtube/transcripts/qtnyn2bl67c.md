@@ -2,7 +2,7 @@
 title: YouTube Transcript - How to Make $500/ Day Shorting Meme Coins
 created: 2026-07-08
 updated: 2026-07-08
-type: raw_source
+type: raw-source
 tags: [youtube, transcript, cap5]
 source_url: https://youtu.be/qtnyn2bl67c
 sha256: 212836cd3ba66060680f13534e250de0c380b9d26748befc74e15712260ebaff

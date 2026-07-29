@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - How I Made $21,663 From One Airdrop in 14 Days (Stupid Simple)
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=NZpN4stShnc
 video_id: NZpN4stShnc
 upload_date: 20251019

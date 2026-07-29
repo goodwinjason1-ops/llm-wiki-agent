@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - How I Made $19,293 In 20 Minutes With Memecoins (leverage strategy)
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=z1hyRSZCDvs
 video_id: z1hyRSZCDvs
 upload_date: 20250301

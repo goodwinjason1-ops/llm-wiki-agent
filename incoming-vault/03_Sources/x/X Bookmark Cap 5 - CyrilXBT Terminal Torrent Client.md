@@ -2,7 +2,7 @@
 title: X Bookmark Cap 5 - CyrilXBT Terminal Torrent Client
 created: 2026-07-09
 updated: 2026-07-09
-type: source_summary
+type: source-summary
 status: source-limited
 priority: low
 tags: [x, terminal, torrent, personal-tools, caution]

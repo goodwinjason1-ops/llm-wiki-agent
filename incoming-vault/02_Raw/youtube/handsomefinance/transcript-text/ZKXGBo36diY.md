@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - Solana Expert - I'm Quitting Memecoin Trading & You Should Too
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=ZKXGBo36diY
 video_id: ZKXGBo36diY
 upload_date: 20251015

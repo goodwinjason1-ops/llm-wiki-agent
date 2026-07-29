@@ -2,7 +2,7 @@
 title: Robotics Physical AI Investing Guide - Miles Deutscher 2026-07-07
 created: 2026-07-08
 updated: 2026-07-08
-type: source_summary
+type: source-summary
 tags: [x, robotics, physical-ai, investing, quant, theme-research]
 sources: [02_Raw/x/x-milesdeutscher-robotics-guide-2026-07-07.md]
 confidence: medium

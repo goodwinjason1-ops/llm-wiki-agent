@@ -2,7 +2,7 @@
 title: Robotics Physical AI Theme Lab 02 - Walk-Forward Validation
 created: 2026-07-08
 updated: 2026-07-08
-type: backtest_evidence
+type: backtest-evidence
 tags: [quant, robotics, physical-ai, walk-forward, validation, paper-trading]
 sources: [05_Projects/AI Quant Trading Floor/Implementation/robotics_walkforward_validation.py, 05_Projects/AI Quant Trading Floor/Strategies/QTF-009 Robotics Physical AI Theme Basket.md]
 confidence: medium

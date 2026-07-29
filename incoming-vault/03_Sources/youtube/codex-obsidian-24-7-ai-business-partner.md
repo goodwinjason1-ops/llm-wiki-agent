@@ -2,7 +2,7 @@
 title: Codex + Obsidian 24/7 AI business partner
 created: 2026-07-02
 updated: 2026-07-02
-type: source_summary
+type: source-summary
 tags: [youtube, ai-agent, second-brain]
 sources: [02_Raw/youtube/transcripts/_O7eUJxmzvE.md]
 video_id: _O7eUJxmzvE

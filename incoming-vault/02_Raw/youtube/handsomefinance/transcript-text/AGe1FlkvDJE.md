@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - 5 Dark Ways to Get Rich With Crypto
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=AGe1FlkvDJE
 video_id: AGe1FlkvDJE
 upload_date: 20250624

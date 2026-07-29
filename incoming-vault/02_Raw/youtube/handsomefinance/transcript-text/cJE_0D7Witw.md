@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - He Quit His Fortune 500 Job & Made $1M Trading Meme Coins
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=cJE_0D7Witw
 video_id: cJE_0D7Witw
 upload_date: 20251023

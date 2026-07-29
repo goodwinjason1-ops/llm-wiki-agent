@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - The BullX Settings That Made Me $20,523 Trading Memecoins
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=Jk89JHQS6Yc
 video_id: Jk89JHQS6Yc
 upload_date: 20250309

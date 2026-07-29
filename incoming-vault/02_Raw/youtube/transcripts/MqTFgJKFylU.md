@@ -2,7 +2,7 @@
 title: YouTube Transcript - This NEW Method Can Make me Money Every SINGLE Time
 created: 2026-07-08
 updated: 2026-07-08
-type: raw_source
+type: raw-source
 tags: [youtube, transcript, cap5]
 source_url: https://youtu.be/MqTFgJKFylU
 sha256: 8e68496d87f10f3cb1c697e87741f75f8df604b363d37672f880212019f6b2b6

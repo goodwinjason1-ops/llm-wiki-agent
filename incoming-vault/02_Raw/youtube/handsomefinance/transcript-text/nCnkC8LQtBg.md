@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - This Teen Made $85,000 Overnight With This New Streaming App
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=nCnkC8LQtBg
 video_id: nCnkC8LQtBg
 upload_date: 20250913

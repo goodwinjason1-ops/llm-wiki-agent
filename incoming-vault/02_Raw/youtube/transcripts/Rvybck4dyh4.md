@@ -2,7 +2,7 @@
 title: YouTube Transcript - I Traded Memecoins For One Week: Here is the result...
 created: 2026-07-08
 updated: 2026-07-08
-type: raw_source
+type: raw-source
 tags: [youtube, transcript, cap5]
 source_url: https://youtu.be/Rvybck4dyh4
 sha256: 3f74c208b4d30ac0ea79ab7e65760e6702f94151d9d56f0132b1b1b44e87acc4

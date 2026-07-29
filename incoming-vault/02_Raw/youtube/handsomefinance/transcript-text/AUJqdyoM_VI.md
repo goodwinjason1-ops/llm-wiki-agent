@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - If You Missed BNB Coin, Get Into Aster Before It’s Too Late
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=AUJqdyoM_VI
 video_id: AUJqdyoM_VI
 upload_date: 20250926

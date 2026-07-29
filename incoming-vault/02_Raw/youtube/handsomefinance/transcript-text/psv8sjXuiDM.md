@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - Is It Too Late To Get Rich With Meme Coins? (The Truth)
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=psv8sjXuiDM
 video_id: psv8sjXuiDM
 upload_date: 20250516

@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - This Evil Bot Is Stealing Millions From Memecoins Traders
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=rSMGUH78bU8
 video_id: rSMGUH78bU8
 upload_date: 20250201

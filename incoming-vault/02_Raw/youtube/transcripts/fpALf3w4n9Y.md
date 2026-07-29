@@ -2,7 +2,7 @@
 title: YouTube Transcript - Investing My Girlfriend's Money Into Meme Coins
 created: 2026-07-08
 updated: 2026-07-08
-type: raw_source
+type: raw-source
 tags: [youtube, transcript, cap5]
 source_url: https://youtu.be/fpALf3w4n9Y
 sha256: 03071be045a383a342d2c458e875f880dbac4175696bb852ab3a876fb097dd91

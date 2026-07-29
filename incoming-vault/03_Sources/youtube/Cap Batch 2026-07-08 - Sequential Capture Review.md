@@ -2,7 +2,7 @@
 title: Cap Batch 2026-07-08 - Sequential Capture Review
 created: 2026-07-08
 updated: 2026-07-08
-type: source_summary
+type: source-summary
 tags: [youtube, capture, second-brain, quant, antoine, business-context-brain]
 sources:
   - 02_Raw/youtube/cap_batch_2026-07-08_metadata.json

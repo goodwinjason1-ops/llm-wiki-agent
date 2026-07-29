@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - New Way To Avoid 99.9% of Rug Pulls
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=zBbIo8_qFYQ
 video_id: zBbIo8_qFYQ
 upload_date: 20250911

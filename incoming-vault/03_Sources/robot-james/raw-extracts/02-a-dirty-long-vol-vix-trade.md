@@ -2,7 +2,7 @@
 title: Robot James Raw Extract - 02-a-dirty-long-vol-vix-trade
 created: 2026-07-11
 updated: 2026-07-11
-type: raw-web-extract
+type: raw-source
 status: evidence-only
 tags: [robot-james, raw-extract]
 confidence: source-limited
@@ -100,3 +100,9 @@ you can get 20% off an annual subscription to this esteemed newsletter here: [ht
 [Subscribe](https://robotjames.substack.com/subscribe?simple=true&next=https%3A%2F%2Frobotjames.substack.com%2Fp%2Fa-dirty-long-vol-vix-trade&utm_source=paywall&utm_medium=web&utm_content=193639409)
 
 [Already a paid subscriber? **Sign in**](https://substack.com/sign-in?redirect=%2Fp%2Fa-dirty-long-vol-vix-trade&for_pub=robotjames&change_user=false)
+
+## Wiki concepts
+
+Synthesised from this source — the claims here are cited in:
+
+- [[forced-flows]]

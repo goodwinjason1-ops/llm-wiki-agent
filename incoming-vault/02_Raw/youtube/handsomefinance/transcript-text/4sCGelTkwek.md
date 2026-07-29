@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - I Tested 40 Prediction Market Tools. Use These 5.
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=4sCGelTkwek
 video_id: 4sCGelTkwek
 upload_date: 20260105

@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - 70 Traders vs 30 AI Agents - Who Will Make More Money?
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=8eAAHovOh-A
 video_id: 8eAAHovOh-A
 upload_date: 20260109

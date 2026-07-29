@@ -2,7 +2,7 @@
 title: Robotics Physical AI Theme Lab 01 - Article Basket Evidence
 created: 2026-07-08
 updated: 2026-07-08
-type: backtest_evidence
+type: backtest-evidence
 tags: [quant, robotics, physical-ai, backtest, paper-trading]
 sources: [03_Sources/articles/robotics-physical-ai-investing-guide-miles-deutscher-2026-07-07.md, 05_Projects/AI Quant Trading Floor/Implementation/robotics_theme_lab.py]
 confidence: medium

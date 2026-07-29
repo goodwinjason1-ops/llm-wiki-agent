@@ -1,6 +1,6 @@
 ---
 title: Handsome Finance transcript - The Truth About Insider Info In Crypto (Ex-Exchange CEO)
-type: raw_transcript
+type: raw-transcript
 source_url: https://www.youtube.com/watch?v=WCXsGLSdhmg
 video_id: WCXsGLSdhmg
 upload_date: 20260505

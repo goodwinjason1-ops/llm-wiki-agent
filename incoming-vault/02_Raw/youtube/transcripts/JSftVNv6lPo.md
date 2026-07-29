@@ -2,7 +2,7 @@
 title: YouTube Transcript - Trading 100x Meme Coins Live
 created: 2026-07-08
 updated: 2026-07-08
-type: raw_source
+type: raw-source
 tags: [youtube, transcript, cap5]
 source_url: https://youtu.be/JSftVNv6lPo
 sha256: 6fc8156df86096139fb19cdf4a41fd03ad9d70080735d63cbc5657507f97830c
