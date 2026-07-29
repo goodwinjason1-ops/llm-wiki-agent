@@ -114,6 +114,8 @@ The funding-extreme fade edge is **real but fragile**. The panel-level statistic
 
 ## Related
 
-- [[QTF-V07 Costed Function-Based Pairs Backtest - 2026-07-15]]
+- V07 backtest write-up: **never written — V07 was abandoned** (2026-07-29). The
+  link that stood here pointed at a note that does not exist. Kept as a line
+  rather than deleted silently, because "no write-up" is itself the record.
 - [[QTF Verification and Delivery Control - 2026-07-15]]
 - [[AI Quant Trading Floor Workflow]]

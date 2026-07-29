@@ -82,17 +82,25 @@ It found close matches but declined to rewrite them, because each differs by a
 |---|---|---|
 | `QTF-024 Contradiction Detection Research` | `0xJeff Hermes Workflows - Source Review - 2026-07-13` | `… - 2026-07-14` |
 | `QTF Alpha Digest Pipeline Contract` | `0xJeff Hermes Workflows - Source Review - 2026-07-13` | `… - 2026-07-14` |
-| `qtf_v07_costed_20260718_comparison` | `QTF-V07 Costed Function-Based Pairs Backtest - 2026-07-15` | `QTF-**V05** …` |
+| ~~`qtf_v07_costed_20260718_comparison`~~ | ~~`QTF-V07 Costed Function-Based Pairs Backtest - 2026-07-15`~~ | **RESOLVED** |
 
 The first two are probably just date typos — only the `07-14` file exists, and
 no `07-13` was ever written.
 
-**The third is the dangerous one, and it is now confirmed.** A search of the
-whole vault finds exactly one file: `QTF-V05 Costed Function-Based Pairs
-Backtest - 2026-07-15.md`. There is no V07 note. So the comparison report cites
-a backtest write-up that does not exist — either it was never written, or the
-report means V05 and the reference is wrong. Those have opposite fixes, which is
-precisely why the tool refused to guess.
+**The third — RESOLVED 2026-07-29.** A search of the whole vault found exactly
+one file: `QTF-V05 Costed Function-Based Pairs Backtest - 2026-07-15.md`. There
+is no V07 note. Jayse confirmed **V07 was abandoned and the write-up was never
+written**, so the link was a promise the vault could not keep.
+
+The reference in `qtf_v07_costed_20260718_comparison.md` has been replaced with a
+plain line recording that V07 was abandoned and no write-up exists, rather than
+deleted outright. The absence of a write-up is itself a fact about V07, and a
+comparison report that quietly loses its lineage is worse than one that says
+where the lineage stops.
+
+The comparison's own conclusion is unaffected — `do_not_promote`, 15.4% jitter
+survival against a 60% gate, on its own evidence. Removing a dead link changes
+no finding.
 
 Note the targets above are deliberately written as code, not as wikilinks. An
 earlier version of this dashboard used `[[…]]`, which made the dashboard itself
