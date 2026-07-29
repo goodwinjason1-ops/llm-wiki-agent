@@ -1,12 +1,27 @@
-# Ignore common local/editor files
+# Local/editor files
 .DS_Store
 Thumbs.db
 .vscode/
 .idea/
 
-# Optional local-only source dump folder
+# Obsidian per-machine state — the shared config in .obsidian/ IS committed,
+# but workspace layout, caches and plugin data are local.
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+.obsidian/graph-cache.json
+.obsidian/plugins/
+.trash/
+
+# Private source material — keep raw files out of a public repo.
 sources/private/
+
+# Generated galaxy output. Rebuild with: python3 tools/build_graph.py
+tools/galaxy/galaxy.html
+tools/galaxy/galaxy.json
 
 # Temporary conversion outputs
 *.tmp
 *.bak
+__pycache__/
+*.pyc

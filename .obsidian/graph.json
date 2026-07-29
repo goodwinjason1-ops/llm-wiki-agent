@@ -1,0 +1,79 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "showTags": true,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "path:wiki/maps",
+      "color": {
+        "a": 1,
+        "rgb": 16099459
+      }
+    },
+    {
+      "query": "path:wiki/procedures",
+      "color": {
+        "a": 1,
+        "rgb": 15763548
+      }
+    },
+    {
+      "query": "path:wiki/questions",
+      "color": {
+        "a": 1,
+        "rgb": 14244134
+      }
+    },
+    {
+      "query": "path:wiki/concepts",
+      "color": {
+        "a": 1,
+        "rgb": 3133337
+      }
+    },
+    {
+      "query": "path:wiki/entities",
+      "color": {
+        "a": 1,
+        "rgb": 1678960
+      }
+    },
+    {
+      "query": "path:wiki/literature",
+      "color": {
+        "a": 1,
+        "rgb": 7186412
+      }
+    },
+    {
+      "query": "path:wiki/journal",
+      "color": {
+        "a": 1,
+        "rgb": 3770341
+      }
+    },
+    {
+      "query": "path:wiki/inbox",
+      "color": {
+        "a": 1,
+        "rgb": 2452159
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": true,
+  "textFadeMultiplier": -0.9,
+  "nodeSizeMultiplier": 1.45,
+  "lineSizeMultiplier": 0.75,
+  "collapse-forces": false,
+  "centerStrength": 0.3,
+  "repelStrength": 14.5,
+  "linkStrength": 0.55,
+  "linkDistance": 290,
+  "scale": 0.62,
+  "close": false
+}

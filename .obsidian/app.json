@@ -1,0 +1,11 @@
+{
+  "attachmentFolderPath": "wiki/_attachments",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "wiki/inbox",
+  "useMarkdownLinks": false,
+  "newLinkFormat": "shortest",
+  "alwaysUpdateLinks": true,
+  "showUnsupportedFiles": false,
+  "promptDelete": true,
+  "strictLineBreaks": false
+}
