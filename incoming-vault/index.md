@@ -3,6 +3,10 @@
 > Content catalog. Read this before working in the vault.
 > Last updated: 2026-07-29 | Initial pages: 18+
 
+## Needs your input
+
+- [[Decisions Needed - 2026-07-29]] — six judgement calls left after the 2026-07-29 cleanup
+
 ## Wiki concepts
 
 The synthesis layer. Each cites the sources it was abstracted from.
