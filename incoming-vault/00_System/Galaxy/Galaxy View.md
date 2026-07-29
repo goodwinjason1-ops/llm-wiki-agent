@@ -38,6 +38,40 @@ It is a **snapshot**, not a live view. Rebuild it after a synthesis session to
 see what moved. That is the point: the shape of the vault a month apart is the
 clearest picture of whether synthesis is actually happening.
 
+## 3. The 3D galaxy *inside* Obsidian
+
+The 3D view can live in an Obsidian pane rather than a browser tab. Obsidian's
+Web viewer speaks `http`, not `file://`, so the galaxy has to be served — one
+command does both:
+
+```powershell
+cd "C:\Users\Kidsg\Documents\AI Second Brain"
+python 00_System\Scripts\build_galaxy.py --serve
+```
+
+Leave that window open. Then in Obsidian:
+
+1. **Settings → Core plugins → Web viewer** — turn it on. It ships with Obsidian;
+   it is simply off in this vault.
+2. `Ctrl+P` → **Web viewer: Open** → paste `http://127.0.0.1:8765/galaxy.html`
+3. Drag the tab where you want it and **pin** it, so it survives layout changes.
+
+`Ctrl+C` in the terminal stops the server. The server binds to `127.0.0.1` only —
+this serves your note titles and summaries, and none of it should be reachable
+from the network. Use `--serve 8766` if something already holds the default port.
+
+**Trade-off worth knowing:** this pane is the real galaxy — typed edges, tier
+colouring, note summaries on click — but it is still a snapshot, and it needs the
+terminal window open. The built-in graph is live and needs nothing. Most weeks
+the built-in graph is the right tool; the galaxy is for the weekly review, when
+you want to see what the whole vault is doing.
+
+There is also a community plugin called **3D Graph** that renders Obsidian's own
+graph in three dimensions natively. It is smoother to launch, but it only knows
+about links — it has none of the schema's edge types, tiers, staleness or
+confidence, which is most of what makes the shape readable here. Worth having as
+well as, not instead of.
+
 ## What the shape tells you
 
 - **Tight bright clusters** — a topic you have genuinely worked through.
