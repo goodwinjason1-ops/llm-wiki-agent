@@ -1,0 +1,934 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vault Galaxy</title>
+<style>
+/* ---------------------------------------------------------------------------
+   Color encoding (see SCHEMA.md and tools/build_graph.py)
+
+   HUE  = epistemic family. Three hues, validated all-pairs for CVD on this
+          surface (worst pair ΔE 9.4 deutan, 20.9 normal-vision):
+            blue   #3987e5  evidence      (literature, journal, capture)
+            aqua   #199e70  understanding (concepts, entities)
+            orange #d95926  action/nav    (maps, procedures, questions)
+
+   LIGHTNESS within a hue = the specific note type. This is composite encoding,
+          used deliberately because 8 flat categorical hues cannot clear the
+          all-pairs floor. Every step clears 3:1 against the surface, and type is
+          never color-alone: the legend, the per-type filters, the hover label and
+          the detail panel all name it in text.
+
+   SIZE      = degree (how connected a note is)
+   OPACITY   = confidence
+--------------------------------------------------------------------------- */
+:root{
+  color-scheme: dark;
+  --surface:        #05060d;
+  --surface-2:      #0c0f1c;
+  --panel:          rgba(10,13,26,.82);
+  --border:         rgba(140,160,220,.16);
+  --border-strong:  rgba(140,160,220,.32);
+  --text-primary:   #f2f5ff;
+  --text-secondary: #a8b2d1;
+  --text-muted:     #6b7699;
+
+  --fam-evidence:      #3987e5;
+  --fam-understanding: #199e70;
+  --fam-action:        #d95926;
+
+  --t-source:    #6da7ec;
+  --t-journal:   #3987e5;
+  --t-capture:   #256abf;
+  --t-concept:   #2fcf99;
+  --t-entity:    #199e70;
+  --t-map:       #f5a883;
+  --t-procedure: #f0885c;
+  --t-question:  #d95926;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0; background:var(--surface); color:var(--text-primary);
+  font:13px/1.5 ui-sans-serif,-apple-system,"Segoe UI",Inter,Roboto,sans-serif;
+  overflow:hidden; -webkit-font-smoothing:antialiased;
+}
+canvas{display:block; position:fixed; inset:0; cursor:grab; touch-action:none}
+canvas.dragging{cursor:grabbing}
+
+.panel{
+  position:fixed; background:var(--panel); border:1px solid var(--border);
+  border-radius:12px; backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px);
+  box-shadow:0 8px 40px rgba(0,0,0,.6);
+}
+
+/* header ------------------------------------------------------------------ */
+#head{top:14px; left:14px; padding:11px 15px; display:flex; gap:16px; align-items:baseline}
+#head h1{margin:0; font-size:14px; font-weight:650; letter-spacing:.2px}
+#head .stats{color:var(--text-muted); font-size:11.5px; font-variant-numeric:tabular-nums}
+
+/* left rail --------------------------------------------------------------- */
+#rail{
+  top:66px; left:14px; width:250px; max-height:calc(100vh - 96px);
+  padding:12px; overflow-y:auto; overscroll-behavior:contain;
+}
+#rail::-webkit-scrollbar{width:8px}
+#rail::-webkit-scrollbar-thumb{background:var(--border-strong); border-radius:4px}
+
+.sec{margin-bottom:16px}
+.sec:last-child{margin-bottom:2px}
+.sec>h2{
+  margin:0 0 8px; font-size:10px; font-weight:650; letter-spacing:.9px;
+  text-transform:uppercase; color:var(--text-muted);
+}
+
+#q{
+  width:100%; padding:7px 10px; border-radius:8px; font-size:12.5px;
+  background:var(--surface-2); border:1px solid var(--border);
+  color:var(--text-primary); outline:none;
+}
+#q:focus{border-color:var(--border-strong)}
+#q::placeholder{color:var(--text-muted)}
+#hits{margin-top:6px; max-height:190px; overflow-y:auto}
+#hits button{
+  display:block; width:100%; text-align:left; padding:5px 8px; margin-bottom:2px;
+  background:none; border:none; border-radius:6px; cursor:pointer;
+  color:var(--text-secondary); font:inherit; font-size:12px;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+#hits button:hover{background:rgba(140,160,220,.12); color:var(--text-primary)}
+
+/* legend / filters -------------------------------------------------------- */
+.fam{margin-bottom:9px}
+.fam-label{font-size:10px; color:var(--text-muted); margin:0 0 4px 2px; letter-spacing:.4px}
+.row{
+  display:flex; align-items:center; gap:8px; padding:3.5px 6px; border-radius:6px;
+  cursor:pointer; user-select:none; color:var(--text-secondary);
+}
+.row:hover{background:rgba(140,160,220,.09)}
+.row.off{opacity:.34}
+.row .dot{width:9px; height:9px; border-radius:50%; flex:none; box-shadow:0 0 8px currentColor}
+.row .nm{flex:1; font-size:12px; color:var(--text-primary)}
+.row.off .nm{color:var(--text-muted)}
+.row .ct{font-size:11px; color:var(--text-muted); font-variant-numeric:tabular-nums}
+
+.ctl{display:flex; align-items:center; justify-content:space-between; gap:8px; padding:3px 6px; font-size:12px}
+.ctl label{color:var(--text-secondary); cursor:pointer}
+.ctl input[type=range]{width:100px; accent-color:var(--fam-evidence)}
+.ctl input[type=checkbox]{accent-color:var(--fam-evidence); cursor:pointer}
+
+button.act{
+  width:100%; padding:6px; margin-top:6px; border-radius:7px; cursor:pointer;
+  background:var(--surface-2); border:1px solid var(--border);
+  color:var(--text-secondary); font:inherit; font-size:11.5px;
+}
+button.act:hover{border-color:var(--border-strong); color:var(--text-primary)}
+
+/* detail ------------------------------------------------------------------ */
+#detail{
+  top:66px; right:14px; width:310px; max-height:calc(100vh - 96px);
+  padding:14px; overflow-y:auto; display:none;
+}
+#detail.on{display:block}
+#detail .kind{font-size:10px; letter-spacing:.9px; text-transform:uppercase; margin-bottom:5px}
+#detail h3{margin:0 0 4px; font-size:15px; line-height:1.3; font-weight:600}
+#detail .path{font-size:11px; color:var(--text-muted); word-break:break-all; margin-bottom:11px}
+#detail .meta{display:flex; flex-wrap:wrap; gap:5px; margin-bottom:12px}
+#detail .chip{
+  font-size:10.5px; padding:2px 7px; border-radius:20px;
+  background:rgba(140,160,220,.12); color:var(--text-secondary);
+}
+#detail .sum{font-size:12.5px; color:var(--text-secondary); margin-bottom:13px}
+#detail h4{
+  margin:13px 0 6px; font-size:10px; letter-spacing:.9px; text-transform:uppercase;
+  color:var(--text-muted);
+}
+#detail ul{margin:0; padding:0; list-style:none}
+#detail li{margin-bottom:5px; font-size:12px; overflow-wrap:anywhere}
+#detail ul.links li{
+  display:grid; grid-template-columns:86px 1fr; gap:8px; align-items:baseline;
+}
+#detail .edge{
+  font-size:9.5px; letter-spacing:.4px; text-transform:uppercase;
+  color:var(--text-muted); line-height:1.5;
+}
+#detail ul.src li{font-size:11px; color:var(--text-muted); overflow-wrap:anywhere}
+#detail a{color:var(--text-primary); text-decoration:none; cursor:pointer; border-bottom:1px solid var(--border-strong)}
+#detail a:hover{color:#fff; border-color:currentColor}
+#detail .why{color:var(--text-muted); font-size:11px}
+#close{position:absolute; top:10px; right:10px; background:none; border:none; color:var(--text-muted); cursor:pointer; font-size:16px; line-height:1; padding:2px 5px; border-radius:5px}
+#close:hover{color:var(--text-primary); background:rgba(140,160,220,.12)}
+
+#hint{
+  bottom:14px; left:50%; transform:translateX(-50%); padding:7px 14px;
+  font-size:11px; color:var(--text-muted); white-space:nowrap;
+}
+#hint kbd{
+  font:inherit; padding:1px 5px; border-radius:4px; color:var(--text-secondary);
+  background:var(--surface-2); border:1px solid var(--border);
+}
+#empty{
+  position:fixed; inset:0; display:none; place-items:center; text-align:center; padding:40px;
+}
+#empty.on{display:grid}
+#empty p{max-width:440px; color:var(--text-secondary); line-height:1.7}
+#empty code{background:var(--surface-2); padding:2px 6px; border-radius:5px; color:var(--text-primary)}
+
+@media (max-width:900px){
+  #rail{width:210px}
+  #detail{width:min(300px, calc(100vw - 28px))}
+  #hint{display:none}
+}
+</style>
+</head>
+<body>
+
+<canvas id="c"></canvas>
+
+<div class="panel" id="head">
+  <h1>Vault Galaxy</h1>
+  <span class="stats" id="stats"></span>
+</div>
+
+<div class="panel" id="rail">
+  <div class="sec">
+    <h2>Search</h2>
+    <input id="q" type="search" placeholder="Find a note…" autocomplete="off" spellcheck="false">
+    <div id="hits"></div>
+  </div>
+
+  <div class="sec">
+    <h2>Note types</h2>
+    <div id="legend"></div>
+  </div>
+
+  <div class="sec">
+    <h2>Links</h2>
+    <div id="edgekeys"></div>
+  </div>
+
+  <div class="sec">
+    <h2>View</h2>
+    <div class="ctl"><label for="spin">Drift</label><input id="spin" type="checkbox" checked></div>
+    <div class="ctl"><label for="disc">Galaxy disc</label><input id="disc" type="checkbox"></div>
+    <div class="ctl"><label for="labels">Labels</label><input id="labels" type="range" min="0" max="100" value="42"></div>
+    <div class="ctl"><label for="glow">Glow</label><input id="glow" type="range" min="0" max="100" value="70"></div>
+    <button class="act" id="reheat">Re-simulate layout</button>
+    <button class="act" id="reset">Reset camera</button>
+  </div>
+</div>
+
+<div class="panel" id="detail">
+  <button id="close" title="Close (Esc)">&times;</button>
+  <div id="dbody"></div>
+</div>
+
+<div class="panel" id="hint">
+  <kbd>drag</kbd> rotate · <kbd>scroll</kbd> zoom · <kbd>click</kbd> focus a note · <kbd>/</kbd> search · <kbd>Esc</kbd> clear
+</div>
+
+<div id="empty">
+  <p><strong>No notes yet.</strong><br><br>
+  Add material to <code>sources/</code>, ask your agent to <code>ingest sources</code>,
+  then rebuild this view with <code>python3 tools/build_graph.py</code>.</p>
+</div>
+
+<script>
+/* eslint-disable */
+const GRAPH = {"nodes":[],"edges":[],"meta":{}}; //{{GRAPH_DATA}}
+
+// ---------------------------------------------------------------------------
+// Encoding tables
+// ---------------------------------------------------------------------------
+const TYPE_STYLE = {
+  source:    {color:'#6da7ec', fam:'Evidence',      label:'Literature'},
+  journal:   {color:'#3987e5', fam:'Evidence',      label:'Journal'},
+  capture:   {color:'#256abf', fam:'Evidence',      label:'Inbox'},
+  concept:   {color:'#2fcf99', fam:'Understanding', label:'Concepts'},
+  entity:    {color:'#199e70', fam:'Understanding', label:'Entities'},
+  map:       {color:'#f5a883', fam:'Navigation',    label:'Maps'},
+  procedure: {color:'#f0885c', fam:'Navigation',    label:'Procedures'},
+  question:  {color:'#d95926', fam:'Navigation',    label:'Questions'},
+};
+const FAM_ORDER = ['Evidence','Understanding','Navigation'];
+const TYPE_ORDER = ['source','journal','capture','concept','entity','map','procedure','question'];
+
+// Edge styling. Structural edges pull harder and sit shorter.
+const EDGE_STYLE = {
+  'instance-of':  {c:'#8fa4d8', w:1.1, len:52,  s:0.055, dash:false},
+  'part-of':      {c:'#8fa4d8', w:1.1, len:46,  s:0.065, dash:false},
+  'depends-on':   {c:'#3987e5', w:1.2, len:60,  s:0.050, dash:false},
+  'uses':         {c:'#5b7fc4', w:0.9, len:72,  s:0.032, dash:false},
+  'supports':     {c:'#2fcf99', w:1.1, len:62,  s:0.045, dash:false},
+  'contradicts':  {c:'#e66767', w:1.5, len:104, s:0.020, dash:true},
+  'supersedes':   {c:'#c98500', w:1.2, len:56,  s:0.048, dash:true},
+  'caused':       {c:'#f0885c', w:1.1, len:64,  s:0.042, dash:false},
+  'analogous-to': {c:'#9085e9', w:1.6, len:120, s:0.016, dash:true},
+  'authored-by':  {c:'#7b86a8', w:0.9, len:58,  s:0.040, dash:false},
+  'mentioned-in': {c:'#5a6484', w:0.7, len:88,  s:0.022, dash:false},
+  'links-to':     {c:'#4d5675', w:0.8, len:80,  s:0.028, dash:false},
+};
+
+// ---------------------------------------------------------------------------
+// State
+// ---------------------------------------------------------------------------
+const cv = document.getElementById('c');
+const ctx = cv.getContext('2d', {alpha:false});
+let W=0, H=0, DPR=1;
+
+const N = GRAPH.nodes;
+const E = GRAPH.edges.filter(e => EDGE_STYLE[e.type]);
+const idx = new Map(N.map((n,i)=>[n.id,i]));
+
+const state = {
+  rot: [1,0,0, 0,1,0, 0,0,1],
+  zoom: 1, focal: 1400, dist: 520,
+  panX: 0, panY: 0,
+  alpha: 1,
+  spin: true, disc: false,
+  labelPct: 0.42, glow: 0.70,
+  hover: -1, selected: -1,
+  hi: null,                 // Set of highlighted node indices
+  typeOff: new Set(),
+  edgeOff: new Set(),
+};
+
+// ---------------------------------------------------------------------------
+// Node initialisation
+// ---------------------------------------------------------------------------
+const deg = new Float32Array(N.length);
+for (const e of E){
+  const a = idx.get(e.source), b = idx.get(e.target);
+  if (a===undefined || b===undefined) continue;
+  deg[a]++; deg[b]++;
+}
+
+const P = { x:new Float64Array(N.length), y:new Float64Array(N.length), z:new Float64Array(N.length),
+            vx:new Float64Array(N.length), vy:new Float64Array(N.length), vz:new Float64Array(N.length) };
+const proj = { x:new Float64Array(N.length), y:new Float64Array(N.length), z:new Float64Array(N.length),
+               s:new Float64Array(N.length), vis:new Uint8Array(N.length) };
+
+// Seed each family on its own axis so constellations separate from frame one
+// instead of untangling out of a single ball.
+const FAM_SEED = {Evidence:[-1,0.25,0.15], Understanding:[0.85,-0.2,-0.5], Navigation:[0.15,0.9,0.6]};
+function seed(){
+  const R = 340;
+  N.forEach((n,i)=>{
+    const st = TYPE_STYLE[n.type] || TYPE_STYLE.concept;
+    const a = FAM_SEED[st.fam] || [0,0,0];
+    // deterministic jitter — the same vault always lays out the same way
+    const h = (s=>{let x=2166136261;for(let k=0;k<s.length;k++){x^=s.charCodeAt(k);x=Math.imul(x,16777619)}return (x>>>0)/4294967296})(n.id);
+    const t = h*Math.PI*2, u = ((h*9301+49297)%233280)/233280*2-1;
+    const r = R*(0.45+0.55*Math.sqrt(h));
+    P.x[i] = a[0]*260 + r*Math.sqrt(1-u*u)*Math.cos(t);
+    P.y[i] = a[1]*260 + r*Math.sqrt(1-u*u)*Math.sin(t);
+    P.z[i] = a[2]*260 + r*u;
+  });
+}
+seed();
+
+const radius = i => 2.6 + Math.sqrt(deg[i]) * 2.1 + (N[i].type==='map' ? 2.4 : 0);
+const mass   = i => 1 + deg[i] * 0.55;
+
+// ---------------------------------------------------------------------------
+// Adjacency (for highlight + detail panel)
+// ---------------------------------------------------------------------------
+const adj = N.map(()=>[]);
+for (const e of E){
+  const a = idx.get(e.source), b = idx.get(e.target);
+  if (a===undefined || b===undefined) continue;
+  adj[a].push({o:b, t:e.type, dir:'out', why:e.note});
+  adj[b].push({o:a, t:e.type, dir:'in',  why:e.note});
+}
+
+// ---------------------------------------------------------------------------
+// Physics — Barnes-Hut octree repulsion + typed springs + family cohesion
+// ---------------------------------------------------------------------------
+const THETA2 = 0.81;         // theta^2, theta = 0.9
+// Repulsion has to beat the springs by a wide margin or the whole graph collapses
+// into a ball. Scaled by node count so large vaults spread rather than compact.
+const REPEL = 2600 * Math.pow(Math.max(1, N.length) / 40, 0.35);
+// Disconnected components have no springs holding them, so pure repulsion throws
+// them to infinity. A soft boundary keeps the cosmos finite regardless of how
+// fragmented the vault is — and a fragmented vault is exactly when you need to see it.
+const R_BOUND = 300 * Math.pow(Math.max(1, N.length) / 40, 0.42);
+
+function buildTree(){
+  let min=[Infinity,Infinity,Infinity], max=[-Infinity,-Infinity,-Infinity];
+  for(let i=0;i<N.length;i++){
+    if(P.x[i]<min[0])min[0]=P.x[i]; if(P.x[i]>max[0])max[0]=P.x[i];
+    if(P.y[i]<min[1])min[1]=P.y[i]; if(P.y[i]>max[1])max[1]=P.y[i];
+    if(P.z[i]<min[2])min[2]=P.z[i]; if(P.z[i]>max[2])max[2]=P.z[i];
+  }
+  const size = Math.max(max[0]-min[0], max[1]-min[1], max[2]-min[2], 1) * 1.05;
+  const root = {cx:(min[0]+max[0])/2, cy:(min[1]+max[1])/2, cz:(min[2]+max[2])/2,
+                w:size, m:0, mx:0, my:0, mz:0, kids:null, leaf:-1};
+
+  const insert = (nd, i, depth) => {
+    const m = mass(i);
+    nd.m += m; nd.mx += P.x[i]*m; nd.my += P.y[i]*m; nd.mz += P.z[i]*m;
+    if (depth > 18) return;
+    if (nd.kids === null){
+      if (nd.leaf === -1){ nd.leaf = i; return; }
+      const old = nd.leaf; nd.leaf = -1;
+      nd.kids = new Array(8).fill(null);
+      place(nd, old, depth); place(nd, i, depth);
+      return;
+    }
+    place(nd, i, depth);
+  };
+  const place = (nd, i, depth) => {
+    const q = (P.x[i]>nd.cx?1:0) | (P.y[i]>nd.cy?2:0) | (P.z[i]>nd.cz?4:0);
+    let k = nd.kids[q];
+    if (!k){
+      const h = nd.w/4;
+      k = {cx:nd.cx+(q&1?h:-h), cy:nd.cy+(q&2?h:-h), cz:nd.cz+(q&4?h:-h),
+           w:nd.w/2, m:0, mx:0, my:0, mz:0, kids:null, leaf:-1};
+      nd.kids[q] = k;
+    }
+    insert(k, i, depth+1);
+  };
+
+  for(let i=0;i<N.length;i++) insert(root, i, 0);
+  return root;
+}
+
+const stack = [];
+function repel(i, root, k){
+  let sx=0, sy=0, sz=0;
+  stack.length = 0; stack.push(root);
+  while(stack.length){
+    const nd = stack.pop();
+    if (nd.m === 0) continue;
+    if (nd.leaf === i && nd.kids === null) continue;
+    const cx = nd.mx/nd.m, cy = nd.my/nd.m, cz = nd.mz/nd.m;
+    let dx = P.x[i]-cx, dy = P.y[i]-cy, dz = P.z[i]-cz;
+    let d2 = dx*dx+dy*dy+dz*dz;
+    if (d2 < 1e-6){ dx = (Math.random()-.5); dy = (Math.random()-.5); dz = (Math.random()-.5); d2 = 1; }
+    if (nd.kids === null || (nd.w*nd.w)/d2 < THETA2){
+      const f = k * nd.m / (d2 * Math.sqrt(d2));
+      sx += dx*f; sy += dy*f; sz += dz*f;
+    } else {
+      for (const kd of nd.kids) if (kd) stack.push(kd);
+    }
+  }
+  return [sx,sy,sz];
+}
+
+const famCenter = {};
+function tick(){
+  if (state.alpha < 0.006 || N.length === 0) return;
+  const a = state.alpha;
+  const root = buildTree();
+
+  // repulsion
+  for (let i=0;i<N.length;i++){
+    const [rx,ry,rz] = repel(i, root, REPEL);
+    P.vx[i] += rx*a; P.vy[i] += ry*a; P.vz[i] += rz*a;
+  }
+
+  // typed springs
+  for (const e of E){
+    const i = idx.get(e.source), j = idx.get(e.target);
+    if (i===undefined || j===undefined) continue;
+    const st = EDGE_STYLE[e.type];
+    let dx=P.x[j]-P.x[i], dy=P.y[j]-P.y[i], dz=P.z[j]-P.z[i];
+    let d = Math.hypot(dx,dy,dz) || 0.001;
+    const f = (d - st.len) / d * st.s * a;
+    const mi = mass(i), mj = mass(j), tot = mi+mj;
+    const wi = mj/tot, wj = mi/tot;
+    P.vx[i]+=dx*f*wi; P.vy[i]+=dy*f*wi; P.vz[i]+=dz*f*wi;
+    P.vx[j]-=dx*f*wj; P.vy[j]-=dy*f*wj; P.vz[j]-=dz*f*wj;
+  }
+
+  // family cohesion — what turns a hairball into constellations
+  for (const k in famCenter) delete famCenter[k];
+  for (let i=0;i<N.length;i++){
+    const fam = (TYPE_STYLE[N[i].type]||TYPE_STYLE.concept).fam;
+    const c = famCenter[fam] || (famCenter[fam] = {x:0,y:0,z:0,n:0});
+    c.x+=P.x[i]; c.y+=P.y[i]; c.z+=P.z[i]; c.n++;
+  }
+  for (const k in famCenter){ const c=famCenter[k]; c.x/=c.n; c.y/=c.n; c.z/=c.n; }
+
+  for (let i=0;i<N.length;i++){
+    const fam = (TYPE_STYLE[N[i].type]||TYPE_STYLE.concept).fam;
+    const c = famCenter[fam];
+    P.vx[i] += (c.x-P.x[i])*0.014*a;
+    P.vy[i] += (c.y-P.y[i])*0.014*a;
+    P.vz[i] += (c.z-P.z[i])*0.014*a;
+    // weak pull to origin keeps the whole thing on screen
+    P.vx[i] -= P.x[i]*0.0016*a;
+    P.vy[i] -= P.y[i]*0.0016*a;
+    P.vz[i] -= P.z[i]*0.0016*a;
+    // hard-ish containment past the boundary
+    const dr = Math.hypot(P.x[i], P.y[i], P.z[i]);
+    if (dr > R_BOUND){
+      const k = (dr - R_BOUND) / dr * 0.09 * a;
+      P.vx[i] -= P.x[i]*k; P.vy[i] -= P.y[i]*k; P.vz[i] -= P.z[i]*k;
+    }
+    if (state.disc) P.vz[i] -= P.z[i]*0.075*a;   // flatten toward a galactic plane
+  }
+
+  const damp = 0.62;
+  for (let i=0;i<N.length;i++){
+    P.vx[i]*=damp; P.vy[i]*=damp; P.vz[i]*=damp;
+    P.x[i]+=P.vx[i]; P.y[i]+=P.vy[i]; P.z[i]+=P.vz[i];
+  }
+  state.alpha += (0 - state.alpha) * 0.021;
+}
+
+// ---------------------------------------------------------------------------
+// Camera
+// ---------------------------------------------------------------------------
+function rotate(dy, dx){
+  const cy=Math.cos(dy), sy=Math.sin(dy), cx=Math.cos(dx), sx=Math.sin(dx);
+  const Ry=[cy,0,sy, 0,1,0, -sy,0,cy];
+  const Rx=[1,0,0, 0,cx,-sx, 0,sx,cx];
+  state.rot = mul(mul(Rx,Ry), state.rot);
+}
+function mul(a,b){
+  const o=new Array(9);
+  for(let r=0;r<3;r++)for(let c=0;c<3;c++)
+    o[r*3+c]=a[r*3]*b[c]+a[r*3+1]*b[3+c]+a[r*3+2]*b[6+c];
+  return o;
+}
+
+/** Recentre on the centroid and pick a zoom that fills the viewport.
+ *  Without this the view depends entirely on how far the simulation happened to
+ *  spread, which varies with vault size. */
+function fitView(){
+  if (!N.length) return;
+  let cx=0, cy=0, cz=0;
+  for (let i=0;i<N.length;i++){ cx+=P.x[i]; cy+=P.y[i]; cz+=P.z[i]; }
+  cx/=N.length; cy/=N.length; cz/=N.length;
+  // 92nd percentile, not max — a handful of far-flung orphans must not shrink the
+  // other 800 notes to invisible dust.
+  const rs = new Float64Array(N.length);
+  for (let i=0;i<N.length;i++){
+    P.x[i]-=cx; P.y[i]-=cy; P.z[i]-=cz;
+    rs[i] = Math.hypot(P.x[i],P.y[i],P.z[i]);
+  }
+  const sorted = Array.from(rs).sort((a,b)=>a-b);
+  let r = Math.max(sorted[Math.floor(sorted.length*0.92)] || 0, 60);
+
+  // Re-centre on the inliers only. The mean is dragged around by far-flung
+  // orphans, which leaves the main body sitting off to one side.
+  let ix=0, iy=0, iz=0, n=0;
+  for (let i=0;i<N.length;i++){
+    if (rs[i] <= r){ ix+=P.x[i]; iy+=P.y[i]; iz+=P.z[i]; n++; }
+  }
+  if (n > 2){
+    ix/=n; iy/=n; iz/=n;
+    r = 60;
+    for (let i=0;i<N.length;i++){
+      P.x[i]-=ix; P.y[i]-=iy; P.z[i]-=iz;
+      rs[i] = Math.hypot(P.x[i],P.y[i],P.z[i]);
+    }
+    const s2 = Array.from(rs).sort((a,b)=>a-b);
+    r = Math.max(s2[Math.floor(s2.length*0.92)] || 0, 60);
+  }
+  recomputeOrigin();
+  const usableW = W > 900 ? W - 292 : W - 28;
+  const persp = state.focal / (state.focal + state.dist);
+  state.zoom = Math.max(0.12, Math.min(9, (0.40 * Math.min(usableW, H - 40)) / (r * persp)));
+  state.panX = 0; state.panY = 0;
+}
+
+// starfield backdrop
+const STARS = Array.from({length:520}, () => {
+  const t=Math.random()*Math.PI*2, u=Math.random()*2-1, r=2600+Math.random()*900;
+  return {x:r*Math.sqrt(1-u*u)*Math.cos(t), y:r*Math.sqrt(1-u*u)*Math.sin(t), z:r*u,
+          m:Math.random()*0.65+0.12, tw:Math.random()*Math.PI*2};
+});
+
+// ---------------------------------------------------------------------------
+// Render
+// ---------------------------------------------------------------------------
+let t0 = 0;
+// The panels are opaque, so the usable canvas is narrower than the window. Centre
+// the graph in the space that is actually visible, not in the window.
+let originX = 0, originY = 0;
+function recomputeOrigin(){
+  const railOn = N.length > 0 && W > 900;
+  const left  = railOn ? 278 : 14;
+  const right = (W > 900 && document.getElementById('detail').classList.contains('on')) ? 338 : 14;
+  originX = left + (W - left - right) / 2;
+  originY = H / 2 + 12;
+}
+
+function project(x,y,z){
+  const R = state.rot;
+  const X = R[0]*x+R[1]*y+R[2]*z;
+  const Y = R[3]*x+R[4]*y+R[5]*z;
+  const Z = R[6]*x+R[7]*y+R[8]*z;
+  const s = state.focal / Math.max(1, state.focal + Z + state.dist) * state.zoom;
+  return [originX + X*s + state.panX, originY + Y*s + state.panY, Z, s];
+}
+
+function draw(ts){
+  const dt = Math.min(50, ts - t0) || 16; t0 = ts;
+  recomputeOrigin();
+  if (state.spin && state.hover < 0) rotate(0, 0.00016*dt);
+  tick();
+
+  ctx.setTransform(DPR,0,0,DPR,0,0);
+  ctx.fillStyle = '#05060d';
+  ctx.fillRect(0,0,W,H);
+
+  // deep-space vignette
+  const vg = ctx.createRadialGradient(W/2,H/2,0, W/2,H/2, Math.max(W,H)*0.75);
+  vg.addColorStop(0,'#0b0f20'); vg.addColorStop(1,'#04050b');
+  ctx.fillStyle = vg; ctx.fillRect(0,0,W,H);
+
+  // stars
+  ctx.globalCompositeOperation = 'lighter';
+  for (const s of STARS){
+    const [px,py,pz] = project(s.x,s.y,s.z);
+    if (pz < -state.focal || px<-40||px>W+40||py<-40||py>H+40) continue;
+    const tw = 0.6 + 0.4*Math.sin(ts*0.0011 + s.tw);
+    ctx.fillStyle = `rgba(190,210,255,${(s.m*0.5*tw).toFixed(3)})`;
+    ctx.fillRect(px, py, 1.2, 1.2);
+  }
+
+  // nebulae behind each family
+  if (state.glow > 0.02){
+    for (const fam of FAM_ORDER){
+      const c = famCenter[fam]; if (!c) continue;
+      const [px,py,,s] = project(c.x,c.y,c.z);
+      const col = fam==='Evidence' ? '57,135,229' : fam==='Understanding' ? '25,158,112' : '217,89,38';
+      const r = 300*s + 120;
+      const g = ctx.createRadialGradient(px,py,0, px,py,r);
+      g.addColorStop(0, `rgba(${col},${(0.10*state.glow).toFixed(3)})`);
+      g.addColorStop(1, `rgba(${col},0)`);
+      ctx.fillStyle = g;
+      ctx.beginPath(); ctx.arc(px,py,r,0,6.2832); ctx.fill();
+    }
+  }
+  ctx.globalCompositeOperation = 'source-over';
+
+  // project nodes
+  const vis = [];
+  for (let i=0;i<N.length;i++){
+    if (state.typeOff.has(N[i].type)){ proj.vis[i]=0; continue; }
+    const [px,py,pz,s] = project(P.x[i],P.y[i],P.z[i]);
+    proj.x[i]=px; proj.y[i]=py; proj.z[i]=pz; proj.s[i]=s; proj.vis[i]=1;
+    vis.push(i);
+  }
+  vis.sort((a,b)=>proj.z[b]-proj.z[a]);   // far to near
+
+  const hi = state.hi;
+  const dim = hi ? 0.11 : 1;
+
+  // edges
+  ctx.globalCompositeOperation = 'lighter';
+  ctx.lineCap = 'round';
+  for (const e of E){
+    if (state.edgeOff.has(e.type)) continue;
+    const i = idx.get(e.source), j = idx.get(e.target);
+    if (i===undefined || j===undefined || !proj.vis[i] || !proj.vis[j]) continue;
+    const st = EDGE_STYLE[e.type];
+    const lit = !hi || (hi.has(i) && hi.has(j));
+    const depth = Math.max(0.18, Math.min(1, (proj.s[i]+proj.s[j])/2 / state.zoom));
+    let a = (lit ? 0.30 : 0.05*dim*9) * depth;
+    if (hi && !lit) a = 0.028;
+    if (a < 0.012) continue;
+    ctx.strokeStyle = st.c;
+    ctx.globalAlpha = a;
+    ctx.lineWidth = st.w * depth * (lit && hi ? 1.7 : 1);
+    ctx.setLineDash(st.dash ? [4*depth, 4*depth] : []);
+    ctx.beginPath();
+    ctx.moveTo(proj.x[i], proj.y[i]);
+    ctx.lineTo(proj.x[j], proj.y[j]);
+    ctx.stroke();
+  }
+  ctx.setLineDash([]);
+  ctx.globalAlpha = 1;
+
+  // node glow
+  for (const i of vis){
+    const st = TYPE_STYLE[N[i].type] || TYPE_STYLE.concept;
+    const depth = Math.max(0.25, Math.min(1.35, proj.s[i]/state.zoom));
+    const r = radius(i) * depth * Math.sqrt(state.zoom);
+    const lit = !hi || hi.has(i);
+    const conf = 0.42 + 0.58*(N[i].confidence ?? 0.5);
+    let a = conf * (lit ? 1 : 0.12) * depth;
+    if (N[i].status === 'superseded' || N[i].status === 'archived') a *= 0.4;
+
+    if (state.glow > 0.02 && lit){
+      const gr = r * (3.4 + state.glow*2.6);
+      const g = ctx.createRadialGradient(proj.x[i],proj.y[i],0, proj.x[i],proj.y[i],gr);
+      g.addColorStop(0, hexa(st.color, 0.46*a*state.glow));
+      g.addColorStop(0.45, hexa(st.color, 0.10*a*state.glow));
+      g.addColorStop(1, hexa(st.color, 0));
+      ctx.fillStyle = g;
+      ctx.beginPath(); ctx.arc(proj.x[i],proj.y[i],gr,0,6.2832); ctx.fill();
+    }
+    ctx.fillStyle = hexa(st.color, Math.min(1, a));
+    ctx.beginPath(); ctx.arc(proj.x[i],proj.y[i],r,0,6.2832); ctx.fill();
+  }
+  ctx.globalCompositeOperation = 'source-over';
+
+  // selection / hover rings
+  for (const i of [state.selected, state.hover]){
+    if (i < 0 || !proj.vis[i]) continue;
+    const depth = Math.max(0.25, Math.min(1.35, proj.s[i]/state.zoom));
+    const r = radius(i)*depth*Math.sqrt(state.zoom) + 5;
+    ctx.strokeStyle = i===state.selected ? '#ffffff' : 'rgba(255,255,255,.55)';
+    ctx.lineWidth = i===state.selected ? 1.6 : 1.1;
+    ctx.beginPath(); ctx.arc(proj.x[i],proj.y[i],r,0,6.2832); ctx.stroke();
+  }
+
+  // labels
+  drawLabels(vis, hi);
+
+  requestAnimationFrame(draw);
+}
+
+function drawLabels(vis, hi){
+  const boxes = [];
+  const thresh = 1 + (1-state.labelPct) * 14;
+  const cand = [];
+  for (const i of vis){
+    const forced = i===state.hover || i===state.selected || (hi && hi.has(i));
+    if (!forced && (deg[i] < thresh || state.labelPct < 0.03)) continue;
+    cand.push({i, forced, score:(forced?1e6:0) + deg[i] + proj.s[i]*4});
+  }
+  cand.sort((a,b)=>b.score-a.score);
+
+  ctx.textBaseline = 'middle';
+  for (const {i, forced} of cand.slice(0, 90)){
+    const depth = Math.max(0.25, Math.min(1.35, proj.s[i]/state.zoom));
+    const size = Math.max(10, Math.min(14, 9.5 + deg[i]*0.22)) * (forced?1.05:1);
+    ctx.font = `${forced?600:500} ${size}px ui-sans-serif,-apple-system,"Segoe UI",sans-serif`;
+    const label = N[i].title.length > 34 ? N[i].title.slice(0,33)+'…' : N[i].title;
+    const w = ctx.measureText(label).width;
+    const x = proj.x[i] + radius(i)*depth*Math.sqrt(state.zoom) + 7;
+    const y = proj.y[i];
+    if (x < -w || x > W || y < 0 || y > H) continue;
+
+    const box = [x-2, y-size*0.62, w+4, size*1.24];
+    if (!forced && boxes.some(b => box[0]<b[0]+b[2] && box[0]+box[2]>b[0] && box[1]<b[1]+b[3] && box[1]+box[3]>b[1])) continue;
+    boxes.push(box);
+
+    ctx.fillStyle = 'rgba(5,6,13,.62)';
+    ctx.fillRect(box[0],box[1],box[2],box[3]);
+    ctx.fillStyle = forced ? '#ffffff' : 'rgba(232,238,255,.82)';
+    ctx.fillText(label, x, y);
+  }
+}
+
+function hexa(hex, a){
+  const n = parseInt(hex.slice(1),16);
+  return `rgba(${n>>16&255},${n>>8&255},${n&255},${Math.max(0,Math.min(1,a)).toFixed(3)})`;
+}
+
+// ---------------------------------------------------------------------------
+// Interaction
+// ---------------------------------------------------------------------------
+function resize(){
+  DPR = Math.min(2, window.devicePixelRatio || 1);
+  W = window.innerWidth; H = window.innerHeight;
+  cv.width = W*DPR; cv.height = H*DPR;
+  cv.style.width = W+'px'; cv.style.height = H+'px';
+}
+window.addEventListener('resize', resize);
+resize();
+
+let drag = null;
+cv.addEventListener('pointerdown', e => {
+  drag = {x:e.clientX, y:e.clientY, moved:0};
+  cv.setPointerCapture(e.pointerId);
+  cv.classList.add('dragging');
+});
+cv.addEventListener('pointermove', e => {
+  if (drag){
+    const dx = e.clientX-drag.x, dy = e.clientY-drag.y;
+    drag.moved += Math.abs(dx)+Math.abs(dy);
+    if (e.shiftKey){ state.panX += dx; state.panY += dy; }
+    else rotate(dy*0.006, dx*0.006);
+    drag.x = e.clientX; drag.y = e.clientY;
+    return;
+  }
+  const h = pick(e.clientX, e.clientY);
+  if (h !== state.hover){
+    state.hover = h;
+    cv.style.cursor = h>=0 ? 'pointer' : 'grab';
+    if (state.selected < 0) setHighlight(h);
+  }
+});
+cv.addEventListener('pointerup', e => {
+  const wasDrag = drag && drag.moved > 5;
+  cv.classList.remove('dragging');
+  drag = null;
+  if (wasDrag) return;
+  const h = pick(e.clientX, e.clientY);
+  if (h >= 0) select(h); else deselect();
+});
+cv.addEventListener('wheel', e => {
+  e.preventDefault();
+  state.zoom = Math.max(0.12, Math.min(9, state.zoom * Math.exp(-e.deltaY*0.0011)));
+}, {passive:false});
+
+function pick(mx,my){
+  let best=-1, bd=Infinity;
+  for (let i=0;i<N.length;i++){
+    if (!proj.vis[i]) continue;
+    const depth = Math.max(0.25, Math.min(1.35, proj.s[i]/state.zoom));
+    const r = Math.max(7, radius(i)*depth*Math.sqrt(state.zoom) + 4);
+    const dx = proj.x[i]-mx, dy = proj.y[i]-my;
+    const d = dx*dx+dy*dy;
+    if (d < r*r && d < bd){ bd = d; best = i; }
+  }
+  return best;
+}
+
+function setHighlight(i){
+  if (i < 0){ state.hi = null; return; }
+  const s = new Set([i]);
+  for (const a of adj[i]) s.add(a.o);
+  state.hi = s;
+}
+
+function select(i){
+  state.selected = i;
+  setHighlight(i);
+  renderDetail(i);
+  document.getElementById('detail').classList.add('on');
+}
+function deselect(){
+  state.selected = -1; state.hi = null;
+  document.getElementById('detail').classList.remove('on');
+}
+document.getElementById('close').onclick = deselect;
+
+function renderDetail(i){
+  const n = N[i];
+  const st = TYPE_STYLE[n.type] || TYPE_STYLE.concept;
+  const esc = s => String(s??'').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+  const chips = [
+    n.tier && `tier: ${esc(n.tier)}`,
+    n.confidence!=null && `confidence: ${n.confidence.toFixed(2)}`,
+    n.status && n.status!=='active' && `status: ${esc(n.status)}`,
+    `${deg[i]} link${deg[i]===1?'':'s'}`,
+    n.stale && 'stale',
+  ].filter(Boolean).map(t=>`<span class="chip">${t}</span>`).join('');
+
+  const groups = {};
+  for (const a of adj[i]){
+    const key = a.dir==='out' ? a.t : `${a.t} (in)`;
+    (groups[key] ||= []).push(a);
+  }
+  const links = Object.keys(groups).sort().map(k => groups[k].map(a =>
+    `<li><span class="edge">${esc(k)}</span><span><a data-go="${a.o}">${esc(N[a.o].title)}</a>` +
+    (a.why ? ` <span class="why">— ${esc(a.why)}</span>` : '') + `</span></li>`
+  ).join('')).join('');
+
+  document.getElementById('dbody').innerHTML =
+    `<div class="kind" style="color:${st.color}">${esc(st.label)} · ${esc(st.fam)}</div>` +
+    `<h3>${esc(n.title)}</h3>` +
+    `<div class="path">${esc(n.id)}</div>` +
+    `<div class="meta">${chips}</div>` +
+    (n.summary ? `<div class="sum">${esc(n.summary)}</div>` : '') +
+    (n.tags?.length ? `<h4>Tags</h4><div class="meta">${n.tags.map(t=>`<span class="chip">${esc(t)}</span>`).join('')}</div>` : '') +
+    (links ? `<h4>Connections</h4><ul class="links">${links}</ul>` : `<h4>Connections</h4><div class="why">None. This note is invisible to graph traversal — give it typed links.</div>`) +
+    (n.sources?.length ? `<h4>Sources</h4><ul class="src">${n.sources.map(s=>`<li>${esc(s)}</li>`).join('')}</ul>` : '');
+
+  document.getElementById('dbody').querySelectorAll('[data-go]').forEach(a => {
+    a.onclick = () => select(+a.dataset.go);
+  });
+}
+
+// search -------------------------------------------------------------------
+const q = document.getElementById('q');
+const hits = document.getElementById('hits');
+q.addEventListener('input', () => {
+  const v = q.value.trim().toLowerCase();
+  if (!v){ hits.innerHTML = ''; return; }
+  const found = N.map((n,i)=>({n,i}))
+    .filter(({n}) => n.title.toLowerCase().includes(v) ||
+                     (n.tags||[]).some(t=>t.toLowerCase().includes(v)) ||
+                     (n.summary||'').toLowerCase().includes(v))
+    .slice(0,40);
+  hits.innerHTML = found.map(({n,i}) =>
+    `<button data-i="${i}">${n.title.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]))}</button>`).join('')
+    || `<div class="why" style="padding:4px 8px;color:var(--text-muted)">No match</div>`;
+  hits.querySelectorAll('button').forEach(b => b.onclick = () => select(+b.dataset.i));
+});
+
+document.addEventListener('keydown', e => {
+  if (e.key === '/' && document.activeElement !== q){ e.preventDefault(); q.focus(); q.select(); }
+  if (e.key === 'Escape'){ deselect(); q.blur(); }
+});
+
+// legend + filters ---------------------------------------------------------
+const counts = {};
+for (const n of N) counts[n.type] = (counts[n.type]||0)+1;
+
+const legend = document.getElementById('legend');
+legend.innerHTML = FAM_ORDER.map(fam => {
+  const rows = TYPE_ORDER.filter(t => TYPE_STYLE[t].fam === fam).map(t => {
+    const st = TYPE_STYLE[t];
+    return `<div class="row" data-type="${t}">
+      <span class="dot" style="background:${st.color};color:${st.color}"></span>
+      <span class="nm">${st.label}</span><span class="ct">${counts[t]||0}</span></div>`;
+  }).join('');
+  return `<div class="fam"><div class="fam-label">${fam}</div>${rows}</div>`;
+}).join('');
+legend.querySelectorAll('.row').forEach(r => r.onclick = () => {
+  const t = r.dataset.type;
+  if (state.typeOff.has(t)) state.typeOff.delete(t); else state.typeOff.add(t);
+  r.classList.toggle('off');
+});
+
+const usedEdges = [...new Set(E.map(e=>e.type))]
+  .sort((a,b)=>Object.keys(EDGE_STYLE).indexOf(a)-Object.keys(EDGE_STYLE).indexOf(b));
+const ek = document.getElementById('edgekeys');
+const ecounts = {};
+for (const e of E) ecounts[e.type] = (ecounts[e.type]||0)+1;
+ek.innerHTML = usedEdges.map(t =>
+  `<div class="row" data-edge="${t}">
+     <span class="dot" style="background:${EDGE_STYLE[t].c};color:${EDGE_STYLE[t].c}"></span>
+     <span class="nm">${t}</span><span class="ct">${ecounts[t]}</span></div>`).join('')
+  || `<div class="why" style="color:var(--text-muted);padding:2px 6px">No links yet</div>`;
+ek.querySelectorAll('.row').forEach(r => r.onclick = () => {
+  const t = r.dataset.edge;
+  if (state.edgeOff.has(t)) state.edgeOff.delete(t); else state.edgeOff.add(t);
+  r.classList.toggle('off');
+});
+
+// view controls ------------------------------------------------------------
+document.getElementById('spin').onchange   = e => state.spin = e.target.checked;
+document.getElementById('disc').onchange   = e => { state.disc = e.target.checked; state.alpha = Math.max(state.alpha, .55); };
+document.getElementById('labels').oninput  = e => state.labelPct = e.target.value/100;
+document.getElementById('glow').oninput    = e => state.glow = e.target.value/100;
+document.getElementById('reheat').onclick  = () => {
+  seed(); state.alpha = 1;
+  for (let i=0;i<260 && state.alpha>0.006;i++) tick();
+  fitView(); state.alpha = Math.max(state.alpha, 0.22);
+};
+document.getElementById('reset').onclick   = () => {
+  state.rot=[1,0,0,0,1,0,0,0,1]; fitView();
+};
+
+// stats --------------------------------------------------------------------
+const orphans = N.filter((_,i)=>deg[i]===0).length;
+document.getElementById('stats').textContent =
+  `${N.length} notes · ${E.length} links · ${orphans} orphan${orphans===1?'':'s'}` +
+  (GRAPH.meta?.generated ? ` · ${GRAPH.meta.generated}` : '');
+
+if (N.length === 0){
+  document.getElementById('empty').classList.add('on');
+  document.getElementById('rail').style.display = 'none';
+}
+
+// settle the layout before the first paint so it doesn't explode on screen
+for (let i=0;i<(N.length>400?420:260) && state.alpha>0.006;i++) tick();
+fitView();
+state.alpha = Math.max(state.alpha, 0.22);
+window.addEventListener('resize', () => { if (state.selected < 0) fitView(); });
+requestAnimationFrame(draw);
+</script>
+</body>
+</html>

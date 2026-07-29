@@ -37,3 +37,8 @@ incoming-vault/**/.ruff_cache/
 incoming-vault/**/*.pyc
 incoming-vault/.stfolder/
 incoming-vault/.stversions/
+
+# Galaxy build output — regenerate with 00_System/Scripts/build_galaxy.py
+incoming-vault/00_System/Galaxy/galaxy.html
+incoming-vault/00_System/Galaxy/galaxy.json
+tools/galaxy/jayse.html

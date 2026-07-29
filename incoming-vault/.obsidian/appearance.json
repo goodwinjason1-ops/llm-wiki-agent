@@ -1,4 +1,7 @@
 {
   "theme": "obsidian",
-  "accentColor": "#3e9306"
+  "accentColor": "#3e9306",
+  "enabledCssSnippets": [
+    "galaxy"
+  ]
 }
