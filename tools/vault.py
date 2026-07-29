@@ -48,6 +48,64 @@ FOLDER_TYPES = {
 }
 
 VALID_TYPES = set(FOLDER_TYPES.values())
+
+# Real vaults drift. Rather than refuse to read a vault whose `type:` vocabulary
+# grew organically, normalise known synonyms onto the canonical eight. Anything
+# unrecognised falls back to the folder heuristic below.
+TYPE_ALIASES = {
+    # evidence
+    "raw-transcript": "source", "raw-source": "source", "raw-web-extract": "source",
+    "transcript": "source", "source-summary": "source", "source-review": "source",
+    "source-inventory": "source", "clipping": "source", "highlight": "source",
+    "paper": "source", "article": "source", "video": "source", "web": "source",
+    # dated records
+    "report": "journal", "daily-brief": "journal", "risk-review": "journal",
+    "quant-backtest": "journal", "backtest-evidence": "journal", "log": "journal",
+    "handoff": "journal", "daily": "journal", "meeting": "journal", "brief": "journal",
+    # methods
+    "workflow": "procedure", "skill": "procedure", "template": "procedure",
+    "runbook": "procedure", "sop": "procedure", "playbook": "procedure",
+    # navigation
+    "dashboard": "map", "index": "map", "moc": "map", "system": "map",
+    "registry": "map", "inventory": "map",
+    # things
+    "project": "entity", "project-context": "entity", "person": "entity",
+    "org": "entity", "company": "entity", "tool": "entity", "area": "entity",
+    "quant-strategy": "entity",
+    # ideas
+    "comparison": "concept", "research-note": "concept", "note": "concept",
+    "synthesis": "concept",
+    # open loops
+    "query": "question",
+    # unfiled
+    "inbox": "capture", "fleeting": "capture", "scratch": "capture",
+}
+
+# Folder-name keywords, matched after stripping numeric prefixes like "04_".
+FOLDER_KEYWORDS = [
+    ("inbox", "capture"), ("raw", "source"), ("source", "source"),
+    ("wiki", "concept"), ("concept", "concept"), ("resource", "concept"),
+    ("project", "entity"), ("area", "entity"), ("entit", "entity"),
+    ("skill", "procedure"), ("workflow", "procedure"), ("procedure", "procedure"),
+    ("question", "question"), ("quer", "question"),
+    ("map", "map"), ("system", "map"), ("dashboard", "map"),
+    ("journal", "journal"), ("daily", "journal"), ("archive", "source"),
+]
+
+
+def normalise_type(raw, folder: str) -> str | None:
+    """Map an arbitrary `type:` value + folder onto one of the canonical eight."""
+    if isinstance(raw, str):
+        key = raw.strip().lower().replace("_", "-")
+        if key in VALID_TYPES:
+            return key
+        if key in TYPE_ALIASES:
+            return TYPE_ALIASES[key]
+    f = re.sub(r"^[\d_\-\.\s]+", "", (folder or "").lower())
+    for word, kind in FOLDER_KEYWORDS:
+        if word in f:
+            return kind
+    return None
 VALID_TIERS = {"working", "episodic", "semantic", "procedural"}
 VALID_STATUS = {"active", "draft", "superseded", "archived"}
 
@@ -215,7 +273,14 @@ class Note:
     @property
     def type(self) -> str:
         t = self.meta.get("type")
-        return t if isinstance(t, str) else FOLDER_TYPES.get(self.folder, "concept")
+        if isinstance(t, str) and t in VALID_TYPES:
+            return t
+        return normalise_type(t, self.folder) or FOLDER_TYPES.get(self.folder, "concept")
+
+    @property
+    def raw_type(self):
+        """The `type:` exactly as written — what the linter checks against."""
+        return self.meta.get("type")
 
     @property
     def tier(self) -> str:
@@ -358,9 +423,9 @@ def extract(note: Note) -> None:
 
 
 class Vault:
-    def __init__(self, root: Path):
+    def __init__(self, root: Path, wiki_dir: Path | None = None):
         self.root = Path(root).resolve()
-        self.wiki_dir = self.root / "wiki"
+        self.wiki_dir = Path(wiki_dir).resolve() if wiki_dir else self.root / "wiki"
         self.sources_dir = self.root / "sources"
         self.notes: list[Note] = []
         self.by_id: dict[str, Note] = {}

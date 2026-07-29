@@ -348,7 +348,11 @@ for (const e of E){
 const THETA2 = 0.81;         // theta^2, theta = 0.9
 // Repulsion has to beat the springs by a wide margin or the whole graph collapses
 // into a ball. Scaled by node count so large vaults spread rather than compact.
-const REPEL = 2600 * Math.max(1, Math.sqrt(Math.max(1, N.length) / 40));
+const REPEL = 2600 * Math.pow(Math.max(1, N.length) / 40, 0.35);
+// Disconnected components have no springs holding them, so pure repulsion throws
+// them to infinity. A soft boundary keeps the cosmos finite regardless of how
+// fragmented the vault is — and a fragmented vault is exactly when you need to see it.
+const R_BOUND = 300 * Math.pow(Math.max(1, N.length) / 40, 0.42);
 
 function buildTree(){
   let min=[Infinity,Infinity,Infinity], max=[-Infinity,-Infinity,-Infinity];
@@ -457,6 +461,12 @@ function tick(){
     P.vx[i] -= P.x[i]*0.0016*a;
     P.vy[i] -= P.y[i]*0.0016*a;
     P.vz[i] -= P.z[i]*0.0016*a;
+    // hard-ish containment past the boundary
+    const dr = Math.hypot(P.x[i], P.y[i], P.z[i]);
+    if (dr > R_BOUND){
+      const k = (dr - R_BOUND) / dr * 0.09 * a;
+      P.vx[i] -= P.x[i]*k; P.vy[i] -= P.y[i]*k; P.vz[i] -= P.z[i]*k;
+    }
     if (state.disc) P.vz[i] -= P.z[i]*0.075*a;   // flatten toward a galactic plane
   }
 
@@ -492,12 +502,32 @@ function fitView(){
   let cx=0, cy=0, cz=0;
   for (let i=0;i<N.length;i++){ cx+=P.x[i]; cy+=P.y[i]; cz+=P.z[i]; }
   cx/=N.length; cy/=N.length; cz/=N.length;
-  let r = 0;
+  // 92nd percentile, not max — a handful of far-flung orphans must not shrink the
+  // other 800 notes to invisible dust.
+  const rs = new Float64Array(N.length);
   for (let i=0;i<N.length;i++){
     P.x[i]-=cx; P.y[i]-=cy; P.z[i]-=cz;
-    r = Math.max(r, Math.hypot(P.x[i],P.y[i],P.z[i]));
+    rs[i] = Math.hypot(P.x[i],P.y[i],P.z[i]);
   }
-  r = Math.max(r, 60);
+  const sorted = Array.from(rs).sort((a,b)=>a-b);
+  let r = Math.max(sorted[Math.floor(sorted.length*0.92)] || 0, 60);
+
+  // Re-centre on the inliers only. The mean is dragged around by far-flung
+  // orphans, which leaves the main body sitting off to one side.
+  let ix=0, iy=0, iz=0, n=0;
+  for (let i=0;i<N.length;i++){
+    if (rs[i] <= r){ ix+=P.x[i]; iy+=P.y[i]; iz+=P.z[i]; n++; }
+  }
+  if (n > 2){
+    ix/=n; iy/=n; iz/=n;
+    r = 60;
+    for (let i=0;i<N.length;i++){
+      P.x[i]-=ix; P.y[i]-=iy; P.z[i]-=iz;
+      rs[i] = Math.hypot(P.x[i],P.y[i],P.z[i]);
+    }
+    const s2 = Array.from(rs).sort((a,b)=>a-b);
+    r = Math.max(s2[Math.floor(s2.length*0.92)] || 0, 60);
+  }
   recomputeOrigin();
   const usableW = W > 900 ? W - 292 : W - 28;
   const persp = state.focal / (state.focal + state.dist);
@@ -894,7 +924,7 @@ if (N.length === 0){
 }
 
 // settle the layout before the first paint so it doesn't explode on screen
-for (let i=0;i<260 && state.alpha>0.006;i++) tick();
+for (let i=0;i<(N.length>400?420:260) && state.alpha>0.006;i++) tick();
 fitView();
 state.alpha = Math.max(state.alpha, 0.22);
 window.addEventListener('resize', () => { if (state.selected < 0) fitView(); });

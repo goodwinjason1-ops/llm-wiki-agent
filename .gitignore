@@ -17,8 +17,9 @@ Thumbs.db
 sources/private/
 
 # Generated galaxy output. Rebuild with: python3 tools/build_graph.py
-tools/galaxy/galaxy.html
-tools/galaxy/galaxy.json
+tools/galaxy/*.html
+tools/galaxy/*.json
+!tools/galaxy/template.html
 
 # Temporary conversion outputs
 *.tmp

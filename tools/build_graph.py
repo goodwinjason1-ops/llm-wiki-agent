@@ -49,8 +49,8 @@ def summarise(note, limit: int = 260) -> str:
     return text[: limit - 1] + "…" if len(text) > limit else text
 
 
-def build(root: Path) -> dict:
-    v = Vault(root).load()
+def build(root: Path, wiki_dir: Path | None = None) -> dict:
+    v = Vault(root, wiki_dir).load()
 
     nodes = [
         {
@@ -81,22 +81,31 @@ def build(root: Path) -> dict:
     }
 
 
+def _rel(p: Path, root: Path) -> str:
+    try:
+        return p.relative_to(root).as_posix()
+    except ValueError:
+        return str(p)
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--root", type=Path, default=None, help="vault root (default: auto-detect)")
+    ap.add_argument("--wiki-dir", type=Path, default=None,
+                    help="notes directory (default: <root>/wiki) — point this at any vault")
     ap.add_argument("--out", type=Path, default=None, help="output HTML path")
     ap.add_argument("--json", action="store_true", help="also write graph.json")
     ap.add_argument("--open", action="store_true", help="open the result in a browser")
     args = ap.parse_args()
 
     root = (args.root or find_root()).resolve()
-    tpl = root / "tools" / "galaxy" / "template.html"
+    tpl = Path(__file__).resolve().parent / "galaxy" / "template.html"
     if not tpl.is_file():
         print(f"error: template missing at {tpl}", file=sys.stderr)
         return 1
 
-    graph = build(root)
-    out = (args.out or root / "tools" / "galaxy" / "galaxy.html").resolve()
+    graph = build(root, args.wiki_dir)
+    out = (args.out or Path(__file__).resolve().parent / "galaxy" / "galaxy.html").resolve()
     out.parent.mkdir(parents=True, exist_ok=True)
 
     payload = json.dumps(graph, ensure_ascii=False, separators=(",", ":"))
@@ -113,10 +122,10 @@ def main() -> int:
     if args.json:
         jp = out.with_suffix(".json")
         jp.write_text(json.dumps(graph, ensure_ascii=False, indent=2), encoding="utf-8")
-        print(f"  graph.json  {jp.relative_to(root)}")
+        print(f"  graph.json  {_rel(jp, root)}")
 
     m = graph["meta"]
-    print(f"  galaxy      {out.relative_to(root)}")
+    print(f"  galaxy      {_rel(out, root)}")
     print(f"  {len(graph['nodes'])} notes · {len(graph['edges'])} links · "
           f"{m['clusters']} cluster(s) · {m['orphans']} orphan(s) · {m['broken_links']} broken link(s)")
 
