@@ -1,0 +1,89 @@
+{
+  "run_id": "20260710T200025Z",
+  "brief": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Daily Briefs\\AI Quant Morning Brief - 2026-07-11.md",
+  "latest": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\00_System\\Dashboards\\AI Quant Morning Brief - Latest.md",
+  "next_step_dashboard": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\00_System\\Dashboards\\AI Quant Morning Next Step Queue.md",
+  "ideas": [
+    {
+      "idea_id": "2026-07-11-QTF-MORNING-01",
+      "desk": "Tactical Crypto Regime Desk",
+      "market": "BTCUSDT",
+      "score": 80
+    },
+    {
+      "idea_id": "2026-07-11-QTF-MORNING-02",
+      "desk": "Alternative Venue / Funding Desk",
+      "market": "ETHFI",
+      "score": 70
+    },
+    {
+      "idea_id": "2026-07-11-QTF-MORNING-03",
+      "desk": "Strategy Intake / Social Claim Review Desk",
+      "market": "multi-asset / source-dependent",
+      "score": 75
+    }
+  ],
+  "next_steps": [
+    {
+      "run_id": "20260710T200025Z",
+      "date": "2026-07-11",
+      "generated_at": "2026-07-10T20:00:29+00:00",
+      "status": "queued",
+      "idea_id": "2026-07-11-QTF-MORNING-01",
+      "desk": "Tactical Crypto Regime Desk",
+      "market": "BTCUSDT",
+      "score": 80,
+      "next_step": "Backtest only; if stable, add paper watch row with max-loss and no execution.",
+      "first_test": "Run next-bar daily momentum/chop filter backtest; compare to equal-weight and buy-hold.",
+      "reject_conditions": "Reject if edge disappears after costs, underperforms benchmark, or drawdown > predefined sleeve limit.",
+      "brief_path": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Daily Briefs\\AI Quant Morning Brief - 2026-07-11.md",
+      "owner": "AI Quant Floor / Backtest desk",
+      "managed_as": "queued backtest candidate",
+      "result_note": "05_Projects/AI Quant Trading Floor/Backtests/2026-07-11-QTF-MORNING-01 Tactical Crypto Regime Backtest.md",
+      "machine_output": "05_Projects/AI Quant Trading Floor/Implementation/reports/2026-07-11-qtf-morning-01_backtest.json",
+      "promotion_gate": "Only promote to paper watch row if it beats benchmark after fees/slippage and drawdown is inside sleeve limits."
+    },
+    {
+      "run_id": "20260710T200025Z",
+      "date": "2026-07-11",
+      "generated_at": "2026-07-10T20:00:29+00:00",
+      "status": "queued",
+      "idea_id": "2026-07-11-QTF-MORNING-02",
+      "desk": "Alternative Venue / Funding Desk",
+      "market": "ETHFI",
+      "score": 70,
+      "next_step": "Read-only recorder + paper ledger only; no private keys/API keys.",
+      "first_test": "Replay funding persistence/fade using recorded hourly snapshots; require 48+ samples before interpreting.",
+      "reject_conditions": "Reject if funding mean-reverts too fast after fees/slippage or OI/volume is too thin.",
+      "brief_path": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Daily Briefs\\AI Quant Morning Brief - 2026-07-11.md",
+      "owner": "AI Quant Floor / Alternative venue desk",
+      "managed_as": "recorder-backed paper research candidate",
+      "result_note": "05_Projects/AI Quant Trading Floor/Research/2026-07-11-QTF-MORNING-02 Funding Persistence Review.md",
+      "machine_output": "05_Projects/AI Quant Trading Floor/Implementation/ledgers/hyperliquid_funding_snapshots.jsonl",
+      "promotion_gate": "Only interpret after enough hourly samples; no exchange auth/orders without explicit approval."
+    },
+    {
+      "run_id": "20260710T200025Z",
+      "date": "2026-07-11",
+      "generated_at": "2026-07-10T20:00:29+00:00",
+      "status": "queued",
+      "idea_id": "2026-07-11-QTF-MORNING-03",
+      "desk": "Strategy Intake / Social Claim Review Desk",
+      "market": "multi-asset / source-dependent",
+      "score": 75,
+      "next_step": "If rules become exact, write a small clean-room backtest scaffold.",
+      "first_test": "Complete source extraction and claim card before writing code.",
+      "reject_conditions": "Reject or park if source stays incomplete, rules are vague, or claims cannot be benchmarked.",
+      "brief_path": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Daily Briefs\\AI Quant Morning Brief - 2026-07-11.md",
+      "owner": "AI Quant Floor / Strategy intake desk",
+      "managed_as": "source-extraction / claim-card candidate",
+      "result_note": "05_Projects/AI Quant Trading Floor/Strategies/2026-07-11-QTF-MORNING-03 Strategy Claim Card.md",
+      "machine_output": "05_Projects/AI Quant Trading Floor/Implementation/reports/2026-07-11-qtf-morning-03_source_review.json",
+      "promotion_gate": "Only build a backtest scaffold after exact rules, costs, benchmark, and reject conditions are known."
+    }
+  ],
+  "errors": {
+    "hyperliquid": null,
+    "polymarket": null
+  }
+}

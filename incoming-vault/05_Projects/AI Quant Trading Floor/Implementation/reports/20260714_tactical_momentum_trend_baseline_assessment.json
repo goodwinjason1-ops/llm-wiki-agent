@@ -1,0 +1,34 @@
+{
+  "artifact_type": "paper_only_baseline_assessment",
+  "created_at": "2026-07-14",
+  "status": "edge_card_ready_data_snapshot_missing",
+  "safety": "public-data research only; no credentials, wallets, orders, or live execution",
+  "existing_baseline": {
+    "rule": "Long BTC only when close>SMA20>SMA50 and 7-day momentum>0; otherwise cash.",
+    "execution": "next-bar close-to-close; signal formed at prior close",
+    "cost_bps_per_position_change": 20.0,
+    "observations": 679,
+    "position_changes": 62,
+    "exposure_pct": 27.246,
+    "strategy": {"total_return_pct": -2.772, "cagr_pct": -1.5, "sharpe": 0.03, "max_drawdown_pct": -27.71},
+    "btc_buy_hold": {"total_return_pct": 11.403, "cagr_pct": 5.976, "sharpe": 0.353, "max_drawdown_pct": -52.968},
+    "btc_eth_sol_equal_weight": {"total_return_pct": -15.475, "cagr_pct": -8.641, "sharpe": 0.15, "max_drawdown_pct": -64.312},
+    "decision": "do_not_promote",
+    "source_report": "C:/Users/Kidsg/Documents/AI Second Brain/05_Projects/AI Quant Trading Floor/Implementation/reports/2026-07-13-qtf-morning-01_backtest.json"
+  },
+  "what_is_real": [
+    "morning_first_tests.py executes the BTC SMA20/SMA50 + 7-day momentum rule on aligned Bybit spot daily closes",
+    "next-bar signal shift and fixed position-change cost are implemented",
+    "JSON and Markdown report artifacts are written"
+  ],
+  "what_is_missing": [
+    "local frozen OHLCV rows and SHA-256 provenance",
+    "walk-forward and untouched holdout evaluation",
+    "cross-sectional momentum candidate",
+    "funding/spread/slippage sensitivity for a perp implementation",
+    "trade-level ledger, drawdown duration/recovery, Monte Carlo, RST/DSR and jitter outputs",
+    "paper alert forward sample"
+  ],
+  "next_step": "Freeze >=1095 daily BTCUSDT/ETHUSDT/SOLUSDT rows under Implementation/data_cache/ttm01/, hash them, then implement and run TTM-01 from local input; rerun the existing baseline on the identical snapshot.",
+  "edge_card": "C:/Users/Kidsg/Documents/AI Second Brain/05_Projects/AI Quant Trading Floor/Strategies/2026-07-14 Tactical Momentum Trend Production Edge Card.md"
+}

@@ -1,0 +1,215 @@
+{
+  "ts": "2026-07-03T01:56:26+00:00",
+  "mode": "read-only validation research",
+  "constrained_sleeve_optimizer": {
+    "count": 616,
+    "top": [
+      {
+        "weights": {
+          "daily_etf_tactical_core": 0.35,
+          "prediction_market_crypto_edge": 0.05,
+          "hyperliquid_funding_momentum": 0.0,
+          "defi_stable_lending_yield": 0.25,
+          "cash_reserve": 0.35
+        },
+        "ann_return": 0.0813,
+        "ann_vol": 0.0405,
+        "analytic_sharpe": 2.0076,
+        "rough_95pct_one_year_stress": -0.0668
+      },
+      {
+        "weights": {
+          "daily_etf_tactical_core": 0.35,
+          "prediction_market_crypto_edge": 0.0,
+          "hyperliquid_funding_momentum": 0.05,
+          "defi_stable_lending_yield": 0.25,
+          "cash_reserve": 0.35
+        },
+        "ann_return": 0.0803,
+        "ann_vol": 0.04,
+        "analytic_sharpe": 2.007,
+        "rough_95pct_one_year_stress": -0.066
+      },
+      {
+        "weights": {
+          "daily_etf_tactical_core": 0.3,
+          "prediction_market_crypto_edge": 0.05,
+          "hyperliquid_funding_momentum": 0.05,
+          "defi_stable_lending_yield": 0.25,
+          "cash_reserve": 0.35
+        },
+        "ann_return": 0.0843,
+        "ann_vol": 0.0421,
+        "analytic_sharpe": 1.9991,
+        "rough_95pct_one_year_stress": -0.0695
+      },
+      {
+        "weights": {
+          "daily_etf_tactical_core": 0.4,
+          "prediction_market_crypto_edge": 0.0,
+          "hyperliquid_funding_momentum": 0.0,
+          "defi_stable_lending_yield": 0.25,
+          "cash_reserve": 0.35
+        },
+        "ann_return": 0.0773,
+        "ann_vol": 0.0397,
+        "analytic_sharpe": 1.9446,
+        "rough_95pct_one_year_stress": -0.0655
+      },
+      {
+        "weights": {
+          "daily_etf_tactical_core": 0.35,
+          "prediction_market_crypto_edge": 0.05,
+          "hyperliquid_funding_momentum": 0.05,
+          "defi_stable_lending_yield": 0.25,
+          "cash_reserve": 0.3
+        },
+        "ann_return": 0.0875,
+        "ann_vol": 0.0457,
+        "analytic_sharpe": 1.9159,
+        "rough_95pct_one_year_stress": -0.0754
+      },
+      {
+        "weights": {
+          "daily_etf_tactical_core": 0.3,
+          "prediction_market_crypto_edge": 0.0,
+          "hyperliquid_funding_momentum": 0.1,
+          "defi_stable_lending_yield": 0.25,
+          "cash_reserve": 0.35
+        },
+        "ann_return": 0.0833,
+        "ann_vol": 0.0436,
+        "analytic_sharpe": 1.9075,
+        "rough_95pct_one_year_stress": -0.072
+      },
+      {
+        "weights": {
+          "daily_etf_tactical_core": 0.4,
+          "prediction_market_crypto_edge": 0.05,
+          "hyperliquid_funding_momentum": 0.0,
+          "defi_stable_lending_yield": 0.25,
+          "cash_reserve": 0.3
+        },
+        "ann_return": 0.0845,
+        "ann_vol": 0.0443,
+        "analytic_sharpe": 1.9055,
+        "rough_95pct_one_year_stress": -0.0732
+      },
+      {
+        "weights": {
+          "daily_etf_tactical_core": 0.4,
+          "prediction_market_crypto_edge": 0.0,
+          "hyperliquid_funding_momentum": 0.05,
+          "defi_stable_lending_yield": 0.25,
+          "cash_reserve": 0.3
+        },
+        "ann_return": 0.0835,
+        "ann_vol": 0.0439,
+        "analytic_sharpe": 1.9007,
+        "rough_95pct_one_year_stress": -0.0725
+      },
+      {
+        "weights": {
+          "daily_etf_tactical_core": 0.35,
+          "prediction_market_crypto_edge": 0.05,
+          "hyperliquid_funding_momentum": 0.05,
+          "defi_stable_lending_yield": 0.2,
+          "cash_reserve": 0.35
+        },
+        "ann_return": 0.0843,
+        "ann_vol": 0.0445,
+        "analytic_sharpe": 1.8931,
+        "rough_95pct_one_year_stress": -0.0734
+      },
+      {
+        "weights": {
+          "daily_etf_tactical_core": 0.4,
+          "prediction_market_crypto_edge": 0.05,
+          "hyperliquid_funding_momentum": 0.0,
+          "defi_stable_lending_yield": 0.2,
+          "cash_reserve": 0.35
+        },
+        "ann_return": 0.0813,
+        "ann_vol": 0.0432,
+        "analytic_sharpe": 1.8804,
+        "rough_95pct_one_year_stress": -0.0713
+      },
+      {
+        "weights": {
+          "daily_etf_tactical_core": 0.4,
+          "prediction_market_crypto_edge": 0.0,
+          "hyperliquid_funding_momentum": 0.05,
+          "defi_stable_lending_yield": 0.2,
+          "cash_reserve": 0.35
+        },
+        "ann_return": 0.0803,
+        "ann_vol": 0.0428,
+        "analytic_sharpe": 1.875,
+        "rough_95pct_one_year_stress": -0.0706
+      },
+      {
+        "weights": {
+          "daily_etf_tactical_core": 0.3,
+          "prediction_market_crypto_edge": 0.1,
+          "hyperliquid_funding_momentum": 0.0,
+          "defi_stable_lending_yield": 0.25,
+          "cash_reserve": 0.35
+        },
+        "ann_return": 0.0852,
+        "ann_vol": 0.0457,
+        "analytic_sharpe": 1.8637,
+        "rough_95pct_one_year_stress": -0.0755
+      },
+      {
+        "weights": {
+          "daily_etf_tactical_core": 0.25,
+          "prediction_market_crypto_edge": 0.05,
+          "hyperliquid_funding_momentum": 0.1,
+          "defi_stable_lending_yield": 0.25,
+          "cash_reserve": 0.35
+        },
+        "ann_return": 0.0873,
+        "ann_vol": 0.0469,
+        "analytic_sharpe": 1.8603,
+        "rough_95pct_one_year_stress": -0.0774
+      },
+      {
+        "weights": {
+          "daily_etf_tactical_core": 0.4,
+          "prediction_market_crypto_edge": 0.05,
+          "hyperliquid_funding_momentum": 0.05,
+          "defi_stable_lending_yield": 0.25,
+          "cash_reserve": 0.25
+        },
+        "ann_return": 0.0908,
+        "ann_vol": 0.0494,
+        "analytic_sharpe": 1.8386,
+        "rough_95pct_one_year_stress": -0.0814
+      },
+      {
+        "weights": {
+          "daily_etf_tactical_core": 0.35,
+          "prediction_market_crypto_edge": 0.0,
+          "hyperliquid_funding_momentum": 0.1,
+          "defi_stable_lending_yield": 0.25,
+          "cash_reserve": 0.3
+        },
+        "ann_return": 0.0865,
+        "ann_vol": 0.0471,
+        "analytic_sharpe": 1.837,
+        "rough_95pct_one_year_stress": -0.0777
+      }
+    ],
+    "constraints": {
+      "cash_min": 0.1,
+      "cash_max": 0.35,
+      "pm_cap": 0.2,
+      "hyperliquid_cap": 0.18,
+      "defi_cap": 0.25,
+      "etf_range": "25%-65%",
+      "ann_vol_max": 0.14,
+      "rough_95pct_one_year_stress_min": -0.23,
+      "note": "analytic optimizer uses priors; validate top weights with MC and live paper data"
+    }
+  }
+}

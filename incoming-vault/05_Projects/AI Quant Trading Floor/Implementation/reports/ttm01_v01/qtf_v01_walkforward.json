@@ -1,0 +1,114 @@
+{
+  "schema": "qtf-v01-fixed-rule-walk-forward-v1",
+  "generated_at": "2026-07-15T12:43:50+00:00",
+  "input_manifest_sha256": "356420e8a737f967a32ab3cf740f0bcfa069a7c6cbf3276b91b30c5c630ceae7",
+  "rule": "TTM-01 fixed 20d/60d rank, SMA50 filter, 10% annualized volatility target, 10pp rebalance threshold; next-bar close; no parameter optimization",
+  "split": {
+    "rows_per_symbol": 1200,
+    "development_rows": 840,
+    "holdout_rows": 360,
+    "chronological": true
+  },
+  "cost_sensitivity": {
+    "10bps": {
+      "in_sample": {
+        "rows": 779,
+        "total_return": 0.015106087508395039,
+        "cagr": 0.007049754217864246,
+        "sharpe": 1.7393766327670084,
+        "max_drawdown": -0.0033702799158792374,
+        "mean_exposure": 0.005310478632934469,
+        "turnover": 0.8354585048115741,
+        "trade_count": 103
+      },
+      "holdout": {
+        "rows": 359,
+        "total_return": -0.0017666257677292352,
+        "cagr": -0.001796125014823069,
+        "sharpe": -0.4653511984008762,
+        "max_drawdown": -0.005151789882474667,
+        "mean_exposure": 0.004930530075734906,
+        "turnover": 0.3298232262240346,
+        "trade_count": 39
+      }
+    },
+    "20bps": {
+      "in_sample": {
+        "rows": 779,
+        "total_return": 0.014258376330260836,
+        "cagr": 0.006655624470164323,
+        "sharpe": 1.6424670235002314,
+        "max_drawdown": -0.0035523800867814925,
+        "mean_exposure": 0.005310478632934469,
+        "turnover": 0.8354585048115741,
+        "trade_count": 103
+      },
+      "holdout": {
+        "rows": 359,
+        "total_return": -0.002095811695227101,
+        "cagr": -0.0021308018441006382,
+        "sharpe": -0.5525931700505234,
+        "max_drawdown": -0.005375815293355624,
+        "mean_exposure": 0.004930530075734906,
+        "turnover": 0.3298232262240346,
+        "trade_count": 39
+      }
+    },
+    "40bps": {
+      "in_sample": {
+        "rows": 779,
+        "total_return": 0.012565048380216881,
+        "cagr": 0.005867814278849526,
+        "sharpe": 1.4476172247985657,
+        "max_drawdown": -0.00391648719235449,
+        "mean_exposure": 0.005310478632934469,
+        "turnover": 0.8354585048115741,
+        "trade_count": 103
+      },
+      "holdout": {
+        "rows": 359,
+        "total_return": -0.002753869977911827,
+        "cagr": -0.0027998311682019272,
+        "sharpe": -0.7265948148387817,
+        "max_drawdown": -0.005823722503817463,
+        "mean_exposure": 0.004930530075734906,
+        "turnover": 0.3298232262240346,
+        "trade_count": 39
+      }
+    },
+    "60bps": {
+      "in_sample": {
+        "rows": 779,
+        "total_return": 0.010874509191395099,
+        "cagr": 0.005080602791420086,
+        "sharpe": 1.2518771903268862,
+        "max_drawdown": -0.004280470015900262,
+        "mean_exposure": 0.005310478632934469,
+        "turnover": 0.8354585048115741,
+        "trade_count": 103
+      },
+      "holdout": {
+        "rows": 359,
+        "total_return": -0.00341151037705012,
+        "cagr": -0.0034684282705078617,
+        "sharpe": -0.8995113415099248,
+        "max_drawdown": -0.006271438297135834,
+        "mean_exposure": 0.004930530075734906,
+        "turnover": 0.3298232262240346,
+        "trade_count": 39
+      }
+    }
+  },
+  "decision": "do_not_promote",
+  "gate_notes": [
+    "Extended snapshot meets >=1,095 rows per symbol.",
+    "Fixed-rule chronological holdout ran at 70/30; no walk-forward parameter fitting was performed.",
+    "Promotion remains blocked pending robustness/jitter, benchmark comparison, and paper-forward agreement."
+  ],
+  "source_hashes": {
+    "ttm01_v01_trade_ledger_10bps.csv": "d493ab08dafa0b4cfdb9e707d1f73178781eea353458e545be6a26f7fb5903fd",
+    "ttm01_v01_trade_ledger_20bps.csv": "58cb8a340f03115bfb748c25844fc6cb5019e7b39ecedb529ea5d9372489109d",
+    "ttm01_v01_trade_ledger_40bps.csv": "7a6ab51cf2fe5d063686afe6232345c804d4efd780ab220bc68ee8e47dadef2f",
+    "ttm01_v01_trade_ledger_60bps.csv": "16c2b37b57b72202b9f1c30651df58d0efe620f0d3173d8033420902d23cc42b"
+  }
+}

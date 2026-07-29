@@ -1,0 +1,18 @@
+{
+  "avg_pnl": 0.0,
+  "candidate_rows": 116,
+  "fee_bps": 10.0,
+  "filled_trades": 0,
+  "gross_cost": 0,
+  "losing_trades": 0,
+  "max_entry_price": 0.02,
+  "net_pnl": 0,
+  "risk_mode": "paper_replay_only",
+  "skipped_no_fill": 30,
+  "slippage_bps": 10.0,
+  "stake_per_trade": 1.0,
+  "status": "completed",
+  "trades": [],
+  "unresolved_markets": 22,
+  "winning_trades": 0
+}

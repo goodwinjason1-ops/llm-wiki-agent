@@ -1,0 +1,23 @@
+{
+  "ts": "2026-07-27T20:00:07+00:00",
+  "mode": "paper-only read-only operations",
+  "track_outcomes": {
+    "outcome_ledger": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Implementation\\ledgers\\polymarket_paper_outcomes.jsonl",
+    "new_outcomes": [
+      {
+        "signal_id": "8dbfcc2aaa861926",
+        "checked_at": "2026-07-27T20:00:08+00:00",
+        "resolution_status": "resolved_approx",
+        "spot_at_check": 1949.51,
+        "target": 2000.0,
+        "yes_won": false,
+        "candidate_side": "YES",
+        "unit_paper_pnl": -0.13,
+        "reason": "approx spot-at-check for expired above/below market",
+        "question": "Will the price of Ethereum be above $2,000 on July 27?"
+      }
+    ],
+    "new_count": 1,
+    "signals_total": 178
+  }
+}

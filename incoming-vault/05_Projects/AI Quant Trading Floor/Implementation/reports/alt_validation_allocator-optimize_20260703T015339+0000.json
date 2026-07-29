@@ -1,0 +1,50 @@
+{
+  "ts": "2026-07-03T01:52:06+00:00",
+  "mode": "read-only validation research",
+  "monte_carlo_allocator": {
+    "mode": "research priors, not measured live edge",
+    "start_capital": 10000,
+    "days": 252,
+    "runs": 20000,
+    "assumptions": {
+      "daily_etf_tactical_core": {
+        "w": 0.406,
+        "ann_return": 0.1,
+        "ann_vol": 0.09
+      },
+      "prediction_market_crypto_edge": {
+        "w": 0.191,
+        "ann_return": 0.18,
+        "ann_vol": 0.28
+      },
+      "hyperliquid_funding_momentum": {
+        "w": 0.159,
+        "ann_return": 0.16,
+        "ann_vol": 0.24
+      },
+      "defi_stable_lending_yield": {
+        "w": 0.144,
+        "ann_return": 0.1,
+        "ann_vol": 0.06
+      },
+      "cash_reserve": {
+        "w": 0.1,
+        "ann_return": 0.035,
+        "ann_vol": 0.005
+      }
+    },
+    "forecast": {
+      "median_final_equity": 11197.71,
+      "p05_final_equity": 9627.52,
+      "p95_final_equity": 13073.45,
+      "prob_profit": 0.8899,
+      "median_sharpe": 1.2723,
+      "p25_sharpe": 0.5997,
+      "p75_sharpe": 1.95,
+      "prob_sharpe_1_6_plus": 0.3728,
+      "median_max_drawdown": -0.0648,
+      "p05_max_drawdown": -0.124
+    },
+    "interpretation": "This tests whether the current sleeve mix can plausibly reach target under assumptions; real sleeve returns must replace priors."
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "C-HTF-1": {
+    "edge": "C-HTF-1",
+    "name": "Funding-Rate Harvesting (Delta-Neutral Carry)",
+    "scan_count": 20,
+    "deploy_hurdle_annualized": 13.0,
+    "opportunities": [],
+    "decision": "hold_zero_allocation"
+  }
+}

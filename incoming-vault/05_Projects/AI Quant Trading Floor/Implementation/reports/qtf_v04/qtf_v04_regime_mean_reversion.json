@@ -1,0 +1,100 @@
+{
+  "artifact": "QTF-V04 regime-gated mean-reversion test",
+  "generated_utc": "2026-07-15T19:07:24.654119+00:00",
+  "rule": {
+    "entry": "RSI(14) crosses up through 30",
+    "regime": "abs(20-day return)<=10% and close/SMA50 in [0.85,1.15]",
+    "exit": "RSI>=55, 3% stop, or 5-day max hold",
+    "execution": "next daily bar open",
+    "round_trip_cost": 0.002,
+    "split": "70/30 chronological holdout"
+  },
+  "inputs": {
+    "manifest": "356420e8a737f967a32ab3cf740f0bcfa069a7c6cbf3276b91b30c5c630ceae7",
+    "BTCUSDT": "4d59f6a6ab9cdeb47b6efd166edeec5c6c0bc7ce2e48b709722d61f5500137f1",
+    "ETHUSDT": "49c5b53dbcb016d9239215cf98f1d4dc7e622102017e0e2dfaec35b63d3b2845",
+    "SOLUSDT": "ad8a14d83a2255a013c4b61eb7bd312fb83bd3a432309497f107af1f6e8e49d3"
+  },
+  "results": {
+    "BTCUSDT": {
+      "rows": 1200,
+      "split": 840,
+      "development": {
+        "trades": [
+          {
+            "signal_ts": 1693267200000,
+            "entry_ts": 1693353600000,
+            "exit_ts": 1693440000000,
+            "net_return": -0.06628470160681998,
+            "exit_reason": "stop_3pct"
+          }
+        ],
+        "trade_count": 1,
+        "total_net": -0.06628470160681998,
+        "hit_rate": 0.0
+      },
+      "holdout": {
+        "trades": [],
+        "trade_count": 0,
+        "total_net": 0,
+        "hit_rate": null
+      }
+    },
+    "ETHUSDT": {
+      "rows": 1200,
+      "split": 840,
+      "development": {
+        "trades": [
+          {
+            "signal_ts": 1692748800000,
+            "entry_ts": 1692835200000,
+            "exit_ts": 1693180800000,
+            "net_return": -0.017781828572789316,
+            "exit_reason": "max_5d_hold"
+          },
+          {
+            "signal_ts": 1694476800000,
+            "entry_ts": 1694563200000,
+            "exit_ts": 1694908800000,
+            "net_return": 0.016551536230428487,
+            "exit_reason": "max_5d_hold"
+          },
+          {
+            "signal_ts": 1740873600000,
+            "entry_ts": 1740960000000,
+            "exit_ts": 1740960000000,
+            "net_return": -0.14898549320713672,
+            "exit_reason": "stop_3pct"
+          }
+        ],
+        "trade_count": 3,
+        "total_net": -0.15021578554949755,
+        "hit_rate": 0.3333333333333333
+      },
+      "holdout": {
+        "trades": [],
+        "trade_count": 0,
+        "total_net": 0,
+        "hit_rate": null
+      }
+    },
+    "SOLUSDT": {
+      "rows": 1200,
+      "split": 840,
+      "development": {
+        "trades": [],
+        "trade_count": 0,
+        "total_net": 0,
+        "hit_rate": null
+      },
+      "holdout": {
+        "trades": [],
+        "trade_count": 0,
+        "total_net": 0,
+        "hit_rate": null
+      }
+    }
+  },
+  "decision": "do_not_promote",
+  "decision_reason": "Fixed-rule holdout is a diagnostic only; no parameter walk-forward, benchmark-relative test, or paper-forward agreement."
+}

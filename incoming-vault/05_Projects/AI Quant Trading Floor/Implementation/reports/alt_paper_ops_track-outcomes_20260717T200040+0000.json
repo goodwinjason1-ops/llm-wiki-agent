@@ -1,0 +1,47 @@
+{
+  "ts": "2026-07-17T20:00:37+00:00",
+  "mode": "paper-only read-only operations",
+  "track_outcomes": {
+    "outcome_ledger": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Implementation\\ledgers\\polymarket_paper_outcomes.jsonl",
+    "new_outcomes": [
+      {
+        "signal_id": "bddb9408c5da90d1",
+        "checked_at": "2026-07-17T20:00:38+00:00",
+        "resolution_status": "resolved_approx",
+        "spot_at_check": 64046.81,
+        "target": 58000.0,
+        "yes_won": true,
+        "candidate_side": "YES",
+        "unit_paper_pnl": 0.9895,
+        "reason": "approx spot-at-check for expired above/below market",
+        "question": "Will the price of Bitcoin be between $58,000 and $60,000 on July 17?"
+      },
+      {
+        "signal_id": "a61bce3815f283a5",
+        "checked_at": "2026-07-17T20:00:39+00:00",
+        "resolution_status": "resolved_approx",
+        "spot_at_check": 1840.34,
+        "target": 1600.0,
+        "yes_won": true,
+        "candidate_side": "YES",
+        "unit_paper_pnl": 0.994,
+        "reason": "approx spot-at-check for expired above/below market",
+        "question": "Will the price of Ethereum be between $1,600 and $1,700 on July 17?"
+      },
+      {
+        "signal_id": "85084e10a0e4c3ee",
+        "checked_at": "2026-07-17T20:00:40+00:00",
+        "resolution_status": "resolved_approx",
+        "spot_at_check": 1840.53,
+        "target": 1900.0,
+        "yes_won": false,
+        "candidate_side": "YES",
+        "unit_paper_pnl": -0.16,
+        "reason": "approx spot-at-check for expired above/below market",
+        "question": "Will the price of Ethereum be above $1,900 on July 17?"
+      }
+    ],
+    "new_count": 3,
+    "signals_total": 97
+  }
+}

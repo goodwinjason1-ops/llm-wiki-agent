@@ -1,0 +1,90 @@
+{
+  "report_type": "edge_worker_operational_report",
+  "generated_at": "2026-07-20T05:35:00Z",
+  "worker": "jayse_paper_only_quant_floor",
+  "mode": "paper_only_research",
+  "manifest": {
+    "file": "universe_manifest_20260716T113039Z.json",
+    "hash_sha256": "3c579cf02c0d0a3ba6be2394c4fb8a67e4d41513e42a0eb2e9b06674f2d7c0f1",
+    "schema_version": "qtf-research-universe-v1",
+    "generated_at": "2026-07-16T11:30:39+00:00",
+    "total_assets": 50,
+    "controls": ["BTC", "ETH", "SOL"],
+    "bybit_spot_count": 50,
+    "hyperliquid_count": 0,
+    "shortfall": 0,
+    "status": "ok"
+  },
+  "trend_board": {
+    "file": "trend_board_20260716T113039Z.json",
+    "generated_at": "2026-07-16T11:30:39+00:00",
+    "eligible_count": 30,
+    "positive_24h_count": 7,
+    "negative_24h_count": 10,
+    "top_positive": "ONDO",
+    "top_positive_pct": 15.74,
+    "top_negative": "LIT",
+    "top_negative_pct": -7.75,
+    "classification": "observation"
+  },
+  "funding_board": {
+    "file": "funding_board_20260716T113039Z.json",
+    "generated_at": "2026-07-16T11:30:39+00:00",
+    "eligible_count": 41,
+    "positive_funding_count": 10,
+    "negative_funding_count": 10,
+    "candidate_events_count": 20,
+    "top_positive_funding_asset": "XRP",
+    "top_negative_funding_asset": "TRX",
+    "classification": "observation"
+  },
+  "board_provenance_consistency": {
+    "manifest_sha256": "3c579cf02c0d0a3ba6be2394c4fb8a67e4d41513e42a0eb2e9b06674f2d7c0f1",
+    "trend_provenance_matches": true,
+    "funding_provenance_matches": true,
+    "overall_consistent": true,
+    "note": "All boards hash to the same manifest — no drift detected."
+  },
+  "control_ledger_status": {
+    "ledger_file": "QTF Verification and Delivery Control - 2026-07-15.md",
+    "last_checkpoint": "Checkpoint A 2026-07-16 verified-complete",
+    "latest_checkpoint_hash_match": true,
+    "ledger_audit_date": "2026-07-15",
+    "key_findings": [
+      "All deliverables remain partial, blocked, or rejected — no production edge promoted.",
+      "TTM-01 jitter robustness FAILED (52.8% survival, threshold >= 60%).",
+      "V02 broad funding panel: 0% hit rate across all configs.",
+      "V04B jitter FAILED (38.5% survival).",
+      "V07 costed funding: edge fragile (15.4% survival) — price reversal, not funding carry.",
+      "V05 pairs backtest: both OOS do_not_promote.",
+      "V01 benchmark comparison completed — capital preservation, not edge.",
+      "V08 market-making: blocked (no L2 historical data)."
+    ]
+  },
+  "verification_checks": {
+    "manifest_asset_count": 50,
+    "expected_50": true,
+    "controls_present": true,
+    "non_control_assets": 47,
+    "trend_classification_safe": true,
+    "funding_classification_safe": true,
+    "candidate_events_have_next_gate": true,
+    "no_trade_language_in_boards": true,
+    "checkpoint_a_passed": true,
+    "provenance_chain_intact": true
+  },
+  "decision": {
+    "action": "hold_zero_allocation",
+    "reason": "No validated production edge exists. All deliverables remain partial/blocked/rejected per verification control ledger. Robustness gates consistently failed across V01, V04B, V07. Funding panel showed 0% hit rate. Pairs backtest negative OOS. Market-making blocked on data availability.",
+    "allocation_eth": 0,
+    "allocation_other": {},
+    "alert_level": "none",
+    "paper_signals": []
+  },
+  "scan_pipeline_status": {
+    "consecutive_idle_runs": 16,
+    "last_scan_update": "2026-07-16T11:30:39Z",
+    "pipeline_state": "dormant",
+    "recommendation": "Scan generation pipeline not producing new boards. Recommend manual trigger or investigation of cron/scheduler for trend_board.py and funding_board.py."
+  }
+}

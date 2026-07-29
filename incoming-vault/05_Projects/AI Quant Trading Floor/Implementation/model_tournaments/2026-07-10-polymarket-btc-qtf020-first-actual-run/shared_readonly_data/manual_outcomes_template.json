@@ -1,0 +1,5 @@
+{
+  "README": "Fill resolved outcomes manually only after verifying market settlement from Polymarket/public source. Keys are market_id, values are exact winning outcome label such as Up, Down, Yes, No. Do not infer outcomes from question text.",
+  "2865173": "Up or Down after verified settlement",
+  "2865170": "Up or Down after verified settlement"
+}

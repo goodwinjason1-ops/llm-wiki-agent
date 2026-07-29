@@ -1,0 +1,23 @@
+{
+  "ts": "2026-07-24T20:00:10+00:00",
+  "mode": "paper-only read-only operations",
+  "track_outcomes": {
+    "outcome_ledger": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Implementation\\ledgers\\polymarket_paper_outcomes.jsonl",
+    "new_outcomes": [
+      {
+        "signal_id": "3ddeb120986c964e",
+        "checked_at": "2026-07-24T20:00:11+00:00",
+        "resolution_status": "resolved_approx",
+        "spot_at_check": 1863.54,
+        "target": 1900.0,
+        "yes_won": false,
+        "candidate_side": "YES",
+        "unit_paper_pnl": -0.255,
+        "reason": "approx spot-at-check for expired above/below market",
+        "question": "Will the price of Ethereum be above $1,900 on July 24?"
+      }
+    ],
+    "new_count": 1,
+    "signals_total": 156
+  }
+}

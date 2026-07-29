@@ -1,0 +1,47 @@
+{
+  "ts": "2026-07-09T20:00:14+00:00",
+  "mode": "paper-only read-only operations",
+  "track_outcomes": {
+    "outcome_ledger": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Implementation\\ledgers\\polymarket_paper_outcomes.jsonl",
+    "new_outcomes": [
+      {
+        "signal_id": "61a9f4e475124bcb",
+        "checked_at": "2026-07-09T20:00:15+00:00",
+        "resolution_status": "resolved_approx",
+        "spot_at_check": 63269.81,
+        "target": 62000.0,
+        "yes_won": true,
+        "candidate_side": "YES",
+        "unit_paper_pnl": 0.36,
+        "reason": "approx spot-at-check for expired above/below market",
+        "question": "Will the price of Bitcoin be above $62,000 on July 9?"
+      },
+      {
+        "signal_id": "d069a65fd7bb5c50",
+        "checked_at": "2026-07-09T20:00:16+00:00",
+        "resolution_status": "resolved_approx",
+        "spot_at_check": 1748.9,
+        "target": 1800.0,
+        "yes_won": false,
+        "candidate_side": "YES",
+        "unit_paper_pnl": -0.065,
+        "reason": "approx spot-at-check for expired above/below market",
+        "question": "Will the price of Ethereum be above $1,800 on July 9?"
+      },
+      {
+        "signal_id": "b3eeebdbe8001ed1",
+        "checked_at": "2026-07-09T20:00:17+00:00",
+        "resolution_status": "resolved_approx",
+        "spot_at_check": 63269.82,
+        "target": 64000.0,
+        "yes_won": false,
+        "candidate_side": "YES",
+        "unit_paper_pnl": -0.0395,
+        "reason": "approx spot-at-check for expired above/below market",
+        "question": "Will the price of Bitcoin be above $64,000 on July 9?"
+      }
+    ],
+    "new_count": 3,
+    "signals_total": 36
+  }
+}

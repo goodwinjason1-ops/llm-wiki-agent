@@ -1,0 +1,496 @@
+{
+  "artifact": "QTF-V02 Broad Funding Panel v02 - Multi-Asset Forward Outcome Test",
+  "version": "v02",
+  "generated_utc": "2026-07-16T01:31:19.991779+00:00",
+  "input": {
+    "source": "live Bybit linear /v5/market/tickers endpoint",
+    "bybit_rows_with_funding": 610,
+    "volume_filtered_rows": 222,
+    "panel_sha256": "6cc7b2417591492a2ee21f702db2175038d30709483ce6475e89db2eb9ed6a72",
+    "previous_scan_provenance": {
+      "source_file": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Implementation\\reports\\daily_scan\\funding_board_20260715T231700Z.json",
+      "manifest_sha256": "1877be833e32b2a88f434e49f05cb33be3bfa2444421739067c275c05636817f",
+      "candidate_events": 15
+    },
+    "funding_distribution": {
+      "count": 222,
+      "mean_hourly": -7.344405968468468e-05,
+      "median_hourly": 1.25e-05,
+      "stdev_hourly": 1.0,
+      "mean_abs_hourly": 0.00010171810247747748,
+      "max_abs_hourly": 0.00888113,
+      "min_abs_hourly": 2.9625e-07,
+      "positive_count": 159,
+      "negative_count": 63
+    },
+    "note": "All forward outcomes are single-snapshot descriptive proxies; not executed payment evidence"
+  },
+  "rule": {
+    "signal": "|funding_hourly| >= 1e-06",
+    "entry": "current mark price (single snapshot)",
+    "outcomes": "funding-rate-scaled price return at 1h/4h/8h horizons",
+    "split": "first 70% chronological development, final 30% holdout (sorted by |funding| desc)",
+    "cost_model": "10.0 bps round-trip proxy",
+    "price_fraction_assumption": 0.3,
+    "funding": "one-hour proxy from Bybit ticker; not executed payment evidence"
+  },
+  "results": [
+    {
+      "side": "fade_short",
+      "horizon_hours": 1,
+      "threshold": 1e-06,
+      "cost_bps": 10.0,
+      "episodes_total": 220,
+      "episodes_development": 154,
+      "episodes_holdout": 66,
+      "mean_net_total": -0.0010963436573863637,
+      "median_net_total": -0.00098375,
+      "stdev_net_total": 1.0,
+      "mean_net_development": -0.0011409320503246753,
+      "mean_net_holdout": -0.0009923040738636364,
+      "median_net_holdout": -0.0009902784375,
+      "hit_rate_holdout": 0.0,
+      "min_net_holdout": -0.00101490125,
+      "max_net_holdout": -0.00098375,
+      "decision": "do_not_promote",
+      "reason": "single-snapshot forward proxy; requires multi-week frozen panel with executed funding payments and chronological holdout for promotion",
+      "panel_sha256": "6cc7b2417591492a2ee21f702db2175038d30709483ce6475e89db2eb9ed6a72"
+    },
+    {
+      "side": "fade_short",
+      "horizon_hours": 4,
+      "threshold": 1e-06,
+      "cost_bps": 10.0,
+      "episodes_total": 220,
+      "episodes_development": 154,
+      "episodes_holdout": 66,
+      "mean_net_total": -0.0011630431124999999,
+      "median_net_total": -0.0009725000000000001,
+      "stdev_net_total": 1.0,
+      "mean_net_development": -0.0012385003928571429,
+      "mean_net_holdout": -0.0009869761250000002,
+      "median_net_holdout": -0.000983548125,
+      "hit_rate_holdout": 0.0,
+      "min_net_holdout": -0.0010252175,
+      "max_net_holdout": -0.0009725000000000001,
+      "decision": "do_not_promote",
+      "reason": "single-snapshot forward proxy; requires multi-week frozen panel with executed funding payments and chronological holdout for promotion",
+      "panel_sha256": "6cc7b2417591492a2ee21f702db2175038d30709483ce6475e89db2eb9ed6a72"
+    },
+    {
+      "side": "fade_short",
+      "horizon_hours": 8,
+      "threshold": 1e-06,
+      "cost_bps": 10.0,
+      "episodes_total": 220,
+      "episodes_development": 154,
+      "episodes_holdout": 66,
+      "mean_net_total": -0.0012519757193181818,
+      "median_net_total": -0.0009575,
+      "stdev_net_total": 1.0,
+      "mean_net_development": -0.0013685915162337662,
+      "mean_net_holdout": -0.0009798721931818183,
+      "median_net_holdout": -0.000974574375,
+      "hit_rate_holdout": 0.0,
+      "min_net_holdout": -0.0010389725,
+      "max_net_holdout": -0.0009575,
+      "decision": "do_not_promote",
+      "reason": "single-snapshot forward proxy; requires multi-week frozen panel with executed funding payments and chronological holdout for promotion",
+      "panel_sha256": "6cc7b2417591492a2ee21f702db2175038d30709483ce6475e89db2eb9ed6a72"
+    },
+    {
+      "side": "persistence_long",
+      "horizon_hours": 1,
+      "threshold": 1e-06,
+      "cost_bps": 10.0,
+      "episodes_total": 220,
+      "episodes_development": 154,
+      "episodes_holdout": 66,
+      "mean_net_total": -0.0009036563426136363,
+      "median_net_total": -0.00101625,
+      "stdev_net_total": 1.0,
+      "mean_net_development": -0.0008590679496753246,
+      "mean_net_holdout": -0.0010076959261363636,
+      "median_net_holdout": -0.0010097215625,
+      "hit_rate_holdout": 0.0,
+      "min_net_holdout": -0.00101625,
+      "max_net_holdout": -0.00098509875,
+      "decision": "do_not_promote",
+      "reason": "single-snapshot forward proxy; requires multi-week frozen panel with executed funding payments and chronological holdout for promotion",
+      "panel_sha256": "6cc7b2417591492a2ee21f702db2175038d30709483ce6475e89db2eb9ed6a72"
+    },
+    {
+      "side": "persistence_long",
+      "horizon_hours": 4,
+      "threshold": 1e-06,
+      "cost_bps": 10.0,
+      "episodes_total": 220,
+      "episodes_development": 154,
+      "episodes_holdout": 66,
+      "mean_net_total": -0.0008369568875000001,
+      "median_net_total": -0.0010275,
+      "stdev_net_total": 1.0,
+      "mean_net_development": -0.0007614996071428572,
+      "mean_net_holdout": -0.001013023875,
+      "median_net_holdout": -0.001016451875,
+      "hit_rate_holdout": 0.0,
+      "min_net_holdout": -0.0010275,
+      "max_net_holdout": -0.0009747825000000001,
+      "decision": "do_not_promote",
+      "reason": "single-snapshot forward proxy; requires multi-week frozen panel with executed funding payments and chronological holdout for promotion",
+      "panel_sha256": "6cc7b2417591492a2ee21f702db2175038d30709483ce6475e89db2eb9ed6a72"
+    },
+    {
+      "side": "persistence_long",
+      "horizon_hours": 8,
+      "threshold": 1e-06,
+      "cost_bps": 10.0,
+      "episodes_total": 220,
+      "episodes_development": 154,
+      "episodes_holdout": 66,
+      "mean_net_total": -0.0007480242806818182,
+      "median_net_total": -0.0010425,
+      "stdev_net_total": 1.0,
+      "mean_net_development": -0.0006314084837662339,
+      "mean_net_holdout": -0.0010201278068181817,
+      "median_net_holdout": -0.001025425625,
+      "hit_rate_holdout": 0.0,
+      "min_net_holdout": -0.0010425,
+      "max_net_holdout": -0.0009610275,
+      "decision": "do_not_promote",
+      "reason": "single-snapshot forward proxy; requires multi-week frozen panel with executed funding payments and chronological holdout for promotion",
+      "panel_sha256": "6cc7b2417591492a2ee21f702db2175038d30709483ce6475e89db2eb9ed6a72"
+    }
+  ],
+  "cost_sensitivity": [
+    {
+      "funding_threshold_hourly": 5e-07,
+      "cost_bps": 5.0,
+      "fade_short": {
+        "episodes": 221,
+        "holdout_episodes": 67,
+        "mean_net_holdout": -0.0004871891044776119,
+        "hit_rate_holdout": 0.0
+      },
+      "persistence_long": {
+        "episodes": 221,
+        "holdout_episodes": 67,
+        "mean_net_holdout": -0.0005128108955223881,
+        "hit_rate_holdout": 0.0
+      }
+    },
+    {
+      "funding_threshold_hourly": 5e-07,
+      "cost_bps": 10.0,
+      "fade_short": {
+        "episodes": 221,
+        "holdout_episodes": 67,
+        "mean_net_holdout": -0.000987189104477612,
+        "hit_rate_holdout": 0.0
+      },
+      "persistence_long": {
+        "episodes": 221,
+        "holdout_episodes": 67,
+        "mean_net_holdout": -0.001012810895522388,
+        "hit_rate_holdout": 0.0
+      }
+    },
+    {
+      "funding_threshold_hourly": 5e-07,
+      "cost_bps": 20.0,
+      "fade_short": {
+        "episodes": 221,
+        "holdout_episodes": 67,
+        "mean_net_holdout": -0.0019871891044776118,
+        "hit_rate_holdout": 0.0
+      },
+      "persistence_long": {
+        "episodes": 221,
+        "holdout_episodes": 67,
+        "mean_net_holdout": -0.002012810895522388,
+        "hit_rate_holdout": 0.0
+      }
+    },
+    {
+      "funding_threshold_hourly": 5e-07,
+      "cost_bps": 40.0,
+      "fade_short": {
+        "episodes": 221,
+        "holdout_episodes": 67,
+        "mean_net_holdout": -0.003987189104477612,
+        "hit_rate_holdout": 0.0
+      },
+      "persistence_long": {
+        "episodes": 221,
+        "holdout_episodes": 67,
+        "mean_net_holdout": -0.0040128108955223875,
+        "hit_rate_holdout": 0.0
+      }
+    },
+    {
+      "funding_threshold_hourly": 1e-06,
+      "cost_bps": 5.0,
+      "fade_short": {
+        "episodes": 220,
+        "holdout_episodes": 66,
+        "mean_net_holdout": -0.000486976125,
+        "hit_rate_holdout": 0.0
+      },
+      "persistence_long": {
+        "episodes": 220,
+        "holdout_episodes": 66,
+        "mean_net_holdout": -0.000513023875,
+        "hit_rate_holdout": 0.0
+      }
+    },
+    {
+      "funding_threshold_hourly": 1e-06,
+      "cost_bps": 10.0,
+      "fade_short": {
+        "episodes": 220,
+        "holdout_episodes": 66,
+        "mean_net_holdout": -0.0009869761250000002,
+        "hit_rate_holdout": 0.0
+      },
+      "persistence_long": {
+        "episodes": 220,
+        "holdout_episodes": 66,
+        "mean_net_holdout": -0.001013023875,
+        "hit_rate_holdout": 0.0
+      }
+    },
+    {
+      "funding_threshold_hourly": 1e-06,
+      "cost_bps": 20.0,
+      "fade_short": {
+        "episodes": 220,
+        "holdout_episodes": 66,
+        "mean_net_holdout": -0.001986976125,
+        "hit_rate_holdout": 0.0
+      },
+      "persistence_long": {
+        "episodes": 220,
+        "holdout_episodes": 66,
+        "mean_net_holdout": -0.002013023875,
+        "hit_rate_holdout": 0.0
+      }
+    },
+    {
+      "funding_threshold_hourly": 1e-06,
+      "cost_bps": 40.0,
+      "fade_short": {
+        "episodes": 220,
+        "holdout_episodes": 66,
+        "mean_net_holdout": -0.003986976125,
+        "hit_rate_holdout": 0.0
+      },
+      "persistence_long": {
+        "episodes": 220,
+        "holdout_episodes": 66,
+        "mean_net_holdout": -0.0040130238750000005,
+        "hit_rate_holdout": 0.0
+      }
+    },
+    {
+      "funding_threshold_hourly": 2e-06,
+      "cost_bps": 5.0,
+      "fade_short": {
+        "episodes": 216,
+        "holdout_episodes": 65,
+        "mean_net_holdout": -0.0004854825807692308,
+        "hit_rate_holdout": 0.0
+      },
+      "persistence_long": {
+        "episodes": 216,
+        "holdout_episodes": 65,
+        "mean_net_holdout": -0.0005145174192307693,
+        "hit_rate_holdout": 0.0
+      }
+    },
+    {
+      "funding_threshold_hourly": 2e-06,
+      "cost_bps": 10.0,
+      "fade_short": {
+        "episodes": 216,
+        "holdout_episodes": 65,
+        "mean_net_holdout": -0.0009854825807692309,
+        "hit_rate_holdout": 0.0
+      },
+      "persistence_long": {
+        "episodes": 216,
+        "holdout_episodes": 65,
+        "mean_net_holdout": -0.0010145174192307692,
+        "hit_rate_holdout": 0.0
+      }
+    },
+    {
+      "funding_threshold_hourly": 2e-06,
+      "cost_bps": 20.0,
+      "fade_short": {
+        "episodes": 216,
+        "holdout_episodes": 65,
+        "mean_net_holdout": -0.0019854825807692307,
+        "hit_rate_holdout": 0.0
+      },
+      "persistence_long": {
+        "episodes": 216,
+        "holdout_episodes": 65,
+        "mean_net_holdout": -0.002014517419230769,
+        "hit_rate_holdout": 0.0
+      }
+    },
+    {
+      "funding_threshold_hourly": 2e-06,
+      "cost_bps": 40.0,
+      "fade_short": {
+        "episodes": 216,
+        "holdout_episodes": 65,
+        "mean_net_holdout": -0.003985482580769231,
+        "hit_rate_holdout": 0.0
+      },
+      "persistence_long": {
+        "episodes": 216,
+        "holdout_episodes": 65,
+        "mean_net_holdout": -0.0040145174192307695,
+        "hit_rate_holdout": 0.0
+      }
+    },
+    {
+      "funding_threshold_hourly": 5e-06,
+      "cost_bps": 5.0,
+      "fade_short": {
+        "episodes": 200,
+        "holdout_episodes": 60,
+        "mean_net_holdout": -0.0004801027875,
+        "hit_rate_holdout": 0.0
+      },
+      "persistence_long": {
+        "episodes": 200,
+        "holdout_episodes": 60,
+        "mean_net_holdout": -0.0005198972125,
+        "hit_rate_holdout": 0.0
+      }
+    },
+    {
+      "funding_threshold_hourly": 5e-06,
+      "cost_bps": 10.0,
+      "fade_short": {
+        "episodes": 200,
+        "holdout_episodes": 60,
+        "mean_net_holdout": -0.0009801027875,
+        "hit_rate_holdout": 0.0
+      },
+      "persistence_long": {
+        "episodes": 200,
+        "holdout_episodes": 60,
+        "mean_net_holdout": -0.0010198972125,
+        "hit_rate_holdout": 0.0
+      }
+    },
+    {
+      "funding_threshold_hourly": 5e-06,
+      "cost_bps": 20.0,
+      "fade_short": {
+        "episodes": 200,
+        "holdout_episodes": 60,
+        "mean_net_holdout": -0.0019801027874999997,
+        "hit_rate_holdout": 0.0
+      },
+      "persistence_long": {
+        "episodes": 200,
+        "holdout_episodes": 60,
+        "mean_net_holdout": -0.0020198972125000003,
+        "hit_rate_holdout": 0.0
+      }
+    },
+    {
+      "funding_threshold_hourly": 5e-06,
+      "cost_bps": 40.0,
+      "fade_short": {
+        "episodes": 200,
+        "holdout_episodes": 60,
+        "mean_net_holdout": -0.0039801027875,
+        "hit_rate_holdout": 0.0
+      },
+      "persistence_long": {
+        "episodes": 200,
+        "holdout_episodes": 60,
+        "mean_net_holdout": -0.0040198972125,
+        "hit_rate_holdout": 0.0
+      }
+    },
+    {
+      "funding_threshold_hourly": 1e-05,
+      "cost_bps": 5.0,
+      "fade_short": {
+        "episodes": 186,
+        "holdout_episodes": 56,
+        "mean_net_holdout": -0.00047537979017857145,
+        "hit_rate_holdout": 0.0
+      },
+      "persistence_long": {
+        "episodes": 186,
+        "holdout_episodes": 56,
+        "mean_net_holdout": -0.0005246202098214285,
+        "hit_rate_holdout": 0.0
+      }
+    },
+    {
+      "funding_threshold_hourly": 1e-05,
+      "cost_bps": 10.0,
+      "fade_short": {
+        "episodes": 186,
+        "holdout_episodes": 56,
+        "mean_net_holdout": -0.0009753797901785714,
+        "hit_rate_holdout": 0.0
+      },
+      "persistence_long": {
+        "episodes": 186,
+        "holdout_episodes": 56,
+        "mean_net_holdout": -0.0010246202098214286,
+        "hit_rate_holdout": 0.0
+      }
+    },
+    {
+      "funding_threshold_hourly": 1e-05,
+      "cost_bps": 20.0,
+      "fade_short": {
+        "episodes": 186,
+        "holdout_episodes": 56,
+        "mean_net_holdout": -0.001975379790178571,
+        "hit_rate_holdout": 0.0
+      },
+      "persistence_long": {
+        "episodes": 186,
+        "holdout_episodes": 56,
+        "mean_net_holdout": -0.002024620209821429,
+        "hit_rate_holdout": 0.0
+      }
+    },
+    {
+      "funding_threshold_hourly": 1e-05,
+      "cost_bps": 40.0,
+      "fade_short": {
+        "episodes": 186,
+        "holdout_episodes": 56,
+        "mean_net_holdout": -0.003975379790178571,
+        "hit_rate_holdout": 0.0
+      },
+      "persistence_long": {
+        "episodes": 186,
+        "holdout_episodes": 56,
+        "mean_net_holdout": -0.004024620209821429,
+        "hit_rate_holdout": 0.0
+      }
+    }
+  ],
+  "decision": "do_not_promote",
+  "decision_reason": "Single-snapshot forward proxy only. Requires: (1) frozen/hash-anchored multi-week funding panel, (2) executed funding settlement data, (3) chronological holdout with adequate episode breadth (>30 holdout episodes per side/horizon), (4) parameter jitter and RST robustness, (5) paper-forward agreement.",
+  "gate_status": {
+    "frozen_panel": "not_met — single snapshot from live Bybit ticker",
+    "executed_funding": "not_met — funding is a rate proxy",
+    "holdout_breadth": "not_met — episodes derived from single snapshot",
+    "robustness_jitter": "not_met — not run",
+    "paper_forward": "not_met — not started"
+  }
+}

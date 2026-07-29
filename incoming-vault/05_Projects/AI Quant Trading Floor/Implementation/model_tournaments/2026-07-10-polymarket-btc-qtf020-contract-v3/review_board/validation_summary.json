@@ -1,0 +1,78 @@
+{
+  "runs": [
+    {
+      "issues": [
+        "strategy.md still pending",
+        "assumptions.md still pending",
+        "diagnostics.md still pending",
+        "backtest_report.json status is not completed",
+        "backtest_report.json missing strategy_id",
+        "backtest_report.json missing trade_count",
+        "backtest_report.json missing max_drawdown_pct",
+        "backtest_report.json missing sharpe",
+        "backtest_report.json missing net_return_pct",
+        "backtest_report.json missing holdout_used",
+        "backtest_report.json missing fees_included",
+        "backtest_report.json missing slippage_included",
+        "backtest_report.json missing lookahead_controls"
+      ],
+      "metrics": {
+        "model": "baseline_simple",
+        "status": "pending"
+      },
+      "model": "baseline_simple",
+      "model_dir": "model_tournaments\\2026-07-10-polymarket-btc-qtf020-contract-v3\\model_runs\\baseline_simple",
+      "status": "invalid"
+    },
+    {
+      "issues": [
+        "strategy.md still pending",
+        "assumptions.md still pending",
+        "diagnostics.md still pending",
+        "backtest_report.json status is not completed",
+        "backtest_report.json missing strategy_id",
+        "backtest_report.json missing trade_count",
+        "backtest_report.json missing max_drawdown_pct",
+        "backtest_report.json missing sharpe",
+        "backtest_report.json missing net_return_pct",
+        "backtest_report.json missing holdout_used",
+        "backtest_report.json missing fees_included",
+        "backtest_report.json missing slippage_included",
+        "backtest_report.json missing lookahead_controls"
+      ],
+      "metrics": {
+        "model": "control_candidate",
+        "status": "pending"
+      },
+      "model": "control_candidate",
+      "model_dir": "model_tournaments\\2026-07-10-polymarket-btc-qtf020-contract-v3\\model_runs\\control_candidate",
+      "status": "invalid"
+    },
+    {
+      "issues": [
+        "strategy.md still pending",
+        "assumptions.md still pending",
+        "diagnostics.md still pending",
+        "backtest_report.json status is not completed",
+        "backtest_report.json missing strategy_id",
+        "backtest_report.json missing trade_count",
+        "backtest_report.json missing max_drawdown_pct",
+        "backtest_report.json missing sharpe",
+        "backtest_report.json missing net_return_pct",
+        "backtest_report.json missing holdout_used",
+        "backtest_report.json missing fees_included",
+        "backtest_report.json missing slippage_included",
+        "backtest_report.json missing lookahead_controls"
+      ],
+      "metrics": {
+        "model": "frontier_candidate",
+        "status": "pending"
+      },
+      "model": "frontier_candidate",
+      "model_dir": "model_tournaments\\2026-07-10-polymarket-btc-qtf020-contract-v3\\model_runs\\frontier_candidate",
+      "status": "invalid"
+    }
+  ],
+  "status": "invalid",
+  "tournament_dir": "model_tournaments\\2026-07-10-polymarket-btc-qtf020-contract-v3"
+}

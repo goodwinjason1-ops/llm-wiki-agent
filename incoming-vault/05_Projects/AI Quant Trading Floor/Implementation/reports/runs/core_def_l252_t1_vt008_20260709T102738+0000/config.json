@@ -1,0 +1,21 @@
+{
+  "strategy_id": "CORE_DEF-L252-T1-VT0.08",
+  "symbols": [
+    "SPY",
+    "QQQ",
+    "TLT",
+    "IEF",
+    "SHY",
+    "GLD",
+    "UUP"
+  ],
+  "lookback": 252,
+  "top_n": 1,
+  "vol_target": 0.08,
+  "initial_cash": 10000,
+  "fee_bps": 1,
+  "slip_bps": 1,
+  "data_source": "yfinance cached via strategy_lab_v2.align_daily",
+  "days": 3650,
+  "safety": "research/backtest only; public data; no broker/exchange auth; no orders"
+}

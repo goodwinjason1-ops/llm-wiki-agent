@@ -1,0 +1,47 @@
+{
+  "ts": "2026-07-28T20:00:23+00:00",
+  "mode": "paper-only read-only operations",
+  "track_outcomes": {
+    "outcome_ledger": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Implementation\\ledgers\\polymarket_paper_outcomes.jsonl",
+    "new_outcomes": [
+      {
+        "signal_id": "36f8ec6297ac840a",
+        "checked_at": "2026-07-28T20:00:24+00:00",
+        "resolution_status": "resolved_approx",
+        "spot_at_check": 63919.15,
+        "target": 64000.0,
+        "yes_won": false,
+        "candidate_side": "YES",
+        "unit_paper_pnl": -0.385,
+        "reason": "approx spot-at-check for expired above/below market",
+        "question": "Will the price of Bitcoin be above $64,000 on July 28?"
+      },
+      {
+        "signal_id": "42f804161b4e527c",
+        "checked_at": "2026-07-28T20:00:24+00:00",
+        "resolution_status": "resolved_approx",
+        "spot_at_check": 1922.9,
+        "target": 1900.0,
+        "yes_won": true,
+        "candidate_side": "YES",
+        "unit_paper_pnl": 0.58,
+        "reason": "approx spot-at-check for expired above/below market",
+        "question": "Will the price of Ethereum be above $1,900 on July 28?"
+      },
+      {
+        "signal_id": "f453ff075dd8d933",
+        "checked_at": "2026-07-28T20:00:25+00:00",
+        "resolution_status": "resolved_approx",
+        "spot_at_check": 1922.9,
+        "target": 2000.0,
+        "yes_won": false,
+        "candidate_side": "YES",
+        "unit_paper_pnl": -0.0115,
+        "reason": "approx spot-at-check for expired above/below market",
+        "question": "Will the price of Ethereum be above $2,000 on July 28?"
+      }
+    ],
+    "new_count": 3,
+    "signals_total": 186
+  }
+}

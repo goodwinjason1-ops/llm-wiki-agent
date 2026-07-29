@@ -1,0 +1,94 @@
+{
+  "checkpoint": "A",
+  "run_id": "20260716T113748Z",
+  "source_dir": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Implementation\\reports\\daily_scan",
+  "manifest_file": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Implementation\\reports\\daily_scan\\universe_manifest_20260716T113039Z.json",
+  "trend_file": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Implementation\\reports\\daily_scan\\trend_board_20260716T113039Z.json",
+  "funding_file": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Implementation\\reports\\daily_scan\\funding_board_20260716T113039Z.json",
+  "manifest_sha256": "3c579cf02c0d0a3ba6be2394c4fb8a67e4d41513e42a0eb2e9b06674f2d7c0f1",
+  "trend_sha256": "287dda77437dcc9b07b961585b2dd080676148edf23aa63d8d0ea04dff544032",
+  "funding_sha256": "255a9b9e341ec8ed0a0cab8ef494cf39f1637ddf3dfe79780e5e1fe678e71206",
+  "results": [
+    {
+      "check": "universe_size",
+      "passed": true,
+      "total_assets": 50,
+      "bybit_spot": 50,
+      "hyperliquid_perp": 0,
+      "shortfall": 0,
+      "status": "ok",
+      "notes": [
+        "Universe contains 50 assets (50 Bybit + 0 Hyperliquid). PASS.",
+        "Manifest status: ok."
+      ]
+    },
+    {
+      "check": "two_sided_trend",
+      "passed": true,
+      "eligible": 30,
+      "positive_count": 7,
+      "negative_count": 10,
+      "notes": [
+        "Eligible trend rows: 30.",
+        "Positive side: 7 rows, top=ONDO (15.740000000000002%).",
+        "Negative side: 10 rows, worst=LIT (-7.75%).",
+        "Classification is 'observation'. PASS."
+      ]
+    },
+    {
+      "check": "two_sided_funding",
+      "passed": true,
+      "eligible": 41,
+      "positive_count": 10,
+      "negative_count": 10,
+      "candidate_events": 20,
+      "notes": [
+        "Eligible funding rows: 41.",
+        "Positive side: 10 rows, top=XRP (hourly=2.0833333333333333e-07).",
+        "Negative side: 10 rows, top=TRX (hourly=-1.8965624999999999e-06).",
+        "Classification is 'observation'. PASS.",
+        "Candidate events generated: 20."
+      ]
+    },
+    {
+      "check": "no_trade_language",
+      "passed": true,
+      "notes": [
+        "Manifest execution note: 'research-only; no credentials, orders, wallets, or contacts'. PASS.",
+        "Trend board note contains safety language. PASS.",
+        "Funding board note contains safety language. PASS.",
+        "Candidate events have next_gate instructions. PASS."
+      ]
+    },
+    {
+      "check": "no_control_only_default",
+      "passed": true,
+      "controls_count": 3,
+      "non_controls_count": 47,
+      "trend_unique_assets": 17,
+      "notes": [
+        "Control assets in universe: 3 (BTC, ETH, SOL).",
+        "Non-control assets in universe: 47.",
+        "Controls are properly tagged. PASS.",
+        "Universe has 47 non-control assets, not control-only. PASS.",
+        "Trend board includes non-control assets. PASS."
+      ]
+    },
+    {
+      "check": "provenance_chain",
+      "passed": false,
+      "manifest_sha": "",
+      "trend_sha": "3c579cf02c0d0a3ba6be2394c4fb8a67",
+      "funding_sha": "3c579cf02c0d0a3ba6be2394c4fb8a67",
+      "notes": [
+        "Manifest SHA-256: ...",
+        "Trend provenance SHA-256: 3c579cf02c0d0a3b...",
+        "Funding provenance SHA-256: 3c579cf02c0d0a3b...",
+        "Provenance hash mismatch detected. FAIL."
+      ]
+    }
+  ],
+  "overall": "FAIL",
+  "mode": "read_only_paper_research",
+  "execution": "no credentials, orders, wallets, or contacts"
+}

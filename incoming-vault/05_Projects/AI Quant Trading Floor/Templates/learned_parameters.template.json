@@ -1,0 +1,20 @@
+{
+  "strategy_id": "",
+  "strategy_name": "",
+  "updated": "2026-07-03",
+  "mode": "research_only",
+  "current_baseline": {
+    "version": "v0",
+    "parameters": {},
+    "scorecard": {},
+    "evidence_note": ""
+  },
+  "accepted_changes": [],
+  "rejected_changes": [],
+  "next_hypothesis": "",
+  "human_approval_required_before": [
+    "write_mode",
+    "paper_trade_automation",
+    "live_trading"
+  ]
+}

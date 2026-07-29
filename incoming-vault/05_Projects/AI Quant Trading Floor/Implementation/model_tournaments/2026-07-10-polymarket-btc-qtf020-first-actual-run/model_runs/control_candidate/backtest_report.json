@@ -1,0 +1,21 @@
+{
+  "candidate_rows": 116,
+  "decision_note": "research-only",
+  "evidence_level": "outcome-fill-replay-no-fills",
+  "fees_included": true,
+  "filled_trades": 0,
+  "holdout_used": true,
+  "lookahead_controls": "candidate generation uses historical scanner rows only; no resolved outcomes used for parameter selection in this seed layer",
+  "max_drawdown_pct": 0.0,
+  "max_entry_price": 0.02,
+  "net_return_pct": 0.0,
+  "paper_replay_only": true,
+  "replay_net_pnl": 0,
+  "sharpe": null,
+  "slippage_included": true,
+  "snapshot_rows": 110,
+  "status": "completed",
+  "strategy_id": "QTF020-CONTROL-PM-E04-FRESH-WINDOW",
+  "trade_count": 55,
+  "unresolved_markets": 22
+}

@@ -1,0 +1,35 @@
+{
+  "ts": "2026-07-11T20:00:18+00:00",
+  "mode": "paper-only read-only operations",
+  "track_outcomes": {
+    "outcome_ledger": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Implementation\\ledgers\\polymarket_paper_outcomes.jsonl",
+    "new_outcomes": [
+      {
+        "signal_id": "7ebbd33579fe35cf",
+        "checked_at": "2026-07-11T20:00:19+00:00",
+        "resolution_status": "resolved_approx",
+        "spot_at_check": 64292.0,
+        "target": 64000.0,
+        "yes_won": true,
+        "candidate_side": "YES",
+        "unit_paper_pnl": 0.365,
+        "reason": "approx spot-at-check for expired above/below market",
+        "question": "Will the price of Bitcoin be above $64,000 on July 11?"
+      },
+      {
+        "signal_id": "1113cb754962f82a",
+        "checked_at": "2026-07-11T20:00:20+00:00",
+        "resolution_status": "resolved_approx",
+        "spot_at_check": 64292.0,
+        "target": 66000.0,
+        "yes_won": false,
+        "candidate_side": "YES",
+        "unit_paper_pnl": -0.015,
+        "reason": "approx spot-at-check for expired above/below market",
+        "question": "Will the price of Bitcoin be above $66,000 on July 11?"
+      }
+    ],
+    "new_count": 2,
+    "signals_total": 49
+  }
+}

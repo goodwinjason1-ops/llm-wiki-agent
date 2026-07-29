@@ -1,0 +1,114 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "showTags": true,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "path:\"00_System/Dashboards\"",
+      "color": {
+        "a": 1,
+        "rgb": 16498468
+      }
+    },
+    {
+      "query": "path:\"00_System/Workflows\"",
+      "color": {
+        "a": 1,
+        "rgb": 2282478
+      }
+    },
+    {
+      "query": "path:\"00_System/Handoffs\"",
+      "color": {
+        "a": 1,
+        "rgb": 16281969
+      }
+    },
+    {
+      "query": "path:\"05_Projects/AI Quant Trading Floor\"",
+      "color": {
+        "a": 1,
+        "rgb": 3462041
+      }
+    },
+    {
+      "query": "path:\"05_Projects/AI Business Launch Backlog\"",
+      "color": {
+        "a": 1,
+        "rgb": 16020150
+      }
+    },
+    {
+      "query": "path:\"03_Sources\"",
+      "color": {
+        "a": 1,
+        "rgb": 6333946
+      }
+    },
+    {
+      "query": "path:\"04_Wiki\"",
+      "color": {
+        "a": 1,
+        "rgb": 10980346
+      }
+    },
+    {
+      "query": "path:\"01_Inbox\"",
+      "color": {
+        "a": 1,
+        "rgb": 16347926
+      }
+    },
+    {
+      "query": "path:\"02_Raw\"",
+      "color": {
+        "a": 1,
+        "rgb": 10265519
+      }
+    },
+    {
+      "query": "path:\"05_Projects/AOD Student Placement\"",
+      "color": {
+        "a": 1,
+        "rgb": 42662
+      }
+    },
+    {
+      "query": "tag:#quant OR tag:#trading OR tag:#paper-trading",
+      "color": {
+        "a": 1,
+        "rgb": 1096065
+      }
+    },
+    {
+      "query": "tag:#business OR tag:#buyerproof OR tag:#launch",
+      "color": {
+        "a": 1,
+        "rgb": 15485081
+      }
+    },
+    {
+      "query": "tag:#second-brain OR tag:#llm-wiki OR tag:#obsidian",
+      "color": {
+        "a": 1,
+        "rgb": 9133302
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": true,
+  "textFadeMultiplier": 0.7,
+  "nodeSizeMultiplier": 1.28,
+  "lineSizeMultiplier": 1.18,
+  "collapse-forces": false,
+  "centerStrength": 0.42,
+  "repelStrength": 12,
+  "linkStrength": 1,
+  "linkDistance": 220,
+  "scale": 0.10395512550636012,
+  "close": true
+}

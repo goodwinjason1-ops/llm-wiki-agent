@@ -1,0 +1,33 @@
+{
+  "ts": "2026-07-21T02:16:14+00:00",
+  "mode": "paper-only read-only operations",
+  "record_signals": {
+    "ledger": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Implementation\\ledgers\\polymarket_paper_signals.jsonl",
+    "new_signals": [
+      {
+        "signal_id": "5e1104986bdee8e7",
+        "recorded_at": "2026-07-21T02:17:05+00:00",
+        "status": "open",
+        "paper_only": true,
+        "stake_model": "unit_notional_1_for_tracking_only",
+        "market_id": "2922822",
+        "conditionId": "0x1cd969df6c58ec03ac7ec18ef3651b8f8c0462e9309d9d1a43dc4394188a2ec6",
+        "question": "Will the price of Bitcoin be above $66,000 on July 21?",
+        "coin": "BTCUSDT",
+        "candidate_side": "YES",
+        "market_yes_prob": 0.185,
+        "raw_model_yes_prob": 0.4174,
+        "calibrated_model_yes_prob": 0.4257,
+        "edge_yes_minus_market": 0.2407,
+        "calibration_confidence": "medium_low",
+        "calibration_reason": "outside best-calibrated grid; shrunk 10% toward 50%",
+        "liquidity": 24912.2359,
+        "spread": 0.01,
+        "endDate": "2026-07-21T16:00:00Z",
+        "caveat": "paper signal only; no execution"
+      }
+    ],
+    "new_count": 1,
+    "open_total": 140
+  }
+}

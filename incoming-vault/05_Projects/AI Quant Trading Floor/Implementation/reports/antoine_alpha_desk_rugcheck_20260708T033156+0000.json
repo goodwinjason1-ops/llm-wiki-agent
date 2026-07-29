@@ -1,0 +1,37 @@
+{
+  "ts": "2026-07-08T03:31:56+00:00",
+  "mode": "rugcheck",
+  "risk_source": "https://api.rugcheck.xyz/v1/tokens/{mint}/report",
+  "rows": [
+    {
+      "chain": "solana",
+      "token_address": "99ouK5YUK3JPGCPX9joNtHsMU7NPpU7w91JN4kdQ97po",
+      "symbol": "99ouK5",
+      "source": "manual_rugcheck_token",
+      "rug_source": "rugcheck.xyz",
+      "rugcheck_score": 7.0,
+      "rugcheck_rugged": false,
+      "rugcheck_risk_count": 1,
+      "rugcheck_danger_count": 0,
+      "rugcheck_warn_count": 1,
+      "rugcheck_risk_names": "Mutable metadata",
+      "holder_concentration_pct": 75.14,
+      "top_holder_pct": 52.04,
+      "dev_wallet_pct": 0.0,
+      "insider_supply_pct": 0,
+      "bundled_supply_pct": 0,
+      "lp_unlocked_pct": 0.0,
+      "contract_verified": "unknown",
+      "mint_or_freeze_authority": false,
+      "rug_data_complete": "true",
+      "total_holders": 4254,
+      "total_market_liquidity_usd": 68546.90661291801,
+      "rug_adapter_status": "ok",
+      "edge_score": 0.0,
+      "risk_penalty": 65.084,
+      "final_score": -65.084,
+      "risk_flags": "holder_concentration_gt_35pct;thin_liquidity",
+      "decision": "watch-only: fails rug/liquidity gate"
+    }
+  ]
+}

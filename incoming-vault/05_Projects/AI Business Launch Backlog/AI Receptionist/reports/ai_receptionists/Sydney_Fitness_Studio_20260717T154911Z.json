@@ -1,0 +1,43 @@
+{
+  "business": "Sydney Fitness Studio",
+  "website": "https://sydneyfitness.com.au",
+  "voice_engine": "Voicebox (open-source)",
+  "voicebox_repo": "https://github.com/jamiepine/voicebox",
+  "timezone": "Australia/Sydney",
+  "scraped_data": {
+    "business_name": "Sydney Fitness Studio",
+    "website": "https://sydneyfitness.com.au",
+    "services": [
+      "General Inquiry",
+      "Appointments",
+      "Hours",
+      "Location"
+    ],
+    "phone": "+61 400 000 000",
+    "email": "info@example.com",
+    "hours": "Mon-Fri 9am-5pm, Sat 9am-1pm",
+    "location": "123 Main St, Sydney NSW 2000"
+  },
+  "system_prompt": "You are the AI receptionist for Sydney Fitness Studio.\n\nBUSINESS INFORMATION:\n- Name: Sydney Fitness Studio\n- Phone: +61 400 000 000\n- Email: info@example.com\n- Hours: Mon-Fri 9am-5pm, Sat 9am-1pm\n- Location: 123 Main St, Sydney NSW 2000\n- Services: General Inquiry, Appointments, Hours, Location\n\nYOUR ROLE:\n- Answer incoming calls professionally and friendly\n- Provide business information (hours, services, location)\n- Help customers book appointments\n- Take messages for staff when unavailable\n- Transfer calls to appropriate departments\n\nGUIDELINES:\n- Always be polite and helpful\n- Keep responses concise and natural\n- If you don't know something, offer to take a message\n- Never make up information \u2014 only use the business details provided\n- Maintain a warm, professional tone throughout\n\nCALL HANDLING:\n- Greet caller warmly\n- Ask how you can help\n- Provide accurate information\n- Offer to book appointments or take messages\n- Thank caller and close professionally\n\nTIMEZONE: Australia/Sydney\nVOICE: Jessica\n",
+  "agent_config": {
+    "engine": "voicebox",
+    "repo": "https://github.com/jamiepine/voicebox",
+    "license": "MIT (commercially free)",
+    "voice_clone_seconds": 3,
+    "languages_supported": 23,
+    "tts_engines": 7,
+    "system_prompt": "You are the AI receptionist for Sydney Fitness Studio.\n\nBUSINESS INFORMATION:\n- Name: Sydney Fitness Studio\n- Phone: +61 400 000 000\n- Email: info@example.com\n- Hours: Mon-Fri 9am-5pm, Sat 9am-1pm\n- Location: 123 Main St, Sydney NSW 2000\n- Services: General Inquiry, Appointments, Hours, Location\n\nYOUR ROLE:\n- Answer incoming calls professionally and friendly\n- Provide business information (hours, services, location)\n- Help customers book appointments\n- Take messages for staff when unavailable\n- Transfer calls to appropriate departments\n\nGUIDELINES:\n- Always be polite and helpful\n- Keep responses concise and natural\n- If you don't know something, offer to take a message\n- Never make up information \u2014 only use the business details provided\n- Maintain a warm, professional tone throughout\n\nCALL HANDLING:\n- Greet caller warmly\n- Ask how you can help\n- Provide accurate information\n- Offer to book appointments or take messages\n- Thank caller and close professionally\n\nTIMEZONE: Australia/Sydney\nVOICE: Jessica\n",
+    "installation": "pip install voicebox OR clone from GitHub",
+    "integration": "MCP-compatible for AI agent voice",
+    "preset_voices": true,
+    "custom_cloning": true,
+    "post_processing": true,
+    "timeline_editor": true,
+    "global_hotkey_dictation": true
+  },
+  "sales_script": "\nAI RECEPTIONIST SALES SCRIPT FOR SYDNEY FITNESS STUDIO\n\n==========================================\nOPENING (30 seconds)\n==========================================\n\"Hi [Owner Name], my name is [Your Name] and I help local businesses like yours\ncapture every call and convert more leads with AI-powered receptionists.\nDo you have 5 minutes to hear how this could work for Sydney Fitness Studio?\"\n\n==========================================\nPAIN POINTS (1-2 minutes)\n==========================================\n- How many calls do you miss when you're busy with customers?\n- What happens when a potential customer calls after hours?\n- Have you ever lost a sale because you couldn't answer the phone?\n- How much does it cost to hire a full-time receptionist?\n\n==========================================\nSOLUTION (2-3 minutes)\n==========================================\nI can set up an AI receptionist for Sydney Fitness Studio that:\n- Answers every call instantly, 24/7\n- Sounds natural and professional\n- Books appointments directly into your calendar\n- Takes messages when you're unavailable\n- Costs less than 10% of a receptionist's salary\n\nHere's how it works:\n1. I build your custom AI receptionist in under 5 minutes\n2. It learns your business, services, and hours\n3. You get a phone number that forwards to your AI\n4. Every call is handled professionally, even at 2am\n\nThe setup is $997 one-time, and then $297/month for maintenance.\nThat's less than $10/day - way less than a receptionist's hourly wage.\n\n==========================================\nOBJECTION HANDLING\n==========================================\n\"It sounds expensive\" -> \"That's less than 2 hours of a receptionist's time per month\"\n\"Will it sound robotic?\" -> \"I'll show you a live demo - you won't believe it's AI\"\n\"I don't need it\" -> \"How many calls did you miss last week?\"\n\"Let me think about it\" -> \"When would be a good time to reconnect?\"\n\n==========================================\nCLOSE (1 minute)\n==========================================\nBased on what we've discussed, does this sound like something that would help\nSydney Fitness Studio capture more leads and serve customers better?\n\nI can have your AI receptionist live by tomorrow. Shall I get started?\n\n==========================================\nPRICING SUMMARY\n==========================================\nSetup Fee: $997 (one-time)\nMonthly Maintenance: $297/month\nIncludes:\n- Unlimited call handling\n- Appointment booking integration\n- Message taking\n- Monthly updates and optimizations\n- 24/7 support\n\nROI Example:\n- Missed call value: $50-200 per call\n- If you miss 5 calls/month: $250-1000 lost revenue\n- AI receptionist pays for itself in 1-2 captured calls\n",
+  "setup_cost": 997,
+  "monthly_cost": 297,
+  "build_time_minutes": 5,
+  "cost_savings_vs_elevenlabs": "Zero API costs \u2014 fully local, MIT licensed"
+}

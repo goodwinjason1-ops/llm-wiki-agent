@@ -1,0 +1,16 @@
+{
+  "ticker": "BTC",
+  "mode": "simulation",
+  "start_date": "2023-01-01",
+  "end_date": "2026-07-17",
+  "cash": 100000,
+  "leverage": 3,
+  "max_drawdown": 0.1,
+  "position_size": 0.1,
+  "final_equity": 100484.2186032953,
+  "total_return": 0.4842186032953055,
+  "sharpe_ratio": 8861.253777876642,
+  "max_drawdown_actual": -0.6227147823286927,
+  "total_trades": 427,
+  "win_rate": 100.0
+}

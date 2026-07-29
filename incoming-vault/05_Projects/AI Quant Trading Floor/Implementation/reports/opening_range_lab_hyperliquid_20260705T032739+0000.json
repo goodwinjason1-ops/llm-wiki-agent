@@ -1,0 +1,167 @@
+{
+  "generated_at": "2026-07-05T03:27:39+00:00",
+  "strategy": "Opening Range 15m range / 5m confirmation / 1m entry",
+  "source_note": "Opening Range Strategy - 15m 5m 1m YouTube bITIVwysCzM",
+  "research_only": true,
+  "parameters": {
+    "symbols": "BTC,ETH,SOL",
+    "adapter": "hyperliquid",
+    "market": "auto",
+    "days": 7,
+    "models": "breakout,retest",
+    "start_equity": 5000.0,
+    "risk_pct": 0.01,
+    "rr": 2.0,
+    "fee_bps": 1.0,
+    "slippage_bps": 3.0,
+    "entry_cutoff_minutes": 120,
+    "max_exit_minutes": 390,
+    "stop_buffer_range": 0.25,
+    "bybit_category": "spot",
+    "session_open_time": "09:30",
+    "use_vwap_filter": true,
+    "max_abs_gap_pct": 3.0,
+    "require_prior_day_break": false,
+    "min_volume_displacement": 1.1,
+    "volume_baseline_minutes": 30
+  },
+  "results": [
+    {
+      "symbol": "BTC",
+      "adapter": "hyperliquid",
+      "market": "crypto",
+      "candles": 5075,
+      "sessions": 4,
+      "models": {
+        "breakout": {
+          "metrics": {
+            "final_equity": 4945.18,
+            "return_pct": -1.1,
+            "trades": 1,
+            "win_rate_pct": 0.0,
+            "profit_factor": 0.0,
+            "avg_r": -1.0964,
+            "total_r": -1.0964,
+            "max_drawdown_pct": -1.1,
+            "sharpe_per_trade": 0.0,
+            "days_observed": 4
+          },
+          "trades": [
+            {
+              "symbol": "BTC",
+              "adapter": "hyperliquid",
+              "model": "breakout",
+              "side": "long",
+              "session_date": "2026-07-02",
+              "confirm_time": "2026-07-02T10:10-04:00",
+              "entry_time": "2026-07-02T10:15-04:00",
+              "exit_time": "2026-07-02T10:27-04:00",
+              "entry": 62094.0,
+              "stop": 61581.0,
+              "target": 63120.0,
+              "exit": 61581.0,
+              "exit_reason": "stop",
+              "r_multiple": -1.0964,
+              "pnl": -54.82,
+              "equity_after": 4945.18,
+              "notes": "ORH=62043.00000, ORL=61530.00000, confirm_close=62094.00000, vwap=60954.27059, gap_pct=0.002, vol_disp=1.488, prior_high=61357.0, prior_low=59480.0"
+            }
+          ]
+        },
+        "retest": {
+          "metrics": {
+            "final_equity": 5000.0,
+            "return_pct": 0.0,
+            "trades": 0,
+            "win_rate_pct": 0.0,
+            "profit_factor": 0.0,
+            "avg_r": 0.0,
+            "total_r": 0.0,
+            "max_drawdown_pct": 0.0,
+            "sharpe_per_trade": 0.0,
+            "days_observed": 4
+          },
+          "trades": []
+        }
+      }
+    },
+    {
+      "symbol": "ETH",
+      "adapter": "hyperliquid",
+      "market": "crypto",
+      "candles": 5073,
+      "sessions": 4,
+      "models": {
+        "breakout": {
+          "metrics": {
+            "final_equity": 5000.0,
+            "return_pct": 0.0,
+            "trades": 0,
+            "win_rate_pct": 0.0,
+            "profit_factor": 0.0,
+            "avg_r": 0.0,
+            "total_r": 0.0,
+            "max_drawdown_pct": 0.0,
+            "sharpe_per_trade": 0.0,
+            "days_observed": 4
+          },
+          "trades": []
+        },
+        "retest": {
+          "metrics": {
+            "final_equity": 5000.0,
+            "return_pct": 0.0,
+            "trades": 0,
+            "win_rate_pct": 0.0,
+            "profit_factor": 0.0,
+            "avg_r": 0.0,
+            "total_r": 0.0,
+            "max_drawdown_pct": 0.0,
+            "sharpe_per_trade": 0.0,
+            "days_observed": 4
+          },
+          "trades": []
+        }
+      }
+    },
+    {
+      "symbol": "SOL",
+      "adapter": "hyperliquid",
+      "market": "crypto",
+      "candles": 5063,
+      "sessions": 4,
+      "models": {
+        "breakout": {
+          "metrics": {
+            "final_equity": 5000.0,
+            "return_pct": 0.0,
+            "trades": 0,
+            "win_rate_pct": 0.0,
+            "profit_factor": 0.0,
+            "avg_r": 0.0,
+            "total_r": 0.0,
+            "max_drawdown_pct": 0.0,
+            "sharpe_per_trade": 0.0,
+            "days_observed": 4
+          },
+          "trades": []
+        },
+        "retest": {
+          "metrics": {
+            "final_equity": 5000.0,
+            "return_pct": 0.0,
+            "trades": 0,
+            "win_rate_pct": 0.0,
+            "profit_factor": 0.0,
+            "avg_r": 0.0,
+            "total_r": 0.0,
+            "max_drawdown_pct": 0.0,
+            "sharpe_per_trade": 0.0,
+            "days_observed": 4
+          },
+          "trades": []
+        }
+      }
+    }
+  ]
+}

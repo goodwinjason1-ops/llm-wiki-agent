@@ -1,0 +1,577 @@
+Your AI is being blocked by X, Reddit,
+YouTube, Instagram, so many other sites.
+I have a tool that unlocks it. And
+instead of giving you outdated
+information, it zeros in on the last 30
+days so you can research people before
+meetings, find trending topics, learn
+about new album drops, make better
+polyarket decisions, see what's making
+money today, and so much more. We got
+the founder of the last 30 days skill.
+Let's get into it. Presented by Zapier,
+the AI automation company. What are we
+looking at?
+>> Yeah. So, I just typed in last slash
+last 30 days Fable 5 versus GPT56.
+And so, it it ran it um and then it
+created in about usually we can see how
+long it took. It took 14 minutes for
+this one. So, there's a lot of content
+that I pulled in. Usually, I'd say it
+takes about 5 to seven minutes.
+>> Mhm.
+>> And uh here's the the quick verdict.
+This is the first true Mythos class
+showdown. And the community sees a race
+between capabilities and access rather
+than a simple benchmark war.
+>> Wait, why should I even care what all
+these people say? Why is this any better
+than me doing a basic Google search or
+Twitter search?
+>> In January, I felt like I was having
+trouble keeping up with prompting
+techniques where I was like, "Okay, this
+new thing came out. Like, how do I
+prompt it?" And the best content I found
+was on X and Reddit for prompting at the
+time. And it was in like like weird
+niche communities like Local Llama,
+which is like people that are like
+taking Facebook's open- source project
+and like doing interesting things with
+it. Like literally local llama for the
+longest time was the best place for
+geeky content. And so that's where I was
+going to search for stuff. And so I
+always wanted to know what is the best
+prompting technique in the last 30 days,
+but I only want stuff that's 30 days old
+because the prompts and everything was
+changing so quickly.
+>> How could I do that? So kind of one
+problem is like recency. You go and
+you're like okay best way to use cloud
+code and you find an article that was
+really really popular 6 months ago and
+it's completely irrelevant even though
+it was really popular 6 months ago or um
+and then the other piece is that on all
+these different networks because of
+rights issues that all these services
+are not friends. So Reddit has a
+relationship with chat GPT and OpenAI.
+Cloud does not. Cloud has no access to
+Reddit. Okay. X only gives access to
+Grock. Okay. Gemini gives access to
+YouTube. No one gets access to Tik Tok
+and no one gets access to Instagram. Um
+GitHub is not crawled very well even
+though it's very easy to crawl. Uh Dig,
+what the hell is Dig? There's a new dig
+and it's great and no one even knows
+about it, but it's built into last 30
+days.
+>> Yes.
+>> And uh then I don't even know how to
+pronounce R
+archive. A RXIV.
+Uh but the the papers there are
+unbelievable. Techm poly market and so
+there's
+when I built this thing in January the
+magic behind it was a limit stuff to the
+last 30 days and b you could just plug
+in your own API keys. So you could plug
+in in cloud this is how the original
+last 30 days worked. was very simple was
+it used defaults with cloud code and it
+would use your X API key and it would
+use your open AI API key to get access
+to Reddit and that's it. It was just
+those those three sources default claude
+x API key and Reddit via chatgptt and we
+were the only place in the world in the
+world where you could get data from all
+three of those places and it was crazy
+and so I built it on a Sunday literally
+on the ski mountain because I wanted to
+build it for myself. I had never
+submitted any open- source software to
+anything in my entire life. Who knows if
+I put it up properly on GitHub, but I
+just I launched it and I made a video
+because these agentic video platforms
+were very easy to use. I'm obsessed with
+hyperframes now, but at the time I was
+using Remotion and I put it out there
+and I didn't have that many followers. I
+think I had like 10,000 followers, which
+again is it's not zero, but like I was
+very inactive. That was like a very slow
+10,000 followers over like 15 years
+>> or however old my ex account is. and I
+launched it and we got a million views
+and we got a bunch of stars and people
+liked it and then people started
+submitting PRs and I'm like what's a PR
+and had to learn all these people
+sometimes breaking my entire app and
+other people adding a ton of value and
+then obviously it's evolved has over
+50,000 stars now and it's a uh wonderful
+product
+>> and people like it
+>> and now do I still need to put in all my
+API keys in order to get access to these
+different sites?
+>> No. And yes, it's a mix. So, what's
+what's interesting is people started
+submitting ways to get around putting in
+API keys. U and so there's there's
+what's interesting is there's a lot of
+interesting um scraper content out there
+on the internet. So, there's one product
+called Scrape Creators, which I'd say is
+the most valuable API key to get. And so
+scrape creators will give you access to
+Tik Tok and Tik Tok comments give you
+access to Instagram and Instagram
+comments uh will get you access to uh to
+Reddit and it's um and so just by paying
+for one API key and if you sign up for
+last 30 days through sorry scrape
+creators create through last 30 days CLI
+I think you get like almost like $80
+worth of credits for free which is
+awesome. That's only available to last
+30 days community. By the way I make no
+money off that that referral. I just
+whenever someone offers to do something
+cool or offer me any kickbacks or
+anything for the last 30 days, I just
+say just give that value to the
+community. Like I'm I'm not trying to
+monetize this right now.
+>> Last 30 days. It never told me that I
+could do that. It never told me that I
+can go and sign up for anything else. It
+just said, "Okay, you asked me to use
+the tool Claude says and now I've used
+it. Here's what I got for you."
+>> So what what's funny? So that that's
+that's that sucks by the way. And I
+think that's a bit of that is is agents
+running rogue. What's really interesting
+about about Claude and and Codex and all
+all LLMs is they think they could do
+anything and so a lot of times they fake
+it. So I've I I literally was with
+someone yesterday who was showing me
+their last 30 days experience and I was
+like you're literally not running last
+30 days and it's like Claude says I am
+and like literally Claude is just
+pretending that it's going to go on the
+internet and search a bunch of stuff and
+say this is all from slashl last 30 days
+and it literally like made it up what
+last 30 days. I've literally seen it do
+that before.
+>> I can imagine,
+>> which is wild.
+>> Okay, so then there's no way for me to
+test to make sure that I'm using it to
+the best of its power.
+>> There's there's a new doctor mode that
+came out yesterday that you could try
+that'll tell you what stuff is synced up
+and and what is not. But I uh I'd say
+that the things that make it really
+magical
+>> just like to keep it really easy. Like
+there's not that many things is number
+one, make sure that uh it has found your
+X cookie. So you're logged into X. So
+you're getting X content, right? And by
+the way, that's how it's getting X
+content without my API. What it's doing
+is it's getting the cookie from the
+computer. As long as I'm logged into X,
+it's basically being treated like me,
+the user, getting data. Got it. Yep.
+>> Yes. So, that's one thing. Make sure
+that's working. And if your if your
+system is too secure and you're just
+like, I don't want it to steal my
+cookies, then like you don't get that
+feature.
+>> I just spent a bunch of time on the new
+user experience. And so, all this stuff
+happens automatically if you sign up
+from scratch. So if you just delete file
+and say I want to install last 30 days
+from scratch, it'll automatically like
+run you through a wizard to kind of put
+you in a good spot. So take your X
+cookies first. The next thing is
+download I forget what it's called, but
+it's this unofficial YouTube CLI.
+>> Okay,
+>> that allows you to get transcripts. So
+just download that one. uh download the
+dig CLI from the printing press,
+download the tech meme CLI from the
+printing press, and then that uh the
+archive one uh for the papers. Uh
+download that one from the printing
+press and it downloads all those CLIs
+and then get a scrape creators key and
+your experience will be magical.
+>> Okay, I'm going to try that. Let's take
+a look at the results as you've got
+them. And so the idea is this while
+you're loading it up is you're saying
+there are a handful of sites that really
+matter for information that's current X
+of course Reddit etc. Those sites are
+being blocked by various places. If you
+want your agent to be able to access all
+of them this is the one tool that's
+going to bring everything together to
+enable you to access it. And we're going
+to see a few examples of what can happen
+with that.
+>> So it was previewed to roughly 20
+vetteds and went public today after the
+Trump administration lifted
+restrictions. The pulse across 22 Reddit
+threads, 31 expost, and 1.1 million
+YouTube views. Fable 5 is the model
+people fell in love with and then lost.
+GPT56 is the model people watched from
+outside. Theo's 124K video on GPD 56
+drew the framing that stuck. And the top
+comment is, "We are watching early
+access like peasants outside a castle."
+>> Having said that, you ran that today.
+We're recording July 9th. That's not a
+today news. That's a little bit dated,
+right?
+Uh, so the I don't have 56 yet. Do you?
+>> Oh, I thought we were talking about
+Fable. Yes, you're right. I don't have
+it. It did get released today. Okay.
+>> I I asked Codeex to check every hour if
+it had it yet. And it said it couldn't
+do that, which made me very sad. I'm
+like, it's 2026. Codeex, you can't just
+check your own model every hour. And it
+it built a script that like would give
+me a Mac OS notific. I'm like, "No, just
+update yourself when it's time."
+>> All right. So, fair point. It did pull
+up latest information. What else does it
+have that I that I couldn't get
+otherwise?
+>> Yeah. So, I one of the magical things is
+the comments. Like, usually on Tik Tok,
+YouTube, and Instagram, and Reddit, like
+the top comment is usually great, right?
+And this is literally how I feel. I feel
+like everyone in my X feed has been
+using GPT56 except me. And so this Zul
+UI we are watching early access user
+like peasants outside of cast. I am that
+peasant right now. Like it it it it
+pains me that I I am that peasant. Let's
+see. Strengths of Fable 5. Uh genuinely
+different capability or saying Fable 5
+has oneot me would be a criminal
+understatement. Perth Theo's guide who
+says going back to Obus4 GBD5 left him
+running in circles. Um let's see what
+else was fun. uh weaknesses, the costs
+are eyewatering, the frustration pushing
+people towards the rival. That's a big
+deal breaker for me. I really hope GPT56
+smokes Fable 5 so we don't have to deal
+with this behavior from Enthropic. So
+then it'll show the head-to-head
+comparison. And then the bottom line,
+choose this and the emerging stack is
+the community isn't picking one. It's
+routing.
+And so for me, I'm kind of my plan of
+record is I want to use Fable 5 for all
+my routing and then I want to send
+everything to GPT to do the work.
+>> Essentially what we are seeing is that
+people who've used it are coming around
+to saying this is great and by routing I
+mean have Fable 5 be the brain and then
+it routes the work to other models and
+5.6 from uh uh codeex 5.6 is what will
+be one of the workers. That's what we're
+seeing. Absolutely. And that's that's
+that's what I want. That's my dream. And
+I I've built a lot of my systems where I
+I already had this prefable 5 where I
+was sending most my coding work to to
+codeex mostly because I I run out of my
+cloud usage every week. But my codecs,
+it's very difficult for me to run out.
+And so kind of using that combo within
+cloud code as my my base has been my my
+my magical way of doing things. And I'm
+excited to to upgrade this.
+>> All right, let's see an example. All
+right, so the next new thing is the AI
+era reinvention of Andrew Warner and the
+pivot is complete. In February, he told
+subscribers his Bootstrap Giants
+newsletter was becoming something new
+because his AI company focus needed its
+own brand.
+>> Wow.
+>> Today is the Zap Zap year presented
+podcast newsletter and YouTube channel
+pitched as the podcast for AI creators
+by the ultra pushy interviewer. And this
+one's output shows he's living that
+pitch. the guru skewering Dan Mattel
+episode. Dan Martell episode is the
+month's biggest swing.
+>> I I don't know if I agree with that, but
+that is kind of interesting. Actually,
+there was a little bit of skewering of
+Dan Martell's um ideas on how to make
+money with AI. I wouldn't have said it
+that way, but um I think that's fair.
+>> Every single day, thousands of internet
+gurus tell you how to make money with
+AI, but 99 are full of it. Most of them
+haven't made a single dollar with AI. He
+pushes back on Martell. Ouch. What are
+you doing to Dan? I like Dan. I've known
+Dan for like 15 years. Apparently,
+you're skewering him, says last 30 days.
+>> I like Dan a lot. What we did was we
+looked at I he had a video about 14
+different ways to make money with AI.
+And I brought a founder on who had just
+done $4.5 million with as an AI
+consultant who was also building
+software. I said, "Look, just call Balls
+and Strikes here. Is he right? Is he
+wrong?" And the guy on a few of Dan
+Martell's ideas said, "Actually, this is
+not really this is this is not really a
+good idea. I don't know why Dan is
+hyping it up. That's where you might say
+there's a little bit of scaring.
+>> There you go. But okay, it's giving you
+agree with it, right?
+>> And then the the new AI drops news
+roundup format is quietly becoming the
+fan favorite
+>> covered oneclick open cloud setups, open
+router cost savings and claimed read
+like the conversion moment. Really guys,
+I think this has become one of my
+favorite podcasts. I don't miss it, says
+Sam 9179.
+>> the guest roster is revenue recedes
+first.
+>> Let's pause here for a moment.
+I I do see how this is valuable. Does it
+just sit in your app in Camox, which is
+what you're using to connect to to
+Claude? How do you how do you get this
+into your workflow now that it's here?
+>> Yeah. So, my workflows exist in CMOX in
+in cloud code. So, often what what I'll
+do so like again, if I'm going to do
+like I'm literally meeting with you
+right now. Yeah. I run something like
+this whether I tell you or not.
+>> But it's not an automation. You can't
+now now that you've got this, you can't
+hook it into Hermes and have Hermes add
+it to your calendar or something else
+like that.
+>> Sure, you you can
+>> So I would just give Hermes last 30 days
+the way that I give Claude code. Am I
+>> Yeah. So the way to think about it is um
+is so last 30 days runs runs in Hermes
+runs in OpenClaw and a lot of the magic
+of Hermes and OpenClaw is cron jobs. So
+just like automatically when this
+thing's happening or on a regular basis,
+send me last 30 days on my competitors
+or or things like that. And so kind of
+I'm just demoing kind of the the vanilla
+cloud code skill, but you know, setting
+this up within your workflows is is a
+lot of the magic.
+>> You know, one of the things that I saw
+you demonstrated on Greg Eisenberg's uh
+podcast was you said, "I want to write
+cold email, but I know that what works
+in cold email changes monthto monthth. I
+use this to figure out what's working
+right now and then it basically noticed
+that some people were showing off about
+approaches that worked and then it and
+that's how you uh that's what you pulled
+out using last 30 days and then it
+helped you write an email that I thought
+was a pretty damn good email. Do you
+have other use cases like that where
+you're using last 30 days for more than
+just research?
+>> Yeah, so um that's a good question. So
+prompting to like again a very magical
+one is like GPT images just came out
+right the new version came out a few
+weeks ago and so it's like okay what do
+I how do I write my prompts now I know
+for Nano Banana Pro it was JSON but the
+thing is one of my the most magical
+thing is I actually don't care about
+learning about the new prompts
+>> and the way last 30 days is designed is
+it'll be like okay I'm now expert in uh
+GPT images new model what do you want to
+make and I'm like oh well my kids of
+course want a a donkey riding a bicycle.
+Like, what else would they want? And
+it's just here's the prompt. And I just
+copy paste. I don't even have to look at
+it. I don't have to learn it. Is it
+JSON? Is it plain English? I don't care.
+Like, I just want the best data from the
+last 30 days of the best experts
+>> to be able to automatically
+know for my use case how to do that. And
+so, I think that works for any piece of
+software. I think it works whenever I'm
+trying to decide like okay I need to
+start sending emails right like what is
+like the latest email like the hottest
+email you know backend right now is it
+still send grid I don't know right and
+so I will ask a question like that and
+then it'll tell me a few of them and
+then I'm like okay tell me send grid
+versus this versus that and then it runs
+the report
+>> and then usually it's very obvious um
+another one was
+>> um I wanted to
+Google's CLI um and to access my email
+and do some yes some some spreadsheet
+work from cloud code
+>> and I noticed that Peter Steinberger had
+his GOG CLI that he made a long time ago
+and then I had seen the press release
+that Google had officially released CLI
+months later and so I said last 30 days
+do GOG CLI versus Google's CLI and I
+assumed that it would tell me to use
+Google's because they had they got to
+see Peter's and then And I ran it and it
+was like 10 times out of 10 you should
+use Peter Steinberger's. It's way better
+designed for agents from the start. And
+that that's actually literally that
+prompt and that exploration when I just
+wanted to use Google in my command line
+led to me creating the printing press
+because that just blew my mind that a
+you know not just called Peter
+Steinberger a fan or some random dev
+like he's Peter Steinberger he's the
+goat of this but like he just wanted a
+Google CLI and it was frustrating him
+that what was out there wasn't good
+enough so he built it himself and that's
+>> and he could build one that's better
+than the one that Google itself built.
+Yes. And that's what by the way
+>> months later months later
+>> months later they did it. And by the way
+when that hit verality on X I got the
+guy who uh who was fired by Google for
+having created this or let's say after
+he created it. I got him on to do an
+interview with me. It took over a
+freaking hour for him to help me get my
+Hermes agent up and running using
+Google's workspace using this the
+official CLI. And in the end we still
+couldn't get it. and we said, "Okay,
+it's just not going to be a good
+interview if it's going to take me over
+an hour with the guy who created it."
+And we gave up and I moved on. And it's
+interesting that you got that answer
+just using your research. Okay. So, it's
+what tools are working, what new
+approaches are working, what new prompts
+are working, and what it's doing is it's
+querying all these different sites and
+then seeing what are real users, what
+are people saying, and let the community
+vote it up. Got it. Okay. One final
+thing. You have some kind of Kanye West
+thing. want to bring that up and show
+the Kanye West uh
+>> have some sort of Kanye West thing. Uh I
+just it's always it's always fun to to
+to run a Kanye West uh in last 30 days
+because he's always very interesting and
+entertaining in the last 30 days. So
+he's mid-stadium tour. The concert clips
+are eating Tik Tok alive. Yay planned a
+surprise July 4th at San Antonio's Alamo
+Dome. Uh, it was a euphoric experience
+and a San Antonio realtor at the show
+gushed, "Kanye is a true musical
+artistic genius."
+>> He's back. He's performing at big
+arenas.
+>> Yeah, he's back.
+>> Look at that.
+>> Um, and Al Albania is paying 4 million
+euros of public money for his July 11th
+concert. The country is in the streets
+over it. That's interesting. All the
+love went single in the bully area is
+still compounding. The Andrew Trapman
+Talkbox track I'll bully just got a
+standalone single. My daughter loves
+that song by the way. And the betting
+money says the chaos is cooling. Poly
+market has a Kanye Bianca separation at
+just 6.5%
+down 16% this month and it's only a 5.5%
+odds he says something anti-Semitic by
+August 31st. Real Money is betting on a
+quiet tour focused summer. Like how good
+is that? Like how in a search would you
+ever find something like that? And
+what's hilarious is I run this query all
+the time just because it's always
+entertaining. And it's been at like 25%
+chance they split up like for months and
+somehow all the better said, "You know
+what? They seem fine. They're happy."
+So, we'll of course have a link to last
+30 days below. And um if you like Matt's
+uh very open- source project here, I've
+got a list of the top 10 recent open
+source projects. Click below and I'll
+see you in

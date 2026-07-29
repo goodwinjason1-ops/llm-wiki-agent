@@ -1,0 +1,89 @@
+{
+  "run_id": "20260715T015418Z",
+  "brief": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Daily Briefs\\AI Quant Morning Brief - 2026-07-15.md",
+  "latest": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\00_System\\Dashboards\\AI Quant Morning Brief - Latest.md",
+  "next_step_dashboard": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\00_System\\Dashboards\\AI Quant Morning Next Step Queue.md",
+  "ideas": [
+    {
+      "idea_id": "2026-07-15-QTF-MORNING-01",
+      "desk": "Tactical Momentum / Cross-Market Allocation Desk",
+      "market": "Crypto control universe: BTCUSDT/ETHUSDT/SOLUSDT",
+      "score": 35
+    },
+    {
+      "idea_id": "2026-07-15-QTF-MORNING-02",
+      "desk": "Carry / Funding Dislocation Desk",
+      "market": "CASHCAT",
+      "score": 55
+    },
+    {
+      "idea_id": "2026-07-15-QTF-MORNING-03",
+      "desk": "ETF Tactical / Cross-Sleeve Allocation Desk",
+      "market": "ETF tactical sleeve: SPY/QQQ/TLT/IEF/GLD/UUP control universe",
+      "score": 40
+    }
+  ],
+  "next_steps": [
+    {
+      "run_id": "20260715T015418Z",
+      "date": "2026-07-15",
+      "generated_at": "2026-07-15T01:54:23+00:00",
+      "status": "queued",
+      "idea_id": "2026-07-15-QTF-MORNING-01",
+      "desk": "Tactical Momentum / Cross-Market Allocation Desk",
+      "market": "Crypto control universe: BTCUSDT/ETHUSDT/SOLUSDT",
+      "score": 35,
+      "next_step": "Keep the crypto sleeve at zero allocation until its evidence gates pass; rank it against other validated sleeves rather than rank individual coins.",
+      "first_test": "Complete the missing TTM-01 history and chronological walk-forward/holdout validation; do not emit a paper signal from this snapshot.",
+      "reject_conditions": "Reject or park if walk-forward, cost sensitivity, robustness, or drawdown gates fail.",
+      "brief_path": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Daily Briefs\\AI Quant Morning Brief - 2026-07-15.md",
+      "owner": "AI Quant Floor / Momentum validation desk",
+      "managed_as": "edge-gated validation candidate",
+      "result_note": "05_Projects/AI Quant Trading Floor/Backtests/2026-07-15-QTF-MORNING-01 TTM-01 Validation.md",
+      "machine_output": "05_Projects/AI Quant Trading Floor/Implementation/reports/ttm01/",
+      "promotion_gate": "No paper signal or allocation until frozen data, walk-forward/holdout, cost sensitivity and drawdown gates pass."
+    },
+    {
+      "run_id": "20260715T015418Z",
+      "date": "2026-07-15",
+      "generated_at": "2026-07-15T01:54:23+00:00",
+      "status": "queued",
+      "idea_id": "2026-07-15-QTF-MORNING-02",
+      "desk": "Carry / Funding Dislocation Desk",
+      "market": "CASHCAT",
+      "score": 55,
+      "next_step": "Recorder and paper ledger only; compare the resulting sleeve score with ETF, trend and other eligible sleeves.",
+      "first_test": "Run the pre-defined persistence/fade analysis only after sufficient aligned observations and cost assumptions.",
+      "reject_conditions": "Reject if funding mean-reverts before costs, liquidity is inadequate, or forward outcomes fail the declared rule.",
+      "brief_path": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Daily Briefs\\AI Quant Morning Brief - 2026-07-15.md",
+      "owner": "AI Quant Floor / Carry validation desk",
+      "managed_as": "recorder-backed paper research candidate",
+      "result_note": "05_Projects/AI Quant Trading Floor/Research/2026-07-15-QTF-MORNING-02 Funding Persistence Review.md",
+      "machine_output": "05_Projects/AI Quant Trading Floor/Implementation/ledgers/hyperliquid_funding_snapshots.jsonl",
+      "promotion_gate": "Only interpret after sufficient aligned samples, costs and forward outcomes; no exchange auth/orders."
+    },
+    {
+      "run_id": "20260715T015418Z",
+      "date": "2026-07-15",
+      "generated_at": "2026-07-15T01:54:23+00:00",
+      "status": "queued",
+      "idea_id": "2026-07-15-QTF-MORNING-03",
+      "desk": "ETF Tactical / Cross-Sleeve Allocation Desk",
+      "market": "ETF tactical sleeve: SPY/QQQ/TLT/IEF/GLD/UUP control universe",
+      "score": 40,
+      "next_step": "Produce a comparable sleeve scorecard; allocate zero until the ETF candidate passes its own gates and ranks competitively.",
+      "first_test": "Read the latest ETF paper-monitor result and confirm the current candidate has a complete rule, costs and validation status before any allocation ranking.",
+      "reject_conditions": "Reject or park if no precise rule, frozen data, realistic costs, held-out evidence, or paper-monitorable signal exists.",
+      "brief_path": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Daily Briefs\\AI Quant Morning Brief - 2026-07-15.md",
+      "owner": "AI Quant Floor / ETF and allocation desk",
+      "managed_as": "parallel sleeve validation candidate",
+      "result_note": "05_Projects/AI Quant Trading Floor/Backtests/2026-07-15-QTF-MORNING-03 ETF Tactical Validation.md",
+      "machine_output": "05_Projects/AI Quant Trading Floor/Implementation/quant_floor_dashboard.py",
+      "promotion_gate": "No allocation until the ETF rule, frozen data, costs, held-out evidence and cross-sleeve comparison are complete."
+    }
+  ],
+  "errors": {
+    "hyperliquid": null,
+    "polymarket": null
+  }
+}

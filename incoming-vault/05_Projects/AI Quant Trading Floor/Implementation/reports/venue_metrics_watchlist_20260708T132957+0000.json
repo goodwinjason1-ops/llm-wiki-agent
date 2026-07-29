@@ -1,0 +1,70 @@
+{
+  "ts": "2026-07-08T13:29:57+00:00",
+  "mode": "venue_metrics_watchlist",
+  "safety": "public/read-only; no wallets, no keys, no deposits, no orders",
+  "ledger": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Implementation\\ledgers\\venue_watchlist_metrics.jsonl",
+  "rows": [
+    {
+      "venue": "Hyperliquid",
+      "url": "https://app.hyperliquid.xyz/",
+      "category": "perp_dex",
+      "metric_ts": "2026-07-08T13:29:55+00:00",
+      "volume_24h_usd": 5039650670.18,
+      "fees_24h_usd": null,
+      "revenue_24h_usd": null,
+      "tvl_usd": null,
+      "open_interest_usd": 7036965382.5,
+      "market_depth_usd": null,
+      "points_program_status": "token_launched;points_season_history;ecosystem_rewards_watch",
+      "token_status": "HYPE live",
+      "fdv_usd": null,
+      "float_pct": null,
+      "region_or_kyc_constraints": "check manually before use; Ari does not open accounts or trade",
+      "risk_notes": "Perp/liquidation risk, bridge/custody/smart-contract risk, validator/sequencer and venue concentration risk. Public-data research only. Public API markets counted: 231. Fees/revenue/depth need separate public source.",
+      "source_url": "https://api.hyperliquid.xyz/info"
+    },
+    {
+      "venue": "Lighter",
+      "url": "https://lighter.xyz/",
+      "category": "perp_dex_competitor",
+      "metric_ts": "2026-07-08T13:29:57+00:00",
+      "volume_24h_usd": null,
+      "fees_24h_usd": null,
+      "revenue_24h_usd": null,
+      "tvl_usd": null,
+      "open_interest_usd": null,
+      "market_depth_usd": null,
+      "points_program_status": "unknown/manual_review",
+      "token_status": "unknown/pre-token watch if applicable",
+      "fdv_usd": null,
+      "float_pct": null,
+      "region_or_kyc_constraints": "manual review required; no deposits or KYC actions by Ari",
+      "risk_notes": "API/source not confirmed in this script. Track public volume, fees, OI, market depth, token/FDV/float, and distribution catalysts manually until a reliable public endpoint is confirmed.",
+      "source_url": "manual/public dashboards required"
+    },
+    {
+      "venue": "TX Flow",
+      "url": "unknown/source-mentioned",
+      "category": "early_perp_dex_or_points_candidate",
+      "metric_ts": "2026-07-08T13:29:57+00:00",
+      "volume_24h_usd": null,
+      "fees_24h_usd": null,
+      "revenue_24h_usd": null,
+      "tvl_usd": null,
+      "open_interest_usd": null,
+      "market_depth_usd": null,
+      "points_program_status": "unknown/manual_review",
+      "token_status": "unknown",
+      "fdv_usd": null,
+      "float_pct": null,
+      "region_or_kyc_constraints": "manual review required",
+      "risk_notes": "Source-mentioned early farming candidate; verify identity, URL, contracts, user traction, and safety before any paper watchlist action.",
+      "source_url": "manual/source follow-up required"
+    }
+  ],
+  "summary": {
+    "venues": 3,
+    "public_api_rows": 1,
+    "manual_review_rows": 2
+  }
+}

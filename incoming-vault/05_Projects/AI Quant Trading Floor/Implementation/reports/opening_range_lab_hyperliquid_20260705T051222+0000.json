@@ -1,0 +1,50 @@
+{
+  "generated_at": "2026-07-05T05:12:22+00:00",
+  "strategy": "Opening Range 15m range / 5m confirmation / 1m entry",
+  "source_note": "Opening Range Strategy - 15m 5m 1m YouTube bITIVwysCzM",
+  "research_only": true,
+  "parameters": {
+    "symbols": "SPY,QQQ,NVDA,TSLA",
+    "adapter": "hyperliquid",
+    "market": "auto",
+    "days": 1,
+    "models": "breakout",
+    "start_equity": 5000.0,
+    "risk_pct": 0.01,
+    "rr": 2.0,
+    "fee_bps": 1.0,
+    "slippage_bps": 3.0,
+    "entry_cutoff_minutes": 120,
+    "max_exit_minutes": 390,
+    "stop_buffer_range": 0.25,
+    "bybit_category": "spot",
+    "session_open_time": "09:30",
+    "use_vwap_filter": false,
+    "max_abs_gap_pct": null,
+    "require_prior_day_break": false,
+    "min_volume_displacement": null,
+    "volume_baseline_minutes": 30
+  },
+  "results": [
+    {
+      "symbol": "SPY",
+      "adapter": "hyperliquid",
+      "error": "<HTTPError 500: 'Internal Server Error'>"
+    },
+    {
+      "symbol": "QQQ",
+      "adapter": "hyperliquid",
+      "error": "<HTTPError 500: 'Internal Server Error'>"
+    },
+    {
+      "symbol": "NVDA",
+      "adapter": "hyperliquid",
+      "error": "<HTTPError 500: 'Internal Server Error'>"
+    },
+    {
+      "symbol": "TSLA",
+      "adapter": "hyperliquid",
+      "error": "<HTTPError 500: 'Internal Server Error'>"
+    }
+  ]
+}

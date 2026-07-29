@@ -1,0 +1,87 @@
+{
+  "run_id": "20260718T015519Z",
+  "timestamp": "2026-07-18T01:55:19+00:00",
+  "mode": "read_only_paper_research",
+  "action": "artifact_status_only",
+  "decision": "hold_zero_allocation",
+  "canonical_inputs": {
+    "manifest": "C:/Users/Kidsg/Documents/AI Second Brain/05_Projects/AI Quant Trading Floor/Implementation/reports/daily_scan/universe_manifest_20260716T113039Z.json",
+    "manifest_sha256": "3c579cf02c0d0a3ba6be2394c4fb8a67e4d41513e42a0eb2e9b06674f2d7c0f1",
+    "trend_board": "C:/Users/Kidsg/Documents/AI Second Brain/05_Projects/AI Quant Trading Floor/Implementation/reports/daily_scan/trend_board_20260716T113039Z.json",
+    "trend_classification": "observation",
+    "trend_generated_at": "2026-07-16T11:30:39+00:00",
+    "funding_board": "C:/Users/Kidsg/Documents/AI Second Brain/05_Projects/AI Quant Trading Floor/Implementation/reports/daily_scan/funding_board_20260716T113039Z.json",
+    "funding_classification": "observation",
+    "funding_generated_at": "2026-07-16T11:30:39+00:00",
+    "universe_status": "ok",
+    "provenance_consistent": true,
+    "input_sha256": {
+      "manifest": "3c579cf02c0d0a3ba6be2394c4fb8a67e4d41513e42a0eb2e9b06674f2d7c0f1",
+      "trend_board": "287dda77437dcc9b07b961585b2dd080676148edf23aa63d8d0ea04dff544032",
+      "funding_board": "255a9b9e341ec8ed0a0cab8ef494cf39f1637ddf3dfe79780e5e1fe678e71206"
+    }
+  },
+  "board_summary": {
+    "universe": {
+      "total_assets": 50,
+      "controls": ["BTC", "ETH", "SOL"],
+      "non_controls_count": 47,
+      "venues": ["bybit_spot"]
+    },
+    "trend": {
+      "eligible_count": 30,
+      "positive_count": 7,
+      "negative_count": 10,
+      "top_positive": {"asset": "ONDO", "day_return_pct": 15.74},
+      "top_negative": {"asset": "LIT", "day_return_pct": -7.75}
+    },
+    "funding": {
+      "candidate_events": 20,
+      "positive_extremes": 10,
+      "negative_extremes": 10,
+      "top_positive": {"asset": "XRP", "funding_rate_hourly": 2.083e-07},
+      "top_negative": {"asset": "TRX", "funding_rate_hourly": -1.897e-06}
+    }
+  },
+  "control_ledger": {
+    "path": "C:/Users/Kidsg/Documents/AI Second Brain/05_Projects/AI Quant Trading Floor/Research/QTF Verification and Delivery Control - 2026-07-15.md",
+    "latest_checkpoint": "Checkpoint A verified-complete 2026-07-16",
+    "ledger_updated": "2026-07-18 (QTF-V07 costed funding, QTF-T13 calibration, T12 market-maker readiness entries added)",
+    "statuses": {
+      "QTF-V01": "partial (jitter robustness FAILED 52.8%; broad-universe extension done; benchmark comparison done; paper-forward outstanding)",
+      "QTF-V02": "partial (broad panel v02 run; all negative holdout; do_not_promote)",
+      "QTF-V03": "blocked (public liquidation data rejected)",
+      "QTF-V04": "partial (V04B relaxed-regime jitter FAILED 38.5%; RSI entry cross dominant sensitivity)",
+      "QTF-V05": "partial (costed pairs backtest; both OOS do_not_promote; jitter/breadth/forward outstanding)",
+      "QTF-V06": "partial (legacy optimizer non-actionable; zero allocation for unvalidated sleeves)",
+      "QTF-V07": "partial (cross-venue validated; cost-adjusted funding gate MET; jitter FAILED 15.4%; edge is price-reversal not funding-carry)",
+      "QTF-V08": "partial (market-making blocked by L2 data availability)",
+      "QTF-V09": "partial (ETF sleeve evidence exists; not standalone edge)",
+      "QTF-V10": "partial (internal planned-vs-observed exists)",
+      "QTF-V11": "queued (alpha digest implementation)",
+      "QTF-V12": "partial (DeFiLlama scanner read-only)"
+    }
+  },
+  "verification": {
+    "checks": [
+      "canonical input files loaded",
+      "manifest SHA-256 matches both board provenance hashes",
+      "trend board classification: observation (no trade language)",
+      "funding board classification: observation (candidate events have next_gate instructions)",
+      "control ledger loaded and parsed (284 lines, 2026-07-18 entries present)",
+      "no execution side effects (no orders, credentials, allocations, or contacts)",
+      "decision: hold_zero_allocation (consistent with mandate)"
+    ],
+    "passed": true
+  },
+  "changes_since_last_run": {
+    "last_run": "20260718T000000Z",
+    "notes": [
+      "Daily scan files unchanged — latest still 2026-07-16T11:30:39Z (no new universe/trend/funding boards generated since last run)",
+      "Control ledger contains all entries through 2026-07-18: QTF-V07 costed funding (15.4% jitter survival), QTF-T13 calibration (no active price discovery), T12 market-maker readiness (documented block)",
+      "No new edge candidates promoted; all deliverables remain partial/blocked/queued",
+      "Provenance chain intact: manifest hash 3c579cf0 matches both board provenance hashes"
+    ]
+  },
+  "promotion_gate": "No candidate is promoted: canonical boards are observations/candidates and control ledger requires costs, holdout, robustness and paper-forward evidence."
+}

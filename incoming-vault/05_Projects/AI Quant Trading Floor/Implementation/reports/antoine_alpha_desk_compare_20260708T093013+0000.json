@@ -1,0 +1,38 @@
+{
+  "ts": "2026-07-08T09:30:13+00:00",
+  "mode": "compare",
+  "outcome_ledger": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Implementation\\ledgers\\antoine_candidate_outcomes.jsonl",
+  "groups": [
+    {
+      "group": "rejected_or_danger",
+      "n": 260,
+      "avg_return_pct": -0.259,
+      "median_return_pct": 0.0,
+      "positive_rate_pct": 1.92,
+      "best_return_pct": 2.425,
+      "worst_return_pct": -13.447
+    },
+    {
+      "group": "risk_gated_watch",
+      "n": 548,
+      "avg_return_pct": -0.602,
+      "median_return_pct": 0.0,
+      "positive_rate_pct": 8.21,
+      "best_return_pct": 4.762,
+      "worst_return_pct": -13.447
+    },
+    {
+      "group": "control_only",
+      "n": 166,
+      "avg_return_pct": -2.382,
+      "median_return_pct": 0.0,
+      "positive_rate_pct": 6.63,
+      "best_return_pct": 9.212,
+      "worst_return_pct": -60.694
+    }
+  ],
+  "rows_used": 974,
+  "notes": [
+    "Early snapshots are not expectancy proof; wait for 1h/6h/24h/7d samples."
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "action": "artifact_status_only",
+  "allocations_emitted": false,
+  "canonical_inputs": {
+    "funding_board": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Implementation\\reports\\daily_scan\\funding_board_20260715T154852Z.json",
+    "funding_classification": "observation",
+    "input_sha256": {
+      "funding_board": "1c9e5942ecfe1917e38f95100416b42fffb2d9309fa58080e7c5aaa6191170da",
+      "manifest": "3b4e214619c50eb27578f793a8cdb7749e90b8c5dfb312be890be209ff15886e",
+      "trend_board": "22eb418a9ed6bbf8f9b5b923bddb3a240c0e5b6507de91b5a70e5afcd6163252"
+    },
+    "manifest": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Implementation\\reports\\daily_scan\\universe_manifest_20260715T154852Z.json",
+    "manifest_sha256": "3b4e214619c50eb27578f793a8cdb7749e90b8c5dfb312be890be209ff15886e",
+    "provenance_consistent": true,
+    "trend_board": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Implementation\\reports\\daily_scan\\trend_board_20260715T154852Z.json",
+    "trend_classification": "observation",
+    "universe_status": "ok"
+  },
+  "control_ledger": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Research\\QTF Verification and Delivery Control - 2026-07-15.md",
+  "control_statuses": {
+    "QTF-V01": "partial",
+    "QTF-V02": "partial",
+    "QTF-V03": "blocked",
+    "QTF-V04": "partial",
+    "QTF-V05": "partial",
+    "QTF-V06": "partial",
+    "QTF-V07": "partial",
+    "QTF-V08": "partial",
+    "QTF-V09": "partial",
+    "QTF-V10": "partial",
+    "QTF-V11": "queued",
+    "QTF-V12": "partial"
+  },
+  "credentials_used": false,
+  "decision": "hold_zero_allocation",
+  "mode": "read_only_paper_research",
+  "orders": 0,
+  "promotion_gate": "No candidate is promoted: canonical boards are observations/candidates and control ledger requires costs, holdout, robustness and paper-forward evidence.",
+  "run_id": "20260715T170124Z",
+  "verification": {
+    "checks": [
+      "canonical input files loaded",
+      "manifest hash matches both board provenance hashes",
+      "control ledger loaded",
+      "no execution side effects"
+    ],
+    "passed": true
+  }
+}

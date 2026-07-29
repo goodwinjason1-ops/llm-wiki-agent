@@ -1,0 +1,78 @@
+{
+  "schema": "qtf-v06-cross-sleeve-scorecard-v1",
+  "generated_at": "2026-07-15T14:56:27.047857+00:00",
+  "safety": "paper-only; public/local evidence; no orders, credentials, wallets or allocations",
+  "comparison_rule": "Display observed metrics only; do not rank or allocate across incomparable samples, horizons, or cost models.",
+  "sleeves": [
+    {
+      "sleeve": "ETF CORE_DEF",
+      "role": "diversifying tactical control sleeve",
+      "return_pct": 135.25399327444916,
+      "cagr_pct": 10.008950105689852,
+      "sharpe": 1.114618527512827,
+      "max_drawdown_pct": -9.876523622225674,
+      "cost_model": "not stated as bps in run card",
+      "validation": "5/5 profitable walk-forward windows; bootstrap CI stated; no untouched holdout",
+      "decision": "partial_do_not_allocate"
+    },
+    {
+      "sleeve": "TTM-01 crypto trend",
+      "role": "crypto tactical candidate",
+      "return_pct": -0.2095811695227101,
+      "cagr_pct": -0.21308018441006382,
+      "sharpe": -0.5525931700505234,
+      "max_drawdown_pct": -0.5375815293355624,
+      "cost_model": "20 bps per position change",
+      "validation": "chronological 70/30 holdout; 1,200 rows/symbol",
+      "decision": "do_not_promote"
+    },
+    {
+      "sleeve": "CASHCAT funding fade",
+      "role": "funding/carry candidate",
+      "return_pct": 5.6329837669429645,
+      "cagr_pct": null,
+      "sharpe": null,
+      "max_drawdown_pct": null,
+      "cost_model": "10 bps round-trip proxy; one-hour funding proxy",
+      "validation": "70/30 chronological holdout; 11 holdout episodes at 4h",
+      "decision": "do_not_promote"
+    },
+    {
+      "sleeve": "QTF-V05 crypto pairs",
+      "role": "market-neutral candidate",
+      "return_pct": -9.16032586290763,
+      "cagr_pct": null,
+      "sharpe": -0.8191468004225676,
+      "max_drawdown_pct": -39.14823542382162,
+      "cost_model": "two-leg 10 bps plus observed daily funding",
+      "validation": "chronological 70/30 holdout; 2 pairs; funding panel shorter than price panel",
+      "decision": "do_not_promote"
+    }
+  ],
+  "allocation_decision": "zero allocation / no promotion",
+  "blocking_gates": [
+    "ETF and crypto samples use different windows and instruments.",
+    "ETF run card does not state a comparable bps cost model or untouched holdout.",
+    "CASHCAT has only 11 four-hour holdout episodes and a one-hour funding proxy.",
+    "QTF-V05 pairs are negative OOS and remain partial due to funding-history and robustness gaps.",
+    "No sleeve has passed all cross-sleeve comparability, robustness and paper-forward gates."
+  ],
+  "evidence": {
+    "run_card.md": {
+      "path": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Implementation\\reports\\runs\\core_def_l252_t1_vt008_20260709T102738+0000\\run_card.md",
+      "sha256": "82febd84f178a6383b029a73fcd726c1251cb411f9904fc5f7ea4766f0e02b06"
+    },
+    "qtf_v01_walkforward.json": {
+      "path": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Implementation\\reports\\ttm01_v01\\qtf_v01_walkforward.json",
+      "sha256": "2efc3702d36a76565af42d95043b8236fa083edf767abbb455d51b51e3cb0af9"
+    },
+    "qtf_v02_funding_forward_test.json": {
+      "path": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Implementation\\reports\\qtf_v02\\qtf_v02_funding_forward_test.json",
+      "sha256": "29e99b562f949bf237bfdb7366630c90a344ac14e4db9b15fdaae4f2a73eec9e"
+    },
+    "qtf_v05_costed_pairs_report.json": {
+      "path": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Backtests\\qtf_v05\\qtf_v05_costed_pairs_report.json",
+      "sha256": "073cce9e233d68010a5147a9d6b18740c61c5fb2d7b320bc12be4ae199b59e38"
+    }
+  }
+}

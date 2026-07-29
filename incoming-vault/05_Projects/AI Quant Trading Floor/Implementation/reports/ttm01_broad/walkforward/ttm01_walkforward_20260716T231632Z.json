@@ -1,0 +1,83 @@
+{
+  "schema": "qtf-ttm01-walkforward-v1",
+  "generated_at": "2026-07-16T23:16:31+00:00",
+  "input_source": "frozen Bybit daily snapshot (data_cache/ttm01/)",
+  "symbols_loaded": 50,
+  "min_common_rows": 220,
+  "rule": "TTM-01 broad-universe: 20d/60d cross-sectional rank, SMA50 filter, 10% vol target, next-bar open fill",
+  "walkforward_config": {
+    "n_folds": 10,
+    "expanding_window": true,
+    "training_start": 120,
+    "fold_size_rows": 22,
+    "description": "Expanding-window walk-forward: each fold trains on an expanding window and tests on the next contiguous segment. Same rule parameters across all folds (no re-optimization)."
+  },
+  "cost_sensitivity": {
+    "10bps": {},
+    "20bps": {},
+    "40bps": {}
+  },
+  "overall_equity": {
+    "10bps": {},
+    "20bps": {},
+    "40bps": {}
+  },
+  "control_buy_hold": {
+    "BTCUSDT": {
+      "total_return": 1.309320912685692,
+      "sharpe": 2.8244776657594106,
+      "max_drawdown": -0.20167516427337961,
+      "bars": 219
+    },
+    "ETHUSDT": {
+      "total_return": 1.3853654278963319,
+      "sharpe": 2.605213059324368,
+      "max_drawdown": -0.29094831827753886,
+      "bars": 219
+    },
+    "SOLUSDT": {
+      "total_return": 5.048852701702435,
+      "sharpe": 3.4327596966860896,
+      "max_drawdown": -0.3739504099575225,
+      "bars": 219
+    }
+  },
+  "fold_details": [
+    {
+      "fold": 0,
+      "status": "empty"
+    },
+    {
+      "fold": 1,
+      "status": "empty"
+    },
+    {
+      "fold": 2,
+      "status": "empty"
+    },
+    {
+      "fold": 3,
+      "status": "empty"
+    },
+    {
+      "fold": 4,
+      "status": "empty"
+    }
+  ],
+  "input_manifest_sha256": "a2324f17535dc43b1f739a9a13fe0d6692089c29a23e8db6b2d8ea6fc32a610c",
+  "fold_asset_frequency": {
+    "0": {},
+    "1": {},
+    "2": {},
+    "3": {},
+    "4": {}
+  },
+  "decision": "paper_candidate",
+  "decision_reason": "Walk-forward/holdout shows 0 positive folds out of 0. Requires paper-forward agreement and additional robustness checks before promotion.",
+  "promotion_gates": {
+    "walkforward_holdout": "failed",
+    "jitter_robustness": "FAILED (52.8% survival, threshold >= 60%)",
+    "paper_forward_agreement": "outstanding",
+    "cross_venue_validation": "outstanding"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": "jayse-task-inbox-v1",
+  "timezone": "Australia/Melbourne",
+  "tasks": [
+    {
+      "id": "personal-prescription-pickup-2026-07-15",
+      "title": "Pick up prescription",
+      "due": "2026-07-15T12:00:00+10:00",
+      "priority": "high",
+      "status": "open",
+      "owner": "Jayse",
+      "source": "Telegram quick capture",
+      "notes": "Pick up before 12:00 pm. Duplicate capture consolidated into one task."
+    }
+  ],
+  "notes": []
+}

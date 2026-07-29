@@ -1,0 +1,867 @@
+{
+  "artifact": "QTF-V04B relaxed-regime mean-reversion test",
+  "generated_utc": "2026-07-17T04:12:37.519727+00:00",
+  "parent_rule": {
+    "entry": "RSI(14) crosses up through 30",
+    "original_regime": "abs(20-day return)<=10% and close/SMA50 in [0.85,1.15]",
+    "exit": "RSI>=55, 3% stop, or 5-day max hold",
+    "execution": "next daily bar open",
+    "round_trip_cost": 0.002,
+    "split": "70/30 chronological holdout"
+  },
+  "relaxed_configs": {
+    "relaxed_10pct": {
+      "return_threshold": 0.1,
+      "sma_band": [
+        0.85,
+        1.15
+      ]
+    },
+    "relaxed_15pct": {
+      "return_threshold": 0.15,
+      "sma_band": [
+        0.8,
+        1.2
+      ]
+    },
+    "relaxed_20pct": {
+      "return_threshold": 0.2,
+      "sma_band": [
+        0.75,
+        1.25
+      ]
+    },
+    "ultra_relaxed": {
+      "return_threshold": 0.3,
+      "sma_band": [
+        0.7,
+        1.3
+      ]
+    }
+  },
+  "inputs": {
+    "manifest": "356420e8a737f967a32ab3cf740f0bcfa069a7c6cbf3276b91b30c5c630ceae7",
+    "BTCUSDT": "4d59f6a6ab9cdeb47b6efd166edeec5c6c0bc7ce2e48b709722d61f5500137f1",
+    "ETHUSDT": "49c5b53dbcb016d9239215cf98f1d4dc7e622102017e0e2dfaec35b63d3b2845",
+    "SOLUSDT": "ad8a14d83a2255a013c4b61eb7bd312fb83bd3a432309497f107af1f6e8e49d3"
+  },
+  "results": {
+    "BTCUSDT": {
+      "rows": 1200,
+      "split": 840,
+      "configs": {
+        "relaxed_10pct": {
+          "regime_params": {
+            "return_threshold": 0.1,
+            "sma_band": [
+              0.85,
+              1.15
+            ]
+          },
+          "development": {
+            "trades": [
+              {
+                "signal_idx": 148,
+                "entry_ts": 1693353600000,
+                "exit_ts": 1693440000000,
+                "net_return": -0.06628470160681998,
+                "gross_return": -0.06428470160681998,
+                "exit_reason": "stop_3pct"
+              }
+            ],
+            "trade_count": 1,
+            "total_net": -0.06628470160681998,
+            "avg_net": -0.06628470160681998,
+            "hit_rate": 0.0,
+            "max_drawdown": -0.06628470160681998
+          },
+          "holdout": {
+            "trades": [],
+            "trade_count": 0,
+            "total_net": 0,
+            "avg_net": null,
+            "hit_rate": null,
+            "max_drawdown": 0.0
+          }
+        },
+        "relaxed_15pct": {
+          "regime_params": {
+            "return_threshold": 0.15,
+            "sma_band": [
+              0.8,
+              1.2
+            ]
+          },
+          "development": {
+            "trades": [
+              {
+                "signal_idx": 148,
+                "entry_ts": 1693353600000,
+                "exit_ts": 1693440000000,
+                "net_return": -0.06628470160681998,
+                "gross_return": -0.06428470160681998,
+                "exit_reason": "stop_3pct"
+              },
+              {
+                "signal_idx": 449,
+                "entry_ts": 1719360000000,
+                "exit_ts": 1719705600000,
+                "net_return": 0.01367108043794363,
+                "gross_return": 0.01567108043794363,
+                "exit_reason": "max_5d_hold"
+              },
+              {
+                "signal_idx": 460,
+                "entry_ts": 1720310400000,
+                "exit_ts": 1720310400000,
+                "net_return": -0.04278228722223332,
+                "gross_return": -0.040782287222233315,
+                "exit_reason": "stop_3pct"
+              },
+              {
+                "signal_idx": 491,
+                "entry_ts": 1722988800000,
+                "exit_ts": 1723334400000,
+                "net_return": 0.046317447022871994,
+                "gross_return": 0.048317447022871995,
+                "exit_reason": "max_5d_hold"
+              },
+              {
+                "signal_idx": 698,
+                "entry_ts": 1740873600000,
+                "exit_ts": 1741219200000,
+                "net_return": 0.042967025413037874,
+                "gross_return": 0.044967025413037875,
+                "exit_reason": "max_5d_hold"
+              }
+            ],
+            "trade_count": 5,
+            "total_net": -0.006111435955199805,
+            "avg_net": -0.001222287191039961,
+            "hit_rate": 0.6,
+            "max_drawdown": -0.09539590839110967
+          },
+          "holdout": {
+            "trades": [
+              {
+                "signal_idx": 176,
+                "entry_ts": 1764028800000,
+                "exit_ts": 1764374400000,
+                "net_return": 0.026736491538095652,
+                "gross_return": 0.028736491538095654,
+                "exit_reason": "max_5d_hold"
+              }
+            ],
+            "trade_count": 1,
+            "total_net": 0.026736491538095652,
+            "avg_net": 0.026736491538095652,
+            "hit_rate": 1.0,
+            "max_drawdown": 0.0
+          }
+        },
+        "relaxed_20pct": {
+          "regime_params": {
+            "return_threshold": 0.2,
+            "sma_band": [
+              0.75,
+              1.25
+            ]
+          },
+          "development": {
+            "trades": [
+              {
+                "signal_idx": 148,
+                "entry_ts": 1693353600000,
+                "exit_ts": 1693440000000,
+                "net_return": -0.06628470160681998,
+                "gross_return": -0.06428470160681998,
+                "exit_reason": "stop_3pct"
+              },
+              {
+                "signal_idx": 449,
+                "entry_ts": 1719360000000,
+                "exit_ts": 1719705600000,
+                "net_return": 0.01367108043794363,
+                "gross_return": 0.01567108043794363,
+                "exit_reason": "max_5d_hold"
+              },
+              {
+                "signal_idx": 460,
+                "entry_ts": 1720310400000,
+                "exit_ts": 1720310400000,
+                "net_return": -0.04278228722223332,
+                "gross_return": -0.040782287222233315,
+                "exit_reason": "stop_3pct"
+              },
+              {
+                "signal_idx": 491,
+                "entry_ts": 1722988800000,
+                "exit_ts": 1723334400000,
+                "net_return": 0.046317447022871994,
+                "gross_return": 0.048317447022871995,
+                "exit_reason": "max_5d_hold"
+              },
+              {
+                "signal_idx": 698,
+                "entry_ts": 1740873600000,
+                "exit_ts": 1741219200000,
+                "net_return": 0.042967025413037874,
+                "gross_return": 0.044967025413037875,
+                "exit_reason": "max_5d_hold"
+              }
+            ],
+            "trade_count": 5,
+            "total_net": -0.006111435955199805,
+            "avg_net": -0.001222287191039961,
+            "hit_rate": 0.6,
+            "max_drawdown": -0.09539590839110967
+          },
+          "holdout": {
+            "trades": [
+              {
+                "signal_idx": 170,
+                "entry_ts": 1763510400000,
+                "exit_ts": 1763596800000,
+                "net_return": -0.07014558722605035,
+                "gross_return": -0.06814558722605035,
+                "exit_reason": "stop_3pct"
+              },
+              {
+                "signal_idx": 176,
+                "entry_ts": 1764028800000,
+                "exit_ts": 1764374400000,
+                "net_return": 0.026736491538095652,
+                "gross_return": 0.028736491538095654,
+                "exit_reason": "max_5d_hold"
+              },
+              {
+                "signal_idx": 375,
+                "entry_ts": 1781222400000,
+                "exit_ts": 1781568000000,
+                "net_return": 0.030190385788014584,
+                "gross_return": 0.032190385788014586,
+                "exit_reason": "max_5d_hold"
+              }
+            ],
+            "trade_count": 3,
+            "total_net": -0.013218709899940118,
+            "avg_net": -0.004406236633313372,
+            "hit_rate": 0.6666666666666666,
+            "max_drawdown": -0.07014558722605035
+          }
+        },
+        "ultra_relaxed": {
+          "regime_params": {
+            "return_threshold": 0.3,
+            "sma_band": [
+              0.7,
+              1.3
+            ]
+          },
+          "development": {
+            "trades": [
+              {
+                "signal_idx": 148,
+                "entry_ts": 1693353600000,
+                "exit_ts": 1693440000000,
+                "net_return": -0.06628470160681998,
+                "gross_return": -0.06428470160681998,
+                "exit_reason": "stop_3pct"
+              },
+              {
+                "signal_idx": 449,
+                "entry_ts": 1719360000000,
+                "exit_ts": 1719705600000,
+                "net_return": 0.01367108043794363,
+                "gross_return": 0.01567108043794363,
+                "exit_reason": "max_5d_hold"
+              },
+              {
+                "signal_idx": 460,
+                "entry_ts": 1720310400000,
+                "exit_ts": 1720310400000,
+                "net_return": -0.04278228722223332,
+                "gross_return": -0.040782287222233315,
+                "exit_reason": "stop_3pct"
+              },
+              {
+                "signal_idx": 491,
+                "entry_ts": 1722988800000,
+                "exit_ts": 1723334400000,
+                "net_return": 0.046317447022871994,
+                "gross_return": 0.048317447022871995,
+                "exit_reason": "max_5d_hold"
+              },
+              {
+                "signal_idx": 698,
+                "entry_ts": 1740873600000,
+                "exit_ts": 1741219200000,
+                "net_return": 0.042967025413037874,
+                "gross_return": 0.044967025413037875,
+                "exit_reason": "max_5d_hold"
+              }
+            ],
+            "trade_count": 5,
+            "total_net": -0.006111435955199805,
+            "avg_net": -0.001222287191039961,
+            "hit_rate": 0.6,
+            "max_drawdown": -0.09539590839110967
+          },
+          "holdout": {
+            "trades": [
+              {
+                "signal_idx": 170,
+                "entry_ts": 1763510400000,
+                "exit_ts": 1763596800000,
+                "net_return": -0.07014558722605035,
+                "gross_return": -0.06814558722605035,
+                "exit_reason": "stop_3pct"
+              },
+              {
+                "signal_idx": 176,
+                "entry_ts": 1764028800000,
+                "exit_ts": 1764374400000,
+                "net_return": 0.026736491538095652,
+                "gross_return": 0.028736491538095654,
+                "exit_reason": "max_5d_hold"
+              },
+              {
+                "signal_idx": 250,
+                "entry_ts": 1770422400000,
+                "exit_ts": 1770768000000,
+                "net_return": -0.051407753203574824,
+                "gross_return": -0.04940775320357482,
+                "exit_reason": "stop_3pct"
+              },
+              {
+                "signal_idx": 257,
+                "entry_ts": 1771027200000,
+                "exit_ts": 1771372800000,
+                "net_return": -0.03671995282559848,
+                "gross_return": -0.03471995282559848,
+                "exit_reason": "stop_3pct"
+              },
+              {
+                "signal_idx": 375,
+                "entry_ts": 1781222400000,
+                "exit_ts": 1781568000000,
+                "net_return": 0.030190385788014584,
+                "gross_return": 0.032190385788014586,
+                "exit_reason": "max_5d_hold"
+              }
+            ],
+            "trade_count": 5,
+            "total_net": -0.10134641592911342,
+            "avg_net": -0.020269283185822683,
+            "hit_rate": 0.4,
+            "max_drawdown": -0.131536801717128
+          }
+        }
+      }
+    },
+    "ETHUSDT": {
+      "rows": 1200,
+      "split": 840,
+      "configs": {
+        "relaxed_10pct": {
+          "regime_params": {
+            "return_threshold": 0.1,
+            "sma_band": [
+              0.85,
+              1.15
+            ]
+          },
+          "development": {
+            "trades": [
+              {
+                "signal_idx": 142,
+                "entry_ts": 1692835200000,
+                "exit_ts": 1693180800000,
+                "net_return": -0.017781828572789316,
+                "gross_return": -0.015781828572789314,
+                "exit_reason": "max_5d_hold"
+              },
+              {
+                "signal_idx": 162,
+                "entry_ts": 1694563200000,
+                "exit_ts": 1694908800000,
+                "net_return": 0.016551536230428487,
+                "gross_return": 0.01855153623042849,
+                "exit_reason": "max_5d_hold"
+              },
+              {
+                "signal_idx": 699,
+                "entry_ts": 1740960000000,
+                "exit_ts": 1740960000000,
+                "net_return": -0.14898549320713672,
+                "gross_return": -0.14698549320713672,
+                "exit_reason": "stop_3pct"
+              }
+            ],
+            "trade_count": 3,
+            "total_net": -0.15021578554949755,
+            "avg_net": -0.050071928516499185,
+            "hit_rate": 0.3333333333333333,
+            "max_drawdown": -0.15021578554949755
+          },
+          "holdout": {
+            "trades": [],
+            "trade_count": 0,
+            "total_net": 0,
+            "avg_net": null,
+            "hit_rate": null,
+            "max_drawdown": 0.0
+          }
+        },
+        "relaxed_15pct": {
+          "regime_params": {
+            "return_threshold": 0.15,
+            "sma_band": [
+              0.8,
+              1.2
+            ]
+          },
+          "development": {
+            "trades": [
+              {
+                "signal_idx": 142,
+                "entry_ts": 1692835200000,
+                "exit_ts": 1693180800000,
+                "net_return": -0.017781828572789316,
+                "gross_return": -0.015781828572789314,
+                "exit_reason": "max_5d_hold"
+              },
+              {
+                "signal_idx": 162,
+                "entry_ts": 1694563200000,
+                "exit_ts": 1694908800000,
+                "net_return": 0.016551536230428487,
+                "gross_return": 0.01855153623042849,
+                "exit_reason": "max_5d_hold"
+              },
+              {
+                "signal_idx": 462,
+                "entry_ts": 1720483200000,
+                "exit_ts": 1720828800000,
+                "net_return": 0.04986679385773152,
+                "gross_return": 0.05186679385773152,
+                "exit_reason": "max_5d_hold"
+              },
+              {
+                "signal_idx": 699,
+                "entry_ts": 1740960000000,
+                "exit_ts": 1740960000000,
+                "net_return": -0.14898549320713672,
+                "gross_return": -0.14698549320713672,
+                "exit_reason": "stop_3pct"
+              }
+            ],
+            "trade_count": 4,
+            "total_net": -0.10034899169176603,
+            "avg_net": -0.025087247922941508,
+            "hit_rate": 0.5,
+            "max_drawdown": -0.14898549320713672
+          },
+          "holdout": {
+            "trades": [
+              {
+                "signal_idx": 157,
+                "entry_ts": 1762387200000,
+                "exit_ts": 1762387200000,
+                "net_return": -0.033945803098217264,
+                "gross_return": -0.03194580309821726,
+                "exit_reason": "stop_3pct"
+              },
+              {
+                "signal_idx": 176,
+                "entry_ts": 1764028800000,
+                "exit_ts": 1764374400000,
+                "net_return": 0.010206477390082515,
+                "gross_return": 0.012206477390082515,
+                "exit_reason": "max_5d_hold"
+              }
+            ],
+            "trade_count": 2,
+            "total_net": -0.02373932570813475,
+            "avg_net": -0.011869662854067375,
+            "hit_rate": 0.5,
+            "max_drawdown": -0.033945803098217264
+          }
+        },
+        "relaxed_20pct": {
+          "regime_params": {
+            "return_threshold": 0.2,
+            "sma_band": [
+              0.75,
+              1.25
+            ]
+          },
+          "development": {
+            "trades": [
+              {
+                "signal_idx": 142,
+                "entry_ts": 1692835200000,
+                "exit_ts": 1693180800000,
+                "net_return": -0.017781828572789316,
+                "gross_return": -0.015781828572789314,
+                "exit_reason": "max_5d_hold"
+              },
+              {
+                "signal_idx": 162,
+                "entry_ts": 1694563200000,
+                "exit_ts": 1694908800000,
+                "net_return": 0.016551536230428487,
+                "gross_return": 0.01855153623042849,
+                "exit_reason": "max_5d_hold"
+              },
+              {
+                "signal_idx": 460,
+                "entry_ts": 1720310400000,
+                "exit_ts": 1720310400000,
+                "net_return": -0.04641988445939782,
+                "gross_return": -0.04441988445939782,
+                "exit_reason": "stop_3pct"
+              },
+              {
+                "signal_idx": 462,
+                "entry_ts": 1720483200000,
+                "exit_ts": 1720828800000,
+                "net_return": 0.04986679385773152,
+                "gross_return": 0.05186679385773152,
+                "exit_reason": "max_5d_hold"
+              },
+              {
+                "signal_idx": 699,
+                "entry_ts": 1740960000000,
+                "exit_ts": 1740960000000,
+                "net_return": -0.14898549320713672,
+                "gross_return": -0.14698549320713672,
+                "exit_reason": "stop_3pct"
+              },
+              {
+                "signal_idx": 737,
+                "entry_ts": 1744243200000,
+                "exit_ts": 1744243200000,
+                "net_return": -0.09011567465903159,
+                "gross_return": -0.08811567465903158,
+                "exit_reason": "stop_3pct"
+              }
+            ],
+            "trade_count": 6,
+            "total_net": -0.23688455081019544,
+            "avg_net": -0.039480758468365906,
+            "hit_rate": 0.3333333333333333,
+            "max_drawdown": -0.2391011678661683
+          },
+          "holdout": {
+            "trades": [
+              {
+                "signal_idx": 157,
+                "entry_ts": 1762387200000,
+                "exit_ts": 1762387200000,
+                "net_return": -0.033945803098217264,
+                "gross_return": -0.03194580309821726,
+                "exit_reason": "stop_3pct"
+              },
+              {
+                "signal_idx": 176,
+                "entry_ts": 1764028800000,
+                "exit_ts": 1764374400000,
+                "net_return": 0.010206477390082515,
+                "gross_return": 0.012206477390082515,
+                "exit_reason": "max_5d_hold"
+              },
+              {
+                "signal_idx": 375,
+                "entry_ts": 1781222400000,
+                "exit_ts": 1781568000000,
+                "net_return": 0.06938930713893066,
+                "gross_return": 0.07138930713893066,
+                "exit_reason": "max_5d_hold"
+              }
+            ],
+            "trade_count": 3,
+            "total_net": 0.045649981430795905,
+            "avg_net": 0.015216660476931968,
+            "hit_rate": 0.6666666666666666,
+            "max_drawdown": -0.033945803098217264
+          }
+        },
+        "ultra_relaxed": {
+          "regime_params": {
+            "return_threshold": 0.3,
+            "sma_band": [
+              0.7,
+              1.3
+            ]
+          },
+          "development": {
+            "trades": [
+              {
+                "signal_idx": 142,
+                "entry_ts": 1692835200000,
+                "exit_ts": 1693180800000,
+                "net_return": -0.017781828572789316,
+                "gross_return": -0.015781828572789314,
+                "exit_reason": "max_5d_hold"
+              },
+              {
+                "signal_idx": 162,
+                "entry_ts": 1694563200000,
+                "exit_ts": 1694908800000,
+                "net_return": 0.016551536230428487,
+                "gross_return": 0.01855153623042849,
+                "exit_reason": "max_5d_hold"
+              },
+              {
+                "signal_idx": 460,
+                "entry_ts": 1720310400000,
+                "exit_ts": 1720310400000,
+                "net_return": -0.04641988445939782,
+                "gross_return": -0.04441988445939782,
+                "exit_reason": "stop_3pct"
+              },
+              {
+                "signal_idx": 462,
+                "entry_ts": 1720483200000,
+                "exit_ts": 1720828800000,
+                "net_return": 0.04986679385773152,
+                "gross_return": 0.05186679385773152,
+                "exit_reason": "max_5d_hold"
+              },
+              {
+                "signal_idx": 493,
+                "entry_ts": 1723161600000,
+                "exit_ts": 1723161600000,
+                "net_return": -0.0331231393775373,
+                "gross_return": -0.0311231393775373,
+                "exit_reason": "stop_3pct"
+              },
+              {
+                "signal_idx": 699,
+                "entry_ts": 1740960000000,
+                "exit_ts": 1740960000000,
+                "net_return": -0.14898549320713672,
+                "gross_return": -0.14698549320713672,
+                "exit_reason": "stop_3pct"
+              },
+              {
+                "signal_idx": 737,
+                "entry_ts": 1744243200000,
+                "exit_ts": 1744243200000,
+                "net_return": -0.09011567465903159,
+                "gross_return": -0.08811567465903158,
+                "exit_reason": "stop_3pct"
+              }
+            ],
+            "trade_count": 7,
+            "total_net": -0.27000769018773274,
+            "avg_net": -0.03857252716967611,
+            "hit_rate": 0.2857142857142857,
+            "max_drawdown": -0.2722243072437056
+          },
+          "holdout": {
+            "trades": [
+              {
+                "signal_idx": 157,
+                "entry_ts": 1762387200000,
+                "exit_ts": 1762387200000,
+                "net_return": -0.033945803098217264,
+                "gross_return": -0.03194580309821726,
+                "exit_reason": "stop_3pct"
+              },
+              {
+                "signal_idx": 176,
+                "entry_ts": 1764028800000,
+                "exit_ts": 1764374400000,
+                "net_return": 0.010206477390082515,
+                "gross_return": 0.012206477390082515,
+                "exit_reason": "max_5d_hold"
+              },
+              {
+                "signal_idx": 375,
+                "entry_ts": 1781222400000,
+                "exit_ts": 1781568000000,
+                "net_return": 0.06938930713893066,
+                "gross_return": 0.07138930713893066,
+                "exit_reason": "max_5d_hold"
+              }
+            ],
+            "trade_count": 3,
+            "total_net": 0.045649981430795905,
+            "avg_net": 0.015216660476931968,
+            "hit_rate": 0.6666666666666666,
+            "max_drawdown": -0.033945803098217264
+          }
+        }
+      }
+    },
+    "SOLUSDT": {
+      "rows": 1200,
+      "split": 840,
+      "configs": {
+        "relaxed_10pct": {
+          "regime_params": {
+            "return_threshold": 0.1,
+            "sma_band": [
+              0.85,
+              1.15
+            ]
+          },
+          "development": {
+            "trades": [],
+            "trade_count": 0,
+            "total_net": 0,
+            "avg_net": null,
+            "hit_rate": null,
+            "max_drawdown": 0.0
+          },
+          "holdout": {
+            "trades": [],
+            "trade_count": 0,
+            "total_net": 0,
+            "avg_net": null,
+            "hit_rate": null,
+            "max_drawdown": 0.0
+          }
+        },
+        "relaxed_15pct": {
+          "regime_params": {
+            "return_threshold": 0.15,
+            "sma_band": [
+              0.8,
+              1.2
+            ]
+          },
+          "development": {
+            "trades": [],
+            "trade_count": 0,
+            "total_net": 0,
+            "avg_net": null,
+            "hit_rate": null,
+            "max_drawdown": 0.0
+          },
+          "holdout": {
+            "trades": [],
+            "trade_count": 0,
+            "total_net": 0,
+            "avg_net": null,
+            "hit_rate": null,
+            "max_drawdown": 0.0
+          }
+        },
+        "relaxed_20pct": {
+          "regime_params": {
+            "return_threshold": 0.2,
+            "sma_band": [
+              0.75,
+              1.25
+            ]
+          },
+          "development": {
+            "trades": [],
+            "trade_count": 0,
+            "total_net": 0,
+            "avg_net": null,
+            "hit_rate": null,
+            "max_drawdown": 0.0
+          },
+          "holdout": {
+            "trades": [
+              {
+                "signal_idx": 157,
+                "entry_ts": 1762387200000,
+                "exit_ts": 1762387200000,
+                "net_return": -0.04560679970436077,
+                "gross_return": -0.043606799704360766,
+                "exit_reason": "stop_3pct"
+              }
+            ],
+            "trade_count": 1,
+            "total_net": -0.04560679970436077,
+            "avg_net": -0.04560679970436077,
+            "hit_rate": 0.0,
+            "max_drawdown": -0.04560679970436077
+          }
+        },
+        "ultra_relaxed": {
+          "regime_params": {
+            "return_threshold": 0.3,
+            "sma_band": [
+              0.7,
+              1.3
+            ]
+          },
+          "development": {
+            "trades": [
+              {
+                "signal_idx": 74,
+                "entry_ts": 1686960000000,
+                "exit_ts": 1687305600000,
+                "net_return": 0.12332637075718011,
+                "gross_return": 0.12532637075718012,
+                "exit_reason": "max_5d_hold"
+              },
+              {
+                "signal_idx": 697,
+                "entry_ts": 1740787200000,
+                "exit_ts": 1740787200000,
+                "net_return": -0.03237667071688943,
+                "gross_return": -0.03037667071688943,
+                "exit_reason": "stop_3pct"
+              }
+            ],
+            "trade_count": 2,
+            "total_net": 0.09094970004029068,
+            "avg_net": 0.04547485002014534,
+            "hit_rate": 0.5,
+            "max_drawdown": -0.03237667071688943
+          },
+          "holdout": {
+            "trades": [
+              {
+                "signal_idx": 157,
+                "entry_ts": 1762387200000,
+                "exit_ts": 1762387200000,
+                "net_return": -0.04560679970436077,
+                "gross_return": -0.043606799704360766,
+                "exit_reason": "stop_3pct"
+              },
+              {
+                "signal_idx": 170,
+                "entry_ts": 1763510400000,
+                "exit_ts": 1763596800000,
+                "net_return": -0.05203909304143861,
+                "gross_return": -0.05003909304143861,
+                "exit_reason": "stop_3pct"
+              },
+              {
+                "signal_idx": 246,
+                "entry_ts": 1770076800000,
+                "exit_ts": 1770076800000,
+                "net_return": -0.06571376638285653,
+                "gross_return": -0.06371376638285653,
+                "exit_reason": "stop_3pct"
+              },
+              {
+                "signal_idx": 375,
+                "entry_ts": 1781222400000,
+                "exit_ts": 1781568000000,
+                "net_return": 0.09677465630603699,
+                "gross_return": 0.09877465630603699,
+                "exit_reason": "max_5d_hold"
+              }
+            ],
+            "trade_count": 4,
+            "total_net": -0.06658500282261892,
+            "avg_net": -0.01664625070565473,
+            "hit_rate": 0.25,
+            "max_drawdown": -0.1633596591286559
+          }
+        }
+      }
+    }
+  },
+  "decision": "do_not_promote",
+  "decision_reason": "Diagnostic relaxation of regime filter to produce tradeable holdout signals; robustness/jitter, benchmark comparison and paper-forward agreement remain outstanding."
+}

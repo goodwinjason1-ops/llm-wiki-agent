@@ -1,0 +1,10 @@
+{
+  "ts": "2026-07-05T00:00:14+00:00",
+  "mode": "paper-only read-only operations",
+  "record_signals": {
+    "ledger": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Implementation\\ledgers\\polymarket_paper_signals.jsonl",
+    "new_signals": [],
+    "new_count": 0,
+    "open_total": 12
+  }
+}

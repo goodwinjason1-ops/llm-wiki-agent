@@ -1,0 +1,185 @@
+{
+  "schema_version": "qtf-pairs-screen-report-v1",
+  "generated_at": "2026-07-15T15:56:11+00:00",
+  "classification": "pre-backtest gate only; not performance or promotion evidence",
+  "summary": {
+    "eligible_for_backtest": 9,
+    "not_testable": 6
+  },
+  "rows": [
+    {
+      "id": "basis-btc-bybit",
+      "pair_type": "same_asset_basis",
+      "overlapping_bars": 1000,
+      "status": "eligible_for_backtest",
+      "reason": "history_and_relationship_screen_passed",
+      "bars": 1000,
+      "correlation": 0.9999991469047859,
+      "hedge_beta": 1.0005067905284641,
+      "latest_residual_z": 0.7294573050834007,
+      "warning": "Eligibility is not performance or promotion evidence."
+    },
+    {
+      "id": "basis-eth-bybit",
+      "pair_type": "same_asset_basis",
+      "overlapping_bars": 1000,
+      "status": "eligible_for_backtest",
+      "reason": "history_and_relationship_screen_passed",
+      "bars": 1000,
+      "correlation": 0.9999984376318286,
+      "hedge_beta": 0.9997335234979929,
+      "latest_residual_z": -0.5218964571098599,
+      "warning": "Eligibility is not performance or promotion evidence."
+    },
+    {
+      "id": "basis-sol-bybit",
+      "pair_type": "same_asset_basis",
+      "overlapping_bars": 1000,
+      "status": "eligible_for_backtest",
+      "reason": "history_and_relationship_screen_passed",
+      "bars": 1000,
+      "correlation": 0.9999989485152307,
+      "hedge_beta": 1.0001041928290735,
+      "latest_residual_z": 0.7923126775284192,
+      "warning": "Eligibility is not performance or promotion evidence."
+    },
+    {
+      "id": "basis-hype-bybit",
+      "pair_type": "same_asset_basis",
+      "overlapping_bars": 370,
+      "status": "eligible_for_backtest",
+      "reason": "history_and_relationship_screen_passed",
+      "bars": 370,
+      "correlation": 0.9999982646035458,
+      "hedge_beta": 0.9994965343830662,
+      "latest_residual_z": 0.5398755006408882,
+      "warning": "Eligibility is not performance or promotion evidence."
+    },
+    {
+      "id": "basis-aave-bybit",
+      "pair_type": "same_asset_basis",
+      "overlapping_bars": 1000,
+      "status": "eligible_for_backtest",
+      "reason": "history_and_relationship_screen_passed",
+      "bars": 1000,
+      "correlation": 0.9999986180951517,
+      "hedge_beta": 1.0000555549933607,
+      "latest_residual_z": 0.5752793172291258,
+      "warning": "Eligibility is not performance or promotion evidence."
+    },
+    {
+      "id": "perpdex-hype-dydx",
+      "pair_type": "perp_dex_relative_value",
+      "overlapping_bars": 588,
+      "status": "not_testable",
+      "reason": "insufficient_relationship_stability",
+      "bars": 588,
+      "correlation": -0.4143422812808782,
+      "hedge_beta": -0.19965328469483967,
+      "latest_residual_z": 1.3569272601363969
+    },
+    {
+      "id": "perpdex-hype-gmx",
+      "pair_type": "perp_dex_relative_value",
+      "overlapping_bars": 588,
+      "status": "not_testable",
+      "reason": "insufficient_relationship_stability",
+      "bars": 588,
+      "correlation": -0.44978157585297746,
+      "hedge_beta": -0.38145761709438974,
+      "latest_residual_z": 1.304730036082753
+    },
+    {
+      "id": "perpdex-dydx-gmx",
+      "pair_type": "perp_dex_relative_value",
+      "overlapping_bars": 1000,
+      "status": "eligible_for_backtest",
+      "reason": "history_and_relationship_screen_passed",
+      "bars": 1000,
+      "correlation": 0.9802092671690168,
+      "hedge_beta": 1.5499857844868536,
+      "latest_residual_z": -0.28659968024664484,
+      "warning": "Eligibility is not performance or promotion evidence."
+    },
+    {
+      "id": "perpdex-hype-drift",
+      "pair_type": "perp_dex_relative_value",
+      "overlapping_bars": 588,
+      "status": "not_testable",
+      "reason": "insufficient_relationship_stability",
+      "bars": 588,
+      "correlation": -0.5282857513590355,
+      "hedge_beta": -0.1677021454012164,
+      "latest_residual_z": 0.6874386420161682
+    },
+    {
+      "id": "lending-aave-morpho",
+      "pair_type": "lending_relative_value",
+      "overlapping_bars": 601,
+      "status": "not_testable",
+      "reason": "insufficient_relationship_stability",
+      "bars": 601,
+      "correlation": 0.28231648977799134,
+      "hedge_beta": 0.45948300084006477,
+      "latest_residual_z": -1.5905088130430391
+    },
+    {
+      "id": "lending-aave-comp",
+      "pair_type": "lending_relative_value",
+      "overlapping_bars": 1000,
+      "status": "not_testable",
+      "reason": "insufficient_relationship_stability",
+      "bars": 1000,
+      "correlation": 0.32925244490295946,
+      "hedge_beta": 0.3413874376149159,
+      "latest_residual_z": -0.2527984636750609
+    },
+    {
+      "id": "lending-morpho-comp",
+      "pair_type": "lending_relative_value",
+      "overlapping_bars": 601,
+      "status": "not_testable",
+      "reason": "insufficient_relationship_stability",
+      "bars": 601,
+      "correlation": 0.3116624930490341,
+      "hedge_beta": 0.18164931861828276,
+      "latest_residual_z": 1.1905574860986012
+    },
+    {
+      "id": "spotdex-uni-cake",
+      "pair_type": "spot_dex_relative_value",
+      "overlapping_bars": 986,
+      "status": "eligible_for_backtest",
+      "reason": "history_and_relationship_screen_passed",
+      "bars": 986,
+      "correlation": 0.7599586658751688,
+      "hedge_beta": 1.103078519906156,
+      "latest_residual_z": -0.5345233382970179,
+      "warning": "Eligibility is not performance or promotion evidence."
+    },
+    {
+      "id": "spotdex-uni-sushi",
+      "pair_type": "spot_dex_relative_value",
+      "overlapping_bars": 1000,
+      "status": "eligible_for_backtest",
+      "reason": "history_and_relationship_screen_passed",
+      "bars": 1000,
+      "correlation": 0.8639559000749493,
+      "hedge_beta": 0.5459905805301175,
+      "latest_residual_z": 0.6316329769179017,
+      "warning": "Eligibility is not performance or promotion evidence."
+    },
+    {
+      "id": "spotdex-cake-sushi",
+      "pair_type": "spot_dex_relative_value",
+      "overlapping_bars": 986,
+      "status": "eligible_for_backtest",
+      "reason": "history_and_relationship_screen_passed",
+      "bars": 986,
+      "correlation": 0.8098413783536892,
+      "hedge_beta": 0.3498262507490997,
+      "latest_residual_z": 0.3072659921916579,
+      "warning": "Eligibility is not performance or promotion evidence."
+    }
+  ]
+}

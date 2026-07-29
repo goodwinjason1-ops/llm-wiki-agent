@@ -1,0 +1,48 @@
+{
+  "action": "artifact_status_only",
+  "allocations_emitted": false,
+  "canonical_inputs": {
+    "funding_board": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Implementation\\reports\\daily_scan\\funding_board_20260720T214326Z.json",
+    "funding_classification": "observation",
+    "input_sha256": {
+      "funding_board": "c82b9ae8390460ba3f2721687d83b4d765be98e97f3e1f9c266ef49fc87f72df",
+      "manifest": "d948d3a168df4be938f27eac9e38579b465bef06109e2308e0de0fd3f75d2688",
+      "trend_board": "02c74cf294fbf1034471028a149d77bfe60a0992a957d95ff01891d76d56b0a3"
+    },
+    "manifest": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Implementation\\reports\\daily_scan\\universe_manifest_20260720T214326Z.json",
+    "manifest_sha256": "d948d3a168df4be938f27eac9e38579b465bef06109e2308e0de0fd3f75d2688",
+    "provenance_consistent": true,
+    "trend_board": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Implementation\\reports\\daily_scan\\trend_board_20260720T214326Z.json",
+    "trend_classification": "observation",
+    "universe_status": "ok"
+  },
+  "control_ledger": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Research\\QTF Verification and Delivery Control - 2026-07-15.md",
+  "control_statuses": {
+    "QTF-V02": "partial",
+    "QTF-V03": "blocked",
+    "QTF-V04": "partial",
+    "QTF-V05": "partial",
+    "QTF-V06": "partial",
+    "QTF-V07": "partial",
+    "QTF-V08": "partial",
+    "QTF-V09": "partial",
+    "QTF-V10": "partial",
+    "QTF-V11": "queued",
+    "QTF-V12": "partial"
+  },
+  "credentials_used": false,
+  "decision": "hold_zero_allocation",
+  "mode": "read_only_paper_research",
+  "orders": 0,
+  "promotion_gate": "No candidate is promoted: canonical boards are observations/candidates and control ledger requires costs, holdout, robustness and paper-forward evidence.",
+  "run_id": "20260721T015850Z",
+  "verification": {
+    "checks": [
+      "canonical input files loaded",
+      "manifest hash matches both board provenance hashes",
+      "control ledger loaded",
+      "no execution side effects"
+    ],
+    "passed": true
+  }
+}

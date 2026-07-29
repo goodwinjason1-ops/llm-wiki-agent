@@ -1,0 +1,102 @@
+{
+  "report_type": "edge_worker_operational",
+  "worker": "jayse-paper-only-quant-floor",
+  "generated_at": "2026-07-18T04:08:48.723226+00:00",
+  "timestamp_tag": "20260718T040848Z",
+  "manifest": {
+    "file": "universe_manifest_20260716T113039Z.json",
+    "sha256": "3c579cf02c0d0a3ba6be2394c4fb8a67e4d41513e42a0eb2e9b06674f2d7c0f1",
+    "assets_total": 50,
+    "controls": [
+      "BTC",
+      "ETH",
+      "SOL"
+    ],
+    "non_controls_count": 47,
+    "shortfall": 0,
+    "schema_version": "qtf-research-universe-v1",
+    "status": "ok"
+  },
+  "trend_board": {
+    "file": "trend_board_20260716T113039Z.json",
+    "sha256": "287dda77437dcc9b07b961585b2dd080676148edf23aa63d8d0ea04dff544032",
+    "classification": "observation",
+    "eligible_count": 30,
+    "positive_24h_count": 7,
+    "negative_24h_count": 10,
+    "top_positive": {
+      "asset": "ONDO",
+      "classification": "observation",
+      "day_return_pct": 15.740000000000002,
+      "day_volume_usd": 11423526.1873018,
+      "inclusion_reason": "active_bybit_usdt_spot",
+      "is_control": false,
+      "market_cap_rank": 43,
+      "symbol": "ONDOUSDT",
+      "venue": "bybit_spot"
+    },
+    "top_negative": {
+      "asset": "LIT",
+      "classification": "observation",
+      "day_return_pct": -7.75,
+      "day_volume_usd": 10317333.845212,
+      "inclusion_reason": "active_bybit_usdt_spot",
+      "is_control": false,
+      "market_cap_rank": 93,
+      "symbol": "LITUSDT",
+      "venue": "bybit_spot"
+    },
+    "provenance_manifest_matches": true
+  },
+  "funding_board": {
+    "file": "funding_board_20260716T113039Z.json",
+    "sha256": "255a9b9e341ec8ed0a0cab8ef494cf39f1637ddf3dfe79780e5e1fe678e71206",
+    "classification": "candidate",
+    "total_candidate_events": 20,
+    "positive_extreme_count": 10,
+    "negative_extreme_count": 10,
+    "top_positive_asset": "XRP",
+    "top_negative_asset": "TRX",
+    "provenance_manifest_matches": true
+  },
+  "board_provenance_consistency": {
+    "manifest_sha256": "3c579cf02c0d0a3ba6be2394c4fb8a67e4d41513e42a0eb2e9b06674f2d7c0f1",
+    "trend_board_references_match": true,
+    "funding_board_references_match": true,
+    "overall_consistent": true
+  },
+  "control_ledger": {
+    "ledger_file": "QTF Verification and Delivery Control - 2026-07-15.md",
+    "latest_checkpoint": "Checkpoint A 2026-07-16 verified-complete",
+    "deliverables_total": 12,
+    "recent_activity": "No new daily scan files since 2026-07-16T11:30:39Z. Ledger entries through 2026-07-18: QTF-V07 costed funding (15.4% jitter survival FAILED), QTF-T13 calibration (no active price discovery), T12 market-maker readiness (documented block)."
+  },
+  "decision": {
+    "action": "hold_zero_allocation",
+    "rationale": "All boards observation/candidate. No edge promoted. Jitter FAILED on V01(52.8%), V04B(38.5%), V07-costed(15.4%). T12 blocked. T13 no price discovery. Universe unchanged since 2026-07-16.",
+    "no_orders": true,
+    "no_credentials": true,
+    "no_allocations": true,
+    "no_contacts": true
+  },
+  "verification_checks": {
+    "manifest_schema_valid": true,
+    "boards_reference_correct_manifest": true,
+    "control_assets_present": true,
+    "no_trade_language": true,
+    "all_boards_observation_or_candidate": true,
+    "next_gate_instructions_present": true,
+    "paper_only_enforced": true
+  },
+  "changes_since_last_run": {
+    "new_daily_scan_files": false,
+    "last_scan_timestamp": "2026-07-16T11:30:39+00:00",
+    "ledger_updated": false,
+    "notable_findings": [
+      "Universe/trend/funding unchanged since 2026-07-16T11:30:39Z",
+      "Provenance chain intact",
+      "No new edges promoted",
+      "Control ledger current through 2026-07-18"
+    ]
+  }
+}

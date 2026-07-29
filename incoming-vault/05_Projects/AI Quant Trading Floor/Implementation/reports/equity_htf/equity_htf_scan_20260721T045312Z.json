@@ -1,0 +1,13 @@
+{
+  "E-HTF-6": {
+    "edge": "E-HTF-6",
+    "name": "Core ETF Book (The Ballast)",
+    "etfs_scanned": 0,
+    "full_allocation": 0,
+    "half_allocation": 0,
+    "signals": [],
+    "tactical_overlay": "200d trend filter controls equity weight: full/half/minimum",
+    "note": "Not an edge — a risk-premium harvest with tactical overlay. Collects equity + term premium.",
+    "decision": "hold_zero_allocation"
+  }
+}

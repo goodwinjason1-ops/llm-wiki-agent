@@ -1,0 +1,620 @@
+{
+  "ambiguous_markets": [],
+  "errors": {},
+  "evidence": {
+    "1414846": {
+      "active": true,
+      "closed": true,
+      "endDate": "2026-02-23T16:30:00Z",
+      "outcomePrices": [
+        1.0,
+        0.0
+      ],
+      "outcomes": [
+        "Up",
+        "Down"
+      ],
+      "question": "Bitcoin Up or Down - February 23, 11:25AM-11:30AM ET",
+      "source": "https://gamma-api.polymarket.com/markets/1414846"
+    },
+    "1415215": {
+      "active": true,
+      "closed": true,
+      "endDate": "2026-02-23T17:30:00Z",
+      "outcomePrices": [
+        0.0,
+        1.0
+      ],
+      "outcomes": [
+        "Up",
+        "Down"
+      ],
+      "question": "Ethereum Up or Down - February 23, 12:15PM-12:30PM ET",
+      "source": "https://gamma-api.polymarket.com/markets/1415215"
+    },
+    "1415275": {
+      "active": true,
+      "closed": true,
+      "endDate": "2026-02-23T18:00:00Z",
+      "outcomePrices": [
+        1.0,
+        0.0
+      ],
+      "outcomes": [
+        "Up",
+        "Down"
+      ],
+      "question": "Bitcoin Up or Down - February 23, 12:45PM-1:00PM ET",
+      "source": "https://gamma-api.polymarket.com/markets/1415275"
+    },
+    "1601813": {
+      "active": true,
+      "closed": true,
+      "endDate": "2026-03-16T22:15:00Z",
+      "outcomePrices": [
+        0.0,
+        1.0
+      ],
+      "outcomes": [
+        "Up",
+        "Down"
+      ],
+      "question": "Ethereum Up or Down - March 16, 6:10PM-6:15PM ET",
+      "source": "https://gamma-api.polymarket.com/markets/1601813"
+    },
+    "1646147": {
+      "active": true,
+      "closed": true,
+      "endDate": "2026-03-20T03:15:00Z",
+      "outcomePrices": [
+        0.0,
+        1.0
+      ],
+      "outcomes": [
+        "Up",
+        "Down"
+      ],
+      "question": "Bitcoin Up or Down - March 19, 11:10PM-11:15PM ET",
+      "source": "https://gamma-api.polymarket.com/markets/1646147"
+    },
+    "1822773": {
+      "active": true,
+      "closed": true,
+      "endDate": "2026-04-03T01:55:00Z",
+      "outcomePrices": [
+        0.0,
+        1.0
+      ],
+      "outcomes": [
+        "Up",
+        "Down"
+      ],
+      "question": "Bitcoin Up or Down - April 2, 9:50PM-9:55PM ET",
+      "source": "https://gamma-api.polymarket.com/markets/1822773"
+    },
+    "2839826": {
+      "active": true,
+      "closed": true,
+      "endDate": "2026-07-09T00:55:00Z",
+      "outcomePrices": [
+        0.0,
+        1.0
+      ],
+      "outcomes": [
+        "Up",
+        "Down"
+      ],
+      "question": "Bitcoin Up or Down - July 8, 8:50PM-8:55PM ET",
+      "source": "https://gamma-api.polymarket.com/markets/2839826"
+    },
+    "2865122": {
+      "active": true,
+      "closed": true,
+      "endDate": "2026-07-10T01:00:00Z",
+      "outcomePrices": [
+        1.0,
+        0.0
+      ],
+      "outcomes": [
+        "Yes",
+        "No"
+      ],
+      "question": "Ethereum above 1,740 on July 9, 9PM ET?",
+      "source": "https://gamma-api.polymarket.com/markets/2865122"
+    },
+    "2865123": {
+      "active": true,
+      "closed": true,
+      "endDate": "2026-07-10T01:00:00Z",
+      "outcomePrices": [
+        0.0,
+        1.0
+      ],
+      "outcomes": [
+        "Yes",
+        "No"
+      ],
+      "question": "Ethereum above 1,760 on July 9, 9PM ET?",
+      "source": "https://gamma-api.polymarket.com/markets/2865123"
+    },
+    "2865124": {
+      "active": true,
+      "closed": true,
+      "endDate": "2026-07-10T01:00:00Z",
+      "outcomePrices": [
+        0.0,
+        1.0
+      ],
+      "outcomes": [
+        "Yes",
+        "No"
+      ],
+      "question": "Ethereum above 1,770 on July 9, 9PM ET?",
+      "source": "https://gamma-api.polymarket.com/markets/2865124"
+    },
+    "2865125": {
+      "active": true,
+      "closed": true,
+      "endDate": "2026-07-10T01:00:00Z",
+      "outcomePrices": [
+        0.0,
+        1.0
+      ],
+      "outcomes": [
+        "Yes",
+        "No"
+      ],
+      "question": "Ethereum above 1,780 on July 9, 9PM ET?",
+      "source": "https://gamma-api.polymarket.com/markets/2865125"
+    },
+    "2865126": {
+      "active": true,
+      "closed": true,
+      "endDate": "2026-07-10T01:00:00Z",
+      "outcomePrices": [
+        0.0,
+        1.0
+      ],
+      "outcomes": [
+        "Yes",
+        "No"
+      ],
+      "question": "Ethereum above 1,790 on July 9, 9PM ET?",
+      "source": "https://gamma-api.polymarket.com/markets/2865126"
+    },
+    "2865127": {
+      "active": true,
+      "closed": true,
+      "endDate": "2026-07-10T01:00:00Z",
+      "outcomePrices": [
+        0.0,
+        1.0
+      ],
+      "outcomes": [
+        "Yes",
+        "No"
+      ],
+      "question": "Ethereum above 1,800 on July 9, 9PM ET?",
+      "source": "https://gamma-api.polymarket.com/markets/2865127"
+    },
+    "2865128": {
+      "active": true,
+      "closed": true,
+      "endDate": "2026-07-10T01:00:00Z",
+      "outcomePrices": [
+        0.0,
+        1.0
+      ],
+      "outcomes": [
+        "Yes",
+        "No"
+      ],
+      "question": "Ethereum above 1,810 on July 9, 9PM ET?",
+      "source": "https://gamma-api.polymarket.com/markets/2865128"
+    },
+    "2865129": {
+      "active": true,
+      "closed": true,
+      "endDate": "2026-07-10T01:00:00Z",
+      "outcomePrices": [
+        0.0,
+        1.0
+      ],
+      "outcomes": [
+        "Yes",
+        "No"
+      ],
+      "question": "Ethereum above 1,820 on July 9, 9PM ET?",
+      "source": "https://gamma-api.polymarket.com/markets/2865129"
+    },
+    "2865130": {
+      "active": true,
+      "closed": true,
+      "endDate": "2026-07-10T01:00:00Z",
+      "outcomePrices": [
+        0.0,
+        1.0
+      ],
+      "outcomes": [
+        "Yes",
+        "No"
+      ],
+      "question": "Ethereum above 1,830 on July 9, 9PM ET?",
+      "source": "https://gamma-api.polymarket.com/markets/2865130"
+    },
+    "2865139": {
+      "active": true,
+      "closed": false,
+      "endDate": "2026-07-10T23:40:00Z",
+      "outcomePrices": [
+        0.505,
+        0.495
+      ],
+      "outcomes": [
+        "Up",
+        "Down"
+      ],
+      "question": "Bitcoin Up or Down - July 10, 7:35PM-7:40PM ET",
+      "source": "https://gamma-api.polymarket.com/markets/2865139"
+    },
+    "2865142": {
+      "active": true,
+      "closed": false,
+      "endDate": "2026-07-10T23:40:00Z",
+      "outcomePrices": [
+        0.505,
+        0.495
+      ],
+      "outcomes": [
+        "Up",
+        "Down"
+      ],
+      "question": "Ethereum Up or Down - July 10, 7:35PM-7:40PM ET",
+      "source": "https://gamma-api.polymarket.com/markets/2865142"
+    },
+    "2865148": {
+      "active": true,
+      "closed": false,
+      "endDate": "2026-07-10T23:45:00Z",
+      "outcomePrices": [
+        0.505,
+        0.495
+      ],
+      "outcomes": [
+        "Up",
+        "Down"
+      ],
+      "question": "Ethereum Up or Down - July 10, 7:40PM-7:45PM ET",
+      "source": "https://gamma-api.polymarket.com/markets/2865148"
+    },
+    "2865149": {
+      "active": true,
+      "closed": false,
+      "endDate": "2026-07-10T23:45:00Z",
+      "outcomePrices": [
+        0.505,
+        0.495
+      ],
+      "outcomes": [
+        "Up",
+        "Down"
+      ],
+      "question": "Bitcoin Up or Down - July 10, 7:40PM-7:45PM ET",
+      "source": "https://gamma-api.polymarket.com/markets/2865149"
+    },
+    "2865162": {
+      "active": true,
+      "closed": false,
+      "endDate": "2026-07-11T00:00:00Z",
+      "outcomePrices": [
+        0.505,
+        0.495
+      ],
+      "outcomes": [
+        "Up",
+        "Down"
+      ],
+      "question": "Ethereum Up or Down - July 10, 7:45PM-8:00PM ET",
+      "source": "https://gamma-api.polymarket.com/markets/2865162"
+    },
+    "2865165": {
+      "active": true,
+      "closed": false,
+      "endDate": "2026-07-11T00:00:00Z",
+      "outcomePrices": [
+        0.505,
+        0.495
+      ],
+      "outcomes": [
+        "Up",
+        "Down"
+      ],
+      "question": "Bitcoin Up or Down - July 10, 7:45PM-8:00PM ET",
+      "source": "https://gamma-api.polymarket.com/markets/2865165"
+    },
+    "2865167": {
+      "active": true,
+      "closed": false,
+      "endDate": "2026-07-10T23:50:00Z",
+      "outcomePrices": [
+        0.505,
+        0.495
+      ],
+      "outcomes": [
+        "Up",
+        "Down"
+      ],
+      "question": "Bitcoin Up or Down - July 10, 7:45PM-7:50PM ET",
+      "source": "https://gamma-api.polymarket.com/markets/2865167"
+    },
+    "2865168": {
+      "active": true,
+      "closed": false,
+      "endDate": "2026-07-10T23:50:00Z",
+      "outcomePrices": [
+        0.505,
+        0.495
+      ],
+      "outcomes": [
+        "Up",
+        "Down"
+      ],
+      "question": "Ethereum Up or Down - July 10, 7:45PM-7:50PM ET",
+      "source": "https://gamma-api.polymarket.com/markets/2865168"
+    },
+    "2865170": {
+      "active": true,
+      "closed": false,
+      "endDate": "2026-07-10T23:55:00Z",
+      "outcomePrices": [
+        0.5,
+        0.5
+      ],
+      "outcomes": [
+        "Up",
+        "Down"
+      ],
+      "question": "Ethereum Up or Down - July 10, 7:50PM-7:55PM ET",
+      "source": "https://gamma-api.polymarket.com/markets/2865170"
+    },
+    "2865173": {
+      "active": true,
+      "closed": false,
+      "endDate": "2026-07-10T23:55:00Z",
+      "outcomePrices": [
+        0.505,
+        0.495
+      ],
+      "outcomes": [
+        "Up",
+        "Down"
+      ],
+      "question": "Bitcoin Up or Down - July 10, 7:50PM-7:55PM ET",
+      "source": "https://gamma-api.polymarket.com/markets/2865173"
+    },
+    "2865202": {
+      "active": true,
+      "closed": false,
+      "endDate": "2026-07-11T00:00:00Z",
+      "outcomePrices": [
+        0.505,
+        0.495
+      ],
+      "outcomes": [
+        "Up",
+        "Down"
+      ],
+      "question": "Bitcoin Up or Down - July 10, 7:55PM-8:00PM ET",
+      "source": "https://gamma-api.polymarket.com/markets/2865202"
+    },
+    "2865205": {
+      "active": true,
+      "closed": false,
+      "endDate": "2026-07-11T00:00:00Z",
+      "outcomePrices": [
+        0.505,
+        0.495
+      ],
+      "outcomes": [
+        "Up",
+        "Down"
+      ],
+      "question": "Ethereum Up or Down - July 10, 7:55PM-8:00PM ET",
+      "source": "https://gamma-api.polymarket.com/markets/2865205"
+    },
+    "2865255": {
+      "active": true,
+      "closed": false,
+      "endDate": "2026-07-11T04:00:00Z",
+      "outcomePrices": [
+        0.5,
+        0.5
+      ],
+      "outcomes": [
+        "Up",
+        "Down"
+      ],
+      "question": "Bitcoin Up or Down - July 10, 8:00PM-12:00AM ET",
+      "source": "https://gamma-api.polymarket.com/markets/2865255"
+    },
+    "2865259": {
+      "active": true,
+      "closed": false,
+      "endDate": "2026-07-11T00:05:00Z",
+      "outcomePrices": [
+        0.505,
+        0.495
+      ],
+      "outcomes": [
+        "Up",
+        "Down"
+      ],
+      "question": "Bitcoin Up or Down - July 10, 8:00PM-8:05PM ET",
+      "source": "https://gamma-api.polymarket.com/markets/2865259"
+    },
+    "2865265": {
+      "active": true,
+      "closed": false,
+      "endDate": "2026-07-11T00:15:00Z",
+      "outcomePrices": [
+        0.505,
+        0.495
+      ],
+      "outcomes": [
+        "Up",
+        "Down"
+      ],
+      "question": "Bitcoin Up or Down - July 10, 8:00PM-8:15PM ET",
+      "source": "https://gamma-api.polymarket.com/markets/2865265"
+    },
+    "2865266": {
+      "active": true,
+      "closed": false,
+      "endDate": "2026-07-11T04:00:00Z",
+      "outcomePrices": [
+        0.5,
+        0.5
+      ],
+      "outcomes": [
+        "Up",
+        "Down"
+      ],
+      "question": "Ethereum Up or Down - July 10, 8:00PM-12:00AM ET",
+      "source": "https://gamma-api.polymarket.com/markets/2865266"
+    },
+    "2865267": {
+      "active": true,
+      "closed": false,
+      "endDate": "2026-07-11T00:05:00Z",
+      "outcomePrices": [
+        0.505,
+        0.495
+      ],
+      "outcomes": [
+        "Up",
+        "Down"
+      ],
+      "question": "Ethereum Up or Down - July 10, 8:00PM-8:05PM ET",
+      "source": "https://gamma-api.polymarket.com/markets/2865267"
+    },
+    "2865273": {
+      "active": true,
+      "closed": false,
+      "endDate": "2026-07-11T00:15:00Z",
+      "outcomePrices": [
+        0.505,
+        0.495
+      ],
+      "outcomes": [
+        "Up",
+        "Down"
+      ],
+      "question": "Ethereum Up or Down - July 10, 8:00PM-8:15PM ET",
+      "source": "https://gamma-api.polymarket.com/markets/2865273"
+    },
+    "2865280": {
+      "active": true,
+      "closed": false,
+      "endDate": "2026-07-11T00:10:00Z",
+      "outcomePrices": [
+        0.505,
+        0.495
+      ],
+      "outcomes": [
+        "Up",
+        "Down"
+      ],
+      "question": "Bitcoin Up or Down - July 10, 8:05PM-8:10PM ET",
+      "source": "https://gamma-api.polymarket.com/markets/2865280"
+    },
+    "2865284": {
+      "active": true,
+      "closed": false,
+      "endDate": "2026-07-11T00:10:00Z",
+      "outcomePrices": [
+        0.505,
+        0.495
+      ],
+      "outcomes": [
+        "Up",
+        "Down"
+      ],
+      "question": "Ethereum Up or Down - July 10, 8:05PM-8:10PM ET",
+      "source": "https://gamma-api.polymarket.com/markets/2865284"
+    },
+    "2865289": {
+      "active": true,
+      "closed": false,
+      "endDate": "2026-07-11T00:15:00Z",
+      "outcomePrices": [
+        0.505,
+        0.495
+      ],
+      "outcomes": [
+        "Up",
+        "Down"
+      ],
+      "question": "Bitcoin Up or Down - July 10, 8:10PM-8:15PM ET",
+      "source": "https://gamma-api.polymarket.com/markets/2865289"
+    },
+    "2865294": {
+      "active": true,
+      "closed": false,
+      "endDate": "2026-07-11T00:15:00Z",
+      "outcomePrices": [
+        0.505,
+        0.495
+      ],
+      "outcomes": [
+        "Up",
+        "Down"
+      ],
+      "question": "Ethereum Up or Down - July 10, 8:10PM-8:15PM ET",
+      "source": "https://gamma-api.polymarket.com/markets/2865294"
+    }
+  },
+  "pending_markets": [
+    "2865139",
+    "2865142",
+    "2865148",
+    "2865149",
+    "2865162",
+    "2865165",
+    "2865167",
+    "2865168",
+    "2865170",
+    "2865173",
+    "2865202",
+    "2865205",
+    "2865255",
+    "2865259",
+    "2865265",
+    "2865266",
+    "2865267",
+    "2865273",
+    "2865280",
+    "2865284",
+    "2865289",
+    "2865294"
+  ],
+  "status": "completed",
+  "verification_rule": "closed=true and exactly one outcomePrice>=0.999 with all others<=0.001",
+  "verified_outcomes": {
+    "1414846": "Up",
+    "1415215": "Down",
+    "1415275": "Up",
+    "1601813": "Down",
+    "1646147": "Down",
+    "1822773": "Down",
+    "2839826": "Down",
+    "2865122": "Yes",
+    "2865123": "No",
+    "2865124": "No",
+    "2865125": "No",
+    "2865126": "No",
+    "2865127": "No",
+    "2865128": "No",
+    "2865129": "No",
+    "2865130": "No"
+  }
+}

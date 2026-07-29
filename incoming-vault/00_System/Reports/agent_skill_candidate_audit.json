@@ -1,0 +1,345 @@
+{
+  "generated_at": "2026-07-08T16:21:33+00:00",
+  "purpose": "Find workflow notes that may deserve real agent skills",
+  "candidates": [
+    {
+      "path": "00_System\\Workflows\\AI Edge Anthropic Agentic Skills Guide - Jayse Adaptation.md",
+      "note": "AI Edge Anthropic Agentic Skills Guide - Jayse Adaptation",
+      "score": 32,
+      "signals": [
+        "workflow",
+        "runbook",
+        "verification",
+        "checklist",
+        "reusable",
+        "skill",
+        "agent",
+        "Ari",
+        "Claude",
+        "Codex"
+      ]
+    },
+    {
+      "path": "05_Projects\\AI Business Launch Backlog\\Claude Frontier Extraction Runbook - 2026-07-07.md",
+      "note": "Claude Frontier Extraction Runbook - 2026-07-07",
+      "score": 32,
+      "signals": [
+        "workflow",
+        "runbook",
+        "verification",
+        "checklist",
+        "script",
+        "reusable",
+        "skill",
+        "agent",
+        "Claude",
+        "guardrails"
+      ]
+    },
+    {
+      "path": "05_Projects\\AI Business Launch Backlog\\Playlist Assessment - AI Business and Backtesting - 2026-07-07.md",
+      "note": "Playlist Assessment - AI Business and Backtesting - 2026-07-07",
+      "score": 27,
+      "signals": [
+        "workflow",
+        "script",
+        "repeat",
+        "reusable",
+        "skill",
+        "agent",
+        "Ari",
+        "Codex",
+        "guardrails"
+      ]
+    },
+    {
+      "path": "05_Projects\\AI Business Launch Backlog\\BuyerProof AU\\CLAUDE.md",
+      "note": "CLAUDE",
+      "score": 27,
+      "signals": [
+        "workflow",
+        "verification",
+        "checklist",
+        "script",
+        "reusable",
+        "skill",
+        "Claude",
+        "guardrails"
+      ]
+    },
+    {
+      "path": "00_System\\Workflows\\Claude and Ari Second Brain Evolution Loop.md",
+      "note": "Claude and Ari Second Brain Evolution Loop",
+      "score": 21,
+      "signals": [
+        "workflow",
+        "cron",
+        "repeat",
+        "skill",
+        "Ari",
+        "Claude",
+        "guardrails"
+      ]
+    },
+    {
+      "path": "00_System\\Workflows\\Jayse AI Second Brain - 15 Minute Onboarding Demo Runbook.md",
+      "note": "Jayse AI Second Brain - 15 Minute Onboarding Demo Runbook",
+      "score": 21,
+      "signals": [
+        "workflow",
+        "runbook",
+        "checklist",
+        "script",
+        "reusable",
+        "Ari",
+        "guardrails"
+      ]
+    },
+    {
+      "path": "00_System\\Workflows\\AI Quant Trading Floor Workflow.md",
+      "note": "AI Quant Trading Floor Workflow",
+      "score": 20,
+      "signals": [
+        "workflow",
+        "cron",
+        "reusable",
+        "skill",
+        "agent",
+        "guardrails"
+      ]
+    },
+    {
+      "path": "03_Sources\\articles\\fable-obsidian-second-brain-loop.md",
+      "note": "fable-obsidian-second-brain-loop",
+      "score": 20,
+      "signals": [
+        "workflow",
+        "cron",
+        "skill",
+        "agent",
+        "Ari",
+        "Claude",
+        "Codex"
+      ]
+    },
+    {
+      "path": "00_System\\Workflows\\Parallel Agent Research Board Workflow.md",
+      "note": "Parallel Agent Research Board Workflow",
+      "score": 19,
+      "signals": [
+        "workflow",
+        "verification",
+        "reusable",
+        "agent",
+        "Ari",
+        "Claude"
+      ]
+    },
+    {
+      "path": "03_Sources\\youtube\\Hermes Multi-Agent Kanban Workflow - YouTube 1MaFErWfL24.md",
+      "note": "Hermes Multi-Agent Kanban Workflow - YouTube 1MaFErWfL24",
+      "score": 19,
+      "signals": [
+        "workflow",
+        "verification",
+        "reusable",
+        "agent",
+        "Ari",
+        "guardrails"
+      ]
+    },
+    {
+      "path": "05_Projects\\AI Business Launch Backlog\\BuyerProof AU\\Approach Notes\\2026-07-07 - BuyerProof AU opportunity selection.md",
+      "note": "2026-07-07 - BuyerProof AU opportunity selection",
+      "score": 19,
+      "signals": [
+        "workflow",
+        "checklist",
+        "reusable",
+        "skill",
+        "Claude"
+      ]
+    },
+    {
+      "path": "00_System\\Workflows\\Fable Style Self-Evolving Obsidian Loop.md",
+      "note": "Fable Style Self-Evolving Obsidian Loop",
+      "score": 18,
+      "signals": [
+        "workflow",
+        "runbook",
+        "script",
+        "cron",
+        "agent",
+        "Ari",
+        "guardrails"
+      ]
+    },
+    {
+      "path": "03_Sources\\x\\X Bookmark Cap 1 - CyrilXBT AI Second Brain in 15 Minutes.md",
+      "note": "X Bookmark Cap 1 - CyrilXBT AI Second Brain in 15 Minutes",
+      "score": 18,
+      "signals": [
+        "workflow",
+        "runbook",
+        "checklist",
+        "script",
+        "agent",
+        "Ari",
+        "Claude",
+        "Codex",
+        "source-limited penalty",
+        "guardrails"
+      ]
+    },
+    {
+      "path": "05_Projects\\AI Business Launch Backlog\\30-Day AI Business Opportunity Reset - 2026-07-07.md",
+      "note": "30-Day AI Business Opportunity Reset - 2026-07-07",
+      "score": 18,
+      "signals": [
+        "workflow",
+        "checklist",
+        "script",
+        "reusable",
+        "Codex",
+        "guardrails"
+      ]
+    },
+    {
+      "path": "05_Projects\\AI Business Launch Backlog\\AI Business Video Opportunity Extraction - 2026-07-07.md",
+      "note": "AI Business Video Opportunity Extraction - 2026-07-07",
+      "score": 18,
+      "signals": [
+        "checklist",
+        "reusable",
+        "skill",
+        "Claude",
+        "guardrails"
+      ]
+    },
+    {
+      "path": "05_Projects\\AI Business Launch Backlog\\BuyerProof AU\\Implementation Changelog - Claude Frontier Extraction Video - 2026-07-07.md",
+      "note": "Implementation Changelog - Claude Frontier Extraction Video - 2026-07-07",
+      "score": 18,
+      "signals": [
+        "verification",
+        "checklist",
+        "skill",
+        "Ari",
+        "Claude"
+      ]
+    },
+    {
+      "path": "05_Projects\\AI Business Launch Backlog\\Business Context Brain Demo Pack\\Renovator Quote Brain Demo\\Example Dashboard - Renovator Quote Brain.md",
+      "note": "Example Dashboard - Renovator Quote Brain",
+      "score": 18,
+      "signals": [
+        "workflow",
+        "checklist",
+        "reusable",
+        "Claude",
+        "Codex",
+        "guardrails"
+      ]
+    },
+    {
+      "path": "00_System\\Workflows\\Second Brain Agentic Capture Improvements - Captures 1 and 4.md",
+      "note": "Second Brain Agentic Capture Improvements - Captures 1 and 4",
+      "score": 17,
+      "signals": [
+        "workflow",
+        "cron",
+        "agent",
+        "Ari",
+        "Claude",
+        "Codex",
+        "guardrails"
+      ]
+    },
+    {
+      "path": "03_Sources\\x\\Git Tools Install Review - X 2061870611115188297.md",
+      "note": "Git Tools Install Review - X 2061870611115188297",
+      "score": 17,
+      "signals": [
+        "workflow",
+        "cron",
+        "agent",
+        "Ari",
+        "Claude",
+        "Codex",
+        "guardrails"
+      ]
+    },
+    {
+      "path": "03_Sources\\youtube\\Claude Code Money Partner - YouTube iTY8Q449YNQ.md",
+      "note": "Claude Code Money Partner - YouTube iTY8Q449YNQ",
+      "score": 17,
+      "signals": [
+        "workflow",
+        "verification",
+        "agent",
+        "Ari",
+        "Claude",
+        "Codex"
+      ]
+    },
+    {
+      "path": "05_Projects\\AI Business Launch Backlog\\Business Context Brain - Product Concept.md",
+      "note": "Business Context Brain - Product Concept",
+      "score": 17,
+      "signals": [
+        "workflow",
+        "script",
+        "reusable",
+        "agent",
+        "Claude",
+        "Codex"
+      ]
+    },
+    {
+      "path": "05_Projects\\AI Business Launch Backlog\\Tradie AI Receptionist Launch Plan - 2026-07-07.md",
+      "note": "Tradie AI Receptionist Launch Plan - 2026-07-07",
+      "score": 16,
+      "signals": [
+        "workflow",
+        "checklist",
+        "script",
+        "reusable",
+        "guardrails"
+      ]
+    },
+    {
+      "path": "05_Projects\\AI Business Launch Backlog\\BuyerProof AU\\Approach Notes\\2026-07-07 - Durability pass on Week 1 used-car assets.md",
+      "note": "2026-07-07 - Durability pass on Week 1 used-car assets",
+      "score": 16,
+      "signals": [
+        "checklist",
+        "reusable",
+        "skill",
+        "Claude"
+      ]
+    },
+    {
+      "path": "05_Projects\\AI Business Launch Backlog\\BuyerProof AU\\Approach Notes\\2026-07-07 - Property kit v1.1 upgrade pass.md",
+      "note": "2026-07-07 - Property kit v1.1 upgrade pass",
+      "score": 16,
+      "signals": [
+        "checklist",
+        "reusable",
+        "skill",
+        "Claude"
+      ]
+    },
+    {
+      "path": "00_System\\Workflows\\Ari Context Guard and Handoff Workflow.md",
+      "note": "Ari Context Guard and Handoff Workflow",
+      "score": 15,
+      "signals": [
+        "workflow",
+        "verification",
+        "cron",
+        "Ari",
+        "Claude"
+      ]
+    }
+  ]
+}

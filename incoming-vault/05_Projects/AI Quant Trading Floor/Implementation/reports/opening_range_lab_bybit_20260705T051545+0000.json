@@ -1,0 +1,166 @@
+{
+  "generated_at": "2026-07-05T05:15:45+00:00",
+  "strategy": "Opening Range 15m range / 5m confirmation / 1m entry",
+  "source_note": "Opening Range Strategy - 15m 5m 1m YouTube bITIVwysCzM",
+  "research_only": true,
+  "parameters": {
+    "symbols": "SPY,QQQ,NVDA,TSLA",
+    "adapter": "bybit",
+    "market": "auto",
+    "days": 2,
+    "models": "breakout",
+    "start_equity": 5000.0,
+    "risk_pct": 0.01,
+    "rr": 2.0,
+    "fee_bps": 1.0,
+    "slippage_bps": 3.0,
+    "entry_cutoff_minutes": 120,
+    "max_exit_minutes": 390,
+    "stop_buffer_range": 0.25,
+    "bybit_category": "linear",
+    "session_open_time": "09:30",
+    "use_vwap_filter": true,
+    "max_abs_gap_pct": 3.0,
+    "require_prior_day_break": false,
+    "min_volume_displacement": 1.1,
+    "volume_baseline_minutes": 30
+  },
+  "results": [
+    {
+      "symbol": "SPY",
+      "adapter": "bybit",
+      "market": "equity",
+      "candles": 2880,
+      "sessions": 1,
+      "models": {
+        "breakout": {
+          "metrics": {
+            "final_equity": 5000.0,
+            "return_pct": 0.0,
+            "trades": 0,
+            "win_rate_pct": 0.0,
+            "profit_factor": 0.0,
+            "avg_r": 0.0,
+            "total_r": 0.0,
+            "max_drawdown_pct": 0.0,
+            "sharpe_per_trade": 0.0,
+            "days_observed": 1
+          },
+          "trades": []
+        }
+      }
+    },
+    {
+      "symbol": "QQQ",
+      "adapter": "bybit",
+      "market": "equity",
+      "candles": 2880,
+      "sessions": 1,
+      "models": {
+        "breakout": {
+          "metrics": {
+            "final_equity": 5023.6,
+            "return_pct": 0.47,
+            "trades": 1,
+            "win_rate_pct": 100.0,
+            "profit_factor": 999.0,
+            "avg_r": 0.4721,
+            "total_r": 0.4721,
+            "max_drawdown_pct": 0.0,
+            "sharpe_per_trade": 0.0,
+            "days_observed": 1
+          },
+          "trades": [
+            {
+              "symbol": "QQQ",
+              "adapter": "bybit",
+              "model": "breakout",
+              "side": "short",
+              "session_date": "2026-07-03",
+              "confirm_time": "2026-07-03T10:10-04:00",
+              "entry_time": "2026-07-03T10:15-04:00",
+              "exit_time": "2026-07-03T16:00-04:00",
+              "entry": 722.23,
+              "stop": 723.21,
+              "target": 720.27,
+              "exit": 721.19,
+              "exit_reason": "end_of_data",
+              "r_multiple": 0.4721,
+              "pnl": 23.6,
+              "equity_after": 5023.6,
+              "notes": "ORH=723.46000, ORL=722.48000, confirm_close=722.23000, vwap=723.00311, gap_pct=0.000, vol_disp=1.882, prior_high=None, prior_low=None"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "symbol": "NVDA",
+      "adapter": "bybit",
+      "market": "equity",
+      "candles": 2880,
+      "sessions": 1,
+      "models": {
+        "breakout": {
+          "metrics": {
+            "final_equity": 4925.39,
+            "return_pct": -1.49,
+            "trades": 1,
+            "win_rate_pct": 0.0,
+            "profit_factor": 0.0,
+            "avg_r": -1.4923,
+            "total_r": -1.4923,
+            "max_drawdown_pct": -1.49,
+            "sharpe_per_trade": 0.0,
+            "days_observed": 1
+          },
+          "trades": [
+            {
+              "symbol": "NVDA",
+              "adapter": "bybit",
+              "model": "breakout",
+              "side": "short",
+              "session_date": "2026-07-03",
+              "confirm_time": "2026-07-03T10:10-04:00",
+              "entry_time": "2026-07-03T10:15-04:00",
+              "exit_time": "2026-07-03T11:01-04:00",
+              "entry": 196.74,
+              "stop": 197.06,
+              "target": 196.1,
+              "exit": 197.06,
+              "exit_reason": "stop",
+              "r_multiple": -1.4923,
+              "pnl": -74.61,
+              "equity_after": 4925.39,
+              "notes": "ORH=197.10000, ORL=196.78000, confirm_close=196.74000, vwap=196.95421, gap_pct=0.000, vol_disp=5.102, prior_high=None, prior_low=None"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "symbol": "TSLA",
+      "adapter": "bybit",
+      "market": "equity",
+      "candles": 2880,
+      "sessions": 1,
+      "models": {
+        "breakout": {
+          "metrics": {
+            "final_equity": 5000.0,
+            "return_pct": 0.0,
+            "trades": 0,
+            "win_rate_pct": 0.0,
+            "profit_factor": 0.0,
+            "avg_r": 0.0,
+            "total_r": 0.0,
+            "max_drawdown_pct": 0.0,
+            "sharpe_per_trade": 0.0,
+            "days_observed": 1
+          },
+          "trades": []
+        }
+      }
+    }
+  ]
+}

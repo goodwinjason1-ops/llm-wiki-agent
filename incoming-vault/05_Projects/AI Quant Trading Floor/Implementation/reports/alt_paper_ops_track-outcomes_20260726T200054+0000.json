@@ -1,0 +1,23 @@
+{
+  "ts": "2026-07-26T20:00:53+00:00",
+  "mode": "paper-only read-only operations",
+  "track_outcomes": {
+    "outcome_ledger": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Implementation\\ledgers\\polymarket_paper_outcomes.jsonl",
+    "new_outcomes": [
+      {
+        "signal_id": "dfea27c0e6230c6a",
+        "checked_at": "2026-07-26T20:00:54+00:00",
+        "resolution_status": "resolved_approx",
+        "spot_at_check": 1914.21,
+        "target": 1700.0,
+        "yes_won": true,
+        "candidate_side": "YES",
+        "unit_paper_pnl": 0.9955,
+        "reason": "approx spot-at-check for expired above/below market",
+        "question": "Will the price of Ethereum be between $1,700 and $1,800 on July 26?"
+      }
+    ],
+    "new_count": 1,
+    "signals_total": 172
+  }
+}

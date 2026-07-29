@@ -1,0 +1,107 @@
+{
+  "board_provenance_consistency": {
+    "boards_embed_provenance_hash": false,
+    "funding_board_references_match": true,
+    "manifest_sha256": "3c579cf02c0d0a3ba6be2394c4fb8a67e4d41513e42a0eb2e9b06674f2d7c0f1",
+    "note": "Provenance verified: manifest SHA-256 matches both board provenance hashes and checkpoint A ledger record. No drift detected.",
+    "overall_consistent": true,
+    "trend_board_references_match": true
+  },
+  "changes_since_last_run": {
+    "consecutive_idle_runs": 10,
+    "funding_board_changed": false,
+    "last_scan_timestamp": "2026-07-16T11:30:39+00:00",
+    "ledger_updated": false,
+    "manifest_changed": false,
+    "new_daily_scan_files": false,
+    "notable_findings": [
+      "Universe/trend/funding boards unchanged since 2026-07-16T11:30:39Z (10th consecutive idle run)",
+      "Provenance chain intact -- manifest SHA-256 matches checkpoint A ledger record",
+      "No new ledger entries since last run",
+      "Scan pipeline appears idle -- no new daily scan files since 2026-07-16",
+      "No new edges promoted; all 12 deliverables remain partial/blocked/queued",
+      "All boards classified as observation/candidate -- no trade language detected",
+      "Next_gate instructions present on all 20 candidate events"
+    ],
+    "trend_board_changed": false
+  },
+  "control_ledger": {
+    "deliverable_summary": {
+      "blocked": 1,
+      "partial": 7,
+      "queued": 1,
+      "verified_complete": 4
+    },
+    "deliverables_total": 12,
+    "latest_checkpoint": "Checkpoint A 2026-07-16 verified-complete",
+    "ledger_file": "QTF Verification and Delivery Control - 2026-07-15.md",
+    "ledger_new_entries": 0,
+    "ledger_updated_since_last_run": false,
+    "next_unmet_gates": "Paper-forward agreement, jitter robustness, executed funding payments, L2 historical data",
+    "recent_entries_since_last_run": []
+  },
+  "decision": {
+    "action": "hold_zero_allocation",
+    "no_allocations": true,
+    "no_contacts": true,
+    "no_credentials": true,
+    "no_orders": true,
+    "paper_only_enforced": true,
+    "rationale": "All canonical boards are observation/candidate classification. No edge has passed promotion gates. Universe unchanged since 2026-07-16. All 12 deliverables remain partial/blocked/queued. No new evidence since last run."
+  },
+  "funding_board": {
+    "classification": "observation",
+    "file": "funding_board_20260716T113039Z.json",
+    "negative_extreme_count": 10,
+    "positive_extreme_count": 10,
+    "provenance_manifest_matches": true,
+    "sha256": "255a9b9e341ec8ed0a0cab8ef494cf39f1637ddf3dfe79780e5e1fe678e71206",
+    "total_candidate_events": 20
+  },
+  "generated_at": "2026-07-19T06:00:34.903943+00:00",
+  "manifest": {
+    "assets_total": 50,
+    "controls": [
+      "BTC",
+      "ETH",
+      "SOL"
+    ],
+    "file": "universe_manifest_20260716T113039Z.json",
+    "non_controls_count": 47,
+    "schema_version": "qtf-research-universe-v1",
+    "sha256": "3c579cf02c0d0a3ba6be2394c4fb8a67e4d41513e42a0eb2e9b06674f2d7c0f1",
+    "shortfall": 0,
+    "status": "ok"
+  },
+  "report_type": "edge_worker_operational",
+  "timestamp_tag": "20260719T060034Z",
+  "trend_board": {
+    "classification": "observation",
+    "eligible_count": 30,
+    "file": "trend_board_20260716T113039Z.json",
+    "negative_24h_count": 10,
+    "positive_24h_count": 7,
+    "provenance_manifest_matches": true,
+    "sha256": "287dda77437dcc9b07b961585b2dd080676148edf23aa63d8d0ea04dff544032",
+    "top_negative": "LIT",
+    "top_negative_pct": -7.75,
+    "top_positive": "ONDO",
+    "top_positive_pct": 15.74
+  },
+  "verification_checks": {
+    "47_non_controls_verified": true,
+    "all_boards_observation_or_candidate": true,
+    "boards_reference_correct_manifest": true,
+    "btc_eth_sol_tagged_as_controls": true,
+    "checkpoint_a_verified_complete": true,
+    "control_assets_present": true,
+    "manifest_hash_matches_ledger": true,
+    "manifest_schema_valid": true,
+    "next_gate_instructions_present": true,
+    "no_execution_side_effects": true,
+    "no_trade_language_detected": true,
+    "paper_only_enforced": true,
+    "provenance_chain_intact": true
+  },
+  "worker": "jayse-paper-only-quant-floor"
+}

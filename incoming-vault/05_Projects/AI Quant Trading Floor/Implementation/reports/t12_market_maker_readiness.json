@@ -1,0 +1,457 @@
+{
+  "experiment_id": "T12-MARKET-MAKER-READINESS",
+  "collected_at_utc": "2026-07-17T21:35:24+00:00",
+  "scope": "read-only public data probe for market-making sleeve (QTF-V08)",
+  "venue": "Bybit (spot)",
+  "symbols_tested": [
+    "BTCUSDT",
+    "ETHUSDT",
+    "SOLUSDT"
+  ],
+  "data_sources": {
+    "kline": "https://api.bybit.com/v5/market/kline",
+    "orderbook": "https://api.bybit.com/v5/market/orderbook",
+    "recent_trades": "https://api.bybit.com/v5/market/recent-trade"
+  },
+  "results": {
+    "BTCUSDT": {
+      "kline": {
+        "spot": {
+          "retCode": 0,
+          "rows_returned": 5,
+          "row_format": "array",
+          "field_names": [
+            "ts",
+            "open",
+            "high",
+            "low",
+            "close",
+            "volume",
+            "turnover"
+          ],
+          "sample_row": "['1784323800000', '64143.4', '64155.6', '64104.2', '64104.6', '9.796362', '628221.4258886']"
+        },
+        "linear": {
+          "retCode": 0,
+          "rows_returned": 5,
+          "row_format": "array",
+          "field_names": [
+            "ts",
+            "open",
+            "high",
+            "low",
+            "close",
+            "volume",
+            "turnover"
+          ],
+          "sample_row": "['1784323800000', '64111.8', '64128', '64073', '64073', '47.685', '3056541.1615']"
+        }
+      },
+      "orderbook": {
+        "endpoint": "orderbook (spot L2)",
+        "retCode": 0,
+        "asks_depth": 10,
+        "bids_depth": 10,
+        "ask_shape": {
+          "type": "list",
+          "length": 2,
+          "sample": [
+            "64104.7",
+            "0.527965"
+          ]
+        },
+        "bid_shape": {
+          "type": "list",
+          "length": 2,
+          "sample": [
+            "64104.6",
+            "0.3141"
+          ]
+        },
+        "sample_ask": [
+          "64104.7",
+          "0.527965"
+        ],
+        "sample_bid": [
+          "64104.6",
+          "0.3141"
+        ]
+      },
+      "recent_trades": {
+        "endpoint": "recent-trade (spot ticks)",
+        "retCode": 0,
+        "rows_returned": 5,
+        "fields_available": [
+          "execId",
+          "isBlockTrade",
+          "isRPITrade",
+          "price",
+          "seq",
+          "side",
+          "size",
+          "symbol",
+          "time"
+        ],
+        "sample_row": {
+          "execId": "2290000001180159802",
+          "symbol": "BTCUSDT",
+          "price": "64104.7",
+          "size": "0.000044",
+          "side": "Buy",
+          "time": "1784324116787",
+          "isBlockTrade": false,
+          "isRPITrade": false,
+          "seq": "111611871067"
+        }
+      },
+      "adverse_selection": {
+        "fill_price_proxy_available": true,
+        "subsequent_movement_data_available": true,
+        "order_book_depth_available": true,
+        "trade_direction_available": true,
+        "adverse_selection_feasible": false,
+        "gap_analysis": {
+          "missing_fill_conditioning": "Recent-trade midpoint gives approximate fill price but not the exact limit-order fill level; adverse-selection requires knowing whether the fill was at bid, ask, or mid.",
+          "missing_inventory_tracking": "No historical order-placement/removal data from public API — cannot reconstruct inventory buildup from submitted but unfilled resting orders.",
+          "missing_latency_data": "REST polling introduces unknown latency between OB snapshot and fill; adverse-selection measurement requires sub-second timing."
+        }
+      },
+      "inventory_economics": {
+        "order_book_evolution_available": false,
+        "fill_execution_data_available": true,
+        "price_impact_measurement_possible": true,
+        "inventory_economics_feasible": false,
+        "gap_analysis": {
+          "blocking_factor": "Historical L2 order-book snapshots at sufficient frequency are not available from Bybit public REST API. The orderbook endpoint returns a point-in-time snapshot, not a time series. Without historical book evolution, we cannot track how resting inventory accumulates and decays.",
+          "required_data": "Time-series of L2 order-book states (at least every few seconds) with price, quantity, and update timestamps. This is only available via WebSocket replay (which requires subscription) or a purchased historical data feed.",
+          "alternative_approach": "Use tick-level trade data as a proxy for inventory changes (assuming trades come from market makers), but this conflates maker/taker flows and cannot distinguish between inventory accumulation and simple price discovery."
+        }
+      }
+    },
+    "ETHUSDT": {
+      "kline": {
+        "spot": {
+          "retCode": 0,
+          "rows_returned": 5,
+          "row_format": "array",
+          "field_names": [
+            "ts",
+            "open",
+            "high",
+            "low",
+            "close",
+            "volume",
+            "turnover"
+          ],
+          "sample_row": "['1784323800000', '1844.89', '1844.89', '1841.58', '1841.58', '137.59165', '253494.438839']"
+        },
+        "linear": {
+          "retCode": 0,
+          "rows_returned": 5,
+          "row_format": "array",
+          "field_names": [
+            "ts",
+            "open",
+            "high",
+            "low",
+            "close",
+            "volume",
+            "turnover"
+          ],
+          "sample_row": "['1784323800000', '1843.93', '1843.93', '1840.6', '1840.6', '1237.44', '2278672.7736']"
+        }
+      },
+      "orderbook": {
+        "endpoint": "orderbook (spot L2)",
+        "retCode": 0,
+        "asks_depth": 10,
+        "bids_depth": 10,
+        "ask_shape": {
+          "type": "list",
+          "length": 2,
+          "sample": [
+            "1841.58",
+            "7.8789"
+          ]
+        },
+        "bid_shape": {
+          "type": "list",
+          "length": 2,
+          "sample": [
+            "1841.57",
+            "2.14198"
+          ]
+        },
+        "sample_ask": [
+          "1841.58",
+          "7.8789"
+        ],
+        "sample_bid": [
+          "1841.57",
+          "2.14198"
+        ]
+      },
+      "recent_trades": {
+        "endpoint": "recent-trade (spot ticks)",
+        "retCode": 0,
+        "rows_returned": 5,
+        "fields_available": [
+          "execId",
+          "isBlockTrade",
+          "isRPITrade",
+          "price",
+          "seq",
+          "side",
+          "size",
+          "symbol",
+          "time"
+        ],
+        "sample_row": {
+          "execId": "2280000001731471292",
+          "symbol": "ETHUSDT",
+          "price": "1841.58",
+          "size": "0.03591",
+          "side": "Buy",
+          "time": "1784324118246",
+          "isBlockTrade": false,
+          "isRPITrade": false,
+          "seq": "177048382540"
+        }
+      },
+      "adverse_selection": {
+        "fill_price_proxy_available": true,
+        "subsequent_movement_data_available": true,
+        "order_book_depth_available": true,
+        "trade_direction_available": true,
+        "adverse_selection_feasible": false,
+        "gap_analysis": {
+          "missing_fill_conditioning": "Recent-trade midpoint gives approximate fill price but not the exact limit-order fill level; adverse-selection requires knowing whether the fill was at bid, ask, or mid.",
+          "missing_inventory_tracking": "No historical order-placement/removal data from public API — cannot reconstruct inventory buildup from submitted but unfilled resting orders.",
+          "missing_latency_data": "REST polling introduces unknown latency between OB snapshot and fill; adverse-selection measurement requires sub-second timing."
+        }
+      },
+      "inventory_economics": {
+        "order_book_evolution_available": false,
+        "fill_execution_data_available": true,
+        "price_impact_measurement_possible": true,
+        "inventory_economics_feasible": false,
+        "gap_analysis": {
+          "blocking_factor": "Historical L2 order-book snapshots at sufficient frequency are not available from Bybit public REST API. The orderbook endpoint returns a point-in-time snapshot, not a time series. Without historical book evolution, we cannot track how resting inventory accumulates and decays.",
+          "required_data": "Time-series of L2 order-book states (at least every few seconds) with price, quantity, and update timestamps. This is only available via WebSocket replay (which requires subscription) or a purchased historical data feed.",
+          "alternative_approach": "Use tick-level trade data as a proxy for inventory changes (assuming trades come from market makers), but this conflates maker/taker flows and cannot distinguish between inventory accumulation and simple price discovery."
+        }
+      }
+    },
+    "SOLUSDT": {
+      "kline": {
+        "spot": {
+          "retCode": 0,
+          "rows_returned": 5,
+          "row_format": "array",
+          "field_names": [
+            "ts",
+            "open",
+            "high",
+            "low",
+            "close",
+            "volume",
+            "turnover"
+          ],
+          "sample_row": "['1784323800000', '75.14', '75.14', '75', '75', '490.4031', '36804.377668']"
+        },
+        "linear": {
+          "retCode": 0,
+          "rows_returned": 5,
+          "row_format": "array",
+          "field_names": [
+            "ts",
+            "open",
+            "high",
+            "low",
+            "close",
+            "volume",
+            "turnover"
+          ],
+          "sample_row": "['1784323800000', '75.1', '75.1', '74.95', '74.96', '12771.7', '957746.983']"
+        }
+      },
+      "orderbook": {
+        "endpoint": "orderbook (spot L2)",
+        "retCode": 0,
+        "asks_depth": 10,
+        "bids_depth": 10,
+        "ask_shape": {
+          "type": "list",
+          "length": 2,
+          "sample": [
+            "75.01",
+            "133.6992"
+          ]
+        },
+        "bid_shape": {
+          "type": "list",
+          "length": 2,
+          "sample": [
+            "75",
+            "80.606"
+          ]
+        },
+        "sample_ask": [
+          "75.01",
+          "133.6992"
+        ],
+        "sample_bid": [
+          "75",
+          "80.606"
+        ]
+      },
+      "recent_trades": {
+        "endpoint": "recent-trade (spot ticks)",
+        "retCode": 0,
+        "rows_returned": 5,
+        "fields_available": [
+          "execId",
+          "isBlockTrade",
+          "isRPITrade",
+          "price",
+          "seq",
+          "side",
+          "size",
+          "symbol",
+          "time"
+        ],
+        "sample_row": {
+          "execId": "2210000001544575669",
+          "symbol": "SOLUSDT",
+          "price": "75.01",
+          "size": "0.2799",
+          "side": "Buy",
+          "time": "1784324122266",
+          "isBlockTrade": false,
+          "isRPITrade": false,
+          "seq": "155737756138"
+        }
+      },
+      "adverse_selection": {
+        "fill_price_proxy_available": true,
+        "subsequent_movement_data_available": true,
+        "order_book_depth_available": true,
+        "trade_direction_available": true,
+        "adverse_selection_feasible": false,
+        "gap_analysis": {
+          "missing_fill_conditioning": "Recent-trade midpoint gives approximate fill price but not the exact limit-order fill level; adverse-selection requires knowing whether the fill was at bid, ask, or mid.",
+          "missing_inventory_tracking": "No historical order-placement/removal data from public API — cannot reconstruct inventory buildup from submitted but unfilled resting orders.",
+          "missing_latency_data": "REST polling introduces unknown latency between OB snapshot and fill; adverse-selection measurement requires sub-second timing."
+        }
+      },
+      "inventory_economics": {
+        "order_book_evolution_available": false,
+        "fill_execution_data_available": true,
+        "price_impact_measurement_possible": true,
+        "inventory_economics_feasible": false,
+        "gap_analysis": {
+          "blocking_factor": "Historical L2 order-book snapshots at sufficient frequency are not available from Bybit public REST API. The orderbook endpoint returns a point-in-time snapshot, not a time series. Without historical book evolution, we cannot track how resting inventory accumulates and decays.",
+          "required_data": "Time-series of L2 order-book states (at least every few seconds) with price, quantity, and update timestamps. This is only available via WebSocket replay (which requires subscription) or a purchased historical data feed.",
+          "alternative_approach": "Use tick-level trade data as a proxy for inventory changes (assuming trades come from market makers), but this conflates maker/taker flows and cannot distinguish between inventory accumulation and simple price discovery."
+        }
+      }
+    }
+  },
+  "blocking_factors": [
+    {
+      "symbol": "BTCUSDT",
+      "factor": "missing_fill_conditioning",
+      "detail": "Recent-trade midpoint gives approximate fill price but not the exact limit-order fill level; adverse-selection requires knowing whether the fill was at bid, ask, or mid."
+    },
+    {
+      "symbol": "BTCUSDT",
+      "factor": "missing_inventory_tracking",
+      "detail": "No historical order-placement/removal data from public API — cannot reconstruct inventory buildup from submitted but unfilled resting orders."
+    },
+    {
+      "symbol": "BTCUSDT",
+      "factor": "missing_latency_data",
+      "detail": "REST polling introduces unknown latency between OB snapshot and fill; adverse-selection measurement requires sub-second timing."
+    },
+    {
+      "symbol": "BTCUSDT",
+      "factor": "blocking_factor",
+      "detail": "Historical L2 order-book snapshots at sufficient frequency are not available from Bybit public REST API. The orderbook endpoint returns a point-in-time snapshot, not a time series. Without historical book evolution, we cannot track how resting inventory accumulates and decays."
+    },
+    {
+      "symbol": "BTCUSDT",
+      "factor": "required_data",
+      "detail": "Time-series of L2 order-book states (at least every few seconds) with price, quantity, and update timestamps. This is only available via WebSocket replay (which requires subscription) or a purchased historical data feed."
+    },
+    {
+      "symbol": "BTCUSDT",
+      "factor": "alternative_approach",
+      "detail": "Use tick-level trade data as a proxy for inventory changes (assuming trades come from market makers), but this conflates maker/taker flows and cannot distinguish between inventory accumulation and simple price discovery."
+    },
+    {
+      "symbol": "ETHUSDT",
+      "factor": "missing_fill_conditioning",
+      "detail": "Recent-trade midpoint gives approximate fill price but not the exact limit-order fill level; adverse-selection requires knowing whether the fill was at bid, ask, or mid."
+    },
+    {
+      "symbol": "ETHUSDT",
+      "factor": "missing_inventory_tracking",
+      "detail": "No historical order-placement/removal data from public API — cannot reconstruct inventory buildup from submitted but unfilled resting orders."
+    },
+    {
+      "symbol": "ETHUSDT",
+      "factor": "missing_latency_data",
+      "detail": "REST polling introduces unknown latency between OB snapshot and fill; adverse-selection measurement requires sub-second timing."
+    },
+    {
+      "symbol": "ETHUSDT",
+      "factor": "blocking_factor",
+      "detail": "Historical L2 order-book snapshots at sufficient frequency are not available from Bybit public REST API. The orderbook endpoint returns a point-in-time snapshot, not a time series. Without historical book evolution, we cannot track how resting inventory accumulates and decays."
+    },
+    {
+      "symbol": "ETHUSDT",
+      "factor": "required_data",
+      "detail": "Time-series of L2 order-book states (at least every few seconds) with price, quantity, and update timestamps. This is only available via WebSocket replay (which requires subscription) or a purchased historical data feed."
+    },
+    {
+      "symbol": "ETHUSDT",
+      "factor": "alternative_approach",
+      "detail": "Use tick-level trade data as a proxy for inventory changes (assuming trades come from market makers), but this conflates maker/taker flows and cannot distinguish between inventory accumulation and simple price discovery."
+    },
+    {
+      "symbol": "SOLUSDT",
+      "factor": "missing_fill_conditioning",
+      "detail": "Recent-trade midpoint gives approximate fill price but not the exact limit-order fill level; adverse-selection requires knowing whether the fill was at bid, ask, or mid."
+    },
+    {
+      "symbol": "SOLUSDT",
+      "factor": "missing_inventory_tracking",
+      "detail": "No historical order-placement/removal data from public API — cannot reconstruct inventory buildup from submitted but unfilled resting orders."
+    },
+    {
+      "symbol": "SOLUSDT",
+      "factor": "missing_latency_data",
+      "detail": "REST polling introduces unknown latency between OB snapshot and fill; adverse-selection measurement requires sub-second timing."
+    },
+    {
+      "symbol": "SOLUSDT",
+      "factor": "blocking_factor",
+      "detail": "Historical L2 order-book snapshots at sufficient frequency are not available from Bybit public REST API. The orderbook endpoint returns a point-in-time snapshot, not a time series. Without historical book evolution, we cannot track how resting inventory accumulates and decays."
+    },
+    {
+      "symbol": "SOLUSDT",
+      "factor": "required_data",
+      "detail": "Time-series of L2 order-book states (at least every few seconds) with price, quantity, and update timestamps. This is only available via WebSocket replay (which requires subscription) or a purchased historical data feed."
+    },
+    {
+      "symbol": "SOLUSDT",
+      "factor": "alternative_approach",
+      "detail": "Use tick-level trade data as a proxy for inventory changes (assuming trades come from market makers), but this conflates maker/taker flows and cannot distinguish between inventory accumulation and simple price discovery."
+    }
+  ],
+  "decision": "blocked",
+  "interpretation": "Neither adverse-selection nor inventory-economics can be supported by public Bybit REST data alone. The market-making sleeve (QTF-V08) cannot proceed without historical L2 book time-series or WebSocket replay access.",
+  "next_unblocked_component": "Obtain historical L2 order-book snapshots (WebSocket replay service or purchased data feed) to support inventory-economics analysis. Until then, the market-making sleeve remains blocked.",
+  "promotion": "blocked — no paper alerts, no live execution",
+  "sha256": "c36b5e71fb8eba3d2ef53bef82fef57d92ad10ebcaaf78872c321574547c25a4"
+}

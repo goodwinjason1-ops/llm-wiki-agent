@@ -25,3 +25,14 @@ tools/galaxy/galaxy.json
 *.bak
 __pycache__/
 *.pyc
+
+# Imported vault: build artefacts and sync metadata, not knowledge
+incoming-vault/**/.venv/
+incoming-vault/**/node_modules/
+incoming-vault/**/__pycache__/
+incoming-vault/**/.pytest_cache/
+incoming-vault/**/.mypy_cache/
+incoming-vault/**/.ruff_cache/
+incoming-vault/**/*.pyc
+incoming-vault/.stfolder/
+incoming-vault/.stversions/

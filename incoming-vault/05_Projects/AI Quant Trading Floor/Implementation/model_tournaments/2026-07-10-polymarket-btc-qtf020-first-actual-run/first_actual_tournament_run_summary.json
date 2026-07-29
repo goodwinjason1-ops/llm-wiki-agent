@@ -1,0 +1,83 @@
+{
+  "aggregation_status": "ranked",
+  "rankings": [
+    {
+      "decision": "research-only",
+      "issues": [],
+      "metrics": {
+        "candidate_rows": 116,
+        "decision_note": "research-only",
+        "evidence_level": "scanner-contract-only",
+        "fees_included": true,
+        "holdout_used": true,
+        "lookahead_controls": "candidate generation uses historical scanner rows only; no resolved outcomes used for parameter selection in this seed layer",
+        "max_drawdown_pct": 0.0,
+        "net_return_pct": 0.0,
+        "sharpe": null,
+        "slippage_included": true,
+        "snapshot_rows": 110,
+        "status": "completed",
+        "strategy_id": "QTF020-FRONTIER-PM-E03-E04-HYBRID",
+        "trade_count": 116
+      },
+      "model": "frontier_candidate",
+      "rationale": "Most complete thesis, but current evidence is scanner-level only and lacks calibrated outcomes/fill replay.",
+      "reviewer": "qtf020-seed-review-layer",
+      "score": 47.0,
+      "validation_status": "valid"
+    },
+    {
+      "decision": "research-only",
+      "issues": [],
+      "metrics": {
+        "candidate_rows": 116,
+        "decision_note": "research-only",
+        "evidence_level": "scanner-contract-only",
+        "fees_included": true,
+        "holdout_used": true,
+        "lookahead_controls": "candidate generation uses historical scanner rows only; no resolved outcomes used for parameter selection in this seed layer",
+        "max_drawdown_pct": 0.0,
+        "net_return_pct": 0.0,
+        "sharpe": null,
+        "slippage_included": true,
+        "snapshot_rows": 110,
+        "status": "completed",
+        "strategy_id": "QTF020-CONTROL-PM-E04-FRESH-WINDOW",
+        "trade_count": 55
+      },
+      "model": "control_candidate",
+      "rationale": "Simpler and less contaminated, but narrower and still lacks fill/outcome evidence.",
+      "reviewer": "qtf020-seed-review-layer",
+      "score": 39.0,
+      "validation_status": "valid"
+    },
+    {
+      "decision": "reject-archive",
+      "issues": [],
+      "metrics": {
+        "candidate_rows": 116,
+        "decision_note": "reject-archive",
+        "evidence_level": "scanner-contract-only",
+        "fees_included": true,
+        "holdout_used": true,
+        "lookahead_controls": "candidate generation uses historical scanner rows only; no resolved outcomes used for parameter selection in this seed layer",
+        "max_drawdown_pct": 0.0,
+        "net_return_pct": 0.0,
+        "sharpe": null,
+        "slippage_included": true,
+        "snapshot_rows": 110,
+        "status": "completed",
+        "strategy_id": "QTF020-BASELINE-OBSERVE-ONLY",
+        "trade_count": 0
+      },
+      "model": "baseline_simple",
+      "rationale": "Useful control, not a trading strategy.",
+      "reviewer": "qtf020-seed-review-layer",
+      "score": 25.0,
+      "validation_status": "valid"
+    }
+  ],
+  "status": "completed",
+  "tournament_dir": "model_tournaments\\2026-07-10-polymarket-btc-qtf020-first-actual-run",
+  "validation_status": "valid"
+}

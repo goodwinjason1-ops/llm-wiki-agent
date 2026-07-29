@@ -1,0 +1,11 @@
+{
+  "ts": "2026-07-21T03:20:31.649557+00:00",
+  "source": "defillama_unlocks_api",
+  "threshold_pct": 2.0,
+  "lookahead_days": 28,
+  "total_upcoming": 0,
+  "high_impact_count": 0,
+  "high_impact": [],
+  "all_upcoming": [],
+  "decision": "hold_zero_allocation"
+}

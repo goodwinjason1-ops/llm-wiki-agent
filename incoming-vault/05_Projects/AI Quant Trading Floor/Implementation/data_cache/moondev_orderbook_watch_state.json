@@ -1,0 +1,10 @@
+{
+  "decision": "reject_or_revise: order-book replay did not confirm candle proxy",
+  "counts": {
+    "BTCUSDT": 923,
+    "ETHUSDT": 923,
+    "SOLUSDT": 922
+  },
+  "last_report": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Implementation\\reports\\moondev_orderbook_gate_20260707T133758+0000.json",
+  "notified_300": true
+}

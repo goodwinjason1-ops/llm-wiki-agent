@@ -1,0 +1,113 @@
+{
+  "report_type": "edge_worker_operational",
+  "worker": "jayse-paper-only-quant-floor",
+  "generated_at": "2026-07-19T13:00:00.000000+00:00",
+  "timestamp_tag": "20260719T130000Z",
+  "manifest": {
+    "file": "universe_manifest_20260716T113039Z.json",
+    "sha256": "3c579cf02c0d0a3ba6be2394c4fb8a67e4d41513e42a0eb2e9b06674f2d7c0f1",
+    "assets_total": 50,
+    "controls": [
+      "BTC",
+      "ETH",
+      "SOL"
+    ],
+    "non_controls_count": 47,
+    "shortfall": 0,
+    "schema_version": "qtf-research-universe-v1",
+    "status": "ok"
+  },
+  "trend_board": {
+    "file": "trend_board_20260716T113039Z.json",
+    "sha256": "287dda77437dcc9b07b961585b2dd080676148edf23aa63d8d0ea04dff544032",
+    "classification": "observation",
+    "eligible_count": 30,
+    "positive_24h_count": 7,
+    "negative_24h_count": 10,
+    "top_positive": "ONDO",
+    "top_positive_pct": 15.74,
+    "top_negative": "LIT",
+    "top_negative_pct": -7.75,
+    "provenance_manifest_matches": true
+  },
+  "funding_board": {
+    "file": "funding_board_20260716T113039Z.json",
+    "sha256": "255a9b9e341ec8ed0a0cab8ef494cf39f1637ddf3dfe79780e5e1fe678e71206",
+    "classification": "observation",
+    "total_candidate_events": 20,
+    "positive_extreme_count": 10,
+    "negative_extreme_count": 10,
+    "provenance_manifest_matches": true
+  },
+  "board_provenance_consistency": {
+    "manifest_sha256": "3c579cf02c0d0a3ba6be2394c4fb8a67e4d41513e42a0eb2e9b06674f2d7c0f1",
+    "trend_board_references_match": true,
+    "funding_board_references_match": true,
+    "boards_embed_provenance_hash": false,
+    "overall_consistent": true,
+    "note": "Provenance verified: manifest SHA-256 matches both board provenance hashes and checkpoint A ledger record. No drift detected."
+  },
+  "control_ledger": {
+    "ledger_file": "QTF Verification and Delivery Control - 2026-07-15.md",
+    "latest_checkpoint": "Checkpoint A 2026-07-16 verified-complete",
+    "deliverables_total": 12,
+    "deliverable_summary": {
+      "verified_complete": 4,
+      "partial": 7,
+      "blocked": 1,
+      "queued": 1
+    },
+    "recent_entries_since_last_run": [
+      "QTF-V07 Costed Funding (2026-07-18): jitter survival 15.4% FAILED -- edge is price-reversal not funding-carry",
+      "QTF-T13 Calibration (2026-07-18): no active price discovery in Polymarket short-window markets",
+      "T12 Market-Maker Readiness (2026-07-18): documented block -- requires historical L2 book data",
+      "QTF-V04B Relaxed-Regime Jitter (2026-07-18): 6,561 combinations tested, robustness gate FAILED at 38.5% survival"
+    ],
+    "ledger_updated_since_last_run": false,
+    "ledger_new_entries": 0,
+    "next_unmet_gates": "Paper-forward agreement, jitter robustness, executed funding payments, L2 historical data"
+  },
+  "decision": {
+    "action": "hold_zero_allocation",
+    "rationale": "All canonical boards are observation/candidate classification. No edge has passed promotion gates. Universe unchanged since 2026-07-16. All 12 deliverables remain partial/blocked/queued. No new evidence since last run.",
+    "no_orders": true,
+    "no_credentials": true,
+    "no_allocations": true,
+    "no_contacts": true,
+    "paper_only_enforced": true
+  },
+  "verification_checks": {
+    "manifest_schema_valid": true,
+    "boards_reference_correct_manifest": true,
+    "manifest_hash_matches_ledger": true,
+    "control_assets_present": true,
+    "btc_eth_sol_tagged_as_controls": true,
+    "47_non_controls_verified": true,
+    "no_trade_language_detected": true,
+    "all_boards_observation_or_candidate": true,
+    "next_gate_instructions_present": true,
+    "paper_only_enforced": true,
+    "no_execution_side_effects": true,
+    "checkpoint_a_verified_complete": true,
+    "provenance_chain_intact": true
+  },
+  "changes_since_last_run": {
+    "new_daily_scan_files": false,
+    "last_scan_timestamp": "2026-07-16T11:30:39+00:00",
+    "ledger_updated": false,
+    "manifest_changed": false,
+    "trend_board_changed": false,
+    "funding_board_changed": false,
+    "consecutive_idle_runs": 9,
+    "notable_findings": [
+      "Universe/trend/funding boards unchanged since 2026-07-16T11:30:39Z (9th consecutive idle run)",
+      "Provenance chain intact -- manifest SHA-256 matches checkpoint A ledger record",
+      "No new ledger entries since last run (QTF-V04B entry already present)",
+      "Scan pipeline appears idle -- no new daily scan files since 2026-07-16",
+      "No new edges promoted; all 12 deliverables remain partial/blocked/queued",
+      "All boards classified as observation/candidate -- no trade language detected",
+      "Next_gate instructions present on all 20 candidate events",
+      "Consecutive idle runs increasing -- scan pipeline may need attention"
+    ]
+  }
+}

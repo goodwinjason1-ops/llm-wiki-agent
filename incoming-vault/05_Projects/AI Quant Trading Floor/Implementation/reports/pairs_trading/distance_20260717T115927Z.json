@@ -1,0 +1,11 @@
+{
+  "pair": "BTC/ETH",
+  "method": "distance",
+  "timeframe": "1h",
+  "start_date": "2023-01-01",
+  "end_date": "2026-07-17",
+  "cash": 100000,
+  "total_return": 0.0,
+  "sharpe_ratio": NaN,
+  "max_drawdown": 0.0,
+  "total_trades": 

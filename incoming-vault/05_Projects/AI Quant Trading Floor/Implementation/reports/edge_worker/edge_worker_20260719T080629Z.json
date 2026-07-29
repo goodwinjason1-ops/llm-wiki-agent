@@ -1,0 +1,96 @@
+{
+  "report_type": "edge_worker_operational_report",
+  "generated_at": "2026-07-19T08:06:29Z",
+  "timestamp": "20260719T080629Z",
+  "worker": "jayse_paper_only_quant_floor",
+  "manifest": {
+    "path": "05_Projects/AI Quant Trading Floor/Implementation/reports/daily_scan/universe_manifest_20260716T113039Z.json",
+    "sha256": "3c579cf02c0d0a3ba6be2394c4fb8a67e4d41513e42a0eb2e9b06674f2d7c0f1",
+    "total_assets": 50,
+    "controls": ["BTC", "ETH", "SOL"],
+    "non_controls_count": 47,
+    "venue": "bybit_spot"
+  },
+  "board_provenance": {
+    "trend_board": {
+      "path": "05_Projects/AI Quant Trading Floor/Implementation/reports/daily_scan/trend_board_20260716T113039Z.json",
+      "provenance_manifest_sha256": "3c579cf02c0d0a3ba6be2394c4fb8a67e4d41513e42a0eb2e9b06674f2d7c0f1",
+      "eligible_count": 30,
+      "positive_24h_count": 7,
+      "negative_24h_count": 10,
+      "classification": "observation",
+      "generated_at": "2026-07-16T11:30:39+00:00",
+      "top_positive": "ONDO",
+      "top_negative": "LIT"
+    },
+    "funding_board": {
+      "path": "05_Projects/AI Quant Trading Floor/Implementation/reports/daily_scan/funding_board_20260716T113039Z.json",
+      "provenance_manifest_sha256": "3c579cf02c0d0a3ba6be2394c4fb8a67e4d41513e42a0eb2e9b06674f2d7c0f1",
+      "candidate_events_count": 20,
+      "classification": "observation",
+      "generated_at": "2026-07-16T11:30:39+00:00"
+    },
+    "consistency_check": {
+      "all_hashes_match": true,
+      "manifest_hash": "3c579cf02c0d0a3ba6be2394c4fb8a67e4d41513e42a0eb2e9b06674f2d7c0f1",
+      "status": "CONSISTENT"
+    }
+  },
+  "control_ledger": {
+    "ledger_path": "05_Projects/AI Quant Trading Floor/Research/QTF Verification and Delivery Control - 2026-07-15.md",
+    "last_ledger_date": "2026-07-18",
+    "deliverables_status": {
+      "QTF-V01": "partial - robustness FAILED (52.8%), benchmark completed, paper-forward outstanding",
+      "QTF-V02": "partial - broad panel 0% hit rate, do_not_promote",
+      "QTF-V04": "partial - regime too tight, zero holdout trades",
+      "QTF-V04B": "partial - jitter robustness FAILED (38.5%), high RSI sensitivity",
+      "QTF-V05": "partial - both pairs do_not_promote",
+      "QTF-V07": "partial - jitter FAILED (15.4% costed), edge is price-reversal not funding carry",
+      "QTF-V08": "blocked - requires historical L2 book data",
+      "QTF-V09": "partial - ETF sleeve not standalone edge",
+      "QTF-V10": "partial - internal contradiction capability exists",
+      "QTF-V11": "queued",
+      "QTF-V12": "partial - read-only scanner dependency",
+      "T12": "verified-complete as blocked",
+      "T13": "partial - no active price discovery on Polymarket"
+    },
+    "checkpoint_a": "verified-complete",
+    "pytest_regression": "48 passed"
+  },
+  "scan_pipeline_status": {
+    "latest_scan_timestamp": "20260716T113039Z",
+    "days_since_update": 3,
+    "consecutive_idle_runs": 13,
+    "pipeline_status": "DORMANT",
+    "note": "No new scan data since 2026-07-16T11:30:39Z. Pipeline not producing new boards."
+  },
+  "verification_checks": {
+    "manifest_hash_verified": true,
+    "provenance_chain_intact": true,
+    "boards_classification_correct": true,
+    "no_trade_language_detected": true,
+    "candidate_next_gate_instructions_present": true,
+    "paper_only_enforced": true,
+    "no_orders_credentials_allocations": true,
+    "control_assets_tagged": true,
+    "controls_in_trend_board": true,
+    "controls_in_funding_board": true,
+    "all_checks_passed": true
+  },
+  "decision": {
+    "action": "hold_zero_allocation",
+    "reason": "No new scan data since 2026-07-16. All boards classified as observation/candidate. Control ledger shows all active strategies failed robustness or data gates. Pipeline dormant.",
+    "notes": [
+      "13th consecutive idle run - scan pipeline not producing new boards",
+      "All QTF deliverables remain partial/blocked/queued",
+      "No edge meets promotion criteria",
+      "Paper-only policy strictly enforced",
+      "No orders, credentials, allocations, or contacts emitted"
+    ]
+  },
+  "notable_changes": {
+    "since_last_run": "No changes - identical scan data, no new ledger entries, no new edge_worker reports",
+    "scan_pipeline": "Still dormant (3 days since last scan: 2026-07-16T11:30:39Z)",
+    "ledger": "No new entries since 2026-07-18"
+  }
+}

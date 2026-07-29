@@ -1,0 +1,9 @@
+{
+  "C-HTF-3": {
+    "edge": "C-HTF-3",
+    "name": "Token Unlock / Supply-Event Positioning",
+    "upcoming_known": [],
+    "note": "Token unlock feed scaffolded — production needs live unlock calendar integration.",
+    "decision": "research_pending_data_feed"
+  }
+}

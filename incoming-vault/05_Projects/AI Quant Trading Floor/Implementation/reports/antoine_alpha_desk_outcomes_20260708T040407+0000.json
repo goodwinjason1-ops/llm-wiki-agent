@@ -1,0 +1,815 @@
+{
+  "ts": "2026-07-08T04:04:07+00:00",
+  "mode": "outcomes",
+  "ledger": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Implementation\\ledgers\\antoine_paper_candidates.jsonl",
+  "outcome_ledger": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Implementation\\ledgers\\antoine_candidate_outcomes.jsonl",
+  "rows": [
+    {
+      "ts": "2026-07-08T04:03:38+00:00",
+      "type": "candidate_outcome_snapshot",
+      "candidate_ts": "2026-07-08T04:02:06+00:00",
+      "symbol": "BASE",
+      "chain": "base",
+      "pair_address": "0xda0d526dab33c33a1f23a74aceecbb30d8348409c009aa95256ab25337e5ac4d",
+      "token_address": "0x9ebcA263a1830e0C9a61fA1f6dA515fDfAA809E5",
+      "paper_status": "watch_only",
+      "decision": "watch-only: needs rug/holder/dev checks before paper",
+      "elapsed_hours": 0.026,
+      "due_horizons": [
+        "snapshot"
+      ],
+      "entry_price_usd": "0.0003572",
+      "current_price_usd": "0.0003572",
+      "return_pct": 0.0,
+      "current_liquidity_usd": 285837.2,
+      "current_volume_h24": 0.01
+    },
+    {
+      "ts": "2026-07-08T04:03:39+00:00",
+      "type": "candidate_outcome_snapshot",
+      "candidate_ts": "2026-07-08T04:02:06+00:00",
+      "symbol": "BASE",
+      "chain": "solana",
+      "pair_address": "HgSKYTymxSjqANTaDVRy6jRHLtNJDHKrfGjFo2zquwir",
+      "token_address": "91XndoJUr4wBRbGdnzJaAXvRBWJvyYhciLVqhPmncNJx",
+      "paper_status": "watch_only",
+      "decision": "watch-only: fails rug/liquidity gate",
+      "elapsed_hours": 0.026,
+      "due_horizons": [
+        "snapshot"
+      ],
+      "entry_price_usd": "0.000004500",
+      "current_price_usd": "0.000004500",
+      "return_pct": 0.0,
+      "current_liquidity_usd": 0,
+      "current_volume_h24": 2689653.48
+    },
+    {
+      "ts": "2026-07-08T04:03:40+00:00",
+      "type": "candidate_outcome_snapshot",
+      "candidate_ts": "2026-07-08T04:02:06+00:00",
+      "symbol": "BSC",
+      "chain": "bsc",
+      "pair_address": "0x9aaA984CBcEc10941DC6f9C1f59168288446675F",
+      "token_address": "0xc451eB7baeF8cdc88Eb60b50C5E33c76024b4444",
+      "paper_status": "watch_only",
+      "decision": "watch-only: needs rug/holder/dev checks before paper",
+      "elapsed_hours": 0.026,
+      "due_horizons": [
+        "snapshot"
+      ],
+      "entry_price_usd": "0.00003254",
+      "current_price_usd": "0.00003254",
+      "return_pct": 0.0,
+      "current_liquidity_usd": 16659.06,
+      "current_volume_h24": 503517.55
+    },
+    {
+      "ts": "2026-07-08T04:03:41+00:00",
+      "type": "candidate_outcome_snapshot",
+      "candidate_ts": "2026-07-08T04:02:06+00:00",
+      "symbol": "AI",
+      "chain": "solana",
+      "pair_address": "963sKud5Mn3SS8RoNBcN2G88AT8KzbSu5x9okHBgzxeL",
+      "token_address": "ACeWC77UeW2DBZMe7YBsuXoxLvk4dHMnPzneApau1Au6",
+      "paper_status": "watch_only",
+      "decision": "watch-only: needs rug/holder/dev checks before paper",
+      "elapsed_hours": 0.026,
+      "due_horizons": [
+        "snapshot"
+      ],
+      "entry_price_usd": "0.0000007446",
+      "current_price_usd": "0.0000007446",
+      "return_pct": 0.0,
+      "current_liquidity_usd": 21941.58,
+      "current_volume_h24": 150.19
+    },
+    {
+      "ts": "2026-07-08T04:03:42+00:00",
+      "type": "candidate_outcome_snapshot",
+      "candidate_ts": "2026-07-08T04:02:27+00:00",
+      "symbol": "BSC",
+      "chain": "bsc",
+      "pair_address": "0xff0A8df8c4A0332E28a4c94EBB3f633944B08a94",
+      "token_address": "0x6331BF8D601f0D7F0d2101772af5137c418c4444",
+      "paper_status": "risk_gated_watch",
+      "decision": "reject/watch-only: EVM danger flags",
+      "elapsed_hours": 0.02,
+      "due_horizons": [
+        "snapshot"
+      ],
+      "entry_price_usd": "0.0001088",
+      "current_price_usd": "0.0001088",
+      "return_pct": 0.0,
+      "current_liquidity_usd": 55008.18,
+      "current_volume_h24": 10732.54
+    },
+    {
+      "ts": "2026-07-08T04:03:43+00:00",
+      "type": "candidate_outcome_snapshot",
+      "candidate_ts": "2026-07-08T04:02:27+00:00",
+      "symbol": "AI",
+      "chain": "solana",
+      "pair_address": "xdEEMWJk6WRojCjkGvxApWGAz3JbbMCSAW1nVt6XSeK",
+      "token_address": "99ouK5YUK3JPGCPX9joNtHsMU7NPpU7w91JN4kdQ97po",
+      "paper_status": "risk_gated_watch",
+      "decision": "watch-only: fails rug/liquidity gate",
+      "elapsed_hours": 0.02,
+      "due_horizons": [
+        "snapshot"
+      ],
+      "entry_price_usd": "0.00006627",
+      "current_price_usd": "0.00006627",
+      "return_pct": 0.0,
+      "current_liquidity_usd": 69026.64,
+      "current_volume_h24": 206.37
+    },
+    {
+      "ts": "2026-07-08T04:03:44+00:00",
+      "type": "candidate_outcome_snapshot",
+      "candidate_ts": "2026-07-08T04:02:27+00:00",
+      "symbol": "AI",
+      "chain": "solana",
+      "pair_address": "963sKud5Mn3SS8RoNBcN2G88AT8KzbSu5x9okHBgzxeL",
+      "token_address": "ACeWC77UeW2DBZMe7YBsuXoxLvk4dHMnPzneApau1Au6",
+      "paper_status": "risk_gated_watch",
+      "decision": "reject/watch-only: RugCheck danger risk",
+      "elapsed_hours": 0.02,
+      "due_horizons": [
+        "snapshot"
+      ],
+      "entry_price_usd": "0.0000007446",
+      "current_price_usd": "0.0000007446",
+      "return_pct": 0.0,
+      "current_liquidity_usd": 21941.58,
+      "current_volume_h24": 150.19
+    },
+    {
+      "ts": "2026-07-08T04:03:44+00:00",
+      "type": "candidate_outcome_snapshot",
+      "candidate_ts": "2026-07-08T04:02:27+00:00",
+      "symbol": "BASE",
+      "chain": "solana",
+      "pair_address": "9YSF5KqPtRHiJzpR3o8c6jdcCH9Xd9UXjUWjwXbU7b6R",
+      "token_address": "29M9UHQpeQJjRPuJKgNjqi8JLWXN4qcMw3eSvkk8KRXV",
+      "paper_status": "risk_gated_watch",
+      "decision": "reject/watch-only: RugCheck danger risk",
+      "elapsed_hours": 0.02,
+      "due_horizons": [
+        "snapshot"
+      ],
+      "entry_price_usd": "0.000006203",
+      "current_price_usd": "0.000006203",
+      "return_pct": 0.0,
+      "current_liquidity_usd": 0,
+      "current_volume_h24": 15483707.14
+    },
+    {
+      "ts": "2026-07-08T04:03:45+00:00",
+      "type": "candidate_outcome_snapshot",
+      "candidate_ts": "2026-07-08T04:02:27+00:00",
+      "symbol": "PUMP",
+      "chain": "bsc",
+      "pair_address": "0x90345Fbe6DA637322015129De38d3166f98aac9c",
+      "token_address": "0xB7C0007ab75350c582d5eAb1862b872B5cF53F0C",
+      "paper_status": "risk_gated_watch",
+      "decision": "reject/watch-only: EVM danger flags",
+      "elapsed_hours": 0.02,
+      "due_horizons": [
+        "snapshot"
+      ],
+      "entry_price_usd": "0.01031",
+      "current_price_usd": "0.01029",
+      "return_pct": -0.194,
+      "current_liquidity_usd": 128459.94,
+      "current_volume_h24": 14326.92
+    },
+    {
+      "ts": "2026-07-08T04:03:46+00:00",
+      "type": "candidate_outcome_snapshot",
+      "candidate_ts": "2026-07-08T04:02:27+00:00",
+      "symbol": "BASE",
+      "chain": "solana",
+      "pair_address": "HgSKYTymxSjqANTaDVRy6jRHLtNJDHKrfGjFo2zquwir",
+      "token_address": "91XndoJUr4wBRbGdnzJaAXvRBWJvyYhciLVqhPmncNJx",
+      "paper_status": "risk_gated_watch",
+      "decision": "reject/watch-only: RugCheck danger risk",
+      "elapsed_hours": 0.02,
+      "due_horizons": [
+        "snapshot"
+      ],
+      "entry_price_usd": "0.000004500",
+      "current_price_usd": "0.000004500",
+      "return_pct": 0.0,
+      "current_liquidity_usd": 0,
+      "current_volume_h24": 2689653.48
+    },
+    {
+      "ts": "2026-07-08T04:03:47+00:00",
+      "type": "candidate_outcome_snapshot",
+      "candidate_ts": "2026-07-08T04:02:27+00:00",
+      "symbol": "AI",
+      "chain": "ethereum",
+      "pair_address": "0xCEde28c51b86988A2e91A4C27e80733e0ADBfE7D",
+      "token_address": "0x2598c30330D5771AE9F983979209486aE26dE875",
+      "paper_status": "risk_gated_watch",
+      "decision": "reject/watch-only: EVM danger flags",
+      "elapsed_hours": 0.02,
+      "due_horizons": [
+        "snapshot"
+      ],
+      "entry_price_usd": "0.0000007339",
+      "current_price_usd": "0.0000007339",
+      "return_pct": 0.0,
+      "current_liquidity_usd": 61769.49,
+      "current_volume_h24": 37.11
+    },
+    {
+      "ts": "2026-07-08T04:03:48+00:00",
+      "type": "candidate_outcome_snapshot",
+      "candidate_ts": "2026-07-08T04:02:27+00:00",
+      "symbol": "PUMP",
+      "chain": "bsc",
+      "pair_address": "0xE9F6d2f5bc6B6606755A5836F97eDA11561Cca7b",
+      "token_address": "0x22b4fA9a13A0D303Ad258Ee6D62A6ac60364B0C9",
+      "paper_status": "risk_gated_watch",
+      "decision": "reject/watch-only: EVM danger flags",
+      "elapsed_hours": 0.02,
+      "due_horizons": [
+        "snapshot"
+      ],
+      "entry_price_usd": "0.0000001950",
+      "current_price_usd": "0.0000001950",
+      "return_pct": 0.0,
+      "current_liquidity_usd": 635893.52,
+      "current_volume_h24": 14.36
+    },
+    {
+      "ts": "2026-07-08T04:03:49+00:00",
+      "type": "candidate_outcome_snapshot",
+      "candidate_ts": "2026-07-08T04:02:27+00:00",
+      "symbol": "AI",
+      "chain": "ethereum",
+      "pair_address": "0xcdE8D6dBf0c2DeB16Cd3D2c3282dAA6b2667a3Ef",
+      "token_address": "0xe1283567345349942AcDFaD3692924a1B16CF3Cc",
+      "paper_status": "risk_gated_watch",
+      "decision": "reject/watch-only: EVM danger flags",
+      "elapsed_hours": 0.02,
+      "due_horizons": [
+        "snapshot"
+      ],
+      "entry_price_usd": "0.0000001192",
+      "current_price_usd": "0.0000001192",
+      "return_pct": 0.0,
+      "current_liquidity_usd": 28954.33,
+      "current_volume_h24": 0.13
+    },
+    {
+      "ts": "2026-07-08T04:03:49+00:00",
+      "type": "candidate_outcome_snapshot",
+      "candidate_ts": "2026-07-08T04:02:27+00:00",
+      "symbol": "BASE",
+      "chain": "base",
+      "pair_address": "0xda0d526dab33c33a1f23a74aceecbb30d8348409c009aa95256ab25337e5ac4d",
+      "token_address": "0x9ebcA263a1830e0C9a61fA1f6dA515fDfAA809E5",
+      "paper_status": "risk_gated_watch",
+      "decision": "reject/watch-only: EVM danger flags",
+      "elapsed_hours": 0.02,
+      "due_horizons": [
+        "snapshot"
+      ],
+      "entry_price_usd": "0.0003572",
+      "current_price_usd": "0.0003572",
+      "return_pct": 0.0,
+      "current_liquidity_usd": 285837.2,
+      "current_volume_h24": 0.01
+    },
+    {
+      "ts": "2026-07-08T04:03:50+00:00",
+      "type": "candidate_outcome_snapshot",
+      "candidate_ts": "2026-07-08T04:02:27+00:00",
+      "symbol": "PUMP",
+      "chain": "pulsechain",
+      "pair_address": "0x96Fefb743B1D180363404747bf09BD32657D8B78",
+      "token_address": "0xec4252e62C6dE3D655cA9Ce3AfC12E553ebBA274",
+      "paper_status": "risk_gated_watch",
+      "decision": "watch-only: needs rug/holder/dev checks before paper",
+      "elapsed_hours": 0.02,
+      "due_horizons": [
+        "snapshot"
+      ],
+      "entry_price_usd": "0.001197",
+      "current_price_usd": "0.001197",
+      "return_pct": 0.0,
+      "current_liquidity_usd": 50056.72,
+      "current_volume_h24": 2357.48
+    },
+    {
+      "ts": "2026-07-08T04:03:51+00:00",
+      "type": "candidate_outcome_snapshot",
+      "candidate_ts": "2026-07-08T04:02:27+00:00",
+      "symbol": "BSC",
+      "chain": "bsc",
+      "pair_address": "0x9aaA984CBcEc10941DC6f9C1f59168288446675F",
+      "token_address": "0xc451eB7baeF8cdc88Eb60b50C5E33c76024b4444",
+      "paper_status": "risk_gated_watch",
+      "decision": "watch-only: EVM risk adapter error",
+      "elapsed_hours": 0.02,
+      "due_horizons": [
+        "snapshot"
+      ],
+      "entry_price_usd": "0.00003254",
+      "current_price_usd": "0.00003254",
+      "return_pct": 0.0,
+      "current_liquidity_usd": 16659.06,
+      "current_volume_h24": 503517.55
+    },
+    {
+      "ts": "2026-07-08T04:03:52+00:00",
+      "type": "candidate_outcome_snapshot",
+      "candidate_ts": "2026-07-08T04:03:17+00:00",
+      "symbol": "PUMP",
+      "chain": "bsc",
+      "pair_address": "0x90345Fbe6DA637322015129De38d3166f98aac9c",
+      "token_address": "0xB7C0007ab75350c582d5eAb1862b872B5cF53F0C",
+      "paper_status": "watch_only",
+      "decision": "watch-only: needs rug/holder/dev checks before paper",
+      "elapsed_hours": 0.006,
+      "due_horizons": [
+        "snapshot"
+      ],
+      "entry_price_usd": "0.01029",
+      "current_price_usd": "0.01029",
+      "return_pct": 0.0,
+      "current_liquidity_usd": 128459.94,
+      "current_volume_h24": 14326.92
+    },
+    {
+      "ts": "2026-07-08T04:03:52+00:00",
+      "type": "candidate_outcome_snapshot",
+      "candidate_ts": "2026-07-08T04:03:17+00:00",
+      "symbol": "BASE",
+      "chain": "solana",
+      "pair_address": "9YSF5KqPtRHiJzpR3o8c6jdcCH9Xd9UXjUWjwXbU7b6R",
+      "token_address": "29M9UHQpeQJjRPuJKgNjqi8JLWXN4qcMw3eSvkk8KRXV",
+      "paper_status": "watch_only",
+      "decision": "watch-only: fails rug/liquidity gate",
+      "elapsed_hours": 0.006,
+      "due_horizons": [
+        "snapshot"
+      ],
+      "entry_price_usd": "0.000006203",
+      "current_price_usd": "0.000006203",
+      "return_pct": 0.0,
+      "current_liquidity_usd": 0,
+      "current_volume_h24": 15483707.14
+    },
+    {
+      "ts": "2026-07-08T04:03:53+00:00",
+      "type": "candidate_outcome_snapshot",
+      "candidate_ts": "2026-07-08T04:03:17+00:00",
+      "symbol": "PUMP",
+      "chain": "pulsechain",
+      "pair_address": "0x96Fefb743B1D180363404747bf09BD32657D8B78",
+      "token_address": "0xec4252e62C6dE3D655cA9Ce3AfC12E553ebBA274",
+      "paper_status": "watch_only",
+      "decision": "watch-only: needs rug/holder/dev checks before paper",
+      "elapsed_hours": 0.006,
+      "due_horizons": [
+        "snapshot"
+      ],
+      "entry_price_usd": "0.001197",
+      "current_price_usd": "0.001197",
+      "return_pct": 0.0,
+      "current_liquidity_usd": 50056.72,
+      "current_volume_h24": 2357.48
+    },
+    {
+      "ts": "2026-07-08T04:03:54+00:00",
+      "type": "candidate_outcome_snapshot",
+      "candidate_ts": "2026-07-08T04:03:17+00:00",
+      "symbol": "AI",
+      "chain": "solana",
+      "pair_address": "xdEEMWJk6WRojCjkGvxApWGAz3JbbMCSAW1nVt6XSeK",
+      "token_address": "99ouK5YUK3JPGCPX9joNtHsMU7NPpU7w91JN4kdQ97po",
+      "paper_status": "watch_only",
+      "decision": "watch-only: needs rug/holder/dev checks before paper",
+      "elapsed_hours": 0.006,
+      "due_horizons": [
+        "snapshot"
+      ],
+      "entry_price_usd": "0.00006627",
+      "current_price_usd": "0.00006627",
+      "return_pct": 0.0,
+      "current_liquidity_usd": 69026.64,
+      "current_volume_h24": 206.37
+    },
+    {
+      "ts": "2026-07-08T04:03:54+00:00",
+      "type": "candidate_outcome_snapshot",
+      "candidate_ts": "2026-07-08T04:03:17+00:00",
+      "symbol": "AI",
+      "chain": "ethereum",
+      "pair_address": "0xCEde28c51b86988A2e91A4C27e80733e0ADBfE7D",
+      "token_address": "0x2598c30330D5771AE9F983979209486aE26dE875",
+      "paper_status": "watch_only",
+      "decision": "watch-only: needs rug/holder/dev checks before paper",
+      "elapsed_hours": 0.006,
+      "due_horizons": [
+        "snapshot"
+      ],
+      "entry_price_usd": "0.0000007339",
+      "current_price_usd": "0.0000007339",
+      "return_pct": 0.0,
+      "current_liquidity_usd": 61769.49,
+      "current_volume_h24": 37.11
+    },
+    {
+      "ts": "2026-07-08T04:03:55+00:00",
+      "type": "candidate_outcome_snapshot",
+      "candidate_ts": "2026-07-08T04:03:17+00:00",
+      "symbol": "PUMP",
+      "chain": "bsc",
+      "pair_address": "0xE9F6d2f5bc6B6606755A5836F97eDA11561Cca7b",
+      "token_address": "0x22b4fA9a13A0D303Ad258Ee6D62A6ac60364B0C9",
+      "paper_status": "watch_only",
+      "decision": "watch-only: needs rug/holder/dev checks before paper",
+      "elapsed_hours": 0.006,
+      "due_horizons": [
+        "snapshot"
+      ],
+      "entry_price_usd": "0.0000001950",
+      "current_price_usd": "0.0000001950",
+      "return_pct": 0.0,
+      "current_liquidity_usd": 635893.52,
+      "current_volume_h24": 14.36
+    },
+    {
+      "ts": "2026-07-08T04:03:56+00:00",
+      "type": "candidate_outcome_snapshot",
+      "candidate_ts": "2026-07-08T04:03:17+00:00",
+      "symbol": "BSC",
+      "chain": "bsc",
+      "pair_address": "0xff0A8df8c4A0332E28a4c94EBB3f633944B08a94",
+      "token_address": "0x6331BF8D601f0D7F0d2101772af5137c418c4444",
+      "paper_status": "watch_only",
+      "decision": "watch-only: needs rug/holder/dev checks before paper",
+      "elapsed_hours": 0.006,
+      "due_horizons": [
+        "snapshot"
+      ],
+      "entry_price_usd": "0.0001088",
+      "current_price_usd": "0.0001088",
+      "return_pct": 0.0,
+      "current_liquidity_usd": 55008.18,
+      "current_volume_h24": 10732.54
+    },
+    {
+      "ts": "2026-07-08T04:03:56+00:00",
+      "type": "candidate_outcome_snapshot",
+      "candidate_ts": "2026-07-08T04:03:17+00:00",
+      "symbol": "AI",
+      "chain": "ethereum",
+      "pair_address": "0xcdE8D6dBf0c2DeB16Cd3D2c3282dAA6b2667a3Ef",
+      "token_address": "0xe1283567345349942AcDFaD3692924a1B16CF3Cc",
+      "paper_status": "watch_only",
+      "decision": "watch-only: needs rug/holder/dev checks before paper",
+      "elapsed_hours": 0.006,
+      "due_horizons": [
+        "snapshot"
+      ],
+      "entry_price_usd": "0.0000001192",
+      "current_price_usd": "0.0000001192",
+      "return_pct": 0.0,
+      "current_liquidity_usd": 28954.33,
+      "current_volume_h24": 0.13
+    },
+    {
+      "ts": "2026-07-08T04:03:57+00:00",
+      "type": "candidate_outcome_snapshot",
+      "candidate_ts": "2026-07-08T04:03:17+00:00",
+      "symbol": "BASE",
+      "chain": "base",
+      "pair_address": "0xda0d526dab33c33a1f23a74aceecbb30d8348409c009aa95256ab25337e5ac4d",
+      "token_address": "0x9ebcA263a1830e0C9a61fA1f6dA515fDfAA809E5",
+      "paper_status": "watch_only",
+      "decision": "watch-only: needs rug/holder/dev checks before paper",
+      "elapsed_hours": 0.006,
+      "due_horizons": [
+        "snapshot"
+      ],
+      "entry_price_usd": "0.0003572",
+      "current_price_usd": "0.0003572",
+      "return_pct": 0.0,
+      "current_liquidity_usd": 285837.2,
+      "current_volume_h24": 0.01
+    },
+    {
+      "ts": "2026-07-08T04:03:58+00:00",
+      "type": "candidate_outcome_snapshot",
+      "candidate_ts": "2026-07-08T04:03:17+00:00",
+      "symbol": "BASE",
+      "chain": "solana",
+      "pair_address": "HgSKYTymxSjqANTaDVRy6jRHLtNJDHKrfGjFo2zquwir",
+      "token_address": "91XndoJUr4wBRbGdnzJaAXvRBWJvyYhciLVqhPmncNJx",
+      "paper_status": "watch_only",
+      "decision": "watch-only: fails rug/liquidity gate",
+      "elapsed_hours": 0.006,
+      "due_horizons": [
+        "snapshot"
+      ],
+      "entry_price_usd": "0.000004500",
+      "current_price_usd": "0.000004500",
+      "return_pct": 0.0,
+      "current_liquidity_usd": 0,
+      "current_volume_h24": 2689653.48
+    },
+    {
+      "ts": "2026-07-08T04:03:58+00:00",
+      "type": "candidate_outcome_snapshot",
+      "candidate_ts": "2026-07-08T04:03:17+00:00",
+      "symbol": "BSC",
+      "chain": "bsc",
+      "pair_address": "0x9aaA984CBcEc10941DC6f9C1f59168288446675F",
+      "token_address": "0xc451eB7baeF8cdc88Eb60b50C5E33c76024b4444",
+      "paper_status": "watch_only",
+      "decision": "watch-only: needs rug/holder/dev checks before paper",
+      "elapsed_hours": 0.006,
+      "due_horizons": [
+        "snapshot"
+      ],
+      "entry_price_usd": "0.00003254",
+      "current_price_usd": "0.00003254",
+      "return_pct": 0.0,
+      "current_liquidity_usd": 16659.06,
+      "current_volume_h24": 503517.55
+    },
+    {
+      "ts": "2026-07-08T04:03:59+00:00",
+      "type": "candidate_outcome_snapshot",
+      "candidate_ts": "2026-07-08T04:03:17+00:00",
+      "symbol": "AI",
+      "chain": "solana",
+      "pair_address": "963sKud5Mn3SS8RoNBcN2G88AT8KzbSu5x9okHBgzxeL",
+      "token_address": "ACeWC77UeW2DBZMe7YBsuXoxLvk4dHMnPzneApau1Au6",
+      "paper_status": "watch_only",
+      "decision": "watch-only: needs rug/holder/dev checks before paper",
+      "elapsed_hours": 0.006,
+      "due_horizons": [
+        "snapshot"
+      ],
+      "entry_price_usd": "0.0000007446",
+      "current_price_usd": "0.0000007446",
+      "return_pct": 0.0,
+      "current_liquidity_usd": 21941.58,
+      "current_volume_h24": 150.19
+    },
+    {
+      "ts": "2026-07-08T04:04:00+00:00",
+      "type": "candidate_outcome_snapshot",
+      "candidate_ts": "2026-07-08T04:03:37+00:00",
+      "symbol": "BSC",
+      "chain": "bsc",
+      "pair_address": "0xff0A8df8c4A0332E28a4c94EBB3f633944B08a94",
+      "token_address": "0x6331BF8D601f0D7F0d2101772af5137c418c4444",
+      "paper_status": "risk_gated_watch",
+      "decision": "watch-only: fails rug/liquidity gate",
+      "elapsed_hours": 0.0,
+      "due_horizons": [
+        "snapshot"
+      ],
+      "entry_price_usd": "0.0001088",
+      "current_price_usd": "0.0001088",
+      "return_pct": 0.0,
+      "current_liquidity_usd": 55008.18,
+      "current_volume_h24": 10732.54
+    },
+    {
+      "ts": "2026-07-08T04:04:00+00:00",
+      "type": "candidate_outcome_snapshot",
+      "candidate_ts": "2026-07-08T04:03:37+00:00",
+      "symbol": "AI",
+      "chain": "solana",
+      "pair_address": "xdEEMWJk6WRojCjkGvxApWGAz3JbbMCSAW1nVt6XSeK",
+      "token_address": "99ouK5YUK3JPGCPX9joNtHsMU7NPpU7w91JN4kdQ97po",
+      "paper_status": "risk_gated_watch",
+      "decision": "watch-only: fails rug/liquidity gate",
+      "elapsed_hours": 0.0,
+      "due_horizons": [
+        "snapshot"
+      ],
+      "entry_price_usd": "0.00006627",
+      "current_price_usd": "0.00006627",
+      "return_pct": 0.0,
+      "current_liquidity_usd": 69026.64,
+      "current_volume_h24": 206.37
+    },
+    {
+      "ts": "2026-07-08T04:04:01+00:00",
+      "type": "candidate_outcome_snapshot",
+      "candidate_ts": "2026-07-08T04:03:37+00:00",
+      "symbol": "AI",
+      "chain": "solana",
+      "pair_address": "963sKud5Mn3SS8RoNBcN2G88AT8KzbSu5x9okHBgzxeL",
+      "token_address": "ACeWC77UeW2DBZMe7YBsuXoxLvk4dHMnPzneApau1Au6",
+      "paper_status": "risk_gated_watch",
+      "decision": "reject/watch-only: RugCheck danger risk",
+      "elapsed_hours": 0.0,
+      "due_horizons": [
+        "snapshot"
+      ],
+      "entry_price_usd": "0.0000007446",
+      "current_price_usd": "0.0000007446",
+      "return_pct": 0.0,
+      "current_liquidity_usd": 21941.58,
+      "current_volume_h24": 150.19
+    },
+    {
+      "ts": "2026-07-08T04:04:02+00:00",
+      "type": "candidate_outcome_snapshot",
+      "candidate_ts": "2026-07-08T04:03:37+00:00",
+      "symbol": "PUMP",
+      "chain": "bsc",
+      "pair_address": "0x90345Fbe6DA637322015129De38d3166f98aac9c",
+      "token_address": "0xB7C0007ab75350c582d5eAb1862b872B5cF53F0C",
+      "paper_status": "risk_gated_watch",
+      "decision": "watch-only: fails rug/liquidity gate",
+      "elapsed_hours": 0.0,
+      "due_horizons": [
+        "snapshot"
+      ],
+      "entry_price_usd": "0.01029",
+      "current_price_usd": "0.01029",
+      "return_pct": 0.0,
+      "current_liquidity_usd": 128459.94,
+      "current_volume_h24": 14326.92
+    },
+    {
+      "ts": "2026-07-08T04:04:02+00:00",
+      "type": "candidate_outcome_snapshot",
+      "candidate_ts": "2026-07-08T04:03:37+00:00",
+      "symbol": "BASE",
+      "chain": "solana",
+      "pair_address": "9YSF5KqPtRHiJzpR3o8c6jdcCH9Xd9UXjUWjwXbU7b6R",
+      "token_address": "29M9UHQpeQJjRPuJKgNjqi8JLWXN4qcMw3eSvkk8KRXV",
+      "paper_status": "risk_gated_watch",
+      "decision": "reject/watch-only: RugCheck danger risk",
+      "elapsed_hours": 0.0,
+      "due_horizons": [
+        "snapshot"
+      ],
+      "entry_price_usd": "0.000006203",
+      "current_price_usd": "0.000006203",
+      "return_pct": 0.0,
+      "current_liquidity_usd": 0,
+      "current_volume_h24": 15483707.14
+    },
+    {
+      "ts": "2026-07-08T04:04:03+00:00",
+      "type": "candidate_outcome_snapshot",
+      "candidate_ts": "2026-07-08T04:03:37+00:00",
+      "symbol": "AI",
+      "chain": "ethereum",
+      "pair_address": "0xCEde28c51b86988A2e91A4C27e80733e0ADBfE7D",
+      "token_address": "0x2598c30330D5771AE9F983979209486aE26dE875",
+      "paper_status": "risk_gated_watch",
+      "decision": "watch-only: fails rug/liquidity gate",
+      "elapsed_hours": 0.0,
+      "due_horizons": [
+        "snapshot"
+      ],
+      "entry_price_usd": "0.0000007339",
+      "current_price_usd": "0.0000007339",
+      "return_pct": 0.0,
+      "current_liquidity_usd": 61769.49,
+      "current_volume_h24": 37.11
+    },
+    {
+      "ts": "2026-07-08T04:04:03+00:00",
+      "type": "candidate_outcome_snapshot",
+      "candidate_ts": "2026-07-08T04:03:37+00:00",
+      "symbol": "BASE",
+      "chain": "solana",
+      "pair_address": "HgSKYTymxSjqANTaDVRy6jRHLtNJDHKrfGjFo2zquwir",
+      "token_address": "91XndoJUr4wBRbGdnzJaAXvRBWJvyYhciLVqhPmncNJx",
+      "paper_status": "risk_gated_watch",
+      "decision": "reject/watch-only: RugCheck danger risk",
+      "elapsed_hours": 0.0,
+      "due_horizons": [
+        "snapshot"
+      ],
+      "entry_price_usd": "0.000004500",
+      "current_price_usd": "0.000004500",
+      "return_pct": 0.0,
+      "current_liquidity_usd": 0,
+      "current_volume_h24": 2689653.48
+    },
+    {
+      "ts": "2026-07-08T04:04:04+00:00",
+      "type": "candidate_outcome_snapshot",
+      "candidate_ts": "2026-07-08T04:03:37+00:00",
+      "symbol": "PUMP",
+      "chain": "bsc",
+      "pair_address": "0xE9F6d2f5bc6B6606755A5836F97eDA11561Cca7b",
+      "token_address": "0x22b4fA9a13A0D303Ad258Ee6D62A6ac60364B0C9",
+      "paper_status": "risk_gated_watch",
+      "decision": "reject/watch-only: EVM danger flags",
+      "elapsed_hours": 0.0,
+      "due_horizons": [
+        "snapshot"
+      ],
+      "entry_price_usd": "0.0000001950",
+      "current_price_usd": "0.0000001950",
+      "return_pct": 0.0,
+      "current_liquidity_usd": 635893.52,
+      "current_volume_h24": 14.36
+    },
+    {
+      "ts": "2026-07-08T04:04:05+00:00",
+      "type": "candidate_outcome_snapshot",
+      "candidate_ts": "2026-07-08T04:03:37+00:00",
+      "symbol": "AI",
+      "chain": "ethereum",
+      "pair_address": "0xcdE8D6dBf0c2DeB16Cd3D2c3282dAA6b2667a3Ef",
+      "token_address": "0xe1283567345349942AcDFaD3692924a1B16CF3Cc",
+      "paper_status": "risk_gated_watch",
+      "decision": "watch-only: fails rug/liquidity gate",
+      "elapsed_hours": 0.0,
+      "due_horizons": [
+        "snapshot"
+      ],
+      "entry_price_usd": "0.0000001192",
+      "current_price_usd": "0.0000001192",
+      "return_pct": 0.0,
+      "current_liquidity_usd": 28954.33,
+      "current_volume_h24": 0.13
+    },
+    {
+      "ts": "2026-07-08T04:04:05+00:00",
+      "type": "candidate_outcome_snapshot",
+      "candidate_ts": "2026-07-08T04:03:37+00:00",
+      "symbol": "BASE",
+      "chain": "base",
+      "pair_address": "0xda0d526dab33c33a1f23a74aceecbb30d8348409c009aa95256ab25337e5ac4d",
+      "token_address": "0x9ebcA263a1830e0C9a61fA1f6dA515fDfAA809E5",
+      "paper_status": "risk_gated_watch",
+      "decision": "reject/watch-only: EVM danger flags",
+      "elapsed_hours": 0.0,
+      "due_horizons": [
+        "snapshot"
+      ],
+      "entry_price_usd": "0.0003572",
+      "current_price_usd": "0.0003572",
+      "return_pct": 0.0,
+      "current_liquidity_usd": 285837.2,
+      "current_volume_h24": 0.01
+    },
+    {
+      "ts": "2026-07-08T04:04:06+00:00",
+      "type": "candidate_outcome_snapshot",
+      "candidate_ts": "2026-07-08T04:03:37+00:00",
+      "symbol": "PUMP",
+      "chain": "pulsechain",
+      "pair_address": "0x96Fefb743B1D180363404747bf09BD32657D8B78",
+      "token_address": "0xec4252e62C6dE3D655cA9Ce3AfC12E553ebBA274",
+      "paper_status": "risk_gated_watch",
+      "decision": "watch-only: needs rug/holder/dev checks before paper",
+      "elapsed_hours": 0.0,
+      "due_horizons": [
+        "snapshot"
+      ],
+      "entry_price_usd": "0.001197",
+      "current_price_usd": "0.001197",
+      "return_pct": 0.0,
+      "current_liquidity_usd": 50056.72,
+      "current_volume_h24": 2357.48
+    },
+    {
+      "ts": "2026-07-08T04:04:07+00:00",
+      "type": "candidate_outcome_snapshot",
+      "candidate_ts": "2026-07-08T04:03:37+00:00",
+      "symbol": "BSC",
+      "chain": "bsc",
+      "pair_address": "0x9aaA984CBcEc10941DC6f9C1f59168288446675F",
+      "token_address": "0xc451eB7baeF8cdc88Eb60b50C5E33c76024b4444",
+      "paper_status": "risk_gated_watch",
+      "decision": "watch-only: EVM risk adapter error",
+      "elapsed_hours": 0.0,
+      "due_horizons": [
+        "snapshot"
+      ],
+      "entry_price_usd": "0.00003254",
+      "current_price_usd": "0.00003254",
+      "return_pct": 0.0,
+      "current_liquidity_usd": 16659.06,
+      "current_volume_h24": 503517.55
+    }
+  ],
+  "summary": {
+    "tracked": 40,
+    "priced": 40,
+    "avg_return_pct": -0.005,
+    "positive": 0,
+    "negative": 1
+  }
+}

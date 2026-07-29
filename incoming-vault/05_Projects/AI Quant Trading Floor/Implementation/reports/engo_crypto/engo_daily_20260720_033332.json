@@ -1,0 +1,107 @@
+{
+  "timestamp": "2026-07-20T03:33:32.252364",
+  "status": "SUCCESS",
+  "symbols_tested": 15,
+  "residual_momentum_screen": [
+    {
+      "symbol": "DOTUSDT",
+      "residual_momentum_z": 0.02071546305359371,
+      "recent_return_1d": -0.005633802816901401,
+      "current_price": 1.412
+    },
+    {
+      "symbol": "ADAUSDT",
+      "residual_momentum_z": -0.012156379290877033,
+      "recent_return_1d": -0.042032862055789155,
+      "current_price": 0.2507
+    },
+    {
+      "symbol": "XRPUSDT",
+      "residual_momentum_z": -0.02688978145705195,
+      "recent_return_1d": -0.03302611367127484,
+      "current_price": 1.3849
+    },
+    {
+      "symbol": "SOLUSDT",
+      "residual_momentum_z": -0.030441080741956384,
+      "recent_return_1d": -0.05709285792409502,
+      "current_price": 86.21
+    },
+    {
+      "symbol": "UNIUSDT",
+      "residual_momentum_z": -0.033357530220329445,
+      "recent_return_1d": -0.03261778645107327,
+      "current_price": 3.47
+    },
+    {
+      "symbol": "AVAXUSDT",
+      "residual_momentum_z": -0.05208781352101632,
+      "recent_return_1d": -0.05747126436781613,
+      "current_price": 9.02
+    },
+    {
+      "symbol": "LINKUSDT",
+      "residual_momentum_z": -0.11676937600144696,
+      "recent_return_1d": -0.046103183315038376,
+      "current_price": 8.69
+    },
+    {
+      "symbol": "DOGEUSDT",
+      "residual_momentum_z": -0.15137534944335662,
+      "recent_return_1d": -0.04299819513748804,
+      "current_price": 0.09014
+    }
+  ],
+  "sector_rotation": [
+    {
+      "sector": "Layer 1",
+      "symbols_in_sector": 6,
+      "return_7d": 0.12343489820986579,
+      "return_14d": 1.308982330036153,
+      "return_30d": 0.8465728828973235,
+      "volatility_30d": 72.73817540605839,
+      "sharpe_30d": 4.24810081545964
+    },
+    {
+      "sector": "Large Caps",
+      "symbols_in_sector": 3,
+      "return_7d": 0.7587946889375813,
+      "return_14d": 1.3262751915675874,
+      "return_30d": 0.6749773227166724,
+      "volatility_30d": 52.33381975355971,
+      "sharpe_30d": 4.7076006290335375
+    },
+    {
+      "sector": "DeFi",
+      "symbols_in_sector": 3,
+      "return_7d": 1.614464644982053,
+      "return_14d": 1.7476029144624716,
+      "return_30d": 0.6647207482384372,
+      "volatility_30d": 67.51672362856822,
+      "sharpe_30d": 3.593525575112015
+    }
+  ],
+  "turn_of_month_effect": [
+    {
+      "symbol": "SOLUSDT",
+      "early_month_avg_return": 0.47962530235705375,
+      "late_month_avg_return": 0.552165471640602,
+      "month_boundary_effect": -0.07254016928354831,
+      "days_of_data": 419
+    },
+    {
+      "symbol": "BTCUSDT",
+      "early_month_avg_return": 0.05040698268783458,
+      "late_month_avg_return": 0.34058439816428904,
+      "month_boundary_effect": -0.2901774154764544,
+      "days_of_data": 419
+    },
+    {
+      "symbol": "ETHUSDT",
+      "early_month_avg_return": 0.1302864346158236,
+      "late_month_avg_return": 0.48651734142961195,
+      "month_boundary_effect": -0.3562309068137884,
+      "days_of_data": 419
+    }
+  ]
+}

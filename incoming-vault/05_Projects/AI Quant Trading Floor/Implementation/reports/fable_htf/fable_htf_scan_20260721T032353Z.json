@@ -1,0 +1,12 @@
+{
+  "C-HTF-3": {
+    "edge": "C-HTF-3",
+    "name": "Token Unlock / Supply-Event Positioning",
+    "upcoming_total": 0,
+    "threshold_met": 0,
+    "high_impact_unlocks": [],
+    "all_upcoming": [],
+    "note": "Data from token_unlock_feed cache (0 upcoming within lookahead window).",
+    "decision": "research_pending_data_feed"
+  }
+}

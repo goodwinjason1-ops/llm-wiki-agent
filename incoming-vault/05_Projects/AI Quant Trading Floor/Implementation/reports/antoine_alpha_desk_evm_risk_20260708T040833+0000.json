@@ -1,0 +1,36 @@
+{
+  "ts": "2026-07-08T04:08:33+00:00",
+  "mode": "evm_risk",
+  "chain": "ethereum",
+  "rows": [
+    {
+      "chain": "ethereum",
+      "token_address": "0x2598c30330D5771AE9F983979209486aE26dE875",
+      "symbol": "0x2598c3",
+      "source": "manual_evm_risk_token",
+      "rug_source": "gopluslabs.io;honeypot.is",
+      "goplus_holder_count": "3926",
+      "top_holder_pct": 98.89,
+      "holder_concentration_pct": 99.513,
+      "dev_wallet_pct": 0.0,
+      "bundled_supply_pct": 0,
+      "lp_unlocked_pct": 1.11,
+      "contract_verified": true,
+      "mint_or_freeze_authority": false,
+      "rug_data_complete": "true",
+      "buy_tax_pct": 0.0,
+      "sell_tax_pct": 0.0,
+      "honeypot_is_honeypot": false,
+      "honeypot_risk": "low",
+      "honeypot_risk_level": 1,
+      "evm_danger_flags": "",
+      "rug_adapter_status": "ok",
+      "evm_chain_id": "1",
+      "edge_score": 0.0,
+      "risk_penalty": 80.596,
+      "final_score": -80.596,
+      "risk_flags": "holder_concentration_gt_35pct;thin_liquidity",
+      "decision": "watch-only: fails rug/liquidity gate"
+    }
+  ]
+}

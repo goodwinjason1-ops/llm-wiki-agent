@@ -1,0 +1,19 @@
+{
+  "idea_id": "2026-07-11-QTF-MORNING-03",
+  "generated_at": "2026-07-10T22:53:44+00:00",
+  "source": "05_Projects\\AI Quant Trading Floor\\Strategies\\QTF-017 Morning Idea Generator from Second Brain.md",
+  "classification": "workflow specification, not a trading strategy claim",
+  "checks": {
+    "source_is_available": true,
+    "has_hypothesis": false,
+    "has_exact_entry_rules": false,
+    "has_exact_exit_rules": false,
+    "has_cost_model": false,
+    "has_testable_market_timeframe": false,
+    "has_benchmark": true,
+    "has_reject_conditions": true
+  },
+  "decision": "park_no_backtest",
+  "reason": "The note defines how to generate morning ideas but contains no market-specific hypothesis, exact entries/exits, timeframe, or cost model. Backtesting it would manufacture rules not present in the source.",
+  "next_step": "Improve the generator so Idea 3 selects an actual source claim rather than selecting QTF-017 itself."
+}

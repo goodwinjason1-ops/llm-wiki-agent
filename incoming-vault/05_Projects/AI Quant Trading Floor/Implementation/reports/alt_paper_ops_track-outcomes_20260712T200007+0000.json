@@ -1,0 +1,59 @@
+{
+  "ts": "2026-07-12T20:00:05+00:00",
+  "mode": "paper-only read-only operations",
+  "track_outcomes": {
+    "outcome_ledger": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Implementation\\ledgers\\polymarket_paper_outcomes.jsonl",
+    "new_outcomes": [
+      {
+        "signal_id": "a888187f12423a7e",
+        "checked_at": "2026-07-12T20:00:05+00:00",
+        "resolution_status": "resolved_approx",
+        "spot_at_check": 1821.5,
+        "target": 1300.0,
+        "yes_won": true,
+        "candidate_side": "YES",
+        "unit_paper_pnl": 0.9995,
+        "reason": "approx spot-at-check for expired above/below market",
+        "question": "Will the price of Ethereum be between $1,300 and $1,400 on July 12?"
+      },
+      {
+        "signal_id": "a759b627f18cfee1",
+        "checked_at": "2026-07-12T20:00:06+00:00",
+        "resolution_status": "resolved_approx",
+        "spot_at_check": 1821.5,
+        "target": 1300.0,
+        "yes_won": true,
+        "candidate_side": "YES",
+        "unit_paper_pnl": 0.9995,
+        "reason": "approx spot-at-check for expired above/below market",
+        "question": "Will the price of Ethereum be between $1,300 and $1,400 on July 12?"
+      },
+      {
+        "signal_id": "c216412364472c12",
+        "checked_at": "2026-07-12T20:00:07+00:00",
+        "resolution_status": "resolved_approx",
+        "spot_at_check": 64239.99,
+        "target": 64000.0,
+        "yes_won": true,
+        "candidate_side": "YES",
+        "unit_paper_pnl": 0.585,
+        "reason": "approx spot-at-check for expired above/below market",
+        "question": "Will the price of Bitcoin be above $64,000 on July 12?"
+      },
+      {
+        "signal_id": "749db23d376bc633",
+        "checked_at": "2026-07-12T20:00:07+00:00",
+        "resolution_status": "resolved_approx",
+        "spot_at_check": 1821.51,
+        "target": 1800.0,
+        "yes_won": true,
+        "candidate_side": "YES",
+        "unit_paper_pnl": 0.615,
+        "reason": "approx spot-at-check for expired above/below market",
+        "question": "Will the price of Ethereum be above $1,800 on July 12?"
+      }
+    ],
+    "new_count": 4,
+    "signals_total": 57
+  }
+}

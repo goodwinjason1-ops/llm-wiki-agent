@@ -1,0 +1,13 @@
+{
+  "aggregate_modeled_pnl_per_pair": 0.01,
+  "fill_evidence_quality": "crossed-quote-not-trade-confirmed",
+  "maker_rewards": "not-observed-not-attributed",
+  "markets_analyzed": 1,
+  "next_gate": "add public trade tape or stronger queue-depletion evidence before treating crossed quotes as fills",
+  "no_fill_signal_count": 0,
+  "one_leg_signal_count": 0,
+  "promotion_status": "blocked-fill-signals-not-trade-confirmed",
+  "risk_mode": "research-only",
+  "snapshot_rows": 100,
+  "two_leg_signal_count": 1
+}

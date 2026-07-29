@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "qtf-performance-review-event-v1",
+  "title": "Quant Floor Performance Review Event",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "event_id", "timestamp", "market_symbol", "timeframe", "strategy_version",
+    "setup_tag", "execution_pattern_tag", "lifecycle_phase", "risk_fraction",
+    "realized_r", "fees_r", "slippage_r", "plan_followed", "process_tags"
+  ],
+  "properties": {
+    "event_id": {"type": "string", "minLength": 1},
+    "timestamp": {"type": "string", "minLength": 1},
+    "market_symbol": {"type": "string", "minLength": 1},
+    "timeframe": {"type": "string", "minLength": 1},
+    "strategy_version": {"type": "string", "minLength": 1},
+    "setup_tag": {"type": "string", "minLength": 1},
+    "execution_pattern_tag": {"type": "string", "minLength": 1},
+    "lifecycle_phase": {"enum": ["planning", "execution", "management", "closure"]},
+    "risk_fraction": {"type": "number", "minimum": 0},
+    "realized_r": {"type": "number"},
+    "fees_r": {"type": "number", "minimum": 0},
+    "slippage_r": {"type": "number", "minimum": 0},
+    "plan_followed": {"type": "boolean"},
+    "process_tags": {"type": "array", "items": {"type": "string"}}
+  }
+}

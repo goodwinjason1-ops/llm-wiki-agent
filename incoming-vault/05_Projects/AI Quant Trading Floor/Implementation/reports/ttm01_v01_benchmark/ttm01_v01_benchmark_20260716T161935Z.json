@@ -1,0 +1,113 @@
+{
+  "schema": "qtf-v01-benchmark-comparison-v1",
+  "generated_at": "2026-07-16T16:19:35+00:00",
+  "input_manifest_sha256": "356420e8a737f967a32ab3cf740f0bcfa069a7c6cbf3276b91b30c5c630ceae7",
+  "symbols": [
+    "BTCUSDT",
+    "ETHUSDT",
+    "SOLUSDT"
+  ],
+  "rows_per_symbol": 1200,
+  "split": {
+    "rows_per_symbol": 1200,
+    "development_rows": 840,
+    "holdout_rows": 360,
+    "chronological": true
+  },
+  "holdout_period": {
+    "start_row": 840,
+    "end_row": 1200,
+    "holdout_rows": 360
+  },
+  "strategy_holdout": {
+    "total_return": -0.002095811695227101,
+    "sharpe": -0.5525931700505234,
+    "max_drawdown": -0.005375815293355624,
+    "holdout_rows": 359
+  },
+  "benchmarks": {
+    "BTCUSDT": {
+      "total_return": -0.44716964092497646,
+      "cagr": -0.45261889858006965,
+      "sharpe": -1.1765927896485846,
+      "max_drawdown": -0.5296813872357554,
+      "annual_volatility": 0.4318829983491663,
+      "trade_count": 1,
+      "days": 359,
+      "holdout_start_idx": 840,
+      "holdout_end_idx": 1200
+    },
+    "ETHUSDT": {
+      "total_return": -0.49607136401816,
+      "cagr": -0.50181034576844,
+      "sharpe": -0.718554766599275,
+      "max_drawdown": -0.6755376833669986,
+      "annual_volatility": 0.6628070495058809,
+      "trade_count": 1,
+      "days": 359,
+      "holdout_start_idx": 840,
+      "holdout_end_idx": 1200
+    },
+    "SOLUSDT": {
+      "total_return": -0.6028104241185488,
+      "cagr": -0.6088927594312906,
+      "sharpe": -0.955211223308284,
+      "max_drawdown": -0.7486665589138515,
+      "annual_volatility": 0.7135175310191659,
+      "trade_count": 1,
+      "days": 359,
+      "holdout_start_idx": 840,
+      "holdout_end_idx": 1200
+    }
+  },
+  "comparison": {
+    "strategy_vs_benchmarks": {
+      "BTCUSDT": {
+        "return_diff": 0.44507382922974936,
+        "sharpe_diff": 0.6239996195980612,
+        "mdd_diff": 0.5243055719423998,
+        "better_return": true,
+        "better_sharpe": true,
+        "better_mdd": true
+      },
+      "ETHUSDT": {
+        "return_diff": 0.4939755523229329,
+        "sharpe_diff": 0.16596159654875153,
+        "mdd_diff": 0.670161868073643,
+        "better_return": true,
+        "better_sharpe": true,
+        "better_mdd": true
+      },
+      "SOLUSDT": {
+        "return_diff": 0.6007146124233217,
+        "sharpe_diff": 0.40261805325776057,
+        "mdd_diff": 0.7432907436204959,
+        "better_return": true,
+        "better_sharpe": true,
+        "better_mdd": true
+      }
+    },
+    "beats_return_count": "3/3",
+    "beats_sharpe_count": "3/3",
+    "beats_mdd_count": "3/3"
+  },
+  "interpretation": {
+    "summary": "TTM-01 holdout total return -0.2096% (Sharpe -0.553, MDD -0.5376%). Beats 3/3 of 3 benchmarks on return, 3/3 on Sharpe, 3/3 on MDD.",
+    "conclusion": "TTM-01 holdout is negative across all cost levels. Benchmark comparison shows whether the strategy underperforms even the simplest alternative (buy-and-hold the control assets). A negative strategy with worse benchmarks than buy-and-hold reinforces the do_not_promote decision."
+  },
+  "decision": "do_not_promote",
+  "gate_notes": [
+    "Benchmark comparison uses the same holdout period as the walk-forward test.",
+    "Buy-and-hold benchmarks computed on frozen 1,200-row Bybit daily snapshot.",
+    "TTM-01 holdout is negative; benchmark comparison provides context for the rejection.",
+    "Robustness/jitter already FAILED (52.8% survival, threshold >=60%).",
+    "Paper-forward agreement remains outstanding.",
+    "No trades, alerts, allocations, credentials or contacts."
+  ],
+  "source_hashes": {
+    "BTCUSDT_daily.json": "4d59f6a6ab9cdeb47b6efd166edeec5c6c0bc7ce2e48b709722d61f5500137f1",
+    "ETHUSDT_daily.json": "49c5b53dbcb016d9239215cf98f1d4dc7e622102017e0e2dfaec35b63d3b2845",
+    "SOLUSDT_daily.json": "ad8a14d83a2255a013c4b61eb7bd312fb83bd3a432309497f107af1f6e8e49d3",
+    "manifest.json": "356420e8a737f967a32ab3cf740f0bcfa069a7c6cbf3276b91b30c5c630ceae7"
+  }
+}

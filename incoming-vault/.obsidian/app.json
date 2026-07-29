@@ -1,0 +1,7 @@
+{
+  "alwaysUpdateLinks": true,
+  "showFrontmatter": true,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "01_Inbox",
+  "attachmentFolderPath": "02_Raw/assets"
+}

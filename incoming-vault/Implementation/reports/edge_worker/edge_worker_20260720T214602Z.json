@@ -1,0 +1,132 @@
+{
+  "report_type": "edge_worker_operational_report",
+  "generated_at": "20260720T214602Z",
+  "worker": "jayse_paper_only_quant_floor",
+  "mode": "paper_only_research",
+  "manifest": {
+    "file": "universe_manifest_20260720T214326Z.json",
+    "hash_sha256": "d948d3a168df4be938f27eac9e38579b465bef06109e2308e0de0fd3f75d2688",
+    "schema_version": "qtf-research-universe-v1",
+    "generated_at": "2026-07-20T21:43:26+00:00",
+    "total_assets": 50,
+    "controls": [
+      "BTC",
+      "ETH",
+      "SOL"
+    ],
+    "bybit_spot_count": 50,
+    "hyperliquid_count": 0,
+    "shortfall": 0,
+    "status": "ok"
+  },
+  "trend_board": {
+    "file": "trend_board_20260720T214326Z.json",
+    "generated_at": "2026-07-20T21:43:26+00:00",
+    "eligible_count": 29,
+    "positive_24h_count": 10,
+    "negative_24h_count": 5,
+    "top_positive": "PUMP",
+    "top_positive_pct": 6.41,
+    "top_negative": "CC",
+    "top_negative_pct": -2.63,
+    "classification": "observation"
+  },
+  "funding_board": {
+    "file": "funding_board_20260720T214326Z.json",
+    "generated_at": "2026-07-20T21:43:26+00:00",
+    "eligible_count": 39,
+    "positive_funding_count": 10,
+    "negative_funding_count": 5,
+    "candidate_events_count": 15,
+    "top_positive_funding_asset": "BNB",
+    "top_negative_funding_asset": "ASTER",
+    "classification": "observation"
+  },
+  "board_provenance_consistency": {
+    "manifest_sha256": "d948d3a168df4be938f27eac9e38579b465bef06109e2308e0de0fd3f75d2688",
+    "trend_provenance_matches": true,
+    "funding_provenance_matches": true,
+    "overall_consistent": true,
+    "note": "Fresh scan produced at 2026-07-20T21:43:26Z -- first data update since 2026-07-16T11:30:39Z (4-day gap closed)."
+  },
+  "control_ledger_status": {
+    "ledger_file": "QTF Verification and Delivery Control - 2026-07-15.md",
+    "last_checkpoint": "Checkpoint A 2026-07-16 verified-complete",
+    "latest_checkpoint_hash_match": true,
+    "ledger_audit_date": "2026-07-15",
+    "deliverable_statuses": {
+      "QTF-V01": "partial",
+      "QTF-V02": "partial",
+      "QTF-V03": "blocked",
+      "QTF-V04": "partial",
+      "QTF-V05": "partial",
+      "QTF-V06": "partial",
+      "QTF-V07": "partial",
+      "QTF-V08": "partial",
+      "QTF-V09": "partial",
+      "QTF-V10": "partial",
+      "QTF-V11": "queued",
+      "QTF-V12": "partial"
+    },
+    "key_findings": [
+      "All deliverables remain partial, blocked, or queued -- no production edge promoted.",
+      "TTM-01 jitter robustness FAILED (52.8% survival, threshold >= 60%).",
+      "V02 broad funding panel: 0% hit rate across all configurations.",
+      "V04B jitter FAILED (38.5% survival, 6,561 combinations).",
+      "V07 costed funding: edge fragile (15.4% survival) -- price reversal, not funding carry.",
+      "V05 pairs backtest: both OOS do_not_promote.",
+      "V01 benchmark comparison completed -- capital preservation, not edge.",
+      "V08 market-making: blocked (no L2 historical data).",
+      "T13 calibration: no active price discovery at achievable polling cadence.",
+      "V07 cross-venue: 50% directional agreement, strong panel-level evidence but fragile."
+    ]
+  },
+  "verification_checks": {
+    "manifest_asset_count": 50,
+    "expected_50": true,
+    "controls_present": true,
+    "non_control_assets": 47,
+    "trend_classification_safe": true,
+    "funding_classification_safe": true,
+    "candidate_events_have_next_gate": true,
+    "no_trade_language_in_boards": true,
+    "provenance_chain_intact": true,
+    "scan_fresh": true,
+    "scan_age_hours": 0.0,
+    "previous_scan_age_hours": 98.5,
+    "idle_runs_reset": true,
+    "previous_idle_runs": 18,
+    "previous_manifest_hash": "3c579cf02c0d0a3ba6be2394c4fb8a67e4d41513e42a0eb2e9b06674f2d7c0f1",
+    "manifest_hash_changed": true
+  },
+  "decision": {
+    "action": "hold_zero_allocation",
+    "reason": "No validated production edge exists. All deliverables remain partial/blocked/queued per verification control ledger. Fresh scan data received after 4-day dormancy -- boards updated from 2026-07-16 baseline. Robustness gates consistently failed across V01 (52.8%), V04B (38.5%), V07 (15.4%). Funding panel showed 0% hit rate on V02 broad test. Pairs backtest negative OOS. Market-making blocked on L2 data. Scan pipeline now active with fresh data.",
+    "allocation_eth": 0,
+    "allocation_other": {},
+    "alert_level": "none",
+    "paper_signals": [],
+    "orders_placed": 0,
+    "credentials_used": false
+  },
+  "changes_since_last_run": {
+    "previous_run": "edge_worker_20260720T130000Z.json",
+    "previous_generated_at": "2026-07-20T13:00:00Z",
+    "manifest_hash_changed": true,
+    "manifest_old": "3c579cf02c0d0a3ba6be2394c4fb8a67e4d41513e42a0eb2e9b06674f2d7c0f1",
+    "manifest_new": "d948d3a168df4be938f27eac9e38579b465bef06109e2308e0de0fd3f75d2688",
+    "trend_board_changed": true,
+    "funding_board_changed": true,
+    "ledger_updated": false,
+    "new_deliverables": [],
+    "status_changes": [],
+    "idle_runs_reset": true,
+    "previous_idle_runs": 18,
+    "scan_fresh_data": true,
+    "scan_generated_at": "2026-07-20T21:43:26+00:00",
+    "trend_eligible_change": "30 -> 29",
+    "funding_eligible_change": "41 -> 39",
+    "top_trend_change": "ONDO 15.74% -> PUMP 6.41%",
+    "net_change": "FRESH SCAN DATA after 4-day dormancy. Manifest hash changed. Trend: 29 eligible (was 30), top positive PUMP 6.41% (was ONDO 15.74%). Funding: 39 eligible (was 41). Provenance chain intact. Ledger unchanged -- all deliverables still partial/blocked/queued."
+  }
+}

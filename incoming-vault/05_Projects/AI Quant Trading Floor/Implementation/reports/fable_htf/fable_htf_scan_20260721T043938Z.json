@@ -1,0 +1,403 @@
+{
+  "C-HTF-1": {
+    "edge": "C-HTF-1",
+    "name": "Funding-Rate Harvesting (Delta-Neutral Carry)",
+    "scan_count": 20,
+    "deploy_hurdle_annualized": 13.0,
+    "opportunities": [],
+    "decision": "hold_zero_allocation"
+  },
+  "C-HTF-2": {
+    "edge": "C-HTF-2",
+    "name": "Basis / Cash-and-Carry (Dated Futures)",
+    "scan_count": 20,
+    "deploy_hurdle_annualized": 10.0,
+    "opportunities": [],
+    "decision": "hold_zero_allocation"
+  },
+  "C-HTF-3": {
+    "edge": "C-HTF-3",
+    "name": "Token Unlock / Supply-Event Positioning",
+    "upcoming_total": 0,
+    "threshold_met": 0,
+    "high_impact_unlocks": [],
+    "all_upcoming": [],
+    "note": "Data from token_unlock_feed cache (0 upcoming within lookahead window).",
+    "decision": "research_pending_data_feed"
+  },
+  "C-HTF-4": {
+    "edge": "C-HTF-4",
+    "name": "Alt/Majors Pairs & Relative Value",
+    "pairs_identified": 0,
+    "opportunities": [],
+    "decision": "hold_zero_allocation"
+  },
+  "C-HTF-5": {
+    "edge": "C-HTF-5",
+    "name": "Trend Following on Majors",
+    "lookback_days": 84,
+    "target_win_rate": 0.4,
+    "signals": [
+      {
+        "symbol": "BTC",
+        "price": 65525.9,
+        "donchian_high": 65769.3,
+        "donchian_low": 59556.1,
+        "atr": 1474.32,
+        "momentum_12w_pct": -13.5,
+        "regime": "neutral",
+        "suggested_position_atr": 2.25
+      },
+      {
+        "symbol": "ETH",
+        "price": 1923.4,
+        "donchian_high": 1945.91,
+        "donchian_low": 1596.0,
+        "atr": 63.71,
+        "momentum_12w_pct": -14.59,
+        "regime": "neutral",
+        "suggested_position_atr": 3.31
+      },
+      {
+        "symbol": "SOL",
+        "price": 78.17,
+        "donchian_high": 83.95,
+        "donchian_low": 73.3,
+        "atr": 2.32,
+        "momentum_12w_pct": -5.84,
+        "regime": "neutral",
+        "suggested_position_atr": 2.97
+      },
+      {
+        "symbol": "BNB",
+        "price": 574.1,
+        "donchian_high": 593.2,
+        "donchian_low": 545.8,
+        "atr": 12.13,
+        "momentum_12w_pct": -6.95,
+        "regime": "neutral",
+        "suggested_position_atr": 2.11
+      },
+      {
+        "symbol": "XRP",
+        "price": 1.12,
+        "donchian_high": 1.18,
+        "donchian_low": 1.04,
+        "atr": 0.03,
+        "momentum_12w_pct": -17.82,
+        "regime": "neutral",
+        "suggested_position_atr": 2.61
+      },
+      {
+        "symbol": "TRX",
+        "price": 0.33,
+        "donchian_high": 0.33,
+        "donchian_low": 0.31,
+        "atr": 0.0,
+        "momentum_12w_pct": 0.88,
+        "regime": "neutral",
+        "suggested_position_atr": 1.15
+      },
+      {
+        "symbol": "DOGE",
+        "price": 0.07,
+        "donchian_high": 0.08,
+        "donchian_low": 0.07,
+        "atr": 0.0,
+        "momentum_12w_pct": -30.18,
+        "regime": "neutral",
+        "suggested_position_atr": 2.84
+      },
+      {
+        "symbol": "LINK",
+        "price": 8.65,
+        "donchian_high": 8.67,
+        "donchian_low": 7.3,
+        "atr": 0.28,
+        "momentum_12w_pct": -5.07,
+        "regime": "neutral",
+        "suggested_position_atr": 3.24
+      },
+      {
+        "symbol": "ADA",
+        "price": 0.17,
+        "donchian_high": 0.2,
+        "donchian_low": 0.15,
+        "atr": 0.01,
+        "momentum_12w_pct": -29.54,
+        "regime": "neutral",
+        "suggested_position_atr": 4.31
+      },
+      {
+        "symbol": "AVAX",
+        "price": 6.61,
+        "donchian_high": 7.11,
+        "donchian_low": 6.28,
+        "atr": 0.24,
+        "momentum_12w_pct": -27.5,
+        "regime": "neutral",
+        "suggested_position_atr": 3.68
+      },
+      {
+        "symbol": "ATOM",
+        "price": 1.5,
+        "donchian_high": 1.63,
+        "donchian_low": 1.44,
+        "atr": 0.05,
+        "momentum_12w_pct": -22.02,
+        "regime": "neutral",
+        "suggested_position_atr": 3.04
+      },
+      {
+        "symbol": "DOT",
+        "price": 0.83,
+        "donchian_high": 0.91,
+        "donchian_low": 0.8,
+        "atr": 0.03,
+        "momentum_12w_pct": -31.17,
+        "regime": "neutral",
+        "suggested_position_atr": 4.12
+      },
+      {
+        "symbol": "NEAR",
+        "price": 2.03,
+        "donchian_high": 2.11,
+        "donchian_low": 1.8,
+        "atr": 0.1,
+        "momentum_12w_pct": 53.41,
+        "regime": "neutral",
+        "suggested_position_atr": 4.92
+      },
+      {
+        "symbol": "APT",
+        "price": 0.61,
+        "donchian_high": 0.65,
+        "donchian_low": 0.58,
+        "atr": 0.03,
+        "momentum_12w_pct": -38.59,
+        "regime": "neutral",
+        "suggested_position_atr": 4.29
+      },
+      {
+        "symbol": "SUI",
+        "price": 0.77,
+        "donchian_high": 0.78,
+        "donchian_low": 0.7,
+        "atr": 0.03,
+        "momentum_12w_pct": -15.18,
+        "regime": "neutral",
+        "suggested_position_atr": 3.69
+      },
+      {
+        "symbol": "SEI",
+        "price": 0.05,
+        "donchian_high": 0.05,
+        "donchian_low": 0.05,
+        "atr": 0.0,
+        "momentum_12w_pct": -18.97,
+        "regime": "neutral",
+        "suggested_position_atr": 3.96
+      },
+      {
+        "symbol": "LTC",
+        "price": 47.25,
+        "donchian_high": 47.86,
+        "donchian_low": 42.39,
+        "atr": 1.4,
+        "momentum_12w_pct": -14.51,
+        "regime": "neutral",
+        "suggested_position_atr": 2.97
+      },
+      {
+        "symbol": "BCH",
+        "price": 223.8,
+        "donchian_high": 254.9,
+        "donchian_low": 209.6,
+        "atr": 9.96,
+        "momentum_12w_pct": -49.96,
+        "regime": "neutral",
+        "suggested_position_atr": 4.45
+      },
+      {
+        "symbol": "OP",
+        "price": 0.09,
+        "donchian_high": 0.11,
+        "donchian_low": 0.09,
+        "atr": 0.0,
+        "momentum_12w_pct": -20.85,
+        "regime": "neutral",
+        "suggested_position_atr": 4.95
+      }
+    ],
+    "breakout_long_count": 0,
+    "breakout_short_count": 0,
+    "decision": "observation_only"
+  },
+  "C-HTF-6": {
+    "edge": "C-HTF-6",
+    "name": "Hedged LPing (Concentrated Liquidity)",
+    "candidates_found": 15,
+    "top_candidates": [
+      {
+        "pool_id": "665dc8bc-c79d-4800-97f7-304bf368e547",
+        "project": "uniswap-v3",
+        "symbol": "USDC-WETH",
+        "chain": "Ethereum",
+        "tvl_usd": 95037670.0,
+        "apy_base": 1749.11,
+        "apy_reward": 0.0,
+        "net_apr_est": 1739.11,
+        "volume_7d_usd": 559942122.0,
+        "il_risk": "yes",
+        "exposure": "multi",
+        "score": 0.95,
+        "action": "Hedged LP candidate: 1739.1% net APR est. (after ~10% hedge cost). TVL $95,037,670."
+      },
+      {
+        "pool_id": "fc9f488e-8183-416f-a61e-4e5c571d4395",
+        "project": "uniswap-v3",
+        "symbol": "WETH-USDT",
+        "chain": "Ethereum",
+        "tvl_usd": 85458672.0,
+        "apy_base": 3556.15,
+        "apy_reward": 0.0,
+        "net_apr_est": 3546.15,
+        "volume_7d_usd": 145864074.0,
+        "il_risk": "yes",
+        "exposure": "multi",
+        "score": 0.95,
+        "action": "Hedged LP candidate: 3546.2% net APR est. (after ~10% hedge cost). TVL $85,458,672."
+      },
+      {
+        "pool_id": "a14bd201-764c-40a5-86b8-2928b2461232",
+        "project": "uniswap-v3",
+        "symbol": "WETH-USDC",
+        "chain": "Arbitrum",
+        "tvl_usd": 35671484.0,
+        "apy_base": 2291.85,
+        "apy_reward": 0.0,
+        "net_apr_est": 2281.85,
+        "volume_7d_usd": 286364074.0,
+        "il_risk": "yes",
+        "exposure": "multi",
+        "score": 0.95,
+        "action": "Hedged LP candidate: 2281.8% net APR est. (after ~10% hedge cost). TVL $35,671,484."
+      },
+      {
+        "pool_id": "a5c85bc8-eb41-45c0-a520-d18d7529c0d8",
+        "project": "orca-dex",
+        "symbol": "SOL-USDC",
+        "chain": "Solana",
+        "tvl_usd": 26190056.0,
+        "apy_base": 6376.97,
+        "apy_reward": 0.0,
+        "net_apr_est": 6366.97,
+        "volume_7d_usd": 526623158.0,
+        "il_risk": "yes",
+        "exposure": "multi",
+        "score": 0.95,
+        "action": "Hedged LP candidate: 6367.0% net APR est. (after ~10% hedge cost). TVL $26,190,056."
+      },
+      {
+        "pool_id": "49717ee2-9808-4288-b76d-e658195b7979",
+        "project": "uniswap-v3",
+        "symbol": "USDC-WETH",
+        "chain": "Ethereum",
+        "tvl_usd": 20827374.0,
+        "apy_base": 1759.51,
+        "apy_reward": 0.0,
+        "net_apr_est": 1749.51,
+        "volume_7d_usd": 16489494.0,
+        "il_risk": "yes",
+        "exposure": "multi",
+        "score": 0.95,
+        "action": "Hedged LP candidate: 1749.5% net APR est. (after ~10% hedge cost). TVL $20,827,374."
+      },
+      {
+        "pool_id": "3dd2c646-c05a-4483-98f4-d7a924a6d6d3",
+        "project": "uniswap-v3",
+        "symbol": "WBTC-USDT",
+        "chain": "Ethereum",
+        "tvl_usd": 13696120.0,
+        "apy_base": 1049.62,
+        "apy_reward": 0.0,
+        "net_apr_est": 1039.62,
+        "volume_7d_usd": 71286909.0,
+        "il_risk": "yes",
+        "exposure": "multi",
+        "score": 0.95,
+        "action": "Hedged LP candidate: 1039.6% net APR est. (after ~10% hedge cost). TVL $13,696,120."
+      },
+      {
+        "pool_id": "f7dd8768-77be-4f91-96d6-dd563ac23dd5",
+        "project": "uniswap-v3",
+        "symbol": "WETH-USDT",
+        "chain": "Ethereum",
+        "tvl_usd": 13389832.0,
+        "apy_base": 1305.82,
+        "apy_reward": 0.0,
+        "net_apr_est": 1295.82,
+        "volume_7d_usd": 107682566.0,
+        "il_risk": "yes",
+        "exposure": "multi",
+        "score": 0.95,
+        "action": "Hedged LP candidate: 1295.8% net APR est. (after ~10% hedge cost). TVL $13,389,832."
+      },
+      {
+        "pool_id": "12edc6f3-4926-4b4f-b97c-38ef6a458574",
+        "project": "raydium-amm",
+        "symbol": "WSOL-USDC",
+        "chain": "Solana",
+        "tvl_usd": 10105877.0,
+        "apy_base": 1689.0,
+        "apy_reward": 46.8,
+        "net_apr_est": 1679.0,
+        "volume_7d_usd": 17423330.0,
+        "il_risk": "yes",
+        "exposure": "multi",
+        "score": 0.95,
+        "action": "Hedged LP candidate: 1679.0% net APR est. (after ~10% hedge cost). TVL $10,105,877."
+      },
+      {
+        "pool_id": "da292ed1-aff5-44e0-8e23-333a1c61ee7f",
+        "project": "fluid-dex",
+        "symbol": "USDC-ETH",
+        "chain": "Ethereum",
+        "tvl_usd": 9949453.0,
+        "apy_base": 2445.47,
+        "apy_reward": 0.0,
+        "net_apr_est": 2435.47,
+        "volume_7d_usd": 25822089.0,
+        "il_risk": "yes",
+        "exposure": "multi",
+        "score": 0.95,
+        "action": "Hedged LP candidate: 2435.5% net APR est. (after ~10% hedge cost). TVL $9,949,453."
+      },
+      {
+        "pool_id": "9e4dbe67-f5fc-4428-8e6f-93d464f40a0d",
+        "project": "curve-dex",
+        "symbol": "USDT-WBTC-WETH",
+        "chain": "Ethereum",
+        "tvl_usd": 9924420.0,
+        "apy_base": 104.0,
+        "apy_reward": 0.2,
+        "net_apr_est": 94.0,
+        "volume_7d_usd": 8349625.0,
+        "il_risk": "yes",
+        "exposure": "multi",
+        "score": 0.949,
+        "action": "Hedged LP candidate: 94.0% net APR est. (after ~10% hedge cost). TVL $9,924,420."
+      }
+    ],
+    "status": "paper_monitor_active",
+    "note": "Data from dex_pool_yield_feed cache. Net APR est. subtracts ~10% hedge cost. Min 15% net APR + $1M TVL filter.",
+    "requirements": [
+      "DEX pool APR/volume data from DeFiLlama — ✅ integrated",
+      "Perpetual futures open on both sides — check per-symbol",
+      "Smart contract risk audit before any live consideration",
+      "Hedge slippage and gas tracking as first-class costs",
+      "Net APR after hedging > 15% threshold"
+    ],
+    "decision": "promote_paper_monitor"
+  }
+}

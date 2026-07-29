@@ -1,0 +1,35 @@
+{
+  "ts": "2026-07-04T00:35:26+00:00",
+  "mode": "paper-only read-only operations",
+  "track_outcomes": {
+    "outcome_ledger": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Implementation\\ledgers\\polymarket_paper_outcomes.jsonl",
+    "new_outcomes": [
+      {
+        "signal_id": "1395a6c3e7b561e2",
+        "checked_at": "2026-07-04T00:35:26+00:00",
+        "resolution_status": "resolved_approx",
+        "spot_at_check": 1758.79,
+        "target": 1700.0,
+        "yes_won": true,
+        "candidate_side": "YES",
+        "unit_paper_pnl": 0.5,
+        "reason": "approx spot-at-check for expired above/below market",
+        "question": "Will the price of Ethereum be above $1,700 on July 3?"
+      },
+      {
+        "signal_id": "636d423f7d16992d",
+        "checked_at": "2026-07-04T00:35:27+00:00",
+        "resolution_status": "resolved_approx",
+        "spot_at_check": 62761.77,
+        "target": 62000.0,
+        "yes_won": true,
+        "candidate_side": "YES",
+        "unit_paper_pnl": 0.8015,
+        "reason": "approx spot-at-check for expired above/below market",
+        "question": "Will the price of Bitcoin be above $62,000 on July 3?"
+      }
+    ],
+    "new_count": 2,
+    "signals_total": 12
+  }
+}

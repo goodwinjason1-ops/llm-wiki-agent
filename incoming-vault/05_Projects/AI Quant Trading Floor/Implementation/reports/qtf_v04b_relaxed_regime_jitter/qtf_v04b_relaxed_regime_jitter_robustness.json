@@ -1,0 +1,177 @@
+{
+  "schema": "qtf-v04b-relaxed-regime-jitter-robustness-v1",
+  "generated_at": "2026-07-17T19:10:09+00:00",
+  "parent_artifact": "QTF-V04B relaxed-regime mean-reversion test",
+  "input_manifest_sha256": "356420e8a737f967a32ab3cf740f0bcfa069a7c6cbf3276b91b30c5c630ceae7",
+  "input_symbol_hashes": {
+    "BTCUSDT": "4d59f6a6ab9cdeb47b6efd166edeec5c6c0bc7ce2e48b709722d61f5500137f1",
+    "ETHUSDT": "49c5b53dbcb016d9239215cf98f1d4dc7e622102017e0e2dfaec35b63d3b2845",
+    "SOLUSDT": "ad8a14d83a2255a013c4b61eb7bd312fb83bd3a432309497f107af1f6e8e49d3"
+  },
+  "symbols": [
+    "BTCUSDT",
+    "ETHUSDT",
+    "SOLUSDT"
+  ],
+  "rows_per_symbol": 1200,
+  "split": "chronological 70/30 (840/360)",
+  "base_config": {
+    "name": "relaxed_20pct",
+    "return_threshold": 0.2,
+    "sma_band": [
+      0.75,
+      1.25
+    ],
+    "rsi_entry_cross": 30,
+    "rsi_exit_level": 55,
+    "stop_pct": 0.03,
+    "max_hold_days": 5,
+    "cost_bps": 20
+  },
+  "base_holdout": {
+    "BTCUSDT": {
+      "trade_count": 3,
+      "total_net": -0.013218709899940118,
+      "avg_net": -0.004406236633313372,
+      "hit_rate": 0.6666666666666666,
+      "max_drawdown": -0.07014558722605035
+    },
+    "ETHUSDT": {
+      "trade_count": 3,
+      "total_net": 0.045649981430795905,
+      "avg_net": 0.015216660476931968,
+      "hit_rate": 0.6666666666666666,
+      "max_drawdown": -0.033945803098217264
+    },
+    "SOLUSDT": {
+      "trade_count": 1,
+      "total_net": -0.04560679970436077,
+      "avg_net": -0.04560679970436077,
+      "hit_rate": 0.0,
+      "max_drawdown": -0.04560679970436077
+    }
+  },
+  "base_aggregate": {
+    "total_net": -0.01317552817350498,
+    "trade_count": 7,
+    "hit_rate": 0.5714285714285714
+  },
+  "jitter_grid": {
+    "dimensions": 8,
+    "combinations": 6561,
+    "grids": {
+      "return_threshold": [
+        0.15,
+        0.2,
+        0.25
+      ],
+      "sma_band_lo": [
+        0.7,
+        0.75,
+        0.8
+      ],
+      "sma_band_hi": [
+        1.2,
+        1.25,
+        1.3
+      ],
+      "rsi_entry_cross": [
+        25,
+        30,
+        35
+      ],
+      "rsi_exit_level": [
+        50,
+        55,
+        60
+      ],
+      "stop_pct": [
+        0.02,
+        0.03,
+        0.04
+      ],
+      "max_hold_days": [
+        3,
+        5,
+        7
+      ],
+      "cost_bps": [
+        10,
+        20,
+        40
+      ]
+    }
+  },
+  "robustness_summary": {
+    "total_combinations_tested": 6561,
+    "net_survival_rate": 0.3855,
+    "trades_survival_rate": 0.5597,
+    "hr_survival_rate": 0.2277,
+    "mean_holdout_net": -0.160992,
+    "std_holdout_net": 0.218596,
+    "mean_holdout_trades": 12.2,
+    "mean_holdout_hr": 0.4017,
+    "robustness_gate": "fail",
+    "gate_threshold": ">= 60% of jittered parameters must survive at or above base total net"
+  },
+  "per_symbol_survival": {
+    "BTCUSDT": {
+      "base_net": -0.013218709899940118,
+      "base_trades": 3,
+      "base_hit_rate": 0.6666666666666666,
+      "net_survival_rate": 0.44170096021947874,
+      "trades_survival_rate": 0.7777777777777778,
+      "hr_survival_rate": 0.23045267489711935
+    },
+    "ETHUSDT": {
+      "base_net": 0.045649981430795905,
+      "base_trades": 3,
+      "base_hit_rate": 0.6666666666666666,
+      "net_survival_rate": 0.09465020576131687,
+      "trades_survival_rate": 0.48148148148148145,
+      "hr_survival_rate": 0.1934156378600823
+    },
+    "SOLUSDT": {
+      "base_net": -0.04560679970436077,
+      "base_trades": 1,
+      "base_hit_rate": 0.0,
+      "net_survival_rate": 0.5679012345679012,
+      "trades_survival_rate": 0.6666666666666666,
+      "hr_survival_rate": 0.6666666666666666
+    }
+  },
+  "param_sensitivity": {
+    "return_threshold": -0.0402,
+    "rsi_entry_cross": -0.7881,
+    "rsi_exit_level": 0.0014,
+    "stop_pct": 0.0668,
+    "max_hold_days": -0.3081
+  },
+  "best_jittered_config": {
+    "key": "j4476",
+    "params": {
+      "return_threshold": 0.25,
+      "rsi_entry_cross": 30,
+      "rsi_exit_level": 50,
+      "stop_pct": 0.04,
+      "max_hold_days": 5,
+      "sma_band": [
+        0.7,
+        1.2
+      ],
+      "cost": 0.001
+    },
+    "agg_total_net": 0.1296406914185393,
+    "agg_trade_count": 9,
+    "agg_hit_rate": 0.6666666666666666
+  },
+  "decision": "do_not_promote",
+  "gate_notes": [
+    "Base holdout aggregated net: -1.3176% across 7 trades.",
+    "Across 6561 parameter combinations: 38.5% survived below-base net.",
+    "Holdout net distribution: mean=-16.0992%, std=21.8596%.",
+    "Robustness gate: FAILED (threshold: >= 60% survival).",
+    "Best jittered config: j4476 with net 12.9641%.",
+    "No trades, alerts, allocations, credentials or contacts were used."
+  ]
+}

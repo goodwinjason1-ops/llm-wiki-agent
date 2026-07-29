@@ -1,0 +1,317 @@
+What if the financial system were
+rebuilt for the 21st century? You'd want
+it to operate 24/7. You'd want global
+access. You'd want instant settlement.
+And if you thought about it long enough,
+you'd probably conclude that blockchain
+was the right technology to use for
+that. The project I'm going to give an
+overview of today is aiming to do
+exactly that. And it's already succeeded
+in generating hundreds of millions of
+dollars in revenue. I'm speaking, of
+course, about Hyperlid. Now, this isn't
+the first time I've covered Hyperlquid
+on this channel. I've probably made a
+dozen videos about it at this point, but
+this video is going to be different.
+This is a comprehensive analysis of what
+Hyperlid is, where it stands today, and
+most importantly, its strategic
+positioning for the future. If you're
+trying to understand whether Hyperlid is
+still a compelling investment in 2026,
+or if its best days are behind it, this
+is exactly the video you need. Now,
+let's get into it.
+Let's start with the basics. What
+exactly is Hyperlquid? At its core,
+Hyperlquid is three things. First, it's
+the leading perpetual futures index in
+crypto. You want to trade crypto
+derivatives without using a centralized
+exchange. Then there's a good chance
+that you would conclude that Hyperlid
+was the place to do it, as many users
+have before. It's where the plurality of
+volume happens. Second, it's its own
+layer 1 blockchain, which means it's not
+built on Ethereum or Salana or anything
+else. It's a standalone chain with its
+own validator set and now its own set of
+ecosystem applications, hundreds of
+them. Third, and this is where it gets
+interesting, it has the eventual goal of
+becoming quote the blockchain to house
+all finance, a decentralized exchange
+for assets, not just crypto. That means
+commodities, equities, and more. That
+last part sounds ambitious, and it is.
+But here's the thing. They are already
+making real progress on it. We're going
+to talk about that later in this video.
+All right, let's talk numbers because
+one of the things that I appreciate
+about Hyperlid, and I think that many
+others do as well, is that they actually
+have real revenue to analyze here.
+They've generated hundreds of millions
+of dollars since launching. And here's
+what's really interesting. From July to
+December of 2025, Hyperlid's market cap
+dropped about 60%. From 14 billion down
+to $6 billion. But here's the thing.
+There was an opportunity there because
+monthly revenue only dropped about 30%
+over that same period from $90 million
+down to $60 million. And then in
+January, revenue actually grew again to
+$70 million while market cap only rose
+to 7 billion. So what does this tell us?
+The market cap has been more volatile
+than the underlying business. And unlike
+many businesses in crypto, in
+Hyperlquid's case, their business is not
+necessarily contingent on the token that
+deres value from it, the actual revenue
+generating machine has been more
+resilient than the token price would
+suggest. And I think that disconnect is
+something that's worth paying attention
+to. For the first time in DeFi, we have
+businesses that can be assessed by their
+fundamentals and that you can actually
+make a value based investment thesis on.
+Now, Hyperlquid also receives
+significant value from its layer 1
+blockchain separate from the Perex. If
+you look at the assets on chain
+currently, there are over $4.5 billion
+in stable coins on the Hyperlquid layer
+1 and over $1.5 billion in total value
+locked in Hyperlid DeFi applications.
+There are over 100 applications live on
+the chain, some with hundreds of
+millions of dollars deposited. And
+here's a key point with that. Chains
+with similar metrics are worth billions
+of dollars on their own. So remember, we
+talked about Hyperlid being potentially
+a value play just based on its perex
+business and then you throw in the fact
+that it has comps in the layer one space
+based on its fundamentals there. So now
+you're essentially getting two products
+in one token. All right, now let's talk
+market share because one of the things
+to watch that I've mentioned in previous
+analysis of this project is whether they
+could hold up against competitive
+challenges in the perex space. And one
+thing that I think makes their revenue
+more notable is that it's been
+relatively resilient despite serious
+challenges from competitors in the
+second half of 2025. The perpet space
+has gotten more competitive. You can see
+that across the numbers. Uh you've got
+new entrance, you've got existing
+players improving their products. Uh and
+many of these existing players are
+backed or new players are backed by huge
+huge industry participants. And so
+Hyperlid has had to defend its position.
+But in recent weeks, Hyperliquid's share
+of Perex volume has actually started to
+climb again, breaking 25% for the first
+time in months. And that's notable
+because it suggests that despite the
+competition, Hyperl is either holding
+its ground or gaining ground or gaining
+background that it lost when competitors
+were running airdrops programs. Then if
+you look at open interest, which is
+another way to measure the size of these
+platforms, volume is going to be based
+on activity. Open interest is going to
+be based on liquidity. Then Hyperlquid's
+market share has held steady at around
+50% for months. 50% market share of
+Perex open interest is dominance. That's
+not a project that has lost its
+competitive position. By the way, I
+listed Hyperlid as one of my top
+investments for 2026 in my Substack
+posts last month before the recent price
+move. Check out the link in the
+description. And I actually created a
+valuation framework for Hyperlquid all
+the way back in 2024 that walks through
+how to think about the token's value
+relative to revenue. Moral of the story,
+if you want to learn about DeFi
+investments before they pump, check out
+my Substack at newsletter.dfi.com.
+Next, let's talk unlocks. So, last month
+in my video about Hyperlquid, I
+mentioned that unlocks were the main
+risk to Hyperlquid's price. Team tokens
+unlocking and potentially being sold
+were putting downward pressure on the
+price, and people were worried about how
+much selling there would be. Now, here
+is an update. The situation seems to be
+improving. unlocks were just reduced.
+Only 140,000 team tokens were unlocked
+this month compared to 1.2 million last
+month. That is a significant reduction
+in potential sell pressure and likely a
+amount of sell pressure that can be
+counteracted by Vex. So that doesn't
+mean unlocks are over and you should
+still monitor this going forward to see
+whether they increase again. But it
+appears for now at least that the worst
+of the unlock pressure is decreasing and
+it's a positive development for holders.
+Whenever there's some sort of risk that
+gets taken away, that's a positive
+development, especially if the other
+fundamentals look good. All right, so
+we've established that Hyperlid is the
+leading perex for digital assets. But
+where is the opportunity for the future?
+Because if it's already leading, how
+could it grow in the future? And if the
+market for D5 perpetuals is saturated or
+Hyperlid already has 25 to 50% market
+share, where exactly is that growth
+going to come from? I see three main
+opportunities, three opportunities for
+how Hyperlid could grow. Opportunity one
+is competing with centralized exchanges.
+Despite their growth, dexes are still
+the small minority of crypto derivatives
+volume. The vast majority of crypto
+futures trading happens on centralized
+exchanges like Binance or Bybit. So
+there's still room for significant
+growth simply by taking more market
+share from centralized exchanges, even
+if Hyperlid just maintains its share of
+DeFi exchanges. And with regulatory
+pressure on centralized exchanges
+increasing and a best-in-class product
+experience on hyperlquid that's only
+getting better, I think this shift is
+likely to continue. The second
+opportunity would be to expand into
+non-crypto assets and in fact this is
+already happening and I think this may
+be the most interesting highest
+potential opportunity of the three.
+Recently, Hyperlid's HIP3 upgrade made
+new markets permissionless to launch. So
+what this means is that anyone with the
+resources can now deploy a perpetual
+futures market on hyperlquid and they
+don't need the team's permission or the
+team to be driving the process. And the
+result of this is that it's brought
+futures for assets like silver, gold,
+Nvidia stock and the Japanese yen onto
+Hyperlid. Some of these most notably
+silver have attracted billions of
+dollars in daily volume recently and in
+fact become some of the most active
+markets on the entire platform. So think
+about what that means. people are
+trading silver futures on a
+decentralized exchange. That's a
+different user base and a much larger
+total addressable market than the
+typical crypto traders. Opportunity 3
+would be Hyperlid's upcoming expansion
+into prediction markets and other
+options. More recently, Hyperlid
+announced their next expansion, which is
+prediction markets, binary options, uh,
+and other options related projects. This
+is the upcoming HIPP4 upgrade, which
+will introduce prediction markets that
+settle in Hyperlquid's native USDH
+stable coin, as well as other fully
+collateralized contracts that settle in
+a fixed range. Prediction markets are
+one of the most ontrend crypto use cases
+right now. Poly Market and Cali both
+command multi-billion dollar valuations.
+And if Hyperlid can become a dominant
+player on that front, like they have
+with derivatives, it could push their
+valuation significantly higher. Remember
+we already talked about how their
+current valuation is a combination of
+their perex business, their layer 1. Now
+you would be adding a prediction market
+business as well. There are some risks
+with this however. So one thing that
+I'll be watching is whether any binary
+options products that hyperlquid
+launches cannibalize their existing per
+usage or if they add net new users. If
+it's mostly the same users trading
+different products, that is fine. but it
+doesn't really expand the pie and it's
+possible that options will be less
+profitable than running a derivatives
+business. If it brings in new users on
+the other hand who weren't trading perks
+before, that is a much bigger deal. By
+the way, if you want to try out Hyperlid
+yourself, there's an affiliate link down
+in the description. Using that really
+helps the channel out. And if you're not
+sure how to get started, I created a
+Substack guide that walks through
+exactly how to use Hyperlid from
+depositing funds to placing your first
+trade. that's also linked in the video
+description. So, let's bring this all
+together. Hyperlid in 2026 is the
+dominant perex, a growing layer 1
+ecosystem and increasingly a platform
+for trading non-crypto assets like
+silver. The revenue has been resilient
+even as the token price has been
+volatile and market share has held
+steady or improved in recent months.
+Unlock pressure is decreasing and the
+road map includes expansion into
+prediction markets and options. Is it
+without risk? Absolutely not. Crypto
+markets are highly unpredictable.
+Industry-wide volumes can drop along
+with market sentiment. Competition is
+fierce and execution always matters,
+especially for a young project. But my
+opinion is that if one is looking for a
+protocol with real revenue and a clear
+competitive moat as well as potential
+growth factors in the future, Hyperlid
+checks all of those boxes and remains
+one of the more compelling investments
+in DeFi. Remember though that this isn't
+financial advice and you should still do
+your own research which this video is
+hopefully helpful for before you make
+any decisions for yourself. If you want
+more fundamentals based crypto analysis
+like this, check out my substack at
+newsletter.dynamodi.com.
+I'm going to keep pushing that because I
+know the content is so good. And if you
+found this video helpful, be sure to
+like and subscribe so YouTube shows you
+more like it. Till next time, this is
+Dynamo Diva.

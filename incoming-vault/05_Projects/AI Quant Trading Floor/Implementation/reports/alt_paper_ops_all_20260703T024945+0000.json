@@ -1,0 +1,361 @@
+{
+  "ts": "2026-07-03T02:44:09+00:00",
+  "mode": "paper-only read-only operations",
+  "record_signals": {
+    "ledger": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Implementation\\ledgers\\polymarket_paper_signals.jsonl",
+    "new_signals": [
+      {
+        "signal_id": "1395a6c3e7b561e2",
+        "recorded_at": "2026-07-03T02:44:35+00:00",
+        "status": "open",
+        "paper_only": true,
+        "stake_model": "unit_notional_1_for_tracking_only",
+        "market_id": "2694618",
+        "conditionId": "0xb73d11f8cc12e81bc6571da82cd5b4bb4f60e86b42c5b907ac89b7acecef4ca4",
+        "question": "Will the price of Ethereum be above $1,700 on July 3?",
+        "coin": "ETHUSDT",
+        "candidate_side": "YES",
+        "market_yes_prob": 0.5,
+        "raw_model_yes_prob": 1.0,
+        "calibrated_model_yes_prob": 0.9,
+        "edge_yes_minus_market": 0.4,
+        "calibration_confidence": "low",
+        "calibration_reason": "ETH short-horizon near-barrier model overestimated historical touch rates by ~8-10pp",
+        "liquidity": 20386.9446,
+        "spread": 0.02,
+        "endDate": "2026-07-03T16:00:00Z",
+        "caveat": "paper signal only; no execution"
+      },
+      {
+        "signal_id": "636d423f7d16992d",
+        "recorded_at": "2026-07-03T02:44:35+00:00",
+        "status": "open",
+        "paper_only": true,
+        "stake_model": "unit_notional_1_for_tracking_only",
+        "market_id": "2694698",
+        "conditionId": "0xdaa12c96aa79279e5793073909b2c7d4d02de6f42f360aec5760e84a94cbbdfd",
+        "question": "Will the price of Bitcoin be above $62,000 on July 3?",
+        "coin": "BTCUSDT",
+        "candidate_side": "YES",
+        "market_yes_prob": 0.1985,
+        "raw_model_yes_prob": 0.4361,
+        "calibrated_model_yes_prob": 0.4425,
+        "edge_yes_minus_market": 0.244,
+        "calibration_confidence": "medium_low",
+        "calibration_reason": "outside best-calibrated grid; shrunk 10% toward 50%",
+        "liquidity": 25557.91687,
+        "spread": 0.003,
+        "endDate": "2026-07-03T16:00:00Z",
+        "caveat": "paper signal only; no execution"
+      },
+      {
+        "signal_id": "4b3dd78aab0aa563",
+        "recorded_at": "2026-07-03T02:44:35+00:00",
+        "status": "open",
+        "paper_only": true,
+        "stake_model": "unit_notional_1_for_tracking_only",
+        "market_id": "2758363",
+        "conditionId": "0x04af67e0ee8a74f6f2d615e27b4ec8fc44a912529fc658b67fc5ed723c55ca4f",
+        "question": "Will Ethereum dip to $1,500 in July?",
+        "coin": "ETHUSDT",
+        "candidate_side": "YES",
+        "market_yes_prob": 0.385,
+        "raw_model_yes_prob": 0.4798,
+        "calibrated_model_yes_prob": 0.5298,
+        "edge_yes_minus_market": 0.1448,
+        "calibration_confidence": "medium_low",
+        "calibration_reason": "ETH large weekly moves were modestly underestimated in calibration",
+        "liquidity": 34083.3948,
+        "spread": 0.01,
+        "endDate": "2026-08-01T04:00:00Z",
+        "caveat": "paper signal only; no execution"
+      },
+      {
+        "signal_id": "28ec3064ba9b4820",
+        "recorded_at": "2026-07-03T02:44:35+00:00",
+        "status": "open",
+        "paper_only": true,
+        "stake_model": "unit_notional_1_for_tracking_only",
+        "market_id": "2758340",
+        "conditionId": "0xc9c9790c8f26dd9c8cabae9dd76be37aa86a6ded7de660e1da9d19324cf618d4",
+        "question": "Will Bitcoin reach $65,000 in July?",
+        "coin": "BTCUSDT",
+        "candidate_side": "NO",
+        "market_yes_prob": 0.595,
+        "raw_model_yes_prob": 0.4899,
+        "calibrated_model_yes_prob": 0.4909,
+        "edge_yes_minus_market": -0.1041,
+        "calibration_confidence": "medium_low",
+        "calibration_reason": "outside best-calibrated grid; shrunk 10% toward 50%",
+        "liquidity": 57875.7588,
+        "spread": 0.01,
+        "endDate": "2026-08-01T04:00:00Z",
+        "caveat": "paper signal only; no execution"
+      },
+      {
+        "signal_id": "ec97cfa4192bcdb4",
+        "recorded_at": "2026-07-03T02:44:35+00:00",
+        "status": "open",
+        "paper_only": true,
+        "stake_model": "unit_notional_1_for_tracking_only",
+        "market_id": "2758341",
+        "conditionId": "0x6e23102d299cc0c42ebe171b28a5f8bbcc61c78b1f3ed005e0ef37448c4a9e90",
+        "question": "Will Bitcoin reach $62,500 in July?",
+        "coin": "BTCUSDT",
+        "candidate_side": "NO",
+        "market_yes_prob": 0.8775,
+        "raw_model_yes_prob": 0.8056,
+        "calibrated_model_yes_prob": 0.775,
+        "edge_yes_minus_market": -0.1025,
+        "calibration_confidence": "medium_low",
+        "calibration_reason": "outside best-calibrated grid; shrunk 10% toward 50%",
+        "liquidity": 55170.84385,
+        "spread": 0.011,
+        "endDate": "2026-08-01T04:00:00Z",
+        "caveat": "paper signal only; no execution"
+      },
+      {
+        "signal_id": "75bdb6bd0cfa74b4",
+        "recorded_at": "2026-07-03T02:44:35+00:00",
+        "status": "open",
+        "paper_only": true,
+        "stake_model": "unit_notional_1_for_tracking_only",
+        "market_id": "2758364",
+        "conditionId": "0x3ba33f726b0c339575b1fde1317d6fac064e6cc3fe611bee511adcdf3c218a08",
+        "question": "Will Ethereum dip to $1,400 in July?",
+        "coin": "ETHUSDT",
+        "candidate_side": "YES",
+        "market_yes_prob": 0.225,
+        "raw_model_yes_prob": 0.26,
+        "calibrated_model_yes_prob": 0.31,
+        "edge_yes_minus_market": 0.085,
+        "calibration_confidence": "medium_low",
+        "calibration_reason": "ETH large weekly moves were modestly underestimated in calibration",
+        "liquidity": 34854.4728,
+        "spread": 0.01,
+        "endDate": "2026-08-01T04:00:00Z",
+        "caveat": "paper signal only; no execution"
+      },
+      {
+        "signal_id": "0fe5e31af3c0b69d",
+        "recorded_at": "2026-07-03T02:44:35+00:00",
+        "status": "open",
+        "paper_only": true,
+        "stake_model": "unit_notional_1_for_tracking_only",
+        "market_id": "2758344",
+        "conditionId": "0xbfefe500c3fea4d8067f39246e4d9404a6fe0ea3040e1366d4ac02367d751c46",
+        "question": "Will Bitcoin dip to $55,000 in July?",
+        "coin": "BTCUSDT",
+        "candidate_side": "YES",
+        "market_yes_prob": 0.335,
+        "raw_model_yes_prob": 0.3927,
+        "calibrated_model_yes_prob": 0.4034,
+        "edge_yes_minus_market": 0.0684,
+        "calibration_confidence": "medium_low",
+        "calibration_reason": "outside best-calibrated grid; shrunk 10% toward 50%",
+        "liquidity": 64109.3992,
+        "spread": 0.01,
+        "endDate": "2026-08-01T04:00:00Z",
+        "caveat": "paper signal only; no execution"
+      },
+      {
+        "signal_id": "b1104ba84f78856f",
+        "recorded_at": "2026-07-03T02:44:35+00:00",
+        "status": "open",
+        "paper_only": true,
+        "stake_model": "unit_notional_1_for_tracking_only",
+        "market_id": "2758343",
+        "conditionId": "0x2be031440c5a571cd4fc3e05e2478d98aee41c7a44d10d3c5e6a24e38b30fabb",
+        "question": "Will Bitcoin dip to $57,500 in July?",
+        "coin": "BTCUSDT",
+        "candidate_side": "YES",
+        "market_yes_prob": 0.545,
+        "raw_model_yes_prob": 0.6228,
+        "calibrated_model_yes_prob": 0.6105,
+        "edge_yes_minus_market": 0.0655,
+        "calibration_confidence": "medium_low",
+        "calibration_reason": "outside best-calibrated grid; shrunk 10% toward 50%",
+        "liquidity": 69790.5116,
+        "spread": 0.01,
+        "endDate": "2026-08-01T04:00:00Z",
+        "caveat": "paper signal only; no execution"
+      }
+    ],
+    "new_count": 8,
+    "open_total": 8
+  },
+  "track_outcomes": {
+    "outcome_ledger": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Implementation\\ledgers\\polymarket_paper_outcomes.jsonl",
+    "new_outcomes": [],
+    "new_count": 0,
+    "signals_total": 8
+  },
+  "frontier_monte_carlo": {
+    "frontier_count": 5,
+    "runs_per_weight": 12000,
+    "rows": [
+      {
+        "weights": {
+          "daily_etf_tactical_core": 0.35,
+          "prediction_market_crypto_edge": 0.05,
+          "hyperliquid_funding_momentum": 0.0,
+          "defi_stable_lending_yield": 0.25,
+          "cash_reserve": 0.35
+        },
+        "ann_return": 0.0813,
+        "ann_vol": 0.0405,
+        "analytic_sharpe": 2.0076,
+        "rough_95pct_one_year_stress": -0.0668,
+        "mc": {
+          "weights": {
+            "daily_etf_tactical_core": 0.35,
+            "prediction_market_crypto_edge": 0.05,
+            "hyperliquid_funding_momentum": 0.0,
+            "defi_stable_lending_yield": 0.25,
+            "cash_reserve": 0.35
+          },
+          "median_final_equity": 10834.63,
+          "p05_final_equity": 10135.63,
+          "p95_final_equity": 11593.05,
+          "prob_profit": 0.9752,
+          "median_sharpe": 2.0034,
+          "prob_sharpe_1_6_plus": 0.6598,
+          "median_max_drawdown": -0.0242,
+          "p05_max_drawdown": -0.0448
+        }
+      },
+      {
+        "weights": {
+          "daily_etf_tactical_core": 0.35,
+          "prediction_market_crypto_edge": 0.0,
+          "hyperliquid_funding_momentum": 0.05,
+          "defi_stable_lending_yield": 0.25,
+          "cash_reserve": 0.35
+        },
+        "ann_return": 0.0803,
+        "ann_vol": 0.04,
+        "analytic_sharpe": 2.007,
+        "rough_95pct_one_year_stress": -0.066,
+        "mc": {
+          "weights": {
+            "daily_etf_tactical_core": 0.35,
+            "prediction_market_crypto_edge": 0.0,
+            "hyperliquid_funding_momentum": 0.05,
+            "defi_stable_lending_yield": 0.25,
+            "cash_reserve": 0.35
+          },
+          "median_final_equity": 10827.93,
+          "p05_final_equity": 10134.26,
+          "p95_final_equity": 11564.97,
+          "prob_profit": 0.9757,
+          "median_sharpe": 2.01,
+          "prob_sharpe_1_6_plus": 0.6593,
+          "median_max_drawdown": -0.0238,
+          "p05_max_drawdown": -0.0446
+        }
+      },
+      {
+        "weights": {
+          "daily_etf_tactical_core": 0.3,
+          "prediction_market_crypto_edge": 0.05,
+          "hyperliquid_funding_momentum": 0.05,
+          "defi_stable_lending_yield": 0.25,
+          "cash_reserve": 0.35
+        },
+        "ann_return": 0.0843,
+        "ann_vol": 0.0421,
+        "analytic_sharpe": 1.9991,
+        "rough_95pct_one_year_stress": -0.0695,
+        "mc": {
+          "weights": {
+            "daily_etf_tactical_core": 0.3,
+            "prediction_market_crypto_edge": 0.05,
+            "hyperliquid_funding_momentum": 0.05,
+            "defi_stable_lending_yield": 0.25,
+            "cash_reserve": 0.35
+          },
+          "median_final_equity": 10868.23,
+          "p05_final_equity": 10138.98,
+          "p95_final_equity": 11647.73,
+          "prob_profit": 0.9742,
+          "median_sharpe": 2.002,
+          "prob_sharpe_1_6_plus": 0.6532,
+          "median_max_drawdown": -0.0252,
+          "p05_max_drawdown": -0.0466
+        }
+      },
+      {
+        "weights": {
+          "daily_etf_tactical_core": 0.4,
+          "prediction_market_crypto_edge": 0.0,
+          "hyperliquid_funding_momentum": 0.0,
+          "defi_stable_lending_yield": 0.25,
+          "cash_reserve": 0.35
+        },
+        "ann_return": 0.0773,
+        "ann_vol": 0.0397,
+        "analytic_sharpe": 1.9446,
+        "rough_95pct_one_year_stress": -0.0655,
+        "mc": {
+          "weights": {
+            "daily_etf_tactical_core": 0.4,
+            "prediction_market_crypto_edge": 0.0,
+            "hyperliquid_funding_momentum": 0.0,
+            "defi_stable_lending_yield": 0.25,
+            "cash_reserve": 0.35
+          },
+          "median_final_equity": 10792.06,
+          "p05_final_equity": 10112.66,
+          "p95_final_equity": 11527.14,
+          "prob_profit": 0.9741,
+          "median_sharpe": 1.9426,
+          "prob_sharpe_1_6_plus": 0.6338,
+          "median_max_drawdown": -0.0241,
+          "p05_max_drawdown": -0.0449
+        }
+      },
+      {
+        "weights": {
+          "daily_etf_tactical_core": 0.35,
+          "prediction_market_crypto_edge": 0.05,
+          "hyperliquid_funding_momentum": 0.05,
+          "defi_stable_lending_yield": 0.25,
+          "cash_reserve": 0.3
+        },
+        "ann_return": 0.0875,
+        "ann_vol": 0.0457,
+        "analytic_sharpe": 1.9159,
+        "rough_95pct_one_year_stress": -0.0754,
+        "mc": {
+          "weights": {
+            "daily_etf_tactical_core": 0.35,
+            "prediction_market_crypto_edge": 0.05,
+            "hyperliquid_funding_momentum": 0.05,
+            "defi_stable_lending_yield": 0.25,
+            "cash_reserve": 0.3
+          },
+          "median_final_equity": 10900.63,
+          "p05_final_equity": 10109.54,
+          "p95_final_equity": 11757.2,
+          "prob_profit": 0.9702,
+          "median_sharpe": 1.914,
+          "prob_sharpe_1_6_plus": 0.6237,
+          "median_max_drawdown": -0.0278,
+          "p05_max_drawdown": -0.0517
+        }
+      }
+    ]
+  },
+  "defi_checklists": {
+    "checklists_dir": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Risk Reviews",
+    "written": [
+      "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Risk Reviews\\DeFi Protocol Review - pendle-APYUSD-Ethereum.md",
+      "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Risk Reviews\\DeFi Protocol Review - pendle-APYUSD-Ethereum.md",
+      "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Risk Reviews\\DeFi Protocol Review - pendle-APYUSD-Ethereum.md",
+      "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Risk Reviews\\DeFi Protocol Review - apyx-protocol-APXUSD-Ethereum.md",
+      "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Risk Reviews\\DeFi Protocol Review - mainstreet-MSUSD-Ethereum.md",
+      "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Risk Reviews\\DeFi Protocol Review - accountable-USDC-Monad.md"
+    ],
+    "count": 6
+  }
+}

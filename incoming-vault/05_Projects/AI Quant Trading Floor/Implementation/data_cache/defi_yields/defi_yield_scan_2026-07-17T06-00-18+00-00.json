@@ -1,0 +1,1532 @@
+{
+  "ts": "2026-07-17T06:00:18+00:00",
+  "status": "ok",
+  "config": {
+    "min_tvl_usd": 500000.0,
+    "min_apy": 15.0,
+    "score_threshold": 0.5
+  },
+  "summary": {
+    "total_raw_pools": 15322,
+    "after_screening": 557,
+    "scored": 30,
+    "high_confidence": 4,
+    "medium_confidence": 3,
+    "low_confidence": 23
+  },
+  "scored_pools": [
+    {
+      "pool_id": "47e72726-3b2b-4fe6-b4a9-a26e1fcd9a50",
+      "symbol": "SUSDAT",
+      "chain": "ethereum",
+      "project": "saturn",
+      "tvl_usd": 71676999,
+      "apy_base": 31.43,
+      "apy_reward": 0,
+      "apy_total": 62.86,
+      "reward_pct_of_total": 0.0,
+      "is_safe_protocol": false,
+      "risk_flags": [
+        "unknown-protocol"
+      ],
+      "underlying_asset": [
+        "0x23238f20b894f29041f48D88eE91131C395Aaa71"
+      ],
+      "ilRisk": "no",
+      "stablecoin": true,
+      "stablecoin_flag": "stablecoin",
+      "dexscreener_validated": true,
+      "volume_24h_usd": 1260763.3,
+      "liquidity_usd": 1487359.46,
+      "liquidity_depth_score": 0.8,
+      "volume_liquidity_ratio": 0.8477,
+      "red_flags": [
+        "unknown-protocol"
+      ],
+      "pair_address": "0x6206cA315c2fCDd2A857b47EFB285AA12c529a7a",
+      "dex": "curve",
+      "price_usd": "0.8758",
+      "holder_concentration_score": 0.5,
+      "top_10_holder_pct": null,
+      "buy_sell_ratio": null,
+      "yield_edge_score": 0.662,
+      "component_scores": {
+        "apy_score": 0.629,
+        "liquidity_score": 0.8,
+        "volume_score": 1.0,
+        "holder_score": 0.5,
+        "risk_score": 0.2
+      },
+      "flag_count": 1,
+      "recommendation": "MEDIUM"
+    },
+    {
+      "pool_id": "cb6139f9-4a68-4efd-8245-0312a92aee55",
+      "symbol": "APXUSD",
+      "chain": "ethereum",
+      "project": "apyx-protocol",
+      "tvl_usd": 148978992,
+      "apy_base": 13.64,
+      "apy_reward": 0,
+      "apy_total": 27.29,
+      "reward_pct_of_total": 0.0,
+      "is_safe_protocol": false,
+      "risk_flags": [
+        "unknown-protocol"
+      ],
+      "underlying_asset": [
+        "0x98A878b1Cd98131B271883B390f68D2c90674665"
+      ],
+      "ilRisk": "no",
+      "stablecoin": true,
+      "stablecoin_flag": "stablecoin",
+      "dexscreener_validated": true,
+      "volume_24h_usd": 2180041.61,
+      "liquidity_usd": 17638331.14,
+      "liquidity_depth_score": 1.0,
+      "volume_liquidity_ratio": 0.1236,
+      "red_flags": [
+        "unknown-protocol"
+      ],
+      "pair_address": "0xe41be7B340f7c2EDA4DA1e99b42Ee1b228b526b7",
+      "dex": "curve",
+      "price_usd": "1.20",
+      "holder_concentration_score": 0.5,
+      "top_10_holder_pct": null,
+      "buy_sell_ratio": null,
+      "yield_edge_score": 0.623,
+      "component_scores": {
+        "apy_score": 0.273,
+        "liquidity_score": 1.0,
+        "volume_score": 1.0,
+        "holder_score": 0.5,
+        "risk_score": 0.2
+      },
+      "flag_count": 1,
+      "recommendation": "MEDIUM"
+    },
+    {
+      "pool_id": "ef32dd3b-a03b-4f79-9b65-8420d7e04ad0",
+      "symbol": "CVXCRV",
+      "chain": "ethereum",
+      "project": "convex-finance",
+      "tvl_usd": 32161475,
+      "apy_base": 0,
+      "apy_reward": 17.54,
+      "apy_total": 35.08,
+      "reward_pct_of_total": 50.0,
+      "is_safe_protocol": true,
+      "risk_flags": [],
+      "underlying_asset": [
+        "0xD533a949740bb3306d119CC777fa900bA034cd52"
+      ],
+      "ilRisk": "yes",
+      "stablecoin": false,
+      "stablecoin_flag": "",
+      "dexscreener_validated": true,
+      "volume_24h_usd": 247351.64,
+      "liquidity_usd": 5779387.24,
+      "liquidity_depth_score": 1.0,
+      "volume_liquidity_ratio": 0.0428,
+      "red_flags": [],
+      "pair_address": "0x971add32Ea87f10bD192671630be3BE8A11b8623",
+      "dex": "curve",
+      "price_usd": "0.09008",
+      "holder_concentration_score": 0.5,
+      "top_10_holder_pct": null,
+      "buy_sell_ratio": null,
+      "yield_edge_score": 0.603,
+      "component_scores": {
+        "apy_score": 0.351,
+        "liquidity_score": 1.0,
+        "volume_score": 0.428,
+        "holder_score": 0.5,
+        "risk_score": 0.7
+      },
+      "flag_count": 0,
+      "recommendation": "MEDIUM"
+    },
+    {
+      "pool_id": "a5c85bc8-eb41-45c0-a520-d18d7529c0d8",
+      "symbol": "SOL-USDC",
+      "chain": "solana",
+      "project": "orca-dex",
+      "tvl_usd": 26006549,
+      "apy_base": 43.85,
+      "apy_reward": 0,
+      "apy_total": 87.7,
+      "reward_pct_of_total": 0.0,
+      "is_safe_protocol": false,
+      "risk_flags": [
+        "unknown-protocol"
+      ],
+      "underlying_asset": [
+        "So11111111111111111111111111111111111111112",
+        "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+      ],
+      "ilRisk": "yes",
+      "stablecoin": false,
+      "stablecoin_flag": "",
+      "dexscreener_validated": true,
+      "volume_24h_usd": 275.28,
+      "liquidity_usd": 219911759.33,
+      "liquidity_depth_score": 1.0,
+      "volume_liquidity_ratio": 0.0,
+      "red_flags": [
+        "unknown-protocol",
+        "low-volume",
+        "dead-pool"
+      ],
+      "pair_address": "8A4ziPQaJWZJFKdSK5MjrXAt5U5qLvjQtdntqJbBb3UH",
+      "dex": "raydium",
+      "price_usd": "1.00020",
+      "holder_concentration_score": 0.5,
+      "top_10_holder_pct": null,
+      "buy_sell_ratio": null,
+      "yield_edge_score": 0.574,
+      "component_scores": {
+        "apy_score": 0.877,
+        "liquidity_score": 1.0,
+        "volume_score": 0.0,
+        "holder_score": 0.5,
+        "risk_score": 0.2
+      },
+      "flag_count": 3,
+      "recommendation": "MEDIUM"
+    },
+    {
+      "pool_id": "7083d6a5-e3cb-4eeb-8204-f1b735e4ecbb",
+      "symbol": "ONYC",
+      "chain": "solana",
+      "project": "onre",
+      "tvl_usd": 224628223,
+      "apy_base": 11.69,
+      "apy_reward": 0,
+      "apy_total": 23.38,
+      "reward_pct_of_total": 0.0,
+      "is_safe_protocol": false,
+      "risk_flags": [
+        "unknown-protocol"
+      ],
+      "underlying_asset": [
+        "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+      ],
+      "ilRisk": "no",
+      "stablecoin": false,
+      "stablecoin_flag": "",
+      "dexscreener_validated": true,
+      "volume_24h_usd": 3.99,
+      "liquidity_usd": 205084131.56,
+      "liquidity_depth_score": 1.0,
+      "volume_liquidity_ratio": 0.0,
+      "red_flags": [
+        "unknown-protocol",
+        "low-volume",
+        "dead-pool"
+      ],
+      "pair_address": "6TY1tXk4onyCgRQ8Ri2jznQVSCrw5cJpyMKrkU8NVK1t",
+      "dex": "orca",
+      "price_usd": "0.2060",
+      "holder_concentration_score": 0.5,
+      "top_10_holder_pct": null,
+      "buy_sell_ratio": null,
+      "yield_edge_score": 0.413,
+      "component_scores": {
+        "apy_score": 0.234,
+        "liquidity_score": 1.0,
+        "volume_score": 0.0,
+        "holder_score": 0.5,
+        "risk_score": 0.2
+      },
+      "flag_count": 3,
+      "recommendation": "MEDIUM"
+    },
+    {
+      "pool_id": "b3f93865-5ec8-4662-90a0-11808e0aa2bd",
+      "symbol": "MSOL",
+      "chain": "solana",
+      "project": "marinade-liquid-staking",
+      "tvl_usd": 179618787,
+      "apy_base": 7.71,
+      "apy_reward": 0,
+      "apy_total": 15.41,
+      "reward_pct_of_total": 0.0,
+      "is_safe_protocol": false,
+      "risk_flags": [
+        "unknown-protocol"
+      ],
+      "underlying_asset": [
+        "So11111111111111111111111111111111111111112"
+      ],
+      "ilRisk": "no",
+      "stablecoin": false,
+      "stablecoin_flag": "",
+      "dexscreener_validated": true,
+      "volume_24h_usd": 44887.93,
+      "liquidity_usd": 1344737.15,
+      "liquidity_depth_score": 0.8,
+      "volume_liquidity_ratio": 0.0334,
+      "red_flags": [
+        "unknown-protocol",
+        "low-volume"
+      ],
+      "pair_address": "HcjZvfeSNJbNkfLD4eEcRBr96AD3w1GpmMppaeRZf7ur",
+      "dex": "meteora",
+      "price_usd": "103.49",
+      "holder_concentration_score": 0.5,
+      "top_10_holder_pct": null,
+      "buy_sell_ratio": null,
+      "yield_edge_score": 0.41,
+      "component_scores": {
+        "apy_score": 0.154,
+        "liquidity_score": 0.8,
+        "volume_score": 0.334,
+        "holder_score": 0.5,
+        "risk_score": 0.2
+      },
+      "flag_count": 2,
+      "recommendation": "MEDIUM"
+    },
+    {
+      "pool_id": "0d9e7113-c9bc-4fb6-b138-5ca6f6944d6d",
+      "symbol": "SDCRV",
+      "chain": "ethereum",
+      "project": "stake-dao",
+      "tvl_usd": 25342135,
+      "apy_base": 0,
+      "apy_reward": 18.92,
+      "apy_total": 37.84,
+      "reward_pct_of_total": 50.0,
+      "is_safe_protocol": false,
+      "risk_flags": [
+        "unknown-protocol"
+      ],
+      "underlying_asset": [
+        "0xD533a949740bb3306d119CC777fa900bA034cd52"
+      ],
+      "ilRisk": "no",
+      "stablecoin": false,
+      "stablecoin_flag": "",
+      "dexscreener_validated": true,
+      "volume_24h_usd": 23391.5,
+      "liquidity_usd": 933891.19,
+      "liquidity_depth_score": 0.6,
+      "volume_liquidity_ratio": 0.025,
+      "red_flags": [
+        "unknown-protocol",
+        "low-volume"
+      ],
+      "pair_address": "0xCA0253A98D16e9C1e3614caFDA19318EE69772D0",
+      "dex": "curve",
+      "price_usd": "0.1225",
+      "holder_concentration_score": 0.5,
+      "top_10_holder_pct": null,
+      "buy_sell_ratio": null,
+      "yield_edge_score": 0.4,
+      "component_scores": {
+        "apy_score": 0.378,
+        "liquidity_score": 0.6,
+        "volume_score": 0.25,
+        "holder_score": 0.5,
+        "risk_score": 0.2
+      },
+      "flag_count": 2,
+      "recommendation": "LOW"
+    },
+    {
+      "pool_id": "86e18974-35ca-4948-9c82-694facf9d082",
+      "symbol": "USD1",
+      "chain": "ethereum",
+      "project": "dolomite",
+      "tvl_usd": 125776817,
+      "apy_base": 1.55,
+      "apy_reward": 6.48,
+      "apy_total": 16.07,
+      "reward_pct_of_total": 40.3,
+      "is_safe_protocol": false,
+      "risk_flags": [
+        "unknown-protocol"
+      ],
+      "underlying_asset": [
+        "0x8d0D000Ee44948FC98c9B98A4FA4921476f08B0d"
+      ],
+      "ilRisk": "no",
+      "stablecoin": true,
+      "stablecoin_flag": "stablecoin",
+      "dexscreener_validated": true,
+      "volume_24h_usd": 0.01,
+      "liquidity_usd": 925698235.84,
+      "liquidity_depth_score": 1.0,
+      "volume_liquidity_ratio": 0.0,
+      "red_flags": [
+        "unknown-protocol",
+        "low-volume",
+        "dead-pool"
+      ],
+      "pair_address": "0xBB49bA482E016c106BDB712edf543fD21eC98785",
+      "dex": "uniswap",
+      "price_usd": "0.9413",
+      "holder_concentration_score": 0.5,
+      "top_10_holder_pct": null,
+      "buy_sell_ratio": null,
+      "yield_edge_score": 0.395,
+      "component_scores": {
+        "apy_score": 0.161,
+        "liquidity_score": 1.0,
+        "volume_score": 0.0,
+        "holder_score": 0.5,
+        "risk_score": 0.2
+      },
+      "flag_count": 3,
+      "recommendation": "LOW"
+    },
+    {
+      "pool_id": "c74227a1-e738-4021-bbe1-13363815aecb",
+      "symbol": "SAVUSD",
+      "chain": "avalanche",
+      "project": "avant-avusd",
+      "tvl_usd": 97849776,
+      "apy_base": 8.06,
+      "apy_reward": 0,
+      "apy_total": 16.12,
+      "reward_pct_of_total": 0.0,
+      "is_safe_protocol": false,
+      "risk_flags": [
+        "unknown-protocol"
+      ],
+      "underlying_asset": [
+        "0x24dE8771bC5DdB3362Db529Fc3358F2df3A0E346"
+      ],
+      "ilRisk": "no",
+      "stablecoin": true,
+      "stablecoin_flag": "stablecoin",
+      "dexscreener_validated": true,
+      "volume_24h_usd": 6.67,
+      "liquidity_usd": 2628674.87,
+      "liquidity_depth_score": 1.0,
+      "volume_liquidity_ratio": 0.0,
+      "red_flags": [
+        "unknown-protocol",
+        "low-volume",
+        "dead-pool"
+      ],
+      "pair_address": "0x76100CB39062993E44F66b3f777f05b5d18F801a",
+      "dex": "pharaoh",
+      "price_usd": "0.6072",
+      "holder_concentration_score": 0.5,
+      "top_10_holder_pct": null,
+      "buy_sell_ratio": null,
+      "yield_edge_score": 0.395,
+      "component_scores": {
+        "apy_score": 0.161,
+        "liquidity_score": 1.0,
+        "volume_score": 0.0,
+        "holder_score": 0.5,
+        "risk_score": 0.2
+      },
+      "flag_count": 3,
+      "recommendation": "LOW"
+    },
+    {
+      "pool_id": "b9f2f00a-ba96-4589-a171-dde979a23d87",
+      "symbol": "METH",
+      "chain": "ethereum",
+      "project": "meth-protocol",
+      "tvl_usd": 473873695,
+      "apy_base": 10.61,
+      "apy_reward": 0,
+      "apy_total": 21.22,
+      "reward_pct_of_total": 0.0,
+      "is_safe_protocol": false,
+      "risk_flags": [
+        "unknown-protocol"
+      ],
+      "underlying_asset": [
+        "0x0000000000000000000000000000000000000000"
+      ],
+      "ilRisk": "no",
+      "stablecoin": false,
+      "stablecoin_flag": "",
+      "dexscreener_validated": true,
+      "volume_24h_usd": 168.42,
+      "liquidity_usd": 1236702.5,
+      "liquidity_depth_score": 0.8,
+      "volume_liquidity_ratio": 0.0001,
+      "red_flags": [
+        "unknown-protocol",
+        "low-volume",
+        "dead-pool"
+      ],
+      "pair_address": "0x04708077eCa6bb527a5BBbD6358ffb043a9c1C14",
+      "dex": "uniswap",
+      "price_usd": "1995.54",
+      "holder_concentration_score": 0.5,
+      "top_10_holder_pct": null,
+      "buy_sell_ratio": null,
+      "yield_edge_score": 0.358,
+      "component_scores": {
+        "apy_score": 0.212,
+        "liquidity_score": 0.8,
+        "volume_score": 0.001,
+        "holder_score": 0.5,
+        "risk_score": 0.2
+      },
+      "flag_count": 3,
+      "recommendation": "LOW"
+    },
+    {
+      "pool_id": "fc9f488e-8183-416f-a61e-4e5c571d4395",
+      "symbol": "WETH-USDT",
+      "chain": "ethereum",
+      "project": "uniswap-v3",
+      "tvl_usd": 86888357,
+      "apy_base": 32.33,
+      "apy_reward": 0,
+      "apy_total": 64.67,
+      "reward_pct_of_total": 0.0,
+      "is_safe_protocol": false,
+      "risk_flags": [
+        "unknown-protocol"
+      ],
+      "underlying_asset": [
+        "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+        "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      ],
+      "ilRisk": "yes",
+      "stablecoin": false,
+      "stablecoin_flag": "",
+      "dexscreener_validated": false,
+      "volume_24h_usd": 0,
+      "liquidity_usd": 0,
+      "liquidity_depth_score": 0.0,
+      "volume_liquidity_ratio": 0.0,
+      "red_flags": [
+        "unknown-protocol",
+        "no-dexscreener-pairs"
+      ],
+      "holder_concentration_score": 0.5,
+      "top_10_holder_pct": null,
+      "buy_sell_ratio": null,
+      "yield_edge_score": 0.267,
+      "component_scores": {
+        "apy_score": 0.647,
+        "liquidity_score": 0.0,
+        "volume_score": 0.0,
+        "holder_score": 0.5,
+        "risk_score": 0.2
+      },
+      "flag_count": 2,
+      "recommendation": "LOW"
+    },
+    {
+      "pool_id": "d32f9c01-47d1-4077-8c73-8b91b08d1e91",
+      "symbol": "USDC-AERO",
+      "chain": "base",
+      "project": "aerodrome-v1",
+      "tvl_usd": 28990107,
+      "apy_base": 0,
+      "apy_reward": 25.66,
+      "apy_total": 51.33,
+      "reward_pct_of_total": 50.0,
+      "is_safe_protocol": false,
+      "risk_flags": [
+        "unknown-protocol"
+      ],
+      "underlying_asset": [
+        "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "0x940181a94A35A4569E4529A3CDfB74e38FD98631"
+      ],
+      "ilRisk": "yes",
+      "stablecoin": false,
+      "stablecoin_flag": "",
+      "dexscreener_validated": false,
+      "volume_24h_usd": 0,
+      "liquidity_usd": 0,
+      "liquidity_depth_score": 0.0,
+      "volume_liquidity_ratio": 0.0,
+      "red_flags": [
+        "unknown-protocol",
+        "no-dexscreener-pairs"
+      ],
+      "holder_concentration_score": 0.5,
+      "top_10_holder_pct": null,
+      "buy_sell_ratio": null,
+      "yield_edge_score": 0.233,
+      "component_scores": {
+        "apy_score": 0.513,
+        "liquidity_score": 0.0,
+        "volume_score": 0.0,
+        "holder_score": 0.5,
+        "risk_score": 0.2
+      },
+      "flag_count": 2,
+      "recommendation": "LOW"
+    },
+    {
+      "pool_id": "a14bd201-764c-40a5-86b8-2928b2461232",
+      "symbol": "WETH-USDC",
+      "chain": "arbitrum",
+      "project": "uniswap-v3",
+      "tvl_usd": 35056826,
+      "apy_base": 21.3,
+      "apy_reward": 0,
+      "apy_total": 42.61,
+      "reward_pct_of_total": 0.0,
+      "is_safe_protocol": false,
+      "risk_flags": [
+        "unknown-protocol"
+      ],
+      "underlying_asset": [
+        "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+        "0xaf88d065e77c8cc2239327c5edb3a432268e5831"
+      ],
+      "ilRisk": "yes",
+      "stablecoin": false,
+      "stablecoin_flag": "",
+      "dexscreener_validated": false,
+      "volume_24h_usd": 0,
+      "liquidity_usd": 0,
+      "liquidity_depth_score": 0.0,
+      "volume_liquidity_ratio": 0.0,
+      "red_flags": [
+        "unknown-protocol",
+        "no-matching-chain-pair"
+      ],
+      "holder_concentration_score": 0.5,
+      "top_10_holder_pct": null,
+      "buy_sell_ratio": null,
+      "yield_edge_score": 0.212,
+      "component_scores": {
+        "apy_score": 0.426,
+        "liquidity_score": 0.0,
+        "volume_score": 0.0,
+        "holder_score": 0.5,
+        "risk_score": 0.2
+      },
+      "flag_count": 2,
+      "recommendation": "LOW"
+    },
+    {
+      "pool_id": "665dc8bc-c79d-4800-97f7-304bf368e547",
+      "symbol": "USDC-WETH",
+      "chain": "ethereum",
+      "project": "uniswap-v3",
+      "tvl_usd": 92904034,
+      "apy_base": 16.95,
+      "apy_reward": 0,
+      "apy_total": 33.91,
+      "reward_pct_of_total": 0.0,
+      "is_safe_protocol": false,
+      "risk_flags": [
+        "unknown-protocol"
+      ],
+      "underlying_asset": [
+        "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+        "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      ],
+      "ilRisk": "yes",
+      "stablecoin": false,
+      "stablecoin_flag": "",
+      "dexscreener_validated": false,
+      "volume_24h_usd": 0,
+      "liquidity_usd": 0,
+      "liquidity_depth_score": 0.0,
+      "volume_liquidity_ratio": 0.0,
+      "red_flags": [
+        "unknown-protocol",
+        "no-dexscreener-pairs"
+      ],
+      "holder_concentration_score": 0.5,
+      "top_10_holder_pct": null,
+      "buy_sell_ratio": null,
+      "yield_edge_score": 0.19,
+      "component_scores": {
+        "apy_score": 0.339,
+        "liquidity_score": 0.0,
+        "volume_score": 0.0,
+        "holder_score": 0.5,
+        "risk_score": 0.2
+      },
+      "flag_count": 2,
+      "recommendation": "LOW"
+    },
+    {
+      "pool_id": "0fe44dca-3690-4bd2-85a6-77d823b283c5",
+      "symbol": "CRVUSD-WETH",
+      "chain": "ethereum",
+      "project": "curve-dex",
+      "tvl_usd": 29082101,
+      "apy_base": 15.63,
+      "apy_reward": 0,
+      "apy_total": 31.26,
+      "reward_pct_of_total": 0.0,
+      "is_safe_protocol": false,
+      "risk_flags": [
+        "unknown-protocol"
+      ],
+      "underlying_asset": [
+        "0xf939E0A03FB07F59A73314E73794Be0E57ac1b4E",
+        "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+      ],
+      "ilRisk": "yes",
+      "stablecoin": false,
+      "stablecoin_flag": "",
+      "dexscreener_validated": false,
+      "volume_24h_usd": 0,
+      "liquidity_usd": 0,
+      "liquidity_depth_score": 0.0,
+      "volume_liquidity_ratio": 0.0,
+      "red_flags": [
+        "unknown-protocol",
+        "no-dexscreener-pairs"
+      ],
+      "holder_concentration_score": 0.5,
+      "top_10_holder_pct": null,
+      "buy_sell_ratio": null,
+      "yield_edge_score": 0.183,
+      "component_scores": {
+        "apy_score": 0.313,
+        "liquidity_score": 0.0,
+        "volume_score": 0.0,
+        "holder_score": 0.5,
+        "risk_score": 0.2
+      },
+      "flag_count": 2,
+      "recommendation": "LOW"
+    },
+    {
+      "pool_id": "a043091f-8295-44c4-b6c2-151faee0b8d1",
+      "symbol": "ETH-USDC",
+      "chain": "ethereum",
+      "project": "uniswap-v4",
+      "tvl_usd": 33325100,
+      "apy_base": 15.19,
+      "apy_reward": 0,
+      "apy_total": 30.39,
+      "reward_pct_of_total": 0.0,
+      "is_safe_protocol": false,
+      "risk_flags": [
+        "unknown-protocol"
+      ],
+      "underlying_asset": [
+        "0x0000000000000000000000000000000000000000",
+        "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+      ],
+      "ilRisk": "yes",
+      "stablecoin": false,
+      "stablecoin_flag": "",
+      "dexscreener_validated": false,
+      "volume_24h_usd": 0,
+      "liquidity_usd": 0,
+      "liquidity_depth_score": 0.0,
+      "volume_liquidity_ratio": 0.0,
+      "red_flags": [
+        "unknown-protocol",
+        "no-matching-chain-pair"
+      ],
+      "holder_concentration_score": 0.5,
+      "top_10_holder_pct": null,
+      "buy_sell_ratio": null,
+      "yield_edge_score": 0.181,
+      "component_scores": {
+        "apy_score": 0.304,
+        "liquidity_score": 0.0,
+        "volume_score": 0.0,
+        "holder_score": 0.5,
+        "risk_score": 0.2
+      },
+      "flag_count": 2,
+      "recommendation": "LOW"
+    },
+    {
+      "pool_id": "bb7e9353-129f-4e01-b822-f4250d0abb8a",
+      "symbol": "WBTC-WETH",
+      "chain": "arbitrum",
+      "project": "uniswap-v3",
+      "tvl_usd": 34305009,
+      "apy_base": 12.57,
+      "apy_reward": 0,
+      "apy_total": 25.14,
+      "reward_pct_of_total": 0.0,
+      "is_safe_protocol": false,
+      "risk_flags": [
+        "unknown-protocol"
+      ],
+      "underlying_asset": [
+        "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+        "0x82af49447d8a07e3bd95bd0d56f35241523fbab1"
+      ],
+      "ilRisk": "yes",
+      "stablecoin": false,
+      "stablecoin_flag": "",
+      "dexscreener_validated": false,
+      "volume_24h_usd": 0,
+      "liquidity_usd": 0,
+      "liquidity_depth_score": 0.0,
+      "volume_liquidity_ratio": 0.0,
+      "red_flags": [
+        "unknown-protocol",
+        "no-dexscreener-pairs"
+      ],
+      "holder_concentration_score": 0.5,
+      "top_10_holder_pct": null,
+      "buy_sell_ratio": null,
+      "yield_edge_score": 0.168,
+      "component_scores": {
+        "apy_score": 0.251,
+        "liquidity_score": 0.0,
+        "volume_score": 0.0,
+        "holder_score": 0.5,
+        "risk_score": 0.2
+      },
+      "flag_count": 2,
+      "recommendation": "LOW"
+    },
+    {
+      "pool_id": "cf7a5142-ff74-4b1d-8267-98148c90b72c",
+      "symbol": "TRX",
+      "chain": "tron",
+      "project": "tr-energy",
+      "tvl_usd": 85342331,
+      "apy_base": 11.75,
+      "apy_reward": 0,
+      "apy_total": 23.5,
+      "reward_pct_of_total": 0.0,
+      "is_safe_protocol": false,
+      "risk_flags": [
+        "unknown-protocol"
+      ],
+      "underlying_asset": [
+        "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR"
+      ],
+      "ilRisk": "no",
+      "stablecoin": false,
+      "stablecoin_flag": "",
+      "dexscreener_validated": false,
+      "volume_24h_usd": 0,
+      "liquidity_usd": 0,
+      "liquidity_depth_score": 0.0,
+      "volume_liquidity_ratio": 0.0,
+      "red_flags": [
+        "unknown-protocol",
+        "no-matching-chain-pair"
+      ],
+      "holder_concentration_score": 0.5,
+      "top_10_holder_pct": null,
+      "buy_sell_ratio": null,
+      "yield_edge_score": 0.164,
+      "component_scores": {
+        "apy_score": 0.235,
+        "liquidity_score": 0.0,
+        "volume_score": 0.0,
+        "holder_score": 0.5,
+        "risk_score": 0.2
+      },
+      "flag_count": 2,
+      "recommendation": "LOW"
+    },
+    {
+      "pool_id": "ebb3a954-fd67-4a3b-ac2f-3a8c7be9200b",
+      "symbol": "USDC",
+      "chain": "ethereum",
+      "project": "midas-rwa",
+      "tvl_usd": 46864228,
+      "apy_base": 10.57,
+      "apy_reward": 0,
+      "apy_total": 21.14,
+      "reward_pct_of_total": 0.0,
+      "is_safe_protocol": false,
+      "risk_flags": [
+        "unknown-protocol"
+      ],
+      "underlying_asset": [
+        "0x9b5528528656DBC094765E2abB79F293c21191B9"
+      ],
+      "ilRisk": "no",
+      "stablecoin": true,
+      "stablecoin_flag": "stablecoin",
+      "dexscreener_validated": false,
+      "volume_24h_usd": 0,
+      "liquidity_usd": 0,
+      "liquidity_depth_score": 0.0,
+      "volume_liquidity_ratio": 0.0,
+      "red_flags": [
+        "unknown-protocol",
+        "no-matching-chain-pair"
+      ],
+      "holder_concentration_score": 0.5,
+      "top_10_holder_pct": null,
+      "buy_sell_ratio": null,
+      "yield_edge_score": 0.158,
+      "component_scores": {
+        "apy_score": 0.211,
+        "liquidity_score": 0.0,
+        "volume_score": 0.0,
+        "holder_score": 0.5,
+        "risk_score": 0.2
+      },
+      "flag_count": 2,
+      "recommendation": "LOW"
+    },
+    {
+      "pool_id": "7d491f26-a03b-4eca-ae2c-e068391b15d3",
+      "symbol": "USDC",
+      "chain": "ethereum",
+      "project": "midas-rwa",
+      "tvl_usd": 73741515,
+      "apy_base": 10.17,
+      "apy_reward": 0,
+      "apy_total": 20.34,
+      "reward_pct_of_total": 0.0,
+      "is_safe_protocol": false,
+      "risk_flags": [
+        "unknown-protocol"
+      ],
+      "underlying_asset": [
+        "0x238a700eD6165261Cf8b2e544ba797BC11e466Ba"
+      ],
+      "ilRisk": "no",
+      "stablecoin": true,
+      "stablecoin_flag": "stablecoin",
+      "dexscreener_validated": false,
+      "volume_24h_usd": 0,
+      "liquidity_usd": 0,
+      "liquidity_depth_score": 0.0,
+      "volume_liquidity_ratio": 0.0,
+      "red_flags": [
+        "unknown-protocol",
+        "no-matching-chain-pair"
+      ],
+      "holder_concentration_score": 0.5,
+      "top_10_holder_pct": null,
+      "buy_sell_ratio": null,
+      "yield_edge_score": 0.156,
+      "component_scores": {
+        "apy_score": 0.203,
+        "liquidity_score": 0.0,
+        "volume_score": 0.0,
+        "holder_score": 0.5,
+        "risk_score": 0.2
+      },
+      "flag_count": 2,
+      "recommendation": "LOW"
+    },
+    {
+      "pool_id": "3e78432a-f58b-46b2-ba69-1b446efc3e21",
+      "symbol": "SUSDU",
+      "chain": "bsc",
+      "project": "unitas",
+      "tvl_usd": 41507237,
+      "apy_base": 9.96,
+      "apy_reward": 0,
+      "apy_total": 19.92,
+      "reward_pct_of_total": 0.0,
+      "is_safe_protocol": false,
+      "risk_flags": [
+        "unknown-protocol"
+      ],
+      "underlying_asset": [
+        "0xeA953eA6634d55dAC6697C436B1e81A679Db5882"
+      ],
+      "ilRisk": "no",
+      "stablecoin": true,
+      "stablecoin_flag": "stablecoin",
+      "dexscreener_validated": false,
+      "volume_24h_usd": 0,
+      "liquidity_usd": 0,
+      "liquidity_depth_score": 0.0,
+      "volume_liquidity_ratio": 0.0,
+      "red_flags": [
+        "unknown-protocol",
+        "no-matching-chain-pair"
+      ],
+      "holder_concentration_score": 0.5,
+      "top_10_holder_pct": null,
+      "buy_sell_ratio": null,
+      "yield_edge_score": 0.155,
+      "component_scores": {
+        "apy_score": 0.199,
+        "liquidity_score": 0.0,
+        "volume_score": 0.0,
+        "holder_score": 0.5,
+        "risk_score": 0.2
+      },
+      "flag_count": 2,
+      "recommendation": "LOW"
+    },
+    {
+      "pool_id": "c89af47f-032a-4c59-bdc9-17a7f1514a3b",
+      "symbol": "USDC",
+      "chain": "ethereum",
+      "project": "goldfinch",
+      "tvl_usd": 36726003,
+      "apy_base": 10.0,
+      "apy_reward": 0,
+      "apy_total": 20.0,
+      "reward_pct_of_total": 0.0,
+      "is_safe_protocol": false,
+      "risk_flags": [
+        "unknown-protocol"
+      ],
+      "underlying_asset": [
+        "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+      ],
+      "ilRisk": "no",
+      "stablecoin": true,
+      "stablecoin_flag": "stablecoin",
+      "dexscreener_validated": false,
+      "volume_24h_usd": 0,
+      "liquidity_usd": 0,
+      "liquidity_depth_score": 0.0,
+      "volume_liquidity_ratio": 0.0,
+      "red_flags": [
+        "unknown-protocol",
+        "no-matching-chain-pair"
+      ],
+      "holder_concentration_score": 0.5,
+      "top_10_holder_pct": null,
+      "buy_sell_ratio": null,
+      "yield_edge_score": 0.155,
+      "component_scores": {
+        "apy_score": 0.2,
+        "liquidity_score": 0.0,
+        "volume_score": 0.0,
+        "holder_score": 0.5,
+        "risk_score": 0.2
+      },
+      "flag_count": 2,
+      "recommendation": "LOW"
+    },
+    {
+      "pool_id": "128b253a-0903-476f-9a70-6007b336e395",
+      "symbol": "CRVUSD-WBTC",
+      "chain": "ethereum",
+      "project": "curve-dex",
+      "tvl_usd": 45111080,
+      "apy_base": 9.87,
+      "apy_reward": 0,
+      "apy_total": 19.74,
+      "reward_pct_of_total": 0.0,
+      "is_safe_protocol": false,
+      "risk_flags": [
+        "unknown-protocol"
+      ],
+      "underlying_asset": [
+        "0xf939E0A03FB07F59A73314E73794Be0E57ac1b4E",
+        "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599"
+      ],
+      "ilRisk": "yes",
+      "stablecoin": false,
+      "stablecoin_flag": "",
+      "dexscreener_validated": false,
+      "volume_24h_usd": 0,
+      "liquidity_usd": 0,
+      "liquidity_depth_score": 0.0,
+      "volume_liquidity_ratio": 0.0,
+      "red_flags": [
+        "unknown-protocol",
+        "no-dexscreener-pairs"
+      ],
+      "holder_concentration_score": 0.5,
+      "top_10_holder_pct": null,
+      "buy_sell_ratio": null,
+      "yield_edge_score": 0.154,
+      "component_scores": {
+        "apy_score": 0.197,
+        "liquidity_score": 0.0,
+        "volume_score": 0.0,
+        "holder_score": 0.5,
+        "risk_score": 0.2
+      },
+      "flag_count": 2,
+      "recommendation": "LOW"
+    },
+    {
+      "pool_id": "1b6fc394-3f6a-4537-9413-926db5fc10f6",
+      "symbol": "CRVUSD-CBBTC",
+      "chain": "ethereum",
+      "project": "curve-dex",
+      "tvl_usd": 83237392,
+      "apy_base": 9.28,
+      "apy_reward": 0,
+      "apy_total": 18.56,
+      "reward_pct_of_total": 0.0,
+      "is_safe_protocol": false,
+      "risk_flags": [
+        "unknown-protocol"
+      ],
+      "underlying_asset": [
+        "0xf939E0A03FB07F59A73314E73794Be0E57ac1b4E",
+        "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf"
+      ],
+      "ilRisk": "yes",
+      "stablecoin": false,
+      "stablecoin_flag": "",
+      "dexscreener_validated": false,
+      "volume_24h_usd": 0,
+      "liquidity_usd": 0,
+      "liquidity_depth_score": 0.0,
+      "volume_liquidity_ratio": 0.0,
+      "red_flags": [
+        "unknown-protocol",
+        "no-dexscreener-pairs"
+      ],
+      "holder_concentration_score": 0.5,
+      "top_10_holder_pct": null,
+      "buy_sell_ratio": null,
+      "yield_edge_score": 0.151,
+      "component_scores": {
+        "apy_score": 0.186,
+        "liquidity_score": 0.0,
+        "volume_score": 0.0,
+        "holder_score": 0.5,
+        "risk_score": 0.2
+      },
+      "flag_count": 2,
+      "recommendation": "LOW"
+    },
+    {
+      "pool_id": "2eb2bdf8-c3e3-5b30-8d49-8d5232294184",
+      "symbol": "USDC",
+      "chain": "ethereum",
+      "project": "pareto-credit",
+      "tvl_usd": 156998058,
+      "apy_base": 8.31,
+      "apy_reward": 0,
+      "apy_total": 16.63,
+      "reward_pct_of_total": 0.0,
+      "is_safe_protocol": false,
+      "risk_flags": [
+        "unknown-protocol"
+      ],
+      "underlying_asset": [
+        "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
+      ],
+      "ilRisk": "no",
+      "stablecoin": true,
+      "stablecoin_flag": "stablecoin",
+      "dexscreener_validated": false,
+      "volume_24h_usd": 0,
+      "liquidity_usd": 0,
+      "liquidity_depth_score": 0.0,
+      "volume_liquidity_ratio": 0.0,
+      "red_flags": [
+        "unknown-protocol",
+        "no-matching-chain-pair"
+      ],
+      "holder_concentration_score": 0.5,
+      "top_10_holder_pct": null,
+      "buy_sell_ratio": null,
+      "yield_edge_score": 0.147,
+      "component_scores": {
+        "apy_score": 0.166,
+        "liquidity_score": 0.0,
+        "volume_score": 0.0,
+        "holder_score": 0.5,
+        "risk_score": 0.2
+      },
+      "flag_count": 2,
+      "recommendation": "LOW"
+    },
+    {
+      "pool_id": "61b4c35c-97f6-4c05-a5ff-aeb4426adf5b",
+      "symbol": "ETH-USDC",
+      "chain": "arbitrum",
+      "project": "gmx-v2-perps",
+      "tvl_usd": 39518731,
+      "apy_base": 8.33,
+      "apy_reward": 0,
+      "apy_total": 16.66,
+      "reward_pct_of_total": 0.0,
+      "is_safe_protocol": false,
+      "risk_flags": [
+        "unknown-protocol"
+      ],
+      "underlying_asset": [
+        "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
+        "0xaf88d065e77c8cC2239327C5EDb3A432268e5831"
+      ],
+      "ilRisk": "yes",
+      "stablecoin": false,
+      "stablecoin_flag": "",
+      "dexscreener_validated": false,
+      "volume_24h_usd": 0,
+      "liquidity_usd": 0,
+      "liquidity_depth_score": 0.0,
+      "volume_liquidity_ratio": 0.0,
+      "red_flags": [
+        "unknown-protocol",
+        "no-matching-chain-pair"
+      ],
+      "holder_concentration_score": 0.5,
+      "top_10_holder_pct": null,
+      "buy_sell_ratio": null,
+      "yield_edge_score": 0.147,
+      "component_scores": {
+        "apy_score": 0.167,
+        "liquidity_score": 0.0,
+        "volume_score": 0.0,
+        "holder_score": 0.5,
+        "risk_score": 0.2
+      },
+      "flag_count": 2,
+      "recommendation": "LOW"
+    },
+    {
+      "pool_id": "b3665630-8cb7-4aa0-9dfd-c2e52af27045",
+      "symbol": "ETH-USDT",
+      "chain": "ethereum",
+      "project": "uniswap-v4",
+      "tvl_usd": 27176532,
+      "apy_base": 8.45,
+      "apy_reward": 0,
+      "apy_total": 16.9,
+      "reward_pct_of_total": 0.0,
+      "is_safe_protocol": false,
+      "risk_flags": [
+        "unknown-protocol"
+      ],
+      "underlying_asset": [
+        "0x0000000000000000000000000000000000000000",
+        "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      ],
+      "ilRisk": "yes",
+      "stablecoin": false,
+      "stablecoin_flag": "",
+      "dexscreener_validated": false,
+      "volume_24h_usd": 0,
+      "liquidity_usd": 0,
+      "liquidity_depth_score": 0.0,
+      "volume_liquidity_ratio": 0.0,
+      "red_flags": [
+        "unknown-protocol",
+        "no-matching-chain-pair"
+      ],
+      "holder_concentration_score": 0.5,
+      "top_10_holder_pct": null,
+      "buy_sell_ratio": null,
+      "yield_edge_score": 0.147,
+      "component_scores": {
+        "apy_score": 0.169,
+        "liquidity_score": 0.0,
+        "volume_score": 0.0,
+        "holder_score": 0.5,
+        "risk_score": 0.2
+      },
+      "flag_count": 2,
+      "recommendation": "LOW"
+    },
+    {
+      "pool_id": "2608e751-41d4-47db-9b9c-4bf3a757fc1b",
+      "symbol": "WBTC-USDT",
+      "chain": "ethereum",
+      "project": "uniswap-v3",
+      "tvl_usd": 25775965,
+      "apy_base": 8.34,
+      "apy_reward": 0,
+      "apy_total": 16.67,
+      "reward_pct_of_total": 0.0,
+      "is_safe_protocol": false,
+      "risk_flags": [
+        "unknown-protocol"
+      ],
+      "underlying_asset": [
+        "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+        "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      ],
+      "ilRisk": "yes",
+      "stablecoin": false,
+      "stablecoin_flag": "",
+      "dexscreener_validated": false,
+      "volume_24h_usd": 0,
+      "liquidity_usd": 0,
+      "liquidity_depth_score": 0.0,
+      "volume_liquidity_ratio": 0.0,
+      "red_flags": [
+        "unknown-protocol",
+        "no-dexscreener-pairs"
+      ],
+      "holder_concentration_score": 0.5,
+      "top_10_holder_pct": null,
+      "buy_sell_ratio": null,
+      "yield_edge_score": 0.147,
+      "component_scores": {
+        "apy_score": 0.167,
+        "liquidity_score": 0.0,
+        "volume_score": 0.0,
+        "holder_score": 0.5,
+        "risk_score": 0.2
+      },
+      "flag_count": 2,
+      "recommendation": "LOW"
+    },
+    {
+      "pool_id": "15cc07d7-3ffc-49e6-8500-deaeb414e32d",
+      "symbol": "USDC",
+      "chain": "ethereum",
+      "project": "midas-rwa",
+      "tvl_usd": 29019337,
+      "apy_base": 8.27,
+      "apy_reward": 0,
+      "apy_total": 16.54,
+      "reward_pct_of_total": 0.0,
+      "is_safe_protocol": false,
+      "risk_flags": [
+        "unknown-protocol"
+      ],
+      "underlying_asset": [
+        "0xCc5C22C7A6BCC25e66726AeF011dDE74289ED203"
+      ],
+      "ilRisk": "no",
+      "stablecoin": true,
+      "stablecoin_flag": "stablecoin",
+      "dexscreener_validated": false,
+      "volume_24h_usd": 0,
+      "liquidity_usd": 0,
+      "liquidity_depth_score": 0.0,
+      "volume_liquidity_ratio": 0.0,
+      "red_flags": [
+        "unknown-protocol",
+        "no-matching-chain-pair"
+      ],
+      "holder_concentration_score": 0.5,
+      "top_10_holder_pct": null,
+      "buy_sell_ratio": null,
+      "yield_edge_score": 0.146,
+      "component_scores": {
+        "apy_score": 0.165,
+        "liquidity_score": 0.0,
+        "volume_score": 0.0,
+        "holder_score": 0.5,
+        "risk_score": 0.2
+      },
+      "flag_count": 2,
+      "recommendation": "LOW"
+    },
+    {
+      "pool_id": "20e45c3e-7de7-4d34-89e7-20858ecdf252",
+      "symbol": "USDC",
+      "chain": "ethereum",
+      "project": "dolomite",
+      "tvl_usd": 30018496,
+      "apy_base": 3.23,
+      "apy_reward": 4.42,
+      "apy_total": 15.3,
+      "reward_pct_of_total": 28.9,
+      "is_safe_protocol": false,
+      "risk_flags": [
+        "unknown-protocol"
+      ],
+      "underlying_asset": [
+        "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
+      ],
+      "ilRisk": "no",
+      "stablecoin": true,
+      "stablecoin_flag": "stablecoin",
+      "dexscreener_validated": false,
+      "volume_24h_usd": 0,
+      "liquidity_usd": 0,
+      "liquidity_depth_score": 0.0,
+      "volume_liquidity_ratio": 0.0,
+      "red_flags": [
+        "unknown-protocol",
+        "no-matching-chain-pair"
+      ],
+      "holder_concentration_score": 0.5,
+      "top_10_holder_pct": null,
+      "buy_sell_ratio": null,
+      "yield_edge_score": 0.143,
+      "component_scores": {
+        "apy_score": 0.153,
+        "liquidity_score": 0.0,
+        "volume_score": 0.0,
+        "holder_score": 0.5,
+        "risk_score": 0.2
+      },
+      "flag_count": 2,
+      "recommendation": "LOW"
+    }
+  ],
+  "high_confidence_pools": [
+    {
+      "pool_id": "47e72726-3b2b-4fe6-b4a9-a26e1fcd9a50",
+      "symbol": "SUSDAT",
+      "chain": "ethereum",
+      "project": "saturn",
+      "tvl_usd": 71676999,
+      "apy_base": 31.43,
+      "apy_reward": 0,
+      "apy_total": 62.86,
+      "reward_pct_of_total": 0.0,
+      "is_safe_protocol": false,
+      "risk_flags": [
+        "unknown-protocol"
+      ],
+      "underlying_asset": [
+        "0x23238f20b894f29041f48D88eE91131C395Aaa71"
+      ],
+      "ilRisk": "no",
+      "stablecoin": true,
+      "stablecoin_flag": "stablecoin",
+      "dexscreener_validated": true,
+      "volume_24h_usd": 1260763.3,
+      "liquidity_usd": 1487359.46,
+      "liquidity_depth_score": 0.8,
+      "volume_liquidity_ratio": 0.8477,
+      "red_flags": [
+        "unknown-protocol"
+      ],
+      "pair_address": "0x6206cA315c2fCDd2A857b47EFB285AA12c529a7a",
+      "dex": "curve",
+      "price_usd": "0.8758",
+      "holder_concentration_score": 0.5,
+      "top_10_holder_pct": null,
+      "buy_sell_ratio": null,
+      "yield_edge_score": 0.662,
+      "component_scores": {
+        "apy_score": 0.629,
+        "liquidity_score": 0.8,
+        "volume_score": 1.0,
+        "holder_score": 0.5,
+        "risk_score": 0.2
+      },
+      "flag_count": 1,
+      "recommendation": "MEDIUM"
+    },
+    {
+      "pool_id": "cb6139f9-4a68-4efd-8245-0312a92aee55",
+      "symbol": "APXUSD",
+      "chain": "ethereum",
+      "project": "apyx-protocol",
+      "tvl_usd": 148978992,
+      "apy_base": 13.64,
+      "apy_reward": 0,
+      "apy_total": 27.29,
+      "reward_pct_of_total": 0.0,
+      "is_safe_protocol": false,
+      "risk_flags": [
+        "unknown-protocol"
+      ],
+      "underlying_asset": [
+        "0x98A878b1Cd98131B271883B390f68D2c90674665"
+      ],
+      "ilRisk": "no",
+      "stablecoin": true,
+      "stablecoin_flag": "stablecoin",
+      "dexscreener_validated": true,
+      "volume_24h_usd": 2180041.61,
+      "liquidity_usd": 17638331.14,
+      "liquidity_depth_score": 1.0,
+      "volume_liquidity_ratio": 0.1236,
+      "red_flags": [
+        "unknown-protocol"
+      ],
+      "pair_address": "0xe41be7B340f7c2EDA4DA1e99b42Ee1b228b526b7",
+      "dex": "curve",
+      "price_usd": "1.20",
+      "holder_concentration_score": 0.5,
+      "top_10_holder_pct": null,
+      "buy_sell_ratio": null,
+      "yield_edge_score": 0.623,
+      "component_scores": {
+        "apy_score": 0.273,
+        "liquidity_score": 1.0,
+        "volume_score": 1.0,
+        "holder_score": 0.5,
+        "risk_score": 0.2
+      },
+      "flag_count": 1,
+      "recommendation": "MEDIUM"
+    },
+    {
+      "pool_id": "ef32dd3b-a03b-4f79-9b65-8420d7e04ad0",
+      "symbol": "CVXCRV",
+      "chain": "ethereum",
+      "project": "convex-finance",
+      "tvl_usd": 32161475,
+      "apy_base": 0,
+      "apy_reward": 17.54,
+      "apy_total": 35.08,
+      "reward_pct_of_total": 50.0,
+      "is_safe_protocol": true,
+      "risk_flags": [],
+      "underlying_asset": [
+        "0xD533a949740bb3306d119CC777fa900bA034cd52"
+      ],
+      "ilRisk": "yes",
+      "stablecoin": false,
+      "stablecoin_flag": "",
+      "dexscreener_validated": true,
+      "volume_24h_usd": 247351.64,
+      "liquidity_usd": 5779387.24,
+      "liquidity_depth_score": 1.0,
+      "volume_liquidity_ratio": 0.0428,
+      "red_flags": [],
+      "pair_address": "0x971add32Ea87f10bD192671630be3BE8A11b8623",
+      "dex": "curve",
+      "price_usd": "0.09008",
+      "holder_concentration_score": 0.5,
+      "top_10_holder_pct": null,
+      "buy_sell_ratio": null,
+      "yield_edge_score": 0.603,
+      "component_scores": {
+        "apy_score": 0.351,
+        "liquidity_score": 1.0,
+        "volume_score": 0.428,
+        "holder_score": 0.5,
+        "risk_score": 0.7
+      },
+      "flag_count": 0,
+      "recommendation": "MEDIUM"
+    },
+    {
+      "pool_id": "a5c85bc8-eb41-45c0-a520-d18d7529c0d8",
+      "symbol": "SOL-USDC",
+      "chain": "solana",
+      "project": "orca-dex",
+      "tvl_usd": 26006549,
+      "apy_base": 43.85,
+      "apy_reward": 0,
+      "apy_total": 87.7,
+      "reward_pct_of_total": 0.0,
+      "is_safe_protocol": false,
+      "risk_flags": [
+        "unknown-protocol"
+      ],
+      "underlying_asset": [
+        "So11111111111111111111111111111111111111112",
+        "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+      ],
+      "ilRisk": "yes",
+      "stablecoin": false,
+      "stablecoin_flag": "",
+      "dexscreener_validated": true,
+      "volume_24h_usd": 275.28,
+      "liquidity_usd": 219911759.33,
+      "liquidity_depth_score": 1.0,
+      "volume_liquidity_ratio": 0.0,
+      "red_flags": [
+        "unknown-protocol",
+        "low-volume",
+        "dead-pool"
+      ],
+      "pair_address": "8A4ziPQaJWZJFKdSK5MjrXAt5U5qLvjQtdntqJbBb3UH",
+      "dex": "raydium",
+      "price_usd": "1.00020",
+      "holder_concentration_score": 0.5,
+      "top_10_holder_pct": null,
+      "buy_sell_ratio": null,
+      "yield_edge_score": 0.574,
+      "component_scores": {
+        "apy_score": 0.877,
+        "liquidity_score": 1.0,
+        "volume_score": 0.0,
+        "holder_score": 0.5,
+        "risk_score": 0.2
+      },
+      "flag_count": 3,
+      "recommendation": "MEDIUM"
+    }
+  ],
+  "safety": "read-only/public-data; no keys, no orders, no wallet actions"
+}

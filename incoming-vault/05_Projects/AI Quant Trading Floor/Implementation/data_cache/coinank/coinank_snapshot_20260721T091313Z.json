@@ -1,0 +1,9 @@
+{
+  "ts": "2026-07-21T09:12:51.450756+00:00",
+  "source": "coinank_open_api",
+  "coins_scanned": 20,
+  "exchanges_scanned": 0,
+  "liquidation_spikes": [],
+  "funding_extremes": [],
+  "top_liquidations": []
+}

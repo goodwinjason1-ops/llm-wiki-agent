@@ -1,0 +1,267 @@
+0:00 Google just gave Gemini direct access to
+0:02 your Google Business Profile. Not just
+0:04 view-only access. [music] It can pull
+0:06 your search impressions, update your
+0:08 hours, draft review responses in your
+0:10 brand voice, answer customer questions,
+0:13 compare your metrics across time
+0:14 periods, and surface gaps in your
+0:16 profile that you never knew existed, all
+0:19 conversationally. And the thing nobody's
+0:21 talking about yet, this completely
+0:23 changes the barrier to entry for solo
+0:24 operators offering Google Maps rankings
+0:26 and reputation management services.
+0:28 >> [music]
+0:28 >> If you're running this service or you
+0:30 want to start, this is massive. And at
+0:32 the very end, I'm going to show you the
+0:33 exact prompt format that makes Gemini
+0:35 write review responses that actually
+0:37 sound like your client's brand voice,
+0:39 not a robot. That part is at the end,
+0:42 and it changes everything. I'm Paul
+0:44 James. I help solo operators and
+0:46 freelancers build service businesses
+0:47 using free AI tools instead of expensive
+0:50 software stacks. Let's get into this. If
+0:52 you got value from this, drop a like and
+0:54 share it with someone who needs it. And
+0:56 if you want the complete framework for
+0:58 turning tools like this into actual
+1:00 paying clients, not just knowing what
+1:02 the tool does, but building it into a
+1:04 real business, my the description.
+1:09 Normally $195,
+1:11 but viewers of this video get it for
+1:13 130. That pricing is only there for
+1:15 people coming from this video, so grab
+1:17 it while it's showing. Drop a comment
+1:18 and let me know if you're heading over
+1:20 to take me up on that. I want to see
+1:21 who's in. Here's what just changed. Most
+1:24 reputation management platforms charge
+1:26 you somewhere between $79 and $99 a
+1:28 month to manage your Google Business
+1:30 Profile. That includes monitoring
+1:32 reviews, updating hours, posting
+1:34 updates, answering customer questions.
+1:36 They sell it as a time-saver, and it
+1:38 [music] is. But here's the thing, you're
+1:40 paying that monthly fee before you've
+1:42 landed your first client. Google just
+1:44 handed you that same capability for
+1:45 free, not a stripped-down version, the
+1:48 full stack. Gemini now has direct API
+1:50 access to your Google Business Profile.
+1:52 It sees everything, your search
+1:54 impressions, direction requests, call
+1:56 data, [music] customer engagement
+1:57 metrics, unanswered questions, review
+2:00 history, profile gaps, [music] and it
+2:02 can modify all of it on command. No
+2:04 dashboard login required. What I call
+2:06 the real-time authority stack is simple.
+2:09 Instead of logging into dashboards and
+2:10 doing everything manually, Gemini
+2:12 manages your Google Business Profile
+2:14 through conversation. It surfaces
+2:17 insights, drafts responses, updates your
+2:19 profile, and helps optimize your
+2:21 business without the usual back and
+2:23 forth. Here's how it actually runs. You
+2:25 connect Gemini to your verified Google
+2:27 Business Profile. Right now, this is
+2:29 rolling out globally, but it's not in
+2:31 the EA or UK yet. And even in eligible
+2:34 regions, it's a gradual rollout. Once
+2:37 you're connected, the integration is
+2:39 live. You can ask Gemini to pull your
+2:41 search impressions from the last 30
+2:42 days. It returns the data. You can ask
+2:45 how many people requested directions
+2:47 last week versus the week before. It
+2:49 compares the numbers and tells you the
+2:50 [music] trend. You can ask it to draft a
+2:52 response to a specific review, and
+2:54 here's where it gets wild. It references
+2:56 the actual customer's comment by name
+2:59 and writes in your brand voice. You
+3:00 approve it [music] or edit it, and it
+3:02 posts directly. No copy-paste, no
+3:04 dashboard toggle. Business notebooks
+3:07 keep the context of your business over
+3:08 time. Gemini remembers your connected
+3:11 profile, website, services, [music] and
+3:13 previous conversations, so you don't
+3:15 have to explain everything again every
+3:17 time you use it. That makes managing
+3:19 multiple client accounts much easier.
+3:21 Think about what this means for someone
+3:23 offering Google Maps rankings to local
+3:25 businesses. One session, you connect
+3:27 Gemini to your client's profile. You ask
+3:30 it to pull their current search
+3:31 visibility, their call volume, their
+3:33 direction requests from the last 90
+3:36 days. You ask it to identify profile
+3:38 gaps, missing photos, incomplete
+3:40 attributes, unanswered questions. It
+3:42 returns a full audit in under 5 minutes.
+3:45 That audit used to take you an hour of
+3:47 manual clicking through tabs and
+3:49 screenshots. With this stack, it takes
+3:51 one conversation, and the tool costs
+3:53 nothing to run. That's a $350
+3:57 deliverable built on free
+3:57 infrastructure. Now, here's where this
+3:59 actually gets useful for someone running
+4:01 a real service business. Now, updating a
+4:03 client's profile becomes simple. Need to
+4:06 change holiday hours, publish a seasonal
+4:08 post, or answer new customer questions?
+4:11 Tell Gemini what to do, review the draft
+4:13 if needed, and approve it. Over time, it
+4:16 learns the business and produces more
+4:17 consistent results. Now, most people
+4:20 take what I just showed you and try to
+4:21 hand it to a client. That's where it
+4:23 falls apart. There's one thing you have
+4:25 to handle first or it looks amateur. I'm
+4:27 walking you through that right now. The
+4:29 real value is the insights. Ask Gemini
+4:31 why calls dropped or why traffic changed
+4:34 and it compares your business metrics to
+4:36 identify possible causes like outdated
+4:38 hours, missing photos, or incomplete
+4:40 profile information. Those
+4:42 recommendations become valuable monthly
+4:44 reports for your clients. The review
+4:46 response capability is where this
+4:48 becomes a recurring service. Small
+4:50 businesses struggle to respond to
+4:51 reviews consistently. You offer them a
+4:53 package, five responses per week written
+4:56 in their brand voice, posted
+4:57 automatically. You connect Gemini to
+5:00 their profile. Every time a new review
+5:02 comes in, you ask Gemini to draft a
+5:04 response that acknowledges the customer
+5:06 by name and references their specific
+5:08 comment. It writes [music] it, you
+5:09 review it, it posts. That's a $200 a
+5:12 month service. Most reputation
+5:14 management platforms charge the business
+5:16 more than that just to access the
+5:17 feature. And they still have to write
+5:19 the responses themselves. Your version
+5:21 costs them less and you handle the
+5:23 labor. Here's another angle. Lead
+5:25 reactivation through the Q and A
+5:27 section. Most local businesses have
+5:30 unanswered questions sitting in their
+5:31 Google Business Profile for months.
+5:33 People asked about parking, hours,
+5:36 services, pricing,
+5:37 >> [music]
+5:37 >> and nobody replied. Those are cold leads
+5:40 sitting there. You use Gemini to pull
+5:41 every unanswered question, draft
+5:43 responses that match the business tone,
+5:45 and post them all in one session.
+5:47 >> [music]
+5:47 >> That's a one-time setup fee of $300. The
+5:50 business looks more responsive. Future
+5:52 customers see the Q&A section is active,
+5:55 and you did the whole thing through a
+5:56 conversation with Gemini. No platform
+5:58 fee, no dashboard. And listen, if you
+6:00 haven't already dropped a like and
+6:02 grabbed my 333 method course, do that
+6:05 now. It's linked in the description.
+6:07 Under $30 for viewers of this video
+6:10 instead of $195. That pricing is only
+6:13 live for people coming from this video.
+6:15 It walks you through the exact framework
+6:17 I used to take free tools like this one
+6:19 and turn them into client income.
+6:21 [music]
+6:21 Drop a comment if you're heading over. I
+6:23 want to see who's taking action on this.
+6:25 And if you want to see what my day looks
+6:27 like now that tools like these handle
+6:29 most of the heavy lifting, I have a vlog
+6:31 channel linked in the description below.
+6:33 Here's a scenario. A chiropractor has a
+6:35 Google Business Profile that hasn't been
+6:37 touched in 6 months.
+6:38 >> [music]
+6:38 >> The hours are wrong. The photos are
+6:41 outdated. There are three unanswered
+6:43 questions and five reviews with no
+6:45 replies. Most people would charge $500
+6:48 to audit and fix that manually. You
+6:50 connect Gemini to the profile. You ask
+6:52 it to surface every gap. It tells you
+6:54 what's missing, what's wrong, and what
+6:56 needs attention. You spend 20 minutes
+6:58 fixing everything through conversational
+7:00 prompts. The chiropractor sees their
+7:02 profile go from neglected to optimized
+7:05 in under an hour. [music]
+7:06 You charge $350.
+7:08 They see it as a steal. You built it on
+7:10 free infrastructure. That's leverage.
+7:12 Okay, I promised you something at the
+7:14 start of this video. Here it is. The
+7:17 prompt format that makes Gemini write
+7:19 review responses that actually sound
+7:21 like your client's brand voice instead
+7:23 of generic corporate fluff. Here's the
+7:25 structure. You tell Gemini three things
+7:27 up front. The business name, the tone
+7:29 you [music] want, and one example of how
+7:30 they'd respond to a compliment. Then you
+7:32 ask it to draft the response. Example,
+7:35 you're responding for Main Street
+7:36 Coffee, casual and grateful tone. They
+7:39 always thank people by name and mention
+7:40 what made the visit special. Draft a
+7:42 response to this five-star review.
+7:44 Gemini pulls the customer's name and
+7:46 their specific comment, [music] "Loved
+7:48 the oat milk latte." and writes
+7:50 something like, "Hey Sarah, so glad you
+7:52 loved the oat milk latte. We're obsessed
+7:54 with that one, too. Thanks for stopping
+7:56 by and making our day."
+7:57 >> [music]
+7:57 >> That sounds human. That sounds like the
+7:59 business. And it took 15 seconds. That's
+8:01 the difference between a review response
+8:04 that converts future customers and one
+8:06 that gets skipped. And you just learned
+8:08 how to deliver that as a service.
+8:10 Imagine what your next 30 days look like
+8:12 once you have this running for three
+8:14 local clients. Every week, you're
+8:16 responding to their reviews, updating
+8:17 their hours, posting seasonal content,
+8:20 answering customer questions, all
+8:22 through Gemini. No platform fees, no
+8:24 manual dashboard work, just
+8:26 conversational commands and direct API
+8:28 access.
+8:29 >> [music]
+8:29 >> Your clients see consistent engagement
+8:31 on their profiles, you're charging them
+8:33 a combined $600 a month in retainers,
+8:36 and the tool handling all of it costs
+8:37 you zero. That's what changes when
+8:40 Google hands you the real-time authority
+8:42 stack for free. If you drop a like,
+8:44 share this with someone who needs it,
+8:45 and comment below, I'll reply with a
+8:47 link to a free training I put together
+8:49 for you on how I use AI tools like this
+8:51 one to make money.

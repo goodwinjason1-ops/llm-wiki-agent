@@ -1,0 +1,108 @@
+{
+  "ledger": null,
+  "mode": "QTF-019 read-only Hyperliquid heartbeat",
+  "rows": [
+    {
+      "asset": "BTC",
+      "change_24h_pct": 1.4627,
+      "funding_rate": 1.25e-05,
+      "mark_price": 63194.0,
+      "mid_price": 63196.5,
+      "open_interest_contracts": 37691.3735599999,
+      "open_interest_usd_proxy": 2381868660.75,
+      "paper_position": {
+        "max_loss_usd": 0,
+        "notional_usd": 0,
+        "side": "flat",
+        "unrealized_pnl_usd": 0
+      },
+      "prev_day_price": 62283.0,
+      "reason": "public-data heartbeat snapshot for QTF-019; no private account data",
+      "recommended_action": "observe_only",
+      "risk_state": "no_position",
+      "safety": "read-only/public-data; no keys, no orders, no wallet actions",
+      "strategy_pod": "watch_only",
+      "ts": "2026-07-10T00:04:29+00:00",
+      "venue": "hyperliquid",
+      "volume_24h_usd": 1763646017.24
+    },
+    {
+      "asset": "ETH",
+      "change_24h_pct": -0.0057,
+      "funding_rate": 1.25e-05,
+      "mark_price": 1743.5,
+      "mid_price": 1743.55,
+      "open_interest_contracts": 790146.6429999997,
+      "open_interest_usd_proxy": 1377620672.07,
+      "paper_position": {
+        "max_loss_usd": 0,
+        "notional_usd": 0,
+        "side": "flat",
+        "unrealized_pnl_usd": 0
+      },
+      "prev_day_price": 1743.6,
+      "reason": "public-data heartbeat snapshot for QTF-019; no private account data",
+      "recommended_action": "observe_only",
+      "risk_state": "no_position",
+      "safety": "read-only/public-data; no keys, no orders, no wallet actions",
+      "strategy_pod": "watch_only",
+      "ts": "2026-07-10T00:04:29+00:00",
+      "venue": "hyperliquid",
+      "volume_24h_usd": 617657248.36
+    },
+    {
+      "asset": "SOL",
+      "change_24h_pct": 0.248,
+      "funding_rate": 1.25e-05,
+      "mark_price": 78.003,
+      "mid_price": 78.0095,
+      "open_interest_contracts": 5345842.300000004,
+      "open_interest_usd_proxy": 416991736.93,
+      "paper_position": {
+        "max_loss_usd": 0,
+        "notional_usd": 0,
+        "side": "flat",
+        "unrealized_pnl_usd": 0
+      },
+      "prev_day_price": 77.81,
+      "reason": "public-data heartbeat snapshot for QTF-019; no private account data",
+      "recommended_action": "observe_only",
+      "risk_state": "no_position",
+      "safety": "read-only/public-data; no keys, no orders, no wallet actions",
+      "strategy_pod": "watch_only",
+      "ts": "2026-07-10T00:04:29+00:00",
+      "venue": "hyperliquid",
+      "volume_24h_usd": 148468287.63
+    },
+    {
+      "asset": "HYPE",
+      "change_24h_pct": -0.8903,
+      "funding_rate": 1.25e-05,
+      "mark_price": 67.017,
+      "mid_price": 67.0145,
+      "open_interest_contracts": 21452580.57999998,
+      "open_interest_usd_proxy": 1437687592.73,
+      "paper_position": {
+        "max_loss_usd": 0,
+        "notional_usd": 0,
+        "side": "flat",
+        "unrealized_pnl_usd": 0
+      },
+      "prev_day_price": 67.619,
+      "reason": "public-data heartbeat snapshot for QTF-019; no private account data",
+      "recommended_action": "observe_only",
+      "risk_state": "no_position",
+      "safety": "read-only/public-data; no keys, no orders, no wallet actions",
+      "strategy_pod": "watch_only",
+      "ts": "2026-07-10T00:04:29+00:00",
+      "venue": "hyperliquid",
+      "volume_24h_usd": 308176403.54
+    }
+  ],
+  "safety": "read-only/public-data only",
+  "summary": {
+    "assets": 4,
+    "total_volume_24h_usd": 2837947956.77
+  },
+  "ts": "2026-07-10T00:04:29+00:00"
+}

@@ -1,0 +1,97 @@
+--- PAGE 1 ---
+Jason Goodwin 
+Emerald, Victoria  •  0467 905 780  •  goodwin.jason1@gmail.com 
+Profile 
+Data-literate professional transitioning into the AOD sector after an 11-year career as a Network Engineer 
+across HP, Telstra, Accenture and Google. Bringing a strong technical foundation, disciplined data-handling 
+habits, and proven ability to work reliably across distributed teams and on-site environments. Currently 
+completing formal AOD and mental health training, completing a Certificate IV in Alcohol and Other Drugs in 
+2025, and progressing a Diploma of Mental Health due for completion in November 2026. Unique 
+combination of applied technical background of building data systems and reporting tools, complemented by 
+personal lived experience and vocational training in addiction and recovery for a genuine, grounded 
+understanding of harm reduction and service-user needs. Comfortable working independently, on-site at 
+events, and across geographically dispersed teams. 
+Professional Experience 
+Blockchain development 
+Contractor for various start ups  •  2010 – 2011  
+•​ Worked across various start up companies to develop, test and implement blockchain architecture into 
+service use and smart contract development including payment gateways and data and information 
+infrastructure.  
+Network Engineer 
+HP  •  2000 – 2005 
+•​ Began network engineering career providing on-site networking support to large corporate clients, 
+working alongside consultants to specify and deliver infrastructure requirements. 
+•​ Provided troubleshooting support and clear communication with both technical and non-technical 
+stakeholders with skills directly transferable to data monitoring, systems collaboration and reporting. 
+Client: Accenture  •  2002 - 2004 
+•​ Delivered on-site networking support to large corporate clients, collaborating with consulting teams to 
+define and implement infrastructure requirements. 
+Client: Telstra  •  2003 - 2005 
+•​ Supported network infrastructure and on-site requirements for large corporate clients, maintaining 
+accuracy and reliability of technical systems and records. 
+ 
+Project Owner — Emerald Lakers “Sixth Man” Basketball Club App 
+Emerald Lakers Basketball Club  •  July 2025 – Present 
+•​ Researched and developed the Emerald Lakers ‘Sixth Man’ Basketball Club App to create an 
+environment to collect and organise all player, team and coach development information to inform team 
+selection, team and player development, provide coaching resources, record game day information and 
+combine multiple data sources to provide a one stop shop for coach, coordinator, player and parent 
+needs to track development.  
+•​ Owned and directed an end-to-end club management platform (React/Vite, Firebase/Firestore) covering 
+training assessments, match-day data, tryout evaluation, and season scouting with configurable 
+weighting. 
+•​ Established data quality and cleaning routines to resolve stale/erroneous records, including direct 
+database-level correction and validation processes. 
+•​ Implemented role-based access control and automated end-to-end testing (Playwright) to protect data 
+integrity across a distributed team of coaches and coordinators. 
+
+
+--- PAGE 2 ---
+•​ Wrote structured technical documentation and rules-based workflows to govern ongoing development 
+and change control. 
+•​ Undertook user testing and coach training with focus on continuous improvement and feedback. 
+Coach Coordinator — Emerald Lakers Basketball Club (incl. Little Lakers youth program) 
+Emerald Lakers Basketball Club  •  January 2026 – Present 
+•​ Coordinated coaching networks and youth programs across a geographically dispersed club community, 
+managing schedules, communications, and stakeholder relationships. 
+•​ Supported tryouts and coach assessment and accreditation events, translating operational data needs 
+into practical, usable tools for volunteer and staff coordinators. 
+•​ Supported individual coach development through demonstration, providing tailored resources and advice 
+suited to their needs and needs of their teams. 
+•​ Built strong collaborative and people-management skills through motivating and coordinating a wide 
+network of coaches, parents, and club leadership. 
+ 
+Coach - Emerald Lakers Basketball Club (Under 8 through to Under 16) 
+Emerald Lakers Basketball Club  •  2016 – Present 
+•​ Coached Under 8 through to Under 16 boys for the past 10 years 
+•​ Developed sports development relationships with children and parents across this age group to build 
+trust and confidence in game play, integrity, resilience and fair play on and off the court. 
+•​ Developed skills of young people to achieve positions in high level representative basketball teams and 
+most recently mentoring young people to take on leadership roles as coaches. 
+Technical & Data Skills 
+•​ Data cleaning, validation, and quality monitoring across relational (PostgreSQL/Supabase) and NoSQL 
+(Firestore) systems 
+•​ Strong network systems and infrastructure background, with an eye for data integrity, uptime, and 
+reliable reporting 
+•​ Report and dashboard design; structured outcome-measurement and client-satisfaction data collection 
+tools 
+•​ Working familiarity with modern data/dev tooling and AI-assisted development workflows (Claude Code) 
+for rapid iteration and documentation 
+•​ Currently developing R proficiency (dplyr, ggplot2) to complement existing data-cleaning and reporting 
+experience 
+•​ Strong written documentation practice; comfortable translating technical database/reporting needs for 
+non-technical stakeholders 
+•​ Research skills and capabilities developed through natural curiosity to deep dive into issues, formalised 
+through vocational education and training and experience of PICO methodology 
+Education & Vocational Study 
+Certificate IV in Alcohol and Other Drugs 
+Chisholm Institute, Berwick Campus  •  Completed2025 
+•​ Includes CHCAOD005 — Provide Alcohol and Other Drugs Withdrawal Services 
+Diploma of Mental Health 
+Chisholm Institute, Berwick Campus  •  In progress — one semester remaining 
+•​ Includes CHCPOL003 — Research and Apply Evidence to Practice 
+Lived Experience & Drug Literacy 
+Personal lived experience of addiction and recovery underpins a genuine, practical understanding of 
+unregulated drug markets, harm-reduction principles, and the realities of drug checking services. This 
+experience is complemented by formal AOD study with front-line perspective and credibility within the 
+recovery and service-user community. 

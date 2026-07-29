@@ -1,0 +1,341 @@
+{
+  "E-HTF-1": {
+    "edge": "E-HTF-1",
+    "name": "Index Rebalance / Forced-Flow Events",
+    "upcoming_events": [],
+    "note": "Calendar-based. Production needs RSS/API feed from index providers.",
+    "trades": [
+      "Long announced adds / short deletes from announcement to effective date",
+      "Fade flow after effective close (reversion trade)",
+      "Small-cap deletion overshoot reversion"
+    ],
+    "decision": "no_events_this_quarter"
+  },
+  "E-HTF-2": {
+    "edge": "E-HTF-2",
+    "name": "Post-Earnings Announcement Drift (PEAD)",
+    "note": "Requires earnings calendar + surprise data feed (EarningsWhispers, Wall Street Horizon, or similar). Scaffolded for future integration.",
+    "requirements": [
+      "EPS + revenue beat detection",
+      "Guidance raise flag",
+      "Gap-and-hold confirmation (price > pre-earnings high after 3 days)",
+      "Volume > 2x average on earnings day",
+      "Mid-cap focus with low analyst coverage"
+    ],
+    "screening_criteria": {
+      "eps_beat_min_pct": 5,
+      "revenue_beat_min_pct": 2,
+      "guidance_raised": true,
+      "min_market_cap": 500000000,
+      "max_market_cap": 20000000000,
+      "max_analyst_coverage": 15
+    },
+    "decision": "research_pending_data_feed"
+  },
+  "E-HTF-3": {
+    "edge": "E-HTF-3",
+    "name": "Pairs / Statistical Relative Value",
+    "pairs_monitored": 6,
+    "pairs": [
+      {
+        "pair": "KO/PEP",
+        "sector": "Consumer Staples",
+        "long_price": 82.12,
+        "short_price": 135.46,
+        "long_1m_return": null,
+        "short_1m_return": null,
+        "status": "monitoring"
+      },
+      {
+        "pair": "HD/LOW",
+        "sector": "Home Improvement",
+        "long_price": 333.04,
+        "short_price": 204.71,
+        "long_1m_return": null,
+        "short_1m_return": null,
+        "status": "monitoring"
+      },
+      {
+        "pair": "V/MA",
+        "sector": "Payments",
+        "long_price": 360.57,
+        "short_price": 547.44,
+        "long_1m_return": null,
+        "short_1m_return": null,
+        "status": "monitoring"
+      },
+      {
+        "pair": "UPS/FDX",
+        "sector": "Logistics",
+        "long_price": 113.15,
+        "short_price": 306.22,
+        "long_1m_return": null,
+        "short_1m_return": null,
+        "status": "monitoring"
+      },
+      {
+        "pair": "CVX/XOM",
+        "sector": "Energy",
+        "long_price": 189.71,
+        "short_price": 148.36,
+        "long_1m_return": null,
+        "short_1m_return": null,
+        "status": "monitoring"
+      },
+      {
+        "pair": "JPM/BAC",
+        "sector": "Banking",
+        "long_price": 338.87,
+        "short_price": 60.42,
+        "long_1m_return": null,
+        "short_1m_return": null,
+        "status": "monitoring"
+      }
+    ],
+    "entry_rules": "Entry at 2σ spread, exit at mean, hard stop at 3.5σ, max 21-day hold",
+    "sizing": "Max 4% NAV gross per pair, 20% NAV gross for pairs book",
+    "decision": "observation_only"
+  },
+  "E-HTF-4": {
+    "edge": "E-HTF-4",
+    "name": "Forced-Seller Harvesting",
+    "current_month": 7,
+    "seasonal_signals": [
+      "AU fiscal year-end tax-loss selling — scan ASX quality names down >30%"
+    ],
+    "strategies": [
+      "Tax-loss selling capitulation in quality names",
+      "Closed-end fund discounts >12% with catalyst",
+      "Spin-off indiscriminate selling",
+      "Fund liquidation flows"
+    ],
+    "note": "Seasonal scan. AU tax-loss season peaks June. US peaks Nov-Dec.",
+    "decision": "observation_only"
+  },
+  "E-HTF-5": {
+    "edge": "E-HTF-5",
+    "name": "AU Dividend/Franking Capture",
+    "stocks_scanned": 8,
+    "candidates": [
+      {
+        "symbol": "BHP.AX",
+        "price": 58.0,
+        "return_3m": 3.52
+      },
+      {
+        "symbol": "CBA.AX",
+        "price": 171.05,
+        "return_3m": -1.34
+      },
+      {
+        "symbol": "WBC.AX",
+        "price": 36.34,
+        "return_3m": -7.11
+      },
+      {
+        "symbol": "NAB.AX",
+        "price": 39.44,
+        "return_3m": -1.81
+      },
+      {
+        "symbol": "ANZ.AX",
+        "price": 35.84,
+        "return_3m": -0.83
+      },
+      {
+        "symbol": "MQG.AX",
+        "price": 254.9,
+        "return_3m": 10.54
+      },
+      {
+        "symbol": "WES.AX",
+        "price": 92.15,
+        "return_3m": 24.21
+      },
+      {
+        "symbol": "WOW.AX",
+        "price": 39.44,
+        "return_3m": 4.09
+      }
+    ],
+    "note": "Systematic ex-div reversion entries in liquid franked payers. Tax treatment must be modeled per structure.",
+    "decision": "observation_only"
+  },
+  "E-HTF-6": {
+    "edge": "E-HTF-6",
+    "name": "Core ETF Book (The Ballast)",
+    "etfs_scanned": 15,
+    "full_allocation": 0,
+    "half_allocation": 0,
+    "signals": [
+      {
+        "symbol": "SPY",
+        "name": "S&P 500 ETF",
+        "price": 742.09,
+        "sma_200": null,
+        "sma_50": 744.55,
+        "regime": "neutral",
+        "allocation": "minimum",
+        "return_1m": -0.62,
+        "return_3m": 4.71
+      },
+      {
+        "symbol": "QQQ",
+        "name": "Nasdaq 100 ETF",
+        "price": 696.06,
+        "sma_200": null,
+        "sma_50": 719.01,
+        "regime": "neutral",
+        "allocation": "minimum",
+        "return_1m": -6.02,
+        "return_3m": 7.62
+      },
+      {
+        "symbol": "IWM",
+        "name": "Russell 2000 ETF",
+        "price": 292.31,
+        "sma_200": null,
+        "sma_50": 290.41,
+        "regime": "neutral",
+        "allocation": "minimum",
+        "return_1m": -1.11,
+        "return_3m": 5.39
+      },
+      {
+        "symbol": "TLT",
+        "name": "20+ Year Treasury ETF",
+        "price": 83.89,
+        "sma_200": null,
+        "sma_50": 85.26,
+        "regime": "neutral",
+        "allocation": "minimum",
+        "return_1m": -3.3,
+        "return_3m": -3.63
+      },
+      {
+        "symbol": "IEF",
+        "name": "7-10 Year Treasury ETF",
+        "price": 93.54,
+        "sma_200": null,
+        "sma_50": 94.08,
+        "regime": "neutral",
+        "allocation": "minimum",
+        "return_1m": -0.87,
+        "return_3m": -2.4
+      },
+      {
+        "symbol": "SHY",
+        "name": "1-3 Year Treasury ETF",
+        "price": 81.95,
+        "sma_200": null,
+        "sma_50": 82.04,
+        "regime": "neutral",
+        "allocation": "minimum",
+        "return_1m": -0.04,
+        "return_3m": -0.77
+      },
+      {
+        "symbol": "GLD",
+        "name": "Gold ETF",
+        "price": 367.6,
+        "sma_200": null,
+        "sma_50": 394.82,
+        "regime": "neutral",
+        "allocation": "minimum",
+        "return_1m": -5.04,
+        "return_3m": -16.85
+      },
+      {
+        "symbol": "UUP",
+        "name": "US Dollar ETF",
+        "price": 28.39,
+        "sma_200": null,
+        "sma_50": 28.03,
+        "regime": "neutral",
+        "allocation": "minimum",
+        "return_1m": 0.32,
+        "return_3m": 3.92
+      },
+      {
+        "symbol": "EFA",
+        "name": "International Developed ETF",
+        "price": 102.57,
+        "sma_200": null,
+        "sma_50": 103.71,
+        "regime": "neutral",
+        "allocation": "minimum",
+        "return_1m": -1.76,
+        "return_3m": -1.29
+      },
+      {
+        "symbol": "EEM",
+        "name": "Emerging Markets ETF",
+        "price": 63.56,
+        "sma_200": null,
+        "sma_50": 67.02,
+        "regime": "neutral",
+        "allocation": "minimum",
+        "return_1m": -10.21,
+        "return_3m": 0.6
+      },
+      {
+        "symbol": "VWO",
+        "name": "Vanguard Emerging Markets",
+        "price": 57.93,
+        "sma_200": null,
+        "sma_50": 59.41,
+        "regime": "neutral",
+        "allocation": "minimum",
+        "return_1m": -4.67,
+        "return_3m": -1.66
+      },
+      {
+        "symbol": "VNQ",
+        "name": "US REIT ETF",
+        "price": 99.48,
+        "sma_200": null,
+        "sma_50": 96.89,
+        "regime": "neutral",
+        "allocation": "minimum",
+        "return_1m": 4.1,
+        "return_3m": 2.52
+      },
+      {
+        "symbol": "DBC",
+        "name": "Commodity ETF",
+        "price": 29.14,
+        "sma_200": null,
+        "sma_50": 28.94,
+        "regime": "neutral",
+        "allocation": "minimum",
+        "return_1m": 5.47,
+        "return_3m": 1.64
+      },
+      {
+        "symbol": "LQD",
+        "name": "Investment Grade Corp Bond ETF",
+        "price": 107.15,
+        "sma_200": null,
+        "sma_50": 108.47,
+        "regime": "neutral",
+        "allocation": "minimum",
+        "return_1m": -1.76,
+        "return_3m": -2.62
+      },
+      {
+        "symbol": "HYG",
+        "name": "High Yield Bond ETF",
+        "price": 79.68,
+        "sma_200": null,
+        "sma_50": 79.82,
+        "regime": "neutral",
+        "allocation": "minimum",
+        "return_1m": -0.41,
+        "return_3m": -1.12
+      }
+    ],
+    "tactical_overlay": "200d trend filter controls equity weight: full/half/minimum",
+    "note": "Not an edge — a risk-premium harvest with tactical overlay. Collects equity + term premium.",
+    "decision": "promote_paper_monitor"
+  }
+}

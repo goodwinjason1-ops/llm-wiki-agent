@@ -1,0 +1,103 @@
+{
+  "experiment_id": "FF-LIQ-DATA-001",
+  "collected_at_utc": "2026-07-14T10:23:38+00:00",
+  "scope": "read-only public capability probe; no liquidation data fabricated",
+  "venue": "Hyperliquid",
+  "endpoint": "https://api.hyperliquid.xyz/info",
+  "symbols_requested": [
+    "BTC",
+    "ETH",
+    "SOL"
+  ],
+  "results": [
+    {
+      "name": "metaAndAssetCtxs",
+      "request": {
+        "type": "metaAndAssetCtxs"
+      },
+      "http_status": 200,
+      "latency_ms": 1202.03,
+      "response_shape": {
+        "type": "list",
+        "count": 2,
+        "first_keys": [
+          "collateralToken",
+          "marginTables",
+          "universe"
+        ]
+      }
+    },
+    {
+      "name": "fundingHistory_BTC_2h",
+      "request": {
+        "type": "fundingHistory",
+        "coin": "BTC",
+        "startTime": 0
+      },
+      "http_status": 200,
+      "latency_ms": 923.26,
+      "response_shape": {
+        "type": "list",
+        "count": 500,
+        "first_keys": [
+          "coin",
+          "fundingRate",
+          "premium",
+          "time"
+        ]
+      }
+    },
+    {
+      "name": "l2Book_BTC",
+      "request": {
+        "type": "l2Book",
+        "coin": "BTC"
+      },
+      "http_status": 200,
+      "latency_ms": 716.39,
+      "response_shape": {
+        "type": "object",
+        "keys": [
+          "coin",
+          "levels",
+          "time"
+        ]
+      }
+    },
+    {
+      "name": "candleSnapshot_BTC_1m",
+      "request": {
+        "type": "candleSnapshot",
+        "req": {
+          "coin": "BTC",
+          "interval": "1m",
+          "startTime": 0,
+          "endTime": 1
+        }
+      },
+      "http_status": 200,
+      "latency_ms": 711.16,
+      "response_shape": {
+        "type": "list",
+        "count": 0,
+        "first_keys": []
+      }
+    },
+    {
+      "name": "liquidationHistory_candidate",
+      "request": {
+        "type": "liquidationHistory",
+        "coin": "BTC",
+        "startTime": 0
+      },
+      "error_type": "HTTPError",
+      "error": "HTTP Error 422: Unprocessable Entity",
+      "interpretation": "not_supported_or_rejected"
+    }
+  ],
+  "decision": "data-insufficient",
+  "blocker": "The tested public Info API does not provide a supported liquidation-history request; therefore FF-LIQ-C-01/FF-LIQ-R-01 cannot be backtested from this endpoint alone.",
+  "next_unblocked_component": "Acquire a documented public liquidation feed or immutable public liquidation archive, then freeze raw JSONL with timestamps, source sequence/event IDs, prices, quantities, OI, bid/ask and hashes before modelling.",
+  "promotion": "blocked; no paper alerts or live execution",
+  "sha256": "bf2a5edc986d1fbbde9e93b0a7b919dd8256d0d2d332ccbf46285d25f4fb53a7"
+}

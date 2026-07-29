@@ -1,0 +1,19 @@
+{
+  "book_errors": 0,
+  "first_recorded_at": "2026-07-10T13:31:49.633+00:00",
+  "interval_seconds": 1.0,
+  "last_recorded_at": "2026-07-10T13:32:38.637+00:00",
+  "market_ids": [
+    "2864090"
+  ],
+  "market_questions": [
+    "Bitcoin Up or Down - July 10, 5:15PM-5:20PM ET"
+  ],
+  "public_read_only": true,
+  "risk_mode": "research-only",
+  "samples_requested": 20,
+  "snapshot_file": "supply_side_lab\\runs\\2026-07-10-sequential-l2-slice\\sequential_l2_snapshots.jsonl",
+  "snapshot_rows": 20,
+  "successful_token_books": 40,
+  "wallet_auth_orders": false
+}

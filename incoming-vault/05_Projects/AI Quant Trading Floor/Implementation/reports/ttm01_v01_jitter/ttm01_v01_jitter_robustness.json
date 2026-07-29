@@ -1,0 +1,60 @@
+{
+  "schema": "qtf-v01-jitter-robustness-v1",
+  "generated_at": "2026-07-16T03:56:08+00:00",
+  "input_manifest_sha256": "356420e8a737f967a32ab3cf740f0bcfa069a7c6cbf3276b91b30c5c630ceae7",
+  "symbols": [
+    "BTCUSDT",
+    "ETHUSDT",
+    "SOLUSDT"
+  ],
+  "rows_per_symbol": 1200,
+  "split": "chronological 70/30 (840/360)",
+  "base_result": {
+    "params": {
+      "rows": 359,
+      "total_return": -0.004328205153717457,
+      "cagr": -0.004400383455478107,
+      "sharpe": -1.2493451556180504,
+      "max_drawdown": -0.005132635026165788,
+      "turnover": 0.351633340668725,
+      "trade_count": 40,
+      "mean_exposure": 0.0038479175328629722,
+      "win_rate": 0.1894150417827298,
+      "payoff_ratio": 1.0148610371748394
+    },
+    "holdout_total_return": -0.004328205153717457,
+    "holdout_sharpe": -1.2493451556180504,
+    "holdout_max_drawdown": -0.005132635026165788,
+    "holdout_trade_count": 40
+  },
+  "robustness_summary": {
+    "param_combinations_tested": 972,
+    "holdout_return_survival_rate": 0.5278,
+    "holdout_sharpe_survival_rate": 0.4444,
+    "holdout_mdd_survival_rate": 0.5,
+    "holdout_return_mean": -0.004328,
+    "holdout_return_std": 0.001317,
+    "holdout_sharpe_mean": -1.256,
+    "holdout_mdd_mean": -0.0053,
+    "holdout_trade_count_mean": 36.7,
+    "robustness_gate": "fail",
+    "gate_threshold": ">= 60% of jittered parameters must survive at or above base return"
+  },
+  "param_sensitivity": {
+    "lookback20": 0.6613,
+    "lookback60": 0.0,
+    "vol_target": -0.5361,
+    "rebal_thresh": 0.0,
+    "score_w": 0.0,
+    "cost_bps": -0.447
+  },
+  "decision": "do_not_promote",
+  "gate_notes": [
+    "Base holdout return: -0.4328% (Sharpe -1.249, MDD -0.5133%).",
+    "Across 972 parameter combinations: 52.8% survived below-base return.",
+    "Holdout return distribution: mean=-0.4328%, std=0.1317%.",
+    "Parameter sensitivity (Pearson r with holdout return): {\"lookback20\": 0.6613, \"lookback60\": 0.0, \"vol_target\": -0.5361, \"rebal_thresh\": 0.0, \"score_w\": 0.0, \"cost_bps\": -0.447}",
+    "Robustness gate: FAILED (threshold: >= 60% survival).",
+    "No trades, alerts, allocations, credentials or contacts were used."
+  ]
+}

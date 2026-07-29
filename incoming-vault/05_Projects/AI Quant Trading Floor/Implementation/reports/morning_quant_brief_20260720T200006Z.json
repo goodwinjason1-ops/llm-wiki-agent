@@ -1,0 +1,92 @@
+{
+  "run_id": "20260720T200006Z",
+  "brief": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Daily Briefs\\AI Quant Morning Brief - 2026-07-21.md",
+  "latest": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\00_System\\Dashboards\\AI Quant Morning Brief - Latest.md",
+  "next_step_dashboard": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\00_System\\Dashboards\\AI Quant Morning Next Step Queue.md",
+  "ideas": [
+    {
+      "idea_id": "2026-07-21-QTF-MORNING-01",
+      "desk": "Tactical Momentum / Cross-Market Allocation Desk",
+      "market": "Crypto control universe: BTCUSDT/ETHUSDT/SOLUSDT",
+      "score": 35
+    },
+    {
+      "idea_id": "2026-07-21-QTF-MORNING-02",
+      "desk": "Funding-Rate Extremes / Carry Validation Desk",
+      "market": "Funding-rate-extremes universe (current screened example: ACE)",
+      "score": 55
+    },
+    {
+      "idea_id": "2026-07-21-QTF-MORNING-03",
+      "desk": "ETF Diversification / Cross-Sleeve Capital Allocation Desk",
+      "market": "ETF diversification sleeve: SPY/QQQ/TLT/IEF/GLD/UUP control universe",
+      "score": 40
+    }
+  ],
+  "next_steps": [
+    {
+      "run_id": "20260720T200006Z",
+      "date": "2026-07-21",
+      "generated_at": "2026-07-20T20:00:10+00:00",
+      "next_step_status": "queued",
+      "idea_id": "2026-07-21-QTF-MORNING-01",
+      "desk": "Tactical Momentum / Cross-Market Allocation Desk",
+      "market": "Crypto control universe: BTCUSDT/ETHUSDT/SOLUSDT",
+      "score": 35,
+      "next_step": "Keep the crypto sleeve at zero allocation until its evidence gates pass; rank it against other validated sleeves rather than rank individual coins.",
+      "first_test": "Complete the missing TTM-01 history and chronological walk-forward/holdout validation; do not emit a paper signal from this snapshot.",
+      "reject_conditions": "Reject or park if walk-forward, cost sensitivity, robustness, or drawdown gates fail.",
+      "brief_path": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Daily Briefs\\AI Quant Morning Brief - 2026-07-21.md",
+      "owner": "AI Quant Floor / Momentum validation desk",
+      "evidence_status": "verified-complete (rejected backtest)",
+      "managed_as": "deterministic backtest complete \u2014 do_not_promote",
+      "result_note": "05_Projects/AI Quant Trading Floor/Implementation/reports/ttm01/ttm01_backtest.md",
+      "machine_output": "05_Projects/AI Quant Trading Floor/Implementation/reports/ttm01/",
+      "promotion_gate": "Blocked pending >=1,095 frozen rows per symbol, walk-forward/holdout, robustness and paper-monitor gates; no allocation."
+    },
+    {
+      "run_id": "20260720T200006Z",
+      "date": "2026-07-21",
+      "generated_at": "2026-07-20T20:00:10+00:00",
+      "next_step_status": "queued",
+      "idea_id": "2026-07-21-QTF-MORNING-02",
+      "desk": "Funding-Rate Extremes / Carry Validation Desk",
+      "market": "Funding-rate-extremes universe (current screened example: ACE)",
+      "score": 55,
+      "next_step": "Recorder and paper ledger only; test the funding-extremes rule across eligible instruments, then compare any validated result with ETF diversification and other eligible sleeves.",
+      "first_test": "Run the pre-defined persistence/fade analysis only after sufficient aligned observations and cost assumptions.",
+      "reject_conditions": "Reject if funding mean-reverts before costs, liquidity is inadequate, or forward outcomes fail the declared rule.",
+      "brief_path": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Daily Briefs\\AI Quant Morning Brief - 2026-07-21.md",
+      "owner": "AI Quant Floor / Carry validation desk",
+      "evidence_status": "partial (rule validation)",
+      "managed_as": "CASHCAT is one screened funding-extremes observation; descriptive persistence review complete \u2014 rule-level forward-outcome validation missing",
+      "result_note": "05_Projects/AI Quant Trading Floor/Research Reviews/CASHCAT Funding Persistence Evidence Review - 2026-07-14.md",
+      "machine_output": "05_Projects/AI Quant Trading Floor/Implementation/data_cache/hyperliquid_funding_snapshots.jsonl",
+      "promotion_gate": "Blocked pending frozen/hash-anchored history, preregistered forward outcomes, costs and holdout; no exchange auth/orders."
+    },
+    {
+      "run_id": "20260720T200006Z",
+      "date": "2026-07-21",
+      "generated_at": "2026-07-20T20:00:10+00:00",
+      "next_step_status": "queued",
+      "idea_id": "2026-07-21-QTF-MORNING-03",
+      "desk": "ETF Diversification / Cross-Sleeve Capital Allocation Desk",
+      "market": "ETF diversification sleeve: SPY/QQQ/TLT/IEF/GLD/UUP control universe",
+      "score": 40,
+      "next_step": "Use the resulting scorecard to determine future capital weights between the diversifying ETF sleeve and validated crypto edges; no static allocation or live capital change is implied.",
+      "first_test": "Verify the ETF sleeve inputs and build a comparable cross-sleeve scorecard: net return, drawdown, liquidity, correlation, capacity and evidence quality versus each validated crypto-edge sleeve.",
+      "reject_conditions": "Reject or park if no precise rule, frozen data, realistic costs, held-out evidence, or paper-monitorable signal exists.",
+      "brief_path": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Daily Briefs\\AI Quant Morning Brief - 2026-07-21.md",
+      "owner": "AI Quant Floor / ETF diversification and allocation desk",
+      "evidence_status": "partial (allocation scorecard)",
+      "managed_as": "ETF sleeve evidence run exists \u2014 cross-sleeve capital-weight scorecard queued",
+      "result_note": "05_Projects/AI Quant Trading Floor/Implementation/reports/runs/core_def_l252_t1_vt008_20260709T102738+0000/",
+      "machine_output": "05_Projects/AI Quant Trading Floor/Implementation/quant_floor_dashboard.py",
+      "promotion_gate": "No capital weighting change until frozen comparable sleeve inputs, costs, held-out evidence, correlation/capacity measures and cross-sleeve scorecard are complete."
+    }
+  ],
+  "errors": {
+    "hyperliquid": null,
+    "polymarket": null
+  }
+}

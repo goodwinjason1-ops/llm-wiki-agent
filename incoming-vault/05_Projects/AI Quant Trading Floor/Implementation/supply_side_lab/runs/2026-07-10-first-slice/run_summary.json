@@ -1,0 +1,14 @@
+{
+  "buy_both_candidate_count": 0,
+  "markets_scanned": 50,
+  "maximum_observed_bid_sum": 0.99,
+  "minimum_observed_ask_sum": 1.01,
+  "next_gate": "collect sequential L2 snapshots and replay asynchronous two-leg fills with queue/adverse-selection penalties",
+  "promotion_status": "blocked-insufficient-fill-evidence",
+  "risk_mode": "research-only",
+  "rows_skipped": 60,
+  "slippage_per_leg": 0.002,
+  "snapshot_rows": 110,
+  "split_sell_candidate_count": 50,
+  "taker_fee_rate": 0.07
+}

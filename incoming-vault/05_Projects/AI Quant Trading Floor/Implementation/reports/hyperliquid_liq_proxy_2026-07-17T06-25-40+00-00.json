@@ -1,0 +1,338 @@
+{
+  "ts": "2026-07-17T06:25:40+00:00",
+  "mode": "QTF read-only Hyperliquid liquidation proxy recorder",
+  "symbols_monitored": [
+    "BTC",
+    "ETH",
+    "SOL",
+    "HYPE",
+    "ARB",
+    "OP",
+    "AVAX",
+    "MATIC",
+    "DOGE",
+    "XRP",
+    "ADA",
+    "DOT",
+    "LINK",
+    "UNI",
+    "ATOM"
+  ],
+  "include_multi_exchange": true,
+  "anomalies": [
+    {
+      "coin": "BTC",
+      "open_interest": 39828.24,
+      "funding_rate": 1.3e-05,
+      "funding_annualized_pct": 10.95,
+      "price_change_24h_pct": -3.0,
+      "volume_24h_usd": 1953257114.24,
+      "vol_oi_ratio": 49042.009,
+      "risk_level": "high",
+      "flags": [
+        "volume-oi-spike"
+      ]
+    },
+    {
+      "coin": "ETH",
+      "open_interest": 949798.02,
+      "funding_rate": 1.3e-05,
+      "funding_annualized_pct": 10.95,
+      "price_change_24h_pct": -4.6,
+      "volume_24h_usd": 1039347086.98,
+      "vol_oi_ratio": 1094.282,
+      "risk_level": "high",
+      "flags": [
+        "volume-oi-spike"
+      ]
+    },
+    {
+      "coin": "SOL",
+      "open_interest": 4397816.2,
+      "funding_rate": 1.2e-05,
+      "funding_annualized_pct": 10.27,
+      "price_change_24h_pct": -3.47,
+      "volume_24h_usd": 195429176.1,
+      "vol_oi_ratio": 44.438,
+      "risk_level": "high",
+      "flags": [
+        "volume-oi-spike"
+      ]
+    },
+    {
+      "coin": "OP",
+      "open_interest": 32837221.2,
+      "funding_rate": -4.7e-05,
+      "funding_annualized_pct": -40.76,
+      "price_change_24h_pct": -5.14,
+      "volume_24h_usd": 983458.84,
+      "vol_oi_ratio": 0.03,
+      "risk_level": "elevated",
+      "flags": [
+        "large-move"
+      ]
+    },
+    {
+      "coin": "HYPE",
+      "open_interest": 22544465.92,
+      "funding_rate": 1.3e-05,
+      "funding_annualized_pct": 10.95,
+      "price_change_24h_pct": -11.4,
+      "volume_24h_usd": 597380866.43,
+      "vol_oi_ratio": 26.498,
+      "risk_level": "high",
+      "flags": [
+        "large-move",
+        "volume-oi-spike"
+      ]
+    }
+  ],
+  "funding_details": {
+    "BTC": {
+      "recent_fundings": [
+        {
+          "coin": "BTC",
+          "fundingRate": "0.0000125",
+          "premium": "-0.0002179066",
+          "time": 1784253600001
+        },
+        {
+          "coin": "BTC",
+          "fundingRate": "0.0000125",
+          "premium": "-0.0000891976",
+          "time": 1784257200017
+        },
+        {
+          "coin": "BTC",
+          "fundingRate": "0.0000125",
+          "premium": "-0.0000298636",
+          "time": 1784260800041
+        },
+        {
+          "coin": "BTC",
+          "fundingRate": "0.0000125",
+          "premium": "-0.000010698",
+          "time": 1784264400052
+        },
+        {
+          "coin": "BTC",
+          "fundingRate": "0.0000125",
+          "premium": "-0.0000019844",
+          "time": 1784268000032
+        }
+      ],
+      "avg_funding": 0.0
+    },
+    "ETH": {
+      "recent_fundings": [
+        {
+          "coin": "ETH",
+          "fundingRate": "0.0000125",
+          "premium": "-0.0000199853",
+          "time": 1784253600001
+        },
+        {
+          "coin": "ETH",
+          "fundingRate": "0.0000125",
+          "premium": "-0.0000673782",
+          "time": 1784257200017
+        },
+        {
+          "coin": "ETH",
+          "fundingRate": "0.0000125",
+          "premium": "-0.0000093876",
+          "time": 1784260800041
+        },
+        {
+          "coin": "ETH",
+          "fundingRate": "0.0000125",
+          "premium": "-0.0000171598",
+          "time": 1784264400052
+        },
+        {
+          "coin": "ETH",
+          "fundingRate": "0.0000125",
+          "premium": "-0.0000541663",
+          "time": 1784268000032
+        }
+      ],
+      "avg_funding": 0.0
+    },
+    "SOL": {
+      "recent_fundings": [
+        {
+          "coin": "SOL",
+          "fundingRate": "0.0000109853",
+          "premium": "-0.0004121179",
+          "time": 1784253600001
+        },
+        {
+          "coin": "SOL",
+          "fundingRate": "0.0000125",
+          "premium": "-0.0003216982",
+          "time": 1784257200017
+        },
+        {
+          "coin": "SOL",
+          "fundingRate": "0.0000125",
+          "premium": "-0.0003112503",
+          "time": 1784260800041
+        },
+        {
+          "coin": "SOL",
+          "fundingRate": "0.0000125",
+          "premium": "-0.000320277",
+          "time": 1784264400052
+        },
+        {
+          "coin": "SOL",
+          "fundingRate": "0.0000125",
+          "premium": "-0.0003467508",
+          "time": 1784268000032
+        }
+      ],
+      "avg_funding": 0.0
+    },
+    "OP": {
+      "recent_fundings": [
+        {
+          "coin": "OP",
+          "fundingRate": "-0.0000095316",
+          "premium": "-0.0005762531",
+          "time": 1784253600001
+        },
+        {
+          "coin": "OP",
+          "fundingRate": "-0.0000103652",
+          "premium": "-0.0005829213",
+          "time": 1784257200017
+        },
+        {
+          "coin": "OP",
+          "fundingRate": "-0.0000236454",
+          "premium": "-0.0006891634",
+          "time": 1784260800041
+        },
+        {
+          "coin": "OP",
+          "fundingRate": "-0.0000200825",
+          "premium": "-0.0006606601",
+          "time": 1784264400052
+        },
+        {
+          "coin": "OP",
+          "fundingRate": "-0.0000312413",
+          "premium": "-0.0007499302",
+          "time": 1784268000032
+        }
+      ],
+      "avg_funding": 0.0
+    },
+    "HYPE": {
+      "recent_fundings": [
+        {
+          "coin": "HYPE",
+          "fundingRate": "0.0000125",
+          "premium": "-0.0000799267",
+          "time": 1784253600001
+        },
+        {
+          "coin": "HYPE",
+          "fundingRate": "0.0000125",
+          "premium": "-0.0000213757",
+          "time": 1784257200017
+        },
+        {
+          "coin": "HYPE",
+          "fundingRate": "0.0000125",
+          "premium": "-0.0000103016",
+          "time": 1784260800041
+        },
+        {
+          "coin": "HYPE",
+          "fundingRate": "0.0000125",
+          "premium": "-0.0000760601",
+          "time": 1784264400052
+        },
+        {
+          "coin": "HYPE",
+          "fundingRate": "0.0000125",
+          "premium": "-0.000286557",
+          "time": 1784268000032
+        }
+      ],
+      "avg_funding": 0.0
+    }
+  },
+  "multi_exchange": {
+    "binance_force_orders": []
+  },
+  "hlp_summary": {
+    "total_universe_assets": 232,
+    "top_10_by_oi": [
+      {
+        "coin": "",
+        "oi": 28182370132.0,
+        "funding": 10.95
+      },
+      {
+        "coin": "",
+        "oi": 5453728854.0,
+        "funding": 10.95
+      },
+      {
+        "coin": "",
+        "oi": 2148724150.0,
+        "funding": -79.19
+      },
+      {
+        "coin": "",
+        "oi": 1238541646.0,
+        "funding": 10.95
+      },
+      {
+        "coin": "",
+        "oi": 1210024186.0,
+        "funding": 10.95
+      },
+      {
+        "coin": "",
+        "oi": 752417408.0,
+        "funding": 10.95
+      },
+      {
+        "coin": "",
+        "oi": 680469936.0,
+        "funding": 10.95
+      },
+      {
+        "coin": "",
+        "oi": 654261442.0,
+        "funding": 7.39
+      },
+      {
+        "coin": "",
+        "oi": 579751336.0,
+        "funding": 10.95
+      },
+      {
+        "coin": "",
+        "oi": 567520254.0,
+        "funding": 10.95
+      }
+    ]
+  },
+  "summary": {
+    "hyperliquid_anomalies_total": 5,
+    "high_risk_assets": 4,
+    "elevated_risk_assets": 1,
+    "binance_force_orders": 0,
+    "binance_long_liqs": 0,
+    "binance_short_liqs": 0,
+    "binance_total_usd_proxy": 0,
+    "net_liquidation_pressure": "neutral"
+  },
+  "note": "Hyperliquid does not expose a public REST liquidations endpoint. This recorder uses proxy indicators (funding anomalies, OI changes, volume/OI spikes, Binance force orders) to detect liquidation risk.",
+  "ledger": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Implementation\\ledgers\\hyperliquid_liquidation_snapshots.jsonl",
+  "safety": "read-only/public-data; no keys, no orders, no wallet actions"
+}

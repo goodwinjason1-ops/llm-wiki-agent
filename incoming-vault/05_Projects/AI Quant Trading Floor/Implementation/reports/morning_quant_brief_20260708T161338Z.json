@@ -1,0 +1,29 @@
+{
+  "run_id": "20260708T161338Z",
+  "brief": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Daily Briefs\\AI Quant Morning Brief - 2026-07-09.md",
+  "latest": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\00_System\\Dashboards\\AI Quant Morning Brief - Latest.md",
+  "ideas": [
+    {
+      "idea_id": "2026-07-09-QTF-MORNING-01",
+      "desk": "Tactical Crypto Regime Desk",
+      "market": "ETHUSDT",
+      "score": 80
+    },
+    {
+      "idea_id": "2026-07-09-QTF-MORNING-02",
+      "desk": "Alternative Venue / Funding Desk",
+      "market": "XMR",
+      "score": 70
+    },
+    {
+      "idea_id": "2026-07-09-QTF-MORNING-03",
+      "desk": "Strategy Intake / Social Claim Review Desk",
+      "market": "multi-asset / source-dependent",
+      "score": 75
+    }
+  ],
+  "errors": {
+    "hyperliquid": null,
+    "polymarket": null
+  }
+}

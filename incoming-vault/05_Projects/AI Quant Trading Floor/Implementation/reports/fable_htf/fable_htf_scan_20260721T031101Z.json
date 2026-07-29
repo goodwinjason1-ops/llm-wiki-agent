@@ -1,0 +1,203 @@
+{
+  "C-HTF-5": {
+    "edge": "C-HTF-5",
+    "name": "Trend Following on Majors",
+    "lookback_days": 84,
+    "target_win_rate": 0.4,
+    "signals": [
+      {
+        "symbol": "BTC",
+        "price": 65448.7,
+        "donchian_high": 65769.3,
+        "donchian_low": 59556.1,
+        "atr": 1467.92,
+        "momentum_12w_pct": -13.6,
+        "regime": "neutral",
+        "suggested_position_atr": 2.24
+      },
+      {
+        "symbol": "ETH",
+        "price": 1924.31,
+        "donchian_high": 1945.91,
+        "donchian_low": 1596.0,
+        "atr": 63.61,
+        "momentum_12w_pct": -14.55,
+        "regime": "neutral",
+        "suggested_position_atr": 3.31
+      },
+      {
+        "symbol": "SOL",
+        "price": 78.42,
+        "donchian_high": 83.95,
+        "donchian_low": 73.3,
+        "atr": 2.32,
+        "momentum_12w_pct": -5.54,
+        "regime": "neutral",
+        "suggested_position_atr": 2.96
+      },
+      {
+        "symbol": "BNB",
+        "price": 574.5,
+        "donchian_high": 593.2,
+        "donchian_low": 545.8,
+        "atr": 12.05,
+        "momentum_12w_pct": -6.89,
+        "regime": "neutral",
+        "suggested_position_atr": 2.1
+      },
+      {
+        "symbol": "XRP",
+        "price": 1.12,
+        "donchian_high": 1.18,
+        "donchian_low": 1.04,
+        "atr": 0.03,
+        "momentum_12w_pct": -17.89,
+        "regime": "neutral",
+        "suggested_position_atr": 2.6
+      },
+      {
+        "symbol": "TRX",
+        "price": 0.33,
+        "donchian_high": 0.33,
+        "donchian_low": 0.31,
+        "atr": 0.0,
+        "momentum_12w_pct": 0.95,
+        "regime": "neutral",
+        "suggested_position_atr": 1.15
+      },
+      {
+        "symbol": "DOGE",
+        "price": 0.07,
+        "donchian_high": 0.08,
+        "donchian_low": 0.07,
+        "atr": 0.0,
+        "momentum_12w_pct": -30.13,
+        "regime": "neutral",
+        "suggested_position_atr": 2.83
+      },
+      {
+        "symbol": "LINK",
+        "price": 8.63,
+        "donchian_high": 8.65,
+        "donchian_low": 7.3,
+        "atr": 0.28,
+        "momentum_12w_pct": -5.26,
+        "regime": "neutral",
+        "suggested_position_atr": 3.23
+      },
+      {
+        "symbol": "ADA",
+        "price": 0.17,
+        "donchian_high": 0.2,
+        "donchian_low": 0.15,
+        "atr": 0.01,
+        "momentum_12w_pct": -29.99,
+        "regime": "neutral",
+        "suggested_position_atr": 4.31
+      },
+      {
+        "symbol": "AVAX",
+        "price": 6.65,
+        "donchian_high": 7.11,
+        "donchian_low": 6.28,
+        "atr": 0.24,
+        "momentum_12w_pct": -27.06,
+        "regime": "neutral",
+        "suggested_position_atr": 3.66
+      },
+      {
+        "symbol": "ATOM",
+        "price": 1.5,
+        "donchian_high": 1.63,
+        "donchian_low": 1.44,
+        "atr": 0.05,
+        "momentum_12w_pct": -22.34,
+        "regime": "neutral",
+        "suggested_position_atr": 3.02
+      },
+      {
+        "symbol": "DOT",
+        "price": 0.84,
+        "donchian_high": 0.91,
+        "donchian_low": 0.8,
+        "atr": 0.03,
+        "momentum_12w_pct": -30.98,
+        "regime": "neutral",
+        "suggested_position_atr": 4.07
+      },
+      {
+        "symbol": "NEAR",
+        "price": 2.02,
+        "donchian_high": 2.11,
+        "donchian_low": 1.8,
+        "atr": 0.1,
+        "momentum_12w_pct": 52.22,
+        "regime": "neutral",
+        "suggested_position_atr": 4.88
+      },
+      {
+        "symbol": "APT",
+        "price": 0.6,
+        "donchian_high": 0.65,
+        "donchian_low": 0.58,
+        "atr": 0.03,
+        "momentum_12w_pct": -38.91,
+        "regime": "neutral",
+        "suggested_position_atr": 4.3
+      },
+      {
+        "symbol": "SUI",
+        "price": 0.77,
+        "donchian_high": 0.78,
+        "donchian_low": 0.7,
+        "atr": 0.03,
+        "momentum_12w_pct": -15.29,
+        "regime": "neutral",
+        "suggested_position_atr": 3.7
+      },
+      {
+        "symbol": "SEI",
+        "price": 0.05,
+        "donchian_high": 0.05,
+        "donchian_low": 0.05,
+        "atr": 0.0,
+        "momentum_12w_pct": -18.63,
+        "regime": "neutral",
+        "suggested_position_atr": 3.94
+      },
+      {
+        "symbol": "LTC",
+        "price": 47.45,
+        "donchian_high": 47.86,
+        "donchian_low": 42.39,
+        "atr": 1.39,
+        "momentum_12w_pct": -14.15,
+        "regime": "neutral",
+        "suggested_position_atr": 2.93
+      },
+      {
+        "symbol": "BCH",
+        "price": 223.0,
+        "donchian_high": 254.9,
+        "donchian_low": 209.6,
+        "atr": 9.87,
+        "momentum_12w_pct": -50.13,
+        "regime": "neutral",
+        "suggested_position_atr": 4.43
+      },
+      {
+        "symbol": "OP",
+        "price": 0.09,
+        "donchian_high": 0.11,
+        "donchian_low": 0.09,
+        "atr": 0.0,
+        "momentum_12w_pct": -21.08,
+        "regime": "neutral",
+        "suggested_position_atr": 4.89
+      }
+    ],
+    "breakout_long_count": 0,
+    "breakout_short_count": 0,
+    "decision": "observation_only"
+  }
+}

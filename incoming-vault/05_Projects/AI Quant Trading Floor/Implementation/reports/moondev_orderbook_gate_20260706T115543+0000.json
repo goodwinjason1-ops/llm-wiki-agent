@@ -1,0 +1,167 @@
+{
+  "ts": "2026-07-06T11:55:43+00:00",
+  "mode": "read_only_public_data_no_trading",
+  "source_snapshot_path": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Implementation\\data_cache\\moondev_bybit_orderbook_snapshots.jsonl",
+  "parameters": {
+    "cmd": "all",
+    "symbols": "BTCUSDT,ETHUSDT,SOLUSDT",
+    "samples": 30,
+    "delay_sec": 1.0,
+    "category": "linear",
+    "limit": 50,
+    "path": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Implementation\\data_cache\\moondev_bybit_orderbook_snapshots.jsonl",
+    "capital": 5000,
+    "notional_pct": 0.05,
+    "maker_fee_bps": 1.0,
+    "taker_fee_bps": 5.5,
+    "target_net_bps": 20.0,
+    "stop_bps": 60.0,
+    "latency_steps": 1,
+    "queue_penalty_bps": 1.0,
+    "max_spread_bps": 3.0,
+    "max_queue_notional": 1000000.0,
+    "wall_top_n": 15,
+    "allow_shorts": false,
+    "append_note": true
+  },
+  "candle_proxy_comparison": {
+    "baseline_report": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Implementation\\reports\\moondev_market_maker_lab_20260706T060422+0000.json",
+    "sweep_report": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Implementation\\reports\\moondev_market_maker_sweep_20260706T060923+0000.json",
+    "top_candle_proxy": [
+      {
+        "symbol": "ETHUSDT",
+        "sharpe": 6.540740120652953,
+        "total_return_pct": 0.5863172934026606,
+        "max_drawdown_pct": -0.299829933796969,
+        "trades": 206,
+        "profit_factor": 1.552869099699528,
+        "lookback": 48,
+        "target_net_bps": 20,
+        "stop_atr_mult": 3.0,
+        "notional_pct": 0.05,
+        "long_only": true,
+        "decision": "paper-test candidate after order-book replay validation"
+      },
+      {
+        "symbol": "ETHUSDT",
+        "sharpe": 6.540729449539878,
+        "total_return_pct": 1.1750712352537995,
+        "max_drawdown_pct": -0.5993813783411239,
+        "trades": 206,
+        "profit_factor": 1.551846974147301,
+        "lookback": 48,
+        "target_net_bps": 20,
+        "stop_atr_mult": 3.0,
+        "notional_pct": 0.1,
+        "long_only": true,
+        "decision": "paper-test candidate after order-book replay validation"
+      },
+      {
+        "symbol": "ETHUSDT",
+        "sharpe": 6.540708107170675,
+        "total_return_pct": 2.3598947726590103,
+        "max_drawdown_pct": -1.1976405812479274,
+        "trades": 206,
+        "profit_factor": 1.5498097592960183,
+        "lookback": 48,
+        "target_net_bps": 20,
+        "stop_atr_mult": 3.0,
+        "notional_pct": 0.2,
+        "long_only": true,
+        "decision": "paper-test candidate after order-book replay validation"
+      },
+      {
+        "symbol": "BTCUSDT",
+        "sharpe": 4.90054277388812,
+        "total_return_pct": 0.4064755494028516,
+        "max_drawdown_pct": -0.3424092109914234,
+        "trades": 184,
+        "profit_factor": 1.421409939351887,
+        "lookback": 48,
+        "target_net_bps": 20,
+        "stop_atr_mult": 3.0,
+        "notional_pct": 0.05,
+        "long_only": true,
+        "decision": "paper-test candidate after order-book replay validation"
+      },
+      {
+        "symbol": "BTCUSDT",
+        "sharpe": 4.9005240876261125,
+        "total_return_pct": 0.8137461931428058,
+        "max_drawdown_pct": -0.6840743838054331,
+        "trades": 184,
+        "profit_factor": 1.4207443140369143,
+        "lookback": 48,
+        "target_net_bps": 20,
+        "stop_atr_mult": 3.0,
+        "notional_pct": 0.1,
+        "long_only": true,
+        "decision": "paper-test candidate after order-book replay validation"
+      }
+    ]
+  },
+  "rows": [
+    {
+      "symbol": "BTCUSDT",
+      "snapshots": 30,
+      "start_equity": 5000,
+      "final_equity": 4999.975,
+      "return_pct": -0.0004999999999921734,
+      "max_drawdown_pct": -0.0004999999999921734,
+      "sharpe_per_step": -0.18569533817705186,
+      "trades": 0,
+      "win_rate_pct": 0.0,
+      "profit_factor": 0.0,
+      "avg_queue_notional_ahead": 0.0,
+      "avg_adverse_move_bps": 0.0,
+      "skipped": {
+        "spread": 0,
+        "queue": 0,
+        "no_signal": 0
+      },
+      "sample_trades": []
+    },
+    {
+      "symbol": "ETHUSDT",
+      "snapshots": 30,
+      "start_equity": 5000,
+      "final_equity": 4999.975,
+      "return_pct": -0.0004999999999921734,
+      "max_drawdown_pct": -0.0004999999999921734,
+      "sharpe_per_step": -0.18569533817705186,
+      "trades": 0,
+      "win_rate_pct": 0.0,
+      "profit_factor": 0.0,
+      "avg_queue_notional_ahead": 0.0,
+      "avg_adverse_move_bps": 0.0,
+      "skipped": {
+        "spread": 0,
+        "queue": 0,
+        "no_signal": 0
+      },
+      "sample_trades": []
+    },
+    {
+      "symbol": "SOLUSDT",
+      "snapshots": 30,
+      "start_equity": 5000,
+      "final_equity": 5000,
+      "return_pct": 0.0,
+      "max_drawdown_pct": 0.0,
+      "sharpe_per_step": 0.0,
+      "trades": 0,
+      "win_rate_pct": 0.0,
+      "profit_factor": 0.0,
+      "avg_queue_notional_ahead": 0.0,
+      "avg_adverse_move_bps": 0.0,
+      "skipped": {
+        "spread": 0,
+        "queue": 0,
+        "no_signal": 10
+      },
+      "sample_trades": []
+    }
+  ],
+  "gate_decision": "collect_more_orderbook_data: smoke test only, insufficient snapshots for promotion",
+  "interpretation": "Order-book replay is a stricter gate than candle proxy; short smoke windows only justify more data collection, not paper/live approval."
+}

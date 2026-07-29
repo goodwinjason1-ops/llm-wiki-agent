@@ -1,0 +1,16 @@
+MD-RSI-MR-01 Backtest Results
+Run: 2026-07-12
+Data: 25000 1h candles (2026-07-15 01:00 → 2026-06-03 10:00)
+
+IN-SAMPLE: 219 trades | Total PnL: $+185.78 | Win rate: 46.6% | Avg PnL: $+0.85 | Max DD: $88.00 | Avg bars: 39.0 | Exits: {'take_profit': 51, 'stop_loss': 117, 'rsi_overbought': 51}
+OUT-OF-SAMPLE: 107 trades | Total PnL: $+50.72 | Win rate: 45.8% | Avg PnL: $+0.47 | Max DD: $88.00 | Avg bars: 39.8 | Exits: {'stop_loss': 58, 'take_profit': 25, 'rsi_overbought': 24}
+BH IN-SAMPLE: +0.4% return, max DD 13.4%
+BH OUT-OF-SAMPLE: +2.7% return, max DD 13.4%
+
+Best params: RSI=28, TP=0.03, SL=0.02
+BEST-PARAM OOS: 58 trades | Total PnL: $+734.64 | Win rate: 70.7% | Avg PnL: $+12.67 | Max DD: $22.00 | Avg bars: 39.6 | Exits: {'stop_loss': 17, 'take_profit': 17, 'rsi_overbought': 24}
+
+ETH IS : 235 trades | Total PnL: $+934.00 | Win rate: 50.2% | Avg PnL: $+3.97 | Max DD: $88.00 | Avg bars: 27.6 | Exits: {'stop_loss': 117, 'take_profit': 67, 'rsi_overbought': 51}
+ETH OOS: 116 trades | Total PnL: $+394.00 | Win rate: 49.1% | Avg PnL: $+3.40 | Max DD: $88.00 | Avg bars: 27.6 | Exits: {'stop_loss': 59, 'take_profit': 33, 'rsi_overbought': 24}
+
+VERDICT: PROMOTABLE

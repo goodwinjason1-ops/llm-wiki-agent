@@ -1,0 +1,419 @@
+{
+  "generated_at": "2026-07-05T03:33:10+00:00",
+  "strategy": "Opening Range 15m range / 5m confirmation / 1m entry",
+  "source_note": "Opening Range Strategy - 15m 5m 1m YouTube bITIVwysCzM",
+  "research_only": true,
+  "parameters": {
+    "symbols": "BTCUSDT,ETHUSDT,SOLUSDT",
+    "adapter": "bybit",
+    "market": "auto",
+    "days": 14,
+    "models": "breakout,retest",
+    "start_equity": 5000.0,
+    "risk_pct": 0.01,
+    "rr": 2.0,
+    "fee_bps": 1.0,
+    "slippage_bps": 3.0,
+    "entry_cutoff_minutes": 120,
+    "max_exit_minutes": 390,
+    "stop_buffer_range": 0.25,
+    "bybit_category": "linear",
+    "session_open_time": "20:00",
+    "use_vwap_filter": true,
+    "max_abs_gap_pct": 3.0,
+    "require_prior_day_break": false,
+    "min_volume_displacement": 1.1,
+    "volume_baseline_minutes": 30
+  },
+  "results": [
+    {
+      "symbol": "BTCUSDT",
+      "adapter": "bybit",
+      "market": "crypto",
+      "candles": 20160,
+      "sessions": 15,
+      "models": {
+        "breakout": {
+          "metrics": {
+            "final_equity": 5014.69,
+            "return_pct": 0.29,
+            "trades": 2,
+            "win_rate_pct": 50.0,
+            "profit_factor": 1.217,
+            "avg_r": 0.1581,
+            "total_r": 0.3163,
+            "max_drawdown_pct": -1.35,
+            "sharpe_per_trade": 0.105,
+            "days_observed": 15
+          },
+          "trades": [
+            {
+              "symbol": "BTCUSDT",
+              "adapter": "bybit",
+              "model": "breakout",
+              "side": "short",
+              "session_date": "2026-06-22",
+              "confirm_time": "2026-06-22T20:20-04:00",
+              "entry_time": "2026-06-22T20:25-04:00",
+              "exit_time": "2026-06-22T20:33-04:00",
+              "entry": 63842.0,
+              "stop": 63987.3,
+              "target": 63551.4,
+              "exit": 63987.3,
+              "exit_reason": "stop",
+              "r_multiple": -1.3519,
+              "pnl": -67.6,
+              "equity_after": 4932.4,
+              "notes": "ORH=63999.90000, ORL=63854.60000, confirm_close=63842.00000, vwap=63914.36736, gap_pct=0.000, vol_disp=1.408, prior_high=64827.6, prior_low=63209.3"
+            },
+            {
+              "symbol": "BTCUSDT",
+              "adapter": "bybit",
+              "model": "breakout",
+              "side": "short",
+              "session_date": "2026-06-30",
+              "confirm_time": "2026-06-30T20:15-04:00",
+              "entry_time": "2026-06-30T20:20-04:00",
+              "exit_time": "2026-06-30T21:10-04:00",
+              "entry": 58488.0,
+              "stop": 58628.7,
+              "target": 58206.6,
+              "exit": 58206.6,
+              "exit_reason": "target",
+              "r_multiple": 1.6682,
+              "pnl": 82.28,
+              "equity_after": 5014.69,
+              "notes": "ORH=58721.30000, ORL=58580.60000, confirm_close=58488.00000, vwap=59472.92097, gap_pct=0.000, vol_disp=2.067, prior_high=60775.0, prior_low=58973.4"
+            }
+          ]
+        },
+        "retest": {
+          "metrics": {
+            "final_equity": 4964.74,
+            "return_pct": -0.71,
+            "trades": 2,
+            "win_rate_pct": 50.0,
+            "profit_factor": 0.594,
+            "avg_r": -0.3435,
+            "total_r": -0.687,
+            "max_drawdown_pct": -1.74,
+            "sharpe_per_trade": -0.247,
+            "days_observed": 15
+          },
+          "trades": [
+            {
+              "symbol": "BTCUSDT",
+              "adapter": "bybit",
+              "model": "retest",
+              "side": "short",
+              "session_date": "2026-06-22",
+              "confirm_time": "2026-06-22T20:20-04:00",
+              "entry_time": "2026-06-22T20:26-04:00",
+              "exit_time": "2026-06-22T20:31-04:00",
+              "entry": 63821.6,
+              "stop": 63890.925,
+              "target": 63682.95,
+              "exit": 63890.925,
+              "exit_reason": "stop",
+              "r_multiple": -1.7369,
+              "pnl": -86.84,
+              "equity_after": 4913.16,
+              "notes": "ORH=63999.90000, ORL=63854.60000, confirm_close=63842.00000, vwap=63914.36736, gap_pct=0.000, vol_disp=1.408, prior_high=64827.6, prior_low=63209.3"
+            },
+            {
+              "symbol": "BTCUSDT",
+              "adapter": "bybit",
+              "model": "retest",
+              "side": "short",
+              "session_date": "2026-06-30",
+              "confirm_time": "2026-06-30T20:15-04:00",
+              "entry_time": "2026-06-30T20:54-04:00",
+              "exit_time": "2026-06-30T21:02-04:00",
+              "entry": 58566.5,
+              "stop": 58615.775,
+              "target": 58467.95,
+              "exit": 58467.95,
+              "exit_reason": "target",
+              "r_multiple": 1.0499,
+              "pnl": 51.59,
+              "equity_after": 4964.74,
+              "notes": "ORH=58721.30000, ORL=58580.60000, confirm_close=58488.00000, vwap=59472.92097, gap_pct=0.000, vol_disp=2.067, prior_high=60775.0, prior_low=58973.4"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "adapter": "bybit",
+      "market": "crypto",
+      "candles": 20160,
+      "sessions": 15,
+      "models": {
+        "breakout": {
+          "metrics": {
+            "final_equity": 4941.86,
+            "return_pct": -1.16,
+            "trades": 2,
+            "win_rate_pct": 50.0,
+            "profit_factor": 0.148,
+            "avg_r": -0.58,
+            "total_r": -1.1601,
+            "max_drawdown_pct": -1.36,
+            "sharpe_per_trade": -0.742,
+            "days_observed": 15
+          },
+          "trades": [
+            {
+              "symbol": "ETHUSDT",
+              "adapter": "bybit",
+              "model": "breakout",
+              "side": "short",
+              "session_date": "2026-06-24",
+              "confirm_time": "2026-06-24T20:15-04:00",
+              "entry_time": "2026-06-24T20:20-04:00",
+              "exit_time": "2026-06-24T23:59-04:00",
+              "entry": 1621.0,
+              "stop": 1625.94,
+              "target": 1611.12,
+              "exit": 1618.71,
+              "exit_reason": "end_of_data",
+              "r_multiple": 0.2012,
+              "pnl": 10.06,
+              "equity_after": 5010.06,
+              "notes": "ORH=1625.99000, ORL=1621.05000, confirm_close=1621.00000, vwap=1664.80652, gap_pct=0.000, vol_disp=1.859, prior_high=1730.63, prior_low=1633.25"
+            },
+            {
+              "symbol": "ETHUSDT",
+              "adapter": "bybit",
+              "model": "breakout",
+              "side": "short",
+              "session_date": "2026-06-30",
+              "confirm_time": "2026-06-30T20:15-04:00",
+              "entry_time": "2026-06-30T20:20-04:00",
+              "exit_time": "2026-06-30T20:31-04:00",
+              "entry": 1569.71,
+              "stop": 1573.19,
+              "target": 1562.75,
+              "exit": 1573.19,
+              "exit_reason": "stop",
+              "r_multiple": -1.3613,
+              "pnl": -68.2,
+              "equity_after": 4941.86,
+              "notes": "ORH=1574.69000, ORL=1571.21000, confirm_close=1569.71000, vwap=1583.60412, gap_pct=0.000, vol_disp=2.032, prior_high=1637.68, prior_low=1556.26"
+            }
+          ]
+        },
+        "retest": {
+          "metrics": {
+            "final_equity": 4828.71,
+            "return_pct": -3.43,
+            "trades": 2,
+            "win_rate_pct": 0.0,
+            "profit_factor": 0.0,
+            "avg_r": -1.7279,
+            "total_r": -3.4557,
+            "max_drawdown_pct": -3.43,
+            "sharpe_per_trade": -25.503,
+            "days_observed": 15
+          },
+          "trades": [
+            {
+              "symbol": "ETHUSDT",
+              "adapter": "bybit",
+              "model": "retest",
+              "side": "short",
+              "session_date": "2026-06-24",
+              "confirm_time": "2026-06-24T20:15-04:00",
+              "entry_time": "2026-06-24T20:21-04:00",
+              "exit_time": "2026-06-24T20:23-04:00",
+              "entry": 1620.32,
+              "stop": 1622.285,
+              "target": 1616.39,
+              "exit": 1622.285,
+              "exit_reason": "stop",
+              "r_multiple": -1.6601,
+              "pnl": -83.0,
+              "equity_after": 4917.0,
+              "notes": "ORH=1625.99000, ORL=1621.05000, confirm_close=1621.00000, vwap=1664.80652, gap_pct=0.000, vol_disp=1.859, prior_high=1730.63, prior_low=1633.25"
+            },
+            {
+              "symbol": "ETHUSDT",
+              "adapter": "bybit",
+              "model": "retest",
+              "side": "short",
+              "session_date": "2026-06-30",
+              "confirm_time": "2026-06-30T20:15-04:00",
+              "entry_time": "2026-06-30T20:32-04:00",
+              "exit_time": "2026-06-30T20:38-04:00",
+              "entry": 1570.5,
+              "stop": 1572.08,
+              "target": 1567.34,
+              "exit": 1572.08,
+              "exit_reason": "stop",
+              "r_multiple": -1.7956,
+              "pnl": -88.29,
+              "equity_after": 4828.71,
+              "notes": "ORH=1574.69000, ORL=1571.21000, confirm_close=1569.71000, vwap=1583.60412, gap_pct=0.000, vol_disp=2.032, prior_high=1637.68, prior_low=1556.26"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "symbol": "SOLUSDT",
+      "adapter": "bybit",
+      "market": "crypto",
+      "candles": 20160,
+      "sessions": 15,
+      "models": {
+        "breakout": {
+          "metrics": {
+            "final_equity": 4910.18,
+            "return_pct": -1.8,
+            "trades": 3,
+            "win_rate_pct": 33.33,
+            "profit_factor": 0.273,
+            "avg_r": -0.5984,
+            "total_r": -1.7951,
+            "max_drawdown_pct": -2.45,
+            "sharpe_per_trade": -0.938,
+            "days_observed": 15
+          },
+          "trades": [
+            {
+              "symbol": "SOLUSDT",
+              "adapter": "bybit",
+              "model": "breakout",
+              "side": "short",
+              "session_date": "2026-06-24",
+              "confirm_time": "2026-06-24T20:25-04:00",
+              "entry_time": "2026-06-24T20:30-04:00",
+              "exit_time": "2026-06-24T23:59-04:00",
+              "entry": 67.9,
+              "stop": 68.22,
+              "target": 67.26,
+              "exit": 67.63,
+              "exit_reason": "end_of_data",
+              "r_multiple": 0.6743,
+              "pnl": 33.72,
+              "equity_after": 5033.72,
+              "notes": "ORH=68.28000, ORL=67.96000, confirm_close=67.90000, vwap=69.42389, gap_pct=0.000, vol_disp=1.600, prior_high=72.0, prior_low=68.05"
+            },
+            {
+              "symbol": "SOLUSDT",
+              "adapter": "bybit",
+              "model": "breakout",
+              "side": "long",
+              "session_date": "2026-06-25",
+              "confirm_time": "2026-06-25T20:15-04:00",
+              "entry_time": "2026-06-25T20:20-04:00",
+              "exit_time": "2026-06-25T20:55-04:00",
+              "entry": 67.94,
+              "stop": 67.6,
+              "target": 68.62,
+              "exit": 67.6,
+              "exit_reason": "stop",
+              "r_multiple": -1.1595,
+              "pnl": -58.36,
+              "equity_after": 4975.35,
+              "notes": "ORH=67.86000, ORL=67.52000, confirm_close=67.94000, vwap=67.60313, gap_pct=0.000, vol_disp=1.587, prior_high=70.42, prior_low=64.66"
+            },
+            {
+              "symbol": "SOLUSDT",
+              "adapter": "bybit",
+              "model": "breakout",
+              "side": "short",
+              "session_date": "2026-06-30",
+              "confirm_time": "2026-06-30T20:15-04:00",
+              "entry_time": "2026-06-30T20:20-04:00",
+              "exit_time": "2026-06-30T20:31-04:00",
+              "entry": 73.5,
+              "stop": 73.69,
+              "target": 73.12,
+              "exit": 73.69,
+              "exit_reason": "stop",
+              "r_multiple": -1.3099,
+              "pnl": -65.17,
+              "equity_after": 4910.18,
+              "notes": "ORH=73.71000, ORL=73.52000, confirm_close=73.50000, vwap=73.94713, gap_pct=0.000, vol_disp=1.869, prior_high=76.46, prior_low=70.96"
+            }
+          ]
+        },
+        "retest": {
+          "metrics": {
+            "final_equity": 4926.84,
+            "return_pct": -1.46,
+            "trades": 3,
+            "win_rate_pct": 33.33,
+            "profit_factor": 0.499,
+            "avg_r": -0.4807,
+            "total_r": -1.4422,
+            "max_drawdown_pct": -2.88,
+            "sharpe_per_trade": -0.496,
+            "days_observed": 15
+          },
+          "trades": [
+            {
+              "symbol": "SOLUSDT",
+              "adapter": "bybit",
+              "model": "retest",
+              "side": "short",
+              "session_date": "2026-06-24",
+              "confirm_time": "2026-06-24T20:25-04:00",
+              "entry_time": "2026-06-24T21:57-04:00",
+              "exit_time": "2026-06-24T22:08-04:00",
+              "entry": 67.94,
+              "stop": 68.04,
+              "target": 67.74,
+              "exit": 67.74,
+              "exit_reason": "target",
+              "r_multiple": 1.4573,
+              "pnl": 72.86,
+              "equity_after": 5072.86,
+              "notes": "ORH=68.28000, ORL=67.96000, confirm_close=67.90000, vwap=69.42389, gap_pct=0.000, vol_disp=1.600, prior_high=72.0, prior_low=68.05"
+            },
+            {
+              "symbol": "SOLUSDT",
+              "adapter": "bybit",
+              "model": "retest",
+              "side": "long",
+              "session_date": "2026-06-25",
+              "confirm_time": "2026-06-25T20:15-04:00",
+              "entry_time": "2026-06-25T20:30-04:00",
+              "exit_time": "2026-06-25T20:34-04:00",
+              "entry": 67.89,
+              "stop": 67.775,
+              "target": 68.12,
+              "exit": 67.775,
+              "exit_reason": "stop",
+              "r_multiple": -1.4719,
+              "pnl": -74.67,
+              "equity_after": 4998.2,
+              "notes": "ORH=67.86000, ORL=67.52000, confirm_close=67.94000, vwap=67.60313, gap_pct=0.000, vol_disp=1.587, prior_high=70.42, prior_low=64.66"
+            },
+            {
+              "symbol": "SOLUSDT",
+              "adapter": "bybit",
+              "model": "retest",
+              "side": "short",
+              "session_date": "2026-06-30",
+              "confirm_time": "2026-06-30T20:15-04:00",
+              "entry_time": "2026-06-30T20:22-04:00",
+              "exit_time": "2026-06-30T20:30-04:00",
+              "entry": 73.43,
+              "stop": 73.5675,
+              "target": 73.155,
+              "exit": 73.5675,
+              "exit_reason": "stop",
+              "r_multiple": -1.4276,
+              "pnl": -71.36,
+              "equity_after": 4926.84,
+              "notes": "ORH=73.71000, ORL=73.52000, confirm_close=73.50000, vwap=73.94713, gap_pct=0.000, vol_disp=1.869, prior_high=76.46, prior_low=70.96"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

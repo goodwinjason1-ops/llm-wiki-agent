@@ -1,0 +1,52 @@
+{
+  "bootstrap": {
+    "observed_sharpe": 1.1146,
+    "ci_lower": 0.4578,
+    "ci_upper": 1.7958,
+    "median_sharpe": 1.0896,
+    "prob_positive": 0.999,
+    "n_bootstrap": 1000
+  },
+  "walk_forward": {
+    "n_windows": 5,
+    "profitable_windows": 5,
+    "consistency_rate": 1.0,
+    "windows": [
+      {
+        "window": 1,
+        "start": "2017-07-06",
+        "end": "2019-04-23",
+        "return": 0.141966,
+        "sharpe": 0.9008
+      },
+      {
+        "window": 2,
+        "start": "2019-04-24",
+        "end": "2021-02-05",
+        "return": 0.255457,
+        "sharpe": 1.3771
+      },
+      {
+        "window": 3,
+        "start": "2021-02-08",
+        "end": "2022-11-21",
+        "return": 0.085294,
+        "sharpe": 0.5482
+      },
+      {
+        "window": 4,
+        "start": "2022-11-22",
+        "end": "2024-09-11",
+        "return": 0.137665,
+        "sharpe": 0.9635
+      },
+      {
+        "window": 5,
+        "start": "2024-09-12",
+        "end": "2026-07-02",
+        "return": 0.328986,
+        "sharpe": 1.7241
+      }
+    ]
+  }
+}

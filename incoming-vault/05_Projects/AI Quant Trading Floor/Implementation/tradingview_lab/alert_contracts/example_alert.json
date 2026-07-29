@@ -1,0 +1,12 @@
+{
+  "schema_version": "tv-alert-v1",
+  "risk_mode": "paper",
+  "strategy_id": "TV-E01-BB-MACD-RSI-MOM",
+  "symbol": "BTCUSDT",
+  "timeframe": "60",
+  "action": "enter_long",
+  "price": 65000.0,
+  "bar_time": 1783728000000,
+  "paper_only": true,
+  "notes": "Example only; no live execution."
+}

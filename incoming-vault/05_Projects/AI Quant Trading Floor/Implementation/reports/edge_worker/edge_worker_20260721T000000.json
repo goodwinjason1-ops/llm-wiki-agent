@@ -1,0 +1,191 @@
+{
+  "report_type": "edge_worker",
+  "worker": "jayse_paper_only_quant_floor",
+  "timestamp": "20260721T000000",
+  "generated_at": "2026-07-21T00:00:00Z",
+  "manifest": {
+    "file": "universe_manifest_20260716T113039Z.json",
+    "sha256": "3c579cf02c0d0a3ba6be2394c4fb8a67e4d41513e42a0eb2e9b06674f2d7c0f1",
+    "total_assets": 50,
+    "controls": [
+      "BTC",
+      "ETH",
+      "SOL"
+    ],
+    "non_control_assets": 47,
+    "bybit_spot_count": 50,
+    "hyperliquid_supplement": 0,
+    "shortfall": 0,
+    "status": "ok",
+    "execution_policy": "research-only; no credentials, orders, wallets, or contacts",
+    "schema_version": "qtf-research-universe-v1"
+  },
+  "board_provenance": {
+    "trend_board_sha256": "287dda77437dcc9b07b961585b2dd080676148edf23aa63d8d0ea04dff544032",
+    "funding_board_sha256": "255a9b9e341ec8ed0a0cab8ef494cf39f1637ddf3dfe79780e5e1fe678e71206",
+    "universe_manifest_sha256": "3c579cf02c0d0a3ba6be2394c4fb8a67e4d41513e42a0eb2e9b06674f2d7c0f1",
+    "trend_board_manifest_ref": "3c579cf02c0d0a3ba6be2394c4fb8a67e4d41513e42a0eb2e9b06674f2d7c0f1",
+    "funding_board_manifest_ref": "3c579cf02c0d0a3ba6be2394c4fb8a67e4d41513e42a0eb2e9b06674f2d7c0f1",
+    "consistent": true,
+    "trend_board_classification": "observation",
+    "funding_board_classification": "observation"
+  },
+  "trend_board": {
+    "eligible_count": 30,
+    "positive_24h_count": 7,
+    "negative_24h_count": 10,
+    "top_positive_asset": "ONDO",
+    "top_negative_asset": "LIT",
+    "note": "Ranked market observations only; not a trade recommendation."
+  },
+  "funding_board": {
+    "eligible_count": 41,
+    "positive_funding_count": 10,
+    "negative_funding_count": 10,
+    "candidate_events_count": 20
+  },
+  "control_ledger": {
+    "ledger_file": "QTF Verification and Delivery Control - 2026-07-15.md",
+    "last_checkpoint": "Checkpoint A - verified-complete (2026-07-16)",
+    "deliverables_summary": [
+      {
+        "id": "Checkpoint A",
+        "status": "verified-complete"
+      },
+      {
+        "id": "QTF-V01 (TTM-01 jitter)",
+        "status": "partial - robustness gate FAILED (52.8%)"
+      },
+      {
+        "id": "QTF-V01 Broad Universe",
+        "status": "partial"
+      },
+      {
+        "id": "QTF-V02 (Funding extremes)",
+        "status": "partial"
+      },
+      {
+        "id": "QTF-V02 Broad Panel v02",
+        "status": "partial"
+      },
+      {
+        "id": "QTF-V04 (Regime MR)",
+        "status": "partial"
+      },
+      {
+        "id": "QTF-V04B Relaxed Jitter",
+        "status": "partial - robustness gate FAILED (38.5%)"
+      },
+      {
+        "id": "QTF-V05 (Pairs backtest)",
+        "status": "partial - both OOS do_not_promote"
+      },
+      {
+        "id": "QTF-V07 (Funding extreme)",
+        "status": "partial - jitter FAILED (15.4% with actual costs)"
+      },
+      {
+        "id": "QTF-V07 Cross-Venue",
+        "status": "partial"
+      },
+      {
+        "id": "QTF-V07 RST",
+        "status": "partial"
+      },
+      {
+        "id": "QTF-T13 (Polymarket)",
+        "status": "partial - no active price discovery"
+      },
+      {
+        "id": "T12 Market Maker",
+        "status": "blocked - no L2 historical data"
+      },
+      {
+        "id": "QTF-V03 (Liquidation)",
+        "status": "blocked - public API rejected"
+      },
+      {
+        "id": "QTF-V06 (Allocation)",
+        "status": "partial"
+      },
+      {
+        "id": "QTF-V08 (MM edge)",
+        "status": "partial"
+      },
+      {
+        "id": "QTF-V09 (ETF)",
+        "status": "partial"
+      },
+      {
+        "id": "QTF-V10 (Contradiction)",
+        "status": "partial"
+      },
+      {
+        "id": "QTF-V11 (Alpha digest)",
+        "status": "queued"
+      },
+      {
+        "id": "QTF-V12 (DeFiLlama)",
+        "status": "partial"
+      }
+    ],
+    "verified_complete_count": 1,
+    "partial_count": 16,
+    "blocked_count": 2,
+    "queued_count": 1
+  },
+  "verification_checks": {
+    "universe_size_gate": {
+      "pass": true,
+      "value": 50,
+      "expected_min": 50
+    },
+    "control_tagging": {
+      "pass": true,
+      "controls": [
+        "BTC",
+        "ETH",
+        "SOL"
+      ]
+    },
+    "non_control_presence": {
+      "pass": true,
+      "value": 47,
+      "expected_min": 47
+    },
+    "provenance_chain": {
+      "pass": true,
+      "detail": "All boards reference same manifest SHA-256"
+    },
+    "no_trade_language": {
+      "pass": true,
+      "detail": "Both boards classified as observation"
+    },
+    "no_credentials_orders": {
+      "pass": true,
+      "detail": "Worker policy: paper-only, no credentials, no orders, no allocations"
+    },
+    "schema_versions": {
+      "manifest": "qtf-research-universe-v1",
+      "trend_board": "qtf-trend-board-v1",
+      "funding_board": "qtf-funding-board-v1"
+    }
+  },
+  "decision": {
+    "allocation": "hold_zero_allocation",
+    "reason": "No validated production edge exists. All QTF deliverables remain partial/blocked/queued. Robustness gates consistently failing. Funding-extreme edges collapse under actual costs. Mean-reversion rules are parameter-sensitive. TTM-01 preserves capital but does not demonstrate edge. Polymarket markets lack active price discovery. Market-making blocked on L2 data. Liquidation data publicly unavailable.",
+    "policy": "paper-only; no credentials, orders, wallets, deposits, or live allocation"
+  },
+  "changes_since_last_run": {
+    "scan_artifacts_age": "Latest scan from 2026-07-16T11:30:39Z (5 days old)",
+    "universe_stable": true,
+    "trend_changes": "ONDO +15.74% top gainer; LIT -7.75% top loser. 7 positive, 10 negative, 30 eligible.",
+    "funding_changes": "10 positive, 10 negative funding assets. 20 candidate events.",
+    "ledger_updates": "No new ledger entries since 2026-07-18. Last activity: QTF-V07 costed funding (15.4% jitter survival), T12 market-maker readiness probe."
+  },
+  "next_steps": {
+    "scan_refresh_needed": true,
+    "scan_age_days": 5,
+    "recommended_action": "Refresh daily_scan artifacts with fresh Bybit data. Review candidate events from funding board for forward testing."
+  }
+}

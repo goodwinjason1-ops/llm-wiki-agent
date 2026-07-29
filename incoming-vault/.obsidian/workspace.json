@@ -1,0 +1,213 @@
+{
+  "main": {
+    "id": "555a891b87b22523",
+    "type": "split",
+    "children": [
+      {
+        "id": "803d46445d43e18d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1b6a945442f56ee9",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "76bf76bf31b7e2b9",
+    "type": "split",
+    "children": [
+      {
+        "id": "3bf7d95cc08f6444",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "40c859b7c7f81de6",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "8656d13374fd2a7b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "98a2f90cdd781b5b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 359.5
+  },
+  "right": {
+    "id": "05a069b8d3a19824",
+    "type": "split",
+    "children": [
+      {
+        "id": "0cd5d3666c2fc205",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "19ca4950fea035c3",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "00_System/Dashboards/START HERE.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for START HERE"
+            }
+          },
+          {
+            "id": "b797c1e21aa7bac4",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "6ff216f3a237e8b2",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "1812329a3f598d58",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "40c859b7c7f81de6",
+  "lastOpenFiles": [
+    "05_Projects/AOD Student Placement/AOD Placement Job Finder Dashboard.md",
+    "05_Projects/AI Quant Trading Floor/Implementation/reports/alt_research_hyperliquid-record_20260729T010033+0000.json",
+    "05_Projects/AI Quant Trading Floor/Implementation/reports/antoine_alpha_desk_outcomes_20260729T005320+0000.json",
+    "05_Projects/AI Quant Trading Floor/Implementation/reports/alt_paper_ops_record-signals_20260729T001122+0000.json",
+    "05_Projects/AI Quant Trading Floor/Implementation/reports/alt_research_hyperliquid-record_20260729T000032+0000.json",
+    "05_Projects/AI Quant Trading Floor/Implementation/reports/antoine_alpha_desk_outcomes_20260728T235225+0000.json",
+    "05_Projects/AI Quant Trading Floor/Implementation/reports/alt_research_all_20260728T231241+0000_defi.csv",
+    "05_Projects/AI Quant Trading Floor/Implementation/reports/alt_research_all_20260728T231241+0000_polymarket.csv",
+    "05_Projects/AI Quant Trading Floor/Implementation/reports/alt_research_all_20260728T231241+0000.json",
+    "05_Projects/AI Quant Trading Floor/Implementation/reports/alt_research_hyperliquid-record_20260728T230029+0000.json",
+    "05_Projects/AI Quant Trading Floor/Implementation/reports/antoine_alpha_desk_outcomes_20260728T225118+0000.json",
+    "00_System/Reports/Vault Loop Report - 2026-07-29.md",
+    "04_Wiki/queries/Missed Connections Review - 2026-07-29.md",
+    "00_System/Reports/Inbox Processor Report - 2026-07-28.md",
+    "05_Projects/AI Quant Trading Floor/Daily Briefs/AI Quant Morning Brief - 2026-07-29.md",
+    "00_System/Reports/Vault Loop Report - 2026-07-28.md",
+    "04_Wiki/queries/Missed Connections Review - 2026-07-28.md",
+    "00_System/Reports/Inbox Processor Report - 2026-07-27.md",
+    "05_Projects/AI Quant Trading Floor/Daily Briefs/AI Quant Morning Brief - 2026-07-28.md",
+    "05_Projects/AI Business Launch Backlog/Business Context Brain - Product Concept.md",
+    "00_System/Reports/Vault Loop Report - 2026-07-27.md",
+    "04_Wiki/queries/Missed Connections Review - 2026-07-27.md",
+    "00_System/Reports/Inbox Processor Report - 2026-07-26.md",
+    "05_Projects/AI Quant Trading Floor/Daily Briefs/AI Quant Morning Brief - 2026-07-27.md",
+    "05_Projects/AI Business Launch Backlog/Business Context Brain Demo Pack/README - Demo Pack.md",
+    "00_System/Dashboards/Business Launch Asset Navigation Dashboard.md",
+    "00_System/Reports/Vault Loop Report - 2026-07-19.md",
+    "04_Wiki/queries/Missed Connections Review - 2026-07-19.md",
+    "05_Projects/AI Quant Trading Floor/Daily Briefs/AI Quant Morning Brief - 2026-07-19.md",
+    "00_System/Workflows/Claude and Ari Second Brain Evolution Loop.md",
+    "00_System/Dashboards/AI Second Brain Project Registry.md",
+    "05_Projects/AOD Student Placement/Application Materials/Jason Goodwin - Base Resume - AOD Community and Research - 2026-07-13.md",
+    "05_Projects/AOD Student Placement/Application Materials/Jason Goodwin - YSAS Student Placement Resume Draft.md",
+    "05_Projects/AOD Student Placement/Application Packages/cohealth Harm Reduction Worker - Final Review Pack - 2026-07-12/cohealth Application Review and Submission Checklist.md",
+    "05_Projects/AOD Student Placement/Application Packages/2026-07-10 - cohealth - Harm Reduction Worker.md",
+    "05_Projects/Source-to-System Studio Website/site/og-image.svg",
+    "05_Projects/Source-to-System Studio Website/site/favicon-light.svg",
+    "05_Projects/Source-to-System Studio Website/site/apple-touch-icon.svg",
+    "05_Projects/Source-to-System Studio Website/site/favicon.svg",
+    "Untitled.canvas",
+    "02_Raw/x/Morin Performance Review Dashboard Infographic - 2026-07-13.jpg",
+    "02_Raw/x/x_bookmarks_window.bmp",
+    "02_Raw/reddit/1uqeb5b_preview.webp"
+  ]
+}

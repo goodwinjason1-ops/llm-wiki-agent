@@ -1,0 +1,112 @@
+{
+  "data": {
+    "tweet_result_by_rest_id": {
+      "id": "VHdlZXRSZXN1bHRzOjIwMTY2NDc2NjI2MzcwNjQ0MDI=",
+      "rest_id": "2016647662637064402",
+      "result": {
+        "__typename": "Tweet",
+        "article": {
+          "article_results": {
+            "id": "QXJ0aWNsZUVudGl0eVJlc3VsdHM6MjAwOTU5MTQ0Njk1Mzk0MzA0MA==",
+            "result": {
+              "__isArticleResult": "ArticleEntity",
+              "__typename": "ArticleEntity",
+              "cover_media_results": {
+                "id": "QXBpTWVkaWFSZXN1bHRzOgwABQoAARvjgt81GyAACgACAAAAAAEVcV8AAA==",
+                "result": {
+                  "__typename": "ApiMedia",
+                  "id": "QXBpTWVkaWE6DAAFCgABG+OC3zUbIAAKAAIAAAAAARVxXwAA",
+                  "media_info": {
+                    "__typename": "ApiImage",
+                    "original_img_height": 653,
+                    "original_img_url": "https://pbs.twimg.com/media/G-OC3zUbIAAKtW0.jpg",
+                    "original_img_width": 1632
+                  }
+                }
+              },
+              "id": "QXJ0aWNsZUVudGl0eToyMDA5NTkxNDQ2OTUzOTQzMDQw",
+              "preview_text": "most traders are currently losing a war against machines without even realizing they are on the battlefield. i spent years throwing money at developers and watching my accounts get liquidated because",
+              "rest_id": "2009591446953943040",
+              "title": "How I Engineered a 3.0+ Sharpe Ratio Trading Bot Using AutoGPT and Python"
+            }
+          }
+        },
+        "card": {
+          "id": "Q2FyZDpodHRwczovL3QuY28vSkk2TE85SzY1cA=="
+        },
+        "cashtag_attachments": [],
+        "core": {
+          "user_results": {
+            "id": "VXNlclJlc3VsdHM6MTgxODI0OTU=",
+            "result": {
+              "__typename": "User",
+              "avatar": {
+                "image_url": "https://pbs.twimg.com/profile_images/2001708140530741248/ritk29nr_normal.jpg"
+              },
+              "core": {
+                "name": "Moon Dev",
+                "screen_name": "MoonDevOnYT"
+              },
+              "id": "VXNlcjoxODE4MjQ5NQ==",
+              "identity_profile_labels_highlighted_label": {},
+              "privacy": {
+                "protected": false
+              },
+              "profile_image_shape": "Circle",
+              "rest_id": "18182495",
+              "super_follow_eligible": false,
+              "verification": {
+                "is_blue_verified": true
+              }
+            }
+          }
+        },
+        "counts": {
+          "bookmark_count": 159,
+          "favorite_count": 85,
+          "reply_count": 0,
+          "retweet_count": 5
+        },
+        "details": {
+          "cashtag_entities": [],
+          "created_at_ms": 1769641244000,
+          "display_text_range": [
+            0,
+            23
+          ],
+          "full_text": "https://t.co/JI6LO9K65p",
+          "hashtag_entities": [],
+          "smarttags": []
+        },
+        "edit_control": {
+          "__typename": "EditControlInitial",
+          "edit_tweet_ids": [
+            "2016647662637064402"
+          ]
+        },
+        "grok_translated_post_with_availability": {
+          "is_available": false
+        },
+        "id": "VHdlZXQ6MjAxNjY0NzY2MjYzNzA2NDQwMg==",
+        "legacy": {},
+        "media_entities2": [],
+        "mention_entities": [],
+        "rest_id": "2016647662637064402",
+        "url_entities": [
+          {
+            "display_url": "x.com/i/article/2009…",
+            "expanded_url": "http://x.com/i/article/2009591446953943040",
+            "indices": [
+              0,
+              23
+            ],
+            "url": "https://t.co/JI6LO9K65p"
+          }
+        ],
+        "views": {
+          "count": "6676"
+        }
+      }
+    }
+  }
+}

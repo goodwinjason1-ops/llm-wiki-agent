@@ -1,0 +1,1055 @@
+[
+  {
+    "name": "Basketball PWA",
+    "path": "C:/Users/Kidsg/OneDrive/Desktop/Sixth Man/basketball-pwa",
+    "exists": true,
+    "is_dir": true,
+    "file_count": 544,
+    "dir_count": 68,
+    "top_ext": [
+      [
+        ".jsx",
+        305
+      ],
+      [
+        ".js",
+        121
+      ],
+      [
+        ".mjs",
+        22
+      ],
+      [
+        ".py",
+        19
+      ],
+      [
+        ".md",
+        18
+      ],
+      [
+        ".json",
+        16
+      ],
+      [
+        "[none]",
+        11
+      ],
+      [
+        ".svg",
+        8
+      ],
+      [
+        ".png",
+        6
+      ],
+      [
+        ".rules",
+        4
+      ],
+      [
+        ".html",
+        3
+      ],
+      [
+        ".example",
+        2
+      ],
+      [
+        ".sh",
+        2
+      ],
+      [
+        ".css",
+        2
+      ]
+    ],
+    "code_markers": [
+      "firebase.json",
+      "package.json",
+      "vite.config.js",
+      ".claude/worktrees/thirsty-curie-01eea8/firebase.json",
+      ".claude/worktrees/thirsty-curie-01eea8/package.json",
+      ".claude/worktrees/thirsty-curie-01eea8/vite.config.js",
+      "film-engine/requirements.txt"
+    ],
+    "secret_like_files": [
+      ".env",
+      ".env.example",
+      ".env.test",
+      ".claude/worktrees/thirsty-curie-01eea8/.env",
+      ".claude/worktrees/thirsty-curie-01eea8/.env.example"
+    ],
+    "sample_files": [
+      ".env",
+      ".env.example",
+      ".env.test",
+      ".firebaserc",
+      ".gitignore",
+      "beta-testing-guide.md",
+      "CLAUDE.md",
+      "cleanup-audit.js",
+      "cleanup-database.js",
+      "DEPLOYMENT.md",
+      "firebase.json",
+      "firestore.rules",
+      "fix-team-assignments.js",
+      "gen.js",
+      "IMPROVEMENTS.md",
+      "index.html",
+      "package-lock.json",
+      "package.json",
+      "playwright.config.js",
+      "postcss.config.js",
+      "PROJECT_SUMMARY.md",
+      "README.md",
+      "seed-test-data.js",
+      "setup.sh",
+      "storage.rules",
+      "tailwind.config.js",
+      "vite.config.js",
+      "_ul",
+      "_ul-TheComputer",
+      ".claude/settings.json",
+      ".claude/settings.local.json",
+      ".claude/worktrees/thirsty-curie-01eea8/.env",
+      ".claude/worktrees/thirsty-curie-01eea8/.env.example",
+      ".claude/worktrees/thirsty-curie-01eea8/.firebaserc",
+      ".claude/worktrees/thirsty-curie-01eea8/.git",
+      ".claude/worktrees/thirsty-curie-01eea8/.gitignore",
+      ".claude/worktrees/thirsty-curie-01eea8/beta-testing-guide.md",
+      ".claude/worktrees/thirsty-curie-01eea8/CLAUDE.md",
+      ".claude/worktrees/thirsty-curie-01eea8/cleanup-audit.js",
+      ".claude/worktrees/thirsty-curie-01eea8/cleanup-database.js",
+      ".claude/worktrees/thirsty-curie-01eea8/DEPLOYMENT.md",
+      ".claude/worktrees/thirsty-curie-01eea8/firebase.json",
+      ".claude/worktrees/thirsty-curie-01eea8/firestore.rules",
+      ".claude/worktrees/thirsty-curie-01eea8/fix-team-assignments.js",
+      ".claude/worktrees/thirsty-curie-01eea8/IMPROVEMENTS.md"
+    ],
+    "sample_dirs": [
+      ".claude",
+      ".claude/worktrees",
+      ".claude/worktrees/thirsty-curie-01eea8",
+      ".claude/worktrees/thirsty-curie-01eea8/.claude",
+      ".claude/worktrees/thirsty-curie-01eea8/playwright-report",
+      ".claude/worktrees/thirsty-curie-01eea8/public",
+      ".claude/worktrees/thirsty-curie-01eea8/public/images",
+      ".claude/worktrees/thirsty-curie-01eea8/scripts",
+      ".claude/worktrees/thirsty-curie-01eea8/secrets",
+      ".claude/worktrees/thirsty-curie-01eea8/src",
+      ".claude/worktrees/thirsty-curie-01eea8/src/components",
+      ".claude/worktrees/thirsty-curie-01eea8/src/components/drills",
+      ".claude/worktrees/thirsty-curie-01eea8/src/components/help",
+      ".claude/worktrees/thirsty-curie-01eea8/src/components/practice",
+      ".claude/worktrees/thirsty-curie-01eea8/src/components/tutorial",
+      ".claude/worktrees/thirsty-curie-01eea8/src/components/youth",
+      ".claude/worktrees/thirsty-curie-01eea8/src/constants",
+      ".claude/worktrees/thirsty-curie-01eea8/src/contexts",
+      ".claude/worktrees/thirsty-curie-01eea8/src/data",
+      ".claude/worktrees/thirsty-curie-01eea8/src/hooks",
+      ".claude/worktrees/thirsty-curie-01eea8/src/pages",
+      ".claude/worktrees/thirsty-curie-01eea8/src/pages/admin",
+      ".claude/worktrees/thirsty-curie-01eea8/src/pages/coach",
+      ".claude/worktrees/thirsty-curie-01eea8/src/pages/help",
+      ".claude/worktrees/thirsty-curie-01eea8/src/pages/youth",
+      ".claude/worktrees/thirsty-curie-01eea8/src/services",
+      ".claude/worktrees/thirsty-curie-01eea8/src/utils",
+      ".claude/worktrees/thirsty-curie-01eea8/test-results",
+      ".claude/worktrees/thirsty-curie-01eea8/tests",
+      ".claude/worktrees/thirsty-curie-01eea8/tests/helpers"
+    ],
+    "classification": "code_or_mixed_project"
+  },
+  {
+    "name": "BeastCity",
+    "path": "C:/Users/Kidsg/OneDrive/Desktop/BeastCity",
+    "exists": true,
+    "is_dir": true,
+    "file_count": 34,
+    "dir_count": 6,
+    "top_ext": [
+      [
+        ".svg",
+        22
+      ],
+      [
+        ".md",
+        4
+      ],
+      [
+        ".html",
+        3
+      ],
+      [
+        ".json",
+        3
+      ],
+      [
+        "[none]",
+        1
+      ],
+      [
+        ".zip",
+        1
+      ]
+    ],
+    "code_markers": [],
+    "secret_like_files": [],
+    "sample_files": [
+      ".gitignore",
+      "Beast City_ Raccoon Rising.zip",
+      "beast-city.html",
+      "README.md",
+      ".claude/launch.json",
+      "design/districts.json",
+      "design/palette.json",
+      "design/poster.html",
+      "design/README.md",
+      "design/title-screen.html",
+      "design/characters/portrait-brick.svg",
+      "design/characters/portrait-giggles.svg",
+      "design/characters/portrait-leo-manetti.svg",
+      "design/characters/portrait-officer-howls.svg",
+      "design/characters/portrait-rocky.svg",
+      "design/characters/portrait-sly-sssalvatore.svg",
+      "design/characters/portrait-vivienne-vex.svg",
+      "design/characters/topdown-brick.svg",
+      "design/characters/topdown-giggles.svg",
+      "design/characters/topdown-leo-manetti.svg",
+      "design/characters/topdown-officer-howls.svg",
+      "design/characters/topdown-rocky.svg",
+      "design/characters/topdown-sly-sssalvatore.svg",
+      "design/characters/topdown-vivienne-vex.svg",
+      "design/characters/flat/portrait-brick.svg",
+      "design/characters/flat/portrait-giggles.svg",
+      "design/characters/flat/portrait-leo-manetti.svg",
+      "design/characters/flat/portrait-officer-howls.svg",
+      "design/characters/flat/portrait-rocky.svg",
+      "design/characters/flat/portrait-sly-sssalvatore.svg",
+      "design/characters/flat/portrait-vivienne-vex.svg",
+      "design/ui/paw-wanted.svg",
+      "docs/DESIGN-BRIEF.md",
+      "docs/ROADMAP.md"
+    ],
+    "sample_dirs": [
+      ".claude",
+      "design",
+      "design/characters",
+      "design/characters/flat",
+      "design/ui",
+      "docs"
+    ],
+    "classification": "knowledge_reference_project"
+  },
+  {
+    "name": "Gym App",
+    "path": "C:/Users/Kidsg/OneDrive/Desktop/Gym app",
+    "exists": true,
+    "is_dir": true,
+    "file_count": 1,
+    "dir_count": 0,
+    "top_ext": [
+      [
+        ".html",
+        1
+      ]
+    ],
+    "code_markers": [],
+    "secret_like_files": [],
+    "sample_files": [
+      "index.html"
+    ],
+    "sample_dirs": [],
+    "classification": "unknown_or_assets"
+  },
+  {
+    "name": "Jungian",
+    "path": "C:/Users/Kidsg/OneDrive/Desktop/Jungian",
+    "exists": true,
+    "is_dir": true,
+    "file_count": 1,
+    "dir_count": 0,
+    "top_ext": [
+      [
+        ".docx",
+        1
+      ]
+    ],
+    "code_markers": [],
+    "secret_like_files": [],
+    "sample_files": [
+      "Jungian-Addiction-Treatment-Research-and-Roadmap.docx"
+    ],
+    "sample_dirs": [],
+    "classification": "knowledge_reference_project"
+  },
+  {
+    "name": "MVP Role Play Simulator",
+    "path": "C:/Users/Kidsg/OneDrive/Desktop/MVP - Role Play SImulator",
+    "exists": true,
+    "is_dir": true,
+    "file_count": 2,
+    "dir_count": 0,
+    "top_ext": [
+      [
+        ".pdf",
+        1
+      ],
+      [
+        ".docx",
+        1
+      ]
+    ],
+    "code_markers": [],
+    "secret_like_files": [],
+    "sample_files": [
+      "mental-health-roleplay-design.pdf",
+      "MVP Plan.docx"
+    ],
+    "sample_dirs": [],
+    "classification": "knowledge_reference_project"
+  },
+  {
+    "name": "Prediction Bot Desktop",
+    "path": "C:/Users/Kidsg/OneDrive/Desktop/Prediction Bot",
+    "exists": true,
+    "is_dir": true,
+    "file_count": 22,
+    "dir_count": 3,
+    "top_ext": [
+      [
+        ".md",
+        14
+      ],
+      [
+        ".docx",
+        4
+      ],
+      [
+        ".pdf",
+        4
+      ]
+    ],
+    "code_markers": [],
+    "secret_like_files": [],
+    "sample_files": [
+      "CLAUDE.md",
+      "project 4.docx",
+      "Project Status Report_1405_2.docx",
+      "PunchList_Bot_1405.docx",
+      "Extraction/Approach Note - Trading Bot Bybit Extraction Pass.md",
+      "Extraction/Trading Bot Extraction Roadmap.md",
+      "Extraction/Trading Bot Safety and Control Rules.md",
+      "Extraction/Trading Bot Workspace Inventory.md",
+      "Set Up Docs/complete_codex_execution_sequence.md",
+      "Set Up Docs/complete_prediction_trading_goal_prompt.pdf",
+      "Set Up Docs/data_sources_implementation_guide_prediction_trading_bot_updated_crypto_sources-4 (1).md",
+      "Set Up Docs/first_time_operator_guide.pdf",
+      "Set Up Docs/paper_live_system_runsheet.pdf",
+      "Set Up Docs/PLAN.md",
+      "Set Up Docs/Prediction Market Trading Bot Implementation Plan_Codex.docx",
+      "Set Up Docs/prediction_market_trading_bot_full_implementation_plan_with_fractional_kelly_updated_crypto_sources-6 (1).md",
+      "Set Up Docs/prediction_market_trading_bot_full_implementation_plan_with_fractional_kelly_updated_crypto_sources-6 (1).pdf",
+      "Set Up Docs/codex docs/controls.md",
+      "Set Up Docs/codex docs/overview.md",
+      "Set Up Docs/codex docs/README.md",
+      "Set Up Docs/codex docs/runbook.md",
+      "Set Up Docs/codex docs/strategy-contract.md"
+    ],
+    "sample_dirs": [
+      "Extraction",
+      "Set Up Docs",
+      "Set Up Docs/codex docs"
+    ],
+    "classification": "knowledge_reference_project"
+  },
+  {
+    "name": "Prediction Bot New project 4",
+    "path": "C:/Users/Kidsg/OneDrive/Documents/New project 4",
+    "exists": true,
+    "is_dir": true,
+    "file_count": 336,
+    "dir_count": 74,
+    "top_ext": [
+      [
+        ".py",
+        112
+      ],
+      [
+        ".png",
+        68
+      ],
+      [
+        ".sql",
+        36
+      ],
+      [
+        "[none]",
+        35
+      ],
+      [
+        ".pdf",
+        17
+      ],
+      [
+        ".db",
+        16
+      ],
+      [
+        ".md",
+        13
+      ],
+      [
+        ".log",
+        10
+      ],
+      [
+        ".json",
+        5
+      ],
+      [
+        ".ts",
+        4
+      ],
+      [
+        ".yml",
+        3
+      ],
+      [
+        ".tag",
+        3
+      ],
+      [
+        ".toml",
+        2
+      ],
+      [
+        ".tsx",
+        2
+      ]
+    ],
+    "code_markers": [
+      "pyproject.toml",
+      "apps/dashboard/package.json",
+      "apps/dashboard/tsconfig.json"
+    ],
+    "secret_like_files": [
+      ".env.example"
+    ],
+    "sample_files": [
+      ".dockerignore",
+      ".env.example",
+      ".gitattributes",
+      ".gitignore",
+      "pyproject.toml",
+      "README.md",
+      ".codex/environments/environment.toml",
+      ".github/workflows/ci.yml",
+      ".mypy_cache/.gitignore",
+      ".mypy_cache/CACHEDIR.TAG",
+      ".mypy_cache/3.13/cache.0.db",
+      ".mypy_cache/3.13/cache.1.db",
+      ".mypy_cache/3.13/cache.10.db",
+      ".mypy_cache/3.13/cache.11.db",
+      ".mypy_cache/3.13/cache.12.db",
+      ".mypy_cache/3.13/cache.13.db",
+      ".mypy_cache/3.13/cache.14.db",
+      ".mypy_cache/3.13/cache.15.db",
+      ".mypy_cache/3.13/cache.2.db",
+      ".mypy_cache/3.13/cache.3.db",
+      ".mypy_cache/3.13/cache.4.db",
+      ".mypy_cache/3.13/cache.5.db",
+      ".mypy_cache/3.13/cache.6.db",
+      ".mypy_cache/3.13/cache.7.db",
+      ".mypy_cache/3.13/cache.8.db",
+      ".mypy_cache/3.13/cache.9.db",
+      ".pytest_cache/.gitignore",
+      ".pytest_cache/CACHEDIR.TAG",
+      ".pytest_cache/README.md",
+      ".pytest_cache/v/cache/lastfailed",
+      ".pytest_cache/v/cache/nodeids",
+      ".ruff_cache/.gitignore",
+      ".ruff_cache/CACHEDIR.TAG",
+      ".ruff_cache/0.15.12/10830164415232147381",
+      ".ruff_cache/0.15.12/11820923778669770370",
+      ".ruff_cache/0.15.12/12206017413420341854",
+      ".ruff_cache/0.15.12/12266972276931684341",
+      ".ruff_cache/0.15.12/12268315919789455339",
+      ".ruff_cache/0.15.12/12315423004494072869",
+      ".ruff_cache/0.15.12/1298125082693555005",
+      ".ruff_cache/0.15.12/13124280846276400091",
+      ".ruff_cache/0.15.12/13700509395035543518",
+      ".ruff_cache/0.15.12/14167965772338041216",
+      ".ruff_cache/0.15.12/14850651559027218232",
+      ".ruff_cache/0.15.12/1503033735794662285"
+    ],
+    "sample_dirs": [
+      ".codex",
+      ".codex/environments",
+      ".github",
+      ".github/workflows",
+      ".mypy_cache",
+      ".mypy_cache/3.13",
+      ".pytest_cache",
+      ".pytest_cache/v",
+      ".pytest_cache/v/cache",
+      ".ruff_cache",
+      ".ruff_cache/0.15.12",
+      "apps",
+      "apps/api",
+      "apps/api/src",
+      "apps/api/src/prediction_api",
+      "apps/dashboard",
+      "apps/dashboard/app",
+      "apps/dashboard/scripts",
+      "apps/dashboard/test-results",
+      "apps/dashboard/tests",
+      "apps/dashboard/tests/e2e",
+      "docs",
+      "docs/architecture",
+      "docs/operations",
+      "docs/progress",
+      "docs/punchlists",
+      "docs/risk",
+      "docs/strategies",
+      "infra",
+      "infra/database"
+    ],
+    "classification": "code_or_mixed_project"
+  },
+  {
+    "name": "Airdrop Agent",
+    "path": "C:/Users/Kidsg/OneDrive/Documents/Airdrop Agent",
+    "exists": true,
+    "is_dir": true,
+    "file_count": 264,
+    "dir_count": 64,
+    "top_ext": [
+      [
+        ".py",
+        147
+      ],
+      [
+        ".md",
+        42
+      ],
+      [
+        ".ts",
+        22
+      ],
+      [
+        ".tsx",
+        17
+      ],
+      [
+        ".json",
+        14
+      ],
+      [
+        "[none]",
+        5
+      ],
+      [
+        ".sql",
+        3
+      ],
+      [
+        ".example",
+        2
+      ],
+      [
+        ".yaml",
+        2
+      ],
+      [
+        ".mjs",
+        2
+      ],
+      [
+        ".yml",
+        1
+      ],
+      [
+        ".toml",
+        1
+      ],
+      [
+        ".tag",
+        1
+      ],
+      [
+        ".tsbuildinfo",
+        1
+      ]
+    ],
+    "code_markers": [
+      "airdrop-agent/package.json",
+      "airdrop-agent/apps/api/Dockerfile",
+      "airdrop-agent/apps/api/pyproject.toml",
+      "airdrop-agent/apps/web/package.json",
+      "airdrop-agent/apps/web/tsconfig.json",
+      "airdrop-agent/packages/shared/package.json",
+      "airdrop-agent/packages/shared/tsconfig.json"
+    ],
+    "secret_like_files": [
+      "airdrop-agent/.env.example",
+      "airdrop_agent_build_pack_v1_1/airdrop_agent_build_pack_v1_1/config/.env.example"
+    ],
+    "sample_files": [
+      ".claude/settings.local.json",
+      "airdrop-agent/.env.example",
+      "airdrop-agent/.gitignore",
+      "airdrop-agent/docker-compose.yml",
+      "airdrop-agent/package.json",
+      "airdrop-agent/pnpm-lock.yaml",
+      "airdrop-agent/pnpm-workspace.yaml",
+      "airdrop-agent/README.md",
+      "airdrop-agent/apps/api/Dockerfile",
+      "airdrop-agent/apps/api/pyproject.toml",
+      "airdrop-agent/apps/api/README.md",
+      "airdrop-agent/apps/api/.pytest_cache/.gitignore",
+      "airdrop-agent/apps/api/.pytest_cache/CACHEDIR.TAG",
+      "airdrop-agent/apps/api/.pytest_cache/README.md",
+      "airdrop-agent/apps/api/.pytest_cache/v/cache/lastfailed",
+      "airdrop-agent/apps/api/.pytest_cache/v/cache/nodeids",
+      "airdrop-agent/apps/api/src/airdrop_agent/main.py",
+      "airdrop-agent/apps/api/src/airdrop_agent/settings.py",
+      "airdrop-agent/apps/api/src/airdrop_agent/__init__.py",
+      "airdrop-agent/apps/api/src/airdrop_agent/ai/base.py",
+      "airdrop-agent/apps/api/src/airdrop_agent/ai/budget.py",
+      "airdrop-agent/apps/api/src/airdrop_agent/ai/dependencies.py",
+      "airdrop-agent/apps/api/src/airdrop_agent/ai/factory.py",
+      "airdrop-agent/apps/api/src/airdrop_agent/ai/fetcher.py",
+      "airdrop-agent/apps/api/src/airdrop_agent/ai/runner.py",
+      "airdrop-agent/apps/api/src/airdrop_agent/ai/supervisor.py",
+      "airdrop-agent/apps/api/src/airdrop_agent/ai/__init__.py",
+      "airdrop-agent/apps/api/src/airdrop_agent/ai/agents/decision.py",
+      "airdrop-agent/apps/api/src/airdrop_agent/ai/agents/research.py",
+      "airdrop-agent/apps/api/src/airdrop_agent/ai/agents/reward.py",
+      "airdrop-agent/apps/api/src/airdrop_agent/ai/agents/safety.py",
+      "airdrop-agent/apps/api/src/airdrop_agent/ai/agents/__init__.py",
+      "airdrop-agent/apps/api/src/airdrop_agent/ai/providers/anthropic.py",
+      "airdrop-agent/apps/api/src/airdrop_agent/ai/providers/gemini.py",
+      "airdrop-agent/apps/api/src/airdrop_agent/ai/providers/mock.py",
+      "airdrop-agent/apps/api/src/airdrop_agent/ai/providers/openai.py",
+      "airdrop-agent/apps/api/src/airdrop_agent/ai/providers/__init__.py",
+      "airdrop-agent/apps/api/src/airdrop_agent/auth/dependencies.py",
+      "airdrop-agent/apps/api/src/airdrop_agent/auth/jwt.py",
+      "airdrop-agent/apps/api/src/airdrop_agent/auth/__init__.py",
+      "airdrop-agent/apps/api/src/airdrop_agent/db/decisions_models.py",
+      "airdrop-agent/apps/api/src/airdrop_agent/db/decisions_repository.py",
+      "airdrop-agent/apps/api/src/airdrop_agent/db/dependencies.py",
+      "airdrop-agent/apps/api/src/airdrop_agent/db/models.py",
+      "airdrop-agent/apps/api/src/airdrop_agent/db/pg.py"
+    ],
+    "sample_dirs": [
+      ".claude",
+      "airdrop-agent",
+      "airdrop-agent/apps",
+      "airdrop-agent/apps/api",
+      "airdrop-agent/apps/api/.pytest_cache",
+      "airdrop-agent/apps/api/.pytest_cache/v",
+      "airdrop-agent/apps/api/.pytest_cache/v/cache",
+      "airdrop-agent/apps/api/src",
+      "airdrop-agent/apps/api/src/airdrop_agent",
+      "airdrop-agent/apps/api/src/airdrop_agent/ai",
+      "airdrop-agent/apps/api/src/airdrop_agent/ai/agents",
+      "airdrop-agent/apps/api/src/airdrop_agent/ai/providers",
+      "airdrop-agent/apps/api/src/airdrop_agent/auth",
+      "airdrop-agent/apps/api/src/airdrop_agent/db",
+      "airdrop-agent/apps/api/src/airdrop_agent/discovery",
+      "airdrop-agent/apps/api/src/airdrop_agent/discovery/parsers",
+      "airdrop-agent/apps/api/src/airdrop_agent/execution",
+      "airdrop-agent/apps/api/src/airdrop_agent/explorers",
+      "airdrop-agent/apps/api/src/airdrop_agent/plans",
+      "airdrop-agent/apps/api/src/airdrop_agent/policy",
+      "airdrop-agent/apps/api/src/airdrop_agent/reports",
+      "airdrop-agent/apps/api/src/airdrop_agent/reports/delivery",
+      "airdrop-agent/apps/api/src/airdrop_agent/routers",
+      "airdrop-agent/apps/api/src/airdrop_agent/scripts",
+      "airdrop-agent/apps/api/tests",
+      "airdrop-agent/apps/web",
+      "airdrop-agent/apps/web/public",
+      "airdrop-agent/apps/web/public/icons",
+      "airdrop-agent/apps/web/src",
+      "airdrop-agent/apps/web/src/app"
+    ],
+    "classification": "code_or_mixed_project"
+  },
+  {
+    "name": "Chisholm Mental Health Diploma",
+    "path": "C:/Users/Kidsg/OneDrive/Desktop/Chisholm - Diploma Mental Health 2026",
+    "exists": true,
+    "is_dir": true,
+    "file_count": 209,
+    "dir_count": 43,
+    "top_ext": [
+      [
+        ".docx",
+        112
+      ],
+      [
+        ".pdf",
+        69
+      ],
+      [
+        ".pptx",
+        20
+      ],
+      [
+        ".zip",
+        6
+      ],
+      [
+        ".rtf",
+        1
+      ],
+      [
+        ".webp",
+        1
+      ]
+    ],
+    "code_markers": [],
+    "secret_like_files": [],
+    "sample_files": [
+      "CHCMHS002CHCMHS003CHCMHS004 Recovery Relationships and care Networks Cluster/AT1/AT1 - Mental Health Questions Template (3).docx",
+      "CHCMHS002CHCMHS003CHCMHS004 Recovery Relationships and care Networks Cluster/AT1/AT1 - Mental Health Questions Template - Jason Goodwin (S201008232).docx",
+      "CHCMHS002CHCMHS003CHCMHS004 Recovery Relationships and care Networks Cluster/AT1/test.pdf",
+      "CHCMHS002CHCMHS003CHCMHS004 Recovery Relationships and care Networks Cluster/AT2/AT2 - Recovery Questions Jason Goodwin (S201008232).docx",
+      "CHCMHS002CHCMHS003CHCMHS004 Recovery Relationships and care Networks Cluster/AT2/AT2 - Recovery Questions Template.docx",
+      "CHCMHS002CHCMHS003CHCMHS004 Recovery Relationships and care Networks Cluster/AT2/AT2 - Recovery Questions.docx",
+      "CHCMHS002CHCMHS003CHCMHS004 Recovery Relationships and care Networks Cluster/AT2/AT2_Recovery_Questions_Exemplar.docx",
+      "CHCMHS002CHCMHS003CHCMHS004 Recovery Relationships and care Networks Cluster/AT2/AT2_Recovery_Questions_Exemplar_Submission.pdf",
+      "CHCMHS002CHCMHS003CHCMHS004 Recovery Relationships and care Networks Cluster/AT2/AT2_Recovery_Questions_Updated.docx",
+      "CHCMHS002CHCMHS003CHCMHS004 Recovery Relationships and care Networks Cluster/AT2/CHCMHS002 003 004 AT2 Guide.docx",
+      "CHCMHS002CHCMHS003CHCMHS004 Recovery Relationships and care Networks Cluster/AT2/Recovery Principles AT2 Support.docx",
+      "CHCMHS002CHCMHS003CHCMHS004 Recovery Relationships and care Networks Cluster/AT2/~$2_Recovery_Questions_Exemplar.docx",
+      "CHCMHS002CHCMHS003CHCMHS004 Recovery Relationships and care Networks Cluster/AT2/~$covery Principles AT2 Support.docx",
+      "CHCMHS002CHCMHS003CHCMHS004 Recovery Relationships and care Networks Cluster/AT3/Reflective Practice.docx",
+      "CHCMHS002CHCMHS003CHCMHS004 Recovery Relationships and care Networks Cluster/AT3/a/Appendix 2 - Informed Consent Form - Part 1.docx",
+      "CHCMHS002CHCMHS003CHCMHS004 Recovery Relationships and care Networks Cluster/AT3/a/Appendix 3 - Referral Information Form - Part 1.docx",
+      "CHCMHS002CHCMHS003CHCMHS004 Recovery Relationships and care Networks Cluster/AT3/a/Appendix 4 - Recovery Plan - Part 1 (1).docx",
+      "CHCMHS002CHCMHS003CHCMHS004 Recovery Relationships and care Networks Cluster/AT3/a/Jac Part 1.zip",
+      "CHCMHS002CHCMHS003CHCMHS004 Recovery Relationships and care Networks Cluster/AT3/a/Reflection - Recovery Observation Task 1 - Part 1.docx",
+      "CHCMHS002CHCMHS003CHCMHS004 Recovery Relationships and care Networks Cluster/AT3/a/Jac Part 1/Appendix 4 - Recovery Plan - Part 1.docx",
+      "CHCMHS002CHCMHS003CHCMHS004 Recovery Relationships and care Networks Cluster/AT3/a/Jac Part 1/Informed Consent Form - Jac Monselli (Jason Goodwin S201008232).docx",
+      "CHCMHS002CHCMHS003CHCMHS004 Recovery Relationships and care Networks Cluster/AT3/a/Jac Part 1/Recovery Observation Jac Monselli (Jason Goodwin S201008232).docx",
+      "CHCMHS002CHCMHS003CHCMHS004 Recovery Relationships and care Networks Cluster/AT3/a/Jac Part 1/Recovery Plan - Jac Monselli (Jason Goodwin S201008232).docx",
+      "CHCMHS002CHCMHS003CHCMHS004 Recovery Relationships and care Networks Cluster/AT3/a/Jac Part 1/Referral Information Form - Jac Monselli (Jason Goodwin S201008232).docx",
+      "CHCMHS002CHCMHS003CHCMHS004 Recovery Relationships and care Networks Cluster/AT3/a/Jac Part 1/Reflection - Recovery Observation Task 1 - Part 1.docx",
+      "CHCMHS002CHCMHS003CHCMHS004 Recovery Relationships and care Networks Cluster/AT3/b/Appendix 4 - Recovery Plan Part 2 (1).docx",
+      "CHCMHS002CHCMHS003CHCMHS004 Recovery Relationships and care Networks Cluster/AT3/b/Appendix 4 - Recovery Plan Part 2 (2).docx",
+      "CHCMHS002CHCMHS003CHCMHS004 Recovery Relationships and care Networks Cluster/AT3/b/Jac Part 2.zip",
+      "CHCMHS002CHCMHS003CHCMHS004 Recovery Relationships and care Networks Cluster/AT3/b/Reflection - Care Network Observation Task 2 - Part 2 (1).docx",
+      "CHCMHS002CHCMHS003CHCMHS004 Recovery Relationships and care Networks Cluster/AT3/b/Reflection - Care Network Observation Task 2 - Part 2 (2).docx",
+      "CHCMHS002CHCMHS003CHCMHS004 Recovery Relationships and care Networks Cluster/AT3/b/Jac Part 2/Appendix 4 - Recovery Plan Part 2.docx",
+      "CHCMHS002CHCMHS003CHCMHS004 Recovery Relationships and care Networks Cluster/AT3/b/Jac Part 2/Recovery Plan Part 2 - Jac Monselli (Jason Goodwin S201008232).docx",
+      "CHCMHS002CHCMHS003CHCMHS004 Recovery Relationships and care Networks Cluster/AT3/b/Jac Part 2/Reflection - Care Network Observation Task 2 - Part 2.docx",
+      "CHCMHS002CHCMHS003CHCMHS004 Recovery Relationships and care Networks Cluster/AT3/b/Jac Part 2/Reflection - Part 2 - Jac Monselli (Jason Goodwin S201008232).docx",
+      "CHCMHS002CHCMHS003CHCMHS004 Recovery Relationships and care Networks Cluster/AT3/Part A/Appendix 3 - Referral Information Form.docx",
+      "CHCMHS002CHCMHS003CHCMHS004 Recovery Relationships and care Networks Cluster/AT3/Part A/Appendix 4 - Recovery Plan - Part 1_Inital.docx",
+      "CHCMHS002CHCMHS003CHCMHS004 Recovery Relationships and care Networks Cluster/AT3/Part A/Prevention and early intervention in youth (1).pdf",
+      "CHCMHS002CHCMHS003CHCMHS004 Recovery Relationships and care Networks Cluster/AT3/Part A/Recovery Plan Guide.docx",
+      "CHCMHS002CHCMHS003CHCMHS004 Recovery Relationships and care Networks Cluster/AT3/Part A/Recovery Role Play 1 Worker Prompts.docx",
+      "CHCMHS002CHCMHS003CHCMHS004 Recovery Relationships and care Networks Cluster/AT3/Part A/Reflection - Care Network Observation Task 2.docx",
+      "CHCMHS002CHCMHS003CHCMHS004 Recovery Relationships and care Networks Cluster/AT3/Part A/Reflective Practice.docx",
+      "CHCMHS002CHCMHS003CHCMHS004 Recovery Relationships and care Networks Cluster/AT3/Part A/Role Play Practice Guide \u2013 Jac responses possible prompts.docx",
+      "CHCMHS002CHCMHS003CHCMHS004 Recovery Relationships and care Networks Cluster/AT3/Part A/The effectiveness, implementation and experiences of peer support for mental health.pdf",
+      "CHCMHS002CHCMHS003CHCMHS004 Recovery Relationships and care Networks Cluster/AT3/Part B/Appendix 4 - Recovery Plan Part 2-Secondary .docx",
+      "CHCMHS002CHCMHS003CHCMHS004 Recovery Relationships and care Networks Cluster/AT3/Part B/CHCMHS002CHCMHS003CHCMHS004 Assessment Task 3 - Templates-20260505.zip"
+    ],
+    "sample_dirs": [
+      "CHCMHS002CHCMHS003CHCMHS004 Recovery Relationships and care Networks Cluster",
+      "CHCMHS002CHCMHS003CHCMHS004 Recovery Relationships and care Networks Cluster/AT1",
+      "CHCMHS002CHCMHS003CHCMHS004 Recovery Relationships and care Networks Cluster/AT2",
+      "CHCMHS002CHCMHS003CHCMHS004 Recovery Relationships and care Networks Cluster/AT3",
+      "CHCMHS002CHCMHS003CHCMHS004 Recovery Relationships and care Networks Cluster/AT3/a",
+      "CHCMHS002CHCMHS003CHCMHS004 Recovery Relationships and care Networks Cluster/AT3/a/Jac Part 1",
+      "CHCMHS002CHCMHS003CHCMHS004 Recovery Relationships and care Networks Cluster/AT3/b",
+      "CHCMHS002CHCMHS003CHCMHS004 Recovery Relationships and care Networks Cluster/AT3/b/Jac Part 2",
+      "CHCMHS002CHCMHS003CHCMHS004 Recovery Relationships and care Networks Cluster/AT3/Part A",
+      "CHCMHS002CHCMHS003CHCMHS004 Recovery Relationships and care Networks Cluster/AT3/Part B",
+      "CHCMHS002CHCMHS003CHCMHS004 Recovery Relationships and care Networks Cluster/AT4",
+      "CHCMHS002CHCMHS003CHCMHS004 Recovery Relationships and care Networks Cluster/Resources",
+      "CHCMHS002CHCMHS003CHCMHS004 Recovery Relationships and care Networks Cluster/Sessions_Notes",
+      "CHCMHS011 -  Assess and promote social, emotional and physical wellbeing",
+      "CHCMHS011 -  Assess and promote social, emotional and physical wellbeing/Additional Resources",
+      "CHCMHS011 -  Assess and promote social, emotional and physical wellbeing/AT2",
+      "CHCMHS011 -  Assess and promote social, emotional and physical wellbeing/AT3",
+      "CHCMHS011 -  Assess and promote social, emotional and physical wellbeing/AT4",
+      "CHCMHS011 -  Assess and promote social, emotional and physical wellbeing/AT4/CHCMHS011 Assessment Task 4 Portfolio Resources and Templates-20260615",
+      "CHCMHS011 -  Assess and promote social, emotional and physical wellbeing/Sessions",
+      "CHCMS010 - Implement Recovery Orientated approches to complexity",
+      "CHCMS010 - Implement Recovery Orientated approches to complexity/AT1",
+      "CHCMS010 - Implement Recovery Orientated approches to complexity/AT2",
+      "CHCMS010 - Implement Recovery Orientated approches to complexity/AT3",
+      "CHCMS010 - Implement Recovery Orientated approches to complexity/Resources",
+      "CHCMS010 - Implement Recovery Orientated approches to complexity/Role Plays",
+      "CHCMS010 - Implement Recovery Orientated approches to complexity/Sessions",
+      "CHCPOL003 Research and apply evidence to practice",
+      "CHCPOL003 Research and apply evidence to practice/Announcements",
+      "CHCPOL003 Research and apply evidence to practice/AT1"
+    ],
+    "classification": "knowledge_reference_project"
+  },
+  {
+    "name": "Chisholm AOD Course Work",
+    "path": "C:/Users/Kidsg/OneDrive/Desktop/Chisholm 2025 - AOD Course Work",
+    "exists": true,
+    "is_dir": true,
+    "file_count": 344,
+    "dir_count": 83,
+    "top_ext": [
+      [
+        ".docx",
+        248
+      ],
+      [
+        ".pdf",
+        47
+      ],
+      [
+        ".pptx",
+        15
+      ],
+      [
+        ".rtf",
+        10
+      ],
+      [
+        ".doc",
+        8
+      ],
+      [
+        ".xlsx",
+        5
+      ],
+      [
+        ".jpg",
+        5
+      ],
+      [
+        ".zip",
+        4
+      ],
+      [
+        ".png",
+        1
+      ],
+      [
+        ".txt",
+        1
+      ]
+    ],
+    "code_markers": [],
+    "secret_like_files": [],
+    "sample_files": [
+      "2025 CASS Indicative Calendar.xlsx",
+      "AOD Services .xlsx",
+      "CHCAOD001 AOD context/AOD001_Assessment task 1 Jason Goodwin (S201008232).docx",
+      "CHCAOD001 AOD context/AOD001_Assessment task 2 - Jason Goodwin (S201008232).docx",
+      "CHCAOD001 AOD context/AOD001_Assessment task 3 - Jason Goodwin (S201008232).docx",
+      "CHCAOD001 AOD context/CHCAOD001 hurdle task.docx",
+      "CHCAOD001 AOD context/consent-to-share-information-v04---doc.doc",
+      "CHCAOD001 AOD context/AT4/AOD001_Assessment task 4 _roleplay scenarios and criterea.docx",
+      "CHCCC5004 Coexisting Needs/AG_CHCCCS004_33_25_COM (2).docx",
+      "CHCCC5004 Coexisting Needs/Appendix 5 \u2013 Policies and Procedures.docx",
+      "CHCCC5004 Coexisting Needs/Case Plan Template 2023.docx",
+      "CHCCC5004 Coexisting Needs/CHCCCCAssesment 1 - Marion - (Jason Goodwin_201008232).docx",
+      "CHCCC5004 Coexisting Needs/CHCCCS004 Appendix 1.docx",
+      "CHCCC5004 Coexisting Needs/CHCCCS004 Appendix 3 Marion - (Jason Goodwin_201008232).docx",
+      "CHCCC5004 Coexisting Needs/CHCCCS004 strengths tool Marion - (Jason Goodwin_201008232).docx",
+      "CHCCC5004 Coexisting Needs/CHCCCS004 strengths tool.pdf",
+      "CHCCC5004 Coexisting Needs/AT 2/Basic session outline RP.docx",
+      "CHCCC5004 Coexisting Needs/AT 2/CHCCCS004 Assessment Task 2  K-10 - Jason Goodwin (S201008232).docx",
+      "CHCCC5004 Coexisting Needs/AT 2/CHCCCS004 Assessment Task 2 - Case Plan Jason Goodwin (S201008232).docx",
+      "CHCCC5004 Coexisting Needs/AT 2/CHCCCS004 Assessment Task 2 - Questions Jason Goodwin (S201008232).docx",
+      "CHCCC5004 Coexisting Needs/AT 2/CHCCCS004 AT2 PORTFOLIO 2 ^0 OBSERVATION 1 Jim .docx",
+      "CHCCC5004 Coexisting Needs/AT 2/k10.pdf",
+      "CHCCC5004 Coexisting Needs/AT 2/Resources for Jimbo.docx",
+      "CHCCC5004 Coexisting Needs/AT 2/table with info.docx",
+      "CHCCC5004 Coexisting Needs/AT3/Appendix 5 \u2013 Policies and Procedures.docx",
+      "CHCCC5004 Coexisting Needs/AT3/Basic session outline (1).docx",
+      "CHCCC5004 Coexisting Needs/AT3/Biopsychosocial Tool Template 2023.docx",
+      "CHCCC5004 Coexisting Needs/AT3/Case Plan Template 2023 (1).docx",
+      "CHCCC5004 Coexisting Needs/AT3/CHCCCS004 - Prepare for assessment AT3 Template (2).docx",
+      "CHCCC5004 Coexisting Needs/AT3/CHCCCS004 Aarash questions.docx",
+      "CHCCC5004 Coexisting Needs/AT3/CHCCCS004 Appendix 3 (1).docx",
+      "CHCHCCS014 Brief Interventions/AG_CHCCCS014_33_25_CHC43215.pdf",
+      "CHCHCCS014 Brief Interventions/CHCCCS014 - Assessment 2 Jason Goodwin (S201008232).docx",
+      "CHCHCCS014 Brief Interventions/CHCCCS014 - AT1 Jason Goodwin (S201008232)_submission2.docx",
+      "CHCHCCS014 Brief Interventions/CHCCCS014 - AT1 Template.docx",
+      "CHCHCCS014 Brief Interventions/CHCCCS014 - Hurdle Tasks (Jason Goodwin s201008232).docx",
+      "CHCHCCS014 Brief Interventions/RP/Jim/Appendix 1 \u2013 Policies and procedures.docx",
+      "CHCHCCS014 Brief Interventions/RP/Jim/Appendix 2 \u2013 Referral Information Form Template.docx",
+      "CHCHCCS014 Brief Interventions/RP/Jim/Appendix 3 - SOAP Case Note - Jim Jones.docx",
+      "CHCHCCS014 Brief Interventions/RP/Jim/Referral Information Form - Jim.docx",
+      "CHCHCCS014 Brief Interventions/RP/Renee/Appendix 1 \u2013 Policies and procedures.docx",
+      "CHCHCCS014 Brief Interventions/RP/Renee/Appendix 3 - SOAP Case Note.docx",
+      "CHCHCCS014 Brief Interventions/RP/Renee/feedback.pdf",
+      "CHCHCCS014 Brief Interventions/RP/Renee/Referral Information Form - Renee.docx",
+      "CHCHCCS014 Brief Interventions/RP/Renee/report_1747270317658.pdf"
+    ],
+    "sample_dirs": [
+      "CHCAOD001 AOD context",
+      "CHCAOD001 AOD context/AT4",
+      "CHCCC5004 Coexisting Needs",
+      "CHCCC5004 Coexisting Needs/AT 2",
+      "CHCCC5004 Coexisting Needs/AT3",
+      "CHCHCCS014 Brief Interventions",
+      "CHCHCCS014 Brief Interventions/RP",
+      "CHCHCCS014 Brief Interventions/RP/Jim",
+      "CHCHCCS014 Brief Interventions/RP/Renee",
+      "CHCLEG0001 Legal and Ethical",
+      "CHCMHS001 Mental Health",
+      "CHCMHS001 Mental Health/AT3",
+      "CHCMHS001 Mental Health/AT4",
+      "CHCMHS001 Mental Health/AT4/Alex",
+      "CHCMHS001 Mental Health/AT4/Janie",
+      "CHCPRP001_CHCCOM002 Communications and Networking",
+      "CHCPRP001_CHCCOM002 Communications and Networking/AT4",
+      "CHCSOH013 Housing and Homelessness",
+      "CHCSOH013 Housing and Homelessness/AT4",
+      "Chisholm",
+      "Chisholm/Semester 1",
+      "Chisholm/Semester 1/CHCAOD001 AOD context",
+      "Chisholm/Semester 1/CHCAOD001 AOD context/AT4",
+      "Chisholm/Semester 1/CHCAOD001 AOD context/AT4/Justin",
+      "Chisholm/Semester 1/CHCAOD001 AOD context/AT4/Renee",
+      "Chisholm/Semester 1/CHCCC5004 Coexisting Needs",
+      "Chisholm/Semester 1/CHCCC5004 Coexisting Needs/AT 2",
+      "Chisholm/Semester 1/CHCCC5004 Coexisting Needs/AT3",
+      "Chisholm/Semester 1/CHCHCCS014 Brief Interventions",
+      "Chisholm/Semester 1/CHCHCCS014 Brief Interventions/RP"
+    ],
+    "classification": "knowledge_reference_project"
+  },
+  {
+    "name": "Bybit Downloads",
+    "path": "C:/Users/Kidsg/CrossDevice/Pixel 9 Pro Fold/storage/Download",
+    "exists": true,
+    "is_dir": true,
+    "file_count": 222,
+    "dir_count": 9,
+    "top_ext": [
+      [
+        ".pdf",
+        105
+      ],
+      [
+        ".md",
+        27
+      ],
+      [
+        ".docx",
+        19
+      ],
+      [
+        ".html",
+        11
+      ],
+      [
+        ".csv",
+        11
+      ],
+      [
+        ".zip",
+        8
+      ],
+      [
+        ".mht",
+        6
+      ],
+      [
+        ".ics",
+        4
+      ],
+      [
+        ".png",
+        4
+      ],
+      [
+        ".mp4",
+        4
+      ],
+      [
+        ".jsx",
+        3
+      ],
+      [
+        "[none]",
+        3
+      ],
+      [
+        ".mp3",
+        3
+      ],
+      [
+        ".apk",
+        3
+      ]
+    ],
+    "code_markers": [],
+    "secret_like_files": [],
+    "sample_files": [
+      "01_System_Analysis.docx",
+      "23-basketball-defense.pdf",
+      "25 33 FR CHC43215 FEB G1 SKEWES-Jason GOODWIN_4359030_0.pdf",
+      "29046285.pdf",
+      "2cup4wgg6r0gw08s.pdf",
+      "5A5C3FAC774D98C5BC5709D2BF46E2490EA68652040DBF061450E120BA84F63900.blob",
+      "6624491b-d136-4996-90a5-715070c07ff8.ics",
+      "66a26a64a4d588f0092e6843_Theoriq_Litepaper_2024JUL23r2.pdf",
+      "A-Simple-Guide-to-Using-LED-2023 (1).pdf",
+      "A-Simple-Guide-to-Using-LED-2023.pdf",
+      "Advice_Sheet_-_Adults_December_10_(PROJECT_ROCKIT).pdf",
+      "airdrop_agent_build_pack_v1_1.zip",
+      "airdrop_agent_docs_v1.zip",
+      "AOD-Peer-Support-Worker-Position-Description.pdf",
+      "appointment.ics",
+      "articulation-guide.jsx",
+      "Astra+Arbitrage+-+Free+Guide.pdf",
+      "basketball_coach_playboard_app_plan-1.pdf",
+      "basketball_coach_playboard_app_plan.pdf",
+      "Benefits of Docs premium membership_230912_214842-1.pdf",
+      "Benefits of Docs premium membership_230912_214842.pdf",
+      "Bitcoin Exchange _ Cryptocurrency Exchange _ Binance",
+      "bodyweight_basketball_training_app.html",
+      "bodyweight_basketball_training_app_v2.html",
+      "bodyweight_basketball_training_app_v3-1.html",
+      "bodyweight_basketball_training_app_v3.html",
+      "bodyweight_basketball_training_app_v4.zip",
+      "bodyweight_basketball_training_app_v5.zip",
+      "BP024381-749A4DAFDB.pdf",
+      "Bsasketball Regional Finals Fixture.pdf",
+      "BTC-QF.pdf",
+      "Bybit_AI_Trading_Platform_MultiInstance_Build_Spec-1.docx",
+      "Bybit_AI_Trading_Platform_MultiInstance_Build_Spec-2.docx",
+      "Bybit_AI_Trading_Platform_MultiInstance_Build_Spec-3.docx",
+      "Bybit_AI_Trading_Platform_MultiInstance_Build_Spec-4.docx",
+      "Bybit_AI_Trading_Platform_MultiInstance_Build_Spec.docx",
+      "Bybit_AI_Trading_Platform_Standalone_Build_Spec.docx",
+      "Bybit_AI_Trading_Platform_Unified_Build_Spec.docx",
+      "Bybit_Claude_Code_Architecture_HiRes.png",
+      "Bybit_MultiInstance_Architecture-1.png",
+      "Bybit_MultiInstance_Architecture-2.png",
+      "Bybit_MultiInstance_Architecture.png",
+      "CCV_Strategic_Plan_Booklet_Final.pdf",
+      "challenging unhelpful thoughts socratic-questioning.pdf",
+      "CHCAOD006-009 Assessment Task 2 - Jason Goodwin (S201008232).docx"
+    ],
+    "sample_dirs": [
+      "bodyweight_basketball_training_app_v4",
+      "bodyweight_basketball_training_app_v4/assets",
+      "bodyweight_basketball_training_app_v5",
+      "Start_a_blog,_start_a_business__How_to_start_a_blog_and_turn_it_into_a_profitable_business",
+      "Start_a_blog,_start_a_business__How_to_start_a_blog_and_turn_it_into_a_profitable_business/Ebook",
+      "Start_building_your_financial_freedom_today__50_no-cost_ways_to_make_money_online!",
+      "Telegram",
+      "venice-all-videos-1783395480145",
+      "venice-all-videos-1783395480145/videos"
+    ],
+    "classification": "code_or_mixed_project"
+  }
+]

@@ -1,0 +1,43 @@
+{
+  "idea_id": "2026-07-13-QTF-MORNING-01",
+  "generated_at": "2026-07-12T23:30:44+00:00",
+  "data": "Bybit public daily spot closes",
+  "symbols": [
+    "BTCUSDT",
+    "ETHUSDT",
+    "SOLUSDT"
+  ],
+  "execution": "next-bar close-to-close; signal formed at prior close",
+  "cost_assumption_bps_per_position_change": 20.0,
+  "strategy_rule": "Long BTC only when close>SMA20>SMA50 and 7-day momentum>0; otherwise cash.",
+  "strategy": {
+    "days": 679,
+    "total_return_pct": -2.772,
+    "cagr_pct": -1.5,
+    "annual_vol_pct": 20.729,
+    "sharpe": 0.03,
+    "max_drawdown_pct": -27.71
+  },
+  "btc_buy_hold": {
+    "days": 679,
+    "total_return_pct": 11.403,
+    "cagr_pct": 5.976,
+    "annual_vol_pct": 44.685,
+    "sharpe": 0.353,
+    "max_drawdown_pct": -52.968
+  },
+  "equal_weight_buy_hold": {
+    "days": 679,
+    "total_return_pct": -15.475,
+    "cagr_pct": -8.641,
+    "annual_vol_pct": 60.167,
+    "sharpe": 0.15,
+    "max_drawdown_pct": -64.312
+  },
+  "trades_or_position_changes": 62,
+  "exposure_pct": 27.246,
+  "decision": "do_not_promote",
+  "blocking_reasons": [
+    "First-pass strategy did not beat both passive benchmarks after modeled costs and satisfy minimum evidence gates."
+  ]
+}

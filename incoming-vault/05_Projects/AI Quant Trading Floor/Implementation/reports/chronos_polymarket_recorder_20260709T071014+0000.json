@@ -1,0 +1,190 @@
+{
+  "bybit_candle_count": 18,
+  "bybit_klines": {
+    "BTCUSDT": {
+      "1": [
+        {
+          "close": 62888.6,
+          "high": 62900.9,
+          "low": 62873.0,
+          "open": 62889.2,
+          "start_ms": 1783580880000,
+          "turnover": 3018048.149,
+          "volume": 47.994
+        },
+        {
+          "close": 62863.4,
+          "high": 62890.0,
+          "low": 62858.4,
+          "open": 62888.6,
+          "start_ms": 1783580940000,
+          "turnover": 8901011.6197,
+          "volume": 141.569
+        },
+        {
+          "close": 62836.8,
+          "high": 62863.4,
+          "low": 62825.0,
+          "open": 62863.4,
+          "start_ms": 1783581000000,
+          "turnover": 3052561.7843,
+          "volume": 48.575
+        }
+      ],
+      "15": [
+        {
+          "close": 62824.9,
+          "high": 62825.0,
+          "low": 62709.4,
+          "open": 62792.5,
+          "start_ms": 1783578600000,
+          "turnover": 50862426.4958,
+          "volume": 810.329
+        },
+        {
+          "close": 62924.9,
+          "high": 62989.0,
+          "low": 62784.2,
+          "open": 62824.9,
+          "start_ms": 1783579500000,
+          "turnover": 60833898.612,
+          "volume": 967.4
+        },
+        {
+          "close": 62836.8,
+          "high": 63152.3,
+          "low": 62825.0,
+          "open": 62924.9,
+          "start_ms": 1783580400000,
+          "turnover": 101579576.1163,
+          "volume": 1613.039
+        }
+      ],
+      "5": [
+        {
+          "close": 62919.6,
+          "high": 63152.3,
+          "low": 62914.6,
+          "open": 62924.9,
+          "start_ms": 1783580400000,
+          "turnover": 66244731.3935,
+          "volume": 1051.054
+        },
+        {
+          "close": 62863.4,
+          "high": 62935.9,
+          "low": 62843.0,
+          "open": 62919.6,
+          "start_ms": 1783580700000,
+          "turnover": 32282282.9385,
+          "volume": 513.41
+        },
+        {
+          "close": 62836.8,
+          "high": 62863.4,
+          "low": 62825.0,
+          "open": 62863.4,
+          "start_ms": 1783581000000,
+          "turnover": 3052561.7843,
+          "volume": 48.575
+        }
+      ]
+    },
+    "ETHUSDT": {
+      "1": [
+        {
+          "close": 1753.45,
+          "high": 1754.21,
+          "low": 1752.57,
+          "open": 1753.84,
+          "start_ms": 1783580880000,
+          "turnover": 2438474.1191,
+          "volume": 1391.01
+        },
+        {
+          "close": 1752.42,
+          "high": 1753.61,
+          "low": 1752.32,
+          "open": 1753.45,
+          "start_ms": 1783580940000,
+          "turnover": 757198.5144,
+          "volume": 431.93
+        },
+        {
+          "close": 1751.53,
+          "high": 1752.42,
+          "low": 1751.52,
+          "open": 1752.42,
+          "start_ms": 1783581000000,
+          "turnover": 557362.4242,
+          "volume": 318.16
+        }
+      ],
+      "15": [
+        {
+          "close": 1754.45,
+          "high": 1754.63,
+          "low": 1750.7,
+          "open": 1752.3,
+          "start_ms": 1783578600000,
+          "turnover": 13172563.2402,
+          "volume": 7516.19
+        },
+        {
+          "close": 1754.67,
+          "high": 1755.19,
+          "low": 1751.5,
+          "open": 1754.45,
+          "start_ms": 1783579500000,
+          "turnover": 14274825.9782,
+          "volume": 8142.35
+        },
+        {
+          "close": 1751.51,
+          "high": 1761.94,
+          "low": 1751.46,
+          "open": 1754.67,
+          "start_ms": 1783580400000,
+          "turnover": 41182836.0881,
+          "volume": 23441.55
+        }
+      ],
+      "5": [
+        {
+          "close": 1755.36,
+          "high": 1761.94,
+          "low": 1753.81,
+          "open": 1754.67,
+          "start_ms": 1783580400000,
+          "turnover": 28940571.519,
+          "volume": 16459.4
+        },
+        {
+          "close": 1752.42,
+          "high": 1755.83,
+          "low": 1752.32,
+          "open": 1755.36,
+          "start_ms": 1783580700000,
+          "turnover": 11678579.1954,
+          "volume": 6660.38
+        },
+        {
+          "close": 1751.53,
+          "high": 1752.42,
+          "low": 1751.52,
+          "open": 1752.42,
+          "start_ms": 1783581000000,
+          "turnover": 557362.4242,
+          "volume": 318.16
+        }
+      ]
+    }
+  },
+  "candidate": "QTF-Candidate Chronos Polymarket Directional Edge",
+  "errors": [],
+  "mode": "read-only public-data snapshot; no auth, wallets, orders, or live trading",
+  "module": "chronos_polymarket_recorder",
+  "polymarket_market_count": 0,
+  "polymarket_updown_markets": [],
+  "recorded_at": "2026-07-09T07:10:14+00:00"
+}

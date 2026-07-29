@@ -1,0 +1,572 @@
+{
+  "classified_markets": 199,
+  "cross_venue": {
+    "bybit_symbols_checked": [
+      "BTCUSDT",
+      "ETHUSDT"
+    ],
+    "calibration_summary": {
+      "crypto_binary_markets": 25,
+      "markets_with_bybit_reference": 25,
+      "note": "Calibration requires resolved outcome data for Brier/log-loss; this run measures price formation quality and cross-venue alignment",
+      "total_pm_markets": 199,
+      "well_formed_binary": 3
+    },
+    "crypto_binary_markets": 25,
+    "market_results": [
+      {
+        "bybit_funding_rate": null,
+        "bybit_index_price": null,
+        "bybit_last_price": 1839.31,
+        "calibration_note": "PM prices sum to ~1 (1.0000), well-formed binary market",
+        "condition_id": "0x121219e45fc34b566d95601f78e80dd8ad72267f35affb90f5a4cca40cea57c3",
+        "end_dt": "2026-07-21T16:00:00+00:00",
+        "interval_minutes": null,
+        "is_binary_priced": true,
+        "is_updown": false,
+        "liquidity": 8519.46397,
+        "market_id": "2922772",
+        "pm_implied_probs": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "pm_price_sum": 1.0,
+        "question": "Will the price of Ethereum be above $1,500 on July 21?",
+        "volume": 9.9902
+      },
+      {
+        "bybit_funding_rate": null,
+        "bybit_index_price": null,
+        "bybit_last_price": 1839.09,
+        "calibration_note": "PM prices sum to ~1 (1.0000), well-formed binary market",
+        "condition_id": "0x10d8e0d7123623b6cd8303aab6d2e61792b8aded915336efb3adc11df448937b",
+        "end_dt": "2027-01-01T05:00:00+00:00",
+        "interval_minutes": null,
+        "is_binary_priced": true,
+        "is_updown": false,
+        "liquidity": 463.454,
+        "market_id": "2119266",
+        "pm_implied_probs": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "pm_price_sum": 1.0,
+        "question": "Will MegaETH perform an airdrop by December 31, 2026?",
+        "volume": 9933.046146999992
+      },
+      {
+        "bybit_funding_rate": null,
+        "bybit_index_price": null,
+        "bybit_last_price": 1839.09,
+        "calibration_note": "PM prices do not sum to ~1 (0.0000), multi-outcome or malformed market",
+        "condition_id": "0x903ff6545b991c4fcbd781b907f36298e8d7b06cc293bb621b272c3e06bad6ce",
+        "end_dt": "2026-07-20T04:00:00+00:00",
+        "interval_minutes": null,
+        "is_binary_priced": false,
+        "is_updown": false,
+        "liquidity": 15311.64258,
+        "market_id": "2901830",
+        "pm_implied_probs": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pm_price_sum": 0.0,
+        "question": "Will Ethereum dip to $1,600 July 13-19?",
+        "volume": 9925.996709000001
+      },
+      {
+        "bybit_funding_rate": null,
+        "bybit_index_price": null,
+        "bybit_last_price": 1839.09,
+        "calibration_note": "PM prices do not sum to ~1 (2.0000), multi-outcome or malformed market",
+        "condition_id": "0xb2ae8a50367a1a33e7550b5772af38c95c491d6424aa067dac09fd071d350ede",
+        "end_dt": "2026-07-22T16:00:00+00:00",
+        "interval_minutes": null,
+        "is_binary_priced": false,
+        "is_updown": false,
+        "liquidity": 10922.13819,
+        "market_id": "2935337",
+        "pm_implied_probs": [
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0
+        ],
+        "pm_price_sum": 2.0,
+        "question": "Will the price of Bitcoin be above $56,000 on July 22?",
+        "volume": 99.22
+      },
+      {
+        "bybit_funding_rate": null,
+        "bybit_index_price": null,
+        "bybit_last_price": 1839.09,
+        "calibration_note": "PM prices sum to ~1 (1.0000), well-formed binary market",
+        "condition_id": "0x8feaa8e4dfa663c16eaf0e7976153e7f69054697d14a7b415ae94398f66df8ab",
+        "end_dt": "2026-07-18T04:00:00+00:00",
+        "interval_minutes": null,
+        "is_binary_priced": true,
+        "is_updown": false,
+        "liquidity": 14236.84831,
+        "market_id": "2955368",
+        "pm_implied_probs": [
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "pm_price_sum": 1.0,
+        "question": "Will Bitcoin reach $70,000 on July 17?",
+        "volume": 991.341
+      },
+      {
+        "bybit_funding_rate": null,
+        "bybit_index_price": null,
+        "bybit_last_price": 1839.09,
+        "calibration_note": "PM prices do not sum to ~1 (0.0000), multi-outcome or malformed market",
+        "condition_id": "0x7956b609d81c3da69155a044cb5f1a1657bcde80e51a64b1d2f109f69434a0f7",
+        "end_dt": "2026-07-18T16:35:00+00:00",
+        "interval_minutes": null,
+        "is_binary_priced": false,
+        "is_updown": true,
+        "liquidity": 0.0,
+        "market_id": "2960368",
+        "pm_implied_probs": [],
+        "pm_price_sum": 0.0,
+        "question": "Ethereum Up or Down - July 18, 12:30PM-12:35PM ET",
+        "volume": 0.0
+      },
+      {
+        "bybit_funding_rate": null,
+        "bybit_index_price": null,
+        "bybit_last_price": 1839.08,
+        "calibration_note": "PM prices do not sum to ~1 (0.0000), multi-outcome or malformed market",
+        "condition_id": "0x4abb87224f7e0b3b7e5a2e29e86540abc8ee7edddf28231d0f15836860202df4",
+        "end_dt": "2026-07-18T16:35:00+00:00",
+        "interval_minutes": null,
+        "is_binary_priced": false,
+        "is_updown": true,
+        "liquidity": 0.0,
+        "market_id": "2960367",
+        "pm_implied_probs": [],
+        "pm_price_sum": 0.0,
+        "question": "Bitcoin Up or Down - July 18, 12:30PM-12:35PM ET",
+        "volume": 0.0
+      },
+      {
+        "bybit_funding_rate": null,
+        "bybit_index_price": null,
+        "bybit_last_price": 1838.7,
+        "calibration_note": "PM prices do not sum to ~1 (0.0000), multi-outcome or malformed market",
+        "condition_id": "0xaffc2890be8e39f9ffd0ccb3a62acd7ee7874561a58e1df02dbec38ab5086d17",
+        "end_dt": "2026-07-18T16:45:00+00:00",
+        "interval_minutes": null,
+        "is_binary_priced": false,
+        "is_updown": true,
+        "liquidity": 13705.1576,
+        "market_id": "2960366",
+        "pm_implied_probs": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pm_price_sum": 0.0,
+        "question": "Bitcoin Up or Down - July 18, 12:30PM-12:45PM ET",
+        "volume": 0.0
+      },
+      {
+        "bybit_funding_rate": null,
+        "bybit_index_price": null,
+        "bybit_last_price": 1838.77,
+        "calibration_note": "PM prices do not sum to ~1 (0.0000), multi-outcome or malformed market",
+        "condition_id": "0x0a6e8610f5774b3dec32833f6687992d98b8bc58ba514c9dca8e2d61031c8243",
+        "end_dt": "2026-07-18T16:45:00+00:00",
+        "interval_minutes": null,
+        "is_binary_priced": false,
+        "is_updown": true,
+        "liquidity": 10981.68,
+        "market_id": "2960356",
+        "pm_implied_probs": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pm_price_sum": 0.0,
+        "question": "Ethereum Up or Down - July 18, 12:30PM-12:45PM ET",
+        "volume": 0.0
+      },
+      {
+        "bybit_funding_rate": null,
+        "bybit_index_price": null,
+        "bybit_last_price": 1838.77,
+        "calibration_note": "PM prices do not sum to ~1 (0.0000), multi-outcome or malformed market",
+        "condition_id": "0xdd77f1c8fd9b9b48aa4531dd72399ce119e9eccf02d4b2f6d08f1ba77964aa08",
+        "end_dt": "2026-07-18T16:30:00+00:00",
+        "interval_minutes": null,
+        "is_binary_priced": false,
+        "is_updown": true,
+        "liquidity": 5398.9396,
+        "market_id": "2960334",
+        "pm_implied_probs": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pm_price_sum": 0.0,
+        "question": "Ethereum Up or Down - July 18, 12:25PM-12:30PM ET",
+        "volume": 0.0
+      },
+      {
+        "bybit_funding_rate": null,
+        "bybit_index_price": null,
+        "bybit_last_price": 1838.77,
+        "calibration_note": "PM prices do not sum to ~1 (0.0000), multi-outcome or malformed market",
+        "condition_id": "0xdc3b654ac770cb77ec69f2e57baa09aaa5ce1b5a71b7af1c38507cf531bd59b6",
+        "end_dt": "2026-07-18T16:30:00+00:00",
+        "interval_minutes": null,
+        "is_binary_priced": false,
+        "is_updown": true,
+        "liquidity": 7884.5452,
+        "market_id": "2960332",
+        "pm_implied_probs": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pm_price_sum": 0.0,
+        "question": "Bitcoin Up or Down - July 18, 12:25PM-12:30PM ET",
+        "volume": 0.0
+      },
+      {
+        "bybit_funding_rate": null,
+        "bybit_index_price": null,
+        "bybit_last_price": 1838.7,
+        "calibration_note": "PM prices do not sum to ~1 (0.0000), multi-outcome or malformed market",
+        "condition_id": "0x319c1359657e12ee8714c9e71e3f1b90309de36902a495f8ba3c931fb5048a94",
+        "end_dt": "2026-07-18T16:25:00+00:00",
+        "interval_minutes": null,
+        "is_binary_priced": false,
+        "is_updown": true,
+        "liquidity": 7925.4737,
+        "market_id": "2960326",
+        "pm_implied_probs": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pm_price_sum": 0.0,
+        "question": "Bitcoin Up or Down - July 18, 12:20PM-12:25PM ET",
+        "volume": 0.0
+      },
+      {
+        "bybit_funding_rate": null,
+        "bybit_index_price": null,
+        "bybit_last_price": 1838.87,
+        "calibration_note": "PM prices do not sum to ~1 (0.0000), multi-outcome or malformed market",
+        "condition_id": "0xf5a5496bfc1142f4c242bffa2cbd6d18fac39fbd0d6b4343247345276cb08195",
+        "end_dt": "2026-07-18T16:25:00+00:00",
+        "interval_minutes": null,
+        "is_binary_priced": false,
+        "is_updown": true,
+        "liquidity": 5387.0387,
+        "market_id": "2960321",
+        "pm_implied_probs": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pm_price_sum": 0.0,
+        "question": "Ethereum Up or Down - July 18, 12:20PM-12:25PM ET",
+        "volume": 0.0
+      },
+      {
+        "bybit_funding_rate": null,
+        "bybit_index_price": null,
+        "bybit_last_price": 1838.87,
+        "calibration_note": "PM prices do not sum to ~1 (0.0000), multi-outcome or malformed market",
+        "condition_id": "0x7bb72631f41acd9f5f96fe095d1d8d7721915151ce554d292e8e87325573eed6",
+        "end_dt": "2026-07-18T16:20:00+00:00",
+        "interval_minutes": null,
+        "is_binary_priced": false,
+        "is_updown": true,
+        "liquidity": 7994.2631,
+        "market_id": "2960316",
+        "pm_implied_probs": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pm_price_sum": 0.0,
+        "question": "Bitcoin Up or Down - July 18, 12:15PM-12:20PM ET",
+        "volume": 0.0
+      },
+      {
+        "bybit_funding_rate": null,
+        "bybit_index_price": null,
+        "bybit_last_price": 1839.05,
+        "calibration_note": "PM prices do not sum to ~1 (0.0000), multi-outcome or malformed market",
+        "condition_id": "0x7f80d798c6dd5f8815cc5bd40569cb444d1a247ed468b93e455fc8449c2e2e0b",
+        "end_dt": "2026-07-18T16:30:00+00:00",
+        "interval_minutes": null,
+        "is_binary_priced": false,
+        "is_updown": true,
+        "liquidity": 16727.3195,
+        "market_id": "2960311",
+        "pm_implied_probs": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pm_price_sum": 0.0,
+        "question": "Bitcoin Up or Down - July 18, 12:15PM-12:30PM ET",
+        "volume": 0.0
+      },
+      {
+        "bybit_funding_rate": null,
+        "bybit_index_price": null,
+        "bybit_last_price": 1839.05,
+        "calibration_note": "PM prices do not sum to ~1 (0.0000), multi-outcome or malformed market",
+        "condition_id": "0x4d4755b4b2bae9d9aec3d2ab7afbe3956b3436561e6de05b9cfe51d7cd382946",
+        "end_dt": "2026-07-18T16:30:00+00:00",
+        "interval_minutes": null,
+        "is_binary_priced": false,
+        "is_updown": true,
+        "liquidity": 12444.3824,
+        "market_id": "2960307",
+        "pm_implied_probs": [
+          0.0,
+          0.0
+        ],
+        "pm_price_sum": 0.0,
+        "question": "Ethereum Up or Down - July 18, 12:15PM-12:30PM ET",
+        "volume": 0.0
+      },
+      {
+        "bybit_funding_rate": null,
+        "bybit_index_price": null,
+        "bybit_last_price": 1839.05,
+        "calibration_note": "PM prices do not sum to ~1 (0.0000), multi-outcome or malformed market",
+        "condition_id": "0x4d2e8202b16b281445b8c6b00dfcbda96e6863ba51a760a643060309fcad4f80",
+        "end_dt": "2026-07-18T16:20:00+00:00",
+        "interval_minutes": null,
+        "is_binary_priced": false,
+        "is_updown": true,
+        "liquidity": 5351.2387,
+        "market_id": "2960306",
+        "pm_implied_probs": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pm_price_sum": 0.0,
+        "question": "Ethereum Up or Down - July 18, 12:15PM-12:20PM ET",
+        "volume": 0.0
+      },
+      {
+        "bybit_funding_rate": null,
+        "bybit_index_price": null,
+        "bybit_last_price": 1838.98,
+        "calibration_note": "PM prices do not sum to ~1 (0.0000), multi-outcome or malformed market",
+        "condition_id": "0xb81a399ab7ab6ebcdc5206f5838bdb2f9a960262226d35c1e12ef5b66999a9ae",
+        "end_dt": "2026-07-18T16:15:00+00:00",
+        "interval_minutes": null,
+        "is_binary_priced": false,
+        "is_updown": true,
+        "liquidity": 7920.9943,
+        "market_id": "2960302",
+        "pm_implied_probs": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pm_price_sum": 0.0,
+        "question": "Bitcoin Up or Down - July 18, 12:10PM-12:15PM ET",
+        "volume": 0.0
+      },
+      {
+        "bybit_funding_rate": null,
+        "bybit_index_price": null,
+        "bybit_last_price": 1838.98,
+        "calibration_note": "PM prices do not sum to ~1 (0.0000), multi-outcome or malformed market",
+        "condition_id": "0xf045fe782e1cb91a9d2197a392c8d9ad0e8b3ed22b5b5c5a89682b921f74351f",
+        "end_dt": "2026-07-18T16:15:00+00:00",
+        "interval_minutes": null,
+        "is_binary_priced": false,
+        "is_updown": true,
+        "liquidity": 5396.0573,
+        "market_id": "2960297",
+        "pm_implied_probs": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pm_price_sum": 0.0,
+        "question": "Ethereum Up or Down - July 18, 12:10PM-12:15PM ET",
+        "volume": 0.0
+      },
+      {
+        "bybit_funding_rate": null,
+        "bybit_index_price": null,
+        "bybit_last_price": 1838.98,
+        "calibration_note": "PM prices do not sum to ~1 (0.0000), multi-outcome or malformed market",
+        "condition_id": "0x56a913bf767c3b9a621288e7184457fdf8d6da5153cb1cf9e7358be36ea9ba95",
+        "end_dt": "2026-07-18T16:10:00+00:00",
+        "interval_minutes": null,
+        "is_binary_priced": false,
+        "is_updown": true,
+        "liquidity": 7880.8924,
+        "market_id": "2960289",
+        "pm_implied_probs": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pm_price_sum": 0.0,
+        "question": "Bitcoin Up or Down - July 18, 12:05PM-12:10PM ET",
+        "volume": 0.0
+      },
+      {
+        "bybit_funding_rate": null,
+        "bybit_index_price": null,
+        "bybit_last_price": 1838.98,
+        "calibration_note": "PM prices do not sum to ~1 (0.0000), multi-outcome or malformed market",
+        "condition_id": "0x698dfe2a16a6eb0c265057d26fdbcf7edb07fe2f9a9ed2e830dc46eb6ad1d596",
+        "end_dt": "2026-07-18T16:10:00+00:00",
+        "interval_minutes": null,
+        "is_binary_priced": false,
+        "is_updown": true,
+        "liquidity": 5361.4387,
+        "market_id": "2960288",
+        "pm_implied_probs": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pm_price_sum": 0.0,
+        "question": "Ethereum Up or Down - July 18, 12:05PM-12:10PM ET",
+        "volume": 0.0
+      },
+      {
+        "bybit_funding_rate": null,
+        "bybit_index_price": null,
+        "bybit_last_price": 1838.98,
+        "calibration_note": "PM prices do not sum to ~1 (0.0000), multi-outcome or malformed market",
+        "condition_id": "0x6ee3ba7ced27a86581b88105d8d7d015f421325f0eab63c95abd03c4ba2fb721",
+        "end_dt": "2026-07-19T16:00:00+00:00",
+        "interval_minutes": null,
+        "is_binary_priced": false,
+        "is_updown": true,
+        "liquidity": 535.9,
+        "market_id": "2960278",
+        "pm_implied_probs": [
+          0.0,
+          0.0
+        ],
+        "pm_price_sum": 0.0,
+        "question": "Ethereum Up or Down on July 19?",
+        "volume": 0.0
+      },
+      {
+        "bybit_funding_rate": null,
+        "bybit_index_price": null,
+        "bybit_last_price": 1838.98,
+        "calibration_note": "PM prices do not sum to ~1 (0.0000), multi-outcome or malformed market",
+        "condition_id": "0x797a64720b3f96720156dc5f97d01d7aa25fbc0e638bdb30db3bfcaed737597a",
+        "end_dt": "2026-07-18T16:15:00+00:00",
+        "interval_minutes": null,
+        "is_binary_priced": false,
+        "is_updown": true,
+        "liquidity": 16649.1295,
+        "market_id": "2960274",
+        "pm_implied_probs": [
+          0.0,
+          0.0
+        ],
+        "pm_price_sum": 0.0,
+        "question": "Bitcoin Up or Down - July 18, 12:00PM-12:15PM ET",
+        "volume": 0.0
+      },
+      {
+        "bybit_funding_rate": null,
+        "bybit_index_price": null,
+        "bybit_last_price": 1838.98,
+        "calibration_note": "PM prices do not sum to ~1 (0.0000), multi-outcome or malformed market",
+        "condition_id": "0x763b8a059fa849e18cf69f9d601adffbc1d2a00288b2dd38a816860bbdfc99bb",
+        "end_dt": "2026-07-18T16:05:00+00:00",
+        "interval_minutes": null,
+        "is_binary_priced": false,
+        "is_updown": true,
+        "liquidity": 5423.5587,
+        "market_id": "2960271",
+        "pm_implied_probs": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pm_price_sum": 0.0,
+        "question": "Ethereum Up or Down - July 18, 12:00PM-12:05PM ET",
+        "volume": 0.0
+      },
+      {
+        "bybit_funding_rate": null,
+        "bybit_index_price": null,
+        "bybit_last_price": 1838.2,
+        "calibration_note": "PM prices do not sum to ~1 (0.0000), multi-outcome or malformed market",
+        "condition_id": "0x314d604a8a28d6275db8aeecc1a6073d68ada08038a3e7ea85d3937d2d70806d",
+        "end_dt": "2026-07-18T16:05:00+00:00",
+        "interval_minutes": null,
+        "is_binary_priced": false,
+        "is_updown": true,
+        "liquidity": 7875.4128,
+        "market_id": "2960269",
+        "pm_implied_probs": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pm_price_sum": 0.0,
+        "question": "Bitcoin Up or Down - July 18, 12:00PM-12:05PM ET",
+        "volume": 0.0
+      }
+    ],
+    "polymarket_markets_analyzed": 199,
+    "safety": "read-only/public-data; no wallet/auth/orders/live trading",
+    "spec": "QTF-018 T13 cross-venue probability calibration",
+    "timestamp": "2026-07-17T16:45:17+00:00"
+  },
+  "historical_ledger_analysis": {
+    "by_edge": {
+      "PM-E03": 61,
+      "PM-E04": 55
+    },
+    "ledger_path": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Implementation\\ledgers\\polymarket_edge_candidates.jsonl",
+    "markets_with_book_errors": 42,
+    "markets_with_valid_books": 188,
+    "note": "Historical candidates show book API errors (404) \u2014 requires CLOB API condition_id endpoint for reliable orderbook data",
+    "status_distribution": {
+      "baseline_snapshot_no_candidate_fill": 61,
+      "candidate_watch_only_fresh_window": 55
+    },
+    "total_candidate_rows": 116
+  },
+  "mode": "read-only public-data calibration validator; no wallet/auth/orders/live trading",
+  "pm_markets_fetched": 199,
+  "recorded_at": "2026-07-17T16:45:13+00:00",
+  "safety": "read-only/public-data; no wallet/auth/orders/live trading",
+  "spec": "QTF-018 T13 Probability/Calibration Validation",
+  "summary": {
+    "calibration_status": "complete",
+    "classified_markets": 199,
+    "crypto_binary_updown": 20,
+    "markets_with_volume_gt_1k": 36,
+    "next_gate": "Requires resolved historical outcomes for Brier score computation",
+    "total_markets_fetched": 199,
+    "well_formed_binary_markets": 28
+  }
+}

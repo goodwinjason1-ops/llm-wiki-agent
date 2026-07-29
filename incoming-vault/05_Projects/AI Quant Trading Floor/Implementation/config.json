@@ -1,0 +1,95 @@
+{
+  "mode": "research_only",
+  "execution": {
+    "allow_live": false,
+    "allow_testnet": false,
+    "paper_starting_equity": 100000.0,
+    "fee_bps": 6.0,
+    "slippage_bps": 4.0
+  },
+  "scanner": {
+    "timeframes": [
+      "1h",
+      "4h",
+      "1d"
+    ],
+    "min_score_alert": 5,
+    "min_score_paper_trade": 8
+  },
+  "assets": {
+    "crypto_cex_public": [
+      {
+        "symbol": "BTCUSDT",
+        "adapter": "bybit",
+        "benchmark": "BTCUSDT"
+      },
+      {
+        "symbol": "ETHUSDT",
+        "adapter": "bybit",
+        "benchmark": "ETHUSDT"
+      },
+      {
+        "symbol": "SOLUSDT",
+        "adapter": "bybit",
+        "benchmark": "SOLUSDT"
+      }
+    ],
+    "cmc_yahoo_research": [
+      {
+        "symbol": "SPY",
+        "adapter": "yahoo",
+        "type": "etf"
+      },
+      {
+        "symbol": "QQQ",
+        "adapter": "yahoo",
+        "type": "etf"
+      },
+      {
+        "symbol": "GLD",
+        "adapter": "yahoo",
+        "type": "precious_metals_etf"
+      },
+      {
+        "symbol": "SLV",
+        "adapter": "yahoo",
+        "type": "precious_metals_etf"
+      }
+    ],
+    "future_private_cex": [],
+    "future_dex_onchain": []
+  },
+  "detectors": {
+    "rsi_length": 14,
+    "macd_fast": 12,
+    "macd_slow": 26,
+    "macd_signal": 9,
+    "regime_lookback": 20,
+    "failure_swing_tolerance_pct": 0.001,
+    "swing_window": 3
+  },
+  "self_improvement": {
+    "one_variable_rule": true,
+    "read_only_first_cycle": true,
+    "human_approval_required_for": [
+      "write_mode",
+      "paper_trade_automation",
+      "testnet",
+      "live_trading"
+    ]
+  },
+  "data_sources": {
+    "crypto_cex_preferred": "bybit_public",
+    "crypto_cex_legacy_fallback": "binance_public",
+    "equities_etfs": "polygon_1m_preferred_with_POLYGON_API_KEY; yahoo_chart_public_short_smoke_fallback",
+    "news_preferred": [
+      "Reuters",
+      "Bloomberg",
+      "Financial Times",
+      "CoinDesk",
+      "The Block",
+      "Investing.com"
+    ],
+    "news_policy": "Cross-check key stories across raw-fact, macro-analysis, crypto-specific, and aggregator sources; do not use crypto-native Twitter/Telegram as primary evidence."
+  }
+}

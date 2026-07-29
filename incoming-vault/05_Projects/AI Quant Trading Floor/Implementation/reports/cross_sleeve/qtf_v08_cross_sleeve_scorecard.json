@@ -1,0 +1,131 @@
+{
+  "schema": "qtf-v08-cross-sleeve-scorecard-v1",
+  "generated_at": "2026-07-17T09:58:49.202015+00:00",
+  "safety": "paper-only; public/local evidence; no orders, credentials, wallets or allocations",
+  "comparison_rule": "Display observed metrics only; do not rank or allocate across incomparable samples, horizons, or cost models.",
+  "sleeves": [
+    {
+      "id": "S1-ETF-CORE-DEF",
+      "sleeve": "ETF Core_DEF (latest run)",
+      "family": "tactical-momentum",
+      "role": "diversifying tactical control sleeve",
+      "return_pct": 135.25399327444916,
+      "cagr_pct": 10.008950105689852,
+      "sharpe": 1.114618527512827,
+      "max_drawdown_pct": null,
+      "cost_model": "not stated as bps in run card",
+      "sample_info": "strategy_lab_v3 CORE_DEF universe; 252d mom; top-3 alloc",
+      "validation": "5/5 profitable walk-forward windows; bootstrap CI stated; no untouched holdout",
+      "decision": "partial_do_not_allocate",
+      "evidence_path": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Implementation\\reports\\runs\\core_def_l252_t1_vt008_20260709T102738+0000\\run_card.json"
+    },
+    {
+      "id": "S2-TTM01-BROAD",
+      "sleeve": "TTM-01 broad-universe (50 symbols)",
+      "family": "cross-sectional-trend",
+      "role": "crypto tactical candidate",
+      "return_pct": 0.18389999999999998,
+      "cagr_pct": 0.4254,
+      "sharpe": 0.912504,
+      "max_drawdown_pct": -0.22499999999999998,
+      "cost_model": "20 bps per position change",
+      "sample_info": "52 trades over 158 rows; 50 symbols",
+      "validation": "frozen Bybit snapshot; chronological holdout; 220-min common bars",
+      "decision": "do_not_promote",
+      "gate_notes": [
+        "Jitter robustness FAILED (52.8% survival < 60% threshold)",
+        "Same rule applied to 50 symbols produces same fragility",
+        "Broader universe does not fix robustness failure"
+      ],
+      "evidence_path": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Implementation\\reports\\ttm01_broad\\ttm01_broad_backtest.json"
+    },
+    {
+      "id": "S3-TTM01-V01",
+      "sleeve": "TTM-01 3-symbol (BTC/ETH/SOL)",
+      "family": "cross-sectional-trend",
+      "role": "crypto tactical control",
+      "return_pct": -0.2095811695227101,
+      "cagr_pct": -0.21308018441006382,
+      "sharpe": -0.5525931700505234,
+      "max_drawdown_pct": -0.5375815293355624,
+      "cost_model": "20 bps per position change",
+      "sample_info": "70/30 chronological holdout; 1,200 rows/symbol",
+      "validation": "chronological 70/30 holdout; 1,200 rows/symbol",
+      "decision": "do_not_promote",
+      "evidence_path": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Implementation\\reports\\ttm01_v01\\qtf_v01_walkforward.json"
+    },
+    {
+      "id": "S4-FUNDING-V07",
+      "sleeve": "Funding fade (V07 multi-coin, 1d horizon)",
+      "family": "funding-carry",
+      "role": "funding/extremes candidate",
+      "return_pct": 0.2196,
+      "cagr_pct": null,
+      "sharpe": null,
+      "max_drawdown_pct": null,
+      "cost_model": "10 bps round-trip proxy; daily funding",
+      "sample_info": "10 coin-configs; 520 total holdout episodes; avg HR 0.5299696542891308",
+      "validation": "70/30 chronological holdout; multi-coin; cross-venue (Bybit + HL) validation",
+      "decision": "do_not_promote",
+      "gate_notes": [
+        "Mean holdout net across 10 configs: 0.0021963500904223733",
+        "Jitter robustness already FAILED (38.0% survival)",
+        "Cross-venue validation: 50% directional agreement between HL and Bybit",
+        "Paper-forward agreement and executed funding payments remain outstanding"
+      ],
+      "evidence_path": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Implementation\\reports\\qtf_v07_cross_venue\\qtf_v07_cross_venue_20260717T065817Z.json"
+    },
+    {
+      "id": "S5-V04B-MR",
+      "sleeve": "Relaxed-regime mean reversion (V04b)",
+      "family": "regime-gated-mean-reversion",
+      "role": "mean-reversion candidate",
+      "return_pct": 4.565,
+      "cagr_pct": null,
+      "sharpe": null,
+      "max_drawdown_pct": null,
+      "cost_model": "10 bps round trip; next-bar open fill",
+      "sample_info": "8 config-coins with holdout trades; best: ETHUSDT/relaxed_20pct (4.56% net)",
+      "validation": "Frozen 1,200-row daily snapshot; 4 relaxed configs; BTC/ETH/SOL only",
+      "decision": "do_not_promote",
+      "gate_notes": [
+        "Relaxed regime filter produces holdout trades (original V04 had zero)",
+        "Best holdout: ETHUSDT/relaxed_20pct (+4.57%, 3 trades, 66.67% HR) and BTCUSDT/relaxed_15pct (+2.67%, 1 trade, 100% HR)",
+        "All holdout nets negative when aggregated across symbols/configs",
+        "Remaining unmet: robustness/jitter on best config, benchmark comparison, paper-forward agreement"
+      ],
+      "evidence_path": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Implementation\\reports\\qtf_v04b_relaxed_regime\\qtf_v04b_relaxed_regime_result.json"
+    },
+    {
+      "id": "S6-PAIRS-V05",
+      "sleeve": "Costed function-based pairs (V05)",
+      "family": "relative-value-pairs",
+      "role": "market-neutral candidate",
+      "return_pct": -9.16032586290763,
+      "cagr_pct": null,
+      "sharpe": -0.8191468004225676,
+      "max_drawdown_pct": -39.14823542382162,
+      "cost_model": "two-leg 10 bps plus observed daily funding",
+      "sample_info": "2 pairs tested; chronological 70/30 holdout",
+      "validation": "chronological 70/30 holdout; 2 pairs; funding panel shorter than price panel",
+      "decision": "do_not_promote",
+      "evidence_path": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Backtests\\qtf_v05\\qtf_v05_costed_pairs_report.json"
+    }
+  ],
+  "allocation_decision": "zero allocation / no promotion",
+  "blocking_gates": [
+    "S1/S7: ETF and crypto samples use different windows, instruments, and cost models \u2014 not directly comparable.",
+    "S1/S7: ETF run card does not state a comparable bps cost model or untouched holdout.",
+    "S2/S3: TTM-01 FAILED jitter robustness gate (52.8% survival < 60% threshold) on both 3-symbol and 50-symbol universes.",
+    "S4: Funding V07 has 10 holdout configs; cross-venue agreement only 50%; jitter robustness FAILED (38.0%).",
+    "S5: V04b best holdout net is 4.56% on ETHUSDT/relaxed_20pct if found; all aggregated holdout nets negative. Robustness/jitter/benchmark/paper-forward outstanding.",
+    "S6: V05 pairs are negative OOS on both BTC/ETH and ETH/SOL; funding history is short relative to price bars.",
+    "No sleeve has passed all cross-sleeve comparability, robustness, and paper-forward gates."
+  ],
+  "evidence_summary": {
+    "total_sleeves_evaluated": 6,
+    "sleeves_passing_all_gates": 0,
+    "sleeves_do_not_promote": 6,
+    "sleeves_partial": 1
+  }
+}

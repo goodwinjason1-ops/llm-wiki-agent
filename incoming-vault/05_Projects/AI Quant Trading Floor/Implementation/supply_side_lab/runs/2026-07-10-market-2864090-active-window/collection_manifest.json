@@ -1,0 +1,19 @@
+{
+  "book_errors": 0,
+  "first_recorded_at": "2026-07-10T21:14:28.573+00:00",
+  "interval_seconds": 0.5,
+  "last_recorded_at": "2026-07-10T21:17:57.435+00:00",
+  "market_ids": [
+    "2864090"
+  ],
+  "market_questions": [
+    "Bitcoin Up or Down - July 10, 5:15PM-5:20PM ET"
+  ],
+  "public_read_only": true,
+  "risk_mode": "research-only",
+  "samples_requested": 100,
+  "snapshot_file": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Implementation\\supply_side_lab\\runs\\2026-07-10-market-2864090-active-window\\sequential_l2_snapshots.jsonl",
+  "snapshot_rows": 100,
+  "successful_token_books": 200,
+  "wallet_auth_orders": false
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TradingView Paper Alert Contract",
+  "type": "object",
+  "required": ["schema_version", "risk_mode", "strategy_id", "symbol", "timeframe", "action", "price", "bar_time", "paper_only"],
+  "properties": {
+    "schema_version": {"const": "tv-alert-v1"},
+    "risk_mode": {"enum": ["paper", "research"]},
+    "strategy_id": {"type": "string", "minLength": 3},
+    "symbol": {"type": "string", "minLength": 1},
+    "timeframe": {"type": "string", "minLength": 1},
+    "action": {"enum": ["enter_long", "exit_long", "enter_short", "exit_short", "flat", "observe"]},
+    "price": {"type": "number"},
+    "bar_time": {"type": ["integer", "string"]},
+    "paper_only": {"const": true},
+    "notes": {"type": "string"}
+  },
+  "additionalProperties": true
+}

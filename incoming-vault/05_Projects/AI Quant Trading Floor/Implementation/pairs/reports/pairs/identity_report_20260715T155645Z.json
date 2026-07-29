@@ -1,0 +1,132 @@
+{
+  "schema_version": "qtf-pairs-identity-report-v1",
+  "generated_at": "2026-07-15T15:56:45+00:00",
+  "venue": "Bybit public instruments-info",
+  "classification": "identity check only; not liquidity, history, performance or promotion evidence",
+  "summary": {
+    "identity_verified": 15,
+    "listing_unverified": 0
+  },
+  "candidates": [
+    {
+      "id": "basis-btc-bybit",
+      "pair_type": "same_asset_basis",
+      "status": "identity_verified",
+      "missing_listings": [],
+      "research_decision": "watch_only",
+      "next_gate": "liquidity/history/cost screen; identity verification is not backtest approval"
+    },
+    {
+      "id": "basis-eth-bybit",
+      "pair_type": "same_asset_basis",
+      "status": "identity_verified",
+      "missing_listings": [],
+      "research_decision": "watch_only",
+      "next_gate": "liquidity/history/cost screen; identity verification is not backtest approval"
+    },
+    {
+      "id": "basis-sol-bybit",
+      "pair_type": "same_asset_basis",
+      "status": "identity_verified",
+      "missing_listings": [],
+      "research_decision": "watch_only",
+      "next_gate": "liquidity/history/cost screen; identity verification is not backtest approval"
+    },
+    {
+      "id": "basis-hype-bybit",
+      "pair_type": "same_asset_basis",
+      "status": "identity_verified",
+      "missing_listings": [],
+      "research_decision": "watch_only",
+      "next_gate": "liquidity/history/cost screen; identity verification is not backtest approval"
+    },
+    {
+      "id": "basis-aave-bybit",
+      "pair_type": "same_asset_basis",
+      "status": "identity_verified",
+      "missing_listings": [],
+      "research_decision": "watch_only",
+      "next_gate": "liquidity/history/cost screen; identity verification is not backtest approval"
+    },
+    {
+      "id": "perpdex-hype-dydx",
+      "pair_type": "perp_dex_relative_value",
+      "status": "identity_verified",
+      "missing_listings": [],
+      "research_decision": "watch_only",
+      "next_gate": "liquidity/history/cost screen; identity verification is not backtest approval"
+    },
+    {
+      "id": "perpdex-hype-gmx",
+      "pair_type": "perp_dex_relative_value",
+      "status": "identity_verified",
+      "missing_listings": [],
+      "research_decision": "watch_only",
+      "next_gate": "liquidity/history/cost screen; identity verification is not backtest approval"
+    },
+    {
+      "id": "perpdex-dydx-gmx",
+      "pair_type": "perp_dex_relative_value",
+      "status": "identity_verified",
+      "missing_listings": [],
+      "research_decision": "watch_only",
+      "next_gate": "liquidity/history/cost screen; identity verification is not backtest approval"
+    },
+    {
+      "id": "perpdex-hype-drift",
+      "pair_type": "perp_dex_relative_value",
+      "status": "identity_verified",
+      "missing_listings": [],
+      "research_decision": "watch_only",
+      "next_gate": "liquidity/history/cost screen; identity verification is not backtest approval"
+    },
+    {
+      "id": "lending-aave-morpho",
+      "pair_type": "lending_relative_value",
+      "status": "identity_verified",
+      "missing_listings": [],
+      "research_decision": "watch_only",
+      "next_gate": "liquidity/history/cost screen; identity verification is not backtest approval"
+    },
+    {
+      "id": "lending-aave-comp",
+      "pair_type": "lending_relative_value",
+      "status": "identity_verified",
+      "missing_listings": [],
+      "research_decision": "watch_only",
+      "next_gate": "liquidity/history/cost screen; identity verification is not backtest approval"
+    },
+    {
+      "id": "lending-morpho-comp",
+      "pair_type": "lending_relative_value",
+      "status": "identity_verified",
+      "missing_listings": [],
+      "research_decision": "watch_only",
+      "next_gate": "liquidity/history/cost screen; identity verification is not backtest approval"
+    },
+    {
+      "id": "spotdex-uni-cake",
+      "pair_type": "spot_dex_relative_value",
+      "status": "identity_verified",
+      "missing_listings": [],
+      "research_decision": "watch_only",
+      "next_gate": "liquidity/history/cost screen; identity verification is not backtest approval"
+    },
+    {
+      "id": "spotdex-uni-sushi",
+      "pair_type": "spot_dex_relative_value",
+      "status": "identity_verified",
+      "missing_listings": [],
+      "research_decision": "watch_only",
+      "next_gate": "liquidity/history/cost screen; identity verification is not backtest approval"
+    },
+    {
+      "id": "spotdex-cake-sushi",
+      "pair_type": "spot_dex_relative_value",
+      "status": "identity_verified",
+      "missing_listings": [],
+      "research_decision": "watch_only",
+      "next_gate": "liquidity/history/cost screen; identity verification is not backtest approval"
+    }
+  ]
+}

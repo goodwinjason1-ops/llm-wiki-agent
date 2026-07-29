@@ -1,0 +1,10 @@
+{
+  "C-HTF-2": {
+    "edge": "C-HTF-2",
+    "name": "Basis / Cash-and-Carry (Dated Futures)",
+    "scan_count": 20,
+    "deploy_hurdle_annualized": 10.0,
+    "opportunities": [],
+    "decision": "hold_zero_allocation"
+  }
+}

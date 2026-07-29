@@ -1,0 +1,1780 @@
+{
+  "candidate_count": 29,
+  "candidate_counts_by_edge": {
+    "PM-E03": 17,
+    "PM-E04": 12,
+    "PM-E06": 0
+  },
+  "candidates_sample": [
+    {
+      "candidate_id": "PM-E03-20260710T002637+0000-0x2e83be15d4",
+      "coin": "ETHUSDT",
+      "conditionId": "0x2e83be15d42720b670d774e153461912d883f1002c761aa00338a9512c7d872e",
+      "detector_reason": "short-window binary up/down market recorded for two-sided cheap-bid baseline; no cheap current quote observed",
+      "edge_id": "PM-E03",
+      "endDate": "2026-07-11T00:15:00Z",
+      "fill_model": "no_fill_until_replay_proves_fill; conservative_queue_aware_required",
+      "first_seen_at": "2026-07-10T00:22:43+00:00",
+      "interval_minutes": 5,
+      "liquidity": 3874.4558,
+      "market_id": "2865294",
+      "market_key": "0x2e83be15d42720b670d774e153461912d883f1002c761aa00338a9512c7d872e",
+      "market_slug": "eth-updown-5m-1783728600",
+      "question": "Ethereum Up or Down - July 10, 8:10PM-8:15PM ET",
+      "recorded_at": "2026-07-10T00:26:37+00:00",
+      "rejection_reason": null,
+      "safety": "read-only/public-data; no wallet/auth/orders/live trading",
+      "simulated_action": "watch_only",
+      "status": "baseline_snapshot_no_candidate_fill",
+      "token_books": [
+        {
+          "ask_levels": 42,
+          "best_ask": 0.51,
+          "best_bid": 0.5,
+          "bid_levels": 43,
+          "cheap_ask_depth_lte_2c": 0,
+          "cheap_bid_depth_lte_2c": 8865.0,
+          "outcome": "Up",
+          "raw_top_asks": [
+            {
+              "price": 0.51,
+              "size": 98.02
+            },
+            {
+              "price": 0.52,
+              "size": 25.0
+            },
+            {
+              "price": 0.53,
+              "size": 61.0
+            },
+            {
+              "price": 0.54,
+              "size": 30.0
+            },
+            {
+              "price": 0.55,
+              "size": 65.0
+            }
+          ],
+          "raw_top_bids": [
+            {
+              "price": 0.5,
+              "size": 5.0
+            },
+            {
+              "price": 0.49,
+              "size": 98.02
+            },
+            {
+              "price": 0.48,
+              "size": 25.0
+            },
+            {
+              "price": 0.47,
+              "size": 61.0
+            },
+            {
+              "price": 0.46,
+              "size": 30.0
+            }
+          ],
+          "token_id": "38753055222660632905108494754118035190557228133419150385016105194185659570282"
+        },
+        {
+          "ask_levels": 43,
+          "best_ask": 0.5,
+          "best_bid": 0.49,
+          "bid_levels": 42,
+          "cheap_ask_depth_lte_2c": 0,
+          "cheap_bid_depth_lte_2c": 8865.0,
+          "outcome": "Down",
+          "raw_top_asks": [
+            {
+              "price": 0.5,
+              "size": 5.0
+            },
+            {
+              "price": 0.51,
+              "size": 98.02
+            },
+            {
+              "price": 0.52,
+              "size": 25.0
+            },
+            {
+              "price": 0.53,
+              "size": 61.0
+            },
+            {
+              "price": 0.54,
+              "size": 30.0
+            }
+          ],
+          "raw_top_bids": [
+            {
+              "price": 0.49,
+              "size": 98.02
+            },
+            {
+              "price": 0.48,
+              "size": 25.0
+            },
+            {
+              "price": 0.47,
+              "size": 61.0
+            },
+            {
+              "price": 0.46,
+              "size": 30.0
+            },
+            {
+              "price": 0.45,
+              "size": 65.0
+            }
+          ],
+          "token_id": "48595763823338254919539918853815465562545948589749671386189761492398418132533"
+        }
+      ],
+      "volume": null
+    },
+    {
+      "candidate_id": "PM-E04-20260710T002637+0000-0x2e83be15d4",
+      "coin": "ETHUSDT",
+      "conditionId": "0x2e83be15d42720b670d774e153461912d883f1002c761aa00338a9512c7d872e",
+      "detector_reason": "fresh or newly first-seen binary market within 24h; stale-pricing hypothesis requires repeated first-seen snapshots",
+      "edge_id": "PM-E04",
+      "endDate": "2026-07-11T00:15:00Z",
+      "fill_model": "no_fill_until_replay_proves_fill; conservative_queue_aware_required",
+      "first_seen_at": "2026-07-10T00:22:43+00:00",
+      "fresh_age_hours": 0.159,
+      "interval_minutes": 5,
+      "liquidity": 3874.4558,
+      "market_id": "2865294",
+      "market_key": "0x2e83be15d42720b670d774e153461912d883f1002c761aa00338a9512c7d872e",
+      "market_slug": "eth-updown-5m-1783728600",
+      "question": "Ethereum Up or Down - July 10, 8:10PM-8:15PM ET",
+      "recorded_at": "2026-07-10T00:26:37+00:00",
+      "rejection_reason": null,
+      "safety": "read-only/public-data; no wallet/auth/orders/live trading",
+      "simulated_action": "watch_only",
+      "status": "candidate_watch_only_fresh_window",
+      "token_books": [
+        {
+          "ask_levels": 42,
+          "best_ask": 0.51,
+          "best_bid": 0.5,
+          "bid_levels": 43,
+          "cheap_ask_depth_lte_2c": 0,
+          "cheap_bid_depth_lte_2c": 8865.0,
+          "outcome": "Up",
+          "raw_top_asks": [
+            {
+              "price": 0.51,
+              "size": 98.02
+            },
+            {
+              "price": 0.52,
+              "size": 25.0
+            },
+            {
+              "price": 0.53,
+              "size": 61.0
+            },
+            {
+              "price": 0.54,
+              "size": 30.0
+            },
+            {
+              "price": 0.55,
+              "size": 65.0
+            }
+          ],
+          "raw_top_bids": [
+            {
+              "price": 0.5,
+              "size": 5.0
+            },
+            {
+              "price": 0.49,
+              "size": 98.02
+            },
+            {
+              "price": 0.48,
+              "size": 25.0
+            },
+            {
+              "price": 0.47,
+              "size": 61.0
+            },
+            {
+              "price": 0.46,
+              "size": 30.0
+            }
+          ],
+          "token_id": "38753055222660632905108494754118035190557228133419150385016105194185659570282"
+        },
+        {
+          "ask_levels": 43,
+          "best_ask": 0.5,
+          "best_bid": 0.49,
+          "bid_levels": 42,
+          "cheap_ask_depth_lte_2c": 0,
+          "cheap_bid_depth_lte_2c": 8865.0,
+          "outcome": "Down",
+          "raw_top_asks": [
+            {
+              "price": 0.5,
+              "size": 5.0
+            },
+            {
+              "price": 0.51,
+              "size": 98.02
+            },
+            {
+              "price": 0.52,
+              "size": 25.0
+            },
+            {
+              "price": 0.53,
+              "size": 61.0
+            },
+            {
+              "price": 0.54,
+              "size": 30.0
+            }
+          ],
+          "raw_top_bids": [
+            {
+              "price": 0.49,
+              "size": 98.02
+            },
+            {
+              "price": 0.48,
+              "size": 25.0
+            },
+            {
+              "price": 0.47,
+              "size": 61.0
+            },
+            {
+              "price": 0.46,
+              "size": 30.0
+            },
+            {
+              "price": 0.45,
+              "size": 65.0
+            }
+          ],
+          "token_id": "48595763823338254919539918853815465562545948589749671386189761492398418132533"
+        }
+      ],
+      "volume": null
+    },
+    {
+      "candidate_id": "PM-E03-20260710T002637+0000-0xbf9a048d8e",
+      "coin": "BTCUSDT",
+      "conditionId": "0xbf9a048d8e5bcbf78d1fe6582ee61010d1a7b3e447c20c8012051809c37b8289",
+      "detector_reason": "short-window binary up/down market recorded for two-sided cheap-bid baseline; no cheap current quote observed",
+      "edge_id": "PM-E03",
+      "endDate": "2026-07-11T00:15:00Z",
+      "fill_model": "no_fill_until_replay_proves_fill; conservative_queue_aware_required",
+      "first_seen_at": "2026-07-10T00:22:43+00:00",
+      "interval_minutes": 5,
+      "liquidity": 6901.9075,
+      "market_id": "2865289",
+      "market_key": "0xbf9a048d8e5bcbf78d1fe6582ee61010d1a7b3e447c20c8012051809c37b8289",
+      "market_slug": "btc-updown-5m-1783728600",
+      "question": "Bitcoin Up or Down - July 10, 8:10PM-8:15PM ET",
+      "recorded_at": "2026-07-10T00:26:37+00:00",
+      "rejection_reason": null,
+      "safety": "read-only/public-data; no wallet/auth/orders/live trading",
+      "simulated_action": "watch_only",
+      "status": "baseline_snapshot_no_candidate_fill",
+      "token_books": [
+        {
+          "ask_levels": 49,
+          "best_ask": 0.51,
+          "best_bid": 0.5,
+          "bid_levels": 50,
+          "cheap_ask_depth_lte_2c": 0,
+          "cheap_bid_depth_lte_2c": 14462.609999999999,
+          "outcome": "Up",
+          "raw_top_asks": [
+            {
+              "price": 0.51,
+              "size": 1872.94
+            },
+            {
+              "price": 0.52,
+              "size": 140.0
+            },
+            {
+              "price": 0.53,
+              "size": 107.0
+            },
+            {
+              "price": 0.54,
+              "size": 58.0
+            },
+            {
+              "price": 0.55,
+              "size": 95.0
+            }
+          ],
+          "raw_top_bids": [
+            {
+              "price": 0.5,
+              "size": 1477.64
+            },
+            {
+              "price": 0.49,
+              "size": 165.02
+            },
+            {
+              "price": 0.48,
+              "size": 140.0
+            },
+            {
+              "price": 0.47,
+              "size": 107.0
+            },
+            {
+              "price": 0.46,
+              "size": 58.0
+            }
+          ],
+          "token_id": "43145670317875897756510129252799671829602063354012900651877669299562071361439"
+        },
+        {
+          "ask_levels": 50,
+          "best_ask": 0.5,
+          "best_bid": 0.49,
+          "bid_levels": 49,
+          "cheap_ask_depth_lte_2c": 0,
+          "cheap_bid_depth_lte_2c": 12189.34,
+          "outcome": "Down",
+          "raw_top_asks": [
+            {
+              "price": 0.5,
+              "size": 1477.64
+            },
+            {
+              "price": 0.51,
+              "size": 165.02
+            },
+            {
+              "price": 0.52,
+              "size": 140.0
+            },
+            {
+              "price": 0.53,
+              "size": 107.0
+            },
+            {
+              "price": 0.54,
+              "size": 58.0
+            }
+          ],
+          "raw_top_bids": [
+            {
+              "price": 0.49,
+              "size": 1872.94
+            },
+            {
+              "price": 0.48,
+              "size": 140.0
+            },
+            {
+              "price": 0.47,
+              "size": 107.0
+            },
+            {
+              "price": 0.46,
+              "size": 58.0
+            },
+            {
+              "price": 0.45,
+              "size": 95.0
+            }
+          ],
+          "token_id": "79991517728367450596943757983234205588123603070500166851407907710362108684783"
+        }
+      ],
+      "volume": null
+    },
+    {
+      "candidate_id": "PM-E04-20260710T002637+0000-0xbf9a048d8e",
+      "coin": "BTCUSDT",
+      "conditionId": "0xbf9a048d8e5bcbf78d1fe6582ee61010d1a7b3e447c20c8012051809c37b8289",
+      "detector_reason": "fresh or newly first-seen binary market within 24h; stale-pricing hypothesis requires repeated first-seen snapshots",
+      "edge_id": "PM-E04",
+      "endDate": "2026-07-11T00:15:00Z",
+      "fill_model": "no_fill_until_replay_proves_fill; conservative_queue_aware_required",
+      "first_seen_at": "2026-07-10T00:22:43+00:00",
+      "fresh_age_hours": 0.159,
+      "interval_minutes": 5,
+      "liquidity": 6901.9075,
+      "market_id": "2865289",
+      "market_key": "0xbf9a048d8e5bcbf78d1fe6582ee61010d1a7b3e447c20c8012051809c37b8289",
+      "market_slug": "btc-updown-5m-1783728600",
+      "question": "Bitcoin Up or Down - July 10, 8:10PM-8:15PM ET",
+      "recorded_at": "2026-07-10T00:26:37+00:00",
+      "rejection_reason": null,
+      "safety": "read-only/public-data; no wallet/auth/orders/live trading",
+      "simulated_action": "watch_only",
+      "status": "candidate_watch_only_fresh_window",
+      "token_books": [
+        {
+          "ask_levels": 49,
+          "best_ask": 0.51,
+          "best_bid": 0.5,
+          "bid_levels": 50,
+          "cheap_ask_depth_lte_2c": 0,
+          "cheap_bid_depth_lte_2c": 14462.609999999999,
+          "outcome": "Up",
+          "raw_top_asks": [
+            {
+              "price": 0.51,
+              "size": 1872.94
+            },
+            {
+              "price": 0.52,
+              "size": 140.0
+            },
+            {
+              "price": 0.53,
+              "size": 107.0
+            },
+            {
+              "price": 0.54,
+              "size": 58.0
+            },
+            {
+              "price": 0.55,
+              "size": 95.0
+            }
+          ],
+          "raw_top_bids": [
+            {
+              "price": 0.5,
+              "size": 1477.64
+            },
+            {
+              "price": 0.49,
+              "size": 165.02
+            },
+            {
+              "price": 0.48,
+              "size": 140.0
+            },
+            {
+              "price": 0.47,
+              "size": 107.0
+            },
+            {
+              "price": 0.46,
+              "size": 58.0
+            }
+          ],
+          "token_id": "43145670317875897756510129252799671829602063354012900651877669299562071361439"
+        },
+        {
+          "ask_levels": 50,
+          "best_ask": 0.5,
+          "best_bid": 0.49,
+          "bid_levels": 49,
+          "cheap_ask_depth_lte_2c": 0,
+          "cheap_bid_depth_lte_2c": 12189.34,
+          "outcome": "Down",
+          "raw_top_asks": [
+            {
+              "price": 0.5,
+              "size": 1477.64
+            },
+            {
+              "price": 0.51,
+              "size": 165.02
+            },
+            {
+              "price": 0.52,
+              "size": 140.0
+            },
+            {
+              "price": 0.53,
+              "size": 107.0
+            },
+            {
+              "price": 0.54,
+              "size": 58.0
+            }
+          ],
+          "raw_top_bids": [
+            {
+              "price": 0.49,
+              "size": 1872.94
+            },
+            {
+              "price": 0.48,
+              "size": 140.0
+            },
+            {
+              "price": 0.47,
+              "size": 107.0
+            },
+            {
+              "price": 0.46,
+              "size": 58.0
+            },
+            {
+              "price": 0.45,
+              "size": 95.0
+            }
+          ],
+          "token_id": "79991517728367450596943757983234205588123603070500166851407907710362108684783"
+        }
+      ],
+      "volume": null
+    },
+    {
+      "candidate_id": "PM-E03-20260710T002637+0000-0xace97c1af6",
+      "coin": "ETHUSDT",
+      "conditionId": "0xace97c1af6c74dc143d0228d0a8bd6f3de9a5515a4a8c0ae1864dbb8d11f5389",
+      "detector_reason": "short-window binary up/down market recorded for two-sided cheap-bid baseline; no cheap current quote observed",
+      "edge_id": "PM-E03",
+      "endDate": "2026-07-11T00:10:00Z",
+      "fill_model": "no_fill_until_replay_proves_fill; conservative_queue_aware_required",
+      "first_seen_at": "2026-07-10T00:22:43+00:00",
+      "interval_minutes": 5,
+      "liquidity": 4007.6554,
+      "market_id": "2865284",
+      "market_key": "0xace97c1af6c74dc143d0228d0a8bd6f3de9a5515a4a8c0ae1864dbb8d11f5389",
+      "market_slug": "eth-updown-5m-1783728300",
+      "question": "Ethereum Up or Down - July 10, 8:05PM-8:10PM ET",
+      "recorded_at": "2026-07-10T00:26:37+00:00",
+      "rejection_reason": null,
+      "safety": "read-only/public-data; no wallet/auth/orders/live trading",
+      "simulated_action": "watch_only",
+      "status": "baseline_snapshot_no_candidate_fill",
+      "token_books": [
+        {
+          "ask_levels": 47,
+          "best_ask": 0.51,
+          "best_bid": 0.5,
+          "bid_levels": 48,
+          "cheap_ask_depth_lte_2c": 0,
+          "cheap_bid_depth_lte_2c": 8845.0,
+          "outcome": "Up",
+          "raw_top_asks": [
+            {
+              "price": 0.51,
+              "size": 98.02
+            },
+            {
+              "price": 0.52,
+              "size": 25.0
+            },
+            {
+              "price": 0.53,
+              "size": 61.0
+            },
+            {
+              "price": 0.54,
+              "size": 40.0
+            },
+            {
+              "price": 0.55,
+              "size": 55.0
+            }
+          ],
+          "raw_top_bids": [
+            {
+              "price": 0.5,
+              "size": 5.0
+            },
+            {
+              "price": 0.49,
+              "size": 98.02
+            },
+            {
+              "price": 0.48,
+              "size": 25.0
+            },
+            {
+              "price": 0.47,
+              "size": 61.0
+            },
+            {
+              "price": 0.46,
+              "size": 40.0
+            }
+          ],
+          "token_id": "610306199320612856378763235412952407722098235137417971397358657384351364765"
+        },
+        {
+          "ask_levels": 48,
+          "best_ask": 0.5,
+          "best_bid": 0.49,
+          "bid_levels": 47,
+          "cheap_ask_depth_lte_2c": 0,
+          "cheap_bid_depth_lte_2c": 8845.0,
+          "outcome": "Down",
+          "raw_top_asks": [
+            {
+              "price": 0.5,
+              "size": 5.0
+            },
+            {
+              "price": 0.51,
+              "size": 98.02
+            },
+            {
+              "price": 0.52,
+              "size": 25.0
+            },
+            {
+              "price": 0.53,
+              "size": 61.0
+            },
+            {
+              "price": 0.54,
+              "size": 40.0
+            }
+          ],
+          "raw_top_bids": [
+            {
+              "price": 0.49,
+              "size": 98.02
+            },
+            {
+              "price": 0.48,
+              "size": 25.0
+            },
+            {
+              "price": 0.47,
+              "size": 61.0
+            },
+            {
+              "price": 0.46,
+              "size": 40.0
+            },
+            {
+              "price": 0.45,
+              "size": 55.0
+            }
+          ],
+          "token_id": "6886048742373397556720981407414250408261259105266053214397242771029566006668"
+        }
+      ],
+      "volume": null
+    },
+    {
+      "candidate_id": "PM-E04-20260710T002637+0000-0xace97c1af6",
+      "coin": "ETHUSDT",
+      "conditionId": "0xace97c1af6c74dc143d0228d0a8bd6f3de9a5515a4a8c0ae1864dbb8d11f5389",
+      "detector_reason": "fresh or newly first-seen binary market within 24h; stale-pricing hypothesis requires repeated first-seen snapshots",
+      "edge_id": "PM-E04",
+      "endDate": "2026-07-11T00:10:00Z",
+      "fill_model": "no_fill_until_replay_proves_fill; conservative_queue_aware_required",
+      "first_seen_at": "2026-07-10T00:22:43+00:00",
+      "fresh_age_hours": 0.252,
+      "interval_minutes": 5,
+      "liquidity": 4007.6554,
+      "market_id": "2865284",
+      "market_key": "0xace97c1af6c74dc143d0228d0a8bd6f3de9a5515a4a8c0ae1864dbb8d11f5389",
+      "market_slug": "eth-updown-5m-1783728300",
+      "question": "Ethereum Up or Down - July 10, 8:05PM-8:10PM ET",
+      "recorded_at": "2026-07-10T00:26:37+00:00",
+      "rejection_reason": null,
+      "safety": "read-only/public-data; no wallet/auth/orders/live trading",
+      "simulated_action": "watch_only",
+      "status": "candidate_watch_only_fresh_window",
+      "token_books": [
+        {
+          "ask_levels": 47,
+          "best_ask": 0.51,
+          "best_bid": 0.5,
+          "bid_levels": 48,
+          "cheap_ask_depth_lte_2c": 0,
+          "cheap_bid_depth_lte_2c": 8845.0,
+          "outcome": "Up",
+          "raw_top_asks": [
+            {
+              "price": 0.51,
+              "size": 98.02
+            },
+            {
+              "price": 0.52,
+              "size": 25.0
+            },
+            {
+              "price": 0.53,
+              "size": 61.0
+            },
+            {
+              "price": 0.54,
+              "size": 40.0
+            },
+            {
+              "price": 0.55,
+              "size": 55.0
+            }
+          ],
+          "raw_top_bids": [
+            {
+              "price": 0.5,
+              "size": 5.0
+            },
+            {
+              "price": 0.49,
+              "size": 98.02
+            },
+            {
+              "price": 0.48,
+              "size": 25.0
+            },
+            {
+              "price": 0.47,
+              "size": 61.0
+            },
+            {
+              "price": 0.46,
+              "size": 40.0
+            }
+          ],
+          "token_id": "610306199320612856378763235412952407722098235137417971397358657384351364765"
+        },
+        {
+          "ask_levels": 48,
+          "best_ask": 0.5,
+          "best_bid": 0.49,
+          "bid_levels": 47,
+          "cheap_ask_depth_lte_2c": 0,
+          "cheap_bid_depth_lte_2c": 8845.0,
+          "outcome": "Down",
+          "raw_top_asks": [
+            {
+              "price": 0.5,
+              "size": 5.0
+            },
+            {
+              "price": 0.51,
+              "size": 98.02
+            },
+            {
+              "price": 0.52,
+              "size": 25.0
+            },
+            {
+              "price": 0.53,
+              "size": 61.0
+            },
+            {
+              "price": 0.54,
+              "size": 40.0
+            }
+          ],
+          "raw_top_bids": [
+            {
+              "price": 0.49,
+              "size": 98.02
+            },
+            {
+              "price": 0.48,
+              "size": 25.0
+            },
+            {
+              "price": 0.47,
+              "size": 61.0
+            },
+            {
+              "price": 0.46,
+              "size": 40.0
+            },
+            {
+              "price": 0.45,
+              "size": 55.0
+            }
+          ],
+          "token_id": "6886048742373397556720981407414250408261259105266053214397242771029566006668"
+        }
+      ],
+      "volume": null
+    },
+    {
+      "candidate_id": "PM-E03-20260710T002637+0000-0x48ae110d8e",
+      "coin": "BTCUSDT",
+      "conditionId": "0x48ae110d8e71718db44310bba5109703d7c00c6c8ee8c537fa9e747459b7ccf1",
+      "detector_reason": "short-window binary up/down market recorded for two-sided cheap-bid baseline; no cheap current quote observed",
+      "edge_id": "PM-E03",
+      "endDate": "2026-07-11T00:10:00Z",
+      "fill_model": "no_fill_until_replay_proves_fill; conservative_queue_aware_required",
+      "first_seen_at": "2026-07-10T00:22:43+00:00",
+      "interval_minutes": 5,
+      "liquidity": 5959.4403,
+      "market_id": "2865280",
+      "market_key": "0x48ae110d8e71718db44310bba5109703d7c00c6c8ee8c537fa9e747459b7ccf1",
+      "market_slug": "btc-updown-5m-1783728300",
+      "question": "Bitcoin Up or Down - July 10, 8:05PM-8:10PM ET",
+      "recorded_at": "2026-07-10T00:26:37+00:00",
+      "rejection_reason": null,
+      "safety": "read-only/public-data; no wallet/auth/orders/live trading",
+      "simulated_action": "watch_only",
+      "status": "baseline_snapshot_no_candidate_fill",
+      "token_books": [
+        {
+          "ask_levels": 49,
+          "best_ask": 0.51,
+          "best_bid": 0.5,
+          "bid_levels": 50,
+          "cheap_ask_depth_lte_2c": 0,
+          "cheap_bid_depth_lte_2c": 14894.84,
+          "outcome": "Up",
+          "raw_top_asks": [
+            {
+              "price": 0.51,
+              "size": 403.53
+            },
+            {
+              "price": 0.52,
+              "size": 140.0
+            },
+            {
+              "price": 0.53,
+              "size": 107.0
+            },
+            {
+              "price": 0.54,
+              "size": 68.0
+            },
+            {
+              "price": 0.55,
+              "size": 105.0
+            }
+          ],
+          "raw_top_bids": [
+            {
+              "price": 0.5,
+              "size": 242.79
+            },
+            {
+              "price": 0.49,
+              "size": 170.09
+            },
+            {
+              "price": 0.48,
+              "size": 140.0
+            },
+            {
+              "price": 0.47,
+              "size": 107.0
+            },
+            {
+              "price": 0.46,
+              "size": 68.0
+            }
+          ],
+          "token_id": "100503888069243731822836268623479047360827544424117308734440756586029921974047"
+        },
+        {
+          "ask_levels": 50,
+          "best_ask": 0.5,
+          "best_bid": 0.49,
+          "bid_levels": 49,
+          "cheap_ask_depth_lte_2c": 0,
+          "cheap_bid_depth_lte_2c": 13617.869999999999,
+          "outcome": "Down",
+          "raw_top_asks": [
+            {
+              "price": 0.5,
+              "size": 242.79
+            },
+            {
+              "price": 0.51,
+              "size": 170.09
+            },
+            {
+              "price": 0.52,
+              "size": 140.0
+            },
+            {
+              "price": 0.53,
+              "size": 107.0
+            },
+            {
+              "price": 0.54,
+              "size": 68.0
+            }
+          ],
+          "raw_top_bids": [
+            {
+              "price": 0.49,
+              "size": 403.53
+            },
+            {
+              "price": 0.48,
+              "size": 140.0
+            },
+            {
+              "price": 0.47,
+              "size": 107.0
+            },
+            {
+              "price": 0.46,
+              "size": 68.0
+            },
+            {
+              "price": 0.45,
+              "size": 105.0
+            }
+          ],
+          "token_id": "52706720450318697397134000400300859205544566706848811642880949865946167608438"
+        }
+      ],
+      "volume": null
+    },
+    {
+      "candidate_id": "PM-E04-20260710T002637+0000-0x48ae110d8e",
+      "coin": "BTCUSDT",
+      "conditionId": "0x48ae110d8e71718db44310bba5109703d7c00c6c8ee8c537fa9e747459b7ccf1",
+      "detector_reason": "fresh or newly first-seen binary market within 24h; stale-pricing hypothesis requires repeated first-seen snapshots",
+      "edge_id": "PM-E04",
+      "endDate": "2026-07-11T00:10:00Z",
+      "fill_model": "no_fill_until_replay_proves_fill; conservative_queue_aware_required",
+      "first_seen_at": "2026-07-10T00:22:43+00:00",
+      "fresh_age_hours": 0.252,
+      "interval_minutes": 5,
+      "liquidity": 5959.4403,
+      "market_id": "2865280",
+      "market_key": "0x48ae110d8e71718db44310bba5109703d7c00c6c8ee8c537fa9e747459b7ccf1",
+      "market_slug": "btc-updown-5m-1783728300",
+      "question": "Bitcoin Up or Down - July 10, 8:05PM-8:10PM ET",
+      "recorded_at": "2026-07-10T00:26:37+00:00",
+      "rejection_reason": null,
+      "safety": "read-only/public-data; no wallet/auth/orders/live trading",
+      "simulated_action": "watch_only",
+      "status": "candidate_watch_only_fresh_window",
+      "token_books": [
+        {
+          "ask_levels": 49,
+          "best_ask": 0.51,
+          "best_bid": 0.5,
+          "bid_levels": 50,
+          "cheap_ask_depth_lte_2c": 0,
+          "cheap_bid_depth_lte_2c": 14894.84,
+          "outcome": "Up",
+          "raw_top_asks": [
+            {
+              "price": 0.51,
+              "size": 403.53
+            },
+            {
+              "price": 0.52,
+              "size": 140.0
+            },
+            {
+              "price": 0.53,
+              "size": 107.0
+            },
+            {
+              "price": 0.54,
+              "size": 68.0
+            },
+            {
+              "price": 0.55,
+              "size": 105.0
+            }
+          ],
+          "raw_top_bids": [
+            {
+              "price": 0.5,
+              "size": 242.79
+            },
+            {
+              "price": 0.49,
+              "size": 170.09
+            },
+            {
+              "price": 0.48,
+              "size": 140.0
+            },
+            {
+              "price": 0.47,
+              "size": 107.0
+            },
+            {
+              "price": 0.46,
+              "size": 68.0
+            }
+          ],
+          "token_id": "100503888069243731822836268623479047360827544424117308734440756586029921974047"
+        },
+        {
+          "ask_levels": 50,
+          "best_ask": 0.5,
+          "best_bid": 0.49,
+          "bid_levels": 49,
+          "cheap_ask_depth_lte_2c": 0,
+          "cheap_bid_depth_lte_2c": 13617.869999999999,
+          "outcome": "Down",
+          "raw_top_asks": [
+            {
+              "price": 0.5,
+              "size": 242.79
+            },
+            {
+              "price": 0.51,
+              "size": 170.09
+            },
+            {
+              "price": 0.52,
+              "size": 140.0
+            },
+            {
+              "price": 0.53,
+              "size": 107.0
+            },
+            {
+              "price": 0.54,
+              "size": 68.0
+            }
+          ],
+          "raw_top_bids": [
+            {
+              "price": 0.49,
+              "size": 403.53
+            },
+            {
+              "price": 0.48,
+              "size": 140.0
+            },
+            {
+              "price": 0.47,
+              "size": 107.0
+            },
+            {
+              "price": 0.46,
+              "size": 68.0
+            },
+            {
+              "price": 0.45,
+              "size": 105.0
+            }
+          ],
+          "token_id": "52706720450318697397134000400300859205544566706848811642880949865946167608438"
+        }
+      ],
+      "volume": null
+    },
+    {
+      "candidate_id": "PM-E03-20260710T002637+0000-0x448db2b332",
+      "coin": "ETHUSDT",
+      "conditionId": "0x448db2b332f73b76d444a4ed55f52434f5e3b11cd8f91f1bf9658bb883bdea45",
+      "detector_reason": "short-window binary up/down market recorded for two-sided cheap-bid baseline; no cheap current quote observed",
+      "edge_id": "PM-E03",
+      "endDate": "2026-07-11T00:15:00Z",
+      "fill_model": "no_fill_until_replay_proves_fill; conservative_queue_aware_required",
+      "first_seen_at": "2026-07-10T00:22:43+00:00",
+      "interval_minutes": 15,
+      "liquidity": 11802.3324,
+      "market_id": "2865273",
+      "market_key": "0x448db2b332f73b76d444a4ed55f52434f5e3b11cd8f91f1bf9658bb883bdea45",
+      "market_slug": "eth-updown-15m-1783728000",
+      "question": "Ethereum Up or Down - July 10, 8:00PM-8:15PM ET",
+      "recorded_at": "2026-07-10T00:26:37+00:00",
+      "rejection_reason": null,
+      "safety": "read-only/public-data; no wallet/auth/orders/live trading",
+      "simulated_action": "watch_only",
+      "status": "baseline_snapshot_no_candidate_fill",
+      "token_books": [
+        {
+          "ask_levels": 42,
+          "best_ask": 0.51,
+          "best_bid": 0.5,
+          "bid_levels": 43,
+          "cheap_ask_depth_lte_2c": 0,
+          "cheap_bid_depth_lte_2c": 8123.0,
+          "outcome": "Up",
+          "raw_top_asks": [
+            {
+              "price": 0.51,
+              "size": 1181.47
+            },
+            {
+              "price": 0.52,
+              "size": 445.42
+            },
+            {
+              "price": 0.53,
+              "size": 526.64
+            },
+            {
+              "price": 0.54,
+              "size": 460.87
+            },
+            {
+              "price": 0.55,
+              "size": 481.11
+            }
+          ],
+          "raw_top_bids": [
+            {
+              "price": 0.5,
+              "size": 5.0
+            },
+            {
+              "price": 0.49,
+              "size": 1181.47
+            },
+            {
+              "price": 0.48,
+              "size": 445.42
+            },
+            {
+              "price": 0.47,
+              "size": 526.64
+            },
+            {
+              "price": 0.46,
+              "size": 460.87
+            }
+          ],
+          "token_id": "48163562329456802209086839742264928088183045074269784124420903522194828293213"
+        },
+        {
+          "ask_levels": 43,
+          "best_ask": 0.5,
+          "best_bid": 0.49,
+          "bid_levels": 42,
+          "cheap_ask_depth_lte_2c": 0,
+          "cheap_bid_depth_lte_2c": 8133.469999999999,
+          "outcome": "Down",
+          "raw_top_asks": [
+            {
+              "price": 0.5,
+              "size": 5.0
+            },
+            {
+              "price": 0.51,
+              "size": 1181.47
+            },
+            {
+              "price": 0.52,
+              "size": 445.42
+            },
+            {
+              "price": 0.53,
+              "size": 526.64
+            },
+            {
+              "price": 0.54,
+              "size": 460.87
+            }
+          ],
+          "raw_top_bids": [
+            {
+              "price": 0.49,
+              "size": 1181.47
+            },
+            {
+              "price": 0.48,
+              "size": 445.42
+            },
+            {
+              "price": 0.47,
+              "size": 526.64
+            },
+            {
+              "price": 0.46,
+              "size": 460.87
+            },
+            {
+              "price": 0.45,
+              "size": 481.11
+            }
+          ],
+          "token_id": "98506138807149370756008049152523587579123263737656780323639557906878689186165"
+        }
+      ],
+      "volume": null
+    },
+    {
+      "candidate_id": "PM-E04-20260710T002637+0000-0x448db2b332",
+      "coin": "ETHUSDT",
+      "conditionId": "0x448db2b332f73b76d444a4ed55f52434f5e3b11cd8f91f1bf9658bb883bdea45",
+      "detector_reason": "fresh or newly first-seen binary market within 24h; stale-pricing hypothesis requires repeated first-seen snapshots",
+      "edge_id": "PM-E04",
+      "endDate": "2026-07-11T00:15:00Z",
+      "fill_model": "no_fill_until_replay_proves_fill; conservative_queue_aware_required",
+      "first_seen_at": "2026-07-10T00:22:43+00:00",
+      "fresh_age_hours": 0.324,
+      "interval_minutes": 15,
+      "liquidity": 11802.3324,
+      "market_id": "2865273",
+      "market_key": "0x448db2b332f73b76d444a4ed55f52434f5e3b11cd8f91f1bf9658bb883bdea45",
+      "market_slug": "eth-updown-15m-1783728000",
+      "question": "Ethereum Up or Down - July 10, 8:00PM-8:15PM ET",
+      "recorded_at": "2026-07-10T00:26:37+00:00",
+      "rejection_reason": null,
+      "safety": "read-only/public-data; no wallet/auth/orders/live trading",
+      "simulated_action": "watch_only",
+      "status": "candidate_watch_only_fresh_window",
+      "token_books": [
+        {
+          "ask_levels": 42,
+          "best_ask": 0.51,
+          "best_bid": 0.5,
+          "bid_levels": 43,
+          "cheap_ask_depth_lte_2c": 0,
+          "cheap_bid_depth_lte_2c": 8123.0,
+          "outcome": "Up",
+          "raw_top_asks": [
+            {
+              "price": 0.51,
+              "size": 1181.47
+            },
+            {
+              "price": 0.52,
+              "size": 445.42
+            },
+            {
+              "price": 0.53,
+              "size": 526.64
+            },
+            {
+              "price": 0.54,
+              "size": 460.87
+            },
+            {
+              "price": 0.55,
+              "size": 481.11
+            }
+          ],
+          "raw_top_bids": [
+            {
+              "price": 0.5,
+              "size": 5.0
+            },
+            {
+              "price": 0.49,
+              "size": 1181.47
+            },
+            {
+              "price": 0.48,
+              "size": 445.42
+            },
+            {
+              "price": 0.47,
+              "size": 526.64
+            },
+            {
+              "price": 0.46,
+              "size": 460.87
+            }
+          ],
+          "token_id": "48163562329456802209086839742264928088183045074269784124420903522194828293213"
+        },
+        {
+          "ask_levels": 43,
+          "best_ask": 0.5,
+          "best_bid": 0.49,
+          "bid_levels": 42,
+          "cheap_ask_depth_lte_2c": 0,
+          "cheap_bid_depth_lte_2c": 8133.469999999999,
+          "outcome": "Down",
+          "raw_top_asks": [
+            {
+              "price": 0.5,
+              "size": 5.0
+            },
+            {
+              "price": 0.51,
+              "size": 1181.47
+            },
+            {
+              "price": 0.52,
+              "size": 445.42
+            },
+            {
+              "price": 0.53,
+              "size": 526.64
+            },
+            {
+              "price": 0.54,
+              "size": 460.87
+            }
+          ],
+          "raw_top_bids": [
+            {
+              "price": 0.49,
+              "size": 1181.47
+            },
+            {
+              "price": 0.48,
+              "size": 445.42
+            },
+            {
+              "price": 0.47,
+              "size": 526.64
+            },
+            {
+              "price": 0.46,
+              "size": 460.87
+            },
+            {
+              "price": 0.45,
+              "size": 481.11
+            }
+          ],
+          "token_id": "98506138807149370756008049152523587579123263737656780323639557906878689186165"
+        }
+      ],
+      "volume": null
+    }
+  ],
+  "implemented_edges": [
+    "PM-E03",
+    "PM-E04",
+    "PM-E06"
+  ],
+  "ledgers": {
+    "candidates": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Implementation\\ledgers\\polymarket_edge_candidates.jsonl",
+    "first_seen": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Implementation\\data_cache\\polymarket_market_first_seen.json",
+    "orderbooks": "C:\\Users\\Kidsg\\Documents\\AI Second Brain\\05_Projects\\AI Quant Trading Floor\\Implementation\\ledgers\\polymarket_orderbook_snapshots.jsonl"
+  },
+  "market_count": 30,
+  "markets_sample": [
+    {
+      "active": true,
+      "clobTokenIds": [
+        "17572937743553622007574854767800179053257989607150990127742127678112949966531",
+        "109485388632239321949522534949286742613587937674462715784053878432833137696796"
+      ],
+      "closed": false,
+      "coin": "ETHUSDT",
+      "conditionId": "0xaf8816b7edf779f8f1d5e6882adc8824ba1f418544bec7b697a92e4f2372357d",
+      "createdAt": "2026-06-08T02:30:31.108002Z",
+      "created_dt": "2026-06-08T02:30:31.108002+00:00",
+      "endDate": "2027-01-01T05:00:00Z",
+      "end_dt": "2027-01-01T05:00:00+00:00",
+      "first_seen_at": "2026-07-09T23:58:40+00:00",
+      "interval_minutes": null,
+      "liquidity": 16100.5947,
+      "market_id": "2467356",
+      "market_key": "0xaf8816b7edf779f8f1d5e6882adc8824ba1f418544bec7b697a92e4f2372357d",
+      "outcomePrices": [
+        0.13,
+        0.87
+      ],
+      "outcomes": [
+        "Yes",
+        "No"
+      ],
+      "question": "Will Ethereum reach $3,000 by December 31, 2026?",
+      "slug": "will-ethereum-reach-3000-by-december-31-2026-from-june-8",
+      "source": "https://gamma-api.polymarket.com/markets?limit=600&active=true&closed=false&order=volume&ascending=false",
+      "startDate": "2026-06-08T05:02:40.363755Z",
+      "start_dt": "2026-06-08T05:02:40.363755+00:00",
+      "token_books": [
+        {
+          "ask_levels": 15,
+          "best_ask": 0.15,
+          "best_bid": 0.11,
+          "bid_levels": 7,
+          "cheap_ask_depth_lte_2c": 0,
+          "cheap_bid_depth_lte_2c": 78.4,
+          "outcome": "Yes",
+          "raw_top_asks": [
+            {
+              "price": 0.15,
+              "size": 1000.0
+            },
+            {
+              "price": 0.16,
+              "size": 5510.0
+            },
+            {
+              "price": 0.17,
+              "size": 10.0
+            },
+            {
+              "price": 0.2,
+              "size": 17.89
+            },
+            {
+              "price": 0.68,
+              "size": 800.0
+            }
+          ],
+          "raw_top_bids": [
+            {
+              "price": 0.11,
+              "size": 821.79
+            },
+            {
+              "price": 0.09,
+              "size": 2540.58
+            },
+            {
+              "price": 0.08,
+              "size": 2500.0
+            },
+            {
+              "price": 0.07,
+              "size": 2500.0
+            },
+            {
+              "price": 0.06,
+              "size": 2000.0
+            }
+          ],
+          "token_id": "17572937743553622007574854767800179053257989607150990127742127678112949966531"
+        },
+        {
+          "ask_levels": 7,
+          "best_ask": 0.89,
+          "best_bid": 0.85,
+          "bid_levels": 15,
+          "cheap_ask_depth_lte_2c": 0,
+          "cheap_bid_depth_lte_2c": 190011.77,
+          "outcome": "No",
+          "raw_top_asks": [
+            {
+              "price": 0.89,
+              "size": 821.79
+            },
+            {
+              "price": 0.91,
+              "size": 2540.58
+            },
+            {
+              "price": 0.92,
+              "size": 2500.0
+            },
+            {
+              "price": 0.93,
+              "size": 2500.0
+            },
+            {
+              "price": 0.94,
+              "size": 2000.0
+            }
+          ],
+          "raw_top_bids": [
+            {
+              "price": 0.85,
+              "size": 1000.0
+            },
+            {
+              "price": 0.84,
+              "size": 5510.0
+            },
+            {
+              "price": 0.83,
+              "size": 10.0
+            },
+            {
+              "price": 0.8,
+              "size": 17.89
+            },
+            {
+              "price": 0.32,
+              "size": 800.0
+            }
+          ],
+          "token_id": "109485388632239321949522534949286742613587937674462715784053878432833137696796"
+        }
+      ],
+      "volume": 9935.137426000005
+    },
+    {
+      "active": true,
+      "clobTokenIds": [
+        "38753055222660632905108494754118035190557228133419150385016105194185659570282",
+        "48595763823338254919539918853815465562545948589749671386189761492398418132533"
+      ],
+      "closed": false,
+      "coin": "ETHUSDT",
+      "conditionId": "0x2e83be15d42720b670d774e153461912d883f1002c761aa00338a9512c7d872e",
+      "createdAt": "2026-07-10T00:17:05.997185Z",
+      "created_dt": "2026-07-10T00:17:05.997185+00:00",
+      "endDate": "2026-07-11T00:15:00Z",
+      "end_dt": "2026-07-11T00:15:00+00:00",
+      "first_seen_at": "2026-07-10T00:22:43+00:00",
+      "interval_minutes": 5,
+      "liquidity": 3874.4558,
+      "market_id": "2865294",
+      "market_key": "0x2e83be15d42720b670d774e153461912d883f1002c761aa00338a9512c7d872e",
+      "outcomePrices": [
+        0.505,
+        0.495
+      ],
+      "outcomes": [
+        "Up",
+        "Down"
+      ],
+      "question": "Ethereum Up or Down - July 10, 8:10PM-8:15PM ET",
+      "slug": "eth-updown-5m-1783728600",
+      "source": "https://gamma-api.polymarket.com/markets?limit=600&active=true&closed=false&order=createdAt&ascending=false",
+      "startDate": "2026-07-10T00:18:03.708295Z",
+      "start_dt": "2026-07-10T00:18:03.708295+00:00",
+      "token_books": [
+        {
+          "ask_levels": 42,
+          "best_ask": 0.51,
+          "best_bid": 0.5,
+          "bid_levels": 43,
+          "cheap_ask_depth_lte_2c": 0,
+          "cheap_bid_depth_lte_2c": 8865.0,
+          "outcome": "Up",
+          "raw_top_asks": [
+            {
+              "price": 0.51,
+              "size": 98.02
+            },
+            {
+              "price": 0.52,
+              "size": 25.0
+            },
+            {
+              "price": 0.53,
+              "size": 61.0
+            },
+            {
+              "price": 0.54,
+              "size": 30.0
+            },
+            {
+              "price": 0.55,
+              "size": 65.0
+            }
+          ],
+          "raw_top_bids": [
+            {
+              "price": 0.5,
+              "size": 5.0
+            },
+            {
+              "price": 0.49,
+              "size": 98.02
+            },
+            {
+              "price": 0.48,
+              "size": 25.0
+            },
+            {
+              "price": 0.47,
+              "size": 61.0
+            },
+            {
+              "price": 0.46,
+              "size": 30.0
+            }
+          ],
+          "token_id": "38753055222660632905108494754118035190557228133419150385016105194185659570282"
+        },
+        {
+          "ask_levels": 43,
+          "best_ask": 0.5,
+          "best_bid": 0.49,
+          "bid_levels": 42,
+          "cheap_ask_depth_lte_2c": 0,
+          "cheap_bid_depth_lte_2c": 8865.0,
+          "outcome": "Down",
+          "raw_top_asks": [
+            {
+              "price": 0.5,
+              "size": 5.0
+            },
+            {
+              "price": 0.51,
+              "size": 98.02
+            },
+            {
+              "price": 0.52,
+              "size": 25.0
+            },
+            {
+              "price": 0.53,
+              "size": 61.0
+            },
+            {
+              "price": 0.54,
+              "size": 30.0
+            }
+          ],
+          "raw_top_bids": [
+            {
+              "price": 0.49,
+              "size": 98.02
+            },
+            {
+              "price": 0.48,
+              "size": 25.0
+            },
+            {
+              "price": 0.47,
+              "size": 61.0
+            },
+            {
+              "price": 0.46,
+              "size": 30.0
+            },
+            {
+              "price": 0.45,
+              "size": 65.0
+            }
+          ],
+          "token_id": "48595763823338254919539918853815465562545948589749671386189761492398418132533"
+        }
+      ],
+      "volume": null
+    },
+    {
+      "active": true,
+      "clobTokenIds": [
+        "43145670317875897756510129252799671829602063354012900651877669299562071361439",
+        "79991517728367450596943757983234205588123603070500166851407907710362108684783"
+      ],
+      "closed": false,
+      "coin": "BTCUSDT",
+      "conditionId": "0xbf9a048d8e5bcbf78d1fe6582ee61010d1a7b3e447c20c8012051809c37b8289",
+      "createdAt": "2026-07-10T00:17:05.2957Z",
+      "created_dt": "2026-07-10T00:17:05.295700+00:00",
+      "endDate": "2026-07-11T00:15:00Z",
+      "end_dt": "2026-07-11T00:15:00+00:00",
+      "first_seen_at": "2026-07-10T00:22:43+00:00",
+      "interval_minutes": 5,
+      "liquidity": 6901.9075,
+      "market_id": "2865289",
+      "market_key": "0xbf9a048d8e5bcbf78d1fe6582ee61010d1a7b3e447c20c8012051809c37b8289",
+      "outcomePrices": [
+        0.505,
+        0.495
+      ],
+      "outcomes": [
+        "Up",
+        "Down"
+      ],
+      "question": "Bitcoin Up or Down - July 10, 8:10PM-8:15PM ET",
+      "slug": "btc-updown-5m-1783728600",
+      "source": "https://gamma-api.polymarket.com/markets?limit=600&active=true&closed=false&order=createdAt&ascending=false",
+      "startDate": "2026-07-10T00:18:17.514928Z",
+      "start_dt": "2026-07-10T00:18:17.514928+00:00",
+      "token_books": [
+        {
+          "ask_levels": 49,
+          "best_ask": 0.51,
+          "best_bid": 0.5,
+          "bid_levels": 50,
+          "cheap_ask_depth_lte_2c": 0,
+          "cheap_bid_depth_lte_2c": 14462.609999999999,
+          "outcome": "Up",
+          "raw_top_asks": [
+            {
+              "price": 0.51,
+              "size": 1872.94
+            },
+            {
+              "price": 0.52,
+              "size": 140.0
+            },
+            {
+              "price": 0.53,
+              "size": 107.0
+            },
+            {
+              "price": 0.54,
+              "size": 58.0
+            },
+            {
+              "price": 0.55,
+              "size": 95.0
+            }
+          ],
+          "raw_top_bids": [
+            {
+              "price": 0.5,
+              "size": 1477.64
+            },
+            {
+              "price": 0.49,
+              "size": 165.02
+            },
+            {
+              "price": 0.48,
+              "size": 140.0
+            },
+            {
+              "price": 0.47,
+              "size": 107.0
+            },
+            {
+              "price": 0.46,
+              "size": 58.0
+            }
+          ],
+          "token_id": "43145670317875897756510129252799671829602063354012900651877669299562071361439"
+        },
+        {
+          "ask_levels": 50,
+          "best_ask": 0.5,
+          "best_bid": 0.49,
+          "bid_levels": 49,
+          "cheap_ask_depth_lte_2c": 0,
+          "cheap_bid_depth_lte_2c": 12189.34,
+          "outcome": "Down",
+          "raw_top_asks": [
+            {
+              "price": 0.5,
+              "size": 1477.64
+            },
+            {
+              "price": 0.51,
+              "size": 165.02
+            },
+            {
+              "price": 0.52,
+              "size": 140.0
+            },
+            {
+              "price": 0.53,
+              "size": 107.0
+            },
+            {
+              "price": 0.54,
+              "size": 58.0
+            }
+          ],
+          "raw_top_bids": [
+            {
+              "price": 0.49,
+              "size": 1872.94
+            },
+            {
+              "price": 0.48,
+              "size": 140.0
+            },
+            {
+              "price": 0.47,
+              "size": 107.0
+            },
+            {
+              "price": 0.46,
+              "size": 58.0
+            },
+            {
+              "price": 0.45,
+              "size": 95.0
+            }
+          ],
+          "token_id": "79991517728367450596943757983234205588123603070500166851407907710362108684783"
+        }
+      ],
+      "volume": null
+    }
+  ],
+  "mode": "read-only public-data scanner; no wallet/auth/orders/live trading",
+  "recorded_at": "2026-07-10T00:26:37+00:00",
+  "spec": "QTF-018 Prediction Market Edge Intake"
+}
