@@ -80,13 +80,23 @@ It found close matches but declined to rewrite them, because each differs by a
 
 | In | Link | Closest match |
 |---|---|---|
-| `QTF-024 Contradiction Detection Research` | `[[0xJeff Hermes Workflows - Source Review - 2026-07-13]]` | `… - 2026-07-14` |
-| `QTF Alpha Digest Pipeline Contract` | `[[0xJeff Hermes Workflows - Source Review - 2026-07-13]]` | `… - 2026-07-14` |
-| `qtf_v07_costed_20260718_comparison` | `[[QTF-V07 Costed Function-Based Pairs Backtest - 2026-07-15]]` | `QTF-**V05** …` |
+| `QTF-024 Contradiction Detection Research` | `0xJeff Hermes Workflows - Source Review - 2026-07-13` | `… - 2026-07-14` |
+| `QTF Alpha Digest Pipeline Contract` | `0xJeff Hermes Workflows - Source Review - 2026-07-13` | `… - 2026-07-14` |
+| `qtf_v07_costed_20260718_comparison` | `QTF-V07 Costed Function-Based Pairs Backtest - 2026-07-15` | `QTF-**V05** …` |
 
-The first two are probably just date typos. **The third is the dangerous one** —
-V05 and V07 are different strategies, and it may mean the V07 note was never
-written.
+The first two are probably just date typos — only the `07-14` file exists, and
+no `07-13` was ever written.
+
+**The third is the dangerous one, and it is now confirmed.** A search of the
+whole vault finds exactly one file: `QTF-V05 Costed Function-Based Pairs
+Backtest - 2026-07-15.md`. There is no V07 note. So the comparison report cites
+a backtest write-up that does not exist — either it was never written, or the
+report means V05 and the reference is wrong. Those have opposite fixes, which is
+precisely why the tool refused to guess.
+
+Note the targets above are deliberately written as code, not as wikilinks. An
+earlier version of this dashboard used `[[…]]`, which made the dashboard itself
+generate three of the broken links it was reporting.
 
 ```powershell
 python 00_System\Scripts\vault_repair.py --fix-links   # re-lists these
@@ -94,27 +104,39 @@ python 00_System\Scripts\vault_repair.py --fix-links   # re-lists these
 
 ---
 
-## 5. Forty-four notes have no frontmatter
+## 5. 136 notes have no frontmatter
+
+Measured against the live vault, not the imported copy — the earlier figure of 44
+was from the subset that reached git. The real number is **136**, about 18% of
+the vault.
 
 They are invisible to Dataview and to most of the tooling. **Not auto-filled on
-purpose** — inventing a `created:` date would fabricate provenance across 5% of the
-vault, which is worse than leaving it blank.
+purpose** — inventing a `created:` date would fabricate provenance across a fifth
+of the vault, which is worse than leaving it blank.
 
-**Decide:** either accept them as-is, or fill dates from file mtime where you are
-confident that reflects reality. Most are in `05_Projects`.
+Most are in `05_Projects`, and a large share are not really notes at all:
+`README.md`, `CLAUDE.md`, generated reports, email sequence drafts. Those are
+project files that happen to be markdown.
+
+**Decide:** either accept them, or split the difference — add frontmatter to the
+ones that are genuinely knowledge, and leave project scaffolding alone. The
+second is the better trade; blanket-filling 136 files would mostly add ceremony
+to files no one queries.
 
 ---
 
 ## 6. Twenty-five links point at notes that were never written
 
-Not typos — genuinely missing pages: `[[Dami-DeFi Module]]`,
-`[[QTF Strategy Promotion Gates]]`, `[[BuyerProof AU]]`,
-`[[Trading Bot Safety and Control Rules]]`, and others.
+Not typos — genuinely missing pages: `Dami-DeFi Module`,
+`QTF Strategy Promotion Gates`, `BuyerProof AU`,
+`Trading Bot Safety and Control Rules`, and others. Written as code here, for the
+same reason as item 4: listing them as wikilinks would make this dashboard
+manufacture the very problem it reports.
 
 **Decide, per link:** write the note, or remove the link. A link to a note you
 never intend to write is a promise the vault keeps making and breaking.
 
-`[[Trading Bot Safety and Control Rules]]` is the one worth writing first, given
+`Trading Bot Safety and Control Rules` is the one worth writing first, given
 everything else stays paper-only.
 
 ---
@@ -129,8 +151,8 @@ everything else stays paper-only.
 | concepts are sourced | FAIL | 14/19 — the 5 original concepts predate the convention |
 | orphans | FAIL | 16%, want ≤15% |
 | dead ends | FAIL | 57%, want ≤40% |
-| stalled generators | FAIL | item 1 above |
-| broken links | FAIL | 44 — items 4 and 6 above |
+| stalled generators | FAIL | item 1 above — **confirmed**, 21 + 21 identical notes |
+| broken links | FAIL | 33 on the live vault — 3 real referrals (item 4) + 30 unwritten (item 6) |
 
 Items 1 and 6 are most of the remaining gate failures. Clearing those two moves
 four gates.
