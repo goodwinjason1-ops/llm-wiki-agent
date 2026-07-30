@@ -14,4 +14,13 @@ An AI second brain is a filesystem-first knowledge system where Obsidian stores 
 
 The Karpathy-style version adds a compounding maintenance loop: raw sources remain immutable, agent-written wiki pages stay current, valuable queries are filed back into the vault, and a connection pass surfaces missed links. For Jayse, this is implemented through [[Claude and Ari Second Brain Evolution Loop]] and [[Karpathy Connection Illumination Workflow]].
 
+## Sources
+
+- [[scalable-obsidian-brain-for-an-ai-agent]] — the single capture all five of the original concept pages were
+  abstracted from, on 2026-07-02.
+
+The frontmatter has always named this source, but frontmatter is not a link:
+it creates no edge, so the provenance was unnavigable and invisible to the
+graph. This section makes the citation a real link in both directions.
+
 Related: [[karpathy-llm-wiki]], [[codex-execution-engine]], [[self-improvement-loop]], [[Connection Illumination Dashboard]].

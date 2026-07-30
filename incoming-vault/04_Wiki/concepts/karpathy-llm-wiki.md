@@ -14,4 +14,13 @@ Karpathy's LLM Wiki pattern uses three layers: immutable raw sources, an agent-m
 
 The practical upgrade for Jayse's vault is the [[Karpathy Connection Illumination Workflow]]: a recurring pass that scans the existing markdown graph for likely missed links, orphan pages, hub pages, and cross-folder bridge candidates. This turns the vault from searchable memory into a maintained intelligence layer.
 
+## Sources
+
+- [[scalable-obsidian-brain-for-an-ai-agent]] — the single capture all five of the original concept pages were
+  abstracted from, on 2026-07-02.
+
+The frontmatter has always named this source, but frontmatter is not a link:
+it creates no edge, so the provenance was unnavigable and invisible to the
+graph. This section makes the citation a real link in both directions.
+
 Related: [[ai-second-brain]], [[YouTube Ingest Workflow]], [[Weekly Lint Workflow]], [[Claude and Ari Second Brain Evolution Loop]], [[Connection Illumination Dashboard]].

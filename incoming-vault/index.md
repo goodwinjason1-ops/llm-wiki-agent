@@ -7,6 +7,11 @@
 
 - [[Decisions Needed - 2026-07-29]] — six judgement calls left after the 2026-07-29 cleanup
 
+## Seeing the vault
+
+- [[Galaxy View]] — the built-in graph, the 3D galaxy, and how to read the shape
+- [[vault-health]] — the scoreboard, and which gate is currently failing
+
 ## Wiki concepts
 
 The synthesis layer. Each cites the sources it was abstracted from.
