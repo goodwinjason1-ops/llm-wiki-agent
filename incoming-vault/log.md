@@ -1561,3 +1561,19 @@ Summary: Vault is moderately degraded. Broken links (38) and missing frontmatter
 - **`Galaxy View` was itself an orphan.** Linked from `index.md` under a new "Seeing the vault" section, along with the health trend report.
 - **Gates: 3 passing -> 4 passing.** The four still failing are orphans (16%), dead ends (46%), one stalled generator, and 45 broken links — and three of those four are item 1 and item 6 on [[Decisions Needed - 2026-07-29]]. 21 Inbox Processor Reports and the Vault Loop Reports account for most of the orphan count on their own.
 - Tooling: `00_System/Scripts/vault_health.py`.
+
+## [2026-07-30] fix | Both stalled generators diagnosed and repaired
+
+Item 1 on [[Decisions Needed - 2026-07-29]], closed. The identical files were the
+symptom; three separate defects produced them.
+
+- **Neither script had change detection.** Both wrote a date-stamped report on every run regardless of whether anything had happened. The inbox has held the same 4 notes since 2026-07-08 — **3 of them are 0 bytes** — so the report was correct and identical 21 times over. Both now compare the run's substance against the newest prior report, with timestamps stripped, and skip the write when nothing changed. `inbox_processor.py --force` overrides.
+- **The inbox report was unstable on file order.** Rows were rendered in file-mtime order, so any sync that touched the inbox reshuffled the table and made an unchanged report look changed — which would have defeated the change detection above. Rows now render in path order. Found only because the first version of the fix kept writing.
+- **The handoff grew by one line per day, forever.** `refresh_handoff` built its marker with today's date in it, so it never matched yesterday's line and the replace branch could not fire across days. 19 marker lines had accumulated in a 154-line file. The marker is now date-free and duplicates collapse to one.
+- **32 run payloads had accumulated** in `00_System/Reports/`, none ever read. `inbox_processor.py` now keeps the last 10. 23 were removed. These are JSON run artefacts, not notes — the no-deletion rule is unaffected.
+
+**The finding underneath all of it:** `vault_loop_runner.py` calls `inbox_processor.py` **without `--apply`**, so the loop has always run in dry-run. And even with `--apply`, the processor only appends a comment block — it never files or moves anything. The inbox could not drain, because nothing in the loop was ever permitted to drain it. Three weeks of reports faithfully described an inbox that no automation was allowed to touch.
+
+The 3 empty inbox notes and the 42 identical reports still need a human decision — see [[Decisions Needed - 2026-07-29]].
+
+- Tooling: `00_System/Scripts/inbox_processor.py`, `00_System/Scripts/vault_loop_runner.py`.

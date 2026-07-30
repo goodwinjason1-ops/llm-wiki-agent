@@ -51,6 +51,37 @@ def now() -> str:
     return datetime.now(timezone.utc).isoformat(timespec="seconds")
 
 
+# Volatile lines: they differ on every run even when nothing about the inbox has
+# changed. Ignoring them is what lets us tell "new information" from "ran again".
+VOLATILE = ("- Generated:", "- JSON:", "created:", "updated:")
+
+
+def stable(text: str) -> str:
+    """The part of a report that carries information, with the clock removed."""
+    return "\n".join(l for l in text.splitlines()
+                     if not l.startswith(VOLATILE))
+
+
+def unchanged_since_last(report_dir: Path, pattern: str, body: str) -> Path | None:
+    """Return the newest prior report whose substance matches `body`, if any.
+
+    Writing a dated file per run regardless of change is how this script produced
+    21 byte-identical notes: the inbox had not changed in three weeks, so neither
+    had the report, but a new file appeared each morning anyway. Those files then
+    counted as orphans and dragged every graph measurement in the vault.
+    """
+    prior = sorted(report_dir.glob(pattern))
+    if not prior:
+        return None
+    last = prior[-1]
+    try:
+        if stable(last.read_text(encoding="utf-8")) == stable(body):
+            return last
+    except OSError:
+        return None
+    return None
+
+
 def parse_frontmatter(text: str) -> dict:
     m = FRONTMATTER_RE.search(text)
     data = {}
@@ -152,7 +183,12 @@ def markdown_report(rows: list[dict], report_json: Path) -> str:
         "| Note | Class | Priority | URL | Suggested destinations | Status |",
         "|---|---:|---:|---|---|---|",
     ]
-    for r in rows:
+    # Render in path order, not scan order. Notes are scanned newest-first so
+    # --limit takes the most recent, but mtime is not information about the inbox:
+    # a sync that touches files reshuffles the table and makes an unchanged report
+    # look changed. Deterministic order is what makes "did anything happen?"
+    # answerable.
+    for r in sorted(rows, key=lambda r: r["path"]):
         url = r["url"] or ""
         url_cell = f"[link]({url})" if url.startswith("http") else url
         dest = "<br>".join(f"`{d}`" for d in r["suggested_destinations"])
@@ -189,6 +225,8 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--apply", action="store_true", help="Append processing blocks to inbox notes; default is dry-run report only.")
     ap.add_argument("--limit", type=int, default=0, help="Optional max notes to scan.")
+    ap.add_argument("--force", action="store_true",
+                    help="Write the report even if the inbox has not changed.")
     args = ap.parse_args()
 
     REPORTS.mkdir(parents=True, exist_ok=True)
@@ -203,9 +241,32 @@ def main() -> None:
     json_path = REPORTS / f"inbox_processor_{stamp}.json"
     md_path = REPORTS / f"Inbox Processor Report - {now()[:10]}.md"
     payload = {"ts": now(), "mode": "apply" if args.apply else "dry-run", "inbox": str(INBOX), "rows": rows}
+    body = markdown_report(rows, json_path)
+
+    same = None if args.force else unchanged_since_last(
+        REPORTS, "Inbox Processor Report - *.md", body)
+    if same is not None and same != md_path:
+        print(json.dumps({
+            "mode": payload["mode"], "notes": len(rows), "written": False,
+            "reason": "inbox unchanged since " + same.stem.split(" - ")[-1],
+            "existing": str(same),
+        }, indent=2))
+        return
+
     json_path.write_text(json.dumps(payload, indent=2), encoding="utf-8")
-    md_path.write_text(markdown_report(rows, json_path), encoding="utf-8")
-    print(json.dumps({"mode": payload["mode"], "notes": len(rows), "json": str(json_path), "markdown": str(md_path), "counts": {k: sum(1 for r in rows if r['classified_as'] == k) for k in sorted(set(r['classified_as'] for r in rows))}}, indent=2))
+    md_path.write_text(body, encoding="utf-8")
+    prune_json(REPORTS)
+    print(json.dumps({"mode": payload["mode"], "notes": len(rows), "written": True, "json": str(json_path), "markdown": str(md_path), "counts": {k: sum(1 for r in rows if r['classified_as'] == k) for k in sorted(set(r['classified_as'] for r in rows))}}, indent=2))
+
+
+def prune_json(report_dir: Path, keep: int = 10) -> None:
+    """Keep the last `keep` run payloads. 32 had accumulated, none ever read."""
+    runs = sorted(report_dir.glob("inbox_processor_*.json"))
+    for old in runs[:-keep]:
+        try:
+            old.unlink()
+        except OSError:
+            pass
 
 
 if __name__ == "__main__":

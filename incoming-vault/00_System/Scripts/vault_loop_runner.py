@@ -82,6 +82,34 @@ def md_safe_excerpt(text: str) -> str:
     return (text or '').replace('[[', '[\u200b[').replace(']]', ']\u200b]')
 
 
+# Lines that change on every run whether or not anything happened. Comparing
+# reports without stripping these means every run looks like news.
+VOLATILE_RE = __import__('re').compile(
+    r'\d{4}-\d{2}-\d{2}T[\d:]+(?:\+00:00|Z)?|\d{4}-\d{2}-\d{2}|\d{8}T?\d{6}')
+
+
+def stable(text: str) -> str:
+    return VOLATILE_RE.sub('<ts>', text)
+
+
+def unchanged_since_last(body: str, current: Path) -> Path | None:
+    """The newest prior loop report whose substance matches, if any.
+
+    This runner wrote a dated report unconditionally. The vault was quiet, so the
+    substance never changed — and 21 identical notes appeared anyway, every one an
+    orphan, each one nudging the vault's own health metrics in the wrong direction.
+    A loop that reports 'nothing happened' 21 times is not observability, it is noise
+    that trains you to stop reading the reports.
+    """
+    prior = sorted(p for p in REPORTS.glob('Vault Loop Report - *.md') if p != current)
+    if not prior:
+        return None
+    try:
+        return prior[-1] if stable(prior[-1].read_text(encoding='utf-8')) == stable(body) else None
+    except OSError:
+        return None
+
+
 def write_markdown_report(payload: dict) -> Path:
     report = REPORTS / f'Vault Loop Report - {today()}.md'
     lines = []
@@ -97,21 +125,43 @@ def write_markdown_report(payload: dict) -> Path:
     for step in payload['steps']:
         lines += [f"### {step['name']}", '', '```text', md_safe_excerpt((step.get('stdout') or step.get('stderr') or '').strip()[-3000:] or '(no output)'), '```', '']
     lines += ['## Next actions', '', '- Review connection suggestions before applying any auto-links.', '- Process any Inbox items with enough context.', '- Keep raw sources immutable; improve source summaries/workflows instead.', '- Keep trading/DeFi workflows read-only/backtest/paper unless Jayse explicitly approves live scope.', '']
-    report.write_text('\n'.join(lines), encoding='utf-8')
+    body = '\n'.join(lines)
+
+    same = unchanged_since_last(body, report)
+    if same is not None:
+        print(f'  nothing changed since {same.stem} — report not written')
+        return same
+
+    report.write_text(body, encoding='utf-8')
     return report
 
 
 def refresh_handoff(payload: dict, report: Path) -> None:
     HANDOFF.parent.mkdir(parents=True, exist_ok=True)
     existing = HANDOFF.read_text(encoding='utf-8') if HANDOFF.exists() else '# Current Ari Handoff\n'
-    marker = f'Vault self-evolving loop last ran {today()}'
-    line = f"- {marker}: report [[{report.stem}]], lint {payload.get('lint_summary')}."
-    if marker not in existing:
-        existing = existing.rstrip() + '\n' + line + '\n'
-    else:
-        lines = [line if marker in l else l for l in existing.splitlines()]
-        existing = '\n'.join(lines) + '\n'
-    HANDOFF.write_text(existing, encoding='utf-8')
+
+    # The marker used to embed today's date, so it never matched yesterday's line
+    # and the replace branch could only ever fire twice in one day. The file grew
+    # by one line every morning and had reached 154. A handoff is a statement of
+    # where things stand, not a diary — the marker is now date-free so the line is
+    # genuinely replaced, and the date lives in the text where it belongs.
+    marker = 'Vault self-evolving loop last ran'
+    line = (f"- {marker} {today()}: report [[{report.stem}]], "
+            f"lint {payload.get('lint_summary')}.")
+    # Keep the first marker line, replace it, drop the rest. Nineteen had already
+    # accumulated; rewriting them all to the same text would leave nineteen
+    # identical lines instead of one true one.
+    out, seen = [], False
+    for l in existing.splitlines():
+        if marker in l:
+            if not seen:
+                out.append(line)
+                seen = True
+            continue
+        out.append(l)
+    if not seen:
+        out.append(line)
+    HANDOFF.write_text('\n'.join(out).rstrip() + '\n', encoding='utf-8')
 
 
 def main() -> None:
