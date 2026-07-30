@@ -1,0 +1,629 @@
+warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/.claude/commands/connect-second-brain.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/.claude/commands/second-brain-loop.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/.obsidian/app.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/.obsidian/appearance.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/.obsidian/core-plugins.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/.obsidian/graph.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/.obsidian/templates.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/.obsidian/workspace.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/00_System/Agent Handoffs/Gemini Fallback Setup - Handoff Brief - 2026-07-13.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/00_System/Dashboards/AI Second Brain Dashboard.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/00_System/Dashboards/AI Second Brain Project Registry.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/00_System/Dashboards/Business Launch Asset Navigation Dashboard.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/00_System/Dashboards/Fable Extraction Master Status.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/00_System/Dashboards/Jayse Action Queue - cohealth to Current Projects - 2026-07-10.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/00_System/Dashboards/Jayse Portfolio Command Dashboard.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/00_System/Dashboards/Project Folder Inventory - 2026-07-07.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/00_System/Dashboards/START HERE.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/00_System/Handoffs/Ari Handoff - 2026-07-08 2317.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/00_System/Handoffs/Ari Handoff - 2026-07-10 AOD Placement Job Finder Compression.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/00_System/Handoffs/Ari Handoff - 2026-07-10 Polymarket Edge Batch.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/00_System/Reports/Daily Second Brain Update - 2026-07-18.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/00_System/Reports/Daily Second Brain Update - 2026-07-19.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/00_System/Reports/Daily Second Brain Update - 2026-07-21.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/00_System/Reports/Vault Loop Report - 2026-07-09.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/00_System/Reports/Vault Loop Report - 2026-07-11.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/00_System/Templates/AOD Application Follow-Up.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/00_System/Templates/AOD Application Package.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/00_System/Templates/AOD Contact Touch Email Log.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/00_System/Templates/AOD PD Extraction.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/00_System/Templates/AOD Placement Opportunity Capture.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/00_System/Templates/Daily Note Template.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/00_System/Templates/Inbox - Article or Web Link.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/00_System/Templates/Inbox - Business Asset or Customer Research.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/00_System/Templates/Inbox - Code Reference or Repo.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/00_System/Templates/Inbox - Idea or Rough Thought.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/00_System/Templates/Inbox - Image or Screenshot.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/00_System/Templates/Inbox - Quant Trading Source.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/00_System/Templates/Inbox - Quick Capture.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/00_System/Templates/Inbox - Reference Document or PDF.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/00_System/Templates/Inbox - Universal Capture.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/00_System/Templates/Inbox - X Thread or Social Post.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/00_System/Templates/Inbox - YouTube Video.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/00_System/Templates/Weekly Second Brain Evolution Review Template.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/00_System/Workflows/AI Quant Trading Floor Workflow.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/00_System/Workflows/Android Obsidian Sync via Syncthing.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/00_System/Workflows/Ari Context Guard and Handoff Workflow.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/00_System/Workflows/Capture Workflow.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/00_System/Workflows/Claude and Ari Second Brain Evolution Loop.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/00_System/Workflows/Inbox Capture Template Guide.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/00_System/Workflows/Karpathy Connection Illumination Workflow.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/00_System/Workflows/Karpathy Self-Learning Lessons Review and Implementation Workflow.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/00_System/Workflows/Obsidian Graph Visual Language.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/00_System/Workflows/OpenCLI Agent Reach Cheat Sheet.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/00_System/Workflows/Second Brain Agentic Capture Improvements - Captures 1 and 4.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/00_System/Workflows/Source-to-System Studio Delivery Verification Checklist - 2026-07-14.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/00_System/Workflows/Telegram Quick Capture Workflow.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/00_System/Workflows/Telegram Task and Note Capture Facility.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/00_System/Workflows/YouTube Ingest Workflow.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/00_System/task_inbox.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/01_Inbox/Inbox.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/02_Raw/articles/karpathy-llm-wiki-gist-2026-07-08.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/02_Raw/articles/x-aiedge-fable-obsidian-loop-2026-07-07.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/02_Raw/articles/x-cyrilxbt-karpathy-ai-second-brain-2026-07-07.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/02_Raw/reddit/1uqeb5b_access_attempt.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/02_Raw/x/2061870611115188297_access_attempt.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/02_Raw/x/X Bookmarks UIA Extract - 2026-07-09.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/02_Raw/x/x-milesdeutscher-robotics-guide-2026-07-07.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/02_Raw/youtube/Cap 4-5 ingestion - 2026-07-14.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/02_Raw/youtube/Thinkverse AI Five Claude Side Hustles - Raw Transcript.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/02_Raw/youtube/handsomefinance/handsomefinance-channel-inventory-2025-01-08-to-2026-07-08.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/02_Raw/youtube/transcripts/6njREUQAFdg.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/02_Raw/youtube/transcripts/MbfuJZZ01IU.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/02_Raw/youtube/transcripts/VDpTU5kdj8A.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/02_Raw/youtube/transcripts/Z-hU97WO30I.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/02_Raw/youtube/transcripts/bT36laxIbn4.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/02_Raw/youtube/transcripts/cv0y7oCllek.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/02_Raw/youtube/transcripts/iYG5tiFfK3E.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/02_Raw/youtube/transcripts/m6d5aqcxZ14.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/Indexes/General YouTube Raw Transcript Index.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/Indexes/Handsome Finance Raw Transcript Index.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/Indexes/Raw Source Corpus Navigation.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/Indexes/Source-Limited X Capture Index.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/Robot James Method Library - Caps 1 to 9.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/Robot James Raw Extract Index.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/articles/Robotics Physical AI Investing Guide - Miles Deutscher 2026-07-07.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/articles/fable-obsidian-second-brain-loop.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/articles/karpathy-ai-second-brain-connection-layer.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/articles/robotics-physical-ai-investing-guide-miles-deutscher-2026-07-07.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/papers/how-to-defi-advanced-coingecko.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/reddit/Polymarket 5-Minute Whale Economics - Reddit Source - 2026-07-10.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/reddit/Reddit AI Trading 10 Percent in 9 Days - Source-Limited Review.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/robot-james/raw-extracts/01-three-dead-simple-edges-in-macro.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/robot-james/raw-extracts/02-a-dirty-long-vol-vix-trade.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/robot-james/raw-extracts/03-trading-to-stay-alive.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/robot-james/raw-extracts/04-crypto-violence-and-the-gentle-rebalancing.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/robot-james/raw-extracts/05-pairs-trading-for-dickheads.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/robot-james/raw-extracts/06-a-complete-temu-pairs-trading-strategy.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/robot-james/raw-extracts/07-how-to-make-money-as-a-random-dickhead.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/robot-james/raw-extracts/08-three-types-of-systematic-trading.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/robot-james/raw-extracts/09-the-best-places-to-get-trading-ideas.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/x/0xJeff Hermes Workflows - Source Review - 2026-07-14.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/x/AI Edge Personal Agent Ideas - X 2068159407645671640.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/x/DamiDefi UCL Finance Paper Agent Architectures - Source Summary - 2026-07-13.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/x/Git Tools Install Review - X 2061870611115188297.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/x/Miles Claude Trading Bot Article - X 2075615711150608468.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/x/Miles Deutscher Vibe-Code TradingView Claude Article - Source Review - 2026-07-13.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/x/Moon Dev Robinhood Meme Discovery Bot - X 2075628021118099917.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/x/Morin Performance Review Dashboard and First AI Trading Workflow - Source Review - 2026-07-13.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/x/X Bookmark Cap 1 - CyrilXBT AI Second Brain in 15 Minutes.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/x/X Bookmark Cap 2 - AI Edge Fable Obsidian Self-Evolving Loops.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/x/X Bookmark Cap 3 - MoonDev AutoGPT Sharpe Trading Bot.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/x/X Bookmark Cap 4 - CyrilXBT Obsidian Trading Ideas Morning Workflow.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/x/X Bookmark Cap 5 - CyrilXBT Terminal Torrent Client.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/x/X Bookmark Cap 6 - AI Edge Anthropic Agentic Skills Guide.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/x/X Bookmark Cap 7 - DamiDefi DeFi Network Video Source Limited.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/youtube/1000-hours-best-digital-product-businesses.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/youtube/AI Backtesting TradingView EMA Strategy - YouTube VDpTU5kdj8A.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/youtube/Cap 6 Grok 4.5 Algo Trading - Source Review - 2026-07-14.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/youtube/Cap 7 Dynamo Hyperliquid - Source Review - 2026-07-14.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/youtube/Cap 9 Free Data Collection - Source Review - 2026-07-14.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/youtube/Cap Batch 2026-07-08 - Sequential Capture Review.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/youtube/ChatGPT 5_6 Trading Bot - Source Review - 2026-07-14.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/youtube/Claude Code Money Partner - YouTube iTY8Q449YNQ.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/youtube/Clore Money-Making Video - Source Review - 2026-07-14.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/youtube/Google Business Profile Gemini Service Opportunity - Source Review - 2026-07-13.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/youtube/Handsome Finance Channel Inventory - 2025-01-08 to 2026-07-08.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/youtube/Hermes AI Trading Floor System.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/youtube/How To Build A Self-Improving AI Trading Agent.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/youtube/I Built an AI Trading System From a Trader's YouTube Videos.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/youtube/Oracle Cloud Free VPS - YouTube TAZfDdQha3U.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/youtube/Thinkverse AI Five Claude Side Hustles - Business Context Brain Review.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/youtube/TikTok X Amazon KDP Strategy - Source Review - 2026-07-14.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/youtube/ai-backtesting-tradingview-ema-strategy-VDpTU5kdj8A.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/youtube/find-a-10k-month-business-idea-using-ai-claude-reddit.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/youtube/hedge-fund-method-markov-regime-system.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/youtube/hermes-ai-trading-floor-system.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/youtube/how-to-build-a-self-improving-ai-trading-agent.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/youtube/i-built-an-ai-trading-system-from-a-traders-youtube-videos.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/youtube/notebooklm-video-system-that-never-resets.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/youtube/start-a-10k-month-one-person-business-with-claude.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/03_Sources/youtube/this-claude-skill-watches-videos-so-you-do-not-have-to.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/04_Wiki/queries/Karpathy Connection Synthesis - 2026-07-08.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/04_Wiki/queries/Missed Connections Review - 2026-07-08.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Agent Lab.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/30-Day AI Business Opportunity Reset - 2026-07-07.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/AI Agent Income Ideas - Cap 1 2026-07-08.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/AI Business Video Opportunity Extraction - 2026-07-07.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/Basketball Coach Game Plan Pack/Basketball Coach Game Plan Proof Pack - 2026-07-10.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/Basketball Coach Game Plan Pack/Coach Pack Template.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/Basketball Coach Game Plan Pack/Landing Page Copy.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/Basketball Coach Game Plan Pack/Outreach Scripts.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/Business Context Brain - Product Concept.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/Business Context Brain Client Intake Guide.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/Business Context Brain Demo Pack/BCB Demo and Outreach Action Pack - 2026-07-13.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/Business Context Brain Demo Pack/Before After Storyboard - Business Context Brain.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/Business Context Brain Demo Pack/Business Context Brain Local Prospect Shortlist - Emerald 50km - 2026-07-13.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/Business Context Brain Demo Pack/Client Intake Checklist - Business Context Brain.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/Business Context Brain Demo Pack/Context Map Sprint Delivery Workflow.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/Business Context Brain Demo Pack/Demo Evidence Checklist.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/Business Context Brain Demo Pack/Demo Walkthrough Script - Business Context Brain.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/Business Context Brain Demo Pack/Landing Page Copy - Business Context Brain.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/Business Context Brain Demo Pack/Outreach Scripts - Business Context Brain.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/Business Context Brain Demo Pack/Packages and Pricing - Business Context Brain.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/Business Context Brain Demo Pack/README - Demo Pack.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/Business Context Brain Demo Pack/Renovator Quote Brain Demo/Before After Screenshots Spec - Renovator Quote Brain.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/Business Context Brain Demo Pack/Renovator Quote Brain Demo/Example Dashboard - Renovator Quote Brain.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/Business Context Brain Demo Pack/Renovator Quote Brain Demo/Landing Page Section - Renovator Quote Brain.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/Business Context Brain Demo Pack/Renovator Quote Brain Demo/Outreach Messages - Renovator Quote Brain.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/Business Context Brain Demo Pack/Renovator Quote Brain Demo/Pilot Delivery Checklist - Renovator Quote Brain.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/Business Context Brain Demo Pack/Renovator Quote Brain Demo/README - Renovator Quote Brain Demo.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/Business Context Brain Demo Pack/Renovator Quote Brain Demo/Sample Quote Library - Renovator Quote Brain.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/Business Context Brain Demo Pack/Video and Source Ingestion Module.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/BuyerProof AU/.claude/skills/create-buyerproof-kit-skill.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/BuyerProof AU/.claude/skills/create-buyerproof-kit/SKILL.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/BuyerProof AU/.claude/skills/extract-approach-skill.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/BuyerProof AU/.claude/skills/extract-approach/SKILL.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/BuyerProof AU/.claude/skills/safety-review-buyerproof-kit-skill.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/BuyerProof AU/.claude/skills/safety-review-buyerproof-kit/SKILL.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/BuyerProof AU/5 Launch Posts - Property Due Diligence Kit.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/BuyerProof AU/5 Launch Posts - Used Car Buyer Kit.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/BuyerProof AU/Approach Notes/2026-07-07 - BuyerProof AU opportunity selection.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/BuyerProof AU/Approach Notes/2026-07-07 - Durability pass on Week 1 used-car assets.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/BuyerProof AU/Approach Notes/2026-07-07 - Property kit v1.1 upgrade pass.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/BuyerProof AU/BuyerProof AU - Brand and Offer Brief.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/BuyerProof AU/CLAUDE.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/BuyerProof AU/Consultant Audit - BuyerProof AU - 2026-07-07.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/BuyerProof AU/Implementation Changelog - Claude Frontier Extraction Video - 2026-07-07.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/BuyerProof AU/Implementation Changelog - Property Due Diligence Kit v1.1 - 2026-07-07.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/BuyerProof AU/Landing Page Copy - BuyerProof AU Property Due Diligence Kit.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/BuyerProof AU/Landing Page Copy - BuyerProof AU Used Car Kit.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/BuyerProof AU/Outreach/BuyerProof AU Validation and Outreach Framework.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/BuyerProof AU/Outreach/Dual-Path Validation - Property Kit - DTC and B2B.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/BuyerProof AU/Partner Pack - Property Kit/Approach Note - B2B Partner Pack.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/BuyerProof AU/Partner Pack - Property Kit/B2B Outreach Scripts - Property Kit.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/BuyerProof AU/Partner Pack - Property Kit/Co-Branded Checklist Template and Instructions.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/BuyerProof AU/Partner Pack - Property Kit/Implementation Changelog - B2B Partner Pack - 2026-07-07.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/BuyerProof AU/Partner Pack - Property Kit/Partner FAQ and Objection Handling.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/BuyerProof AU/Partner Pack - Property Kit/Partner Onboarding Checklist.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/BuyerProof AU/Partner Pack - Property Kit/Partner One-Pager - Property Kit.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/BuyerProof AU/Partner Pack - Property Kit/Partner Safety and Editing Rules.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/BuyerProof AU/Product Kits/Australian Property Due Diligence Kit v1.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/BuyerProof AU/Product Kits/Property Inspection-Day Red Flag Checklist Australia v1.0 - Lead Magnet.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/BuyerProof AU/Product Kits/Safety Review - Australian Property Due Diligence Kit v1.1.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/BuyerProof AU/Product Kits/Safety Review - Used-Car Buyer Inspection Kit Australia v1.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/BuyerProof AU/Product Kits/Used-Car Buyer Inspection Kit Australia v1 - PDF Ready.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/BuyerProof AU/README - BuyerProof AU.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/BuyerProof AU/Research Notes/Property Due Diligence Workflow - BuyerProof AU.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/BuyerProof AU/Research Notes/Research Index - BuyerProof AU.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/BuyerProof AU/Research Notes/Safety and Professional Handoff Rules - BuyerProof AU.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/BuyerProof AU/Research Notes/Used-Car Checks and PPSR Workflow - BuyerProof AU.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/BuyerProof AU/Seller Message Scripts - Used Car Kit.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/BuyerProof AU/Used-Car Buyer Inspection Kit Australia v1.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/BuyerProof AU/Week 1 Execution Checklist - BuyerProof AU.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/Claude AI Business Ideas - Video Ingest - 2026-07-10.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/Claude Frontier Extraction Runbook - 2026-07-07.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/Local Presence and Measurement System - Offer Spec.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/Mobile App Store Monetization Track - 2026-07-10.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/Playlist Assessment - AI Business and Backtesting - 2026-07-07.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/Property Car Rental Renovation Kits - 30 Day Scope - 2026-07-07.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/Solo App Business Candidates - Cap 7 2026-07-08.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/Source-to-Revenue 14-Day Validation Sprint - 2026-07-10.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/Source-to-Revenue Demo - BuyerProof Property Partner/5 Email Follow Up Sequence.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/Source-to-Revenue Demo - BuyerProof Property Partner/5 Proof Posts.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/Source-to-Revenue Demo - BuyerProof Property Partner/Before - Source Inventory.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/Source-to-Revenue Demo - BuyerProof Property Partner/Before After Walkthrough.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/Source-to-Revenue Demo - BuyerProof Property Partner/Buyer Questions.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/Source-to-Revenue Demo - BuyerProof Property Partner/Demo Notes.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/Source-to-Revenue Demo - BuyerProof Property Partner/Lead Magnet Outline.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/Source-to-Revenue Demo - BuyerProof Property Partner/Prospect Feedback Log.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/Source-to-Revenue Demo - BuyerProof Property Partner/README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/Source-to-Revenue Demo - BuyerProof Property Partner/Source Map.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/Source-to-Revenue Sprint - Demo Build Checklist.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/Source-to-Revenue Sprint - One Page Offer.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/Source-to-Revenue Sprint - Outreach Messages.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/Source-to-System Studio - Local Visibility Reputation and Analytics Offer.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/Source-to-System Studio Offer Hub - Website Design Spec.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/Source-to-System Studio Website Brief - Updated with Local Visibility Offer.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/Tradie AI Receptionist Competitive Research - 2026-07-07.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/Tradie AI Receptionist Launch Plan - 2026-07-07.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/Wider Creative Opportunity Rework - 2026-07-07.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/YouTube AI Business Refresh Assessment - 2026-07-07.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business Launch Backlog/YouTube Playlist Refresh - 2026-07-07.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business/12 Ways to Make Money with Claude AI in 2026 - Sabrina Ramonov Analysis.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business/Claude AI Passive Income - Content System Nobody Is Talking About.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Business/Shane Hummus Claude AI Videos - Corrected Capture - 2026-07-12.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Infrastructure/Hermes Remote VPS Migration Plan - Oracle Always Free.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/AI Quant Trading Floor Implementation Architecture.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Backtests/Alternative Paper Ops Lab 04 - Signal Ledger Frontier MC Protocol Reviews.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Backtests/Alternative Paper Ops Lab 05 - Intraday Outcome Resolver and Obsidian Dashboard.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Backtests/Alternative Research Lab 01 - Prediction Funding DeFi Allocator.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Backtests/Alternative Validation Lab 02 - Calibration History and Monte Carlo.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Backtests/Alternative Validation Lab 03 - Calibrated Edge Risk and Optimizer.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Backtests/Alternative Venue Scan 01 Evidence.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Backtests/Antoine Cohort Comparison 01 - Random Same-Age Controls.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Backtests/Antoine Outcome Tracker 01 - Forward Snapshot Ledger.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Backtests/Antoine Risk Adapter 02 - RugCheck Solana Gate.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Backtests/Antoine Risk Adapter 03 - EVM GoPlus Honeypot Gate.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Backtests/DeFi Sleeve Advanced Risk Upgrade - CoinGecko How to DeFi.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Backtests/Model Trader v0 Smoke Test Evidence.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Backtests/Native CORE_DEF Run Card Artifact Contract - 2026-07-09.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Backtests/Opening Range Lab 01 - Intraday Backtester Smoke Test.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Backtests/QTF Perp DEX Pair Screen - Public Bybit Hourly Snapshot - 2026-07-14.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Backtests/QTF-023 Robot James Crypto Pairs Smoke Test - 2026-07-13.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Backtests/QTF-024 Contradiction Detection Research - 2026-07-14.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Backtests/QTF-V05 Costed Function-Based Pairs Backtest - 2026-07-15.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Backtests/Robotics Physical AI Theme Lab 01 - Article Basket Evidence.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Backtests/SPY Initial Backtest Evidence.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Backtests/Strategy Lab v2-v3 Sharpe Target Evidence.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Backtests/StrategyFactory and Playlist Batch 01 Backtest Ranking.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Daily Briefs/AI Quant Morning Brief - 2026-07-09.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Dashboards/QTF-022 Supply-Side Economics Dashboard.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation Plans/Bybit Airdrop Prediction Bot Implementation Plan.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation Plans/Dami-Defi Robot James TradingView Implementation Sprint - 2026-07-13.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation Plans/Vibe-Trading Paper-Only Pilot Plan.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/DEFI_YIELD_SCRAPER_NOTES.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/STATISTICAL_GATES_CONTRACT.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/agentic_research/README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/agentic_research/qtf_agent_decision.schema.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/t10_broad_momentum/AAVEUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/t10_broad_momentum/ADAUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/t10_broad_momentum/ALGOUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/t10_broad_momentum/ASTERUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/t10_broad_momentum/ATOMUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/t10_broad_momentum/AVAXUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/t10_broad_momentum/BCHUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/t10_broad_momentum/BNBUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/t10_broad_momentum/BTCUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/t10_broad_momentum/CCUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/t10_broad_momentum/DOGEUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/t10_broad_momentum/DOTUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/t10_broad_momentum/ENAUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/t10_broad_momentum/ETCUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/t10_broad_momentum/ETHUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/t10_broad_momentum/FILUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/t10_broad_momentum/FLRUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/t10_broad_momentum/GRAMUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/t10_broad_momentum/HBARUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/t10_broad_momentum/HTXUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/t10_broad_momentum/HYPEUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/t10_broad_momentum/ICPUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/t10_broad_momentum/JSTUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/t10_broad_momentum/JUPUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/t10_broad_momentum/KASUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/t10_broad_momentum/KCSUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/t10_broad_momentum/LINKUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/t10_broad_momentum/LTCUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/t10_broad_momentum/MNTUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/t10_broad_momentum/MORPHOUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/t10_broad_momentum/NEARUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/t10_broad_momentum/NEXOUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/t10_broad_momentum/ONDOUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/t10_broad_momentum/PEPEUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/t10_broad_momentum/POLUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/t10_broad_momentum/PUMPUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/t10_broad_momentum/QNTUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/t10_broad_momentum/RENDERUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/t10_broad_momentum/SHIBUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/t10_broad_momentum/SKYUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/t10_broad_momentum/SOLUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/t10_broad_momentum/STABLEUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/t10_broad_momentum/SUIUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/t10_broad_momentum/TRXUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/t10_broad_momentum/UNIUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/t10_broad_momentum/WLDUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/t10_broad_momentum/WLFIUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/t10_broad_momentum/XLMUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/t10_broad_momentum/XRPUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/t10_broad_momentum/manifest.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/ttm01/AAVEUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/ttm01/ADAUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/ttm01/ALGOUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/ttm01/ASTERUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/ttm01/ATOMUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/ttm01/AVAXUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/ttm01/BCHUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/ttm01/BNBUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/ttm01/BTCUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/ttm01/CCUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/ttm01/DOGEUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/ttm01/DOTUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/ttm01/ENAUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/ttm01/ETCUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/ttm01/ETHUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/ttm01/GRAMUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/ttm01/HBARUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/ttm01/HTXUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/ttm01/HYPEUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/ttm01/ICPUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/ttm01/JSTUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/ttm01/KASUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/ttm01/KCSUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/ttm01/LINKUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/ttm01/LTCUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/ttm01/MNTUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/ttm01/MORPHOUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/ttm01/NEARUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/ttm01/NEXOUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/ttm01/ONDOUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/ttm01/PEPEUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/ttm01/POLUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/ttm01/QNTUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/ttm01/RENDERUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/ttm01/RLUSDUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/ttm01/SHIBUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/ttm01/SKYUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/ttm01/SOLUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/ttm01/STABLEUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/ttm01/SUIUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/ttm01/TRXUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/ttm01/UNIUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/ttm01/USD1USDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/ttm01/USDYUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/ttm01/UUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/ttm01/WLDUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/ttm01/WLFIUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/ttm01/XAUTUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/ttm01/XLMUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/ttm01/XRPUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/ttm01/manifest.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/ttm01_v01/BTCUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/ttm01_v01/ETHUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/ttm01_v01/SOLUSDT_daily.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/data_cache/ttm01_v01/manifest.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/model_tournaments/2026-07-10-polymarket-btc-qtf020-contract-v3/prompt.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/model_tournaments/2026-07-10-polymarket-btc-qtf020-dry-run-v2/review_board/scorecard.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/model_tournaments/2026-07-10-polymarket-btc-qtf020-first-actual-run/data_manifest.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/model_tournaments/2026-07-10-polymarket-btc-qtf020-first-actual-run/model_runs/control_candidate/diagnostics.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/model_tournaments/2026-07-10-polymarket-btc-qtf020-first-actual-run/shared_readonly_data/manual_outcomes_template.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/pairs/candidate_inventory.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/reports/20260714_tactical_momentum_trend_baseline_assessment.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/reports/daily_scan/funding_board_20260715T154852Z.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/reports/daily_scan/funding_board_20260715T211257Z.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/reports/daily_scan/funding_board_20260715T231700Z.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/reports/daily_scan/funding_board_20260716T113039Z.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/reports/daily_scan/funding_board_20260720T214326Z.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/reports/daily_scan/trend_board_20260715T154852Z.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/reports/daily_scan/trend_board_20260715T211257Z.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/reports/daily_scan/trend_board_20260715T231700Z.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/reports/daily_scan/trend_board_20260716T113039Z.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/reports/daily_scan/trend_board_20260720T214326Z.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/reports/daily_scan/universe_manifest_20260715T154852Z.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/reports/daily_scan/universe_manifest_20260715T211257Z.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/reports/daily_scan/universe_manifest_20260715T231700Z.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/reports/daily_scan/universe_manifest_20260716T113039Z.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/reports/daily_scan/universe_manifest_20260720T214326Z.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/reports/edge_worker/QTF Edge Execution Worker Verification - 2026-07-15.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/reports/edge_worker/edge_worker_20260718T000000Z.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/reports/edge_worker/edge_worker_20260718T015519Z.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/reports/edge_worker/edge_worker_20260718T103055Z.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/reports/edge_worker/edge_worker_20260718T123949Z.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/reports/edge_worker/edge_worker_20260718T191210Z.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/reports/edge_worker/edge_worker_20260719T000000Z.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/reports/edge_worker/edge_worker_20260719T080629Z.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/reports/edge_worker/edge_worker_20260719T110000Z.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/reports/edge_worker/edge_worker_20260719T130000Z.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/reports/edge_worker/edge_worker_20260720T000000Z.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/reports/edge_worker/edge_worker_20260721T062525Z.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/reports/edge_worker/edge_worker_20260721T083127Z.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/reports/qtf_t13_calibration/qtf_t13_calibration_report.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/reports/qtf_v07_costed_funding/qtf_v07_costed_20260718_comparison.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/schemas/performance_review_event.schema.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/supply_side_lab/README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/tradingview_lab/README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/tradingview_lab/alert_contracts/example_alert.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/tradingview_lab/alert_contracts/tv_alert_schema.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/tradingview_lab/docs/manual_paste_test_pack.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/tradingview_lab/docs/manual_tradingview_setup_guide.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/tradingview_lab/ledgers/README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/tradingview_lab/reports/tradingview_backtest_capture_template.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Implementation/tradingview_lab/reports/tradingview_lab_scorecard.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Prompts/Forward Testing and Risk Desk Prompt.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Prompts/Optimizer Desk Prompt.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Prompts/Regime Filter Desk Prompt.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Prompts/Strategy Intake and Cleaning Desk Prompt.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Prompts/Trend Following Desk Prompt.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Research Reviews/CASHCAT Funding Persistence Evidence Review - 2026-07-14.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Research Reviews/Chronos Polymarket Recorder Smoke Test - 2026-07-09.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Research Reviews/Claude TradingView Trading Bot Workflow - Video Ingest - 2026-07-10.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Research Reviews/Forven Reddit Source Review - 2026-07-09.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Research Reviews/GPT 5.6 Polymarket BTC Strategy Workflow - Video Ingest - 2026-07-10.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Research Reviews/Miles Claude Trading Bot Article - Quant Review - 2026-07-12.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Research Reviews/Polymarket Edge Scanner Evidence - 2026-07-10.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Research Reviews/Polymarket Whale Supply-Side Economics - Quant Review - 2026-07-10.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Research Reviews/Quant Floor Edge Inventory and Professional Edge Comparison - 2026-07-15.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Research Reviews/Queued YouTube Capture Batch - 2026-07-09.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Research Reviews/Vibe-Trading Broad Tactical Momentum Benchmark - 2026-07-09.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Research Reviews/Vibe-Trading CORE_DEF Benchmark Comparison - 2026-07-09.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Research Reviews/Vibe-Trading Evaluation Report - 2026-07-09.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Research Reviews/Vibe-Trading Paper-Only Smoke Test - 2026-07-09.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Research/AI Backtesting TradingView EMA Strategy - YouTube VDpTU5kdj8A.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Research/Agentic Finance Architecture Edge Experiment - QTF-022.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Research/Capture Queue - Cap 8 Dynamo DeFi Pending - 2026-07-14.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Research/Capture Queue - MoonDev Claude Trading X 2076728365340377455 - 2026-07-14.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Research/Capture Queue - Pairs Trading Batch 1 to 5 - 2026-07-14.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Research/Engo Arena Crypto Framework ÔÇö Quant Floor Integration.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Research/Opening Range Strategy - 15m 5m 1m YouTube bITIVwysCzM.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Research/Pairs Trading Caps 1 to 9 - Consolidated Review - 2026-07-14.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Research/Price Reversal Mechanism ÔÇö Edge Investigation - 2026-07-18.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Research/QTF Alpha Digest Pipeline Contract - 2026-07-14.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Research/QTF Edge Measurement Toolkit - 2026-07-14.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Research/QTF Edge-First Production Mandate.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Research/QTF Evidence Queue - CASHCAT and QTF-024 - 2026-07-14.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Research/QTF Function-Based Crypto Pairs Candidate Universe - 2026-07-14.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Research/QTF Morin Process Alpha Extraction and Validation Plan - 2026-07-13.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Research/QTF Performance Review and Process Learning Dashboard Contract - 2026-07-13.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Research/QTF Verification and Delivery Control - 2026-07-15.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Research/Quant Floor Data and News Sources Policy.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Research/Robot James Crypto Pairs Research Contract - QTF-023.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Research/T12 Market-Making Data Replay Readiness Probe - 2026-07-18.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Research/TradingView Candidate Indicator Slate - 2026-07-13.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Risk Reviews/DeFi Protocol Risk Review Index.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Self-Improvement Protocol.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Strategies/2026-07-14 Forced-Flow Liquidation Continuation-Reversion Edge Card.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Strategies/2026-07-14 Tactical Momentum Trend Production Edge Card.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Strategies/Alternative Venues Strategy Map - Prediction Markets Hyperliquid DeFi.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Strategies/QTF-001 Markov Regime Filter.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Strategies/QTF-002 Standalone Markov Directional Strategy.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Strategies/QTF-003 Hidden Markov Regime Strategy.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Strategies/QTF-004 Enhanced Regime Scoring Model.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Strategies/QTF-005 RSI MACD Trend Strategy.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Strategies/QTF-006 Strategy Factory Optimizer.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Strategies/QTF-007 MoonDev Market Maker Sharpe Proxy.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Strategies/QTF-008 EMA Momentum Baseline and Volatility Overlay.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Strategies/QTF-009 Robotics Physical AI Theme Basket.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Strategies/QTF-011 Political Disclosure Copy Trading Delay Edge.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Strategies/QTF-012 IBKR AI Trading Bot Ops Pattern.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Strategies/QTF-013 Hyperliquid Lighter Farming and Perp Venue Watchlist.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Strategies/QTF-014 Antoine Meme Coin Techniques Library.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Strategies/QTF-016 Social Trading Claim Review Protocol.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Strategies/QTF-017 Morning Idea Generator from Second Brain.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Strategies/StrategyFactory Public Names - Clean-Room Strategy Specs.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Strategy Intake/YouTube Playlist - trade theories inventory.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Strategy Specs/QTF-017 Strategy Verification Gauntlet.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Strategy Specs/QTF-018 Prediction Market Edge Intake.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Strategy Specs/QTF-019 Hyperliquid Agentic Heartbeat Ops Spec.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Strategy Specs/QTF-020 Polymarket Model Tournament Harness.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Strategy Specs/QTF-021 TradingView Agentic Strategy Lab.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Strategy Specs/QTF-022 Polymarket Supply-Side Maker Economics Lab.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Templates/Experiment Ledger Template.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Templates/Strategy Scorecard Template.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/Templates/learned_parameters.template.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/tasks/plan.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AI Quant Trading Floor/tasks/todo.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/AOD Placement Job Finder Dashboard.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/AOD Placement and Sector Job Finder Agent.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/AOD Route Monitoring Record - 2026-07-14.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/AOD Student Placement Checks and Melbourne Contacts - 2026-07-10.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/AOD Submission Attempt Log - 2026-07-13.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/AOD Weekly Approval and Follow-up Surface - 2026-07-13.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/Application Intake and Tracking System.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/Application Materials/AOD MH Master Profile.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/Application Materials/Jason Goodwin - Base Resume - AOD Community and Research - 2026-07-13.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/Application Materials/Jason Goodwin - YSAS Student Placement Resume Draft.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/Application Materials/Jayse Cover Letter - Source - cohealth Harm Reduction Worker.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/Application Materials/Jayse Resume - Source.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/Application Materials/README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/Application Materials/Research Officer Resume and Cover Letter v2 Review - 2026-07-13.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/Application Materials/Reusable Cover Letter Transition Language.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/Application Packages/2026-07-10 - cohealth - Harm Reduction Worker.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/Application Packages/2026-07-13 - Permalink - Student Placement.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/Application Packages/2026-07-14 - CMRH - Diploma of Mental Health Student Placement.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/Application Packages/2026-07-15 - Windana - AOD Clinician.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/Application Packages/README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/Application Packages/cohealth Harm Reduction Worker - Final Review Pack - 2026-07-12/cohealth Application Review and Submission Checklist.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/Application Register.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/ChatGPT Project Source - Application Review and Job Search - 2026-07-10.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/Chisholm Diploma of Mental Health Placement Requirements - Extracted.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/Contact Touches/2026-07-10 - Contact Touch - cohealth - Marilyn.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/Contact Touches/2026-07-10 - Contact Touch - cohealth - Merelyn Fernon.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/Contact Touches/README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/Cover Letter Drafts - 2026-07-11/01 - The Salvation Army - AOD Support Worker - The Basin.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/Cover Letter Drafts - 2026-07-11/02 - NRCH - Harm Reduction Peer Outreach Worker.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/Cover Letter Drafts - 2026-07-11/03 - The Salvation Army - AOD Peer Support Worker - Coburg.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/Cover Letter Drafts - 2026-07-11/04 - Ngwala - Mens Residential Rehabilitation Worker.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/Cover Letter Drafts - 2026-07-11/05 - Ngwala - Alcohol and Other Drugs Worker - Prahran.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/Cover Letter Drafts - 2026-07-11/06 - Ngwala - PIR Assertive Outreach Worker.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/Cover Letter Drafts - 2026-07-11/07 - CLOSED - Uniting - AOD Support Worker - Ivanhoe.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/Cover Letter Drafts - 2026-07-11/08 - CLOSED - Western Health - Welfare Worker AOD Residential Unit.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/Cover Letter Drafts - 2026-07-11/09 - CLOSED - The Living Room - Client Support Worker.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/Cover Letter Drafts - 2026-07-13/YSAS Dandenong Student Placement Enquiry.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/Cover Letter Drafts - 2026-07-13/YSAS Ringwood Student Placement Enquiry.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/Finder Runs/AOD Placement Finder Run - 2026-07-10.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/Finder Runs/AOD Placement Finder Run - 2026-07-13.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/Finder Runs/AOD Placement Finder Run - 2026-07-14.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/Finder Runs/AOD Placement Finder Run - 2026-07-15.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/Finder Runs/AOD Placement Finder Run - 2026-07-16.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/Finder Runs/AOD Placement Finder Run - 2026-07-17.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/Finder Runs/AOD Placement Finder Run - 2026-07-20.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/Finder Runs/AOD Placement Finder Run - 2026-07-21.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/Follow Ups/README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/Gmail Calendar Automation Guardrails - AOD Placement and Roles.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/Paid AOD Job Application Queue - 2026-07-15.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/Paid Role Application Sprint - 2026-07-12 to 2026-07-14.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/Position Descriptions/2026-07-10 - cohealth - Harm Reduction Worker PD Extract.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/Position Descriptions/2026-07-15 - Windana - AOD Clinician PD Extract.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/Position Descriptions/2026-07-18 - Neami National - Youth MH Wellbeing Worker Hawthorn.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/Position Descriptions/2026-07-18 - Recovery Alliance Care - Complex MH Support Worker Heidelberg.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/Position Descriptions/2026-07-18 - Recovery Alliance Care - Complex MH+ASD Support Worker Eastern.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/Position Descriptions/2026-07-18 - Supporting Your Life - MH Support Workers Northern.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/Position Descriptions/README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/Role Categories to Capture for AOD MH Placement Finder.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/Tailored Applications/2026-07-15 - Windana - AOD Clinician Cover Letter.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/Tailored Applications/Jason Goodwin - Resume - Windana AOD Clinician - 2026-07-15.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/Tailored Applications/README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/YSAS Ringwood Dandenong Contact Sheet - 2026-07-13.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/AOD Student Placement/YSAS Student Placement Pathway - Wei Choong Email Review - 2026-07-13.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/Fable Trading System/Fable Trading System ÔÇö Execution Layer.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/Opportunity Tracks/High Priority Money-Making Tracks - 2026-07-10.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/Prediction Bot Archive/CLAUDE.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/Prediction Bot Archive/README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/Prediction Bot Archive/apps/dashboard/.next/app-build-manifest.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/Prediction Bot Archive/apps/dashboard/.next/build-manifest.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/Prediction Bot Archive/apps/dashboard/.next/prerender-manifest.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/Prediction Bot Archive/apps/dashboard/.next/react-loadable-manifest.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/Prediction Bot Archive/apps/dashboard/.next/server/app-paths-manifest.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/Prediction Bot Archive/apps/dashboard/.next/server/middleware-manifest.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/Prediction Bot Archive/apps/dashboard/.next/server/server-reference-manifest.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/Prediction Bot Archive/apps/dashboard/package-lock.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/Prediction Bot Archive/apps/dashboard/package.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/Prediction Bot Archive/apps/dashboard/test-results/.last-run.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/Prediction Bot Archive/apps/dashboard/tsconfig.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/Prediction Bot Archive/docs/architecture/overview.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/Prediction Bot Archive/docs/operations/first_time_operator_guide.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/Prediction Bot Archive/docs/operations/live_readiness_snapshot_drill_2026-06-01.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/Prediction Bot Archive/docs/operations/paper_live_system_runsheet.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/Prediction Bot Archive/docs/operations/runbook.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/Prediction Bot Archive/docs/operations/user-perspective-guide.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/Prediction Bot Archive/docs/project_status_report.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/Prediction Bot Archive/docs/punchlists/prediction_bot_punchlist_2026-05-16.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/Prediction Bot Archive/docs/punchlists/prediction_bot_punchlist_2026-05-18.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/Prediction Bot Archive/docs/risk/controls.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/Prediction Bot Archive/docs/strategies/strategy-contract.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/Project Context Registry/Airdrop Agent Project Context.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/Project Context Registry/Basketball PWA Project Context.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/Project Context Registry/BeastCity Project Context.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/Project Context Registry/Bybit Downloads Project Context.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/Project Context Registry/Chisholm AOD Course Work Project Context.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/Project Context Registry/Chisholm Mental Health Diploma Project Context.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/Project Context Registry/Fable Trading System Project Context.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/Project Context Registry/Gym App Project Context.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/Project Context Registry/Jungian Project Context.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/Project Context Registry/MVP Role Play Simulator Project Context.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/Project Context Registry/Prediction Bot Desktop Project Context.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/Project Context Registry/Prediction Bot New project 4 Project Context.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/Project Context Registry/Source-to-System Studio Project Context.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/Source-to-System Studio Website/PILOT-CANDIDATES.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/Source-to-System Studio Website/README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/Source-to-System Studio Website/docs/linkedin-posts-week1-final.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/Source-to-System Studio Website/docs/superpowers/plans/2026-07-13-source-to-system-studio-website.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/Source-to-System Studio Website/docs/superpowers/specs/2026-07-13-source-to-system-studio-website-design.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/Source-to-System Studio Website/docs/superpowers/specs/2026-07-13-source-to-system-studio-website-review-queue.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/Source-to-System Studio Website/docs/utm-tracking-setup.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/Source-to-System Studio/BCB Demo Walkthrough - Internal Draft - 2026-07-14.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/Source-to-System Studio/LinkedIn Drafts - Week 1 - 2026-07-14.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/Source-to-System Studio/Multi-Persona Validation Worksheet - Pilot Gate - 2026-07-14.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/Source-to-System Studio/Source-to-System Studio Content Strategy - External Traffic - 2026-07-14.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/05_Projects/Source-to-System Studio/Source-to-System Studio Multi-Persona Validation Process - 2026-07-14.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/07_Resources/GitHub Tool Staging - 2026-07-08.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/CLAUDE.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/Implementation/reports/edge_worker/edge_worker_20260720T053500Z.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/Implementation/reports/edge_worker/edge_worker_20260720T075332Z.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/Implementation/reports/edge_worker/edge_worker_20260720T104523Z.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/Implementation/reports/edge_worker/edge_worker_20260720T130000Z.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/Implementation/reports/edge_worker/edge_worker_20260721T020945Z.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/Implementation/reports/edge_worker/edge_worker_20260721T042015Z.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/hf_flat.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'incoming-vault/hf_flat2.json', LF will be replaced by CRLF the next time Git touches it
