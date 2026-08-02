@@ -1577,3 +1577,17 @@ symptom; three separate defects produced them.
 The 3 empty inbox notes and the 42 identical reports still need a human decision — see [[Decisions Needed - 2026-07-29]].
 
 - Tooling: `00_System/Scripts/inbox_processor.py`, `00_System/Scripts/vault_loop_runner.py`.
+
+## [2026-08-02] tooling | link_suggester.py — a proposed home for every unlinked note
+
+Jayse had been culling unlinked notes by hand and noticed the obvious: many were
+not junk, they were **connected work that had never been linked** — Source-to-System
+assets adrift from the AI business material, trading research adrift from the
+system it belonged to. Titles alone could not tell those apart from genuine stubs.
+
+- **New tool.** `00_System/Scripts/link_suggester.py` finds every note with no inbound links, no outbound links, or neither, then reads the body and proposes where it belongs. Reuses the TF-IDF machinery from `connection_illuminator.py`. Prints the shared terms behind each suggestion so a wrong one is visible at a glance. It never writes a link — a wrong link is worse than a missing one.
+- **Exclusions are principled, not convenient.** `02_Raw` (immutable), `09_Archive` (closed) and `00_System/Templates` (unlinked by nature) are skipped, as are structural files like `README` and `CLAUDE.md`.
+- **Ranking favours the links worth having.** Cross-folder matches get a 1.25x weight and targets that already have inbound links get 1.15x — linking into a hub puts a note on the map, whereas pairing two orphans just makes a two-note island. Matches above 85% are dropped, because that is a merge question for `connection_illuminator.py`, not a link question.
+- **Two false-positive classes found and fixed during the build.** Web-capture debris (`favicon`, `apple-touch-icon`, `utm`, `svg`) was producing confident matches between unrelated scraped pages; those terms are now excluded. And dated series were suggesting links to their own siblings — a daily note pointing at yesterday's copy of itself is not a missed connection.
+- **First run: 765 notes scanned, 287 unlinked — 273 with a proposed home, 14 without.** Filed as [[Unlinked Notes Review - 2026-08-02]]. The 14 with no proposal are the real cull candidates, and one of them is worth a second look: `Source-to-System Studio Delivery Verification Checklist - 2026-07-14` is 1,341 words with no inbound links and no vocabulary in common with anything else in the vault.
+- Tooling: `00_System/Scripts/link_suggester.py`.
