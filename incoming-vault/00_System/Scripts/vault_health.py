@@ -61,6 +61,19 @@ def load(root: Path):
     return notes
 
 
+# Generated inventories list every note they are reporting on. Counting their
+# links as inbound edges means the act of *reporting* an orphan un-orphans it —
+# the Unlinked Notes Review alone moved the orphan rate from 16% to 10% without
+# a single real connection being made. Their links still count as outbound for
+# the report itself; they just cannot rescue their subjects.
+INVENTORY_MARKERS = ("Unlinked Notes Review", "Missed Connections Review",
+                     "Inbox Processor Report", "Vault Loop Report")
+
+
+def is_inventory(key: str) -> bool:
+    return any(m in key for m in INVENTORY_MARKERS)
+
+
 def build_graph(notes):
     by_stem = defaultdict(list)
     for k, n in notes.items():
@@ -69,6 +82,7 @@ def build_graph(notes):
     inn = {k: set() for k in notes}
     broken = 0
     for k, n in notes.items():
+        inventory = is_inventory(k)
         for t in n["links"]:
             hits = by_stem.get(t)
             if not hits:
@@ -77,7 +91,8 @@ def build_graph(notes):
             for h in hits:
                 if h != k:
                     out[k].add(h)
-                    inn[h].add(k)
+                    if not inventory:
+                        inn[h].add(k)
     return out, inn, broken
 
 

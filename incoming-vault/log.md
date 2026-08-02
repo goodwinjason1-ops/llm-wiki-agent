@@ -1591,3 +1591,23 @@ system it belonged to. Titles alone could not tell those apart from genuine stub
 - **Two false-positive classes found and fixed during the build.** Web-capture debris (`favicon`, `apple-touch-icon`, `utm`, `svg`) was producing confident matches between unrelated scraped pages; those terms are now excluded. And dated series were suggesting links to their own siblings — a daily note pointing at yesterday's copy of itself is not a missed connection.
 - **First run: 765 notes scanned, 287 unlinked — 273 with a proposed home, 14 without.** Filed as [[Unlinked Notes Review - 2026-08-02]]. The 14 with no proposal are the real cull candidates, and one of them is worth a second look: `Source-to-System Studio Delivery Verification Checklist - 2026-07-14` is 1,341 words with no inbound links and no vocabulary in common with anything else in the vault.
 - Tooling: `00_System/Scripts/link_suggester.py`.
+
+## [2026-08-02] correction | Generated inventories no longer un-orphan their subjects
+
+Filing [[Unlinked Notes Review - 2026-08-02]] moved the orphan gate from 16% to
+10% and turned it green — without a single real connection being made. The review
+lists every orphan by wikilink, so the act of *reporting* an orphan was counting
+as connecting it.
+
+`build_graph` in `vault_health.py` now discounts inbound links originating from
+generated inventories (`Unlinked Notes Review`, `Missed Connections Review`,
+`Inbox Processor Report`, `Vault Loop Report`). Their outbound links still count
+for the report itself; they simply cannot rescue their subjects.
+
+True orphan rate: **19%**, worse than the 16% recorded before the dashboard
+existed — because the earlier figure was already being flattered by the 22
+Missed Connections Reviews and the 42 generator reports. This is the first
+honest reading. Gates: 4 passing, 4 failing.
+
+A measurement that improves because you wrote a report about the problem is not
+a measurement. Recorded here because the failure mode is easy to reintroduce.
