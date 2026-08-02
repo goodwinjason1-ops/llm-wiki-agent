@@ -1611,3 +1611,11 @@ honest reading. Gates: 4 passing, 4 failing.
 
 A measurement that improves because you wrote a report about the problem is not
 a measurement. Recorded here because the failure mode is easy to reintroduce.
+
+## [2026-08-02] cleanup | 43 generator reports archived; an interactive linker built
+
+- **Step 1 done.** 43 files (22 `Inbox Processor Report`, 21 `Vault Loop Report`, 2026-07-08 to 2026-07-29) moved to `09_Archive/Generator Reports/` with a README recording the three defects that produced them. The scripts were fixed on 2026-07-30; this clears the files they left behind.
+- **New tool: `apply_links.py`.** Reviewing 273 suggestions in a dashboard is reading; this is doing. One note at a time, with a body preview and up to three proposed links each showing the vocabulary behind it. Press a number to accept, `s` to skip, `q` to save and quit. Filters by `--folder` or `--match` so a themed batch can be worked in one sitting. Every session writes an undo manifest and `--undo` reverses it exactly — verified by applying a link and restoring the file byte-for-byte.
+- **Deliberately not automated.** There is no auto-accept flag. A link is a claim that two notes are about each other, and outsourcing that judgement is precisely the failure that created [[synthesis-debt]] — a tool that wrote links unattended would repeat it faster.
+- **New dashboard: [[Vault Improvement Plan]].** Every remaining task as an individual numbered step with its command, ordered by value per hour. Frontmatter (step 5) and unwritten links (step 6) are broken into sub-steps rather than left as bulk chores, at Jayse's request. Linked from `index.md` as the entry point.
+- Tooling: `00_System/Scripts/apply_links.py`.

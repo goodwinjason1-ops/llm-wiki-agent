@@ -5,7 +5,9 @@
 
 ## Needs your input
 
+- [[Vault Improvement Plan]] — **start here**: every remaining task as a step, with its command
 - [[Decisions Needed - 2026-07-29]] — six judgement calls left after the 2026-07-29 cleanup
+- [[Unlinked Notes Review - 2026-08-02]] — 273 notes with a proposed home
 
 ## Seeing the vault
 
