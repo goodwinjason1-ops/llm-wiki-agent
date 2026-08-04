@@ -1619,3 +1619,18 @@ a measurement. Recorded here because the failure mode is easy to reintroduce.
 - **Deliberately not automated.** There is no auto-accept flag. A link is a claim that two notes are about each other, and outsourcing that judgement is precisely the failure that created [[synthesis-debt]] — a tool that wrote links unattended would repeat it faster.
 - **New dashboard: [[Vault Improvement Plan]].** Every remaining task as an individual numbered step with its command, ordered by value per hour. Frontmatter (step 5) and unwritten links (step 6) are broken into sub-steps rather than left as bulk chores, at Jayse's request. Linked from `index.md` as the entry point.
 - Tooling: `00_System/Scripts/apply_links.py`.
+
+## [2026-08-04] fix | The stalled-generator gate counted its own remedy
+
+Archiving the 43 generator reports did not clear the gate: the detector scans
+`09_Archive`, so the archived series kept flagging. The remedy and the failure
+looked identical to the measurement, leaving no action that could turn it green.
+
+The gate asks *is something still writing junk?* — and archived history cannot be.
+`09_Archive` is now skipped. **Gate: PASS, 5 of 8 now passing.**
+
+Third measurement bug of this kind, and the pattern is consistent: each gate was
+counting notes it was never possible to act on — immutable `02_Raw` captures,
+inbox links from generated inventories, and now closed archive. A gate you cannot
+satisfy is not a standard, it is noise, and noise is what stopped the last
+instrument from being read.

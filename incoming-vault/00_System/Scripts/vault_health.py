@@ -144,9 +144,14 @@ def measure(root: Path) -> dict:
                      if any(t.startswith((SRC, RAW)) for t in out[k])
                      or re.search(r"source:\s*`", notes[k]["text"]))
 
-    # dated series whose consecutive members are near-identical in length
+    # Dated series whose consecutive members are near-identical in length.
+    # 09_Archive is skipped: this gate asks "is something still writing junk?",
+    # and archived history cannot be. Counting it meant archiving a stalled series
+    # — the actual remedy — left the gate red forever, with no action left to take.
     series = defaultdict(list)
     for k, n in notes.items():
+        if k.startswith("09_Archive"):
+            continue
         if DATE_MARK.search(n["stem"]):
             series[DATE_MARK.sub("", n["stem"]).strip(" -_").lower()].append(k)
     stalled = 0
