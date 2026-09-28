@@ -2,7 +2,9 @@ import {
   dayKey, fromKey, addDays, diffDays, startOfMonth, addMonths, daysInMonth, formatLong, formatShort, formatTime,
   relativeLabel, timeFromDate, parseQuick, extractActions, extractTags,
 } from './dates.js';
-import { db, uid, requestPersistence, exportAll, importAll } from './db.js';
+import { db, uid, requestPersistence, exportAll, importAll, storageEstimate } from './db.js';
+import { addFiles, formatBytes, FILE_EMOJI } from './files.js';
+import * as ins from './insights.js';
 import { Recorder, canRecord, canLiveTranscribe, dictate, cloudTranscribe, formatDuration } from './voice.js';
 import * as gcal from './gcal.js';
 
@@ -107,6 +109,9 @@ const DEFAULT_SETTINGS = {
   theme: 'auto',
   prompts: true,
   gratitude: true,
+  health: true,
+  celebrate: true,
+  backupMedia: true,
   weekStart: 1,
 };
 
@@ -482,19 +487,89 @@ async function moveTask(id, date) {
   if (t.gcalEventId || wantsTaskSync(t)) await syncTask(t);
 }
 
-async function computeStreak() {
-  const entries = await db.all('entries');
-  const voice = await db.all('voice');
-  const days = new Set();
-  for (const e of entries) if (entryHasContent(e)) days.add(e.date);
-  for (const v of voice) days.add(v.date);
-  let k = days.has(state.today) ? state.today : addDays(state.today, -1);
-  let n = 0;
-  while (days.has(k)) { n++; k = addDays(k, -1); }
-  return { streak: n, days };
+async function loadEverything() {
+  const [entries, voice, files, tasks] = await Promise.all([db.all('entries'), db.all('voice'), db.all('files'), db.all('tasks')]);
+  const days = ins.activityDays({ entries, voice, files });
+  const info = ins.streakInfo(days, state.today);
+  return { entries, voice, files, tasks, days, info, totals: ins.totals({ entries, voice, files, tasks }) };
 }
 
-const entryHasContent = (e) => !!(e && ((e.text || '').trim() || e.mood || (e.gratitude || []).some((g) => g && g.trim())));
+async function computeStreak() {
+  const { days, info } = await loadEverything();
+  return { streak: info.current, days, info };
+}
+
+const entryHasContent = ins.entryCounts;
+const daySeed = () => Math.floor(fromKey(state.today) / 86400000);
+
+/**
+ * Called after anything is logged. Celebrates the first log of the day and
+ * unlocks achievements. Deliberately generous: every small thing counts.
+ */
+let activityBusy = false;
+async function onActivity() {
+  if (activityBusy) return;
+  activityBusy = true;
+  try {
+    const all = await loadEverything();
+    const earned = await db.getKV('achievements', {});
+    const fresh = ins.evaluateAchievements({ ...all.totals, ...all.info }, earned);
+    if (fresh.length) {
+      fresh.forEach((a) => (earned[a.id] = state.today));
+      await db.setKV('achievements', earned);
+    }
+    let delay = 0;
+    if (all.info.loggedToday && (await db.getKV('celebrated', null)) !== state.today) {
+      await db.setKV('celebrated', state.today);
+      if (state.settings.celebrate) confetti();
+      toast(ins.celebration(all.info, daySeed()), { ms: 6000 });
+      delay = 1200;
+      renderMotivation();
+    }
+    fresh.forEach((a, i) => setTimeout(() => toast(`🏅 Unlocked: ${a.icon} ${a.name}`, { action: 'See all', onAction: () => go('#/insights'), ms: 7000 }), delay + i * 900));
+    if (state.route.view === 'day' && state.route.date === state.today) {
+      const chip = $('#streak-chip');
+      if (chip) chip.innerHTML = `${icon('flame', 'sm')} ${all.info.current}-day streak`;
+    }
+  } finally {
+    activityBusy = false;
+  }
+}
+
+function confetti() {
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const c = document.createElement('canvas');
+  c.className = 'confetti';
+  c.width = innerWidth * devicePixelRatio;
+  c.height = innerHeight * devicePixelRatio;
+  document.body.appendChild(c);
+  const ctx = c.getContext('2d');
+  ctx.scale(devicePixelRatio, devicePixelRatio);
+  const colors = ['#b5552f', '#2a78d6', '#d69a12', '#1f8a3a', '#e34948', '#9cc3f0'];
+  const bits = [...Array(90)].map(() => ({
+    x: innerWidth / 2 + (Math.random() - 0.5) * 80, y: innerHeight * 0.35,
+    vx: (Math.random() - 0.5) * 12, vy: -Math.random() * 12 - 4, r: Math.random() * 6 + 4,
+    a: Math.random() * 6, va: (Math.random() - 0.5) * 0.4, c: colors[Math.floor(Math.random() * colors.length)],
+  }));
+  const start = performance.now();
+  const frame = (now) => {
+    const t = now - start;
+    ctx.clearRect(0, 0, innerWidth, innerHeight);
+    for (const b of bits) {
+      b.vy += 0.35; b.x += b.vx; b.y += b.vy; b.a += b.va; b.vx *= 0.99;
+      ctx.save();
+      ctx.translate(b.x, b.y);
+      ctx.rotate(b.a);
+      ctx.globalAlpha = Math.max(0, 1 - t / 1800);
+      ctx.fillStyle = b.c;
+      ctx.fillRect(-b.r / 2, -b.r / 4, b.r, b.r / 2);
+      ctx.restore();
+    }
+    if (t < 1800) requestAnimationFrame(frame);
+    else c.remove();
+  };
+  requestAnimationFrame(frame);
+}
 
 function promptFor(date, entry) {
   if (entry?.prompt) return entry.prompt;
@@ -519,6 +594,7 @@ const NAV = [
   { view: 'calendar', label: 'Calendar', icon: 'calendar', key: 'c' },
   { view: 'tasks', label: 'To-do', icon: 'tasks', key: 'd' },
   { view: 'notes', label: 'Voice notes', icon: 'mic', key: 'v' },
+  { view: 'insights', label: 'Insights', icon: 'sparkles', key: 'i' },
   { view: 'search', label: 'Search', icon: 'search', key: '/' },
 ];
 
@@ -527,7 +603,7 @@ function parseRoute() {
   if (view === 'day') return { view, date: /^\d{4}-\d{2}-\d{2}$/.test(arg) ? arg : state.today };
   if (view === 'calendar') return { view, month: /^\d{4}-\d{2}$/.test(arg) ? arg : monthOf(state.today) };
   if (view === 'search') return { view, q: decodeURIComponent(arg || '') };
-  if (['tasks', 'notes'].includes(view)) return { view };
+  if (['tasks', 'notes', 'insights'].includes(view)) return { view };
   return { view: 'day', date: state.today };
 }
 
@@ -547,13 +623,13 @@ function renderChrome() {
   $('#sidebar-foot').innerHTML = `
     <button class="nav-item" data-action="settings">${icon('settings')}<span>Settings</span></button>
     <button class="nav-item" data-action="help">${icon('help')}<span>Shortcuts & tips</span><kbd>?</kbd></button>`;
-  const tabs = NAV.filter((n) => n.view !== 'search');
+  const tabs = ['day', 'calendar', 'tasks', 'insights'].map((v) => NAV.find((n) => n.view === v));
   $('#tabbar').innerHTML = `
     ${tab(tabs[0])}${tab(tabs[1])}
     <div class="tab-record"><button class="fab" data-action="record" aria-label="Record voice note">${icon('mic')}</button></div>
     ${tab(tabs[2])}${tab(tabs[3])}`;
   function tab(n) {
-    return `<button class="tab" data-action="goto" data-hash="#/${n.view}" ${n.view === r.view ? 'aria-current="page"' : ''}>${icon(n.icon)}<span>${n.view === 'notes' ? 'Notes' : n.label}</span></button>`;
+    return `<button class="tab" data-action="goto" data-hash="#/${n.view}" ${n.view === r.view ? 'aria-current="page"' : ''}>${icon(n.icon)}<span>${n.label}</span></button>`;
   }
 }
 
@@ -567,7 +643,7 @@ function renderTopbar() {
       <div class="title"><button data-action="pick-date" aria-label="Pick a date">${esc(formatShort(r.date))}</button></div>
       <button class="iconbtn" data-action="next-day" aria-label="Next day">${icon('right')}</button>`;
   } else {
-    const titles = { calendar: 'Calendar', tasks: 'To-do', notes: 'Voice notes', search: 'Search' };
+    const titles = { calendar: 'Calendar', tasks: 'To-do', notes: 'Voice notes', search: 'Search', insights: 'Insights' };
     center = `<div class="title">${titles[r.view]}</div>`;
   }
   const todayBtn = r.view === 'day' && r.date !== state.today ? `<button class="pill-today" data-action="goto" data-hash="#/day">Today</button>` : '';
@@ -587,7 +663,7 @@ async function render() {
   renderTopbar();
   const token = ++renderToken;
   const main = $('#main');
-  const views = { day: renderDay, calendar: renderCalendar, tasks: renderTasks, notes: renderNotes, search: renderSearch };
+  const views = { day: renderDay, calendar: renderCalendar, tasks: renderTasks, notes: renderNotes, search: renderSearch, insights: renderInsightsView };
   try {
     await views[state.route.view](main, token);
   } catch (e) {
@@ -686,6 +762,7 @@ async function renderDay(main, token) {
   const [entry, tasks, voice, { streak }] = await Promise.all([
     getEntry(date), db.byDate('tasks', date), db.byDate('voice', date), computeStreak(),
   ]);
+  const coarse = matchMedia('(pointer: coarse)').matches;
   let carried = [];
   if (isToday) carried = (await db.byDateRange('tasks', '0000-01-01', addDays(date, -1))).filter((t) => !t.done);
   if (stale(token)) return;
@@ -697,11 +774,13 @@ async function renderDay(main, token) {
     <div class="day-head" id="day-head">
       <div class="kicker">
         <span>${esc(rel === formatShort(date) ? d.toLocaleDateString(undefined, { weekday: 'long' }) : rel)}</span>
-        ${streak ? `<span class="chip" title="Days in a row with a journal entry or voice note">${icon('flame', 'sm')} ${plural(streak, 'day')} streak</span>` : ''}
+        ${streak ? `<a class="chip" id="streak-chip" href="#/insights" title="Days in a row with anything logged">${icon('flame', 'sm')} ${streak}-day streak</a>` : ''}
       </div>
       <h1>${esc(d.toLocaleDateString(undefined, { day: 'numeric', month: 'long' }))}</h1>
       <div class="sub">${esc(d.toLocaleDateString(undefined, { weekday: 'long', year: 'numeric' }))} · Week ${isoWeek(date)}</div>
     </div>
+
+    ${isToday ? '<div id="motivation"></div>' : ''}
 
     <section class="card" id="schedule-card" aria-labelledby="h-sched">
       <div class="card-head"><h2 id="h-sched">${icon('calendar')} Schedule</h2>
@@ -733,6 +812,19 @@ async function renderDay(main, token) {
         <div class="moods" role="group" aria-label="How are you feeling?">
           ${MOODS.map((m) => `<button class="mood" data-action="set-mood" data-v="${m.v}" aria-pressed="${entry.mood === m.v}" style="--mc:var(--mood-${m.v})"><span class="e" aria-hidden="true">${m.e}</span>${m.label}</button>`).join('')}
         </div>
+        ${s.health ? `
+          <div class="health" role="group" aria-label="Body check-in">
+            <label class="hitem">😴 <span>Slept</span>
+              <select id="h-sleep" aria-label="Hours slept last night">
+                <option value="">–</option>
+                ${[3, 4, 5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 10, 11, 12].map((h) => `<option value="${h}" ${entry.sleep === h ? 'selected' : ''}>${h}h</option>`).join('')}
+              </select></label>
+            <span class="hitem">🏃 <span>Moved</span>
+              <span class="seg">
+                <button data-action="set-moved" data-v="yes" aria-pressed="${entry.moved === true}">Yes</button>
+                <button data-action="set-moved" data-v="no" aria-pressed="${entry.moved === false}">Not today</button>
+              </span></span>
+          </div>` : ''}
         ${s.prompts ? `<div class="prompt"><span id="prompt-text">${esc(promptFor(date, entry))}</span>
           <button class="iconbtn" data-action="shuffle-prompt" aria-label="Another prompt" title="Another prompt">${icon('refresh', 'sm')}</button></div>` : ''}
         <div class="paper">
@@ -749,6 +841,17 @@ async function renderDay(main, token) {
       <div class="card-foot"><span id="word-count"></span><span style="margin-left:auto">Use <b>#tags</b> to group entries</span></div>
     </section>
 
+    <section class="card" id="files-card" aria-labelledby="h-files">
+      <div class="card-head"><h2 id="h-files">📷 Photos & files <span class="count" id="files-count"></span></h2>
+        ${coarse ? `<button class="btn sm" data-action="camera">Camera</button>` : ''}
+        <button class="btn sm primary" data-action="add-files">${icon('plus', 'sm')} Add</button></div>
+      <div class="card-body">
+        <div class="gallery" id="gallery"></div>
+        <input type="file" id="file-input" multiple hidden>
+        <input type="file" id="camera-input" accept="image/*,video/*" capture="environment" hidden>
+      </div>
+    </section>
+
     <section class="card" id="voice-card" aria-labelledby="h-voice">
       <div class="card-head"><h2 id="h-voice">${icon('mic')} Voice notes <span class="count">${voice.length || ''}</span></h2>
         <button class="btn sm primary" data-action="record">${icon('mic', 'sm')} Record</button></div>
@@ -756,6 +859,7 @@ async function renderDay(main, token) {
         ${voice.length ? `<ul class="vnotes">${voice.sort((a, b) => a.createdAt.localeCompare(b.createdAt)).map(noteRow).join('')}</ul>` :
           `<div class="empty">${isToday ? 'Tap the mic to talk through your day, capture an idea or dictate a to-do. It will be transcribed, dated and saved to your calendar.' : 'No voice notes on this day.'}</div>`}
       </div>
+      <div class="card-foot"><a href="#/notes">All voice notes →</a></div>
     </section>
 
     <div id="otd"></div>`;
@@ -779,8 +883,192 @@ async function renderDay(main, token) {
   });
 
   bindJournal(main, date, entry);
+  bindFileInputs(main, date);
+  renderGallery(date);
   refreshSchedule();
   renderOnThisDay(date, token);
+  if (isToday) renderMotivation();
+}
+
+// ---------------------------------------------------------------------------
+// Motivation card (today only)
+// ---------------------------------------------------------------------------
+
+async function renderMotivation() {
+  const box = $('#motivation');
+  if (!box) return;
+  const { info, totals } = await loadEverything();
+  const dots = info.last7.map((d) => `
+    <span class="wd${d.logged ? ' on' : ''}${d.date === state.today ? ' today' : ''}" title="${esc(formatShort(d.date))}${d.logged ? ': logged' : ''}">
+      <i>${d.logged ? '✓' : ''}</i><small>${esc(fromKey(d.date).toLocaleDateString(undefined, { weekday: 'narrow' }))}</small>
+    </span>`).join('');
+  const week = `<div class="week" aria-label="Last 7 days: ${info.last7.filter((d) => d.logged).length} logged">${dots}</div>`;
+  if (info.loggedToday) {
+    const facts = ins.funFacts(totals, info);
+    const fact = facts.length ? facts[daySeed() % facts.length] : null;
+    box.innerHTML = `
+      <section class="card motivate done">
+        <div class="card-body" style="padding-top:14px">
+          <div class="mot-row">
+            <div class="mot-flame" aria-hidden="true">🔥</div>
+            <div class="grow"><b>${info.current > 1 ? `${info.current} days in a row` : 'Today counts'} ✓</b>
+              <div class="small muted">${info.best > info.current ? `Best: ${plural(info.best, 'day')} · ` : ''}${plural(info.total, 'day')} journaled in total</div></div>
+            ${week}
+          </div>
+          ${fact ? `<div class="fact"><span aria-hidden="true">${fact.emoji}</span> ${esc(fact.text)}</div>` : ''}
+          <a class="small" href="#/insights">See your insights →</a>
+        </div>
+      </section>`;
+    return;
+  }
+  const n = ins.nudge(info, daySeed());
+  box.innerHTML = `
+    <section class="card motivate">
+      <div class="card-body" style="padding-top:14px">
+        <div class="mot-row">
+          <div class="grow"><b class="mot-title">${esc(n.title)}</b><div class="small muted">${esc(n.body)}</div></div>
+          ${week}
+        </div>
+        <form id="oneline" class="quickadd" style="margin-top:12px" autocomplete="off">
+          ${icon('edit')}
+          <input name="line" placeholder="Today in one line…" aria-label="Today in one line" enterkeyhint="done">
+          <button class="btn primary sm" type="submit">Save</button>
+        </form>
+        <div class="quick-log">
+          ${MOODS.map((m) => `<button class="ql" data-action="set-mood" data-v="${m.v}" aria-label="Mood: ${m.label}" title="${m.label}">${m.e}</button>`).join('')}
+          <span class="sep"></span>
+          <button class="ql" data-action="add-files" aria-label="Add a photo" title="Add a photo">📷</button>
+          <button class="ql" data-action="record" aria-label="Record a voice note" title="Voice note">🎙️</button>
+        </div>
+      </div>
+    </section>`;
+  $('#oneline', box).onsubmit = (e) => {
+    e.preventDefault();
+    const v = e.target.line.value.trim();
+    if (!v) return;
+    $('#main').journal?.append(v);
+    e.target.line.value = '';
+  };
+}
+
+// ---------------------------------------------------------------------------
+// Photos, videos & files
+// ---------------------------------------------------------------------------
+
+const urlPool = new Map();
+function poolURL(scope, blob) {
+  if (!blob) return '';
+  const url = URL.createObjectURL(blob);
+  if (!urlPool.has(scope)) urlPool.set(scope, []);
+  urlPool.get(scope).push(url);
+  return url;
+}
+function releaseURLs(scope) {
+  (urlPool.get(scope) || []).forEach((u) => URL.revokeObjectURL(u));
+  urlPool.delete(scope);
+}
+
+function fileTile(f) {
+  const thumb = f.thumb ? poolURL('gallery', f.thumb) : f.kind === 'image' ? poolURL('gallery', f.blob) : '';
+  return `
+    <button class="tile ${f.kind}" data-action="open-file" data-id="${f.id}" aria-label="${esc(f.caption || f.name)}">
+      ${thumb ? `<img src="${thumb}" alt="" loading="lazy">` : `<span class="fi">${FILE_EMOJI[f.kind] || '📎'}</span><span class="fn">${esc(f.name)}</span>`}
+      ${f.kind === 'video' ? `<span class="badge">▶ ${f.duration ? formatDuration(f.duration) : ''}</span>` : ''}
+      ${f.caption ? `<span class="cap">${esc(f.caption)}</span>` : ''}
+    </button>`;
+}
+
+async function renderGallery(date) {
+  const g = $('#gallery');
+  if (!g) return;
+  releaseURLs('gallery');
+  const files = (await db.byDate('files', date)).sort((a, b) => a.createdAt.localeCompare(b.createdAt));
+  $('#files-count').textContent = files.length || '';
+  g.innerHTML = files.length ? files.map(fileTile).join('') + `<button class="tile add" data-action="add-files" aria-label="Add more">${icon('plus')}</button>`
+    : `<button class="dropzone" data-action="add-files">${icon('upload')}<span><b>Add photos, videos or files</b><br><span class="small muted">${matchMedia('(pointer: coarse)').matches ? 'Tap to choose from your library' : 'Click, drag them here, or paste a photo'}</span></span></button>`;
+}
+
+function bindFileInputs(main, date) {
+  for (const id of ['#file-input', '#camera-input']) {
+    const input = $(id, main);
+    if (input) input.onchange = async () => { if (input.files.length) await attachFiles(date, input.files); input.value = ''; };
+  }
+}
+
+async function attachFiles(date, fileList) {
+  const n = fileList.length;
+  if (!n) return;
+  if (n > 1) toast(`Adding ${n} files…`, { ms: 2000 });
+  try {
+    const saved = await addFiles(date, fileList);
+    const photos = saved.filter((f) => f.kind === 'image').length;
+    const videos = saved.filter((f) => f.kind === 'video').length;
+    const other = saved.length - photos - videos;
+    const parts = [photos && plural(photos, 'photo'), videos && plural(videos, 'video'), other && plural(other, 'file')].filter(Boolean);
+    toast(`Added ${parts.join(', ')} to ${relativeLabel(date, state.today)}`);
+    if (state.route.view === 'day' && state.route.date === date) renderGallery(date);
+    onActivity();
+  } catch (e) {
+    if (e?.name === 'QuotaExceededError') toast('Your device is out of storage for Daybook. Back up and remove some large videos.', { error: true, ms: 9000 });
+    else reportError(e);
+  }
+}
+
+async function openFile(id) {
+  const f = await db.get('files', id);
+  if (!f) return;
+  const siblings = (await db.byDate('files', f.date)).sort((a, b) => a.createdAt.localeCompare(b.createdAt));
+  const idx = siblings.findIndex((x) => x.id === id);
+  const url = URL.createObjectURL(f.blob);
+  const entry = await getEntry(f.date);
+  let media = '';
+  if (f.kind === 'image') media = `<img class="viewer-media" src="${url}" alt="${esc(f.caption || f.name)}">`;
+  else if (f.kind === 'video') media = `<video class="viewer-media" src="${url}" controls playsinline></video>`;
+  else if (f.kind === 'audio') media = `<audio src="${url}" controls></audio>`;
+  else media = `<div class="callout"><span style="font-size:32px">${FILE_EMOJI[f.kind] || '📎'}</span><span class="grow"><b>${esc(f.name)}</b><br><span class="small">${formatBytes(f.size)}</span></span><a class="btn sm" href="${url}" target="_blank" rel="noopener">Open</a></div>`;
+  const s = openSheet(`
+    <div class="sheet-head">
+      <h2 style="font-size:17px">${esc(relativeLabel(f.date, state.today))}${siblings.length > 1 ? ` <span class="small muted" style="font-family:var(--sans)">${idx + 1} of ${siblings.length}</span>` : ''}</h2>
+      ${siblings.length > 1 ? `<button class="iconbtn" id="f-prev" aria-label="Previous">${icon('left')}</button><button class="iconbtn" id="f-next" aria-label="Next">${icon('right')}</button>` : ''}
+      <button class="iconbtn" data-close aria-label="Close">${icon('x')}</button>
+    </div>
+    <div class="viewer">${media}</div>
+    <label class="field"><span>Caption</span><input class="input" id="f-cap" value="${esc(f.caption)}" placeholder="What’s happening here?"></label>
+    <div class="small muted">${esc(f.name)} · ${formatBytes(f.size)}${f.width ? ` · ${f.width}×${f.height}` : ''}</div>
+    <div class="btn-row" style="margin-top:12px">
+      ${f.kind === 'image' ? `<button class="btn" id="f-cover">${entry.coverId === f.id ? '★ Calendar cover' : '☆ Use as calendar cover'}</button>` : ''}
+      <label class="btn">${icon('calendar', 'sm')} Move to <input type="date" id="f-date" value="${f.date}" style="border:0;background:none;width:9.5em"></label>
+      <button class="btn ghost" id="f-dl">${icon('download', 'sm')}</button>
+      <button class="btn ghost danger" id="f-del" style="margin-left:auto">${icon('trash', 'sm')} Delete</button>
+    </div>`, { label: 'Photo or file', onClose: () => { URL.revokeObjectURL(url); render(); } });
+  const saveCap = debounce(async () => { const cur = await db.get('files', id); if (cur) { cur.caption = $('#f-cap', s.el).value; await db.put('files', cur); } }, 400);
+  $('#f-cap', s.el).addEventListener('input', saveCap);
+  const nav = (d) => () => { const next = siblings[(idx + d + siblings.length) % siblings.length]; s.close(); openFile(next.id); };
+  if ($('#f-prev', s.el)) { $('#f-prev', s.el).onclick = nav(-1); $('#f-next', s.el).onclick = nav(1); }
+  const cover = $('#f-cover', s.el);
+  if (cover) cover.onclick = async () => {
+    const e = await getEntry(f.date);
+    e.coverId = e.coverId === f.id ? null : f.id;
+    await db.put('entries', e);
+    cover.textContent = e.coverId === f.id ? '★ Calendar cover' : '☆ Use as calendar cover';
+  };
+  $('#f-date', s.el).onchange = async (e) => {
+    if (!e.target.value) return;
+    const cur = await db.get('files', id);
+    cur.date = e.target.value;
+    await db.put('files', cur);
+    toast(`Moved to ${relativeLabel(cur.date, state.today)}`);
+    s.close();
+    onActivity();
+  };
+  $('#f-dl', s.el).onclick = () => download(f.name, f.blob);
+  $('#f-del', s.el).onclick = async () => {
+    s.close();
+    if (!(await confirmSheet('Delete this file?', 'It will be removed from this device.'))) return;
+    await db.delete('files', id);
+    toast('Deleted');
+    render();
+  };
 }
 
 async function refreshSchedule({ force = false } = {}) {
@@ -881,8 +1169,19 @@ function bindJournal(main, date, entry) {
     entry.updatedAt = new Date().toISOString();
     await db.put('entries', entry);
     saveState.innerHTML = `${icon('check', 'sm')} Saved`;
+    onActivity();
   }, 500);
-  const onInput = () => { saveState.textContent = 'Saving…'; grow(); meta(); persist(); };
+  // Time spent writing: count gaps between keystrokes shorter than 30s.
+  let lastKey = 0;
+  const trackTime = () => {
+    const now = Date.now();
+    if (lastKey && now - lastKey < 30000) entry.writeSeconds = (entry.writeSeconds || 0) + (now - lastKey) / 1000;
+    lastKey = now;
+    if (!entry.firstWriteAt) entry.firstWriteAt = new Date().toISOString();
+  };
+  const onInput = () => { trackTime(); saveState.textContent = 'Saving…'; grow(); meta(); persist(); };
+  const saveNow = async () => { entry.updatedAt = new Date().toISOString(); await db.put('entries', entry); onActivity(); };
+  $('#h-sleep', main)?.addEventListener('change', (e) => { entry.sleep = e.target.value === '' ? null : Number(e.target.value); saveNow(); });
   ta.addEventListener('input', onInput);
   $$('[data-g]', main).forEach((i) => i.addEventListener('input', onInput));
   // Flush pending saves when leaving the page.
@@ -894,9 +1193,14 @@ function bindJournal(main, date, entry) {
     entry,
     async setMood(v) {
       entry.mood = entry.mood === v ? null : v;
-      entry.updatedAt = new Date().toISOString();
-      await db.put('entries', entry);
+      if (!entry.firstWriteAt) entry.firstWriteAt = new Date().toISOString();
+      await saveNow();
       $$('.mood', main).forEach((b) => b.setAttribute('aria-pressed', String(Number(b.dataset.v) === entry.mood)));
+    },
+    async setMoved(v) {
+      entry.moved = entry.moved === v ? null : v;
+      await saveNow();
+      $$('[data-action="set-moved"]', main).forEach((b) => b.setAttribute('aria-pressed', String((b.dataset.v === 'yes') === entry.moved && entry.moved != null)));
     },
     async shufflePrompt() {
       const cur = promptFor(date, entry);
@@ -925,9 +1229,11 @@ async function renderOnThisDay(date, token) {
   const found = [];
   for (const t of targets) {
     const e = await db.get('entries', t.key);
-    if (e && (e.text || '').trim()) found.push({ ...t, e });
+    const photos = (await db.byDate('files', t.key)).filter((f) => f.kind === 'image' && f.thumb);
+    if ((e && (e.text || '').trim()) || photos.length) found.push({ ...t, e: e || { text: '' }, photos });
   }
   if (stale(token) || !found.length) return;
+  releaseURLs('otd');
   $('#otd').innerHTML = `
     <section class="card" aria-labelledby="h-otd">
       <div class="card-head"><h2 id="h-otd">${icon('sparkles')} On this day</h2></div>
@@ -935,7 +1241,8 @@ async function renderOnThisDay(date, token) {
         ${found.slice(0, 3).map((f) => `
           <button data-action="goto" data-hash="#/day/${f.key}">
             <span class="when">${esc(f.label)} · ${esc(formatShort(f.key))}${f.e.mood ? ' ' + MOODS[f.e.mood - 1].e : ''}</span>
-            ${esc(f.e.text.trim().slice(0, 220))}${f.e.text.trim().length > 220 ? '…' : ''}
+            ${esc((f.e.text || '').trim().slice(0, 220))}${(f.e.text || '').trim().length > 220 ? '…' : ''}
+            ${f.photos.length ? `<span class="otd-photos">${f.photos.slice(0, 4).map((p) => `<img src="${poolURL('otd', p.thumb)}" alt="">`).join('')}</span>` : ''}
           </button>`).join('')}
       </div>
     </section>`;
@@ -1095,6 +1402,7 @@ function openRecorder() {
     if (needsCloud) note.transcribing = true;
     await db.put('voice', note);
     toast('Voice note saved');
+    onActivity();
     render();
     openNote(note.id, { fresh: true });
     if (needsCloud) await runCloudTranscription(note.id);
@@ -1379,9 +1687,10 @@ async function renderCalendar(main, token) {
   const gridEnd = addDays(gridStart, days - 1);
 
   const draw = async () => {
-    const [entries, tasks, voice] = await Promise.all([
-      db.all('entries'), db.byDateRange('tasks', gridStart, gridEnd), db.byDateRange('voice', gridStart, gridEnd),
+    const [entries, tasks, voice, files] = await Promise.all([
+      db.all('entries'), db.byDateRange('tasks', gridStart, gridEnd), db.byDateRange('voice', gridStart, gridEnd), db.byDateRange('files', gridStart, gridEnd),
     ]);
+    releaseURLs('calendar');
     const entryMap = new Map(entries.map((e) => [e.date, e]));
     const events = state.events.get(month)?.list || [];
     const dows = [...Array(7)].map((_, i) => fromKey(addDays(gridStart, i)).toLocaleDateString(undefined, { weekday: 'short' }));
@@ -1392,14 +1701,17 @@ async function renderCalendar(main, token) {
       const evs = events.filter((x) => x.days.includes(k) && !(x.daybook && x.daybook.startsWith('voice:')));
       const tk = tasks.filter((t) => t.date === k);
       const vn = voice.filter((v) => v.date === k);
-      const label = [formatLong(k), e?.mood ? `mood ${MOODS[e.mood - 1].label}` : '', entryHasContent(e) ? 'journal entry' : '', evs.length ? plural(evs.length, 'event') : '', tk.length ? plural(tk.length, 'to-do') : '', vn.length ? plural(vn.length, 'voice note') : ''].filter(Boolean).join(', ');
+      const fl = files.filter((f) => f.date === k);
+      const photos = fl.filter((f) => f.kind === 'image' && f.thumb);
+      const cover = photos.find((f) => f.id === e?.coverId) || photos[0];
+      const label = [formatLong(k), e?.mood ? `mood ${MOODS[e.mood - 1].label}` : '', entryHasContent(e) ? 'journal entry' : '', evs.length ? plural(evs.length, 'event') : '', tk.length ? plural(tk.length, 'to-do') : '', vn.length ? plural(vn.length, 'voice note') : '', fl.length ? plural(fl.length, 'photo or file') : ''].filter(Boolean).join(', ');
       cells += `
-        <button class="dcell${k.slice(0, 7) !== month ? ' other' : ''}${k === state.today ? ' today' : ''}" data-action="goto" data-hash="#/day/${k}" aria-label="${esc(label)}">
+        <button class="dcell${k.slice(0, 7) !== month ? ' other' : ''}${k === state.today ? ' today' : ''}${cover ? ' has-photo' : ''}" data-action="goto" data-hash="#/day/${k}" aria-label="${esc(label)}"${cover ? ` style="--photo:url('${poolURL('calendar', cover.thumb)}')"` : ''}>
           <span class="n">${fromKey(k).getDate()}</span>
           ${e?.mood ? `<span class="mood-dot" aria-hidden="true">${MOODS[e.mood - 1].e}</span>` : ''}
           <span class="evs">${evs.slice(0, 3).map((x) => `<div style="--c:${esc(x.color || 'var(--blue)')}">${esc(x.allDay ? x.title : formatTime(timeFromDate(x.start)) + ' ' + x.title)}</div>`).join('')}${evs.length > 3 ? `<div>+${evs.length - 3} more</div>` : ''}</span>
           <span class="marks" aria-hidden="true">
-            ${evs.length ? '<i class="ev"></i>' : ''}${entryHasContent(e) ? '<i class="jr"></i>' : ''}${vn.length ? '<i class="vn"></i>' : ''}${tk.length ? '<i class="tk"></i>' : ''}
+            ${evs.length ? '<i class="ev"></i>' : ''}${entryHasContent(e) ? '<i class="jr"></i>' : ''}${vn.length ? '<i class="vn"></i>' : ''}${tk.length ? '<i class="tk"></i>' : ''}${fl.length ? '<i class="ph"></i>' : ''}
           </span>
         </button>`;
     }
@@ -1422,28 +1734,17 @@ async function renderCalendar(main, token) {
       <span><i style="--c:var(--ink-2)"></i>Journal</span>
       <span><i style="--c:var(--accent)"></i>Voice note</span>
       <span><i style="--c:var(--good)"></i>To-do</span>
+      <span><i style="--c:var(--star)"></i>Photo / file</span>
     </div>
-    <div id="insights"></div>`;
+    <a class="small" href="#/insights" style="display:inline-block;margin:4px 2px">${icon('sparkles', 'sm')} Streaks, patterns & achievements →</a>`;
   await draw();
-  renderInsights(month, token);
   if (connected()) {
     await loadMonthEvents(month);
     if (!stale(token)) await draw();
   }
 }
 
-async function renderInsights(month, token) {
-  const [entries, tasks, voice, { streak, days }] = await Promise.all([db.all('entries'), db.all('tasks'), db.all('voice'), computeStreak()]);
-  if (stale(token)) return;
-  const inMonth = (k) => k && k.slice(0, 7) === month;
-  const written = entries.filter((e) => inMonth(e.date) && entryHasContent(e)).length;
-  const words = entries.filter((e) => inMonth(e.date)).reduce((s, e) => s + ((e.text || '').match(/\S+/g) || []).length, 0);
-  const doneCount = tasks.filter((t) => t.done && inMonth((t.doneAt || '').slice(0, 10))).length;
-  const notes = voice.filter((v) => inMonth(v.date)).length;
-  let best = 0;
-  let run = 0;
-  [...days].sort().forEach((k, i, arr) => { run = i && diffDays(k, arr[i - 1]) === 1 ? run + 1 : 1; best = Math.max(best, run); });
-
+function moodStripHTML(entries) {
   const byDate = new Map(entries.map((e) => [e.date, e]));
   const last30 = [...Array(30)].map((_, i) => addDays(state.today, i - 29));
   const moodCells = last30.map((k) => {
@@ -1453,29 +1754,115 @@ async function renderInsights(month, token) {
   }).join('');
   const logged = last30.map((k) => byDate.get(k)?.mood).filter(Boolean);
   const avg = logged.length ? logged.reduce((a, b) => a + b, 0) / logged.length : 0;
+  return `
+    <div class="subhead" style="margin-top:4px">Mood, last 30 days${logged.length ? ` <span class="small muted" style="font-family:var(--sans)">· average ${MOODS[Math.round(avg) - 1].e} ${MOODS[Math.round(avg) - 1].label}</span>` : ''}</div>
+    <div class="moodstrip" role="group" aria-label="Mood for each of the last 30 days">${moodCells}</div>
+    <div class="mood-axis"><span>${esc(formatShort(last30[0]))}</span><span>Today</span></div>
+    <div class="mood-legend">${MOODS.map((m) => `<span><i style="--c:var(--mood-${m.v})"></i>${m.e} ${m.label}</span>`).join('')}<span><i style="--c:repeating-linear-gradient(135deg, var(--rule) 0 2px, transparent 2px 4px);border:1px solid var(--rule)"></i>Not logged</span></div>
+    <details style="margin-top:10px"><summary class="small muted" style="cursor:pointer">Show as table</summary>
+      <table class="small" style="width:100%;border-collapse:collapse;margin-top:6px">
+        <thead><tr><th style="text-align:left">Date</th><th style="text-align:left">Mood</th><th style="text-align:left">Sleep</th><th style="text-align:left">Moved</th></tr></thead>
+        <tbody>${last30.filter((k) => byDate.get(k)?.mood).reverse().map((k) => { const e = byDate.get(k); return `<tr><td>${esc(formatShort(k))}</td><td>${MOODS[e.mood - 1].e} ${MOODS[e.mood - 1].label}</td><td>${e.sleep != null ? e.sleep + 'h' : '–'}</td><td>${e.moved === true ? 'Yes' : e.moved === false ? 'No' : '–'}</td></tr>`; }).join('') || '<tr><td colspan="4" class="muted">No moods logged yet.</td></tr>'}</tbody>
+      </table>
+    </details>`;
+}
 
-  $('#insights').innerHTML = `
-    <section class="card" aria-labelledby="h-ins">
-      <div class="card-head"><h2 id="h-ins">${icon('sparkles')} This month</h2></div>
-      <div class="card-body">
-        <div class="stats">
-          <div class="stat"><div class="label">Current streak</div><div class="value">${streak}</div><div class="delta">Best: ${plural(best, 'day')}</div></div>
-          <div class="stat"><div class="label">Days journaled</div><div class="value">${written}</div><div class="delta">${words.toLocaleString()} words</div></div>
-          <div class="stat"><div class="label">To-dos done</div><div class="value">${doneCount}</div><div class="delta">in ${esc(fromKey(month + '-01').toLocaleDateString(undefined, { month: 'long' }))}</div></div>
-          <div class="stat"><div class="label">Voice notes</div><div class="value">${notes}</div><div class="delta">in ${esc(fromKey(month + '-01').toLocaleDateString(undefined, { month: 'long' }))}</div></div>
+function patternHTML(p) {
+  const isMood = p.kind === 'mood';
+  const fmt = (v) => (isMood ? `${MOODS[Math.min(4, Math.max(0, Math.round(v) - 1))].e} ${v.toFixed(1)}` : `${Math.round(v * 100)}%`);
+  const pct = (v) => (isMood ? (v / 5) * 100 : v * 100);
+  const better = p.diff > 0.05;
+  const same = Math.abs(p.diff) <= 0.05;
+  const summary = same ? 'About the same either way, so far.'
+    : isMood ? `Your mood averages ${Math.abs(p.diff).toFixed(1)} points ${better ? 'higher' : 'lower'} on “${p.a.label.toLowerCase()}” days.`
+    : `You finish ${Math.abs(Math.round(p.diff * 100))}% ${better ? 'more' : 'fewer'} of your to-dos on days you journal.`;
+  return `
+    <div class="pattern">
+      <b>${esc(p.title)}</b>
+      <div class="pbar"><span class="pl">${esc(p.a.label)}</span><span class="track"><i style="width:${pct(p.a.value)}%;background:var(--accent)"></i></span><span class="pv">${fmt(p.a.value)}</span></div>
+      <div class="pbar"><span class="pl">${esc(p.b.label)}</span><span class="track"><i style="width:${pct(p.b.value)}%;background:var(--ink-3)"></i></span><span class="pv">${fmt(p.b.value)}</span></div>
+      <div class="small muted">${esc(summary)} <span title="Number of days in each group">(${p.a.n} vs ${p.b.n} days)</span></div>
+    </div>`;
+}
+
+async function renderInsightsView(main, token) {
+  const all = await loadEverything();
+  const earned = await db.getKV('achievements', {});
+  if (stale(token)) return;
+  const { info, totals: t } = all;
+  const facts = ins.funFacts(t, info);
+  const pats = ins.patterns({ entries: all.entries, tasks: all.tasks, days: all.days, today: state.today });
+  const habitPct = Math.min(100, (info.current / 66) * 100);
+  const research = [...ins.RESEARCH];
+  // Rotate the research list daily so the top card changes.
+  const rot = daySeed() % research.length;
+  const researchOrdered = [...research.slice(rot), ...research.slice(0, rot)];
+  const unlocked = ins.ACHIEVEMENTS.filter((a) => earned[a.id]);
+  const locked = ins.ACHIEVEMENTS.filter((a) => !earned[a.id]);
+  const dots = info.last7.map((d) => `
+    <span class="wd${d.logged ? ' on' : ''}${d.date === state.today ? ' today' : ''}" title="${esc(formatShort(d.date))}">
+      <i>${d.logged ? '✓' : ''}</i><small>${esc(fromKey(d.date).toLocaleDateString(undefined, { weekday: 'narrow' }))}</small>
+    </span>`).join('');
+
+  main.innerHTML = `
+    <div class="day-head"><h1>Insights</h1><div class="sub">Every small entry adds up. Here’s what yours add up to.</div></div>
+
+    <section class="card hero-card">
+      <div class="card-body" style="padding-top:18px">
+        <div class="hero">
+          <div>
+            <div class="hero-num">${info.current}<span aria-hidden="true">🔥</span></div>
+            <div class="hero-label">${info.current === 1 ? 'day' : 'days'} in a row</div>
+          </div>
+          <div class="hero-side">
+            <div><b>${info.best}</b> <span class="muted">best streak</span></div>
+            <div><b>${info.total}</b> <span class="muted">days journaled</span></div>
+            <div class="${info.loggedToday ? 'good-text' : ''}">${info.loggedToday ? '✓ Today counts' : '<a href="#/day">Today’s still open, one line is enough →</a>'}</div>
+          </div>
         </div>
-        <div class="subhead">Mood, last 30 days${logged.length ? ` <span class="small muted" style="font-family:var(--sans)">· average ${MOODS[Math.round(avg) - 1].e} ${MOODS[Math.round(avg) - 1].label}</span>` : ''}</div>
-        <div class="moodstrip" role="group" aria-label="Mood for each of the last 30 days">${moodCells}</div>
-        <div class="mood-axis"><span>${esc(formatShort(last30[0]))}</span><span>Today</span></div>
-        <div class="mood-legend">${MOODS.map((m) => `<span><i style="--c:var(--mood-${m.v})"></i>${m.e} ${m.label}</span>`).join('')}<span><i style="--c:repeating-linear-gradient(135deg, var(--rule) 0 2px, transparent 2px 4px);border:1px solid var(--rule)"></i>Not logged</span></div>
-        <details style="margin-top:10px"><summary class="small muted" style="cursor:pointer">Show as table</summary>
-          <table class="small" style="width:100%;border-collapse:collapse;margin-top:6px">
-            <thead><tr><th style="text-align:left">Date</th><th style="text-align:left">Mood</th></tr></thead>
-            <tbody>${last30.filter((k) => byDate.get(k)?.mood).reverse().map((k) => `<tr><td>${esc(formatShort(k))}</td><td>${MOODS[byDate.get(k).mood - 1].e} ${MOODS[byDate.get(k).mood - 1].label}</td></tr>`).join('') || '<tr><td colspan="2" class="muted">No moods logged yet.</td></tr>'}</tbody>
-          </table>
-        </details>
+        <div class="week" style="margin-top:14px" aria-label="Last 7 days">${dots}</div>
+        <div class="habit">
+          <div class="small"><b>Habit meter</b> <span class="muted">· ${info.current >= 66 ? 'You’ve passed the 66-day mark. This is part of who you are now.' : `${info.current}/66 days. On average it takes about 66 days for a habit to feel automatic (Lally et al., 2010).`}</span></div>
+          <div class="meter" role="meter" aria-valuemin="0" aria-valuemax="66" aria-valuenow="${Math.min(66, info.current)}" aria-label="Progress toward a 66-day habit"><i style="width:${habitPct}%"></i></div>
+          <div class="small muted" style="margin-top:4px">Missed a day? Research shows one slip doesn’t undo a habit. Just pick it up again.</div>
+        </div>
       </div>
-    </section>`;
+    </section>
+
+    <div class="stats" style="margin-top:14px">
+      <div class="stat"><div class="label">Time reflecting</div><div class="value">${esc(ins.formatMinutes(t.minutes))}</div><div class="delta">writing + speaking</div></div>
+      <div class="stat"><div class="label">Words written</div><div class="value">${t.words.toLocaleString()}</div><div class="delta">+ ${t.spokenWords.toLocaleString()} spoken</div></div>
+      <div class="stat"><div class="label">Good things noted</div><div class="value">${t.gratitudeCount}</div><div class="delta">gratitude items</div></div>
+      <div class="stat"><div class="label">Memories saved</div><div class="value">${t.photoCount + t.videoCount}</div><div class="delta">${t.voiceCount} voice notes</div></div>
+    </div>
+
+    ${facts.length ? `
+      <section class="card"><div class="card-head"><h2>🤓 Fun facts about your journaling</h2></div>
+        <div class="card-body"><ul class="facts">${facts.map((f) => `<li><span aria-hidden="true">${f.emoji}</span><span>${esc(f.text)}</span></li>`).join('')}</ul></div></section>` : ''}
+
+    <section class="card"><div class="card-head"><h2>🔍 Your patterns</h2></div>
+      <div class="card-body">
+        ${pats.found.map(patternHTML).join('')}
+        ${pats.pending.length ? `<div class="pending">${pats.pending.map((p) => `
+          <div class="small"><b>${esc(p.title)}</b> <span class="muted">unlocks after a few more days of logging (${p.have}/${p.need})</span>
+          <div class="meter sm"><i style="width:${(p.have / p.need) * 100}%"></i></div></div>`).join('')}</div>` : ''}
+        ${!pats.found.length ? '<p class="small muted">Log your mood, sleep and movement for a few days and Daybook will show you what seems to lift your mood.</p>' : ''}
+        <p class="small muted" style="margin-bottom:0">These come from your own entries. They show patterns, not proof of cause, but they’re a good hint about what helps you.</p>
+      </div></section>
+
+    <section class="card"><div class="card-body" style="padding-top:14px">${moodStripHTML(all.entries)}</div></section>
+
+    <section class="card"><div class="card-head"><h2>🧪 Why journaling helps</h2></div>
+      <div class="card-body">
+        <div class="research">${researchOrdered.map((r) => `<div class="rcard"><span class="re" aria-hidden="true">${r.emoji}</span><p>${esc(r.text)}</p><small>${esc(r.source)}</small></div>`).join('')}</div>
+        <p class="small muted" style="margin-bottom:0">Findings from published studies. Effects vary from person to person, and journaling complements professional care; it doesn’t replace it.</p>
+      </div></section>
+
+    <section class="card"><div class="card-head"><h2>🏅 Achievements <span class="count">${unlocked.length}/${ins.ACHIEVEMENTS.length}</span></h2></div>
+      <div class="card-body"><div class="badges">
+        ${unlocked.map((a) => `<div class="badge-card on"><span class="be">${a.icon}</span><b>${esc(a.name)}</b><small>${esc(a.desc)}</small><small class="muted">${esc(formatShort(earned[a.id]))}</small></div>`).join('')}
+        ${locked.map((a) => `<div class="badge-card"><span class="be" aria-hidden="true">${a.icon}</span><b>${esc(a.name)}</b><small>${esc(a.desc)}</small></div>`).join('')}
+      </div></div></section>`;
 }
 
 // Tooltip for elements with data-tip (mood strip)
@@ -1501,7 +1888,7 @@ async function renderSearch(main) {
   const q = state.route.q || '';
   main.innerHTML = `
     <div class="search-bar">
-      <label class="quickadd">${icon('search')}<input id="search-q" type="search" value="${esc(q)}" placeholder="Search journal, to-dos and voice notes… or #tag" autofocus aria-label="Search"></label>
+      <label class="quickadd">${icon('search')}<input id="search-q" type="search" value="${esc(q)}" placeholder="Search journal, to-dos, voice notes, photos… or #tag" autofocus aria-label="Search"></label>
     </div>
     <div id="results"></div>`;
   const input = $('#search-q', main);
@@ -1529,8 +1916,11 @@ async function drawResults(q) {
   const isTag = q.startsWith('#');
   const needle = (isTag ? q.slice(1) : q).toLowerCase();
   const match = (s) => (s || '').toLowerCase().includes(needle);
-  const [entries, tasks, voice] = await Promise.all([db.all('entries'), db.all('tasks'), db.all('voice')]);
+  const [entries, tasks, voice, files] = await Promise.all([db.all('entries'), db.all('tasks'), db.all('voice'), db.all('files')]);
   const res = [];
+  for (const f of files) {
+    if (!isTag && (match(f.name) || match(f.caption))) res.push({ date: f.date, kind: `${FILE_EMOJI[f.kind] || '📎'} ${f.kind === 'image' ? 'Photo' : f.kind === 'video' ? 'Video' : 'File'}`, text: f.caption ? `${f.caption} (${f.name})` : f.name, file: f.id });
+  }
   for (const e of entries) {
     const text = [e.text, ...(e.gratitude || [])].filter(Boolean).join(' · ');
     if (isTag ? (e.tags || []).includes(needle) : match(text)) res.push({ date: e.date, kind: 'Journal', text, hash: `#/day/${e.date}` });
@@ -1547,7 +1937,7 @@ async function drawResults(q) {
     return esc(snippet).replace(new RegExp(escapeRe(esc(needle)), 'gi'), (m) => `<mark>${m}</mark>`);
   };
   out.innerHTML = res.length ? `<div class="small muted" style="margin:8px 2px">${plural(res.length, 'result')}</div>` + res.map((r) => `
-    <button class="result" ${r.hash ? `data-action="goto" data-hash="${r.hash}"` : r.note ? `data-action="open-note" data-id="${r.note}"` : `data-action="edit-task" data-id="${r.task}"`}>
+    <button class="result" ${r.hash ? `data-action="goto" data-hash="${r.hash}"` : r.note ? `data-action="open-note" data-id="${r.note}"` : r.file ? `data-action="open-file" data-id="${r.file}"` : `data-action="edit-task" data-id="${r.task}"`}>
       <div class="when">${esc(r.kind)} · ${r.date ? esc(formatShort(r.date)) : 'No date'}</div>
       <div class="txt">${hl(r.text)}</div>
     </button>`).join('') : '<div class="empty" style="padding:12px 4px">No matches.</div>';
@@ -1621,6 +2011,8 @@ function openSettings(section) {
       <h3>${icon('book')} Journal</h3>
       <label class="switch"><span class="text"><b>Daily writing prompt</b></span><input type="checkbox" id="s-prompts" ${s.prompts ? 'checked' : ''}></label>
       <label class="switch"><span class="text"><b>“Three good things”</b><small>A short gratitude list under each entry.</small></span><input type="checkbox" id="s-grat" ${s.gratitude ? 'checked' : ''}></label>
+      <label class="switch"><span class="text"><b>Sleep & movement check-in</b><small>Two taps a day. Insights will show how they relate to your mood.</small></span><input type="checkbox" id="s-health" ${s.health ? 'checked' : ''}></label>
+      <label class="switch"><span class="text"><b>Celebrations</b><small>A little confetti the first time you log each day.</small></span><input type="checkbox" id="s-celebrate" ${s.celebrate ? 'checked' : ''}></label>
       <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px">
         <label class="field"><span>Theme</span><select class="input" id="s-theme">${[['auto', 'Automatic'], ['light', 'Light'], ['dark', 'Dark']].map(([v, l]) => `<option value="${v}" ${s.theme === v ? 'selected' : ''}>${l}</option>`).join('')}</select></label>
         <label class="field"><span>Week starts</span><select class="input" id="s-week"><option value="1" ${s.weekStart === 1 ? 'selected' : ''}>Monday</option><option value="0" ${s.weekStart === 0 ? 'selected' : ''}>Sunday</option></select></label>
@@ -1631,6 +2023,8 @@ function openSettings(section) {
     <section>
       <h3>${icon('download')} Your data</h3>
       <p class="small muted">Everything is stored privately on this device. Back up regularly, and use the backup to move to a new phone.</p>
+      <p class="small" id="s-usage"></p>
+      <label class="switch"><span class="text"><b>Include photos & videos in backups</b><small>Makes the backup file much bigger if you have videos.</small></span><input type="checkbox" id="s-bmedia" ${s.backupMedia ? 'checked' : ''}></label>
       <div class="btn-row">
         <button class="btn" id="s-export">${icon('download', 'sm')} Back up (JSON)</button>
         <button class="btn" id="s-md">${icon('note', 'sm')} Export journal (Markdown)</button>
@@ -1682,11 +2076,19 @@ function openSettings(section) {
   $('#s-cloudalways', el).onchange = (e) => saveSettings({ cloudAlways: e.target.checked });
   $('#s-prompts', el).onchange = (e) => saveSettings({ prompts: e.target.checked });
   $('#s-grat', el).onchange = (e) => saveSettings({ gratitude: e.target.checked });
+  $('#s-health', el).onchange = (e) => saveSettings({ health: e.target.checked });
+  $('#s-celebrate', el).onchange = (e) => saveSettings({ celebrate: e.target.checked });
+  $('#s-bmedia', el).onchange = (e) => saveSettings({ backupMedia: e.target.checked });
+  Promise.all([storageEstimate(), db.all('files')]).then(([est, files]) => {
+    const media = files.reduce((a, f) => a + (f.size || 0), 0);
+    const u = $('#s-usage', el);
+    if (u) u.textContent = `Photos & files: ${formatBytes(media)}${est?.quota ? ` · Total used ${formatBytes(est.usage)} of ${formatBytes(est.quota)} available` : ''}`;
+  });
   $('#s-theme', el).onchange = (e) => saveSettings({ theme: e.target.value });
   $('#s-week', el).onchange = (e) => saveSettings({ weekStart: Number(e.target.value) });
   $('#s-order', el).onchange = (e) => saveSettings({ dateOrder: e.target.value });
   $('#s-export', el).onclick = async () => {
-    const data = await exportAll();
+    const data = await exportAll({ includeMedia: state.settings.backupMedia });
     download(`daybook-backup-${state.today}.json`, JSON.stringify(data), 'application/json');
     await db.setKV('lastBackup', new Date().toISOString());
   };
@@ -1696,32 +2098,37 @@ function openSettings(section) {
     if (!file) return;
     try {
       const counts = await importAll(JSON.parse(await file.text()));
-      toast(`Restored ${counts.entries} entries, ${counts.tasks} to-dos and ${counts.voice} voice notes`);
+      toast(`Restored ${counts.entries} entries, ${counts.tasks} to-dos, ${counts.voice} voice notes and ${counts.files} photos/files`);
       sheet.close();
     } catch (err) { reportError(err); }
   };
   $('#s-wipe', el).onclick = async () => {
     sheet.close();
-    if (!(await confirmSheet('Erase everything?', 'All journal entries, to-dos and voice notes on this device will be permanently deleted. Google Calendar events are not touched. Make a backup first.', 'Erase'))) return;
-    await Promise.all(['entries', 'tasks', 'voice'].map((n) => db.clear(n)));
+    if (!(await confirmSheet('Erase everything?', 'All journal entries, to-dos, voice notes, photos and files on this device will be permanently deleted. Google Calendar events are not touched. Make a backup first.', 'Erase'))) return;
+    await Promise.all(['entries', 'tasks', 'voice', 'files'].map((n) => db.clear(n)));
+    await db.setKV('achievements', {});
     toast('All data erased');
     render();
   };
 }
 
 async function exportMarkdown() {
-  const [entries, tasks, voice] = await Promise.all([db.all('entries'), db.all('tasks'), db.all('voice')]);
-  const dates = new Set([...entries.filter(entryHasContent).map((e) => e.date), ...voice.map((v) => v.date), ...tasks.filter((t) => t.date).map((t) => t.date)]);
+  const [entries, tasks, voice, files] = await Promise.all([db.all('entries'), db.all('tasks'), db.all('voice'), db.all('files')]);
+  const dates = new Set([...entries.filter(entryHasContent).map((e) => e.date), ...voice.map((v) => v.date), ...tasks.filter((t) => t.date).map((t) => t.date), ...files.map((f) => f.date)]);
   let md = `# Daybook journal\n\nExported ${new Date().toLocaleString()}\n`;
   for (const d of [...dates].sort()) {
     const e = entries.find((x) => x.date === d);
     const ts = tasks.filter((t) => t.date === d);
     const vs = voice.filter((v) => v.date === d).sort((a, b) => a.createdAt.localeCompare(b.createdAt));
     md += `\n## ${formatLong(d)}${e?.mood ? ' ' + MOODS[e.mood - 1].e : ''}\n`;
+    const health = [e?.sleep != null ? `😴 ${e.sleep}h sleep` : '', e?.moved === true ? '🏃 moved' : e?.moved === false ? 'rest day' : ''].filter(Boolean).join(' · ');
+    if (health) md += `\n_${health}_\n`;
     if (e?.text?.trim()) md += `\n${e.text.trim()}\n`;
     const g = (e?.gratitude || []).filter((x) => x && x.trim());
     if (g.length) md += `\n**Three good things**\n${g.map((x, i) => `${i + 1}. ${x}`).join('\n')}\n`;
     if (ts.length) md += `\n**To-do**\n${ts.map((t) => `- [${t.done ? 'x' : ' '}] ${t.time ? formatTime(t.time) + ' ' : ''}${t.title}`).join('\n')}\n`;
+    const fs = files.filter((f) => f.date === d);
+    if (fs.length) md += `\n**Photos & files**\n${fs.map((f) => `- ${f.name}${f.caption ? ` — ${f.caption}` : ''}`).join('\n')}\n`;
     if (vs.length) md += `\n**Voice notes**\n${vs.map((v) => `- ${new Date(v.createdAt).toLocaleTimeString(undefined, { hour: 'numeric', minute: '2-digit' })} — ${v.transcript || v.title}`).join('\n')}\n`;
   }
   download(`daybook-${state.today}.md`, md, 'text/markdown');
@@ -1739,11 +2146,16 @@ function openHelp() {
       <kbd>c</kbd><span>Calendar</span>
       <kbd>d</kbd><span>All to-dos</span>
       <kbd>v</kbd><span>Voice notes</span>
+      <kbd>i</kbd><span>Insights, streaks & achievements</span>
       <kbd>/</kbd><span>Search</span>
     </div>
     <section>
       <h3>Talk naturally</h3>
       <p class="small">In a voice note, say things like <i>“remind me to pay rent on Friday”</i> or <i>“dentist appointment tomorrow at 2:30pm”</i>. Daybook spots them and offers one-tap buttons to add them as to-dos or calendar events. Say <i>“hashtag work”</i> to tag a note.</p>
+      <h3>Small counts</h3>
+      <p class="small">A mood tap, one line, a photo or a 10-second voice note all count toward your streak. On busy days, just do the smallest thing.</p>
+      <h3>Photos & files</h3>
+      <p class="small">Add photos, videos, PDFs or any file to a day: tap <b>Add</b>, drag files onto the page, or paste a screenshot. Star a photo to make it that day’s cover in the calendar.</p>
       <h3>Type naturally</h3>
       <p class="small">To-dos understand <i>today, tomorrow, fri, next monday, 14 oct, 3pm, 15:30, in 2 hours, for 45 min</i>, <b>!</b> for priority and <b>#tags</b>.</p>
       <h3>Install it</h3>
@@ -1761,6 +2173,8 @@ async function maybeWelcome() {
       <li><b>Write</b> in the journal, log your mood and three good things.</li>
       <li><b>Talk</b>: tap the mic. Notes are transcribed, dated and saved to your calendar, and to-dos you mention are picked up.</li>
       <li><b>Plan</b>: type to-dos naturally (“call mum fri 5pm”). Timed ones go to Google Calendar.</li>
+      <li><b>Remember</b>: add photos, videos and files to any day.</li>
+      <li><b>Small counts</b>: a mood tap or one line keeps your streak going. Insights show how journaling, sleep and movement relate to how you feel.</li>
       <li><b>Private</b>: everything is stored on this device. Only calendar items go to Google.</li>
     </ul>
     <div class="btn-row" style="justify-content:flex-end;margin-top:12px">
@@ -1812,7 +2226,19 @@ const actions = {
     render();
   },
   'task-filter': (el) => { state.taskFilter = el.dataset.f; render(); },
-  'set-mood': (el) => $('#main').journal?.setMood(Number(el.dataset.v)),
+  'set-mood': async (el) => {
+    const j = $('#main').journal;
+    if (!j) return;
+    await j.setMood(Number(el.dataset.v));
+    if (el.classList.contains('ql')) toast(`Mood logged: ${MOODS[Number(el.dataset.v) - 1].e}`);
+  },
+  'set-moved': (el) => $('#main').journal?.setMoved(el.dataset.v === 'yes'),
+  'add-files': () => {
+    if (state.route.view !== 'day') { go('#/day'); setTimeout(() => $('#file-input')?.click(), 200); return; }
+    $('#file-input')?.click();
+  },
+  camera: () => $('#camera-input')?.click(),
+  'open-file': (el) => openFile(el.dataset.id),
   'shuffle-prompt': () => $('#main').journal?.shufflePrompt(),
   dictate: (el) => {
     if (dictation) { dictation.stop(); return; }
@@ -1865,6 +2291,7 @@ document.addEventListener('keydown', (e) => {
   else if (k === 'c') go('#/calendar');
   else if (k === 'd') go('#/tasks');
   else if (k === 'v') go('#/notes');
+  else if (k === 'i') go('#/insights');
   else if (k === '/') { e.preventDefault(); go('#/search'); }
   else if (k === '?') openHelp();
   else if (k === 'n') {
@@ -1876,6 +2303,32 @@ document.addEventListener('keydown', (e) => {
     if (state.route.view !== 'day') { go('#/day'); setTimeout(() => $('#journal-text')?.focus(), 150); } else $('#journal-text')?.focus();
   } else if (state.route.view === 'day' && k === 'ArrowLeft') actions['prev-day']();
   else if (state.route.view === 'day' && k === 'ArrowRight') actions['next-day']();
+});
+
+// Drag & drop and paste files onto a day.
+let dragDepth = 0;
+const hasFiles = (e) => [...(e.dataTransfer?.types || [])].includes('Files');
+document.addEventListener('dragenter', (e) => {
+  if (state.route.view !== 'day' || !hasFiles(e)) return;
+  dragDepth++;
+  document.body.classList.add('dropping');
+  document.body.dataset.dropLabel = `Drop to add to ${relativeLabel(state.route.date, state.today)}`;
+});
+document.addEventListener('dragleave', () => { if (--dragDepth <= 0) { dragDepth = 0; document.body.classList.remove('dropping'); } });
+document.addEventListener('dragover', (e) => { if (state.route.view === 'day' && hasFiles(e)) e.preventDefault(); });
+document.addEventListener('drop', (e) => {
+  dragDepth = 0;
+  document.body.classList.remove('dropping');
+  if (state.route.view !== 'day' || !e.dataTransfer?.files?.length) return;
+  e.preventDefault();
+  attachFiles(state.route.date, e.dataTransfer.files);
+});
+document.addEventListener('paste', (e) => {
+  if (state.route.view !== 'day' || activeSheet) return;
+  const files = [...(e.clipboardData?.files || [])];
+  if (!files.length) return;
+  e.preventDefault();
+  attachFiles(state.route.date, files);
 });
 
 // Swipe between days on touch screens.
@@ -1894,7 +2347,7 @@ document.addEventListener('touchend', (e) => {
   touch = null;
 }, { passive: true });
 
-window.addEventListener('hashchange', () => { closeSheet(); stopPlayer(); render(); window.scrollTo(0, 0); });
+window.addEventListener('hashchange', () => { closeSheet(); stopPlayer(); releaseURLs('gallery'); releaseURLs('calendar'); render(); window.scrollTo(0, 0); });
 window.addEventListener('scroll', () => $('#topbar')?.classList.toggle('scrolled', window.scrollY > 4), { passive: true });
 window.addEventListener('online', () => { renderTopbar(); syncPending(); });
 window.addEventListener('offline', renderTopbar);
@@ -1926,7 +2379,7 @@ async function boot() {
   const last = await db.getKV('lastBackup', null);
   const count = (await db.all('entries')).length;
   if (count > 5 && (!last || Date.now() - new Date(last) > 14 * 86400000)) {
-    toast('It’s been a while since your last backup.', { action: 'Back up', onAction: async () => { download(`daybook-backup-${state.today}.json`, JSON.stringify(await exportAll()), 'application/json'); await db.setKV('lastBackup', new Date().toISOString()); }, ms: 9000 });
+    toast('It’s been a while since your last backup.', { action: 'Back up', onAction: async () => { download(`daybook-backup-${state.today}.json`, JSON.stringify(await exportAll({ includeMedia: state.settings.backupMedia })), 'application/json'); await db.setKV('lastBackup', new Date().toISOString()); }, ms: 9000 });
   }
 }
 

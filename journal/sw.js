@@ -1,5 +1,5 @@
 // Offline support: the app shell is cached; Google APIs always go to the network.
-const VERSION = 'daybook-v1';
+const VERSION = 'daybook-v2';
 const SHELL = [
   './',
   'index.html',
@@ -9,6 +9,8 @@ const SHELL = [
   'js/db.js',
   'js/gcal.js',
   'js/voice.js',
+  'js/files.js',
+  'js/insights.js',
   'manifest.webmanifest',
   'icons/icon.svg',
   'icons/icon-192.png',

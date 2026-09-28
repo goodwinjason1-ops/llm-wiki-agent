@@ -5,6 +5,9 @@ Daybook is a journal that looks and feels like a paper notebook, with one page p
 - **Schedule**: your Google Calendar events plus timed to-dos on a timeline, with a "now" line.
 - **To-do**: type naturally ("Call mum tomorrow 5pm !"). Unfinished items carry over to today.
 - **Journal**: lined paper, a mood check-in, a daily prompt, "three good things" and #tags.
+- **Photos, videos & files**: add them to any day. Drag and drop, paste a screenshot, or use the camera. Star a photo to make it that day's cover in the calendar.
+- **Motivation**: streaks, a 7-day tracker, gentle nudges ("one line is enough"), a small celebration when you log each day, and 23 achievements.
+- **Insights**: time spent reflecting, fun comparisons ("about one marathon at world-record pace"), research on how journaling helps, and your own patterns, such as mood on days you slept 7+ hours or moved your body.
 - **Voice notes**: tap the mic and talk. The note is recorded, transcribed live, dated, and saved as an event in Google Calendar. To-dos and appointments you mention ("remind me to…", "dentist on Thursday at 2:30") come up as one-tap suggestions.
 
 It's an installable web app (PWA) and works offline. Your journal lives on your device, and only calendar items are sent to Google.
@@ -18,7 +21,10 @@ It's an installable web app (PWA) and works offline. Your journal lives on your 
 | Smart capture | Finds tasks and events in what you said and offers to add them as to-dos or calendar events |
 | To-do | Natural-language dates and times, priority (`!`), durations (`for 30 min`), `#tags`, overdue carry-over, Today, Tomorrow, Next 7 days, Later and Someday groups, undo |
 | Google Calendar | Shows events from the calendars you choose. Timed to-dos become events with reminders, and ticking one off marks the event ✅. Edits and deletes sync. Anything made offline syncs once you're back online |
-| Journal | Autosave, mood (5 levels), rotating prompts, gratitude list, dictation straight into the entry, word count, tags |
+| Journal | Autosave, mood (5 levels), sleep and movement check-in, rotating prompts, gratitude list, dictation straight into the entry, word count, tags |
+| Photos & files | Photos, videos, PDFs or any file per day, with thumbnails, captions, a viewer, move to another day, calendar cover photo, and photos in "On this day" |
+| Motivation | Anything counts toward the streak (one line, a mood, a photo, a voice note). A "Today in one line" box, a 7-day tracker, a celebration on the first log each day, and 23 achievements |
+| Insights | Streak, best streak and a 66-day habit meter. Time reflecting, words written and spoken, fun comparisons, personal patterns (sleep, movement, gratitude vs mood; journaling vs to-dos done), 11 cited research findings, 30-day mood strip |
 | Reflection | "On this day" (a week, a month and years ago), a streak counter, and a month view with each day's mood. Stats cover days journaled, words, to-dos done and voice notes, plus a 30-day mood strip |
 | Search | Full-text search across journal entries, to-dos and transcripts. Tap a tag to filter |
 | Reminders | One tap adds a daily "✍️ Journal" event to Google Calendar, so your phone reminds you |
@@ -32,7 +38,7 @@ No build step is needed. Serve the folder over HTTP:
 ```bash
 cd journal
 python3 -m http.server 8080     # then open http://localhost:8080
-npm test                         # natural-language date parser tests
+npm test                         # parser + insights unit tests
 ```
 
 The microphone needs `https://` or `localhost`.
@@ -74,7 +80,7 @@ Then choose which calendars to show and which one new items are saved to.
 
 ## Privacy
 
-- Journal entries, moods, to-dos and audio are stored in your browser's IndexedDB on this device.
+- Journal entries, moods, to-dos, photos, files and audio are stored in your browser's IndexedDB on this device.
 - Only items you choose to sync go to Google: timed to-dos, voice-note events and, optionally, audio in Drive.
 - Clearing site data or uninstalling the browser deletes your journal, so use **Settings → Back up** regularly. The app reminds you every two weeks.
 
@@ -89,6 +95,8 @@ journal/
   js/db.js              IndexedDB storage, backup/restore
   js/gcal.js            Google Calendar + Drive (Google Identity Services)
   js/voice.js           recording, live transcription, dictation, Whisper
+  js/files.js           photos/videos/files, thumbnails
+  js/insights.js        streaks, achievements, fun facts, research, patterns
   sw.js                 offline cache
   manifest.webmanifest  installable app metadata
   tests/                parser tests (node --test)

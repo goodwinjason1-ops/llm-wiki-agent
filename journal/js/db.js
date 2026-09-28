@@ -1,7 +1,7 @@
 // IndexedDB storage. Everything stays on this device unless you sync it to Google.
 
 const DB_NAME = 'daybook';
-const DB_VERSION = 1;
+const DB_VERSION = 2;
 let dbPromise;
 
 function open() {
@@ -20,6 +20,10 @@ function open() {
         s.createIndex('date', 'date');
       }
       if (!db.objectStoreNames.contains('kv')) db.createObjectStore('kv');
+      if (!db.objectStoreNames.contains('files')) {
+        const s = db.createObjectStore('files', { keyPath: 'id' });
+        s.createIndex('date', 'date');
+      }
     };
     req.onsuccess = () => resolve(req.result);
     req.onerror = () => reject(req.error);
@@ -74,6 +78,13 @@ export const db = {
 };
 
 // Ask the browser not to evict our data under storage pressure.
+export async function storageEstimate() {
+  try {
+    const { usage, quota } = await navigator.storage.estimate();
+    return { usage, quota };
+  } catch { return null; }
+}
+
 export async function requestPersistence() {
   try {
     if (navigator.storage?.persist && !(await navigator.storage.persisted())) await navigator.storage.persist();
@@ -95,14 +106,17 @@ async function dataURLToBlob(url) {
   return (await fetch(url)).blob();
 }
 
-export async function exportAll() {
-  const [entries, tasks, voiceRaw, settings] = await Promise.all([
-    db.all('entries'), db.all('tasks'), db.all('voice'), db.getKV('settings', {}),
+export async function exportAll({ includeMedia = true } = {}) {
+  const [entries, tasks, voiceRaw, filesRaw, settings, achievements] = await Promise.all([
+    db.all('entries'), db.all('tasks'), db.all('voice'), db.all('files'), db.getKV('settings', {}), db.getKV('achievements', {}),
   ]);
   const voice = await Promise.all(voiceRaw.map(async (v) => ({ ...v, blob: v.blob ? await blobToDataURL(v.blob) : null })));
+  const files = includeMedia
+    ? await Promise.all(filesRaw.map(async (f) => ({ ...f, blob: f.blob ? await blobToDataURL(f.blob) : null, thumb: f.thumb ? await blobToDataURL(f.thumb) : null })))
+    : [];
   // Never put the API key in a backup file.
   const { openaiKey, ...safeSettings } = settings || {};
-  return { app: 'daybook', version: 1, exportedAt: new Date().toISOString(), entries, tasks, voice, settings: safeSettings };
+  return { app: 'daybook', version: 2, exportedAt: new Date().toISOString(), entries, tasks, voice, files, achievements, settings: safeSettings };
 }
 
 export async function importAll(data) {
@@ -110,5 +124,9 @@ export async function importAll(data) {
   for (const e of data.entries || []) await db.put('entries', e);
   for (const t of data.tasks || []) await db.put('tasks', t);
   for (const v of data.voice || []) await db.put('voice', { ...v, blob: v.blob ? await dataURLToBlob(v.blob) : null });
-  return { entries: data.entries?.length || 0, tasks: data.tasks?.length || 0, voice: data.voice?.length || 0 };
+  for (const f of data.files || []) {
+    await db.put('files', { ...f, blob: f.blob ? await dataURLToBlob(f.blob) : null, thumb: f.thumb ? await dataURLToBlob(f.thumb) : null });
+  }
+  if (data.achievements) await db.setKV('achievements', { ...(await db.getKV('achievements', {})), ...data.achievements });
+  return { entries: data.entries?.length || 0, tasks: data.tasks?.length || 0, voice: data.voice?.length || 0, files: data.files?.length || 0 };
 }
